@@ -1,0 +1,30 @@
+{
+  "checked": "2026-10-02",
+  "scope": "Independent Decimal arithmetic and chart-table comparisons; no human participants or calibrated difficulty.",
+  "forms": {
+    "A": {
+      "riskcap": "90",
+      "cashcap": "74",
+      "shares": "74",
+      "notional": "2960",
+      "entry_fee": "6.20",
+      "debit": "2966.20",
+      "price_risk": "111.0",
+      "modeled_loss": "123.40",
+      "net": "-308.40",
+      "net_R": "-2.778378378378378378378378378"
+    },
+    "B": {
+      "riskcap": "93",
+      "cashcap": "99",
+      "shares": "93",
+      "notional": "4650",
+      "entry_fee": "6.65",
+      "debit": "4656.65",
+      "price_risk": "186",
+      "modeled_loss": "199.30",
+      "net": "-478.30",
+      "net_R": "-2.571505376344086021505376344"
+    }
+  }
+}

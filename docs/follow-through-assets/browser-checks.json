@@ -1,0 +1,149 @@
+{
+  "scope": "Native T3 browser; four affected attempt-first chapters at320/390/768/1280px. New worksheet replay independently recalculated from inputs.",
+  "checks": [
+    {
+      "clips": [],
+      "closed": true,
+      "id": "psychology",
+      "overflow": false,
+      "packetTables": 2,
+      "referenceInitiallyHidden": true,
+      "width": 320
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "system-design",
+      "overflow": false,
+      "packetTables": 6,
+      "referenceInitiallyHidden": true,
+      "width": 320
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "support-resistance",
+      "overflow": false,
+      "packetTables": 1,
+      "referenceInitiallyHidden": true,
+      "width": 320
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "case-studies",
+      "overflow": false,
+      "packetTables": 4,
+      "referenceInitiallyHidden": true,
+      "width": 320
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "psychology",
+      "overflow": false,
+      "packetTables": 2,
+      "referenceInitiallyHidden": true,
+      "width": 390
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "system-design",
+      "overflow": false,
+      "packetTables": 6,
+      "referenceInitiallyHidden": true,
+      "width": 390
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "support-resistance",
+      "overflow": false,
+      "packetTables": 1,
+      "referenceInitiallyHidden": true,
+      "width": 390
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "case-studies",
+      "overflow": false,
+      "packetTables": 4,
+      "referenceInitiallyHidden": true,
+      "width": 390
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "psychology",
+      "overflow": false,
+      "packetTables": 2,
+      "referenceInitiallyHidden": true,
+      "width": 768
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "system-design",
+      "overflow": false,
+      "packetTables": 6,
+      "referenceInitiallyHidden": true,
+      "width": 768
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "support-resistance",
+      "overflow": false,
+      "packetTables": 1,
+      "referenceInitiallyHidden": true,
+      "width": 768
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "case-studies",
+      "overflow": false,
+      "packetTables": 4,
+      "referenceInitiallyHidden": true,
+      "width": 768
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "psychology",
+      "overflow": false,
+      "packetTables": 2,
+      "referenceInitiallyHidden": true,
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "system-design",
+      "overflow": false,
+      "packetTables": 6,
+      "referenceInitiallyHidden": true,
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "support-resistance",
+      "overflow": false,
+      "packetTables": 1,
+      "referenceInitiallyHidden": true,
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "closed": true,
+      "id": "case-studies",
+      "overflow": false,
+      "packetTables": 4,
+      "referenceInitiallyHidden": true,
+      "width": 1280
+    }
+  ]
+}

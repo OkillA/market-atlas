@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An illustrated, interactive field guide to technical analysis for stocks. Learn to read charts, question signals, and think about risk.">
+  <meta name="theme-color" content="#214d3e">
+  <title>Market Atlas — A field guide to technical analysis</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=20261003-home-cleanup-2">
+  <script src="content/book.js?v=20261011-alpha1" defer></script>
+  <script src="figure-renderer.js?v=20261002-price-action-2" defer></script>
+  <script src="app.js?v=20261003-home-cleanup-2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar" id="sidebar" aria-label="Book navigation">
+    <a class="brand" href="#/" aria-label="Market Atlas home"><span class="brand-mark" aria-hidden="true">M<span>↗</span></span><span>Market Atlas</span></a>
+    <button class="search-trigger" id="open-search"><span aria-hidden="true">⌕</span> Search the atlas <kbd>/</kbd></button>
+    <nav class="primary-nav" aria-label="Explore">
+      <a href="#/" data-nav="home"><span aria-hidden="true">◫</span> Overview</a>
+      <a href="#/contents" data-nav="contents"><span aria-hidden="true">≡</span> Table of contents</a>
+      <a href="#/lab" data-nav="lab"><span aria-hidden="true">⌁</span> Chart playground</a>
+      <a href="#/glossary" data-nav="glossary"><span aria-hidden="true">Aa</span> Glossary</a>
+      <a href="#/evidence" data-nav="evidence"><span aria-hidden="true">↗</span> Evidence & studies</a>
+      <a href="#/notebook" data-nav="notebook"><span aria-hidden="true">▤</span> My notebook</a>
+    </nav>
+    <div class="sidebar-label">THE BOOK <span>01—06</span></div>
+    <nav id="part-nav" class="part-nav" aria-label="Book parts"></nav>
+    <div class="sidebar-bottom"><div class="progress-label"><span>Your reading progress</span><span id="progress-count">0 / 8</span></div><progress id="reading-progress" value="0" max="8" aria-label="Completed starter chapters"></progress><small>Saved in this browser</small><a href="#/about" class="about-link">About this edition <span>↗</span></a></div>
+  </aside>
+  <div class="page-shell">
+    <header class="topbar"><div class="topbar-left"><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><span id="breadcrumb">The technical analysis handbook</span></div><div class="topbar-right"><button id="chapter-contents-button" hidden>Contents</button><button id="topbar-search" aria-label="Search the atlas">⌕</button><button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">◐</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer"><span>Market Atlas <span class="footer-dot">·</span> Learn to read the market.</span><span>Alpha draft edition · Educational material, not investment advice. Teaching data and labelled historical cases.</span></footer>
+  </div>
+  <dialog id="search-dialog" aria-labelledby="search-heading"><div class="dialog-heading"><h2 id="search-heading">Search the atlas</h2><button id="close-search" aria-label="Close search">×</button></div><label class="sr-only" for="search-input">Find a chapter or term</label><input id="search-input" type="search" placeholder="Try candlestick, risk, or moving average…" autocomplete="off"><div id="search-results" aria-live="polite"></div><p class="search-hint">Search full chapters, tables, practice, glossary and evidence. Results can reveal worked answers. <kbd>esc</kbd> to close.</p></dialog>
+  <dialog id="contents-dialog" aria-labelledby="contents-heading"><div class="dialog-heading"><h2 id="contents-heading">Chapter contents</h2><button id="close-contents" aria-label="Close chapter contents">×</button></div><nav id="contents-links" aria-label="Chapter contents"></nav></dialog>
+  <dialog id="table-dialog" aria-labelledby="table-heading"><div class="dialog-heading"><h2 id="table-heading">Teaching table</h2><button id="close-table" aria-label="Close table workspace">×</button></div><p>Scroll across columns and through records; headers stay visible.</p><div id="table-workspace"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">Enable JavaScript to read this interactive edition.</p></noscript>
+</body>
+</html>

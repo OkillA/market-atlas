@@ -1,0 +1,422 @@
+{
+  "checked": "2026-10-03",
+  "reviewer": "claude-code-main",
+  "edition": "0.4",
+  "scope": "Publication batch 4 accepts Chapters 10–14 and Part 3, and re-accepts Chapter 3 and Part 1 at new fingerprints after PUB4-006. Full prose/definitions/timing read, 552 independent Fraction/Decimal comparisons, 15 primary source pages, 13 figures at 260/760px including all PUB4-005 renderer-affected exports, native top-level browser checks at 1280/390/320px. PUB4-001–008 resolved; PUB4-009 open for Chapter 26. Native printer, broader release QA and human validation remain pending.",
+  "inventory": {
+    "chapters": 28,
+    "parts": 6,
+    "sections": 210,
+    "sectionProseWords": 40980,
+    "glossaryTerms": 105,
+    "sourceEntries": 73,
+    "uniqueSourceURLs": 70,
+    "practiceTasks": 65,
+    "partReviews": 6,
+    "partReviewTasks": 18,
+    "attemptPackets": 7,
+    "portableFigures": 71
+  },
+  "checks": [
+    {
+      "command": "node scripts/verify-early-chapters.cjs",
+      "result": "passed: 617 comparisons"
+    },
+    {
+      "command": "node scripts/verify-revision.cjs",
+      "result": "passed"
+    },
+    {
+      "command": "node scripts/verify-historical.cjs",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check",
+      "result": "passed: 28 chapters, 40,980 prose words, 105 terms"
+    },
+    {
+      "command": "node scripts/check-content.cjs --strict-revision",
+      "result": "passed"
+    },
+    {
+      "command": "python3 docs/publication-batch4-assets/reproduce-arithmetic.py",
+      "result": "passed: 552 comparisons"
+    },
+    {
+      "command": "isolated build comparison",
+      "result": "74/74 generated outputs byte-identical"
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "id": "market-language",
+      "title": "The language of the market",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0"
+    },
+    {
+      "number": 2,
+      "id": "chart-anatomy",
+      "title": "Anatomy of a stock chart",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "99726d7e5c814c61b7797dfff884d34ef70f05a56808d28b8002b505bc42cead"
+    },
+    {
+      "number": 3,
+      "id": "volume",
+      "title": "Volume: participation behind price",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f"
+    },
+    {
+      "number": 4,
+      "id": "timeframes",
+      "title": "Timeframes, sessions & chart scales",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "2dd2a6d99752d60451375a2783bf2f57697e9129e1aeeeae50347d0a390fb357"
+    },
+    {
+      "number": 5,
+      "id": "trends",
+      "title": "Trends, swings & changing structure",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "38a32b5630782592f5203b27abb91a781a5d8226e5f45c96cfc00b3230b2798d"
+    },
+    {
+      "number": 6,
+      "id": "support-resistance",
+      "title": "Support, resistance & price areas",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "05ed799ba54c8ab48b2b51baa7c2eca545743f821de438a73f27faa9b9731e95"
+    },
+    {
+      "number": 7,
+      "id": "candlestick-patterns",
+      "title": "Candlestick patterns in context",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "52dfd1429fda68811d29288c3395df86f16f8604c8a16d0f1c2725a16aeeee7c"
+    },
+    {
+      "number": 8,
+      "id": "chart-patterns",
+      "title": "Classical chart patterns",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "751502bb362100dc01902c5698b56e920090efbe0bd759e4fb2ffa9ff0ba2d7e"
+    },
+    {
+      "number": 9,
+      "id": "breakouts",
+      "title": "Breakouts, pullbacks & failed moves",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "a0f8ef618394df0351b2e0d41c7ae0733f64ae3a213e0dac34cc1bb93f6cde46"
+    },
+    {
+      "number": 10,
+      "id": "moving-averages",
+      "title": "Moving averages",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "b390711586369320abbef5ca3b397958c5354cf363c56766d6dfb1a69a87599f"
+    },
+    {
+      "number": 11,
+      "id": "momentum",
+      "title": "Momentum: pace and persistence",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20"
+    },
+    {
+      "number": 12,
+      "id": "volatility",
+      "title": "Volatility: the size of movement",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2"
+    },
+    {
+      "number": 13,
+      "id": "volume-tools",
+      "title": "Volume tools: weight, participation, and memory",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764"
+    },
+    {
+      "number": 14,
+      "id": "fibonacci",
+      "title": "Optional: Fibonacci retracement conventions",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826"
+    },
+    {
+      "number": 15,
+      "id": "relative-strength",
+      "title": "Relative strength: leading compared with what?",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "23f84eef4b5604dbeb3933e0533cb1af49d01a81fa36bb86f962377eaa4b90f8"
+    },
+    {
+      "number": 16,
+      "id": "breadth",
+      "title": "Market breadth: how many are participating?",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "6aa7fac75cd863cabafd177f1879bb377c35d33ea00bee90ac05a643e31fe82e"
+    },
+    {
+      "number": 17,
+      "id": "multi-timeframe",
+      "title": "Multiple timeframes: one market, several summaries",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "246eedc64012daf3378cdab43479ac1f4bce8c7dcf5e7f3339eb1720cdde39ef"
+    },
+    {
+      "number": 18,
+      "id": "events",
+      "title": "Events and opening gaps",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "002fe4e1d436348b3f18eada86e19719b6297516ce47da445472d66e88096c21"
+    },
+    {
+      "number": 19,
+      "id": "market-microstructure",
+      "title": "Market microstructure: from a chart to an actual trade",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "370d104d5852cf5c9f35eee4a5d9089bb3017550a7120bd5fdafcb877adc6b90"
+    },
+    {
+      "number": 20,
+      "id": "risk-sizing",
+      "title": "Risk & position sizing",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35"
+    },
+    {
+      "number": 21,
+      "id": "trade-plans",
+      "title": "From chart idea to trade plan",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "63160472984777838a1c865bfb1bcb28b44a1ab15cae2e885995d262b9989163"
+    },
+    {
+      "number": 22,
+      "id": "psychology",
+      "title": "Psychology without market mythology",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "00a0bc75ea75f572d8be5740517874570cb31311503a6643376958dabbdbd5e4"
+    },
+    {
+      "number": 23,
+      "id": "journaling",
+      "title": "A journal that can teach you something",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "3fe1c869eb675321e4a93607e7b2e01e4d74cf9119ddbc74ce7017e8e5640042"
+    },
+    {
+      "number": 24,
+      "id": "testing",
+      "title": "Evidence before conviction",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "7fbaf6d579a2d91296597b9209105da44f1c1ec0b16310fb23ce00b9e7d26e01"
+    },
+    {
+      "number": 25,
+      "id": "statistics",
+      "title": "Statistics for a skeptical chart reader",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "feb2ab1ce4079208d3c9b0e063a05bb18c5cbb4c3df540c330a4029d57a47a8e"
+    },
+    {
+      "number": 26,
+      "id": "system-design",
+      "title": "Designing a complete trading system",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "288d51c9dd0c87870be05669b8042d6c033f905b9b6765f8f1326bdab19ca5ee"
+    },
+    {
+      "number": 27,
+      "id": "classical-frameworks",
+      "title": "Optional: Dow, Wyckoff, and Elliott, read critically",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "2af70744e750eddbca5e38bc4830bb6e1d4221eac2867efec2d3c4e22d7aea3d"
+    },
+    {
+      "number": 28,
+      "id": "case-studies",
+      "title": "Case studies: follow the decision through",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "854967c1e29d95b333307a76177544d58a1407a548b7eca66f0eab51a8083622"
+    }
+  ],
+  "partReviews": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Turn a chart into a reproducible observation",
+      "publicationAcceptance": "accepted",
+      "sha256": "dc0455a5949706ae1300f6d523615b5029abd9438a4fd54a87ddb4eb5ed99818"
+    },
+    {
+      "id": "price-action",
+      "number": "02",
+      "title": "Write an analysis with the next bars covered",
+      "publicationAcceptance": "accepted",
+      "sha256": "b2ac0eaba83fa9a2708f618bad39905119da82d611d5d4db4e1059b9d3beb2b5"
+    },
+    {
+      "id": "indicators",
+      "number": "03",
+      "title": "Indicator review: calculate, compare, explain",
+      "publicationAcceptance": "accepted",
+      "sha256": "6e30dde5ad913cec5c1de5bc85c9376631cd2e033224fb70187116c539d5f10e"
+    },
+    {
+      "id": "context",
+      "number": "04",
+      "title": "Context review: participation, clock, and execution",
+      "publicationAcceptance": "pending",
+      "sha256": "b1a300f2dcfb36a47f9a7e7aea27b2ca57f4e7b806dfea60a6a2364782d2af2d"
+    },
+    {
+      "id": "risk",
+      "number": "05",
+      "title": "Process review: one complete record, from budget to review",
+      "publicationAcceptance": "pending",
+      "sha256": "f40e5f1c1f9e117b7d7292653239bf5b35f7fe27941dd76f04365ec64a8fdece"
+    },
+    {
+      "id": "advanced",
+      "number": "06",
+      "title": "Evidence review: evaluate a claim, then process a system",
+      "publicationAcceptance": "pending",
+      "sha256": "417df2267224ce722fa640afaa486c247f8543e43861f7591ea02d91b849a513"
+    }
+  ],
+  "sha256": {
+    "app.js": "63c10b8879656865c5cc187a765d0910ca5b309ac6c299aada00e0081ef9e4e2",
+    "assets/figures/breadth-2.svg": "23ebd792b925d7db2fa664cb9c42015406722e5dc1504232b5909b954f57ab2d",
+    "assets/figures/breadth.svg": "ee3df73d916f8f38f273f62061f29552adb0e5cacb78f2e5c2670570427659f4",
+    "assets/figures/breakouts-2.svg": "9746cd230c7833614bc89d91b03e5044d5398631431e423b43c7c7512436eef5",
+    "assets/figures/breakouts-attempt-1.svg": "7c113079e4feb2c18f24708921c4e4e18d59bc6859fead94bee4de5db35e825f",
+    "assets/figures/breakouts.svg": "1640353919ce6403c6ec2b1a640d3e4d2913fdb7a72fda51901ba835a98997a4",
+    "assets/figures/candlestick-patterns-2.svg": "ffcedc45dce02de27bd43b3a825093e591a128882ce8eb127a68760221ab782b",
+    "assets/figures/candlestick-patterns-3.svg": "7bebf22902812102a23645ecaf3c617c02c2206d4a5ced18f2c69da473f10883",
+    "assets/figures/candlestick-patterns-attempt-1.svg": "062ac674b5c4112875f95be7b359eb854b8f5f846dfa61e4ae42dbcb745b9428",
+    "assets/figures/candlestick-patterns.svg": "491c791ecf534fd657531b84aba3bbefcd86b888e74fb9df6cbbfa0984eec451",
+    "assets/figures/case-studies-2.svg": "72237eb26a335047251f99d3e9b5bd6c40f954a2840ff6ec04a8cf6f5279ea0d",
+    "assets/figures/case-studies-3.svg": "fa00a11c5eb6c0d936774c640b872a6e866cee7d87dcdc2d09529628ea9003c3",
+    "assets/figures/case-studies-4.svg": "93136642a7c105d939b0a64eb22c82dfe6332802ef8f1370c3ab62e7d47c861c",
+    "assets/figures/case-studies-5.svg": "e0914c0ce94af964f7465fdb61bca103b014405c49c0a451bb2a5663ee18be44",
+    "assets/figures/case-studies-6.svg": "272999352a05bccb27b96f49d46fe2d6fe7f409f232c62261790176268a2cefc",
+    "assets/figures/case-studies-7.svg": "e5f75a4a7811bef5e0682609ea77e1c31d06d66a87a692fbc127f82bc75bfe28",
+    "assets/figures/case-studies-8.svg": "a7c4e7f3b89a1a0dda7702926989560efffa5f190ff95858032701247a892251",
+    "assets/figures/case-studies-9.svg": "23394660ba99637ed18c433297e84697c4c99ee932a1bfd44d47fa6a4ecb3d89",
+    "assets/figures/case-studies.svg": "f20bdf3fa13046d187b3c77f3c679027aa15be6370b82fb4c258afabb99c8a14",
+    "assets/figures/chart-anatomy-2.svg": "2696c8727cd8de4b59ac12a5188933a80d14e953c3033b89bcd3094c7c4a996f",
+    "assets/figures/chart-anatomy.svg": "91a4ab988e65517c42750363b72db32f53adecaedb4a1162b322b8d1bc225484",
+    "assets/figures/chart-patterns-2.svg": "94bd74348f755a69d1c122962ebe65d712992f3e831ef4f1b1ebeefe1ac271f5",
+    "assets/figures/chart-patterns-3.svg": "46118b7700a85a6464820748eadd7355b2f5c7d21e167672c2ceec44fff5774a",
+    "assets/figures/chart-patterns-attempt-1.svg": "ba5dab83dc65cff4e1e7e0f934bd64fdb80b48b0f19b0529ec39892f532c2f56",
+    "assets/figures/chart-patterns.svg": "4f50ddc2155cc832e663c28ae99916dccca7c0ad7e26ec8e618bdecdb1b56c64",
+    "assets/figures/classical-frameworks-2.svg": "5ef6ec08fd05b27e3f5f453cb419c6b8224eefd4ef2f61e199e1582699d66880",
+    "assets/figures/classical-frameworks-3.svg": "7a4f947884a1211514375de9594dd7edac2821c1c3ace00b901d9ffd0bb42dc7",
+    "assets/figures/classical-frameworks.svg": "8c949b152223b6aa0463539d8b17d3154b158b0cb56c134ec5e89270014740be",
+    "assets/figures/events-2.svg": "1a65f53c0aaea65abe6834c5aabe182c0a480a37ba1ec283f757d014b32d0e5f",
+    "assets/figures/events.svg": "d302b380fe5cbec17855b14afea90caac27634d739313b91c4047eaa6be8ec35",
+    "assets/figures/fibonacci.svg": "db4e3c9590d58c4e79e8fce8f4e84654c49bbe06c9e11d822fc8639b577c2c80",
+    "assets/figures/journaling-2.svg": "507ab3eeaf53cf137559b0c075a1bd8f8a62142655487e90a607ce9865a05ead",
+    "assets/figures/journaling.svg": "0de1de84b1a1d5500f8764578e5b68a944915080fb37fbd398e17a25780e7c8d",
+    "assets/figures/market-language-2.svg": "7acaee8fe77dc58e75ffe36085285ada98e82730892fda5b29e47bcb656dc0f7",
+    "assets/figures/market-language.svg": "4a68cf28a98ce2fc93cae02a8b86a4be0aed496e62d0a34b9d8b078bbf7a2352",
+    "assets/figures/market-microstructure-2.svg": "c81efaea606d296a6d0714c1f3158b85db5df9b76c6920095b8e4e59da96cff4",
+    "assets/figures/market-microstructure.svg": "c79bbee2bc099f0e105328bb435500d8025b58b050113ecd0a64e59cb89487bf",
+    "assets/figures/momentum-2.svg": "77fe4e421ca5c90e9ae9c1086cbc6954a5b9200efabb3f18a9b494c2ec5dcbbf",
+    "assets/figures/momentum.svg": "4e39d34b04560cc228c2d282e123fc15dd577d535ad547bccafd3bf17ee2bb04",
+    "assets/figures/moving-averages.svg": "94959c776b92f96fc0a3307de41161e978ab38be69e3e97557f50b4a014a53f1",
+    "assets/figures/multi-timeframe-2.svg": "df862b7a15e20d0b8007a6493ffa5ab1abe49808d5295581a488e138e168f88c",
+    "assets/figures/multi-timeframe.svg": "6d78772e1f247d87c0947525bf24453a92439818431a44f3843e00bd862d245b",
+    "assets/figures/psychology-2.svg": "d45d751b5f6683506d5ffca2cd5cc7b67a3ef82df66f6d8905fa0982b07d010d",
+    "assets/figures/psychology.svg": "ea8f9ae2353fe41566d494187fabb7fde605d089536c8c2fe2e0241b21ff6177",
+    "assets/figures/relative-strength.svg": "52a678ffcefa3d038c834e864cec18359a49ae28f2032b179da0043eeb05b972",
+    "assets/figures/risk-sizing-2.svg": "f58a0684c82c7fe4f9265c08aff42a9a600ae34f650d2f609960420c9eca73f1",
+    "assets/figures/risk-sizing.svg": "be49807964059b6c5c3cc4b8f9e2df641997d5d7d3e37add941fd0ce5bfbe5f2",
+    "assets/figures/statistics-2.svg": "8ed0c31b84a824362240131c0100f9590d351f6c7c5e5f9d3d5d4c323c168012",
+    "assets/figures/statistics-3.svg": "65af4362f725e1f4a835219f96dddcfe341ebc1cca9e1cd855d37dcd40959de9",
+    "assets/figures/statistics.svg": "627763690be0ac4048b819e10c51af1ed0b92a073f558a1ebc88502659ad96a6",
+    "assets/figures/support-resistance-2.svg": "83fb9d2304d5f96de572a721c109647ae6a17972d57d8cd073b32b5cfb25a658",
+    "assets/figures/support-resistance.svg": "95578c794abfb754a7d020e97d51e675b2102f363ac71021e3130b4ab9bfdcfe",
+    "assets/figures/system-design-2.svg": "d94f6ceddd34bad204214855d8623b39894cd238eeff220101829aef54db55b1",
+    "assets/figures/system-design-3.svg": "af7ff4d9fab4dc81ac842ba718e65b55e1b581f7e31ecf65d08560e0d622e25c",
+    "assets/figures/system-design.svg": "e78b10aba1a7741ac21ccf846c98921357eae757e8f82e4b9582435227184f36",
+    "assets/figures/testing-2.svg": "5d22a3f6216ec73db1bfdb10d00f060fc99f7dbc50bff171a82d911fce66779e",
+    "assets/figures/testing-3.svg": "4bc536b63bec3d5a342251a15564c5e04e4eb3a1e804972c71a8ce7b8c618da9",
+    "assets/figures/testing.svg": "ff87c95173a59bb11f0a57cd38090b3d886777616b4b6671332ca4778dd353ca",
+    "assets/figures/timeframes-2.svg": "3ae34d4afa41aff0e7084ea6827309b1a7fc4ec6c82b0cdb115a786fd79d2022",
+    "assets/figures/timeframes.svg": "2a094d20f224d64e3d9d854dc843bb0103c0d510159a0fd7d9ae7c1584264116",
+    "assets/figures/trade-plans-2.svg": "c93a0eae0fea54a1b31cb898bb1f37df819a7df5308f478b90a4f4a0eee6f238",
+    "assets/figures/trade-plans.svg": "634877fc36d212b06d1d59627aa5aeba8dc0828b334b5df152242517f9ffd24e",
+    "assets/figures/trends-2.svg": "261f64e12852611706fc274ee9dc461a0f38f743eb516f77bf49b1e4079e393b",
+    "assets/figures/trends-3.svg": "f5a0f58367850175d51cd0691bfcf44aeb439dab530bc6e7f069903d5998613c",
+    "assets/figures/trends.svg": "b98f5a02c4439f8ff327ee3d811f8a2e4eab960ef12e80ae5965eb4faed3b652",
+    "assets/figures/volatility-2.svg": "8365b3a1b4ed49a85dcc8811e29049baff1b792185f02a1931162ec4daef893e",
+    "assets/figures/volatility.svg": "c4bff7b427dac2afea1399a1a889dea01de7621c5ae18d8dd5b445bff0fd3ea7",
+    "assets/figures/volume-2.svg": "85e4e4a13a72ac1f3ae2d353e319b2c8ac8a213d0fdf4aa06ebb7eec84b4e9ad",
+    "assets/figures/volume-tools-2.svg": "7674f5ef7c0430f1d8ed623ce1a29740b03b58de8de5bd87c7a12bfaa88f6844",
+    "assets/figures/volume-tools-3.svg": "707dffab4d37e0beb8d64b84c34b3cefbfa472ed1060b2af2758fb725015fddf",
+    "assets/figures/volume-tools.svg": "124a73989cae8130ac71a4e56a89defb445517c33a05d263098fa975daf657e5",
+    "assets/figures/volume.svg": "2c5588724af22083eafd9705b39a2d2972aae24f0d205411d75353d25391475b",
+    "content/book.js": "e5e769c6e6fd4ea929f331b40e7c24dcfabe0ad79484ae298090ecd378a6f138",
+    "content/curriculum.js": "c2b6d48e9202a3bddcad0e0e8eed18a2dc2fc0af64598bec780e6ee9021c99f3",
+    "content/foundations-price.json": "7ba4355886009bd270be0f7de27933c1662a3bce94849c6d35b3c93edfb62598",
+    "content/indicators-context.json": "c7b872e7f34534bb740072ba49c2172312bd1807e92f52298ff5bf5df88a6259",
+    "content/research-context.json": "621b9ee9c9a7f5cfc2fe1c5122cd2878c5423726858e8fc34c6b800e5ab98466",
+    "content/risk-advanced.json": "4b39dc58b223ba833be3fe8babf7f1c8330c652d08a1f759bf71b0286db9ef30",
+    "docs/EVIDENCE_MATRIX.md": "05405946953faa1e8e991b315899c0a0c2c92d0655f339d921daf58b5cadb640",
+    "docs/MANUSCRIPT.md": "d81b556d47013f0518e4fbcad84ae2aa4bc53a4aa49267c7c87c7ab767a0b809",
+    "favicon.svg": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
+    "figure-renderer.js": "4bae042f3dfdf9961e639331a70e54615f1d4672825c6e764cb074fbfb38c9f5",
+    "index.html": "3f3d3af7e7cc24bd702696a08ed15650847c9a31a7be9f8cb03d971808e3642a",
+    "package.json": "a1713afdf6f8b6f094478de7e446660db807b3823ec4d18509733810ce75bf97",
+    "scripts/atlas20-sim.cjs": "1e8343e76e9817d801cc257b37ab40cff726e7ad3c7227727653bf611695aa32",
+    "scripts/build-content.cjs": "f85068a41e7cae9eed4235390cb0f19d7d8c3d914f95867a67f3ba3bfc4dd122",
+    "scripts/check-content.cjs": "2054e8d97523c659423c8996e03e395268d178f42a9944cd016a505513c58c1a",
+    "scripts/project-status.cjs": "1c2acfd77ba323e91110f16f25df70ee08047fdb92f9550a8b18e938d0e954a2",
+    "scripts/verify-early-chapters.cjs": "e415ee94f15d8afac5a88a333cc47f0c1c6612a77d51c7a428c92e3a9333360f",
+    "scripts/verify-historical.cjs": "612c2572bfa8d2698e870b9f088010f3137a49588f58e59f2501845ac84dfd47",
+    "scripts/verify-revision.cjs": "d039e62d68a68c77178d71c4424c023afbe66cc7ca8156e1fe10509ed8ac55a3",
+    "styles.css": "38f81586ac50543cefa201164231e12ce5d272b8c4f790acf851ee8cc5cc32b6"
+  },
+  "reviewReport": "docs/PUBLICATION_BATCH4_20261003.md",
+  "priorCheckpoint": "docs/PROJECT_CHECKPOINT_20261003_041428.json",
+  "fingerprintMethod": {
+    "chapter": "sha256(JSON.stringify({chapter, sources: ids.map(id => [id, book.sources[id]])})) over the compiled book.js chapter, ids = sorted union of chapter.sources and evidence[].sourceIds; reproduces every unchanged prior chapter fingerprint.",
+    "part": "sha256(JSON.stringify({part, practice: book.partPractice[part.id], chapters: part.chapters.map(id => [id, chapterFingerprint])})). New in this checkpoint: the prior part encoding could not be reproduced, so Part 2 was recomputed (constituents unchanged) and Parts 1/3 reflect batch 4 review."
+  },
+  "createdAt": "2026-10-03T04:57:14Z",
+  "reviewDateTimezone": "America/New_York"
+}

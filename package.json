@@ -1,0 +1,13 @@
+{
+  "name": "market-atlas",
+  "version": "0.4.0-alpha.1",
+  "private": true,
+  "description": "An offline-first illustrated technical analysis textbook",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "build:content": "node scripts/build-content.cjs",
+    "check": "node scripts/check-content.cjs",
+    "status": "node scripts/project-status.cjs",
+    "build:site": "node scripts/build-site.cjs"
+  }
+}

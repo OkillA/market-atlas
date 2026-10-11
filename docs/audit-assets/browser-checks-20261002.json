@@ -1,0 +1,441 @@
+{
+  "date": "2026-10-02",
+  "method": "T3 native browser. Route renders, quiz DOM clicks, SVG text extent checks. Geometry is not a complete visual or accessibility audit.",
+  "mobileViewport": {
+    "width": 320,
+    "height": 800
+  },
+  "mobile": [
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 16459,
+      "id": "market-language",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 14489,
+      "id": "chart-anatomy",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 13648,
+      "id": "volume",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 16363,
+      "id": "timeframes",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "height": 14842,
+      "id": "trends",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 14727,
+      "id": "support-resistance",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [
+        {
+          "figure": "Do not collapse geometry, confirmation and outcome",
+          "outside": 29,
+          "text": "3. Branch A later: open $46.50, close $45"
+        },
+        {
+          "figure": "Do not collapse geometry, confirmation and outcome",
+          "outside": 27,
+          "text": "2. Branch B: next open $46.50, close $45"
+        }
+      ],
+      "figures": 3,
+      "height": 16949,
+      "id": "candlestick-patterns",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "height": 22356,
+      "id": "chart-patterns",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 16670,
+      "id": "breakouts",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 1,
+      "height": 12489,
+      "id": "moving-averages",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 15906,
+      "id": "momentum",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 12925,
+      "id": "volatility",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "height": 14469,
+      "id": "volume-tools",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 1,
+      "height": 12301,
+      "id": "fibonacci",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 1,
+      "height": 13273,
+      "id": "relative-strength",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 15832,
+      "id": "breadth",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 12397,
+      "id": "multi-timeframe",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 13731,
+      "id": "events",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 13965,
+      "id": "market-microstructure",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 15147,
+      "id": "risk-sizing",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 14077,
+      "id": "trade-plans",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 15795,
+      "id": "psychology",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "height": 15535,
+      "id": "journaling",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [
+        {
+          "figure": "A research timeline: what each stage may see",
+          "outside": 32,
+          "text": "1. Freeze the question (before any results)"
+        },
+        {
+          "figure": "A research timeline: what each stage may see",
+          "outside": 40,
+          "text": "2. Development window (earlier dates only)"
+        },
+        {
+          "figure": "A research timeline: what each stage may see",
+          "outside": 9,
+          "text": "4. Held-out or walk-forward evaluation"
+        }
+      ],
+      "figures": 3,
+      "height": 27850,
+      "id": "testing",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [
+        {
+          "figure": "Payoff distribution of twenty net outcomes",
+          "outside": 2,
+          "text": "Net R bin lower edge (each bin is 0.5R wide)"
+        }
+      ],
+      "figures": 3,
+      "height": 24564,
+      "id": "statistics",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "height": 31716,
+      "id": "system-design",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "height": 24094,
+      "id": "classical-frameworks",
+      "quiz": "3/3",
+      "width": 320
+    },
+    {
+      "clips": [],
+      "figures": 9,
+      "height": 43375,
+      "id": "case-studies",
+      "quiz": "3/3",
+      "width": 320
+    }
+  ],
+  "desktopViewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "desktop": [
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "market-language",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "chart-anatomy",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "volume",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "timeframes",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "trends",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "support-resistance",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "candlestick-patterns",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "chart-patterns",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "breakouts",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 1,
+      "id": "moving-averages",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "momentum",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "volatility",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "volume-tools",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 1,
+      "id": "fibonacci",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 1,
+      "id": "relative-strength",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "breadth",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "multi-timeframe",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "events",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "market-microstructure",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "risk-sizing",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "trade-plans",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "psychology",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 2,
+      "id": "journaling",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "testing",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "statistics",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "system-design",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 3,
+      "id": "classical-frameworks",
+      "width": 1280
+    },
+    {
+      "clips": [],
+      "figures": 9,
+      "id": "case-studies",
+      "width": 1280
+    }
+  ]
+}

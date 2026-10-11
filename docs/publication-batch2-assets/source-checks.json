@@ -1,0 +1,118 @@
+{
+  "reviewer": "/root",
+  "checked": "2026-10-02",
+  "uniqueURLs": 11,
+  "scope": "Current claim support for Chapters 3–6 and Part 1, not edition-wide source/data-rights release review. Original book access/check dates retained rather than mass-reset.",
+  "records": [
+    {
+      "id": "fp-volume",
+      "url": "https://www.fidelity.com/viewpoints/active-investor/stock-volume",
+      "title": "Fidelity · Why to consider stock volume",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Volume is vital",
+      "support": "Shares traded per specified period; compare with historical activity.",
+      "limits": "Topical forecast commentary and volume efficacy claims are not adopted."
+    },
+    {
+      "id": "fp-sessions",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+      "title": "SEC / Investor.gov · Extended-hours trading: investor bulletin",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Opening definition; Overview; Lack of Liquidity; Larger Quote Spreads; Order Handling",
+      "support": "Regular-session window and broker/venue differences; liquidity/spread/data qualifications.",
+      "limits": "Live calendars and brokerage rules still need their own current check."
+    },
+    {
+      "id": "fp-actions",
+      "url": "https://www.finra.org/investors/insights/corporate-actions-public-companies-what-you-should-know",
+      "title": "FINRA · Corporate actions by public companies",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "2. Stock Splits",
+      "support": "Changed share count and unchanged proportional equity; forward/reverse mechanics.",
+      "limits": "Isolated split examples exclude unrelated movement, costs and distributions."
+    },
+    {
+      "id": "fp-order-bulletin",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "title": "SEC / Investor.gov · Understanding Order Types",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Market Order examples; Stop Order; Stop-Limit Order",
+      "support": "Execution can differ from quotes or trigger; large orders can fill at multiple prices; limits may not fill.",
+      "limits": "No fictional quote ladder or loss scenario is asserted as a broker guarantee."
+    },
+    {
+      "id": "fp-scale",
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/what-are-charts",
+      "title": "StockCharts ChartSchool · What are charts?",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "How to Pick a Timeframe; Price Scaling",
+      "support": "Daily/weekly compression and arithmetic versus equal-ratio log spacing.",
+      "limits": "Fictional geometry and slopes are reproduced independently; not predictive validation."
+    },
+    {
+      "id": "fp-charts",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-are-charts",
+      "title": "Fidelity · What are charts?",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Types of charts; Bar chart; Candlestick charts",
+      "support": "OHLC fields and different presentations preserve the supplied price data.",
+      "limits": "No source chart is reproduced; internal order cannot be deduced from OHLC."
+    },
+    {
+      "id": "fp-trends",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/basic-concepts-trend",
+      "title": "Fidelity · Basic concepts of trend",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "3 directions of trend; Trend lines; Uptrend line; Downtrend line; Conclusion",
+      "support": "Peak/trough direction and selected anchor-line conventions; line break is a warning.",
+      "limits": "Strict two-before/two-after algorithm and recognition dates are original teaching rules."
+    },
+    {
+      "id": "fp-levels",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance",
+      "title": "Fidelity · Support and resistance",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Support; Resistance; Support and resistance role reversal",
+      "support": "Conventional names and proposed change of role after a break.",
+      "limits": "Market psychology is a hypothesis; no measured participant identities or guaranteed future reaction."
+    },
+    {
+      "id": "fp-orders",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+      "title": "SEC / Investor.gov · Types of orders",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Types of Orders: market, limit and stop",
+      "support": "Order definitions and last-trade versus execution distinction.",
+      "limits": "Detailed bulletin supplies execution/nonfill qualifications; chart levels do not ensure fills."
+    },
+    {
+      "id": "fp-breakoutareas",
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance",
+      "title": "StockCharts ChartSchool · Support and resistance",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Support and resistance definitions; What Are Support and Resistance Zones?",
+      "support": "Historical area/zone terminology and conventional role changes.",
+      "limits": "The chapter declares its own cluster, buffer, reaction and tie policy; provider efficacy language not adopted."
+    },
+    {
+      "id": "rc-os",
+      "url": "https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr125.pdf",
+      "title": "Osler (2001), Currency Orders and Exchange-Rate Dynamics, Staff Report 125",
+      "inspected": "2026-10-02",
+      "method": "Original provider or regulator page/PDF via web tool; actual indicated passages read",
+      "locator": "Introduction printed pp. 4–5; I.B Basic Descriptive Statistics; II.C requested-rate distribution; II.D differences; V Conclusion; Figures 1A/1B and 2A–2D",
+      "support": "Almost 9700 conditional orders, one bank, September 1999–April 2000, three FX pairs; requested rates cluster at round numbers, with order-type differences.",
+      "limits": "No direct Harbor/stock-order or net stock-strategy inference. Figure 3 does not exist; both current authoring locators corrected."
+    }
+  ]
+}

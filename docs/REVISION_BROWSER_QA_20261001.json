@@ -1,0 +1,320 @@
+{
+  "checked": "2026-10-01",
+  "method": "T3 preview_evaluate DOM checks and DOM clicks at 390/1280px; preview_snapshot and native preview_click failed, so these are not screenshot or pointer-interaction checks.",
+  "mobile": {
+    "compiled": {
+      "compiled": "2026-10-01",
+      "edition": "0.3",
+      "inputs": [
+        "foundations-price.json",
+        "indicators-context.json",
+        "risk-advanced.json",
+        "research-context.json"
+      ],
+      "status": "draft"
+    },
+    "results": [
+      {
+        "expectedFigures": 2,
+        "expectedSections": 7,
+        "figures": 2,
+        "id": "risk-sizing",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 7,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 2,
+        "expectedSections": 6,
+        "figures": 2,
+        "id": "trade-plans",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 6,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 2,
+        "expectedSections": 7,
+        "figures": 2,
+        "id": "psychology",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 7,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 2,
+        "expectedSections": 7,
+        "figures": 2,
+        "id": "journaling",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 7,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 9,
+        "figures": 3,
+        "id": "testing",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 9,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 9,
+        "figures": 3,
+        "id": "statistics",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 9,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 11,
+        "figures": 3,
+        "id": "system-design",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 11,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 6,
+        "figures": 3,
+        "id": "classical-frameworks",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 6,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedFigures": 4,
+        "expectedSections": 11,
+        "figures": 4,
+        "id": "case-studies",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 390,
+        "sections": 11,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 390
+      },
+      {
+        "expectedTasks": 3,
+        "review": "risk",
+        "scrollWidth": 390,
+        "solutionsReveal": true,
+        "tasks": 3,
+        "width": 390
+      },
+      {
+        "expectedTasks": 3,
+        "review": "advanced",
+        "scrollWidth": 390,
+        "solutionsReveal": true,
+        "tasks": 3,
+        "width": 390
+      }
+    ],
+    "scopeCorrected": true
+  },
+  "desktop": {
+    "compiled": {
+      "compiled": "2026-10-01",
+      "edition": "0.3",
+      "inputs": [
+        "foundations-price.json",
+        "indicators-context.json",
+        "risk-advanced.json",
+        "research-context.json"
+      ],
+      "status": "draft"
+    },
+    "results": [
+      {
+        "expectedFigures": 2,
+        "expectedSections": 7,
+        "figures": 2,
+        "id": "risk-sizing",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 7,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 2,
+        "expectedSections": 6,
+        "figures": 2,
+        "id": "trade-plans",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 6,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 2,
+        "expectedSections": 7,
+        "figures": 2,
+        "id": "psychology",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 7,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 2,
+        "expectedSections": 7,
+        "figures": 2,
+        "id": "journaling",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 7,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 9,
+        "figures": 3,
+        "id": "testing",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 9,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 9,
+        "figures": 3,
+        "id": "statistics",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 9,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 11,
+        "figures": 3,
+        "id": "system-design",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 11,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 3,
+        "expectedSections": 6,
+        "figures": 3,
+        "id": "classical-frameworks",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 6,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedFigures": 4,
+        "expectedSections": 11,
+        "figures": 4,
+        "id": "case-studies",
+        "missingFigureContainers": 0,
+        "quizAllOptions": true,
+        "scrollWidth": 1280,
+        "sections": 11,
+        "solutionsInitiallyClosed": true,
+        "solutionsReveal": true,
+        "svgFinite": true,
+        "width": 1280
+      },
+      {
+        "expectedTasks": 3,
+        "review": "risk",
+        "scrollWidth": 1280,
+        "solutionsReveal": true,
+        "tasks": 3,
+        "width": 1280
+      },
+      {
+        "expectedTasks": 3,
+        "review": "advanced",
+        "scrollWidth": 1280,
+        "solutionsReveal": true,
+        "tasks": 3,
+        "width": 1280
+      }
+    ],
+    "scopeCorrected": true
+  }
+}

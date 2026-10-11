@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-02",
+  "scope": "Evidence page DOM inspection, phone viewport; this is not screenshot or human-reader validation.",
+  "limitations": [
+    "Native preview snapshots failed.",
+    "Later browser checks stopped when the preview host disconnected."
+  ],
+  "evidencePage": {
+    "comparison": "What the inspected evidence establishes\nMethod or question\tSupport inspected\tConfidence warranted / remaining test\nStock cross-sectional momentum\tJegadeesh–Titman: historical ranked portfolios, with a stated cost example.\tEvidence for that portfolio specification; no transfer to the textbook’s short-horizon long-only setup.\nOwn-return momentum\tMoskowitz–Ooi–Pedersen: diversified futures/forwards; gross instrument results.\tDifferent market and exposure; individual-stock net implementation remains untested here.\nAlgorithmic chart patterns\tLo–Mamaysky–Wang: some conditional return distributions differ.\tInformation evidence; entry, holding, sizing and costs still need testing.\nDaily technical-rule selection\tBajgrowicz–Scaillet: adverse persistence/cost results on DJIA rules.\tStrong reason to test selection and turnover; does not cover every method.\nSupport/resistance mechanism\tOsler: FX conditional-order clustering at one bank.\tBounded mechanism; stock order locations and net efficacy cannot be inferred.\nCandles, RSI/MACD, bands, OBV/VWAP/profile, Fibonacci and breadth\tProvider definitions and original reproducible calculations.\tNo direct net test of this edition’s exact rules in the inspected set; no win probability supplied.\nDow, Wyckoff and Elliott\tProponent classification rules.\tDefinitions reviewed; independent predictive/net evidence remains unresolved in this edition.\nTrading behavior and process notes\tBarber–Odean: observational turnover/net result; SEC-hosted behavior overview.\tAssociation/descriptive support; the proposed journal, pause and counterargument practices have no intervention trial here.",
+    "glossaryGroups": 31,
+    "overflow": false,
+    "studies": [
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      },
+      {
+        "containerWidth": 274,
+        "fields": [
+          "Sample",
+          "Rule",
+          "Comparator",
+          "Costs",
+          "Result"
+        ],
+        "rows": 5
+      }
+    ],
+    "width": 390
+  }
+}

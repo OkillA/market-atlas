@@ -1,0 +1,1054 @@
+{
+  "scope": "T3 product-native browser; 28 chapters at each width. 768px used same-origin iframe within native preview. Geometry and interactions; native snapshot attempts unreliable.",
+  "responsive": {
+    "320": [
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-language",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "chart-anatomy",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volume",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "timeframes",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "trends",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "support-resistance",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "candlestick-patterns",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "chart-patterns",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breakouts",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "moving-averages",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "momentum",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volatility",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "volume-tools",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "fibonacci",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "relative-strength",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breadth",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "multi-timeframe",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "events",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-microstructure",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "risk-sizing",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "trade-plans",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "psychology",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "journaling",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "testing",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "statistics",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "system-design",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "classical-frameworks",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "clips": [],
+        "figures": 9,
+        "id": "case-studies",
+        "overflow": false,
+        "quiz": [
+          true,
+          true,
+          true
+        ]
+      }
+    ],
+    "390": [
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-language",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "chart-anatomy",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volume",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "timeframes",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "trends",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "support-resistance",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "candlestick-patterns",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "chart-patterns",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breakouts",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "moving-averages",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "momentum",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volatility",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "volume-tools",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "fibonacci",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "relative-strength",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breadth",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "multi-timeframe",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "events",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-microstructure",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "risk-sizing",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "trade-plans",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "psychology",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "journaling",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "testing",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "statistics",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "system-design",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "classical-frameworks",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 9,
+        "id": "case-studies",
+        "overflow": false
+      }
+    ],
+    "768": [
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-language",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "chart-anatomy",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volume",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "timeframes",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "trends",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "support-resistance",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "candlestick-patterns",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "chart-patterns",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breakouts",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "moving-averages",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "momentum",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volatility",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "volume-tools",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "fibonacci",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "relative-strength",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breadth",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "multi-timeframe",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "events",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-microstructure",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "risk-sizing",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "trade-plans",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "psychology",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "journaling",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "testing",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "statistics",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "system-design",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "classical-frameworks",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 9,
+        "id": "case-studies",
+        "overflow": false
+      }
+    ],
+    "1280": [
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-language",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "chart-anatomy",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volume",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "timeframes",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "trends",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "support-resistance",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "candlestick-patterns",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "chart-patterns",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breakouts",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "moving-averages",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "momentum",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "volatility",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "volume-tools",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "fibonacci",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 1,
+        "id": "relative-strength",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "breadth",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "multi-timeframe",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "events",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "market-microstructure",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "risk-sizing",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "trade-plans",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "psychology",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 2,
+        "id": "journaling",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "testing",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "statistics",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "system-design",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 3,
+        "id": "classical-frameworks",
+        "overflow": false
+      },
+      {
+        "clips": [],
+        "figures": 9,
+        "id": "case-studies",
+        "overflow": false
+      }
+    ]
+  },
+  "checks": {
+    "notebookQA": {
+      "bookmarksEqual": true,
+      "bytes": 2504745,
+      "completedEqual": true,
+      "message": "Backup merged into your notebook",
+      "noteCount": 28,
+      "notesEqual": true,
+      "resumeEqual": true
+    },
+    "notebookChineseQA": {
+      "bookmarks": [
+        "risk-sizing"
+      ],
+      "exportBytes": 4200921,
+      "importBytes": 4200818,
+      "notesEqual": true,
+      "persisted": true,
+      "progress": [
+        "volume"
+      ]
+    },
+    "notebookSmallQA": {
+      "bookmarksEqual": true,
+      "bytes": 410,
+      "message": "Backup merged into your notebook",
+      "notesEqual": true,
+      "progressEqual": true
+    },
+    "desktopNavQA": {
+      "height": 685,
+      "lastLinkReachable": true,
+      "links": 20,
+      "max": "685px",
+      "viewport": 800
+    },
+    "mobileNav320": {
+      "contentsClosed": true,
+      "contentsLinks": 19,
+      "focus": "sources",
+      "headerVisible": true,
+      "ledgerRows": 36,
+      "overflow": false,
+      "persistentButtonY": 14.6015625,
+      "route": "#/chapter/case-studies/at/sources",
+      "width": 320,
+      "workspaceHeight": 535,
+      "workspaceOpen": true
+    },
+    "mobileNav390": {
+      "headerVisible": true,
+      "links": 19,
+      "rows": 36,
+      "width": 390
+    },
+    "mobileNav768": {
+      "buttonTop": 20.6015625,
+      "closed": true,
+      "focus": "sources",
+      "links": 19,
+      "overflow": false,
+      "route": "#/chapter/case-studies/at/sources",
+      "width": 768
+    },
+    "sectionDeepLinkQA": {
+      "focus": "section-the-price-of-smoothing-is-delay",
+      "hash": "#/chapter/moving-averages/at/section-the-price-of-smoothing-is-delay",
+      "resume": "section-the-price-of-smoothing-is-delay",
+      "text": "The price of smoothing is delay",
+      "y": 115.1796875
+    },
+    "resumeQA": {
+      "focus": "section-the-price-of-smoothing-is-delay",
+      "hash": "#/chapter/moving-averages/at/section-the-price-of-smoothing-is-delay",
+      "text": "The price of smoothing is delay",
+      "y": 115.1796875
+    },
+    "glossaryDeepLinkQA": {
+      "focus": "term-r-multiple",
+      "hash": "#/glossary/at/term-r-multiple",
+      "text": "R multipleIn this edition, net trade P&L after costs divided by frozen filled-position price-risk: actual filled shares × (entry fill price − original stop) for a long position. Costs are excluded from this denominator; the maximum order risk budget is a different quantity. State any alternative convention explicitly; an unfilled order has no position-specific R.Read in context →",
+      "y": 89.8125
+    },
+    "evidenceDeepLinkQA": {
+      "contents": 36,
+      "duplicateIds": [],
+      "focus": "supportive-stock-evidence-cross-sectional-momentum-a-specified-stock-momentum-portfolio-showed-positive-historical-returns",
+      "heading": "A specified stock momentum portfolio showed positive historical returns",
+      "navigation": true,
+      "study": 5,
+      "y": 89.859375
+    },
+    "contrastQA": [
+      {
+        "inkSurface": 12.295,
+        "mutedPaper": 6.069,
+        "mutedSidebar": 5.724,
+        "mutedSurface": 6.451,
+        "series": [
+          {
+            "color": "green",
+            "contrast": 9.457,
+            "hex": "#234d3d"
+          },
+          {
+            "color": "rust",
+            "contrast": 5.339,
+            "hex": "#a6523e"
+          },
+          {
+            "color": "gold",
+            "contrast": 4.07,
+            "hex": "#927b38"
+          },
+          {
+            "color": "muted",
+            "contrast": 6.451,
+            "hex": "#586057"
+          }
+        ],
+        "theme": "light"
+      },
+      {
+        "inkSurface": 11.627,
+        "mutedPaper": 7.686,
+        "mutedSidebar": 7.87,
+        "mutedSurface": 6.764,
+        "series": [
+          {
+            "color": "green",
+            "contrast": 8.028,
+            "hex": "#a7cba9"
+          },
+          {
+            "color": "rust",
+            "contrast": 6.125,
+            "hex": "#e29780"
+          },
+          {
+            "color": "gold",
+            "contrast": 7.738,
+            "hex": "#d7bc74"
+          },
+          {
+            "color": "muted",
+            "contrast": 6.764,
+            "hex": "#acb5a5"
+          }
+        ],
+        "theme": "dark"
+      }
+    ],
+    "labQA": [
+      {
+        "chapter": "moving-averages",
+        "destination": "#/lab/average",
+        "selected": "Moving averages"
+      },
+      {
+        "chapter": "risk-sizing",
+        "destination": "#/lab/risk",
+        "selected": "Position sizing"
+      }
+    ],
+    "historyQA": {
+      "back": "#/chapter/moving-averages",
+      "focus": "section-the-price-of-smoothing-is-delay",
+      "forward": "#/chapter/moving-averages/at/section-the-price-of-smoothing-is-delay",
+      "noteRetained": true,
+      "quizRetained": true,
+      "route": "#/chapter/moving-averages/at/section-the-price-of-smoothing-is-delay"
+    },
+    "searchQA": [
+      {
+        "count": "2 matching locations · all results shown",
+        "first": [
+          "#/chapter/case-studies/at/section-a-calendar-selected-historical-gallery-freeze-the-procedure-first",
+          "#/chapter/case-studies/at/section-aapl-march-favorable-follow-through"
+        ],
+        "links": 2,
+        "query": "2016-03-03"
+      },
+      {
+        "count": "4 matching locations · all results shown",
+        "first": [
+          "#/evidence/at/momentum-research-boundary-a-specified-stock-momentum-portfolio-showed-positive-historical-returns",
+          "#/evidence/at/relative-strength-research-boundary-a-specified-stock-momentum-portfolio-showed-positive-historical-returns",
+          "#/evidence/at/evidence-supportive-stock-evidence-cross-sectional-momentum",
+          "#/evidence/at/supportive-stock-evidence-cross-sectional-momentum-a-specified-stock-momentum-portfolio-showed-positive-historical-returns"
+        ],
+        "links": 4,
+        "query": "9.29%"
+      },
+      {
+        "count": "1 matching locations · all results shown",
+        "first": [
+          "#/chapter/market-microstructure/at/practice-a-partial-fill-under-a-tighter-limit"
+        ],
+        "links": 1,
+        "query": "32.08"
+      },
+      {
+        "count": "100 matching locations · all results shown",
+        "first": [
+          "#/chapter/market-language/at/section-your-route-through-a-stocks-first-book",
+          "#/chapter/market-language/at/section-observation-interpretation-rule",
+          "#/chapter/market-language/at/section-a-first-execution-and-loss-budget-primer",
+          "#/chapter/volume/at/section-every-transaction-has-two-sides"
+        ],
+        "links": 100,
+        "query": "risk"
+      }
+    ],
+    "skip#/": {
+      "focus": "main",
+      "route": "#/",
+      "title": "Market Atlas — A field guide to technical analysis"
+    },
+    "skip#/chapter/chart-anatomy": {
+      "focus": "main",
+      "route": "#/chapter/chart-anatomy",
+      "title": "Anatomy of a stock chart — Market Atlas"
+    },
+    "skip#/glossary": {
+      "focus": "main",
+      "route": "#/glossary",
+      "title": "Glossary — Market Atlas"
+    }
+  }
+}

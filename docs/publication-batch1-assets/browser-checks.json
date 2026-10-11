@@ -1,0 +1,335 @@
+{
+  "date": "2026-10-02",
+  "reviewer": "/root",
+  "browser": "T3 collaborative preview; actual viewport resize and native DOM interactions",
+  "scope": "Five chapter routes at 1280/390/320 CSS px. Evaluation-driven disclosure and quiz activation; no native printer validation. Earlier initial snapshot succeeded; a later snapshot failed and was inspected.",
+  "results": [
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "market-language",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "The language of the market — Market Atlas",
+      "width": 1280
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "chart-anatomy",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "Anatomy of a stock chart — Market Atlas",
+      "width": 1280
+    },
+    {
+      "changedTaskPresent": true,
+      "closedSolutionsInitially": true,
+      "cutoff": {
+        "closed": true,
+        "visibleLaterToken": false,
+        "visibleSectionCount": 2
+      },
+      "expectedFigures": 3,
+      "figureCount": 3,
+      "id": "breakouts",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 5,
+      "svgClips": [],
+      "title": "Breakouts, pullbacks & failed moves — Market Atlas",
+      "width": 1280
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "risk-sizing",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "Risk & position sizing — Market Atlas",
+      "width": 1280
+    },
+    {
+      "changedTaskPresent": true,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "trade-plans",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 4,
+      "svgClips": [],
+      "title": "From chart idea to trade plan — Market Atlas",
+      "width": 1280
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "market-language",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "The language of the market — Market Atlas",
+      "width": 390
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "chart-anatomy",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "Anatomy of a stock chart — Market Atlas",
+      "width": 390
+    },
+    {
+      "changedTaskPresent": true,
+      "closedSolutionsInitially": true,
+      "cutoff": {
+        "closed": true,
+        "visibleLaterToken": false,
+        "visibleSectionCount": 2
+      },
+      "expectedFigures": 3,
+      "figureCount": 3,
+      "id": "breakouts",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 5,
+      "svgClips": [],
+      "title": "Breakouts, pullbacks & failed moves — Market Atlas",
+      "width": 390
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "risk-sizing",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "Risk & position sizing — Market Atlas",
+      "width": 390
+    },
+    {
+      "changedTaskPresent": true,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "trade-plans",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 4,
+      "svgClips": [],
+      "title": "From chart idea to trade plan — Market Atlas",
+      "width": 390
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "market-language",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "The language of the market — Market Atlas",
+      "width": 320
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "chart-anatomy",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "Anatomy of a stock chart — Market Atlas",
+      "width": 320
+    },
+    {
+      "changedTaskPresent": true,
+      "closedSolutionsInitially": true,
+      "cutoff": {
+        "closed": true,
+        "visibleLaterToken": false,
+        "visibleSectionCount": 2
+      },
+      "expectedFigures": 3,
+      "figureCount": 3,
+      "id": "breakouts",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 5,
+      "svgClips": [],
+      "title": "Breakouts, pullbacks & failed moves — Market Atlas",
+      "width": 320
+    },
+    {
+      "changedTaskPresent": null,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "risk-sizing",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 3,
+      "svgClips": [],
+      "title": "Risk & position sizing — Market Atlas",
+      "width": 320
+    },
+    {
+      "changedTaskPresent": true,
+      "closedSolutionsInitially": true,
+      "cutoff": null,
+      "expectedFigures": 2,
+      "figureCount": 2,
+      "id": "trade-plans",
+      "missingInputCells": [],
+      "overflow": false,
+      "quizFeedback": [
+        true,
+        true,
+        true
+      ],
+      "sectionParagraphMatch": true,
+      "solutionMatch": true,
+      "solutions": 4,
+      "svgClips": [],
+      "title": "From chart idea to trade plan — Market Atlas",
+      "width": 320
+    }
+  ]
+}

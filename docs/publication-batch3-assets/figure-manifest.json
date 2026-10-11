@@ -1,0 +1,178 @@
+[
+  {
+    "name": "candlestick-patterns-1-260",
+    "title": "Candle geometry: valid shapes and near misses",
+    "width": 260,
+    "height": 1955,
+    "panels": 4,
+    "raster": "candlestick-patterns-1-260.png",
+    "svgSha256": "c62f8c39a1e01ab951206aeed42158a9544ccc452c35d4ec52730793d350dac5",
+    "caption": "Every OHLC value is supplied in the chapter tables. Changing one input can change classification without changing the candle’s color. The hammer context panel includes the prior declining closes.",
+    "rasterSha256": "499c5b35fd472f8347de235b1caa9147b52a1f1d6d2f2a8db65dfec14c78799e"
+  },
+  {
+    "name": "candlestick-patterns-1-760",
+    "title": "Candle geometry: valid shapes and near misses",
+    "width": 760,
+    "height": 1864,
+    "panels": 4,
+    "raster": "candlestick-patterns-1-760.png",
+    "svgSha256": "36dfa6b991ac8df7ee5a1842c484efc5a206c9e632f59f52df989fc2fbf446ea",
+    "caption": "Every OHLC value is supplied in the chapter tables. Changing one input can change classification without changing the candle’s color. The hammer context panel includes the prior declining closes.",
+    "rasterSha256": "553fbc3f8fee4a6493c5ce0cdd5f9c296dbee4e9080c59c6c04180115cbeb395"
+  },
+  {
+    "name": "candlestick-patterns-2-260",
+    "title": "Body engulfing versus full-range coverage",
+    "width": 260,
+    "height": 982,
+    "panels": 2,
+    "raster": "candlestick-patterns-2-260.png",
+    "svgSha256": "13dea7bf34aac1090d676c65c1c4ee6a2dae95dbabaf5ade5c3fad83f8aa937e",
+    "caption": "Left pair: the second body 49.80–52.20 engulfs 50–52 while the second full range 49.50–52.50 does not cover 49–53. Right pair changes only the second close to 51.90, creating a body near miss.",
+    "rasterSha256": "f32139f99231b6875d0944dc6e4f79240fe898203040f7d182f1502bee70d967"
+  },
+  {
+    "name": "candlestick-patterns-2-760",
+    "title": "Body engulfing versus full-range coverage",
+    "width": 760,
+    "height": 938,
+    "panels": 2,
+    "raster": "candlestick-patterns-2-760.png",
+    "svgSha256": "ad0e8016d01084658ccbc436503937e70e13c127bebc86701a96f855cf80cc3a",
+    "caption": "Left pair: the second body 49.80–52.20 engulfs 50–52 while the second full range 49.50–52.50 does not cover 49–53. Right pair changes only the second close to 51.90, creating a body near miss.",
+    "rasterSha256": "4e733a0697cd761796e88c8f3b1bfcebb747e7c12b569bf0375dc046fae6e3be"
+  },
+  {
+    "name": "candlestick-patterns-3-260",
+    "title": "Do not collapse geometry, confirmation and outcome",
+    "width": 260,
+    "height": 787,
+    "panels": 2,
+    "raster": "candlestick-patterns-3-260.png",
+    "svgSha256": "2e5c38dd4a4321f4ed4f7ec99cba2f6ae2c9141995ef9b6f0dbec32518052573",
+    "caption": "Alternative fictional continuations share the same hammer-like candle. Read each branch from its own starting point; branch B does not follow branch A.",
+    "rasterSha256": "c85b331a0886f09407fe019c9eaafd74f6b453aa3cc13accc61d3a91a9005653"
+  },
+  {
+    "name": "candlestick-patterns-3-760",
+    "title": "Do not collapse geometry, confirmation and outcome",
+    "width": 760,
+    "height": 634,
+    "panels": 2,
+    "raster": "candlestick-patterns-3-760.png",
+    "svgSha256": "b68acfb6cc606b71ee01580fd51f40e34bc2c174f7bcb1240c8059172a821633",
+    "caption": "Alternative fictional continuations share the same hammer-like candle. Read each branch from its own starting point; branch B does not follow branch A.",
+    "rasterSha256": "e9ce8dae31781703e8d8e2ade2a4f965a0a005812c6847d36bdebecd740d8b26"
+  },
+  {
+    "name": "candlestick-patterns-4-260",
+    "title": "The three completed candles at the D3 cutoff",
+    "width": 260,
+    "height": 412,
+    "panels": 1,
+    "raster": "candlestick-patterns-4-260.png",
+    "svgSha256": "072d610eaf851b4368b86629c8d057f9d99f856767e64ac51930e91a603fba6a",
+    "caption": "Fictional regular-session OHLC. All three intervals have completed; no fourth interval or later branch is displayed. Neutral session labels do not supply the shape classification.",
+    "rasterSha256": "67bd09ee45f0c5933afc2a187df3b5e8836e004a1941e6a77f5b862c8eceef7c"
+  },
+  {
+    "name": "candlestick-patterns-4-760",
+    "title": "The three completed candles at the D3 cutoff",
+    "width": 760,
+    "height": 400,
+    "panels": 1,
+    "raster": "candlestick-patterns-4-760.png",
+    "svgSha256": "377cd2501e184e946b8d43ad7771c34a0c607bf5ae576c13c655943801c982c2",
+    "caption": "Fictional regular-session OHLC. All three intervals have completed; no fourth interval or later branch is displayed. Neutral session labels do not supply the shape classification.",
+    "rasterSha256": "e0e27f8f971c1f401d7027c889d4a421369e06670f9bb110051475d4228717a5"
+  },
+  {
+    "name": "chart-patterns-1-260",
+    "title": "Identical candidate, two different later branches",
+    "width": 260,
+    "height": 1372,
+    "panels": 3,
+    "raster": "chart-patterns-1-260.png",
+    "svgSha256": "8de6541711c786fc24ac8b7252d8ee9070e1575cabb6969af07cfb57985d00a7",
+    "caption": "Supplied closes share D1–D11. Peaks 60 and 59.50 fit the declared tolerance; trough 54 is the completion boundary. The candidate at D11, completed branch A, and invalidated branch B are distinct states.",
+    "rasterSha256": "1a8fa8042f908657631d438ccc607d64498aa0ba44b613f3fd01e3c2dbb68d0b"
+  },
+  {
+    "name": "chart-patterns-1-760",
+    "title": "Identical candidate, two different later branches",
+    "width": 760,
+    "height": 1482,
+    "panels": 3,
+    "raster": "chart-patterns-1-760.png",
+    "svgSha256": "f6bae58fd37f75a0d2f25a2fad773e062f924ed48bb0dc65dec4e479e89c404b",
+    "caption": "Supplied closes share D1–D11. Peaks 60 and 59.50 fit the declared tolerance; trough 54 is the completion boundary. The candidate at D11, completed branch A, and invalidated branch B are distinct states.",
+    "rasterSha256": "866f3d69ba454eda3603c4cc898bbc1c7a7463dffc563733a1caed2d96f0aa45"
+  },
+  {
+    "name": "chart-patterns-2-260",
+    "title": "Boundary families: candidate prefix and alternative exits",
+    "width": 260,
+    "height": 3233,
+    "panels": 6,
+    "raster": "chart-patterns-2-260.png",
+    "svgSha256": "495fe2bcb083d6d6fa5b1b0f7667b39a42ffa2ab0644c3261ca30e3528b70f7b",
+    "caption": "Optional-looking catalogue used for the core range/contraction comparison. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.",
+    "rasterSha256": "f972b844fe8c5ef5c135642ca9796f1a67b66491e0b5265c26473db1c0369988"
+  },
+  {
+    "name": "chart-patterns-2-760",
+    "title": "Boundary families: candidate prefix and alternative exits",
+    "width": 760,
+    "height": 3324,
+    "panels": 6,
+    "raster": "chart-patterns-2-760.png",
+    "svgSha256": "83210d2ae01a6db56e0cf9652d6ba2abd3bdb7c369f85a5b16c744bc92bed179",
+    "caption": "Optional-looking catalogue used for the core range/contraction comparison. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.",
+    "rasterSha256": "2eddd7617c2dfabda993efe6c1b2506710405bdce23e6baa91acff54483efc8b"
+  },
+  {
+    "name": "chart-patterns-3-260",
+    "title": "Optional mirrored and multi-peak reference families",
+    "width": 260,
+    "height": 1438,
+    "panels": 3,
+    "raster": "chart-patterns-3-260.png",
+    "svgSha256": "9611430f24766f6a9e2b266b68946b7061a1131ec52d84b0dd8922318e6a7a6d",
+    "caption": "Each case supplies one candidate prefix and two branches. The double-bottom candidate and completed branch mirror the core closes as 110 minus price; its invalidated branch is separately supplied. Head/shoulders diagrams use the dated 55/56 trough neckline (inverted D4 = $55/D8 = $54 for the bottom); these catalogue sketches do not specify a full recognition detector.",
+    "rasterSha256": "9bf25b4608a6b9b0e9258e44487b3a6d59e1fc3e379a8a617aca139904b2e73e"
+  },
+  {
+    "name": "chart-patterns-3-760",
+    "title": "Optional mirrored and multi-peak reference families",
+    "width": 760,
+    "height": 1530,
+    "panels": 3,
+    "raster": "chart-patterns-3-760.png",
+    "svgSha256": "923d2b81bfc35be80260ce9618c8817b46aba21e99426ff1663e7532d7285911",
+    "caption": "Each case supplies one candidate prefix and two branches. The double-bottom candidate and completed branch mirror the core closes as 110 minus price; its invalidated branch is separately supplied. Head/shoulders diagrams use the dated 55/56 trough neckline (inverted D4 = $55/D8 = $54 for the bottom); these catalogue sketches do not specify a full recognition detector.",
+    "rasterSha256": "d0a63c2c2523b8ceb50a1e7ec19278ffde404edfaab5f35cde3254fc6046fdf3"
+  },
+  {
+    "name": "chart-patterns-4-260",
+    "title": "The unlabelled D1–D11 close path",
+    "width": 260,
+    "height": 345,
+    "panels": 1,
+    "raster": "chart-patterns-4-260.png",
+    "svgSha256": "6e2353779af5631fe68017df4bda894c4d822a634123673d78eaf3bd1ed7d258",
+    "caption": "Fictional completed closes only. The reader must construct the swings and any transition boundary; no D12 continuation, peak annotation or answer line is included.",
+    "rasterSha256": "4a3506e2f2e23b2e4236d1f767466d1bd5dd090236214d7f686699dbe595ab45"
+  },
+  {
+    "name": "chart-patterns-4-760",
+    "title": "The unlabelled D1–D11 close path",
+    "width": 760,
+    "height": 395,
+    "panels": 1,
+    "raster": "chart-patterns-4-760.png",
+    "svgSha256": "18181175b354620e35e80b8082a610b585cfb7ba94e5163f314b8cad0def11e1",
+    "caption": "Fictional completed closes only. The reader must construct the swings and any transition boundary; no D12 continuation, peak annotation or answer line is included.",
+    "rasterSha256": "408109af45969de0ef2f0a273b49ca4f93f5a422e135026bc21a9ca10681712f"
+  }
+]

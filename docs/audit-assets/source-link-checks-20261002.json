@@ -1,0 +1,434 @@
+[
+  {
+    "id": "fp-intro",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-is-technical-analysis",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-is-technical-analysis"
+  },
+  {
+    "id": "fp-charts",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-are-charts",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-are-charts"
+  },
+  {
+    "id": "fp-trends",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/basic-concepts-trend",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/basic-concepts-trend"
+  },
+  {
+    "id": "fp-levels",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance"
+  },
+  {
+    "id": "fp-volume",
+    "url": "https://www.fidelity.com/viewpoints/active-investor/stock-volume",
+    "status": 200,
+    "final": "https://www.fidelity.com/viewpoints/active-investor/stock-volume"
+  },
+  {
+    "id": "fp-orders",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders"
+  },
+  {
+    "id": "fp-sessions",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42"
+  },
+  {
+    "id": "fp-actions",
+    "url": "https://www.finra.org/investors/insights/corporate-actions-public-companies-what-you-should-know",
+    "status": 200,
+    "final": "https://www.finra.org/investors/insights/corporate-actions-public-companies-what-you-should-know"
+  },
+  {
+    "id": "fp-scale",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/what-are-charts",
+    "status": 200,
+    "final": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/what-are-charts"
+  },
+  {
+    "id": "fp-candles",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-charts/introduction-to-candlesticks",
+    "status": 200,
+    "final": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-charts/introduction-to-candlesticks"
+  },
+  {
+    "id": "fp-patterns",
+    "url": "https://media.fidelity.com/assets/Fidelity.com_VMS/904/347/TA_Session_3_Identifying_Chart_Patterns.pdf",
+    "status": 200,
+    "final": "https://media.fidelity.com/assets/Fidelity.com_VMS/904/347/TA_Session_3_Identifying_Chart_Patterns.pdf"
+  },
+  {
+    "id": "fp-doubletop",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal",
+    "status": 200,
+    "final": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal"
+  },
+  {
+    "id": "fp-headshoulders",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/head-and-shoulders-top",
+    "status": 200,
+    "final": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/head-and-shoulders-top"
+  },
+  {
+    "id": "fp-flags",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/flag-pennant",
+    "status": 200,
+    "final": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/flag-pennant"
+  },
+  {
+    "id": "fp-research",
+    "url": "https://www.nber.org/papers/w7613",
+    "status": 200,
+    "final": "https://www.nber.org/papers/w7613"
+  },
+  {
+    "id": "fp-quotes",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price"
+  },
+  {
+    "id": "fp-triangle",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/symmetrical-triangle",
+    "status": 200,
+    "final": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/symmetrical-triangle"
+  },
+  {
+    "id": "fp-breakoutareas",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance",
+    "status": 200,
+    "final": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+  },
+  {
+    "id": "fp-order-bulletin",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14"
+  },
+  {
+    "id": "ic-sma",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma"
+  },
+  {
+    "id": "ic-ema",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema"
+  },
+  {
+    "id": "ic-rsi",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/rsi",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/rsi"
+  },
+  {
+    "id": "ic-macd",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd"
+  },
+  {
+    "id": "ic-atr",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr"
+  },
+  {
+    "id": "ic-bands",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands"
+  },
+  {
+    "id": "ic-obv",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv"
+  },
+  {
+    "id": "ic-fibonacci",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fibonacci-retracement",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fibonacci-retracement"
+  },
+  {
+    "id": "ic-relative",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/relative-strength-comparison",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/relative-strength-comparison"
+  },
+  {
+    "id": "ic-vwap",
+    "url": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/",
+    "status": 200,
+    "final": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/"
+  },
+  {
+    "id": "ic-breadth",
+    "url": "https://www.fidelity.com/webcontent/ap002390-mlo-content/18.04/help/help_definition_a.shtml",
+    "status": 200,
+    "final": "https://www.fidelity.com/webcontent/ap002390-mlo-content/18.04/help/help_definition_a.shtml"
+  },
+  {
+    "id": "ic-timeframes",
+    "url": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/",
+    "status": 200,
+    "final": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/"
+  },
+  {
+    "id": "ic-hours",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42"
+  },
+  {
+    "id": "ic-orders",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders"
+  },
+  {
+    "id": "ic-auctions",
+    "url": "https://www.nyse.com/trade/auctions",
+    "status": 200,
+    "final": "https://www.nyse.com/trade/auctions"
+  },
+  {
+    "id": "ic-splits",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split"
+  },
+  {
+    "id": "ic-rsi-smoothing",
+    "url": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/",
+    "status": 200,
+    "final": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/"
+  },
+  {
+    "id": "ic-dividends",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ex-dividend-dates-when-are-you-entitled-stock-and",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ex-dividend-dates-when-are-you-entitled-stock-and"
+  },
+  {
+    "id": "ic-execution",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/executing-order",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/executing-order"
+  },
+  {
+    "id": "ic-spread",
+    "url": "https://syndication.finra.org/content/understanding-disclosure-documents",
+    "status": 200,
+    "final": "https://syndication.finra.org/content/understanding-disclosure-documents"
+  },
+  {
+    "id": "ic-roc",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc",
+    "status": 200,
+    "final": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc"
+  },
+  {
+    "id": "ic-ema-weight",
+    "url": "https://www.tradingview.com/support/solutions/43000502589-moving-averages/",
+    "status": 200,
+    "final": "https://www.tradingview.com/support/solutions/43000502589-moving-averages/"
+  },
+  {
+    "id": "ic-profile",
+    "url": "https://www.tradingview.com/support/solutions/43000502040-volume-profile-indicators-basic-concepts/",
+    "status": 200,
+    "final": "https://www.tradingview.com/support/solutions/43000502040-volume-profile-indicators-basic-concepts/"
+  },
+  {
+    "id": "ic-order-details",
+    "url": "https://www.sec.gov/files/trading101basics.pdf",
+    "status": 403
+  },
+  {
+    "id": "ic-macd-details",
+    "url": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/",
+    "status": 200,
+    "final": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/"
+  },
+  {
+    "id": "ra-orders",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14"
+  },
+  {
+    "id": "ra-performance",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47"
+  },
+  {
+    "id": "ra-behavior",
+    "url": "https://www.sec.gov/investor/tools/behaviorialpatterns.htm",
+    "status": 403
+  },
+  {
+    "id": "ra-overfit",
+    "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+    "status": 200,
+    "final": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf"
+  },
+  {
+    "id": "ra-pattern-research",
+    "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+    "status": 200,
+    "final": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf"
+  },
+  {
+    "id": "ra-nist",
+    "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+    "status": 200,
+    "final": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+  },
+  {
+    "id": "ra-pvalue",
+    "url": "https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm",
+    "status": 200,
+    "final": "https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm"
+  },
+  {
+    "id": "ra-sharpe",
+    "url": "https://web.stanford.edu/~wfsharpe/art/sr/sr.htm",
+    "status": 200,
+    "final": "https://web.stanford.edu/~wfsharpe/art/sr/sr.htm"
+  },
+  {
+    "id": "ra-dow",
+    "url": "https://cmtassociation.org/technically_speaking/technically-speaking-september-2016/",
+    "status": 200,
+    "final": "https://cmtassociation.org/technically_speaking/technically-speaking-september-2016/"
+  },
+  {
+    "id": "ra-wyckoff",
+    "url": "https://www.wyckoffanalytics.com/wyckoff-method/",
+    "status": 200,
+    "final": "https://www.wyckoffanalytics.com/wyckoff-method/"
+  },
+  {
+    "id": "ra-elliott",
+    "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+    "status": 403
+  },
+  {
+    "id": "ra-elliott-rules",
+    "url": "https://www.elliottwave.com/waveopedia/impulse/",
+    "status": 403
+  },
+  {
+    "id": "ra-elliott-constraints",
+    "url": "https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/",
+    "status": 200,
+    "final": "https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/"
+  },
+  {
+    "id": "ra-dow-reference",
+    "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+    "status": 200,
+    "final": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/"
+  },
+  {
+    "id": "ra-wilson-dataplot",
+    "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm",
+    "status": 200,
+    "final": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm"
+  },
+  {
+    "id": "ra-halts",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+    "status": 200,
+    "final": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays"
+  },
+  {
+    "id": "ra-wyckoff-text",
+    "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+    "status": 200,
+    "final": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf"
+  },
+  {
+    "id": "ra-confidence-mean",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+    "status": 200,
+    "final": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+  },
+  {
+    "id": "rc-jt",
+    "url": "https://www.bauer.uh.edu/rsusmel/phd/jegadeesh-titman93.pdf",
+    "status": 200,
+    "final": "https://www.bauer.uh.edu/rsusmel/phd/jegadeesh-titman93.pdf"
+  },
+  {
+    "id": "rc-ts",
+    "url": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+    "status": 200,
+    "final": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf"
+  },
+  {
+    "id": "rc-bs",
+    "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+    "status": 200,
+    "final": "https://scaillet.ch/pdfs/BajSca.pdf"
+  },
+  {
+    "id": "rc-lo",
+    "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+    "status": 200,
+    "final": "https://www.mit.edu/~alo/Papers/1705-1765.pdf"
+  },
+  {
+    "id": "rc-os",
+    "url": "https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr125.pdf",
+    "status": 200,
+    "final": "https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr125.pdf"
+  },
+  {
+    "id": "rc-bo",
+    "url": "https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf",
+    "status": 200,
+    "final": "https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf"
+  },
+  {
+    "id": "rc-sec-case",
+    "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+    "status": 403
+  },
+  {
+    "id": "rc-sec-reuse",
+    "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+    "status": 403
+  },
+  {
+    "id": "rc-apple-split",
+    "url": "https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/",
+    "status": 200,
+    "final": "https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/"
+  },
+  {
+    "id": "rc-open-stock-archive",
+    "url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+    "status": 200,
+    "final": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs"
+  },
+  {
+    "id": "rc-cc0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "status": 200,
+    "final": "https://creativecommons.org/publicdomain/zero/1.0/"
+  }
+]

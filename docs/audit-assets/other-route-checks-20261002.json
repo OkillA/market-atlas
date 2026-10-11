@@ -1,0 +1,122 @@
+[
+  {
+    "route": "contents",
+    "bodyWords": 816,
+    "figures": 0,
+    "h1": "The table of contents",
+    "title": "Contents — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "practice/foundations",
+    "bodyWords": 178,
+    "figures": 0,
+    "h1": "Turn a chart into a reproducible observation",
+    "title": "Turn a chart into a reproducible observation — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "practice/price-action",
+    "bodyWords": 203,
+    "figures": 0,
+    "h1": "Write an analysis with the next bars covered",
+    "title": "Write an analysis with the next bars covered — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "practice/indicators",
+    "bodyWords": 166,
+    "figures": 0,
+    "h1": "Indicator review: calculate, compare, explain",
+    "title": "Indicator review: calculate, compare, explain — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "practice/context",
+    "bodyWords": 158,
+    "figures": 0,
+    "h1": "Context review: participation, clock, and execution",
+    "title": "Context review: participation, clock, and execution — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "practice/risk",
+    "bodyWords": 169,
+    "figures": 0,
+    "h1": "Process review: one complete record, from budget to review",
+    "title": "Process review: one complete record, from budget to review — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "practice/advanced",
+    "bodyWords": 197,
+    "figures": 0,
+    "h1": "Evidence review: evaluate a claim, then process a system",
+    "title": "Evidence review: evaluate a claim, then process a system — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "lab/candle",
+    "bodyWords": 128,
+    "figures": 1,
+    "h1": "The chart playground",
+    "title": "Chart playground — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "lab/trend",
+    "bodyWords": 107,
+    "figures": 1,
+    "h1": "The chart playground",
+    "title": "Chart playground — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "lab/average",
+    "bodyWords": 131,
+    "figures": 1,
+    "h1": "The chart playground",
+    "title": "Chart playground — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "lab/risk",
+    "bodyWords": 165,
+    "figures": 0,
+    "h1": "The chart playground",
+    "title": "Chart playground — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "glossary",
+    "bodyWords": 2166,
+    "figures": 0,
+    "h1": "The language, explained.",
+    "title": "Glossary — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "notebook",
+    "bodyWords": 109,
+    "figures": 0,
+    "h1": "Keep what you learn.",
+    "title": "My notebook — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "about",
+    "bodyWords": 2094,
+    "figures": 0,
+    "h1": "A book that lives\nin your browser.",
+    "title": "About this edition — Market Atlas",
+    "width": 390
+  },
+  {
+    "route": "evidence",
+    "bodyWords": 14478,
+    "figures": 0,
+    "h1": "The evidence behind the book",
+    "title": "Evidence matrix — Market Atlas",
+    "width": 390
+  }
+]

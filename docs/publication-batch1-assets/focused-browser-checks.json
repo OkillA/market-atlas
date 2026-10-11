@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-02",
+  "reviewer": "/root",
+  "exactTableChecks": [
+    {
+      "id": "market-language",
+      "tables": [
+        {
+          "cells": 9,
+          "match": true,
+          "rows": 3,
+          "title": "One quantity, three different amounts"
+        },
+        {
+          "cells": 8,
+          "match": true,
+          "rows": 2,
+          "title": "Same payoffs, different assumed frequencies"
+        }
+      ],
+      "width": 320
+    },
+    {
+      "id": "chart-anatomy",
+      "tables": [
+        {
+          "cells": 18,
+          "match": true,
+          "rows": 6,
+          "title": "Exact O100 / H108 / L98 / C105 measurements"
+        },
+        {
+          "cells": 15,
+          "match": true,
+          "rows": 5,
+          "title": "Same summary, different available sequence"
+        },
+        {
+          "cells": 8,
+          "match": true,
+          "rows": 2,
+          "title": "Exit order under the supplied route and exact-fill assumptions"
+        },
+        {
+          "cells": 12,
+          "match": true,
+          "rows": 4,
+          "title": "What each representation retains"
+        }
+      ],
+      "width": 320
+    },
+    {
+      "id": "breakouts",
+      "tables": [
+        {
+          "cells": 9,
+          "match": true,
+          "rows": 3,
+          "title": "One frozen rule, three supplied continuations"
+        },
+        {
+          "cells": 12,
+          "match": true,
+          "rows": 2,
+          "title": "Identical OHLC does not establish an intermediate traded touch"
+        },
+        {
+          "cells": 18,
+          "match": true,
+          "rows": 9,
+          "title": "Completed Harbor closes available through session 9 (fictional USD)"
+        },
+        {
+          "cells": 5,
+          "match": true,
+          "rows": 1,
+          "title": "Session-9 completed candle only (fictional USD)"
+        },
+        {
+          "cells": 18,
+          "match": true,
+          "rows": 9,
+          "title": "Harbor rules supplied before the continuation"
+        },
+        {
+          "cells": 4,
+          "match": true,
+          "rows": 2,
+          "title": "Complete unfamiliar eligible-price tapes (fictional USD)"
+        }
+      ],
+      "width": 320
+    },
+    {
+      "id": "risk-sizing",
+      "tables": [
+        {
+          "cells": 18,
+          "match": true,
+          "rows": 3,
+          "title": "Two sizing policies, one price-risk definition"
+        },
+        {
+          "cells": 32,
+          "match": true,
+          "rows": 4,
+          "title": "One shock across the proposed portfolio (all entries/marks equal here)"
+        }
+      ],
+      "width": 320
+    },
+    {
+      "id": "trade-plans",
+      "tables": [
+        {
+          "cells": 28,
+          "match": true,
+          "rows": 14,
+          "title": "BRDG-P1: completed plan, frozen after S0 close"
+        },
+        {
+          "cells": 15,
+          "match": true,
+          "rows": 3,
+          "title": "Separate S11 reopening branches after a halted S10 (fictional USD)"
+        }
+      ],
+      "width": 320
+    }
+  ],
+  "keyboardDeadline": {
+    "focused": "SUMMARY",
+    "open": true
+  },
+  "deepLinkTouch": {
+    "anchor": "#/chapter/breakouts/at/practice-a-traded-touch-needs-a-traded-price",
+    "continuationOpen": true,
+    "inputMatch": true,
+    "overflow": false,
+    "solutionOpened": false,
+    "tableHeaders": [
+      "Tape",
+      "All eligible trade prices, in order ($)"
+    ],
+    "tableRows": [
+      [
+        "C",
+        "72.30 → 72.00 → 73.60"
+      ],
+      [
+        "D",
+        "72.30 → 72.00 → 73.00 → 73.60"
+      ]
+    ],
+    "width": 320
+  },
+  "keyboardTouch": {
+    "answer": true,
+    "open": true
+  },
+  "screenshotAndPointerLimits": "Initial pre-build desktop snapshot succeeded. Later post-build snapshot/save and one pointer-click attempt failed through the preview client; they are not claimed as screenshot/pointer evidence. Native DOM measurements, resizing, navigation and the two keyboard Enter activations succeeded. No native printer check."
+}

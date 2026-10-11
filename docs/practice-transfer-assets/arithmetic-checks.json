@@ -1,0 +1,53 @@
+{
+  "momentum": [
+    {
+      "session": 0,
+      "macd": -1.0,
+      "histogram": -0.4
+    },
+    {
+      "session": 1,
+      "fast": 30.615384615384617,
+      "slow": 31.22222222222222,
+      "macd": -0.6068376068376068,
+      "signal": -0.6013675213675214,
+      "histogram": -0.00547008547008547
+    },
+    {
+      "session": 2,
+      "fast": 31.21301775147929,
+      "slow": 31.46502057613169,
+      "macd": -0.2520028246523973,
+      "signal": -0.5314945820244965,
+      "histogram": 0.27949175737209925
+    }
+  ],
+  "breadth": {
+    "index": 98.7,
+    "index_change_percent": -1.3,
+    "advances": 3,
+    "declines": 1,
+    "unchanged": 1,
+    "advancing_among_movers_percent": 75,
+    "advancing_among_all_percent": 60,
+    "smas": {
+      "A": 98.0,
+      "B": 102.0,
+      "C": 102.0,
+      "D": 101.0
+    },
+    "above_sma_percent": 25,
+    "eligible": 4
+  },
+  "events": {
+    "gap_percent": -5.625,
+    "frozen_R": 180,
+    "ordinary_stop_pnl": -270.0,
+    "ordinary_stop_R": -1.5,
+    "held_close_pnl": -240.0,
+    "held_close_R": -1.3333333333333333,
+    "case_A_high_below_limit": true,
+    "case_B_high_equals_limit": true
+  },
+  "method": "Independent Python Fraction reconstruction from the actual authoring practice input tables; JS verifier separately checks the new results and narrative tokens."
+}

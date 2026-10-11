@@ -1,0 +1,36 @@
+{
+  "renderer": "WeasyPrint A4, actual T3-native browser print DOM/CSS; not native printer pagination",
+  "editions": [
+    {
+      "edition": "chapter-6-learner",
+      "pages": 12,
+      "textOutsidePage": [],
+      "quizPages": [
+        11
+      ],
+      "printedQuizChoices": true
+    },
+    {
+      "edition": "chapter-6-answers",
+      "pages": 12,
+      "textOutsidePage": [],
+      "quizPages": [
+        12
+      ],
+      "printedQuizChoices": true
+    },
+    {
+      "edition": "chapter-28-learner",
+      "pages": 38,
+      "textOutsidePage": [],
+      "quizPages": [
+        37
+      ],
+      "printedQuizChoices": true
+    }
+  ],
+  "all36CalendarLedgerRowsComparedToAuthoring": true,
+  "learnerOmitsWorkedSolution": true,
+  "answerIncludesWorkedSolution": true,
+  "all62PagesContactSheetsVisuallyInspected": true
+}

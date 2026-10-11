@@ -1,0 +1,8 @@
+{
+  "recorded": "2026-10-02",
+  "timing": "After downloading and classifying the frozen cohort; not part of its frozen selection.",
+  "rule": "Among later bars in the original 36 windows, find an open strictly inside that window\u2019s fixed levels with high at/above upper and low at/below lower; select earliest date, then alphabetical symbol.",
+  "selected": "AAPL-2016-02 / 2016-02-05",
+  "question_cutoff": "After 2016-02-04; no carried position, trade or opening quote is assumed.",
+  "original_classification": "skipped; unchanged"
+}

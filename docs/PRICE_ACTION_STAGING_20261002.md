@@ -1,0 +1,35 @@
+# Price-action staging and cutoff search — 2026-10-02
+
+Resolved the reopened **AUD2-003** teaching gap in Chapters 7–9 and **AUD2-006** cutoff-search omission. The existing Chapters 6/22/26/28 packets and previous resolution records are preserved. CA1-026 remains deferred for actual human participation. This is a focused substantive pass, not a declaration that editorial work on the manuscript is finished.
+
+## Teaching change
+
+Chapter 7 now pauses after the completed D3 candle. The prerequisite lesson deliberately teaches the same geometry first, so this packet labels that calculation guided rehearsal. Its prospective task is separate: record the strict next-close threshold, observation time, current unknown state and missing execution information before either D4 branch appears. The continuation explicitly reconciles the frozen cutoff state. Neither a future close nor a retrospective fill at the D3 low is supplied before reveal.
+
+Chapter 8 teaches the double-top detector, then supplies eleven raw closes and an unannotated chart. Readers reconstruct confirmed swings, recognition times, spacing, tolerance, intervening reference and current state before the worked classification or either later branch. The introductory paragraph no longer tells the reader how the branches end.
+
+Chapter 9 supplies the nine known Harbor closes, session-9 OHLC and unchanged main-plan rules before asking for a cutoff instruction and cash/risk calculations. The full fourteen-close chart has moved after the execution-model section inside the continuation. The packet distinguishes the supplied main rule from later volume/retest comparisons and does not disclose the $52.20 next open or closing failure.
+
+All three packets contain raw charts and tables. They explicitly describe constructed contrasts, not prediction probabilities or recommended allocations. No empirical claim or external source has been added. Changed authoring content is confined to these three chapters; other top-level JSON fields are unchanged from the batch backup.
+
+## Reader and export support
+
+`learnerAttempt.afterSection` optionally identifies the last prerequisite section visible before the packet. The default remains −1, preserving the four earlier packets. `learnerAttempt.figures` uses the existing shared renderer and exports portable SVGs. Normal chapter figures follow their sections into the visible teaching or concealed continuation. Section/evidence IDs and existing practice titles are preserved.
+
+Closed chapter contents show prerequisite links and the attempt; outcome-bearing links appear after reveal. Prerequisite and cutoff deep links keep the continuation closed, while reference links open it. Search now indexes every cutoff title, paragraph, table and figure and routes matches to the visible cutoff packet. A small print CSS fix keeps practice labels with their headings instead of stranding them at page bottoms. The final asset marker is `20261002-price-action-2`.
+
+Changed authoring files: `content/foundations-price.json`, `app.js`, `styles.css`, `scripts/build-content.cjs`, `scripts/check-content.cjs`, `scripts/verify-early-chapters.cjs`, `docs/CONTENT_GUIDE.md`, `docs/REVISION_SCHEMA.md` and `index.html`. Rebuilt `content/book.js`, `docs/MANUSCRIPT.md`, `docs/EVIDENCE_MATRIX.md` and figure assets. One coordinated content rebuild, owned by /root; no other agent's review is claimed.
+
+## Verification and practical limits
+
+All three documented numerical verifiers pass. The early verifier now makes **610 comparisons**, including reconstruction from the actual new packet tables/charts: D3 B/R/U/D = $0.80/$4/$0.20/$3 with a strict next-close threshold of $51; D3/D6/D9 swings recognized at D5/D8/D11, six-step peak separation, 0.8333% difference, $54 reference and candidate-only D11 state; Harbor maximum cash reservation $2,542.50, price-risk 1R $100 and ordinary cost-inclusive stop loss $105. Normal and strict content checks and JavaScript syntax checks pass. The build contains 28 chapters and 71 portable figures. Actual manuscript order and new figure references were checked for all three chapters.
+
+Native T3 preview checks cover all seven packets at actual **390, 320 and 1280 CSS-pixel viewports**: exact input tables, prerequisite ordering, cutoff/reference deep links, closed contents, saved/restored notes, chart presence, search navigation and absence of page overflow. Desktop deep links were also tested through a new chapter render. All 35 packet title/passage/table/chart queries returned their actual cutoff locations. After the final stylesheet refresh, the new continuations fail `checkVisibility()` while closed and future price/outcome tokens are absent from the article's visible text. `getClientRects()` alone was unsuitable here because the browser retains layout boxes inside collapsed details; the visibility evidence uses the browser's visibility API and visible text instead. QA used localhost:4174 and restored attempt notes; localhost:4173 reader notes were not touched. [Browser checks](price-action-assets/browser-checks.json), [search checks](price-action-assets/search-checks.json), [visibility checks](price-action-assets/visibility-checks.json).
+
+The three new charts were rendered and visually inspected at **260 and 760 pixels**, including all candle values, chart bounds, axes, line styles and legends. Compact inputs remain readable and contain no later observations or computed answer annotations. Six chart PNGs/SVGs are in `price-action-assets/`.
+
+Using the PDF skill, captured actual native print-prepared DOM and rendered six focused learner/answer A4 samples in WeasyPrint: **48 pages** in total. Samples retain all prerequisite prose/tables, the cutoff packet/chart, a selected reconciliation section, practice and quiz. Unchanged normal figures and other reference sections are omitted; these are not complete chapter editions or native printer output. All latest page contact sheets were visually inspected, with the new chart renders inspected separately. Complete prerequisite/packet text and input cells are present, all solution paragraphs and quiz answers obey the edition policy, continuation starts after the last packet page, and no text extends beyond a page. Native print preparation opens reference/data, applies the solution policy, renders 760px light charts and restores the previous closed state afterward. [Print checks](price-action-assets/print-checks.json), native sample HTML and page/contact PNGs are retained in `price-action-assets/`; QA PDFs are scratch files in `tmp/pdfs/price-action/`.
+
+Native preview snapshots failed after retries; DOM inspection, interactions, navigation and actual resizing succeeded. No native screenshot, exhaustive device/printer validation, independent reviewer or human learning outcome is claimed. The human study remains deferred under CA1-026.
+
+Batch backup: `/var/folders/vc/79mjb1b52r3_k4l2j43_94xh0000gn/T/market-atlas-price-action-20261002-zku3oe3p` (pointer: `/tmp/market-atlas-price-action-backup-path.txt`).

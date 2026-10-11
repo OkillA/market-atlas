@@ -1,0 +1,212 @@
+[
+  {
+    "found": true,
+    "id": "support-resistance",
+    "kind": "title",
+    "query": "First pass: freeze the D12 map"
+  },
+  {
+    "found": true,
+    "id": "support-resistance",
+    "kind": "paragraph",
+    "query": "Work only from the construction data below before opening the chapter continuation"
+  },
+  {
+    "found": true,
+    "id": "support-resistance",
+    "kind": "table",
+    "query": "Construction closes, available through D12"
+  },
+  {
+    "found": true,
+    "id": "candlestick-patterns",
+    "kind": "title",
+    "query": "First pass: keep the D3 shape separate from its next close"
+  },
+  {
+    "found": true,
+    "id": "candlestick-patterns",
+    "kind": "paragraph",
+    "query": "The preceding sections teach the geometry"
+  },
+  {
+    "found": true,
+    "id": "candlestick-patterns",
+    "kind": "table",
+    "query": "Completed daily candles available after D3 (fictional USD)"
+  },
+  {
+    "found": true,
+    "id": "candlestick-patterns",
+    "kind": "figure",
+    "query": "The three completed candles at the D3 cutoff"
+  },
+  {
+    "found": true,
+    "id": "chart-patterns",
+    "kind": "title",
+    "query": "First pass: classify the D11 record before D12 exists"
+  },
+  {
+    "found": true,
+    "id": "chart-patterns",
+    "kind": "paragraph",
+    "query": "The rule sheet above supplies the detector; the table and chart below contain all eleven completed daily closes available at the D11 cutoff"
+  },
+  {
+    "found": true,
+    "id": "chart-patterns",
+    "kind": "table",
+    "query": "Completed closes available after D11 (fictional USD)"
+  },
+  {
+    "found": true,
+    "id": "chart-patterns",
+    "kind": "figure",
+    "query": "The unlabelled D1–D11 close path"
+  },
+  {
+    "found": true,
+    "id": "breakouts",
+    "kind": "title",
+    "query": "First pass: write the Harbor instruction at the session-9 close"
+  },
+  {
+    "found": true,
+    "id": "breakouts",
+    "kind": "paragraph",
+    "query": "The first two sections distinguish price fields and observation times"
+  },
+  {
+    "found": true,
+    "id": "breakouts",
+    "kind": "table",
+    "query": "Completed Harbor closes available through session 9 (fictional USD)"
+  },
+  {
+    "found": true,
+    "id": "breakouts",
+    "kind": "table",
+    "query": "Session-9 completed candle only (fictional USD)"
+  },
+  {
+    "found": true,
+    "id": "breakouts",
+    "kind": "table",
+    "query": "Harbor rules supplied before the continuation"
+  },
+  {
+    "found": true,
+    "id": "breakouts",
+    "kind": "figure",
+    "query": "Harbor observations available at the session-9 close"
+  },
+  {
+    "found": true,
+    "id": "psychology",
+    "kind": "title",
+    "query": "First pass: write an unfamiliar Q0 decision note"
+  },
+  {
+    "found": true,
+    "id": "psychology",
+    "kind": "paragraph",
+    "query": "For a fresh fictional stock LARK, the Q0 close supplies only O63.80/H64.70/L63.60/C64.40 and a previously frozen $64 boundary"
+  },
+  {
+    "found": true,
+    "id": "psychology",
+    "kind": "table",
+    "query": "Completed Q0 candle only (fictional USD)"
+  },
+  {
+    "found": true,
+    "id": "psychology",
+    "kind": "table",
+    "query": "L1: instructions frozen at Q0 (fictional paper study)"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "title",
+    "query": "First pass: reconcile the S4–S5 accounting replay"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "paragraph",
+    "query": "This worksheet begins from the supplied S3-close state"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "table",
+    "query": "Starting position state at S3 close (fictional USD; Fir mark stale)"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "table",
+    "query": "Atlas-20 v1.0 rule sheet, part 1: data, universe, and eligibility"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "table",
+    "query": "Atlas-20 v1.0 rule sheet, part 2: ranking, slots, sizing, and costs"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "table",
+    "query": "Atlas-20 v1.0 rule sheet, part 3: orders, fills, exits, and review"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "table",
+    "query": "Replay inputs: completed S4 and S5 bars (O/H/L/C, fictional USD)"
+  },
+  {
+    "found": true,
+    "id": "system-design",
+    "kind": "table",
+    "query": "Replay inputs: screen facts released at each decision close"
+  },
+  {
+    "found": true,
+    "id": "case-studies",
+    "kind": "title",
+    "query": "First pass: four historical cutoffs"
+  },
+  {
+    "found": true,
+    "id": "case-studies",
+    "kind": "paragraph",
+    "query": "Attempt each cutoff before revealing the casebook, outcome headings or complete calendar ledger"
+  },
+  {
+    "found": true,
+    "id": "case-studies",
+    "kind": "table",
+    "query": "AAPL-2016-01 — context and cutoff only (archive-adjusted USD)"
+  },
+  {
+    "found": true,
+    "id": "case-studies",
+    "kind": "table",
+    "query": "MSFT-2016-02 — context and cutoff only (archive-adjusted USD)"
+  },
+  {
+    "found": true,
+    "id": "case-studies",
+    "kind": "table",
+    "query": "AAPL-2016-03 — context and cutoff only (archive-adjusted USD)"
+  },
+  {
+    "found": true,
+    "id": "case-studies",
+    "kind": "table",
+    "query": "SPY-2016-10 — context and cutoff only (archive-adjusted USD)"
+  }
+]

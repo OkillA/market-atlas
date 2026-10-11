@@ -1,0 +1,14 @@
+{
+ "checked": "2026-10-03",
+ "reviewer": "claude-code-main",
+ "environment": "T3 Code collaborative browser (native Chromium tab, background), local python http.server 127.0.0.1:4173, freshly built book.js confirmed by in-page string check",
+ "method": "In-page script navigates each hash route, opens all <details>, and compares normalized main innerText with the loaded window.ATLAS data: every section paragraph, worked example, exercise, solution, practice question/solution, quiz question/options, and every teaching-table cell. Quiz feedback checked by clicking each option (1280px). SVG <text> bounding boxes compared with their SVG bounds; page overflow = documentElement.scrollWidth > innerWidth.",
+ "routes": ["#/chapter/moving-averages", "#/chapter/momentum", "#/chapter/volatility", "#/chapter/volume-tools", "#/chapter/fibonacci", "#/chapter/volume", "#/practice/indicators"],
+ "results": {
+  "1280": {"viewport": "top-level freeform 1280x800", "chapterStringsChecked": 183, "partStringsChecked": 9, "tableCellsChecked": 384, "missing": 0, "quizFeedbackAllOptionsOk": "6/6 chapters", "svgTextClipped": 0, "pageOverflow": false},
+  "390": {"viewport": "top-level freeform 390x844", "itemsChecked": 552, "missing": 0, "svgTextClipped": 0, "pageOverflow": false, "renderedFigureWidthPx": 305},
+  "320": {"viewport": "top-level freeform 320x700", "itemsChecked": 552, "missing": 0, "svgTextClipped": 0, "pageOverflow": false}
+ },
+ "keyboard": "At 320px, Chapter 14 exercise solution summary focused programmatically; native Enter key press opened it (open=false -> true, solution text visible).",
+ "limits": "DOM text and geometry checks, not screenshots: no native screenshot was captured. Quiz feedback was activated by DOM click, not pointer events. No native printer output. Rasters in this folder come from portable SVG via macOS Quick Look, separate from the browser checks."
+}

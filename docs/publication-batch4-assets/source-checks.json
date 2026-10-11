@@ -1,0 +1,434 @@
+{
+  "checkedDate": "2026-10-03",
+  "method": "Each URL fetched with WebFetch, with prompts asking for verbatim headings and passages. Investor.gov returned 403 to WebFetch twice and was retrieved with curl instead. Fidelity pages (sma, ema, rsi, atr, bollinger-bands, fibonacci-retracement) and TradingView Volume Profile were also fetched with curl, and the key passages were checked against tag-stripped raw HTML. One paraphrase from WebFetch on the SMA page was corrected to the verbatim text. Locators are the page's own heading names, not line numbers. Passages are 30 words or fewer, and ellipses mark omissions.",
+  "sources": [
+    {
+      "id": "ic-sma",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded; key passages cross-checked against raw HTML via curl. Page has a single content section, 'Description' (no Calculation section).",
+      "claims": [
+        {
+          "claim": "SMA = arithmetic mean of last N closes",
+          "supported": "partial",
+          "passage": "SMA is the easiest moving average to construct. It is simply the average price over the specified period.",
+          "locator": "Simple Moving Average (SMA) > Description",
+          "notes": "Says 'average price', not specifically closing prices; no explicit formula. Supports 'mean over N periods'; 'closes' is not stated."
+        },
+        {
+          "claim": "Smoothing/lag tradeoff",
+          "supported": "yes",
+          "passage": "The longer the period of the SMA, the smoother the result, but the more lag that is introduced between the SMA and the source.",
+          "locator": "Simple Moving Average (SMA) > Description",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ic-ema",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded; key passages cross-checked against raw HTML via curl.",
+      "claims": [
+        {
+          "claim": "Recursive EMA update",
+          "supported": "yes",
+          "passage": "EMA = (K x (C - P)) + P ... P = Previous periods EMA",
+          "locator": "Exponential Moving Average (EMA) > Description",
+          "notes": ""
+        },
+        {
+          "claim": "Fidelity describes using an SMA for the first EMA value",
+          "supported": "yes",
+          "passage": "P = Previous periods EMA (A SMA is used for the first periods calculations)",
+          "locator": "Exponential Moving Average (EMA) > Description (variable definitions under the formula)",
+          "notes": "Supported. Wording is 'first periods calculations'; page does not specify the SMA length, though it is implied to be N."
+        },
+        {
+          "claim": "Multiplier K = 2/(N+1)",
+          "supported": "not-stated",
+          "passage": "The smoothing constant K, applies appropriate weight to the most recent price. It uses the number of periods specified in the moving average.",
+          "locator": "Exponential Moving Average (EMA) > Description",
+          "notes": "Fidelity does not give 2/(N+1). Cite TradingView (ic-ema-weight) for the multiplier."
+        }
+      ]
+    },
+    {
+      "id": "ic-ema-weight",
+      "url": "https://www.tradingview.com/support/solutions/43000502589-moving-averages/",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded.",
+      "claims": [
+        {
+          "claim": "EMA multiplier 2/(N+1)",
+          "supported": "yes",
+          "passage": "(2 / (Number of Periods + 1) therefore (2 / (5+1) = 33.333%",
+          "locator": "Exponential Moving Average (EMA) > Calculation",
+          "notes": "Also gives EMA = {Close - EMA(previous day)} x multiplier + EMA(previous day). Worked example uses N=5."
+        }
+      ]
+    },
+    {
+      "id": "ic-rsi",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/rsi",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded; key passages cross-checked against raw HTML via curl. Single section 'Description' contains formula and thresholds.",
+      "claims": [
+        {
+          "claim": "RSI = 100 - 100/(1+RS), RS = avg gain / avg loss",
+          "supported": "yes",
+          "passage": "RSI = 100 – [100 / ( 1 + (Average of Upward Price Change / Average of Downward Price Change ) ) ]",
+          "locator": "Relative Strength Index (RSI) > Description",
+          "notes": "RS is not named as such; it is written inline as the ratio of average upward to average downward change. Equivalent."
+        },
+        {
+          "claim": "Conventional 70/30 thresholds",
+          "supported": "yes",
+          "passage": "RSI is considered overbought when above 70 and oversold when below 30.",
+          "locator": "Relative Strength Index (RSI) > Description",
+          "notes": ""
+        },
+        {
+          "claim": "RSI can persist overbought/oversold in strong trends",
+          "supported": "yes",
+          "passage": "During strong trends, the RSI may remain in overbought or oversold for extended periods.",
+          "locator": "Relative Strength Index (RSI) > Description",
+          "notes": ""
+        },
+        {
+          "claim": "Wilder smoothing [(N-1)*prev + current]/N",
+          "supported": "not-stated",
+          "passage": "Refer to Wilder's book for additional calculation information.",
+          "locator": "Relative Strength Index (RSI) > Description",
+          "notes": "Fidelity gives only the 'basic formula' and defers details to Wilder. Do not cite Fidelity for the smoothing; use ic-rsi-smoothing (TradingView RMA)."
+        },
+        {
+          "claim": "First average is a simple mean",
+          "supported": "not-stated",
+          "passage": "",
+          "locator": "Relative Strength Index (RSI) > Description",
+          "notes": "Not stated on Fidelity page. TradingView's page shows rma() but does not explicitly describe the seed either."
+        }
+      ]
+    },
+    {
+      "id": "ic-rsi-smoothing",
+      "url": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded.",
+      "claims": [
+        {
+          "claim": "Gains and losses as separate positive magnitudes",
+          "supported": "yes",
+          "passage": "gain = change >= 0 ? change : 0.0 ... loss = change < 0 ? (-1) * change : 0.0",
+          "locator": "Relative Strength Index (RSI) > Calculation (Pine code block)",
+          "notes": ""
+        },
+        {
+          "claim": "RMA smoothing",
+          "supported": "yes",
+          "passage": "avgGain = rma(gain, 14) ... avgLoss = rma(loss, 14)",
+          "locator": "Relative Strength Index (RSI) > Calculation (Pine code block)",
+          "notes": "Page also states RSI = 100 – 100/ (1 + RS). The RMA seed (first value = SMA) is not explained in prose on this page."
+        }
+      ]
+    },
+    {
+      "id": "ic-roc",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded.",
+      "claims": [
+        {
+          "claim": "ROC compares current close to close N periods ago",
+          "supported": "yes",
+          "passage": "The ROC calculation compares the current price with the price 'n' periods ago.",
+          "locator": "Rate of Change (ROC) > Description",
+          "notes": ""
+        },
+        {
+          "claim": "Percent form 100*(C/C_n - 1) or equivalent",
+          "supported": "yes",
+          "passage": "ROC = [(Today's Closing Price – Closing Price n periods ago) / Closing Price n periods ago] x 100",
+          "locator": "Rate of Change (ROC) > Description",
+          "notes": "Algebraically equivalent to 100*(C/C_n - 1)."
+        }
+      ]
+    },
+    {
+      "id": "ic-macd",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded (two fetches).",
+      "claims": [
+        {
+          "claim": "MACD = 12-EMA minus 26-EMA",
+          "supported": "yes",
+          "passage": "An approximated MACD can be calculated by subtracting the value of a 26 period Exponential Moving Average (EMA) from a 12 period EMA.",
+          "locator": "Moving Average Convergence Divergence (MACD) > Calculation",
+          "notes": "Fidelity calls this 'an approximated MACD'."
+        },
+        {
+          "claim": "9-period signal line",
+          "supported": "yes",
+          "passage": "A signal line is created with a 9 period EMA of the MACD line.",
+          "locator": "Moving Average Convergence Divergence (MACD) > Calculation",
+          "notes": ""
+        },
+        {
+          "claim": "Histogram (if relied on)",
+          "supported": "not-stated",
+          "passage": "",
+          "locator": "",
+          "notes": "Fidelity page does not mention a histogram; cite ic-macd-details."
+        }
+      ]
+    },
+    {
+      "id": "ic-macd-details",
+      "url": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded. Page headings appear to be a newer article layout ('How MACD is calculated', 'MACD settings').",
+      "claims": [
+        {
+          "claim": "MACD = fast - slow",
+          "supported": "yes",
+          "passage": "MACD = Fast MA − Slow MA",
+          "locator": "How MACD is calculated",
+          "notes": "Generic 'MA', not EMA specifically."
+        },
+        {
+          "claim": "Signal = average of MACD",
+          "supported": "yes",
+          "passage": "Signal = Moving average of MACD",
+          "locator": "How MACD is calculated",
+          "notes": ""
+        },
+        {
+          "claim": "Histogram = MACD - signal",
+          "supported": "yes",
+          "passage": "Histogram = MACD − Signal",
+          "locator": "How MACD is calculated",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ic-atr",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded; key passages cross-checked against raw HTML via curl.",
+      "claims": [
+        {
+          "claim": "TR = max(H-L, |H-prevC|, |L-prevC|)",
+          "supported": "yes",
+          "passage": "The True Range for today is the greatest of the following: Today's high minus today's low; The absolute value of today's high minus yesterday's close ...",
+          "locator": "Average True Range (ATR) > Calculation",
+          "notes": "Third term (|low - yesterday's close|) also listed."
+        },
+        {
+          "claim": "ATR update [(n-1)*prevATR + TR]/n",
+          "supported": "yes",
+          "passage": "ATR = (Previous ATR * (n - 1) + TR) / n",
+          "locator": "Average True Range (ATR) > Calculation",
+          "notes": ""
+        },
+        {
+          "claim": "How the first ATR is initialized",
+          "supported": "not-stated",
+          "passage": "",
+          "locator": "Average True Range (ATR) > Calculation",
+          "notes": "No seed given. Description only says ATR 'is the average of true ranges over the specified period' and 'Typically ... based on 14 periods'. Any seed rule (e.g. simple mean of first n TRs) needs another source or must be labeled the book's convention."
+        }
+      ]
+    },
+    {
+      "id": "ic-bands",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded; key passages cross-checked against raw HTML via curl.",
+      "claims": [
+        {
+          "claim": "Middle band is a moving average",
+          "supported": "yes",
+          "passage": "Bollinger Bands are envelopes plotted at a standard deviation level above and below a simple moving average of the price.",
+          "locator": "Bollinger Bands > Description",
+          "notes": "Specifies a simple MA."
+        },
+        {
+          "claim": "Bands at +/- k standard deviations",
+          "supported": "yes",
+          "passage": "For the upper band, add the standard deviation to the moving average. For the lower band, subtract the standard deviation from the moving average.",
+          "locator": "Bollinger Bands > Calculation",
+          "notes": ""
+        },
+        {
+          "claim": "Typical 20/2 settings",
+          "supported": "yes",
+          "passage": "The default values are 20 for period, and 2 for standard deviations",
+          "locator": "Bollinger Bands > Description",
+          "notes": "Calculation also lists 'Medium term: 20 day moving average, bands at 2 standard deviations.'"
+        },
+        {
+          "claim": "Population vs sample SD",
+          "supported": "not-stated",
+          "passage": "calculate the standard deviation over the same number of periods as the simple moving average.",
+          "locator": "Bollinger Bands > Calculation",
+          "notes": "Neither population nor sample is specified."
+        }
+      ]
+    },
+    {
+      "id": "ic-obv",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded.",
+      "claims": [
+        {
+          "claim": "Add volume on higher close",
+          "supported": "yes",
+          "passage": "If today's close is greater than yesterday's close then: OBV = Yesterday's OBV + Today's Volume",
+          "locator": "On Balance Volume (OBV) > Description",
+          "notes": ""
+        },
+        {
+          "claim": "Subtract volume on lower close",
+          "supported": "yes",
+          "passage": "If today's close is less than yesterday's close then: OBV = Yesterday's OBV – Today's Volume",
+          "locator": "On Balance Volume (OBV) > Description",
+          "notes": ""
+        },
+        {
+          "claim": "Unchanged on equal close",
+          "supported": "yes",
+          "passage": "If today's close is equal to yesterday's close then: OBV = Yesterday's OBV",
+          "locator": "On Balance Volume (OBV) > Description",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ic-fibonacci",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fibonacci-retracement",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded; key passages cross-checked against raw HTML via curl.",
+      "claims": [
+        {
+          "claim": "Retracement drawn between two chosen extremes",
+          "supported": "yes",
+          "passage": "Fibonacci Retracements are displayed by first drawing a trend line between two extreme points.",
+          "locator": "Fibonacci Retracement > Description",
+          "notes": ""
+        },
+        {
+          "claim": "Levels 23.6/38.2/50/61.8 (and 0%/100%)",
+          "supported": "yes",
+          "passage": "A series of six horizontal lines are drawn intersecting the trend line at the Fibonacci levels of 0.0%, 23.6%, 38.2%, 50%, 61.8%, and 100%.",
+          "locator": "Fibonacci Retracement > Description",
+          "notes": "0% and 100% are included. Levels repeated under 'How this indicator works'."
+        },
+        {
+          "claim": "Whether 50% is presented as Fibonacci",
+          "supported": "partial",
+          "passage": "... at the Fibonacci levels of 0.0%, 23.6%, 38.2%, 50%, 61.8%, and 100%.",
+          "locator": "Fibonacci Retracement > Description",
+          "notes": "Fidelity groups 50% under 'Fibonacci levels' and never says it is not a Fibonacci ratio. If the book says 50% is conventional rather than Fibonacci-derived, Fidelity does not support that point; it would need another source or be labeled the book's own explanation."
+        }
+      ]
+    },
+    {
+      "id": "ic-vwap",
+      "url": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded.",
+      "claims": [
+        {
+          "claim": "VWAP = sum(typical price * volume)/sum(volume)",
+          "supported": "yes",
+          "passage": "VWAP = Cumulative(Typical Price x Volume) / Cumulative(Volume)",
+          "locator": "Volume Weighted Average Price (VWAP) > Calculation",
+          "notes": ""
+        },
+        {
+          "claim": "Typical price = (H+L+C)/3",
+          "supported": "yes",
+          "passage": "(High + Low + Close)/3",
+          "locator": "Volume Weighted Average Price (VWAP) > Calculation",
+          "notes": ""
+        },
+        {
+          "claim": "Anchor Period (reset) input",
+          "supported": "yes",
+          "passage": "Possible values: Session, Week, Month, Quarter, Year, Decade, Century, Earnings (reset on earnings), Dividends ..., Splits ...",
+          "locator": "Inputs > Anchor Period",
+          "notes": ""
+        },
+        {
+          "claim": "Source input",
+          "supported": "yes",
+          "passage": "The source for the VWAP calculation. Traditionally, bar's average value is used as the source. By default, the source is hlc3",
+          "locator": "Inputs > Source",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ic-profile",
+      "url": "https://www.tradingview.com/support/solutions/43000502040-volume-profile-indicators-basic-concepts/",
+      "retrieval": "ok",
+      "retrievalNotes": "WebFetch succeeded; key passages cross-checked against raw HTML via curl.",
+      "claims": [
+        {
+          "claim": "Volume at price levels shown as a horizontal histogram",
+          "supported": "partial",
+          "passage": "plots a histogram on the chart to reveal dominant and/or significant price levels based on volume.",
+          "locator": "Volume profile indicators: basic concepts (intro paragraph)",
+          "notes": "The page says histogram at price levels made of 'rows' ('Placement: Place rows either left or right' under Style) but never uses the word 'horizontal'. The orientation is implied, not stated."
+        },
+        {
+          "claim": "Computed from lower-timeframe bars",
+          "supported": "yes",
+          "passage": "Volume profile indicators are calculated using data from lower timeframes for the same symbol.",
+          "locator": "Calculation methodology",
+          "notes": "Example: daily session uses 1-minute bars."
+        },
+        {
+          "claim": "Up/down volume classification",
+          "supported": "yes",
+          "passage": "if close >= open, we take it as an up volume, if close < open, it's down volume.",
+          "locator": "Types of volume used in calculations",
+          "notes": "Classification is by lower-timeframe bar direction, not buy/sell. Same rule restated in 'Calculation methodology'."
+        },
+        {
+          "claim": "Point of Control = level with highest volume",
+          "supported": "yes",
+          "passage": "Point of control (POC): The price level for the time period with the highest traded volume.",
+          "locator": "Typical levels of significance",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ic-orders",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+      "retrieval": "partial",
+      "retrievalNotes": "WebFetch returned HTTP 403 twice. Retrieved via curl with a browser User-Agent (HTTP 200); text extracted from the raw HTML. The page has only an H1 'Types of Orders' with no subheadings, so the locators name the paragraph.",
+      "claims": [
+        {
+          "claim": "Stop orders become market orders when triggered",
+          "supported": "yes",
+          "passage": "When the stop price is reached, a stop order becomes a market order.",
+          "locator": "Types of Orders > stop order paragraph ('A stop order, also referred to as a stop-loss order...')",
+          "notes": ""
+        },
+        {
+          "claim": "Fill can differ from the stop price (e.g., gap bypassing exit)",
+          "supported": "partial",
+          "passage": "[A market order] guarantees that the order will be executed, but does not guarantee the execution price.",
+          "locator": "Types of Orders > market order paragraph",
+          "notes": "Supported only by combining the stop-to-market sentence with the market-order sentence. The page does not explicitly say a stop fill can differ from the stop price, and it does not mention gaps or fast markets."
+        }
+      ]
+    }
+  ]
+}

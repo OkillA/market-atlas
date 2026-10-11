@@ -1,0 +1,74 @@
+[
+  {
+    "chapter": "momentum",
+    "edition": "learner",
+    "pages": 1,
+    "answer_presence_correct": true,
+    "text_outside_pages": [],
+    "pdf": "tmp/pdfs/practice-transfer/momentum-learner.pdf",
+    "input_cells_found": 20,
+    "full_question_found": true,
+    "all_solution_paragraphs_match_policy": true,
+    "all_pages_visually_inspected": true
+  },
+  {
+    "chapter": "momentum",
+    "edition": "answers",
+    "pages": 1,
+    "answer_presence_correct": true,
+    "text_outside_pages": [],
+    "pdf": "tmp/pdfs/practice-transfer/momentum-answers.pdf",
+    "input_cells_found": 20,
+    "full_question_found": true,
+    "all_solution_paragraphs_match_policy": true,
+    "all_pages_visually_inspected": true
+  },
+  {
+    "chapter": "breadth",
+    "edition": "learner",
+    "pages": 1,
+    "answer_presence_correct": true,
+    "text_outside_pages": [],
+    "pdf": "tmp/pdfs/practice-transfer/breadth-learner.pdf",
+    "input_cells_found": 30,
+    "full_question_found": true,
+    "all_solution_paragraphs_match_policy": true,
+    "all_pages_visually_inspected": true
+  },
+  {
+    "chapter": "breadth",
+    "edition": "answers",
+    "pages": 2,
+    "answer_presence_correct": true,
+    "text_outside_pages": [],
+    "pdf": "tmp/pdfs/practice-transfer/breadth-answers.pdf",
+    "input_cells_found": 30,
+    "full_question_found": true,
+    "all_solution_paragraphs_match_policy": true,
+    "all_pages_visually_inspected": true
+  },
+  {
+    "chapter": "events",
+    "edition": "learner",
+    "pages": 1,
+    "answer_presence_correct": true,
+    "text_outside_pages": [],
+    "pdf": "tmp/pdfs/practice-transfer/events-learner.pdf",
+    "input_cells_found": 15,
+    "full_question_found": true,
+    "all_solution_paragraphs_match_policy": true,
+    "all_pages_visually_inspected": true
+  },
+  {
+    "chapter": "events",
+    "edition": "answers",
+    "pages": 2,
+    "answer_presence_correct": true,
+    "text_outside_pages": [],
+    "pdf": "tmp/pdfs/practice-transfer/events-answers.pdf",
+    "input_cells_found": 15,
+    "full_question_found": true,
+    "all_solution_paragraphs_match_policy": true,
+    "all_pages_visually_inspected": true
+  }
+]

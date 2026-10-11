@@ -1,0 +1,102 @@
+{
+  "a": {
+    "kind": "candles",
+    "title": "Unfamiliar fictional chart · reader form A",
+    "yLabel": "Price ($)",
+    "xLabel": "Daily session",
+    "candles": [
+      {
+        "label": "S1",
+        "open": 38,
+        "high": 39,
+        "low": 37.5,
+        "close": 38.5
+      },
+      {
+        "label": "S2",
+        "open": 38.5,
+        "high": 40,
+        "low": 38,
+        "close": 39.5
+      },
+      {
+        "label": "S3",
+        "open": 39.5,
+        "high": 40.5,
+        "low": 39,
+        "close": 40
+      },
+      {
+        "label": "S4",
+        "open": 40,
+        "high": 40.2,
+        "low": 38.8,
+        "close": 39.2
+      },
+      {
+        "label": "S5",
+        "open": 39.2,
+        "high": 40.8,
+        "low": 39,
+        "close": 40.5
+      },
+      {
+        "label": "S6",
+        "open": 40.5,
+        "high": 41.5,
+        "low": 39.8,
+        "close": 41
+      }
+    ]
+  },
+  "b": {
+    "kind": "candles",
+    "title": "Unfamiliar fictional chart · reader form B",
+    "yLabel": "Price ($)",
+    "xLabel": "Daily session",
+    "candles": [
+      {
+        "label": "T1",
+        "open": 55,
+        "high": 55.5,
+        "low": 54,
+        "close": 54.5
+      },
+      {
+        "label": "T2",
+        "open": 54.5,
+        "high": 55,
+        "low": 53,
+        "close": 53.5
+      },
+      {
+        "label": "T3",
+        "open": 53.5,
+        "high": 54,
+        "low": 52.5,
+        "close": 53
+      },
+      {
+        "label": "T4",
+        "open": 53,
+        "high": 54.2,
+        "low": 52.8,
+        "close": 53.8
+      },
+      {
+        "label": "T5",
+        "open": 53.8,
+        "high": 54,
+        "low": 52.2,
+        "close": 52.5
+      },
+      {
+        "label": "T6",
+        "open": 52.5,
+        "high": 53.2,
+        "low": 51.5,
+        "close": 52
+      }
+    ]
+  }
+}

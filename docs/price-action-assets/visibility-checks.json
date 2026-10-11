@@ -1,0 +1,23 @@
+[
+  {
+    "closed": true,
+    "continuationContentHidden": true,
+    "id": "candlestick-patterns",
+    "noFutureTokens": true,
+    "packetChartWidth": "0 0 665 400"
+  },
+  {
+    "closed": true,
+    "continuationContentHidden": true,
+    "id": "chart-patterns",
+    "noFutureTokens": true,
+    "packetChartWidth": "0 0 665 395"
+  },
+  {
+    "closed": true,
+    "continuationContentHidden": true,
+    "id": "breakouts",
+    "noFutureTokens": true,
+    "packetChartWidth": "0 0 665 443"
+  }
+]

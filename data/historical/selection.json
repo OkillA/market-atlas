@@ -1,0 +1,16 @@
+{
+  "frozen": "2026-10-02",
+  "recorded_before_price_download": true,
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "cutoff_schedule": "First source row dated on or after the first calendar day of each month in 2016. Keep all 36 symbol-month cells, including missing-data cells.",
+  "context": "Five preceding source sessions plus cutoff; reveal only five following source sessions.",
+  "teaching_gate": "Observe only if cutoff close is strictly greater than the mean of the five preceding closes. Otherwise skip. This is an invented exercise gate, not a tested signal.",
+  "barriers": "Upper = cutoff close * 1.01; lower = cutoff close * 0.99. Evaluate subsequent daily bars in date order: opening price at/beyond a barrier resolves that side at the open; otherwise high/low touching both is ambiguous, only upper is favorable, only lower is adverse. No touch within five sessions is ordinary/unresolved. These are analytical path labels, not trades.",
+  "representatives": "Show the chronologically earliest cell in each category, breaking date ties by alphabetical symbol. Publish all cells, even categories with no representative. No retries or extra dates to obtain a desired outcome.",
+  "execution": "No modeled order, fill, size, stop, commission or realized return. Barriers classify a path in retrospectively adjusted units. Daily aggregation/extended-session treatment and adjustment algorithms are not documented by the depositor.",
+  "source": "Boris Marjanovic / Huge Stock Market Dataset / Kaggle / version 3; publisher CC0: Public Domain; data card says adjusted for dividends and splits."
+}

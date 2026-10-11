@@ -1,0 +1,41 @@
+{
+  "dataset_version": 3,
+  "dataset_metadata": "kaggle-metadata.json",
+  "reuse": "Depositor explicitly applies CC0-1.0. Upstream source is not identified in metadata; this records the stated permission, not independent chain-of-title or exchange-feed verification.",
+  "conventions": "Source daily date labels retained, nominal USD scale adjusted for dividends and splits by depositor; algorithm, adjustment cutoff, precise session and time zone are undocumented. Volume is omitted from this exercise because its adjustment convention is unspecified. Extract values are copied without rounding or filling missing dates.",
+  "files": [
+    {
+      "symbol": "AAPL",
+      "file": "aapl.csv",
+      "archive_path": "Data/Stocks/aapl.us.txt",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/borismarjanovic/price-volume-data-for-all-us-stocks-etfs?fileName=Data%2FStocks%2Faapl.us.txt&datasetVersionNumber=3",
+      "retrieved": "2026-10-02",
+      "source_file_sha256": "28ea6bff6cc5de7b7c9bde7ccf75544ce9e2ae66be32d9057d7cc32525f798e3",
+      "source_rows": 8364,
+      "extract_rows": 264,
+      "extract_sha256": "a218dec8cb34e2f3f1574f9754d471203412df137b9a345fa53f4d205ed4bada"
+    },
+    {
+      "symbol": "MSFT",
+      "file": "msft.csv",
+      "archive_path": "Data/Stocks/msft.us.txt",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/borismarjanovic/price-volume-data-for-all-us-stocks-etfs?fileName=Data%2FStocks%2Fmsft.us.txt&datasetVersionNumber=3",
+      "retrieved": "2026-10-02",
+      "source_file_sha256": "46e6ea467ee59cddb86bf213c396866030cbd386d99b76dd66d1b56d7ae718d8",
+      "source_rows": 7983,
+      "extract_rows": 264,
+      "extract_sha256": "8a7bb2393abf82a4669b7e299bda3c4e7a6271a25f6139c5c1728e1bc5857b91"
+    },
+    {
+      "symbol": "SPY",
+      "file": "spy.csv",
+      "archive_path": "Data/ETFs/spy.us.txt",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/borismarjanovic/price-volume-data-for-all-us-stocks-etfs?fileName=Data%2FETFs%2Fspy.us.txt&datasetVersionNumber=3",
+      "retrieved": "2026-10-02",
+      "source_file_sha256": "c678bccc09a3ee667e591d97e95498f2ac185c98408702cae738ba3320ebdeec",
+      "source_rows": 3201,
+      "extract_rows": 264,
+      "extract_sha256": "d6782af46c66099d39f8d2687b634e491f1c355e52dea41857c6b7d9f8b29470"
+    }
+  ]
+}

@@ -1,0 +1,843 @@
+{
+  "date": "2026-10-02",
+  "reviewer": "/root",
+  "method": "Independent Python Decimal reconstruction from the current compiled chapter inputs; complete-tape classifications checked separately. Complements, rather than re-labels, the documented JavaScript verifiers.",
+  "comparisons": 139,
+  "checks": [
+    {
+      "chapter": "market-language",
+      "calculation": "unchanged quote spread",
+      "result": "0.04",
+      "expected": "0.04"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "40 to 46 price return",
+      "result": "15.00",
+      "expected": "15"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "46 to 40 decline magnitude",
+      "result": "13.04347826086956521739130435",
+      "expected": "13.04347826086956521739130435"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "loss then equal gain",
+      "result": "96.00",
+      "expected": "96"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "80 to 100 recovery",
+      "result": "25.00",
+      "expected": "25"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "cost-inclusive whole shares",
+      "result": "47",
+      "expected": "47"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "Entry notional",
+      "result": "1880",
+      "expected": "1880"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "Modeled ordinary loss",
+      "result": "98.7",
+      "expected": "98.70"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "Gap-scenario loss",
+      "result": "239.7",
+      "expected": "239.70"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "expectancy at 40%",
+      "result": "0.30",
+      "expected": "0.3"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "expectancy at 25%",
+      "result": "-0.600",
+      "expected": "-0.6"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "independent price decline",
+      "result": "-20.0",
+      "expected": "-20"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "independent recovery",
+      "result": "25.00",
+      "expected": "25"
+    },
+    {
+      "chapter": "market-language",
+      "calculation": "independent expectancy",
+      "result": "-0.50",
+      "expected": "-0.5"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "main range",
+      "result": "10",
+      "expected": "10"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "main body",
+      "result": "5",
+      "expected": "5"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "main upper",
+      "result": "3",
+      "expected": "3"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "main lower",
+      "result": "2",
+      "expected": "2"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "main close location",
+      "result": "70.0",
+      "expected": "70"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "guided range",
+      "result": "10",
+      "expected": "10"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "guided body",
+      "result": "5",
+      "expected": "5"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "guided upper",
+      "result": "3",
+      "expected": "3"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "guided lower",
+      "result": "2",
+      "expected": "2"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "guided close location",
+      "result": "20.0",
+      "expected": "20"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "independent range",
+      "result": "6",
+      "expected": "6"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "independent body",
+      "result": "3",
+      "expected": "3"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "independent upper",
+      "result": "1",
+      "expected": "1"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "independent lower",
+      "result": "2",
+      "expected": "2"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "independent close location",
+      "result": "83.33333333333333333333333333",
+      "expected": "83.33333333333333333333333333"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "Route A: $99 is reached first exact modeled exit",
+      "result": "-1",
+      "expected": "-1"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "Route B: $107 is reached first exact modeled exit",
+      "result": "7",
+      "expected": "7"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "close-to-close change after opening gap",
+      "result": "-5",
+      "expected": "-5"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "previous-close return",
+      "result": "-4.545454545454545454545454550",
+      "expected": "-4.545454545454545454545454545"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "opening change",
+      "result": "-9.090909090909090909090909090",
+      "expected": "-9.090909090909090909090909091"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "independent open-to-close percent",
+      "result": "4.285714285714285714285714300",
+      "expected": "4.285714285714285714285714286"
+    },
+    {
+      "chapter": "chart-anatomy",
+      "calculation": "independent close-to-close percent",
+      "result": "-2.666666666666666666666666670",
+      "expected": "-2.666666666666666666666666667"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.8 exit 54.8 net",
+      "result": "195.0",
+      "expected": "195"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.8 exit 54.8 R",
+      "result": "1.95",
+      "expected": "1.95"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.8 exit 48.8 net",
+      "result": "-105.0",
+      "expected": "-105"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.8 exit 48.8 R",
+      "result": "-1.05",
+      "expected": "-1.05"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.8 exit 47.8 net",
+      "result": "-155.0",
+      "expected": "-155"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.8 exit 47.8 R",
+      "result": "-1.55",
+      "expected": "-1.55"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.4 exit 54.8 net",
+      "result": "215.0",
+      "expected": "215"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.4 exit 54.8 R",
+      "result": "2.6875",
+      "expected": "2.6875"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.4 exit 48.8 net",
+      "result": "-85.0",
+      "expected": "-85"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "entry 50.4 exit 48.8 R",
+      "result": "-1.0625",
+      "expected": "-1.0625"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "maximum entry cash reserve",
+      "result": "2542.5",
+      "expected": "2542.5"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "lower fill cash debit",
+      "result": "2522.5",
+      "expected": "2522.5"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "lower fill frozen R",
+      "result": "80.0",
+      "expected": "80"
+    },
+    {
+      "chapter": "breakouts",
+      "calculation": "chased gap gross payoff ratio",
+      "result": "0.7647058823529411764705882353",
+      "expected": "0.7647058823529411764705882353"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "all-in shares",
+      "result": "47",
+      "expected": "47"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "notional",
+      "result": "2350",
+      "expected": "2350"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "frozen filled-position R",
+      "result": "94",
+      "expected": "94"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exit 48 net",
+      "result": "-98.7",
+      "expected": "-98.7"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exit 48 R",
+      "result": "-1.05",
+      "expected": "-1.05"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exit 45 net",
+      "result": "-239.7",
+      "expected": "-239.7"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exit 45 R",
+      "result": "-2.55",
+      "expected": "-2.55"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "BRDG / chip demand price risk",
+      "result": "100.00",
+      "expected": "100.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "BRDG / chip demand shock price loss",
+      "result": "280.00",
+      "expected": "280.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "CHIP / chip demand price risk",
+      "result": "100.00",
+      "expected": "100.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "CHIP / chip demand shock price loss",
+      "result": "360.00",
+      "expected": "360.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "FABR / chip demand price risk",
+      "result": "100.00",
+      "expected": "100.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "FABR / chip demand shock price loss",
+      "result": "400.00",
+      "expected": "400.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "UTIL / rate-sensitive price risk",
+      "result": "100.00",
+      "expected": "100.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "UTIL / rate-sensitive shock price loss",
+      "result": "75.00",
+      "expected": "75.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "full notional",
+      "result": "10530.00",
+      "expected": "10530"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "full price risk",
+      "result": "400.00",
+      "expected": "400"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "full net shock",
+      "result": "1135.00",
+      "expected": "1135"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "full cash reservation",
+      "result": "10540.00",
+      "expected": "10540"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "full ordinary modeled loss",
+      "result": "420.00",
+      "expected": "420"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "shock ending equity",
+      "result": "18865.00",
+      "expected": "18865"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "reduced notional",
+      "result": "7530.00",
+      "expected": "7530"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "reduced price risk",
+      "result": "300.00",
+      "expected": "300"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "reduced net shock",
+      "result": "755.00",
+      "expected": "755"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 0",
+      "result": "20000",
+      "expected": "20000.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 1",
+      "result": "19900",
+      "expected": "19900.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 2",
+      "result": "19800.5",
+      "expected": "19800.50"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 3",
+      "result": "19701.5",
+      "expected": "19701.50"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 4",
+      "result": "19602.99",
+      "expected": "19602.99"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 5",
+      "result": "19504.98",
+      "expected": "19504.98"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 6",
+      "result": "19407.45",
+      "expected": "19407.45"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 7",
+      "result": "19310.41",
+      "expected": "19310.41"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 8",
+      "result": "19213.86",
+      "expected": "19213.86"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 9",
+      "result": "19117.79",
+      "expected": "19117.79"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 10",
+      "result": "19022.2",
+      "expected": "19022.20"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 11",
+      "result": "18927.09",
+      "expected": "18927.09"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "0.5% per loss loss 12",
+      "result": "18832.46",
+      "expected": "18832.46"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 0",
+      "result": "20000",
+      "expected": "20000.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 1",
+      "result": "19600",
+      "expected": "19600.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 2",
+      "result": "19208",
+      "expected": "19208.00"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 3",
+      "result": "18823.84",
+      "expected": "18823.84"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 4",
+      "result": "18447.36",
+      "expected": "18447.36"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 5",
+      "result": "18078.42",
+      "expected": "18078.42"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 6",
+      "result": "17716.85",
+      "expected": "17716.85"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 7",
+      "result": "17362.51",
+      "expected": "17362.51"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 8",
+      "result": "17015.26",
+      "expected": "17015.26"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 9",
+      "result": "16674.96",
+      "expected": "16674.96"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 10",
+      "result": "16341.46",
+      "expected": "16341.46"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 11",
+      "result": "16014.63",
+      "expected": "16014.63"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "2% per loss loss 12",
+      "result": "15694.33",
+      "expected": "15694.33"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exercise quantity",
+      "result": "55",
+      "expected": "55"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exercise reserve",
+      "result": "1654.125",
+      "expected": "1654.125"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exercise R",
+      "result": "66.0",
+      "expected": "66"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exercise gross",
+      "result": "-165",
+      "expected": "-165"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exercise net",
+      "result": "-173.25",
+      "expected": "-173.25"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "exercise net R",
+      "result": "-2.625",
+      "expected": "-2.625"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "tight-stop shares 49.5",
+      "result": "2.0E+2",
+      "expected": "200"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "notional 49.5",
+      "result": "10000",
+      "expected": "10000"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "gap loss 49.5",
+      "result": "1000",
+      "expected": "1000"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "tight-stop shares 48",
+      "result": "50",
+      "expected": "50"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "notional 48",
+      "result": "2500",
+      "expected": "2500"
+    },
+    {
+      "chapter": "risk-sizing",
+      "calculation": "gap loss 48",
+      "result": "250",
+      "expected": "250"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "rounded-down entry ceiling",
+      "result": "50.9",
+      "expected": "50.9"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "maximum order price risk",
+      "result": "115.0",
+      "expected": "115"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "limit reserve",
+      "result": "2547.5",
+      "expected": "2547.5"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares exit 48.6 net",
+      "result": "-105.0",
+      "expected": "-105"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares exit 48.6 R",
+      "result": "-1.05",
+      "expected": "-1.05"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares cash",
+      "result": "19895.0",
+      "expected": "19895"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares exit 54.6 net",
+      "result": "195.0",
+      "expected": "195"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares exit 54.6 R",
+      "result": "1.95",
+      "expected": "1.95"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares cash",
+      "result": "20195.0",
+      "expected": "20195"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares exit 47.6 net",
+      "result": "-155.0",
+      "expected": "-155"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares exit 47.6 R",
+      "result": "-1.55",
+      "expected": "-1.55"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "50 shares cash",
+      "result": "19845.0",
+      "expected": "19845"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "30 shares exit 47.6 net",
+      "result": "-95.0",
+      "expected": "-95"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "30 shares exit 47.6 R",
+      "result": "-1.583333333333333333333333333",
+      "expected": "-1.583333333333333333333333333"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "30 shares cash",
+      "result": "19905.0",
+      "expected": "19905"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "30 shares exit 54.6 net",
+      "result": "115.0",
+      "expected": "115"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "30 shares exit 54.6 R",
+      "result": "1.916666666666666666666666667",
+      "expected": "1.916666666666666666666666667"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "30 shares cash",
+      "result": "20115.0",
+      "expected": "20115"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Inside both exits net",
+      "result": "-45.0",
+      "expected": "-45"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Inside both exits R",
+      "result": "-0.45",
+      "expected": "-0.45"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Inside both exits cash",
+      "result": "19955.0",
+      "expected": "19955"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Below stop net",
+      "result": "-155.0",
+      "expected": "-155"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Below stop R",
+      "result": "-1.55",
+      "expected": "-1.55"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Below stop cash",
+      "result": "19845.0",
+      "expected": "19845"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Above target net",
+      "result": "215.0",
+      "expected": "215"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Above target R",
+      "result": "2.15",
+      "expected": "2.15"
+    },
+    {
+      "chapter": "trade-plans",
+      "calculation": "Above target cash",
+      "result": "20215.0",
+      "expected": "20215"
+    }
+  ],
+  "discreteTapeAndThresholdChecks": "passed"
+}

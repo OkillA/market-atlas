@@ -1,0 +1,920 @@
+{
+  "checked": "2026-10-02",
+  "reviewer": "/root",
+  "coverage": "Five routes at three widths; 1280px native preview viewport, 390/320px same-origin native browser child frames. Top-level responsive resizing timed out; these frame checks are not top-level viewport interaction or native printer evidence.",
+  "interaction": "Bulk disclosures and quiz checks use DOM activation. Snapshot/save failed; no successful batch 2 native screenshots are claimed.",
+  "results": [
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 52,
+      "cutoffOnly": null,
+      "figureCountExpected": 2,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/volume",
+      "rows": 15,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Direction and activity are different measurements"
+        },
+        {
+          "clipped": [],
+          "title": "Today’s unfinished volume versus historical noon totals"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Completed-session case shared with the panels"
+        },
+        {
+          "ok": true,
+          "title": "Matched noon totals, not forecasts of the close"
+        }
+      ],
+      "title": "Volume: participation behind price — Market Atlas",
+      "width": 1280,
+      "viewportMethod": "Native preview top-level viewport"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 64,
+      "cutoffOnly": null,
+      "figureCountExpected": 2,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/timeframes",
+      "rows": 15,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Three completed daily candles become one weekly summary"
+        },
+        {
+          "clipped": [],
+          "title": "Identical data on linear and log axes"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Three daily inputs and their aggregate"
+        },
+        {
+          "ok": true,
+          "title": "Distances you should recognize on both axes"
+        },
+        {
+          "ok": true,
+          "title": "Isolated two-for-one split: no unrelated price movement"
+        },
+        {
+          "ok": true,
+          "title": "A short pre-analysis checklist"
+        }
+      ],
+      "title": "Timeframes, sessions & chart scales — Market Atlas",
+      "width": 1280,
+      "viewportMethod": "Native preview top-level viewport"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 112,
+      "cutoffOnly": null,
+      "figureCountExpected": 3,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/trends",
+      "rows": 40,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "A candidate becomes available in stages"
+        },
+        {
+          "clipped": [],
+          "title": "One swing map, a line break, and a later transition"
+        },
+        {
+          "clipped": [],
+          "title": "A minor turn disappears under a coarser rule"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Complete close sequence: reveal only through the analysis cutoff"
+        },
+        {
+          "ok": true,
+          "title": "Read only what exists at each cutoff"
+        },
+        {
+          "ok": true,
+          "title": "Named swings and delayed recognition"
+        },
+        {
+          "ok": true,
+          "title": "The chosen line can be reproduced"
+        }
+      ],
+      "title": "Trends, swings & changing structure — Market Atlas",
+      "width": 1280,
+      "viewportMethod": "Native preview top-level viewport"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 86,
+      "cutoffOnly": {
+        "hasD12": true,
+        "hasD13": true,
+        "hasLaterPrice": false,
+        "inputTableCount": 1
+      },
+      "figureCountExpected": 2,
+      "initialContinuation": false,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/support-resistance",
+      "rows": 34,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Construct the zone, then reveal new observations"
+        },
+        {
+          "clipped": [],
+          "title": "D15 crosses the intraday threshold, but not the close rule"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Construction closes, available through D12"
+        },
+        {
+          "ok": true,
+          "title": "Construction decisions frozen after D12"
+        },
+        {
+          "ok": true,
+          "title": "Later closes under the frozen definitions"
+        },
+        {
+          "ok": true,
+          "title": "Construction closes, available through D12"
+        }
+      ],
+      "title": "Support, resistance & price areas — Market Atlas",
+      "width": 1280,
+      "viewportMethod": "Native preview top-level viewport"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 0,
+      "cutoffOnly": null,
+      "figureCountExpected": 0,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [],
+      "route": "#/practice/foundations",
+      "rows": 0,
+      "svgResults": [],
+      "tableResults": [],
+      "title": "Turn a chart into a reproducible observation — Market Atlas",
+      "width": 1280,
+      "viewportMethod": "Native preview top-level viewport"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 52,
+      "cutoffOnly": null,
+      "figureCountExpected": 2,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/volume",
+      "rows": 15,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Direction and activity are different measurements"
+        },
+        {
+          "clipped": [],
+          "title": "Today’s unfinished volume versus historical noon totals"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Completed-session case shared with the panels"
+        },
+        {
+          "ok": true,
+          "title": "Matched noon totals, not forecasts of the close"
+        }
+      ],
+      "title": "Volume: participation behind price — Market Atlas",
+      "width": 390,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 64,
+      "cutoffOnly": null,
+      "figureCountExpected": 2,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/timeframes",
+      "rows": 15,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Three completed daily candles become one weekly summary"
+        },
+        {
+          "clipped": [],
+          "title": "Identical data on linear and log axes"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Three daily inputs and their aggregate"
+        },
+        {
+          "ok": true,
+          "title": "Distances you should recognize on both axes"
+        },
+        {
+          "ok": true,
+          "title": "Isolated two-for-one split: no unrelated price movement"
+        },
+        {
+          "ok": true,
+          "title": "A short pre-analysis checklist"
+        }
+      ],
+      "title": "Timeframes, sessions & chart scales — Market Atlas",
+      "width": 390,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 112,
+      "cutoffOnly": null,
+      "figureCountExpected": 3,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/trends",
+      "rows": 40,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "A candidate becomes available in stages"
+        },
+        {
+          "clipped": [],
+          "title": "One swing map, a line break, and a later transition"
+        },
+        {
+          "clipped": [],
+          "title": "A minor turn disappears under a coarser rule"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Complete close sequence: reveal only through the analysis cutoff"
+        },
+        {
+          "ok": true,
+          "title": "Read only what exists at each cutoff"
+        },
+        {
+          "ok": true,
+          "title": "Named swings and delayed recognition"
+        },
+        {
+          "ok": true,
+          "title": "The chosen line can be reproduced"
+        }
+      ],
+      "title": "Trends, swings & changing structure — Market Atlas",
+      "width": 390,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 86,
+      "cutoffOnly": {
+        "hasD12": true,
+        "hasD13": true,
+        "hasLaterPrice": false,
+        "inputTableCount": 1
+      },
+      "figureCountExpected": 2,
+      "initialContinuation": false,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/support-resistance",
+      "rows": 34,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Construct the zone, then reveal new observations"
+        },
+        {
+          "clipped": [],
+          "title": "D15 crosses the intraday threshold, but not the close rule"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Construction closes, available through D12"
+        },
+        {
+          "ok": true,
+          "title": "Construction decisions frozen after D12"
+        },
+        {
+          "ok": true,
+          "title": "Later closes under the frozen definitions"
+        },
+        {
+          "ok": true,
+          "title": "Construction closes, available through D12"
+        }
+      ],
+      "title": "Support, resistance & price areas — Market Atlas",
+      "width": 390,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 0,
+      "cutoffOnly": null,
+      "figureCountExpected": 0,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [],
+      "route": "#/practice/foundations",
+      "rows": 0,
+      "svgResults": [],
+      "tableResults": [],
+      "title": "Turn a chart into a reproducible observation — Market Atlas",
+      "width": 390,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 52,
+      "cutoffOnly": null,
+      "figureCountExpected": 2,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/volume",
+      "rows": 15,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Direction and activity are different measurements"
+        },
+        {
+          "clipped": [],
+          "title": "Today’s unfinished volume versus historical noon totals"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Completed-session case shared with the panels"
+        },
+        {
+          "ok": true,
+          "title": "Matched noon totals, not forecasts of the close"
+        }
+      ],
+      "title": "Volume: participation behind price — Market Atlas",
+      "width": 320,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 64,
+      "cutoffOnly": null,
+      "figureCountExpected": 2,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/timeframes",
+      "rows": 15,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Three completed daily candles become one weekly summary"
+        },
+        {
+          "clipped": [],
+          "title": "Identical data on linear and log axes"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Three daily inputs and their aggregate"
+        },
+        {
+          "ok": true,
+          "title": "Distances you should recognize on both axes"
+        },
+        {
+          "ok": true,
+          "title": "Isolated two-for-one split: no unrelated price movement"
+        },
+        {
+          "ok": true,
+          "title": "A short pre-analysis checklist"
+        }
+      ],
+      "title": "Timeframes, sessions & chart scales — Market Atlas",
+      "width": 320,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 112,
+      "cutoffOnly": null,
+      "figureCountExpected": 3,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/trends",
+      "rows": 40,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "A candidate becomes available in stages"
+        },
+        {
+          "clipped": [],
+          "title": "One swing map, a line break, and a later transition"
+        },
+        {
+          "clipped": [],
+          "title": "A minor turn disappears under a coarser rule"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Complete close sequence: reveal only through the analysis cutoff"
+        },
+        {
+          "ok": true,
+          "title": "Read only what exists at each cutoff"
+        },
+        {
+          "ok": true,
+          "title": "Named swings and delayed recognition"
+        },
+        {
+          "ok": true,
+          "title": "The chosen line can be reproduced"
+        }
+      ],
+      "title": "Trends, swings & changing structure — Market Atlas",
+      "width": 320,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 86,
+      "cutoffOnly": {
+        "hasD12": true,
+        "hasD13": true,
+        "hasLaterPrice": false,
+        "inputTableCount": 1
+      },
+      "figureCountExpected": 2,
+      "initialContinuation": false,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/support-resistance",
+      "rows": 34,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Construct the zone, then reveal new observations"
+        },
+        {
+          "clipped": [],
+          "title": "D15 crosses the intraday threshold, but not the close rule"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Construction closes, available through D12"
+        },
+        {
+          "ok": true,
+          "title": "Construction decisions frozen after D12"
+        },
+        {
+          "ok": true,
+          "title": "Later closes under the frozen definitions"
+        },
+        {
+          "ok": true,
+          "title": "Construction closes, available through D12"
+        }
+      ],
+      "title": "Support, resistance & price areas — Market Atlas",
+      "width": 320,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 0,
+      "cutoffOnly": null,
+      "figureCountExpected": 0,
+      "initialContinuation": null,
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [],
+      "route": "#/practice/foundations",
+      "rows": 0,
+      "svgResults": [],
+      "tableResults": [],
+      "title": "Turn a chart into a reproducible observation — Market Atlas",
+      "width": 320,
+      "viewportMethod": "Native same-origin browser child frame; preview top-level resize timed out"
+    }
+  ]
+}

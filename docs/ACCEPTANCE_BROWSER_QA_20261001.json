@@ -1,0 +1,1094 @@
+{
+  "date": "2026-10-01",
+  "method": "T3 collaborative browser; DOM route navigation and summary/button clicks through preview_evaluate. Native snapshot/click tools failed; screenshots unavailable.",
+  "desktop": {
+    "chapters": [
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "market-language",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "The language of the market"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "chart-anatomy",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Anatomy of a stock chart"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "volume",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Volume: participation behind price"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "timeframes",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Timeframes, sessions & chart scales"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "trends",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Trends, swings & changing structure"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "support-resistance",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Support, resistance & price areas"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "candlestick-patterns",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Candlestick patterns in context"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "chart-patterns",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Classical chart patterns"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 4,
+        "figures": 2,
+        "id": "breakouts",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true,
+        "title": "Breakouts, pullbacks & failed moves"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 1,
+        "expectedSolutions": 3,
+        "figures": 1,
+        "id": "moving-averages",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Moving averages"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "momentum",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Momentum: pace and persistence"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "volatility",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Volatility: the size of movement"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "volume-tools",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Volume tools: weight, participation, and memory"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 1,
+        "expectedSolutions": 4,
+        "figures": 1,
+        "id": "fibonacci",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true,
+        "title": "Optional: Fibonacci retracement conventions"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 1,
+        "expectedSolutions": 3,
+        "figures": 1,
+        "id": "relative-strength",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Relative strength: leading compared with what?"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "breadth",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Market breadth: how many are participating?"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "multi-timeframe",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Multiple timeframes: one market, several summaries"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "events",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Events and opening gaps"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "market-microstructure",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Market microstructure: from a chart to an actual trade"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "risk-sizing",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Risk & position sizing"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "trade-plans",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "From chart idea to trade plan"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "psychology",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Psychology without market mythology"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "journaling",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "A journal that can teach you something"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 4,
+        "figures": 3,
+        "id": "testing",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true,
+        "title": "Evidence before conviction"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 4,
+        "figures": 3,
+        "id": "statistics",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true,
+        "title": "Statistics for a skeptical chart reader"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 4,
+        "figures": 3,
+        "id": "system-design",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true,
+        "title": "Designing a complete trading system"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "classical-frameworks",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true,
+        "title": "Optional: Dow, Wyckoff, and Elliott, read critically"
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 4,
+        "expectedSolutions": 4,
+        "figures": 4,
+        "id": "case-studies",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true,
+        "title": "Case studies: follow the decision through"
+      }
+    ],
+    "reviews": [
+      {
+        "allOpen": true,
+        "id": "foundations",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "price-action",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "indicators",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "context",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "risk",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "advanced",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      }
+    ],
+    "width": 1280
+  },
+  "mobile": {
+    "chapters": [
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "market-language",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "chart-anatomy",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "volume",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "timeframes",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "trends",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "support-resistance",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "candlestick-patterns",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "chart-patterns",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 4,
+        "figures": 2,
+        "id": "breakouts",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 1,
+        "expectedSolutions": 3,
+        "figures": 1,
+        "id": "moving-averages",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "momentum",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "volatility",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "volume-tools",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 1,
+        "expectedSolutions": 4,
+        "figures": 1,
+        "id": "fibonacci",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 1,
+        "expectedSolutions": 3,
+        "figures": 1,
+        "id": "relative-strength",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "breadth",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "multi-timeframe",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "events",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "market-microstructure",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "risk-sizing",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "trade-plans",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "psychology",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 2,
+        "expectedSolutions": 3,
+        "figures": 2,
+        "id": "journaling",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 4,
+        "figures": 3,
+        "id": "testing",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 4,
+        "figures": 3,
+        "id": "statistics",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 4,
+        "figures": 3,
+        "id": "system-design",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 3,
+        "expectedSolutions": 3,
+        "figures": 3,
+        "id": "classical-frameworks",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 3,
+        "solutionsOpen": true
+      },
+      {
+        "badGeometry": false,
+        "dataOpen": true,
+        "expectedFigures": 4,
+        "expectedSolutions": 4,
+        "figures": 4,
+        "id": "case-studies",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "quizOptions": [
+          true,
+          true,
+          true
+        ],
+        "solutionCount": 4,
+        "solutionsOpen": true
+      }
+    ],
+    "reviews": [
+      {
+        "allOpen": true,
+        "id": "foundations",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "price-action",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "indicators",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "context",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "risk",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      },
+      {
+        "allOpen": true,
+        "id": "advanced",
+        "initiallyCollapsed": true,
+        "overflow": false,
+        "solutions": 3,
+        "tasks": 3
+      }
+    ],
+    "width": 390
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "checked": "2026-10-03",
+  "reviewer": "/root",
+  "coverage": "Nine route/width checks. 390px is the actual native top-level preview viewport; 320/1280px are measured same-origin child frames in that same browser after top-level resize failure. Frame checks are layout/DOM verification, not top-level interactions or native printer evidence.",
+  "interaction": "Bulk disclosures and quiz choices used DOM activation. Native Enter opened Chapter 8 continuation. The first Part 2 Enter failed and left the solution closed; retry with explicit tabId succeeded, revealing the first complete answer. Both native keyboard transitions were checked before and after.",
+  "limitations": [
+    "Initial navigation failed; preview_open recovered.",
+    "Native snapshots/save failed twice; no saved native screenshot is claimed.",
+    "Asynchronous route-loop evaluation and a subsequent evaluate timed out; preview_open recovered. Final checks used tool navigation and synchronous evaluation.",
+    "320px top-level resize timed out and automation host detached; preview_open recovered at 390px. Wide/320px checks therefore used native child frames."
+  ],
+  "results": [
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 69,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 3,
+        "continuation": false,
+        "futureSectionVisible": false,
+        "visibleFigures": 3
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/candlestick-patterns",
+      "rows": 17,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Candle geometry: valid shapes and near misses"
+        },
+        {
+          "clipped": [],
+          "title": "Body engulfing versus full-range coverage"
+        },
+        {
+          "clipped": [],
+          "title": "The three completed candles at the D3 cutoff"
+        },
+        {
+          "clipped": [],
+          "title": "Do not collapse geometry, confirmation and outcome"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Same body, different classification"
+        },
+        {
+          "ok": true,
+          "title": "Compare the hammer-like candle with a near miss"
+        },
+        {
+          "ok": true,
+          "title": "Four strict body comparisons and two range comparisons"
+        },
+        {
+          "ok": true,
+          "title": "States of the interpretation, not renamed candles"
+        },
+        {
+          "ok": true,
+          "title": "Completed daily candles available after D3 (fictional USD)"
+        }
+      ],
+      "title": "Candlestick patterns in context — Market Atlas",
+      "width": 390
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 121,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 11,
+        "continuation": false,
+        "futureSectionVisible": false,
+        "visibleFigures": 1
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/chart-patterns",
+      "rows": 48,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "The unlabelled D1–D11 close path"
+        },
+        {
+          "clipped": [],
+          "title": "Identical candidate, two different later branches"
+        },
+        {
+          "clipped": [],
+          "title": "Boundary families: candidate prefix and alternative exits"
+        },
+        {
+          "clipped": [],
+          "title": "Optional mirrored and multi-peak reference families"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "The full supplied decision rule"
+        },
+        {
+          "ok": true,
+          "title": "Chronological construction"
+        },
+        {
+          "ok": true,
+          "title": "Shared prefix: freeze both branches after D11"
+        },
+        {
+          "ok": true,
+          "title": "Classify different questions, rather than one win/lose label"
+        },
+        {
+          "ok": true,
+          "title": "Alternative reveals after the identical prefix"
+        },
+        {
+          "ok": true,
+          "title": "Family reference: what must be specified"
+        },
+        {
+          "ok": true,
+          "title": "Completed closes available after D11 (fictional USD)"
+        }
+      ],
+      "title": "Classical chart patterns — Market Atlas",
+      "width": 390
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 0,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 0,
+        "continuation": null,
+        "futureSectionVisible": false,
+        "visibleFigures": 0
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [],
+      "route": "#/practice/price-action",
+      "rows": 0,
+      "svgResults": [],
+      "tableResults": [],
+      "title": "Write an analysis with the next bars covered — Market Atlas",
+      "width": 390
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 69,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 3,
+        "continuation": false,
+        "futureSectionVisible": false,
+        "visibleFigures": 3
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/candlestick-patterns",
+      "rows": 17,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Candle geometry: valid shapes and near misses"
+        },
+        {
+          "clipped": [],
+          "title": "Body engulfing versus full-range coverage"
+        },
+        {
+          "clipped": [],
+          "title": "The three completed candles at the D3 cutoff"
+        },
+        {
+          "clipped": [],
+          "title": "Do not collapse geometry, confirmation and outcome"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Same body, different classification"
+        },
+        {
+          "ok": true,
+          "title": "Compare the hammer-like candle with a near miss"
+        },
+        {
+          "ok": true,
+          "title": "Four strict body comparisons and two range comparisons"
+        },
+        {
+          "ok": true,
+          "title": "States of the interpretation, not renamed candles"
+        },
+        {
+          "ok": true,
+          "title": "Completed daily candles available after D3 (fictional USD)"
+        }
+      ],
+      "title": "Candlestick patterns in context — Market Atlas",
+      "width": 320
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 121,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 11,
+        "continuation": false,
+        "futureSectionVisible": false,
+        "visibleFigures": 1
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/chart-patterns",
+      "rows": 48,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "The unlabelled D1–D11 close path"
+        },
+        {
+          "clipped": [],
+          "title": "Identical candidate, two different later branches"
+        },
+        {
+          "clipped": [],
+          "title": "Boundary families: candidate prefix and alternative exits"
+        },
+        {
+          "clipped": [],
+          "title": "Optional mirrored and multi-peak reference families"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "The full supplied decision rule"
+        },
+        {
+          "ok": true,
+          "title": "Chronological construction"
+        },
+        {
+          "ok": true,
+          "title": "Shared prefix: freeze both branches after D11"
+        },
+        {
+          "ok": true,
+          "title": "Classify different questions, rather than one win/lose label"
+        },
+        {
+          "ok": true,
+          "title": "Alternative reveals after the identical prefix"
+        },
+        {
+          "ok": true,
+          "title": "Family reference: what must be specified"
+        },
+        {
+          "ok": true,
+          "title": "Completed closes available after D11 (fictional USD)"
+        }
+      ],
+      "title": "Classical chart patterns — Market Atlas",
+      "width": 320
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 0,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 0,
+        "continuation": null,
+        "futureSectionVisible": false,
+        "visibleFigures": 0
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [],
+      "route": "#/practice/price-action",
+      "rows": 0,
+      "svgResults": [],
+      "tableResults": [],
+      "title": "Write an analysis with the next bars covered — Market Atlas",
+      "width": 320
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 69,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 3,
+        "continuation": false,
+        "futureSectionVisible": false,
+        "visibleFigures": 3
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/candlestick-patterns",
+      "rows": 17,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "Candle geometry: valid shapes and near misses"
+        },
+        {
+          "clipped": [],
+          "title": "Body engulfing versus full-range coverage"
+        },
+        {
+          "clipped": [],
+          "title": "The three completed candles at the D3 cutoff"
+        },
+        {
+          "clipped": [],
+          "title": "Do not collapse geometry, confirmation and outcome"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "Same body, different classification"
+        },
+        {
+          "ok": true,
+          "title": "Compare the hammer-like candle with a near miss"
+        },
+        {
+          "ok": true,
+          "title": "Four strict body comparisons and two range comparisons"
+        },
+        {
+          "ok": true,
+          "title": "States of the interpretation, not renamed candles"
+        },
+        {
+          "ok": true,
+          "title": "Completed daily candles available after D3 (fictional USD)"
+        }
+      ],
+      "title": "Candlestick patterns in context — Market Atlas",
+      "width": 1280
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 121,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 11,
+        "continuation": false,
+        "futureSectionVisible": false,
+        "visibleFigures": 1
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [
+        {
+          "index": 0,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "pressed": "true"
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "pressed": "true"
+        }
+      ],
+      "route": "#/chapter/chart-patterns",
+      "rows": 48,
+      "svgResults": [
+        {
+          "clipped": [],
+          "title": "The unlabelled D1–D11 close path"
+        },
+        {
+          "clipped": [],
+          "title": "Identical candidate, two different later branches"
+        },
+        {
+          "clipped": [],
+          "title": "Boundary families: candidate prefix and alternative exits"
+        },
+        {
+          "clipped": [],
+          "title": "Optional mirrored and multi-peak reference families"
+        }
+      ],
+      "tableResults": [
+        {
+          "ok": true,
+          "title": "The full supplied decision rule"
+        },
+        {
+          "ok": true,
+          "title": "Chronological construction"
+        },
+        {
+          "ok": true,
+          "title": "Shared prefix: freeze both branches after D11"
+        },
+        {
+          "ok": true,
+          "title": "Classify different questions, rather than one win/lose label"
+        },
+        {
+          "ok": true,
+          "title": "Alternative reveals after the identical prefix"
+        },
+        {
+          "ok": true,
+          "title": "Family reference: what must be specified"
+        },
+        {
+          "ok": true,
+          "title": "Completed closes available after D11 (fictional USD)"
+        }
+      ],
+      "title": "Classical chart patterns — Market Atlas",
+      "width": 1280
+    },
+    {
+      "answerMatches": [
+        true,
+        true,
+        true
+      ],
+      "cells": 0,
+      "compiled": "2026-10-03",
+      "initial": {
+        "attemptRows": 0,
+        "continuation": null,
+        "futureSectionVisible": false,
+        "visibleFigures": 0
+      },
+      "initialSolutions": [
+        false,
+        false,
+        false
+      ],
+      "missingParagraphs": [],
+      "missingQuestions": [],
+      "overflow": false,
+      "quizzes": [],
+      "route": "#/practice/price-action",
+      "rows": 0,
+      "svgResults": [],
+      "tableResults": [],
+      "title": "Write an analysis with the next bars covered — Market Atlas",
+      "width": 1280
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "reviewer": "/root",
+  "date": "2026-10-02",
+  "scope": "Nine distinct source URLs covering ten namespaced source entries in this batch. Source definitions and modeled conventions are separated; this is not the all-source/data-rights release review.",
+  "records": [
+    {
+      "sourceIds": [
+        "fp-intro"
+      ],
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-is-technical-analysis",
+      "title": "Fidelity \u00b7 What is technical analysis?",
+      "chapters": [
+        "market-language"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "What is technical analysis? introduction and definition headings",
+      "support": "Business/value analysis is distinguished from analysis of market-generated prices and activity.",
+      "limits": "Provider description supplies terminology, not proof of efficacy; promotional performance inferences are not adopted."
+    },
+    {
+      "sourceIds": [
+        "fp-quotes"
+      ],
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price",
+      "title": "SEC / Investor.gov \u00b7 Bid price / ask price",
+      "chapters": [
+        "market-language"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "Bid Price/Ask Price glossary definition",
+      "support": "Bid, ask and their difference describe quotes rather than a promise at the latest trade.",
+      "limits": "The four-cent spread and round-trip calculation are original fictional arithmetic; future price and available quantity are not guaranteed."
+    },
+    {
+      "sourceIds": [
+        "fp-order-bulletin",
+        "ra-orders"
+      ],
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "title": "SEC / Investor.gov \u00b7 Understanding Order Types",
+      "chapters": [
+        "market-language",
+        "chart-anatomy",
+        "risk-sizing",
+        "trade-plans"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "Market, Limit, Stop and Stop-Limit sections; timing restrictions",
+      "support": "Inspected price constraints, possible nonfills, stop activation and price uncertainty, differing trigger standards and order-timing qualifications.",
+      "limits": "General broker descriptions do not validate the paper fills, maximum quantities, halt deadline or plan-specific exit priorities. Bulletin indicates an August 18, 2026 update."
+    },
+    {
+      "sourceIds": [
+        "fp-charts"
+      ],
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-are-charts",
+      "title": "Fidelity \u00b7 What are charts?",
+      "chapters": [
+        "chart-anatomy"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "Line chart, Bar chart and Candlestick charts headings",
+      "support": "Closing endpoints, OHLC ticks and candle body/shadow encodings match the chapter representation comparison.",
+      "limits": "Colors/fills vary by platform; no source performance or historical screenshot is reproduced."
+    },
+    {
+      "sourceIds": [
+        "fp-candles"
+      ],
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-charts/introduction-to-candlesticks",
+      "title": "StockCharts ChartSchool \u00b7 Introduction to candlesticks",
+      "chapters": [
+        "chart-anatomy"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "Formation of Candlestick Charts; What Candlesticks Don\u2019t Tell You",
+      "support": "Checked four-price construction and the missing high/low sequence.",
+      "limits": "The supplied price tapes and exact exit examples are original; source candlestick interpretations are not efficacy evidence."
+    },
+    {
+      "sourceIds": [
+        "fp-breakoutareas"
+      ],
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance",
+      "title": "StockCharts ChartSchool \u00b7 Support and resistance",
+      "chapters": [
+        "breakouts"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "What Is Support?; Where Is Support Established?; What Is Resistance?; role changes and zones",
+      "support": "Area terminology and the possibility of broken support/resistance are conventional descriptions.",
+      "limits": "The fixed 1% crossing, equality rules, three-session window and trades in this chapter are invented teaching rules."
+    },
+    {
+      "sourceIds": [
+        "fp-triangle"
+      ],
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/symmetrical-triangle",
+      "title": "StockCharts ChartSchool \u00b7 Symmetrical triangle",
+      "chapters": [
+        "breakouts"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "Breakout Direction, Breakout Confirmation and Return to Apex bullets",
+      "support": "Confirmed that observed direction, price/time filters and possible returns are separately described.",
+      "limits": "No provider success frequency, optimal filter or continuous-tape claim is adopted."
+    },
+    {
+      "sourceIds": [
+        "fp-orders"
+      ],
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+      "title": "SEC / Investor.gov \u00b7 Types of orders",
+      "chapters": [
+        "breakouts"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "Types of Orders market, limit and stop paragraphs",
+      "support": "Checked last-trade versus executable price, limit price-or-better and stop conversion.",
+      "limits": "Main Harbor exact fills and gap prices are modeling assumptions, not inferred executions."
+    },
+    {
+      "sourceIds": [
+        "fp-volume"
+      ],
+      "url": "https://www.fidelity.com/viewpoints/active-investor/stock-volume",
+      "title": "Fidelity \u00b7 Why to consider stock volume",
+      "chapters": [
+        "breakouts"
+      ],
+      "inspected": "2026-10-02",
+      "retrieval": "web tool, current original provider/regulator page",
+      "accessDisposition": "retrieved and inspected at the stated locator",
+      "locator": "Volume is vital heading",
+      "support": "Inspected share-count-per-period definition and comparison with other periods/averages.",
+      "limits": "The 1.5-times gate and 1.6/1.2 examples are invented. Time-specific market commentary and provider predictive inferences are not adopted."
+    }
+  ]
+}

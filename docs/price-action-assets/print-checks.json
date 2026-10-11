@@ -1,0 +1,77 @@
+{
+  "method": "Focused actual native chapter DOM samples, A4 WeasyPrint; prerequisite prose/tables, cutoff packet/chart, selected reconciliation section and practice/quiz. Unchanged normal figures and other reference sections omitted. Not native printer output.",
+  "checks": [
+    {
+      "name": "breakouts-answers",
+      "pages": 9,
+      "packetPage": 2,
+      "lastPacketPage": 5,
+      "continuationPage": 6,
+      "fullPreludeAndAttemptText": true,
+      "allInputCells": true,
+      "solutionPolicy": true,
+      "quizPolicy": true,
+      "noPageOverflow": true
+    },
+    {
+      "name": "breakouts-learner",
+      "pages": 8,
+      "packetPage": 2,
+      "lastPacketPage": 5,
+      "continuationPage": 6,
+      "fullPreludeAndAttemptText": true,
+      "allInputCells": true,
+      "solutionPolicy": true,
+      "quizPolicy": true,
+      "noPageOverflow": true
+    },
+    {
+      "name": "candlestick-patterns-answers",
+      "pages": 8,
+      "packetPage": 4,
+      "lastPacketPage": 5,
+      "continuationPage": 6,
+      "fullPreludeAndAttemptText": true,
+      "allInputCells": true,
+      "solutionPolicy": true,
+      "quizPolicy": true,
+      "noPageOverflow": true
+    },
+    {
+      "name": "candlestick-patterns-learner",
+      "pages": 8,
+      "packetPage": 4,
+      "lastPacketPage": 5,
+      "continuationPage": 6,
+      "fullPreludeAndAttemptText": true,
+      "allInputCells": true,
+      "solutionPolicy": true,
+      "quizPolicy": true,
+      "noPageOverflow": true
+    },
+    {
+      "name": "chart-patterns-answers",
+      "pages": 8,
+      "packetPage": 2,
+      "lastPacketPage": 4,
+      "continuationPage": 5,
+      "fullPreludeAndAttemptText": true,
+      "allInputCells": true,
+      "solutionPolicy": true,
+      "quizPolicy": true,
+      "noPageOverflow": true
+    },
+    {
+      "name": "chart-patterns-learner",
+      "pages": 7,
+      "packetPage": 2,
+      "lastPacketPage": 4,
+      "continuationPage": 5,
+      "fullPreludeAndAttemptText": true,
+      "allInputCells": true,
+      "solutionPolicy": true,
+      "quizPolicy": true,
+      "noPageOverflow": true
+    }
+  ]
+}

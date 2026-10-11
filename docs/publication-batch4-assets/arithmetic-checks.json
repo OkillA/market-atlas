@@ -1,0 +1,3317 @@
+{
+ "count": 552,
+ "checks": [
+  {
+   "label": "ch10 table SMA[0]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[1]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[2]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[3]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[4]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[5]",
+   "actual": "13",
+   "expected": "13.0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[6]",
+   "actual": "13.8",
+   "expected": "13.8",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[7]",
+   "actual": "14.2",
+   "expected": "14.2",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[8]",
+   "actual": "14.2",
+   "expected": "14.2",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[9]",
+   "actual": "13.8",
+   "expected": "13.8",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[10]",
+   "actual": "13",
+   "expected": "13.0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table SMA[11]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[0]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[1]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[2]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[3]",
+   "actual": "undefined",
+   "expected": "Undefined",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[4]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[5]",
+   "actual": "13",
+   "expected": "13.0",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[6]",
+   "actual": "13.66666667",
+   "expected": "13.667",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[7]",
+   "actual": "13.77777778",
+   "expected": "13.778",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[8]",
+   "actual": "13.51851852",
+   "expected": "13.519",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[9]",
+   "actual": "13.01234568",
+   "expected": "13.012",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[10]",
+   "actual": "12.34156379",
+   "expected": "12.342",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 table EMA (3dp)[11]",
+   "actual": "11.56104252",
+   "expected": "11.561",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch10 figure closes[0]",
+   "actual": "10",
+   "expected": "10",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[1]",
+   "actual": "11",
+   "expected": "11",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[2]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[3]",
+   "actual": "13",
+   "expected": "13",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[4]",
+   "actual": "14",
+   "expected": "14",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[5]",
+   "actual": "15",
+   "expected": "15",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[6]",
+   "actual": "15",
+   "expected": "15",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[7]",
+   "actual": "14",
+   "expected": "14",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[8]",
+   "actual": "13",
+   "expected": "13",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[9]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[10]",
+   "actual": "11",
+   "expected": "11",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure closes[11]",
+   "actual": "10",
+   "expected": "10",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure SMA[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure SMA[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure SMA[2]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure SMA[3]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure SMA[4]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure SMA[5]",
+   "actual": "13",
+   "expected": "13.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure SMA[6]",
+   "actual": "13.8",
+   "expected": "13.8",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure SMA[7]",
+   "actual": "14.2",
+   "expected": "14.2",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure SMA[8]",
+   "actual": "14.2",
+   "expected": "14.2",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure SMA[9]",
+   "actual": "13.8",
+   "expected": "13.8",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure SMA[10]",
+   "actual": "13",
+   "expected": "13.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure SMA[11]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure EMA[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure EMA[2]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure EMA[3]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 figure EMA[4]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[5]",
+   "actual": "13",
+   "expected": "13.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[6]",
+   "actual": "13.66666667",
+   "expected": "13.666666666666666",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[7]",
+   "actual": "13.77777778",
+   "expected": "13.777777777777777",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[8]",
+   "actual": "13.51851852",
+   "expected": "13.518518518518517",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[9]",
+   "actual": "13.01234568",
+   "expected": "13.012345679012345",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[10]",
+   "actual": "12.34156379",
+   "expected": "12.34156378600823",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 figure EMA[11]",
+   "actual": "11.56104252",
+   "expected": "11.561042524005487",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 session-7 window sum",
+   "actual": "69",
+   "expected": "69",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 session-8 window sum",
+   "actual": "71",
+   "expected": "71",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 quiz answer value",
+   "actual": "13.8",
+   "expected": "13.80",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice EMA update",
+   "actual": "13.77777778",
+   "expected": "13.7777778",
+   "tolerance": "1e-7"
+  },
+  {
+   "label": "ch10 first main crossing session",
+   "actual": "8",
+   "expected": "8",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 first main crossing is down",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 session-8 close above EMA (disagreement)",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range SMA[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range SMA[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range SMA[2]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range SMA[3]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range SMA[4]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range SMA[5]",
+   "actual": "11.8",
+   "expected": "11.8",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range SMA[6]",
+   "actual": "12.2",
+   "expected": "12.2",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range SMA[7]",
+   "actual": "11.8",
+   "expected": "11.8",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range SMA[8]",
+   "actual": "12.2",
+   "expected": "12.2",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range SMA[9]",
+   "actual": "11.8",
+   "expected": "11.8",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range SMA[10]",
+   "actual": "12.2",
+   "expected": "12.2",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range SMA[11]",
+   "actual": "11.8",
+   "expected": "11.8",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch10 range switches sessions 6-12",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range switch sessions[0]",
+   "actual": "6",
+   "expected": "6",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range switch sessions[1]",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range switch sessions[2]",
+   "actual": "8",
+   "expected": "8",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range switch sessions[3]",
+   "actual": "9",
+   "expected": "9",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range switch sessions[4]",
+   "actual": "10",
+   "expected": "10",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range switch sessions[5]",
+   "actual": "11",
+   "expected": "11",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range switch sessions[6]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range annotation 5 direction",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range annotation 6 direction",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 range annotation 7 direction",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 two-close main recognition session",
+   "actual": "9",
+   "expected": "9",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 two-close range confirmations",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice 3-SMA[0]",
+   "actual": "22",
+   "expected": "22",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch10 practice 3-SMA[1]",
+   "actual": "22.33333333",
+   "expected": "22.3333",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch10 practice 3-SMA[2]",
+   "actual": "21.66666667",
+   "expected": "21.6667",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch10 practice 3-SMA[3]",
+   "actual": "21.33333333",
+   "expected": "21.3333",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch10 practice 3-SMA[4]",
+   "actual": "22.66666667",
+   "expected": "22.6667",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch10 practice states[0]",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice states[1]",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice states[2]",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice states[3]",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice states[4]",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice switches[0]",
+   "actual": "4",
+   "expected": "4",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice switches[1]",
+   "actual": "6",
+   "expected": "6",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice two-close confirmations[0]",
+   "actual": "5",
+   "expected": "5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch10 practice two-close confirmations[1]",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 ROC table[0]",
+   "actual": "0",
+   "expected": "0.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[1]",
+   "actual": "2",
+   "expected": "2.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[2]",
+   "actual": "6",
+   "expected": "6.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[3]",
+   "actual": "12",
+   "expected": "12.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[4]",
+   "actual": "20",
+   "expected": "20.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[5]",
+   "actual": "24",
+   "expected": "24.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[6]",
+   "actual": "25.49019608",
+   "expected": "25.490196",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[7]",
+   "actual": "22.64150943",
+   "expected": "22.641509",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[8]",
+   "actual": "17.85714286",
+   "expected": "17.857143",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[9]",
+   "actual": "11.66666667",
+   "expected": "11.666667",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[10]",
+   "actual": "9.677419355",
+   "expected": "9.677419",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[11]",
+   "actual": "7.8125",
+   "expected": "7.8125",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[12]",
+   "actual": "4.615384615",
+   "expected": "4.615385",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[13]",
+   "actual": "6.060606061",
+   "expected": "6.060606",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[14]",
+   "actual": "2.985074627",
+   "expected": "2.985075",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[15]",
+   "actual": "4.411764706",
+   "expected": "4.411765",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[16]",
+   "actual": "1.449275362",
+   "expected": "1.449275",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC table[17]",
+   "actual": "5.882352941",
+   "expected": "5.882353",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC figure[0]",
+   "actual": "0",
+   "expected": "0.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[1]",
+   "actual": "2",
+   "expected": "2.0000000000000018",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[2]",
+   "actual": "6",
+   "expected": "6.000000000000005",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[3]",
+   "actual": "12",
+   "expected": "12.00000000000001",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[4]",
+   "actual": "20",
+   "expected": "19.999999999999996",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[5]",
+   "actual": "24",
+   "expected": "24.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[6]",
+   "actual": "25.49019608",
+   "expected": "25.49019607843137",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[7]",
+   "actual": "22.64150943",
+   "expected": "22.64150943396226",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[8]",
+   "actual": "17.85714286",
+   "expected": "17.85714285714286",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[9]",
+   "actual": "11.66666667",
+   "expected": "11.66666666666667",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[10]",
+   "actual": "9.677419355",
+   "expected": "9.677419354838701",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[11]",
+   "actual": "7.8125",
+   "expected": "7.8125",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[12]",
+   "actual": "4.615384615",
+   "expected": "4.615384615384621",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[13]",
+   "actual": "6.060606061",
+   "expected": "6.060606060606055",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[14]",
+   "actual": "2.985074627",
+   "expected": "2.9850746268656803",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[15]",
+   "actual": "4.411764706",
+   "expected": "4.4117647058823595",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[16]",
+   "actual": "1.449275362",
+   "expected": "1.449275362318847",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 ROC figure[17]",
+   "actual": "5.882352941",
+   "expected": "5.882352941176472",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 close figure[0]",
+   "actual": "50",
+   "expected": "50",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[1]",
+   "actual": "51",
+   "expected": "51",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[2]",
+   "actual": "53",
+   "expected": "53",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[3]",
+   "actual": "56",
+   "expected": "56",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[4]",
+   "actual": "60",
+   "expected": "60",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[5]",
+   "actual": "62",
+   "expected": "62",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[6]",
+   "actual": "64",
+   "expected": "64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[7]",
+   "actual": "65",
+   "expected": "65",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[8]",
+   "actual": "66",
+   "expected": "66",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[9]",
+   "actual": "67",
+   "expected": "67",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[10]",
+   "actual": "68",
+   "expected": "68",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[11]",
+   "actual": "69",
+   "expected": "69",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[12]",
+   "actual": "68",
+   "expected": "68",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[13]",
+   "actual": "70",
+   "expected": "70",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[14]",
+   "actual": "69",
+   "expected": "69",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[15]",
+   "actual": "71",
+   "expected": "71",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[16]",
+   "actual": "70",
+   "expected": "70",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 close figure[17]",
+   "actual": "72",
+   "expected": "72",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 ROC s7",
+   "actual": "25.49019608",
+   "expected": "25.490196",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC s12",
+   "actual": "7.8125",
+   "expected": "7.8125",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 ROC s14",
+   "actual": "6.060606061",
+   "expected": "6.060606",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 ROC drop in points",
+   "actual": "1.751893939",
+   "expected": "1.75",
+   "tolerance": "0.005"
+  },
+  {
+   "label": "ch11 one-neighbour peaks (all)[0]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 one-neighbour peaks (all)[1]",
+   "actual": "14",
+   "expected": "14",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 one-neighbour peaks (all)[2]",
+   "actual": "16",
+   "expected": "16",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 annotated peaks[0]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 annotated peaks[1]",
+   "actual": "14",
+   "expected": "14",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 session 16 exceeds peak 14",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 RSI seed gain 4/3",
+   "actual": "4",
+   "expected": "4",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 RSI seed loss 1/3",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 RSI seed",
+   "actual": "80",
+   "expected": "80",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 RSI update gain 8/9",
+   "actual": "8",
+   "expected": "8",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 RSI update loss 5/9",
+   "actual": "5",
+   "expected": "5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 RSI update RS",
+   "actual": "1.6",
+   "expected": "1.6",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 RSI update",
+   "actual": "61.53846154",
+   "expected": "61.538462",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 RS=2 example",
+   "actual": "66.66666667",
+   "expected": "66.67",
+   "tolerance": "0.005"
+  },
+  {
+   "label": "ch11 MACD first valid close number",
+   "actual": "26",
+   "expected": "26",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 signal first valid close number",
+   "actual": "34",
+   "expected": "34",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 MACD figure[0]",
+   "actual": "0",
+   "expected": "0.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[1]",
+   "actual": "0.07977207977",
+   "expected": "0.07977207977207712",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[2]",
+   "actual": "0.3009066485",
+   "expected": "0.3009066484849896",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[3]",
+   "actual": "0.7100473317",
+   "expected": "0.710047331681892",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[4]",
+   "actual": "1.341595761",
+   "expected": "1.3415957606061681",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[5]",
+   "actual": "1.98065398",
+   "expected": "1.9806539797279612",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[6]",
+   "actual": "2.618313223",
+   "expected": "2.618313222860678",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[7]",
+   "actual": "3.16783755",
+   "expected": "3.167837550410688",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[8]",
+   "actual": "3.64204792",
+   "expected": "3.6420479204238205",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[9]",
+   "actual": "4.051847522",
+   "expected": "4.051847521768316",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[10]",
+   "actual": "4.406512765",
+   "expected": "4.4065127647388636",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[11]",
+   "actual": "4.713939804",
+   "expected": "4.713939803935283",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[12]",
+   "actual": "4.821309253",
+   "expected": "4.821309252833501",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[13]",
+   "actual": "5.01003108",
+   "expected": "5.010031080285572",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[14]",
+   "actual": "5.021023611",
+   "expected": "5.021023610850172",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[15]",
+   "actual": "5.13196051",
+   "expected": "5.1319605096019245",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[16]",
+   "actual": "5.080620923",
+   "expected": "5.080620923044442",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD figure[17]",
+   "actual": "5.142042946",
+   "expected": "5.14204294584934",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[0]",
+   "actual": "0",
+   "expected": "0.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[1]",
+   "actual": "0.01595441595",
+   "expected": "0.015954415954415425",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[2]",
+   "actual": "0.07294486246",
+   "expected": "0.07294486246053027",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[3]",
+   "actual": "0.2003653563",
+   "expected": "0.20036535630480262",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[4]",
+   "actual": "0.4286114372",
+   "expected": "0.4286114371650757",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[5]",
+   "actual": "0.7390199457",
+   "expected": "0.7390199456776528",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[6]",
+   "actual": "1.114878601",
+   "expected": "1.114878601114258",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[7]",
+   "actual": "1.525470391",
+   "expected": "1.525470390973544",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[8]",
+   "actual": "1.948785897",
+   "expected": "1.9487858968635994",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[9]",
+   "actual": "2.369398222",
+   "expected": "2.3693982218445426",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[10]",
+   "actual": "2.77682113",
+   "expected": "2.7768211304234067",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[11]",
+   "actual": "3.164244865",
+   "expected": "3.1642448651257817",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[12]",
+   "actual": "3.495657743",
+   "expected": "3.4956577426673254",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[13]",
+   "actual": "3.79853241",
+   "expected": "3.7985324101909748",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[14]",
+   "actual": "4.04303065",
+   "expected": "4.043030650322814",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[15]",
+   "actual": "4.260816622",
+   "expected": "4.260816622178636",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[16]",
+   "actual": "4.424777482",
+   "expected": "4.424777482351797",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 signal figure[17]",
+   "actual": "4.568230575",
+   "expected": "4.568230575051306",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[0]",
+   "actual": "0",
+   "expected": "0.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[1]",
+   "actual": "0.06381766382",
+   "expected": "0.0638176638176617",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[2]",
+   "actual": "0.227961786",
+   "expected": "0.22796178602445932",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[3]",
+   "actual": "0.5096819754",
+   "expected": "0.5096819753770894",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[4]",
+   "actual": "0.9129843234",
+   "expected": "0.9129843234410924",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[5]",
+   "actual": "1.241634034",
+   "expected": "1.2416340340503083",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[6]",
+   "actual": "1.503434622",
+   "expected": "1.50343462174642",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[7]",
+   "actual": "1.642367159",
+   "expected": "1.642367159437144",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[8]",
+   "actual": "1.693262024",
+   "expected": "1.6932620235602212",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[9]",
+   "actual": "1.6824493",
+   "expected": "1.6824492999237735",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[10]",
+   "actual": "1.629691634",
+   "expected": "1.6296916343154568",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[11]",
+   "actual": "1.549694939",
+   "expected": "1.549694938809501",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[12]",
+   "actual": "1.32565151",
+   "expected": "1.3256515101661757",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[13]",
+   "actual": "1.21149867",
+   "expected": "1.2114986700945969",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[14]",
+   "actual": "0.9779929605",
+   "expected": "0.9779929605273576",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[15]",
+   "actual": "0.8711438874",
+   "expected": "0.8711438874232886",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[16]",
+   "actual": "0.6558434407",
+   "expected": "0.655843440692645",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 histogram figure[17]",
+   "actual": "0.5738123708",
+   "expected": "0.5738123707980343",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch11 MACD checkpoint s7[0]",
+   "actual": "64",
+   "expected": "64",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s7[1]",
+   "actual": "2.618313223",
+   "expected": "2.618313",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s7[2]",
+   "actual": "1.114878601",
+   "expected": "1.114879",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s7[3]",
+   "actual": "1.503434622",
+   "expected": "1.503435",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s12[0]",
+   "actual": "69",
+   "expected": "69",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s12[1]",
+   "actual": "4.713939804",
+   "expected": "4.71394",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s12[2]",
+   "actual": "3.164244865",
+   "expected": "3.164245",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s12[3]",
+   "actual": "1.549694939",
+   "expected": "1.549695",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s15[0]",
+   "actual": "69",
+   "expected": "69",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s15[1]",
+   "actual": "5.021023611",
+   "expected": "5.021024",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s15[2]",
+   "actual": "4.04303065",
+   "expected": "4.043031",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s15[3]",
+   "actual": "0.9779929605",
+   "expected": "0.977993",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s18[0]",
+   "actual": "72",
+   "expected": "72",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s18[1]",
+   "actual": "5.142042946",
+   "expected": "5.142043",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s18[2]",
+   "actual": "4.568230575",
+   "expected": "4.568231",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 MACD checkpoint s18[3]",
+   "actual": "0.5738123708",
+   "expected": "0.573812",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 hist positive at all displayed sessions",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 snapshot histogram A",
+   "actual": "0.5",
+   "expected": "0.5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 snapshot histogram B",
+   "actual": "0.2",
+   "expected": "0.2",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 snapshot histogram C",
+   "actual": "-0.1",
+   "expected": "-0.1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 task s0 MACD",
+   "actual": "-1",
+   "expected": "-1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 task s0 hist",
+   "actual": "-0.4",
+   "expected": "-0.4",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 task s1[0]",
+   "actual": "30.61538462",
+   "expected": "30.615385",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s1[1]",
+   "actual": "31.22222222",
+   "expected": "31.222222",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s1[2]",
+   "actual": "-0.6068376068",
+   "expected": "-0.606838",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s1[3]",
+   "actual": "-0.6013675214",
+   "expected": "-0.601368",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s1[4]",
+   "actual": "-0.00547008547",
+   "expected": "-0.005470",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s2[0]",
+   "actual": "31.21301775",
+   "expected": "31.213018",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s2[1]",
+   "actual": "31.46502058",
+   "expected": "31.465021",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s2[2]",
+   "actual": "-0.2520028247",
+   "expected": "-0.252003",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s2[3]",
+   "actual": "-0.531494582",
+   "expected": "-0.531495",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task s2[4]",
+   "actual": "0.2794917574",
+   "expected": "0.279492",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch11 task first above signal at s2",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch11 task MACD still below zero",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 TR components[0]",
+   "actual": "3",
+   "expected": "3",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 TR components[1]",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 TR components[2]",
+   "actual": "4",
+   "expected": "4",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 TR",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 figure gap candle[0]",
+   "actual": "104",
+   "expected": "104",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 figure gap candle[1]",
+   "actual": "107",
+   "expected": "107",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 figure gap candle[2]",
+   "actual": "104",
+   "expected": "104",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 figure gap candle[3]",
+   "actual": "106",
+   "expected": "106",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 figure previous close",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 opening gap",
+   "actual": "4",
+   "expected": "4",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 ATR update",
+   "actual": "3.666666667",
+   "expected": "3.6667",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 downside TR",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 practice reverse candle TR",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 practice return",
+   "actual": "-6",
+   "expected": "-6",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 ATR % example",
+   "actual": "5",
+   "expected": "5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 close-to-close return",
+   "actual": "6",
+   "expected": "6",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 counterexample spans",
+   "actual": "19",
+   "expected": "19",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 two ATR",
+   "actual": "7.333333333",
+   "expected": "7.3333",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 whole shares",
+   "actual": "13",
+   "expected": "13",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 13-share risk",
+   "actual": "95.33333333",
+   "expected": "95.3333",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 14-share risk",
+   "actual": "102.6666667",
+   "expected": "102.6667",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 band middle[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 band middle[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 band middle[2]",
+   "actual": "100",
+   "expected": "100.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[3]",
+   "actual": "101.6666667",
+   "expected": "101.66666666666667",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[4]",
+   "actual": "103",
+   "expected": "103.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[5]",
+   "actual": "103.6666667",
+   "expected": "103.66666666666667",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[6]",
+   "actual": "103.6666667",
+   "expected": "103.66666666666667",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[7]",
+   "actual": "103",
+   "expected": "103.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[8]",
+   "actual": "102",
+   "expected": "102.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[9]",
+   "actual": "101",
+   "expected": "101.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[10]",
+   "actual": "100.6666667",
+   "expected": "100.66666666666667",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band middle[11]",
+   "actual": "101",
+   "expected": "101.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch12 band upper[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 band upper[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 band upper[2]",
+   "actual": "103.2659863",
+   "expected": "103.2659863237109",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[3]",
+   "actual": "104.1611049",
+   "expected": "104.16110492451597",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[4]",
+   "actual": "104.6329932",
+   "expected": "104.63299316185545",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[5]",
+   "actual": "104.6094757",
+   "expected": "104.60947570824874",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[6]",
+   "actual": "104.6094757",
+   "expected": "104.60947570824874",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[7]",
+   "actual": "104.6329932",
+   "expected": "104.63299316185545",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[8]",
+   "actual": "103.6329932",
+   "expected": "103.63299316185545",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[9]",
+   "actual": "102.6329932",
+   "expected": "102.63299316185545",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[10]",
+   "actual": "101.6094757",
+   "expected": "101.60947570824874",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band upper[11]",
+   "actual": "102.6329932",
+   "expected": "102.63299316185545",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 band lower[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 band lower[2]",
+   "actual": "96.73401368",
+   "expected": "96.7340136762891",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[3]",
+   "actual": "99.17222841",
+   "expected": "99.17222840881738",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[4]",
+   "actual": "101.3670068",
+   "expected": "101.36700683814455",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[5]",
+   "actual": "102.7238576",
+   "expected": "102.7238576250846",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[6]",
+   "actual": "102.7238576",
+   "expected": "102.7238576250846",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[7]",
+   "actual": "101.3670068",
+   "expected": "101.36700683814455",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[8]",
+   "actual": "100.3670068",
+   "expected": "100.36700683814455",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[9]",
+   "actual": "99.36700684",
+   "expected": "99.36700683814455",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[10]",
+   "actual": "99.72385763",
+   "expected": "99.7238576250846",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 band lower[11]",
+   "actual": "99.36700684",
+   "expected": "99.36700683814455",
+   "tolerance": "1e-9"
+  },
+  {
+   "label": "ch12 variance",
+   "actual": "2.666666667",
+   "expected": "2.666667",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch12 SD",
+   "actual": "1.632993162",
+   "expected": "1.632993",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch12 s3 lower",
+   "actual": "96.73401368",
+   "expected": "96.7340",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 s3 upper",
+   "actual": "103.2659863",
+   "expected": "103.2660",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 s6 window[0]",
+   "actual": "103",
+   "expected": "103",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 s6 window[1]",
+   "actual": "104",
+   "expected": "104",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 s6 window[2]",
+   "actual": "104",
+   "expected": "104",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 s6 squared deviations",
+   "actual": "0.6666666667",
+   "expected": "2/3",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch12 s6 SD",
+   "actual": "0.4714045208",
+   "expected": "0.471405",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch12 s6 bands[0]",
+   "actual": "102.7238576",
+   "expected": "102.7239",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 s6 bands[1]",
+   "actual": "104.6094757",
+   "expected": "104.6095",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch12 bandwidth s3",
+   "actual": "6.531972647",
+   "expected": "6.532",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch12 bandwidth s6",
+   "actual": "1.818924196",
+   "expected": "1.819",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch12 sample-denominator SD",
+   "actual": "2",
+   "expected": "2",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 1 value",
+   "actual": "1000",
+   "expected": "1000",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 1 cumulative shares",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 1 VWAP",
+   "actual": "10",
+   "expected": "10.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 2 value",
+   "actual": "3600",
+   "expected": "3600",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 2 cumulative shares",
+   "actual": "400",
+   "expected": "400",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 2 VWAP",
+   "actual": "11.5",
+   "expected": "11.5",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 3 value",
+   "actual": "900",
+   "expected": "900",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 3 cumulative shares",
+   "actual": "500",
+   "expected": "500",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 3 VWAP",
+   "actual": "11",
+   "expected": "11.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 4 value",
+   "actual": "1100",
+   "expected": "1100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 4 cumulative shares",
+   "actual": "600",
+   "expected": "600",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 4 VWAP",
+   "actual": "11",
+   "expected": "11.0",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 5 value",
+   "actual": "2600",
+   "expected": "2600",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 5 cumulative shares",
+   "actual": "800",
+   "expected": "800",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 5 VWAP",
+   "actual": "11.5",
+   "expected": "11.5",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 6 value",
+   "actual": "1200",
+   "expected": "1200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 6 cumulative shares",
+   "actual": "900",
+   "expected": "900",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 6 VWAP",
+   "actual": "11.55555556",
+   "expected": "11.555556",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 7 value",
+   "actual": "1000",
+   "expected": "1000",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 7 cumulative shares",
+   "actual": "1000",
+   "expected": "1000",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 7 VWAP",
+   "actual": "11.4",
+   "expected": "11.4",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 8 value",
+   "actual": "2200",
+   "expected": "2200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 8 cumulative shares",
+   "actual": "1200",
+   "expected": "1200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 8 VWAP",
+   "actual": "11.33333333",
+   "expected": "11.333333",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 9 value",
+   "actual": "1400",
+   "expected": "1400",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 9 cumulative shares",
+   "actual": "1300",
+   "expected": "1300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 9 VWAP",
+   "actual": "11.53846154",
+   "expected": "11.538462",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 10 value",
+   "actual": "1300",
+   "expected": "1300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 10 cumulative shares",
+   "actual": "1400",
+   "expected": "1400",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 10 VWAP",
+   "actual": "11.64285714",
+   "expected": "11.642857",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 11 value",
+   "actual": "2400",
+   "expected": "2400",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 11 cumulative shares",
+   "actual": "1600",
+   "expected": "1600",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 11 VWAP",
+   "actual": "11.6875",
+   "expected": "11.6875",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 trade 12 value",
+   "actual": "1500",
+   "expected": "1500",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 12 cumulative shares",
+   "actual": "1700",
+   "expected": "1700",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 trade 12 VWAP",
+   "actual": "11.88235294",
+   "expected": "11.882353",
+   "tolerance": "0.0000005"
+  },
+  {
+   "label": "ch13 total value",
+   "actual": "20200",
+   "expected": "20200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 total shares",
+   "actual": "1700",
+   "expected": "1700",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[0]",
+   "actual": "10",
+   "expected": "10",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[1]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[2]",
+   "actual": "9",
+   "expected": "9",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[3]",
+   "actual": "11",
+   "expected": "11",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[4]",
+   "actual": "13",
+   "expected": "13",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[5]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[6]",
+   "actual": "10",
+   "expected": "10",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[7]",
+   "actual": "11",
+   "expected": "11",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[8]",
+   "actual": "14",
+   "expected": "14",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[9]",
+   "actual": "13",
+   "expected": "13",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[10]",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure prices[11]",
+   "actual": "15",
+   "expected": "15",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure VWAP[0]",
+   "actual": "10",
+   "expected": "10.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[1]",
+   "actual": "11.5",
+   "expected": "11.5",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[2]",
+   "actual": "11",
+   "expected": "11.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[3]",
+   "actual": "11",
+   "expected": "11.0",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[4]",
+   "actual": "11.5",
+   "expected": "11.5",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[5]",
+   "actual": "11.55555556",
+   "expected": "11.555555555555555",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[6]",
+   "actual": "11.4",
+   "expected": "11.4",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[7]",
+   "actual": "11.33333333",
+   "expected": "11.333333333333334",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[8]",
+   "actual": "11.53846154",
+   "expected": "11.538461538461538",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[9]",
+   "actual": "11.64285714",
+   "expected": "11.642857142857142",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[10]",
+   "actual": "11.6875",
+   "expected": "11.6875",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure VWAP[11]",
+   "actual": "11.88235294",
+   "expected": "11.882352941176471",
+   "tolerance": "1e-12"
+  },
+  {
+   "label": "ch13 figure quantities[0]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[1]",
+   "actual": "300",
+   "expected": "300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[2]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[3]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[4]",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[5]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[6]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[7]",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[8]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[9]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[10]",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 figure quantities[11]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 two-trade unweighted mean",
+   "actual": "11",
+   "expected": "11",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile[0]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile[1]",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile[2]",
+   "actual": "300",
+   "expected": "300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile[3]",
+   "actual": "600",
+   "expected": "600",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile[4]",
+   "actual": "300",
+   "expected": "300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile[5]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile[6]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile rows",
+   "actual": "7",
+   "expected": "7",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 profile total",
+   "actual": "1700",
+   "expected": "1700",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 POC price",
+   "actual": "12",
+   "expected": "12",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 POC share %",
+   "actual": "35.29411765",
+   "expected": "35.294",
+   "tolerance": "0.0005"
+  },
+  {
+   "label": "ch13 merged 11+12 bin",
+   "actual": "900",
+   "expected": "900",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s1 addition",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s1",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s2 addition",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s2",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s3 addition",
+   "actual": "-300",
+   "expected": "-300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s3",
+   "actual": "-100",
+   "expected": "-100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s4 addition",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s4",
+   "actual": "-100",
+   "expected": "-100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s5 addition",
+   "actual": "500",
+   "expected": "500",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV s5",
+   "actual": "400",
+   "expected": "400",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[0]",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[1]",
+   "actual": "20",
+   "expected": "20",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[2]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[3]",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[4]",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[5]",
+   "actual": "2",
+   "expected": "2",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[6]",
+   "actual": "21",
+   "expected": "21",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[7]",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[8]",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[9]",
+   "actual": "200",
+   "expected": "200",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[10]",
+   "actual": "3",
+   "expected": "3",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[11]",
+   "actual": "20.5",
+   "expected": "20.5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[12]",
+   "actual": "300",
+   "expected": "300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[13]",
+   "actual": "-300",
+   "expected": "-300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[14]",
+   "actual": "-100",
+   "expected": "-100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[15]",
+   "actual": "4",
+   "expected": "4",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[16]",
+   "actual": "20.5",
+   "expected": "20.5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[17]",
+   "actual": "400",
+   "expected": "400",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[18]",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[19]",
+   "actual": "-100",
+   "expected": "-100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[20]",
+   "actual": "5",
+   "expected": "5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[21]",
+   "actual": "22",
+   "expected": "22",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[22]",
+   "actual": "500",
+   "expected": "500",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[23]",
+   "actual": "500",
+   "expected": "500",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 OBV figure table matches section table[24]",
+   "actual": "400",
+   "expected": "400",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 practice value",
+   "actual": "13450",
+   "expected": "13450",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 practice shares",
+   "actual": "650",
+   "expected": "650",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 practice VWAP",
+   "actual": "20.69230769",
+   "expected": "20.6923077",
+   "tolerance": "0.00000005"
+  },
+  {
+   "label": "ch13 practice tied bins[0]",
+   "actual": "300",
+   "expected": "300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 practice tied bins[1]",
+   "actual": "300",
+   "expected": "300",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch13 practice POC fraction",
+   "actual": "46.15384615",
+   "expected": "46.1538",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "ch13 relative volume",
+   "actual": "2",
+   "expected": "2",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 A 0.382",
+   "actual": "112.36",
+   "expected": "112.36",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 B 0.382",
+   "actual": "113.888",
+   "expected": "113.888",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 A 0.5",
+   "actual": "110",
+   "expected": "110",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 B 0.5",
+   "actual": "112",
+   "expected": "112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 A 0.618",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 B 0.618",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 upward retracement of decline[0]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 upward retracement of decline[1]",
+   "actual": "110",
+   "expected": "110",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 upward retracement of decline[2]",
+   "actual": "112.36",
+   "expected": "112.36",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[0]",
+   "actual": "100",
+   "expected": "100",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[1]",
+   "actual": "104",
+   "expected": "104",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[2]",
+   "actual": "108",
+   "expected": "108",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[3]",
+   "actual": "112",
+   "expected": "112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[4]",
+   "actual": "117",
+   "expected": "117",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[5]",
+   "actual": "120",
+   "expected": "120",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[6]",
+   "actual": "116",
+   "expected": "116",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[7]",
+   "actual": "113",
+   "expected": "113",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[8]",
+   "actual": "110",
+   "expected": "110",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[9]",
+   "actual": "109",
+   "expected": "109",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[10]",
+   "actual": "107",
+   "expected": "107",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[11]",
+   "actual": "106",
+   "expected": "106",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[12]",
+   "actual": "108",
+   "expected": "108",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure closes[13]",
+   "actual": "111",
+   "expected": "111",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[2]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[3]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[4]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[5]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[6]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[7]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[8]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[9]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[10]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[11]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[12]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure A line[13]",
+   "actual": "107.64",
+   "expected": "107.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[0]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[1]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[2]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[3]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[4]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[5]",
+   "actual": "undefined",
+   "expected": "None",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[6]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[7]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[8]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[9]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[10]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[11]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[12]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 figure B line[13]",
+   "actual": "110.112",
+   "expected": "110.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 high 120 confirmed at 7",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 104 not a local low",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 A-B 61.8 difference",
+   "actual": "2.472",
+   "expected": "2.472",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s9 distance to B",
+   "actual": "0.112",
+   "expected": "0.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s9 distance to A 38.2",
+   "actual": "2.36",
+   "expected": "2.36",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s9 distance to A 61.8",
+   "actual": "2.36",
+   "expected": "2.36",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s9 distance to A 50 (exact touch)",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 B rebound threshold",
+   "actual": "112.112",
+   "expected": "112.112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 B rebound fails s10-11",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 A50 rebound fails s10-11",
+   "actual": "0",
+   "expected": "0",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s11-13 distances to A 61.8[0]",
+   "actual": "-0.64",
+   "expected": "-0.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s11-13 distances to A 61.8[1]",
+   "actual": "-1.64",
+   "expected": "-1.64",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s11-13 distances to A 61.8[2]",
+   "actual": "0.36",
+   "expected": "0.36",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 all near-touches on full A/B grids after confirmation[0]",
+   "actual": "9",
+   "expected": "9",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 all near-touches on full A/B grids after confirmation[1]",
+   "actual": "9",
+   "expected": "9",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 B 50 level",
+   "actual": "112",
+   "expected": "112",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 s9 vs B 50",
+   "actual": "2",
+   "expected": "2",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 extension",
+   "actual": "132.36",
+   "expected": "132.36",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fresh latest confirmed high at T6",
+   "actual": "5",
+   "expected": "5",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fresh trough before high",
+   "actual": "4",
+   "expected": "4",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fresh levels[0]",
+   "actual": "74.202",
+   "expected": "74.202",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fresh levels[1]",
+   "actual": "77.91",
+   "expected": "77.91",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fresh T8 distances[0]",
+   "actual": "0.09",
+   "expected": "0.09",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fresh T8 distances[1]",
+   "actual": "3.798",
+   "expected": "3.798",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fresh T9 rebound",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fib ratios[0]",
+   "actual": "0.618",
+   "expected": "0.618",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fib ratios[1]",
+   "actual": "0.382",
+   "expected": "0.382",
+   "tolerance": "0"
+  },
+  {
+   "label": "ch14 fib ratios[2]",
+   "actual": "1.618",
+   "expected": "1.618",
+   "tolerance": "0"
+  },
+  {
+   "label": "part3 SMA s10-11[0]",
+   "actual": "43",
+   "expected": "43",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "part3 SMA s10-11[1]",
+   "actual": "42.66666667",
+   "expected": "42.6667",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "part3 session-11 up-cross",
+   "actual": "1",
+   "expected": "1",
+   "tolerance": "0"
+  },
+  {
+   "label": "part3 ROC3 s11",
+   "actual": "-2.272727273",
+   "expected": "-2.2727",
+   "tolerance": "0.00005"
+  },
+  {
+   "label": "part3 tape reconciliation",
+   "actual": "11.88235294",
+   "expected": "11.882353",
+   "tolerance": "0.0000005"
+  }
+ ]
+}

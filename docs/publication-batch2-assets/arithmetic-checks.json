@@ -1,0 +1,1119 @@
+{
+  "checked": "2026-10-02",
+  "reviewer": "/root",
+  "method": "Independent Python Decimal reconstruction of authored inputs and strict-neighbor swing enumeration; qualitative conditions checked separately.",
+  "numericalComparisons": 177,
+  "comparisons": [
+    {
+      "label": "volume plotted close [0]",
+      "actual": "40",
+      "expected": "40",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted close [1]",
+      "actual": "40.5",
+      "expected": "40.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted close [2]",
+      "actual": "40.2",
+      "expected": "40.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted close [3]",
+      "actual": "41",
+      "expected": "41",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted close [4]",
+      "actual": "40",
+      "expected": "40",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted close [5]",
+      "actual": "42",
+      "expected": "42",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted close [6]",
+      "actual": "39.5",
+      "expected": "39.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted shares [0]",
+      "actual": "0.8",
+      "expected": "0.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted shares [1]",
+      "actual": "1",
+      "expected": "1",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted shares [2]",
+      "actual": "0.9",
+      "expected": "0.9",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted shares [3]",
+      "actual": "1.1",
+      "expected": "1.1",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted shares [4]",
+      "actual": "1.2",
+      "expected": "1.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted shares [5]",
+      "actual": "1.8",
+      "expected": "1.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "volume plotted shares [6]",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "five completed volumes",
+      "actual": "5.0",
+      "expected": "5",
+      "tolerance": "0"
+    },
+    {
+      "label": "frozen volume mean",
+      "actual": "1.0",
+      "expected": "1",
+      "tolerance": "0"
+    },
+    {
+      "label": "D6 relative volume",
+      "actual": "1.8",
+      "expected": "1.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "D7 relative volume",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "D6 price return",
+      "actual": "5.00",
+      "expected": "5",
+      "tolerance": "0"
+    },
+    {
+      "label": "D7 price return",
+      "actual": "-5.952380952380952380952380950",
+      "expected": "-5.952380952381",
+      "tolerance": "0.000000000001"
+    },
+    {
+      "label": "including D6 in six-session mean",
+      "actual": "1.133333333333333333333333333",
+      "expected": "1.133333333333",
+      "tolerance": "0.000000000001"
+    },
+    {
+      "label": "including D6 relative volume",
+      "actual": "1.588235294117647058823529412",
+      "expected": "1.588235294118",
+      "tolerance": "0.000000000001"
+    },
+    {
+      "label": "noon sum",
+      "actual": "1.80",
+      "expected": "1.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "noon mean",
+      "actual": "0.36",
+      "expected": "0.36",
+      "tolerance": "0"
+    },
+    {
+      "label": "today matched noon RV",
+      "actual": "1.944444444444444444444444444",
+      "expected": "1.9444",
+      "tolerance": "0.00005"
+    },
+    {
+      "label": "noon bars [0]",
+      "actual": "0.32",
+      "expected": "0.32",
+      "tolerance": "0"
+    },
+    {
+      "label": "noon bars [1]",
+      "actual": "0.38",
+      "expected": "0.38",
+      "tolerance": "0"
+    },
+    {
+      "label": "noon bars [2]",
+      "actual": "0.34",
+      "expected": "0.34",
+      "tolerance": "0"
+    },
+    {
+      "label": "noon bars [3]",
+      "actual": "0.4",
+      "expected": "0.4",
+      "tolerance": "0"
+    },
+    {
+      "label": "noon bars [4]",
+      "actual": "0.36",
+      "expected": "0.36",
+      "tolerance": "0"
+    },
+    {
+      "label": "noon bars [5]",
+      "actual": "0.7",
+      "expected": "0.7",
+      "tolerance": "0"
+    },
+    {
+      "label": "quiz current-inclusive noon RV",
+      "actual": "1.680000000000000000000000000",
+      "expected": "1.68",
+      "tolerance": "0"
+    },
+    {
+      "label": "worked trades shares",
+      "actual": "350",
+      "expected": "350",
+      "tolerance": "0"
+    },
+    {
+      "label": "worked trades exact value",
+      "actual": "14030.00",
+      "expected": "14030",
+      "tolerance": "0"
+    },
+    {
+      "label": "worked trades last-price approximation",
+      "actual": "14070.00",
+      "expected": "14070",
+      "tolerance": "0"
+    },
+    {
+      "label": "unfamiliar practice shares",
+      "actual": "350",
+      "expected": "350",
+      "tolerance": "0"
+    },
+    {
+      "label": "unfamiliar practice exact value",
+      "actual": "7030.00",
+      "expected": "7030",
+      "tolerance": "0"
+    },
+    {
+      "label": "unfamiliar practice last-price approximation",
+      "actual": "6930.00",
+      "expected": "6930",
+      "tolerance": "0"
+    },
+    {
+      "label": "exercise low RV",
+      "actual": "0.6",
+      "expected": "0.6",
+      "tolerance": "0"
+    },
+    {
+      "label": "exercise high RV",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly reconstructed [0]",
+      "actual": "100",
+      "expected": "100",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly reconstructed [1]",
+      "actual": "108",
+      "expected": "108",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly reconstructed [2]",
+      "actual": "98",
+      "expected": "98",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly reconstructed [3]",
+      "actual": "101",
+      "expected": "101",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly reconstructed [4]",
+      "actual": "370000",
+      "expected": "370000",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly plotted OHLC [0]",
+      "actual": "100",
+      "expected": "100",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly plotted OHLC [1]",
+      "actual": "108",
+      "expected": "108",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly plotted OHLC [2]",
+      "actual": "98",
+      "expected": "98",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly plotted OHLC [3]",
+      "actual": "101",
+      "expected": "101",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly geometry [0]",
+      "actual": "1",
+      "expected": "1",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly geometry [1]",
+      "actual": "7",
+      "expected": "7",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly geometry [2]",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "weekly geometry [3]",
+      "actual": "10",
+      "expected": "10",
+      "tolerance": "0"
+    },
+    {
+      "label": "D2 provisional [0]",
+      "actual": "100",
+      "expected": "100",
+      "tolerance": "0"
+    },
+    {
+      "label": "D2 provisional [1]",
+      "actual": "108",
+      "expected": "108",
+      "tolerance": "0"
+    },
+    {
+      "label": "D2 provisional [2]",
+      "actual": "99",
+      "expected": "99",
+      "tolerance": "0"
+    },
+    {
+      "label": "D2 provisional [3]",
+      "actual": "107",
+      "expected": "107",
+      "tolerance": "0"
+    },
+    {
+      "label": "D2 provisional [4]",
+      "actual": "250000",
+      "expected": "250000",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged log data [0]",
+      "actual": "10",
+      "expected": "10",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged log data [1]",
+      "actual": "20",
+      "expected": "20",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged log data [2]",
+      "actual": "40",
+      "expected": "40",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged log data [3]",
+      "actual": "80",
+      "expected": "80",
+      "tolerance": "0"
+    },
+    {
+      "label": "doubling percentage",
+      "actual": "100",
+      "expected": "100",
+      "tolerance": "0"
+    },
+    {
+      "label": "doubling ratio",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "doubling percentage",
+      "actual": "100",
+      "expected": "100",
+      "tolerance": "0"
+    },
+    {
+      "label": "doubling ratio",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "doubling percentage",
+      "actual": "100",
+      "expected": "100",
+      "tolerance": "0"
+    },
+    {
+      "label": "doubling ratio",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "split position value Before split",
+      "actual": "8000",
+      "expected": "8000",
+      "tolerance": "0"
+    },
+    {
+      "label": "post-split unit Before split",
+      "actual": "40",
+      "expected": "40",
+      "tolerance": "0"
+    },
+    {
+      "label": "split position value After split",
+      "actual": "8000",
+      "expected": "8000",
+      "tolerance": "0"
+    },
+    {
+      "label": "post-split unit After split",
+      "actual": "40",
+      "expected": "40",
+      "tolerance": "0"
+    },
+    {
+      "label": "three-for-one unfamiliar values [0]",
+      "actual": "225",
+      "expected": "225",
+      "tolerance": "0"
+    },
+    {
+      "label": "three-for-one unfamiliar values [1]",
+      "actual": "20",
+      "expected": "20",
+      "tolerance": "0"
+    },
+    {
+      "label": "three-for-one unfamiliar values [2]",
+      "actual": "4500",
+      "expected": "4500",
+      "tolerance": "0"
+    },
+    {
+      "label": "three-for-one unfamiliar values [3]",
+      "actual": "4500",
+      "expected": "4500",
+      "tolerance": "0"
+    },
+    {
+      "label": "dividend price return",
+      "actual": "-2.00",
+      "expected": "-2",
+      "tolerance": "0"
+    },
+    {
+      "label": "dividend-inclusive return",
+      "actual": "2.00",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D1",
+      "actual": "40",
+      "expected": "40",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D4",
+      "actual": "46",
+      "expected": "46",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D6",
+      "actual": "43",
+      "expected": "43",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D8",
+      "actual": "49",
+      "expected": "49",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D10",
+      "actual": "45",
+      "expected": "45",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D12",
+      "actual": "52",
+      "expected": "52",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D15",
+      "actual": "42",
+      "expected": "42",
+      "tolerance": "0"
+    },
+    {
+      "label": "confirmed swing D17",
+      "actual": "48",
+      "expected": "48",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [0]",
+      "actual": "40",
+      "expected": "40",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [1]",
+      "actual": "42",
+      "expected": "42",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [2]",
+      "actual": "44",
+      "expected": "44",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [3]",
+      "actual": "46",
+      "expected": "46",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [4]",
+      "actual": "45",
+      "expected": "45",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [5]",
+      "actual": "43",
+      "expected": "43",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [6]",
+      "actual": "46",
+      "expected": "46",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [7]",
+      "actual": "49",
+      "expected": "49",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [8]",
+      "actual": "47",
+      "expected": "47",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [9]",
+      "actual": "45",
+      "expected": "45",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [10]",
+      "actual": "48",
+      "expected": "48",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [11]",
+      "actual": "52",
+      "expected": "52",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [12]",
+      "actual": "50",
+      "expected": "50",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [13]",
+      "actual": "49",
+      "expected": "49",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [14]",
+      "actual": "42",
+      "expected": "42",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [15]",
+      "actual": "44",
+      "expected": "44",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [16]",
+      "actual": "48",
+      "expected": "48",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [17]",
+      "actual": "46",
+      "expected": "46",
+      "tolerance": "0"
+    },
+    {
+      "label": "trend plotted prices [18]",
+      "actual": "44",
+      "expected": "44",
+      "tolerance": "0"
+    },
+    {
+      "label": "anchor slope",
+      "actual": "0.6",
+      "expected": "0.6",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D8",
+      "actual": "44.2",
+      "expected": "44.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D9",
+      "actual": "44.8",
+      "expected": "44.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D10",
+      "actual": "45.4",
+      "expected": "45.4",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D11",
+      "actual": "46.0",
+      "expected": "46.0",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D12",
+      "actual": "46.6",
+      "expected": "46.6",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D13",
+      "actual": "47.2",
+      "expected": "47.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D14",
+      "actual": "47.8",
+      "expected": "47.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D15",
+      "actual": "48.4",
+      "expected": "48.4",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D16",
+      "actual": "49.0",
+      "expected": "49.0",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D17",
+      "actual": "49.6",
+      "expected": "49.6",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D18",
+      "actual": "50.2",
+      "expected": "50.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "available projection D19",
+      "actual": "50.8",
+      "expected": "50.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "D10 close below line",
+      "actual": "-0.4",
+      "expected": "-0.4",
+      "tolerance": "0"
+    },
+    {
+      "label": "D8 to D10 decline",
+      "actual": "8.163265306122448979591836735",
+      "expected": "8.163265306122",
+      "tolerance": "0.000000000001"
+    },
+    {
+      "label": "support lower edge",
+      "actual": "39.8",
+      "expected": "39.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "support upper edge",
+      "actual": "40.35",
+      "expected": "40.35",
+      "tolerance": "0"
+    },
+    {
+      "label": "support span",
+      "actual": "0.55",
+      "expected": "0.55",
+      "tolerance": "0"
+    },
+    {
+      "label": "support span percent",
+      "actual": "1.37500",
+      "expected": "1.375",
+      "tolerance": "0"
+    },
+    {
+      "label": "buffered close break",
+      "actual": "39.5",
+      "expected": "39.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [0]",
+      "actual": "43",
+      "expected": "43",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [1]",
+      "actual": "41",
+      "expected": "41",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [2]",
+      "actual": "39.8",
+      "expected": "39.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [3]",
+      "actual": "42",
+      "expected": "42",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [4]",
+      "actual": "45",
+      "expected": "45",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [5]",
+      "actual": "41",
+      "expected": "41",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [6]",
+      "actual": "40.1",
+      "expected": "40.1",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [7]",
+      "actual": "43",
+      "expected": "43",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [8]",
+      "actual": "45",
+      "expected": "45",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [9]",
+      "actual": "42",
+      "expected": "42",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [10]",
+      "actual": "40.35",
+      "expected": "40.35",
+      "tolerance": "0"
+    },
+    {
+      "label": "construction plot [11]",
+      "actual": "43",
+      "expected": "43",
+      "tolerance": "0"
+    },
+    {
+      "label": "reveal plot [0]",
+      "actual": "40.3",
+      "expected": "40.3",
+      "tolerance": "0"
+    },
+    {
+      "label": "reveal plot [1]",
+      "actual": "41.5",
+      "expected": "41.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "reveal plot [2]",
+      "actual": "39.7",
+      "expected": "39.7",
+      "tolerance": "0"
+    },
+    {
+      "label": "reveal plot [3]",
+      "actual": "39.4",
+      "expected": "39.4",
+      "tolerance": "0"
+    },
+    {
+      "label": "reveal plot [4]",
+      "actual": "40.15",
+      "expected": "40.15",
+      "tolerance": "0"
+    },
+    {
+      "label": "reveal plot [5]",
+      "actual": "39.2",
+      "expected": "39.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "D13 to D14 reaction",
+      "actual": "1.2",
+      "expected": "1.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged shaded lower",
+      "actual": "39.8",
+      "expected": "39.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged shaded upper",
+      "actual": "40.35",
+      "expected": "40.35",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged shaded lower",
+      "actual": "39.8",
+      "expected": "39.8",
+      "tolerance": "0"
+    },
+    {
+      "label": "unchanged shaded upper",
+      "actual": "40.35",
+      "expected": "40.35",
+      "tolerance": "0"
+    },
+    {
+      "label": "D15 candle geometry [0]",
+      "actual": "0.5",
+      "expected": "0.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "D15 candle geometry [1]",
+      "actual": "0.2",
+      "expected": "0.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "D15 candle geometry [2]",
+      "actual": "0.4",
+      "expected": "0.4",
+      "tolerance": "0"
+    },
+    {
+      "label": "D15 candle geometry [3]",
+      "actual": "1.1",
+      "expected": "1.1",
+      "tolerance": "0"
+    },
+    {
+      "label": "hypothetical trigger loss/share",
+      "actual": "1.5",
+      "expected": "1.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "hypothetical feasible loss/share",
+      "actual": "4",
+      "expected": "4",
+      "tolerance": "0"
+    },
+    {
+      "label": "guided threshold",
+      "actual": "55.5",
+      "expected": "55.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "guided span",
+      "actual": "0.4",
+      "expected": "0.4",
+      "tolerance": "0"
+    },
+    {
+      "label": "independent threshold",
+      "actual": "72.85",
+      "expected": "72.85",
+      "tolerance": "0"
+    },
+    {
+      "label": "independent span",
+      "actual": "0.5",
+      "expected": "0.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 candle geometry [0]",
+      "actual": "4",
+      "expected": "4",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 candle geometry [1]",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 candle geometry [2]",
+      "actual": "2",
+      "expected": "2",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 candle geometry [3]",
+      "actual": "8",
+      "expected": "8",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 open return",
+      "actual": "5.00",
+      "expected": "5",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 previous-close return",
+      "actual": "-4.545454545454545454545454550",
+      "expected": "-4.5455",
+      "tolerance": ".00005"
+    },
+    {
+      "label": "part1 ordered route OHLC [0]",
+      "actual": "80",
+      "expected": "80",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 ordered route OHLC [1]",
+      "actual": "86",
+      "expected": "86",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 ordered route OHLC [2]",
+      "actual": "78",
+      "expected": "78",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 ordered route OHLC [3]",
+      "actual": "84",
+      "expected": "84",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 ordered route OHLC [0]",
+      "actual": "80",
+      "expected": "80",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 ordered route OHLC [1]",
+      "actual": "86",
+      "expected": "86",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 ordered route OHLC [2]",
+      "actual": "78",
+      "expected": "78",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 ordered route OHLC [3]",
+      "actual": "84",
+      "expected": "84",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 full-session mean",
+      "actual": "1.0",
+      "expected": "1",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 completed ratio",
+      "actual": "1.2",
+      "expected": "1.2",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 noon ratio",
+      "actual": "1.5",
+      "expected": "1.5",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 split before",
+      "actual": "1600",
+      "expected": "1600",
+      "tolerance": "0"
+    },
+    {
+      "label": "part1 split after",
+      "actual": "1600",
+      "expected": "1600",
+      "tolerance": "0"
+    }
+  ],
+  "cutoffStates": {
+    "D6": [
+      "D1:Low:40",
+      "D4:High:46"
+    ],
+    "D8": [
+      "D1:Low:40",
+      "D4:High:46",
+      "D6:Low:43"
+    ],
+    "D14": [
+      "D1:Low:40",
+      "D4:High:46",
+      "D6:Low:43",
+      "D8:High:49",
+      "D10:Low:45",
+      "D12:High:52"
+    ],
+    "D17": [
+      "D1:Low:40",
+      "D4:High:46",
+      "D6:Low:43",
+      "D8:High:49",
+      "D10:Low:45",
+      "D12:High:52",
+      "D15:Low:42"
+    ],
+    "D19": [
+      "D1:Low:40",
+      "D4:High:46",
+      "D6:Low:43",
+      "D8:High:49",
+      "D10:Low:45",
+      "D12:High:52",
+      "D15:Low:42",
+      "D17:High:48"
+    ]
+  },
+  "laterCloseClassifications": {
+    "visits": [
+      "D13",
+      "D17"
+    ],
+    "closingBreaks": [
+      "D16",
+      "D18"
+    ]
+  },
+  "allPassed": true
+}

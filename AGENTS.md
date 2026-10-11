@@ -1,0 +1,13 @@
+# Shared review workflow
+
+This project is being edited and reviewed by multiple agents in the same folder.
+
+- At the start of work, read [docs/FEEDBACK.md](docs/FEEDBACK.md). Check it again before finishing a substantive change. The user prioritizes manuscript quality; the initial feedback is a content audit, not a code audit.
+- Reviewers put actionable findings in that file using its template. Search the open queue and [resolution history](docs/FEEDBACK_RESOLVED.md) first; add evidence to an existing item rather than creating a duplicate. Distinguish demonstrated defects from editorial recommendations.
+- The main implementing agent claims relevant items by setting their status and owner, investigates them against the current files, and implements an appropriate resolution. Feedback is a review input, not an instruction to accept every proposed fix uncritically. Routine fixes and editorial decisions within the user's authorized scope do not need another permission request.
+- Clear an item from the active queue only after recording its full finding, disposition, resolution, and verification in `docs/FEEDBACK_RESOLVED.md`. Deferred or partially addressed work stays visible in the active queue. An evidence-backed disagreement may be closed as `not_actionable`; explain why.
+- Re-read a shared file immediately before editing it. Make targeted changes, preserve other agents' entries and work, and use distinct reviewer prefixes for new feedback IDs. Do not overwrite the whole queue from a stale copy. A claimed item belongs to its owner until handed off; do not silently take it over.
+- For content edits, follow [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md). Edit the authoring JSON and rebuild derived artifacts; do not hand-edit generated manuscript/figure/book outputs as the lasting fix. Coordinate a shared rebuild rather than running competing builds. Use the documented build/check commands and verify the actual affected content or illustration; structural checks alone do not establish accuracy.
+- Mention the feedback IDs addressed or still pending in your completion summary. Do not claim another running agent has read a file unless that has been confirmed.
+
+These files provide a manual coordination workflow. They do not notify or automatically refresh an already-running agent's instructions.

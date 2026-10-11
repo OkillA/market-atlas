@@ -1,0 +1,74 @@
+{
+  "checked": "2026-10-03",
+  "reviewer": "/root",
+  "sourceEntries": 8,
+  "primaryURLsInspected": 7,
+  "retrievalFailures": 1,
+  "scope": "Chapter 7–8 material definitions and selected research; Part 2 uses original arithmetic and previously accepted Chapters 5/6/9. This does not complete edition-wide ROAD-003 access/rights review. Existing general access/check dates are preserved; only corrected locator records have a fresh checked date.",
+  "records": [
+    {
+      "id": "fp-candles",
+      "status": "inspected",
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-charts/introduction-to-candlesticks",
+      "locator": "Doji; Prior Trend; Long Shadow Reversals; What Candlesticks Don't Tell You",
+      "support": "Open/close geometry, long-shadow and prior-trend vocabulary; OHLC omits sequence.",
+      "limits": "Chapter numerical thresholds and follow-up rule are disclosed teaching choices; source outcome rhetoric is not adopted."
+    },
+    {
+      "id": "fp-patterns",
+      "status": "inspected",
+      "url": "https://media.fidelity.com/assets/Fidelity.com_VMS/904/347/TA_Session_3_Identifying_Chart_Patterns.pdf",
+      "locator": "Printed slide 41 (zero-based PDF index 40), Engulfing; Common Chart Patterns and Pennant/Flag",
+      "support": "Second body covers first body; pattern-family vocabulary.",
+      "limits": "No slide performance rankings or source illustrations adopted. Web PDF screenshot failed; definition and printed-page marker verified in PDF text."
+    },
+    {
+      "id": "fp-doubletop",
+      "status": "inspected",
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal",
+      "locator": "First Peak; Trough; Second Peak; Support Break; Price Target",
+      "support": "Separated approximate tops, intervening boundary and conventional height projection.",
+      "limits": "Exact tolerance, four-step minimum, daily recognition delay and three-close outcome are original teaching conventions, not the source detector."
+    },
+    {
+      "id": "fp-headshoulders",
+      "status": "inspected",
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/head-and-shoulders-top",
+      "locator": "Pattern anatomy; Neckline; Neckline Break",
+      "support": "Central high above shoulders and dated trough neckline; completion is separate.",
+      "limits": "Catalogue does not define a complete scanner; empirical efficacy and source forecasts are not adopted."
+    },
+    {
+      "id": "fp-flags",
+      "status": "inspected",
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/flag-pennant",
+      "locator": "Sharp Move; Flag; Pennant; Break",
+      "support": "Short parallel/converging pause after a sharp move.",
+      "limits": "Broad geometry sketches omit full duration/volume criteria and use expressly declared horizontal references; no expected-return claim."
+    },
+    {
+      "id": "fp-triangle",
+      "status": "inspected",
+      "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/symmetrical-triangle",
+      "locator": "Four Points; Breakout Direction; Breakout Confirmation",
+      "support": "Lower selected highs/higher lows and observed crossing; categories alone do not fix direction.",
+      "limits": "Exact horizontal teaching references are explicit simplifications; source performance percentages are not adopted."
+    },
+    {
+      "id": "fp-research",
+      "status": "retrieval_failed",
+      "url": "https://www.nber.org/papers/w7613",
+      "locator": "Search-indexed primary NBER title/author record; current full landing page unavailable.",
+      "support": "Original study is substantively inspected through author-hosted rc-lo URL below.",
+      "limits": "Landing-page opens return Internal Error; NBER PDF returns 403. Current full-page availability is not claimed; carry into ROAD-003. Search excerpts are not treated as full study inspection."
+    },
+    {
+      "id": "rc-lo",
+      "status": "inspected",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "locator": "Section II algorithm definitions; Section III sample/conditional distributions; Tables III–VIII; Section V conclusion printed p.1753 (PDF index48).",
+      "support": "Ten formal patterns in historical NYSE/AMEX/Nasdaq samples; one-day returns after recognition delay, conditional/unconditional distribution comparisons and limited information result.",
+      "limits": "A distributional difference is not demonstrated net profit; no success probability for the fictional detector. Tables I–II count patterns rather than testing strategy profitability."
+    }
+  ]
+}

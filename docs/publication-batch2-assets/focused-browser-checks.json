@@ -1,0 +1,30 @@
+{
+  "checked": "2026-10-02",
+  "reviewer": "/root",
+  "method": "T3 native preview desktop DOM and keyboard Enter after explicit focus",
+  "part1Solution": {
+    "initiallyClosed": true,
+    "keyboardEnterOpened": true
+  },
+  "supportCutoff": {
+    "route": "#/chapter/support-resistance/at/cutoff-attempt",
+    "initiallyClosed": true,
+    "referenceVisibilityBefore": false,
+    "futureD14ReactionVisible": false,
+    "futureD16BreakVisible": false,
+    "completeRawConstructionRows": 12,
+    "keyboardEnterOpened": true,
+    "referenceVisibilityAfter": true
+  },
+  "manuscript": {
+    "paragraphQuestionSolutionRowComparisons": 222,
+    "allPassed": true,
+    "bothOslerLocatorsCorrected": true
+  },
+  "limits": [
+    "Native preview snapshot/save failed.",
+    "Top-level preview resizing timed out at 15 and 30 seconds.",
+    "390/320px responsive checks use same-origin child frames, not top-level phone interaction.",
+    "Native printer pagination and human learning are unverified."
+  ]
+}

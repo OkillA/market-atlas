@@ -1,0 +1,67 @@
+{
+  "quiz": {
+    "positions": [
+      0,
+      2,
+      1,
+      0,
+      1,
+      2,
+      2,
+      0,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      1,
+      1,
+      0,
+      2,
+      0,
+      1,
+      2,
+      0,
+      2,
+      1,
+      2,
+      1,
+      0,
+      1
+    ],
+    "counts": [
+      9,
+      10,
+      9
+    ],
+    "optionFeedbackAndCorrectTextPreserved": true
+  },
+  "pairReview": {
+    "chapterExercises": 28,
+    "practiceTasks": 63,
+    "partReviewTasks": 18,
+    "furtherQuestionSolutionMismatchesFound": 0
+  },
+  "rounding": {
+    "historicalExact": true,
+    "historicalNearestCent": true,
+    "fictionalExact": true,
+    "fictionalNearestCent": false
+  },
+  "freshPractice": {
+    "movingMeans": [
+      "22",
+      "22.33333333333333333333333333",
+      "21.66666666666666666666666667",
+      "21.33333333333333333333333333",
+      "22.66666666666666666666666667"
+    ],
+    "vwap": "20.69230769230769230769230769",
+    "filledValue": "6416.00",
+    "filledMean": "32.08",
+    "riskSizingR": "-2.625",
+    "partialFillR": "-1.583333333333333333333333333",
+    "LARKNet": "-105.00"
+  }
+}

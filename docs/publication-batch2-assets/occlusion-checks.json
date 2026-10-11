@@ -1,0 +1,41 @@
+{
+  "after": [
+    {
+      "hiddenPoints": [],
+      "pathSamples": 1000,
+      "pathSamplesCovered": 86,
+      "width": 260
+    },
+    {
+      "hiddenPoints": [],
+      "pathSamples": 1000,
+      "pathSamplesCovered": 66,
+      "width": 300
+    },
+    {
+      "hiddenPoints": [],
+      "pathSamples": 1000,
+      "pathSamplesCovered": 0,
+      "width": 760
+    }
+  ],
+  "before": {
+    "hiddenPoints": [
+      "D10 below line",
+      "D12 high 52"
+    ],
+    "pathSamples": 1000,
+    "pathSamplesCovered": 493,
+    "width": 260
+  },
+  "method": "Native browser SVG geometry; annotation background containment of later-painted points and 1,000 equal-distance close-path samples. This supplements actual raster inspection.",
+  "recognitionCaption": "Fictional closes D1–D19; earlier closes 44 and 42 supply D1’s left-side comparisons. Swings use two earlier and two later closes. The D1–D6 projected line starts displaying at D8, when both anchor lows are confirmed. Point labels give session and close; the swing table names high/low status and recognition dates. D15’s low is recognized after D17, and D17’s high after D19.",
+  "unchangedFullLabels": [
+    "D1 low 40",
+    "D6 low 43",
+    "D10 below line",
+    "D12 high 52",
+    "D15 low 42; known D17",
+    "D17 high 48; known D19"
+  ]
+}
