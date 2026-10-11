@@ -212,11 +212,11 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Share counts and quoted liquidity**
 
 - Classification: definition; checked 2026-10-02.
-- Location: Chapter 3, What volume actually counts / Every transaction has two sides / Volume and liquidity; Fidelity Why to consider stock volume, Volume is vital; FINRA disclosure introduction.
+- Location: Chapter 3, What volume actually counts / Every transaction has two sides / Volume and liquidity; Fidelity Why to consider stock volume, Volume is vital; FINRA Understanding Market Liquidity and Your Investments, introduction.
 - Glossary terms: Volume; Share volume; Liquidity.
 - Support: Volume counts transferred shares; liquidity also concerns price, available quantity and cost.
 - Limits: This does not identify trader motives or promise an order fill.
-- Sources: [Fidelity · Why to consider stock volume](https://www.fidelity.com/viewpoints/active-investor/stock-volume); [FINRA · Understanding disclosure documents](https://syndication.finra.org/content/understanding-disclosure-documents)
+- Sources: [Fidelity · Why to consider stock volume](https://www.fidelity.com/viewpoints/active-investor/stock-volume); [FINRA · Understanding market liquidity and your investments](https://www.finra.org/investors/insights/market-liquidity-risk)
 
 **Returns and normalized activity**
 
@@ -1041,7 +1041,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Relative comparison as price ratio**
 
 - Classification: definition; checked 2026-10-01.
-- Location: Fidelity Relative Strength Comparison Description/Calculation.
+- Location: Fidelity Relative Strength Comparison, Description (ratio calculation and up/sideways/down interpretation).
 - Support: Read price ratio and relative interpretation; rebasing is shown algebraically.
 - Limits: No persistence/profitability inference is drawn from the definition.
 - Sources: [Fidelity · Relative Strength Comparison](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/relative-strength-comparison)
@@ -1067,7 +1067,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 - Classification: empirical; checked 2026-10-02.
 - Location: Sections I–IV; Table III and market-model/transaction-cost paragraph, printed pp. 67–78, especially p. 77 (PDF page 14).
 - Support: Read the universe, formation/holding rules, benchmarks, and assumed cost adjustment.
-- Limits: Historical portfolio evidence; distinct from a discretionary breakout and not a current performance forecast.
+- Limits: Historical cross-sectional portfolio evidence; distinct from a single stock/benchmark price ratio and not a current performance forecast. The study also reports that part of the first-year abnormal return dissipates over the following two years.
 - Sources: [Jegadeesh & Titman (1993), Returns to Buying Winners and Selling Losers](https://www.bauer.uh.edu/rsusmel/phd/jegadeesh-titman93.pdf)
 
 **Study specification**
@@ -1085,7 +1085,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **A/D cumulative and fraction definitions**
 
 - Classification: definition; checked 2026-10-01.
-- Location: Fidelity glossary, A/D Line (cumulative); A/D Line (breadth) is a separate advancing-fraction measure.
+- Location: Fidelity.com Help – Glossary: A, entries “A/D Line” (cumulative total) and “A/D Line (breadth)” (advancing ÷ advancing + declining).
 - Support: Read cumulative advance/decline description and advancing fraction among movers.
 - Limits: Provider fields and universes differ; no listed bullish threshold is treated as established efficacy.
 - Sources: [Fidelity · Glossary: Advance/Decline line](https://www.fidelity.com/webcontent/ap002390-mlo-content/18.04/help/help_definition_a.shtml)
@@ -1111,7 +1111,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Unconfirmed higher-timeframe data and lookahead**
 
 - Classification: mechanism; checked 2026-10-01.
-- Location: TradingView Other timeframes and data, Historical and realtime behavior; Avoiding repainting: Higher-timeframe data; lookahead discussion.
+- Location: TradingView Other timeframes and data, Historical and realtime behavior; Avoiding repainting: Higher-timeframe data; Common characteristics: lookahead.
 - Support: Read distinction between evolving higher-timeframe values and confirmed values, including future leakage.
 - Limits: This book’s post-close teaching timestamps are explicit; platform script update timing must be matched separately.
 - Sources: [TradingView · Other timeframes and data](https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/)
@@ -1127,7 +1127,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Weekly close-direction context and eligibility**
 
 - Classification: teaching-rule; checked 2026-10-01.
-- Location: Give the views separate jobs; aligned/conflicting cases.
+- Location: Give the weekly and daily views separate jobs; Work through an aligned and a conflicting case.
 - Support: Original comparison of successive completed weekly closes, with optional up-context research eligibility.
 - Limits: This is not a full swing trend definition or demonstrated effective filter.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
@@ -1145,10 +1145,10 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Market/limit/ordinary-stop behavior**
 
 - Classification: definition; checked 2026-10-01.
-- Location: Investor.gov Types of Orders.
+- Location: Investor.gov Types of Orders (market, limit and stop paragraphs); SEC Trading Basics printed page 2, Stop Order; printed page 3, Opening Transactions.
 - Support: Read price uncertainty, limit bounds, and ordinary-stop conversion to market order.
 - Limits: The $43 execution is an explicit teaching model, not an inference from the candle.
-- Sources: [SEC / Investor.gov · Types of orders](https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders)
+- Sources: [SEC / Investor.gov · Types of orders](https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders); [SEC · Trading Basics: order types and instructions](https://www.sec.gov/files/trading101basics.pdf)
 
 **Split and ex-dividend unit context**
 
@@ -1179,10 +1179,10 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Bid, ask, spread, and liquidity**
 
 - Classification: definition; checked 2026-10-01.
-- Location: FINRA Understanding Disclosure Documents, introduction and Why Market Liquidity Matters.
+- Location: FINRA Understanding Market Liquidity and Your Investments, introduction and Why Market Liquidity Matters.
 - Support: Inspected bid/ask definitions and spread/quantity relevance to liquidity.
 - Limits: A narrow spread alone is not a complete liquidity measure.
-- Sources: [FINRA · Understanding disclosure documents](https://syndication.finra.org/content/understanding-disclosure-documents)
+- Sources: [FINRA · Understanding market liquidity and your investments](https://www.finra.org/investors/insights/market-liquidity-risk)
 
 **Last price, routing, and quantity-limited quotes**
 
@@ -1200,11 +1200,11 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 - Limits: Venue rules change; no indicative value is guaranteed final.
 - Sources: [NYSE · Auctions](https://www.nyse.com/trade/auctions)
 
-**IOC and stop-limit mechanics**
+**Immediate-or-cancel remainder**
 
 - Classification: definition; checked 2026-10-01.
-- Location: SEC Trading Basics, printed page 2 Stop-limit Order; printed page 3 Immediate-Or-Cancel Orders.
-- Support: Read limit conversion and cancellation of any unfilled immediate remainder.
+- Location: SEC Trading Basics (Pub. No. 141), printed page 3, Immediate-Or-Cancel Orders.
+- Support: Read that an IOC order must execute immediately and any portion not filled immediately is cancelled.
 - Limits: Broker availability and trigger standards vary.
 - Sources: [SEC · Trading Basics: order types and instructions](https://www.sec.gov/files/trading101basics.pdf)
 

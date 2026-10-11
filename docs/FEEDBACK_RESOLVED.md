@@ -1401,3 +1401,173 @@ Reopened items preserve their prior closure history above. New evidence and this
 - Changed locations: content/risk-advanced.json, Chapter 26 primary figure equity panel; rebuilt content/book.js and assets/figures/system-design.svg (the only changed export of 71; MANUSCRIPT.md byte-identical).
 - Verification: The four net amounts match the Chapter 26 closed-trade table (Hazel 455.00, Fir −730.00, Birch −241.00, Alder 995.00). Panel rendered from built book.js: 0/1,000 path samples covered and zero hidden markers at 260/320/390/760px. Actual 260px, 320px and 760px export rasters inspected: full path, all four markers and the wrapped panel caption visible. All three numerical verifiers pass; build, normal and strict checks pass; JS syntax checks pass. Rasters and the occlusion script are in [alpha-release-assets](alpha-release-assets/).
 - Scope / limits: Chapter 26 has not yet been accepted for publication (ROAD-002), so no prior acceptance is invalidated. Native browser and printer output of this figure were not separately checked. Separately recorded ALPHA1-001 (wide slot panel axis labels), a pre-existing issue outside this finding.
+
+## Publication batch 5 — claude-code-alpha, 2026-10-11
+
+Scope: Chapters 15–19 and Part 4. Reviewers: five read-only reviewer agents (one per chapter) dispatched by claude-code-alpha, which verified each finding against the current files, implemented the dispositions and ran one coordinated rebuild (plus two figure-label follow-up rebuilds by the same owner). Shared evidence for every item below: [Publication batch 5](PUBLICATION_BATCH5_20261011.md) and [its assets](publication-batch5-assets/). Common verification: all three numerical verifiers, `npm run check`, strict revision checks and JavaScript syntax checks pass; the five chapter reproduction scripts pass (1,069 Fraction/Decimal comparisons, 0 mismatches); the generated reader and manuscript contain every new string and none of the replaced ones; all 16 previously accepted chapters and Parts 1–3 keep their checkpoint fingerprints.
+
+### PUB5-001 — Breadth chapter uses A and D both as stock names and as advance/decline counts
+- Priority / type: P2 / teaching defect
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 16 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json, `breadth` sections[1].paragraphs[0] and [2]; sections[2].paragraphs[0].
+- Finding and evidence: The constituents are named A–D, while the formulas define “A” as the advancing count and “D” as the declining count. One sentence reads “A rises 109→110 … A = 1, D = 1”, and the ratio “A/D” reads like stock A over stock D. “In the first example, 60/90” actually refers to the 100-stock illustration, not the four-stock dataset introduced first.
+- Proposed resolution: Use distinct count symbols and name the 100-stock example.
+- Acceptance criteria: No formula or count uses a constituent letter; conventional names “A/D line”/“Cumulative A/D” may remain.
+- Discussion / progress: Verified against the current text before editing.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: Counts are now `adv`/`dec` (net = adv − dec; ratio adv/dec; fractions adv/(adv + dec) and adv/U). The session-12 count reads “advances = 1, declines = 1, unchanged = 2”. “In the first example” became “On day one of the 100-stock example”.
+- Changed locations: content/indicators-context.json; rebuilt book/manuscript.
+- Verification: Remaining “A/D” strings are only the conventional line names (table column, panel title, legend, evidence claim). Breadth reproduction script 345/345.
+
+### PUB5-002 — Multi-timeframe chapter calls one direction mismatch a conflict and refuses the term for its mirror
+- Priority / type: P2 / teaching defect
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 17 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json, `multi-timeframe` sections[2].paragraphs[0–1], sections[4].paragraphs[2].
+- Finding and evidence: Sessions 8–9 (daily down, completed week up) are told “Calling the views contradictory would erase their different boundaries”, while session 11 (daily up, completed week down) “should record a conflict” and is called “the genuine conflict”. The unstated reason is that the aligned/conflicting labels apply only to upward daily changes. A third category, “still provisional”, is offered but never defined or used.
+- Proposed resolution: Define the labels explicitly for upward daily changes, say that differing directions are not contradictory descriptions, and remove the undefined category.
+- Acceptance criteria: One consistent definition; sessions 8–9 explicitly unlabeled; no undefined category.
+- Discussion / progress: Verified against the current text before editing. The reviewer's alternative exercise was declined as an editorial preference; the existing exercise and quiz remain correct.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: “We then label an upward daily change aligned when completed-week context is up and conflicting when it is down-or-equal. The label compares directions over different intervals; it does not mean either description is wrong, and the developing week is never used to assign it.” Sessions 8–9 now: “The directions differ, but the descriptions do not contradict each other … Because the labels apply only to upward daily changes, sessions 8 and 9 receive neither label.” “genuine conflict” → “labelled conflict”.
+- Changed locations: content/indicators-context.json; rebuilt book/manuscript.
+- Verification: The reproduction script independently classifies rising sessions as aligned 2, 4, 5, 6, 7, 15 and conflicting 11, 12, 13, consistent with the new definition; 219/219 comparisons.
+
+### PUB5-003 — Events chapter does not distinguish a close-to-open gap from a range gap
+- Priority / type: P2 / teaching gap (editorial recommendation)
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 18 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json, `events` sections[1].paragraphs[2].
+- Finding and evidence: The chapter is the glossary target for “Gap”, and the research appendix's glossary-trace record lists as a limit that “A close-to-open gap and a gap beyond the entire previous range are different criteria.” The chapter never teaches that distinction; its own case satisfies both, so a reader cannot tell which one the word means.
+- Proposed resolution: Add the stricter range test, show that both agree here, and give a case where they differ.
+- Acceptance criteria: Both definitions stated and checked against the case's numbers.
+- Discussion / progress: Accepted as a substantive teaching improvement rather than an error.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: Appended: “A stricter test asks whether the whole new range lies outside the previous session’s range. Here both tests agree, because the $47 high is below the prior $50 low. They can disagree: an open below the prior close that later trades back into the prior high–low range is a close-to-open gap but not a range gap. State which definition a rule uses.”
+- Changed locations: content/indicators-context.json; rebuilt book/manuscript.
+- Verification: Prior L $50 > next H $47 recomputed from the figure candles.
+
+### PUB5-004 — Microstructure attributes the whole $65-versus-$20 difference to book depth
+- Priority / type: P2 / misleading explanation
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 19 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json, `market-microstructure` sections[5].paragraphs[1].
+- Finding and evidence: “It differs from the earlier 100-share round trip’s $20 because order size reached beyond the first quote.” Of the $45 difference, $30 is 150 more shares paying the same $0.20 spread (250 × $0.20 = $50); only $15 (150 × $0.10) comes from the second ask level. Per share: $0.26 versus $0.20.
+- Proposed resolution: Decompose the loss.
+- Acceptance criteria: Text states $50 spread + $15 depth = $65 and the per-share comparison.
+- Discussion / progress: Recalculated before editing.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: “On 250 shares the $0.20 spread alone costs $50; the remaining $15 is the extra $0.10 paid on the 150 shares taken at the second ask level. Per share the loss is $0.26, against $0.20 for the earlier 100-share round trip; that $0.06 difference is what reaching beyond the first quote cost.”
+- Changed locations: content/indicators-context.json; rebuilt book/manuscript.
+- Verification: 250 × 0.20 = 50; 150 × 0.10 = 15; 65/250 = 0.26; 12,540 − 12,475 = 65 (Decimal).
+
+### PUB5-005 — “Marketable” is undefined and contrasted with a limit order that is itself marketable
+- Priority / type: P2 / inexact definition
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 19 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json, `market-microstructure` sections[2].paragraphs[1–2], sections[2].tables[0].rows[0][0], outcomes[2].
+- Finding and evidence: “A marketable buy for 250 shares” is contrasted with “Buy limit $50.10”, but a buy limit at the best ask is also marketable (for 100 shares). The cited Investor.gov source describes market orders.
+- Proposed resolution: Call it a market buy order and note the equivalent limit.
+- Acceptance criteria: No undefined “marketable”; the limit row is explained.
+- Discussion / progress: Verified before editing.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: “A market buy order for 250 shares (a buy limit at $50.20 or higher would fill the same way here) first takes 100 at $50.10.” Table row “Market buy, 250 shares”; outcome “full market-order purchase”; added “It can execute immediately only against the 100 shares offered at $50.10.”
+- Changed locations: content/indicators-context.json; rebuilt book/manuscript.
+- Verification: No “marketable” remains in the authoring files; a $50.20 limit against asks 100@50.10 and 200@50.20 fills all 250 (Decimal).
+
+### PUB5-006 — Part 4 figure labels cover data at compact widths
+- Priority / type: P2 / misleading visual
+- Status: resolved (residual edge-clamping tracked as PUB5-012)
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: claude-code-alpha / 2026-10-11
+- Location: content/indicators-context.json figure annotations: `relative-strength` absolute panel; `breadth` index panel; `multi-timeframe` step chart; `events` candle figure.
+- Finding and evidence: Measured on renderer output (label-coverage.cjs) and inspected in 260/760px rasters. Chapter 17's week labels covered 23.3% of path samples at 260px (13.5% at 760px) and hid the week-3 marker; Chapter 18's “C = 46; rise +3” box hid the top of the $47 wick and “O = 43; gap −9” clipped the $42 wick (16 wick samples); Chapter 16's “104.30” label hid the session 11→12 segment at 760px; Chapter 15's “Stock 90” broke the stock line between sessions 8 and 11 at 260px.
+- Proposed resolution: Shorter labels and placements chosen by measurement, with detail kept in captions/tables, following AUD2-018/PUB4-006/PUB4-009.
+- Acceptance criteria: Rasters show complete paths, wicks and markers; measured coverage near zero.
+- Discussion / progress: Placements were searched across above/below and short-label variants at 260/320/390/760px.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: Ch 15 “Stock 90” → “90”. Ch 16 “104.30” placed below. Ch 17 labels “105”/“103” below; the week-3 label removed and the caption now states “sessions 5, 10 and 15, to $105, $103 and $110” and that the developing weekly close is the daily line. Ch 18 labels “Prior C 52”, “O 43”, “C 46”; the full O/H/L/C values remain under the chart and in the caption. Renderer unchanged.
+- Changed locations: content/indicators-context.json; assets/figures relative-strength, breadth, multi-timeframe, multi-timeframe-2, events, market-microstructure-2 SVGs (the last two from caption text only).
+- Verification: Maximum covered path share 23.3% → 1.6%; covered wick samples 16 → 0; hidden markers 5 → 3 (all three are the edge-clamp case in PUB5-012). 18 after-rasters and 10 before-rasters inspected in figures/.
+
+### PUB5-007 — Relative-strength locators, source scope and repeated example
+- Priority / type: P3 / source support and polish
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 15 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json `relative-strength` evidence[0].location, sections[4].paragraphs[2], sections[5].paragraphs[0] and [2], figure caption; sources `ic-splits`; content/research-context.json chapterAdditions relative-strength section and evidence limits.
+- Finding and evidence: The Fidelity page has no “Calculation” heading; `ic-splits.supports` claimed chart comparability that the glossary entry does not state; the Jegadeesh & Titman limit text was copied from a breakout chapter (“distinct from a discretionary breakout”); “That supportive portfolio evidence” referred to a result never stated; the manufacturer example was reintroduced as “a second, deliberately contrasting interval”; the 112.5 vs 105.88 gap was said to “partly” reflect market weakness although it entirely does; “optional system-design task” although that chapter is not optional; “changing sessions” unclear.
+- Proposed resolution: Correct locators/supports, state the study result and its reversal limit, and tighten wording.
+- Acceptance criteria: Each statement matches its source page or the book's own arithmetic.
+- Discussion / progress: Source pages inspected 2026-10-11 (records in assets).
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: Implemented the corrections; the J&T limit now reads “Historical cross-sectional portfolio evidence; distinct from a single stock/benchmark price ratio … The study also reports that part of the first-year abnormal return dissipates over the following two years.” The section says the 1965–1989 NYSE/AMEX portfolios “earned positive returns”.
+- Changed locations: content/indicators-context.json; content/research-context.json; rebuilt book/manuscript/evidence matrix.
+- Verification: Reproduction 193/193; source records relative-strength-source-checks.json.
+
+### PUB5-008 — Breadth evidence pointer, quiz feedback, model note and source locator
+- Priority / type: P3 / polish and source support
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 16 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json `breadth` sections[5].paragraphs[2], quiz.feedback[2], practice[1].solution[3], evidence[0].location, sources `ic-breadth`.
+- Finding and evidence: “belongs in the empirical review” implies breadth evidence the appendix does not contain; quiz feedback for 75% guessed at the error rather than naming session 11; the model note failed its own marking rule (no comparison periods, omitted the unchanged stock); the Fidelity locator named a non-existent heading.
+- Proposed resolution: As implemented below.
+- Acceptance criteria: Statements match the appendix, the data and the source page headings.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: “This edition reports no study testing whether a breadth divergence … predicts later index returns. Do not infer a forecast from this accounting example.” Quiz: “75% is session 11’s figure (three advances, one decline)…”. Model note names session 0→1, the unchanged stock, the session −1 to 1 history window and E's exclusion. Locator: “Fidelity.com Help – Glossary: A, entries “A/D Line” … and “A/D Line (breadth)”.”
+- Changed locations: content/indicators-context.json; rebuilt book/manuscript/evidence matrix.
+- Verification: Session 11 counts 3/1/0 and session 12 counts 1/1/2 recomputed; practice table supports the −1 to 1 window.
+
+### PUB5-009 — Multi-timeframe figure wording and evidence locators
+- Priority / type: P3 / polish
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 17 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json `multi-timeframe` figure title, figures[0].caption, evidence[0] and [2] locations.
+- Finding and evidence: The flow caption referred to “the step chart”, which appears later; the title used colloquial “truly”; one locator named a non-heading, another abbreviated section titles.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: Title “Daily closes and the last completed weekly close (step series)”; flow caption “Each state is sampled after the named daily close, the convention used throughout the chapter.”; locators use the exact TradingView heading “Common characteristics: lookahead” and the chapter's section titles.
+- Changed locations: content/indicators-context.json; rebuilt outputs.
+- Verification: TradingView page headings re-inspected (multi-timeframe-source-checks.json).
+
+### PUB5-010 — Events range contradicts the figure; dead cross-reference; stop sourcing
+- Priority / type: P3 / defect and source support
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 18 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json `events` sections[0].paragraphs[0], sections[5].paragraphs[0] and [3], evidence `events-market-limit-ordinary-stop-behavior`.
+- Finding and evidence: The prose says a month “between $48 and $52”, but the prior-session candle has H $53. “The evidence review addresses claims about event-based strategies”, but no research section or chapter does. The SEC's explicit “stop price is not the guaranteed execution price” wording is in Trading Basics, which the stop-behavior record did not cite.
+- Disposition: resolved
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: Range now $48–$53 in both places; cross-reference now “The planning chapter adds an earnings calendar and halt handling to the record. This book reports no study of event-based strategies; the testing chapter describes what evidence such a rule would need.”; the stop record cites `ic-orders` and `ic-order-details` with page locators. `ic-splits` wording is shared with PUB5-007.
+- Changed locations: content/indicators-context.json; rebuilt outputs.
+- Verification: Candle H 53 recomputed; Chapter 21 earnings-calendar and halt content confirmed in content/risk-advanced.json; SEC Pub. 141 printed pp. 2–3 inspected (events-source-checks.json).
+
+### PUB5-011 — Microstructure definitions, evidence scope and FINRA source record
+- Priority / type: P3 / definitions and source support
+- Status: resolved
+- Owner: claude-code-alpha (claimed 2026-10-11)
+- Reviewer / date: batch-5 Chapter 19 reviewer agent / 2026-10-11
+- Location: content/indicators-context.json `market-microstructure` sections[0].paragraphs[0–1], sections[1].paragraphs[0], evidence[0] and the IOC evidence record, figures[0].caption, sources `ic-spread`; content/research-context.json glossary-support location for `ic-spread`.
+- Finding and evidence: Best bid/ask and midpoint were used before definition; “price improvement” undefined; the IOC evidence record claimed stop-limit coverage the chapter does not contain; the `ic-spread` record was titled “Understanding disclosure documents” while its syndication URL serves FINRA's “Understanding Market Liquidity and Your Investments” (confirmed 2026-10-11 against the canonical finra.org page, same sentences); the spread chart caption did not say the quotes are fictional.
+- Disposition: resolved (formatting of the 50.1 table cells and the “SEC’s execution overview” naming left unchanged as minor)
+- Closed by / date: claude-code-alpha / 2026-10-11
+- Resolution: Added best bid/ask and midpoint definitions with ($49.90 + $50.10)/2 = $50; price improvement defined; IOC record narrowed to IOC with its page locator; `ic-spread` now titled “FINRA · Understanding market liquidity and your investments” at https://www.finra.org/investors/insights/market-liquidity-risk, with both locators updated; caption begins “Fictional quotes.”
+- Changed locations: content/indicators-context.json; content/research-context.json; rebuilt outputs.
+- Verification: Both FINRA URLs fetched and compared; reproduction 151/151; market-microstructure-source-checks.json (14 checks).

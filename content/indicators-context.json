@@ -2560,7 +2560,7 @@
           "paragraphs": [
             "At session 1 all three main series are 100, so each relative index begins at 100. At session 3 the stock is 101, sector 100, and market 99. It is up 1% absolutely, ahead of sector by one percentage point and market by two. Its stock/market index is 101/99 × 100 ≈ 102.0202. The calculation uses percentage relationships; it is not a difference in quoted price units.",
             "At session 6, stock 96 is down 4%, sector 93 down 7%, and market 90 down 10%. The stock now loses money over the interval while outperforming both references. Its relative indices are 96/93 × 100 ≈ 103.2258 against sector and 96/90 × 100 ≈ 106.6667 against market. The bottom panel rises while the top panel falls. Read both before using the word strength.",
-            "At session 12, stock 90, sector 85, and market 80 give relative indices 105.8824 and 112.5. The stock’s absolute −10% accompanies a five-percentage-point advantage over sector and ten-point advantage over market. The larger market-relative figure partly reflects greater market weakness; the stock itself did not earn +12.5%.",
+            "At session 12, stock 90, sector 85, and market 80 give relative indices 105.8824 and 112.5. The stock’s absolute −10% accompanies a five-percentage-point advantage over sector and ten-point advantage over market. The higher market-relative figure reflects the market’s greater weakness (80 versus the sector’s 85), not a different stock result; the stock itself did not earn +12.5%.",
             "A precise note now says “stock declined less than both comparators in this window; its relative strength versus market exceeded that versus sector.” Sector leadership and market leadership can differ in other windows. Changing the comparator is appropriate when changing the research question, but not to rescue an unfavorable comparison after its outcome is known."
           ],
           "id": "follow-the-comparison-chronologically"
@@ -2568,9 +2568,9 @@
         {
           "title": "Use the comparison to organize research",
           "paragraphs": [
-            "Consider a second, deliberately contrasting interval: stock +8%, sector +12%, market +4%. Stock/market relative index is 108/104 × 100 = 103.8462, while stock/sector is 108/112 × 100 = 96.4286. Absolute gain and market outperformance coexist with sector underperformance. This is why a “strong stock” label should identify the benchmark and period.",
+            "Return to the manufacturer from the benchmark section: stock +8%, sector +12%, market +4%. Stock/market relative index is 108/104 × 100 = 103.8462, while stock/sector is 108/112 × 100 = 96.4286. Absolute gain and market outperformance coexist with sector underperformance. This is why a “strong stock” label should identify the benchmark and period.",
             "An investor could use these observations to decide where further business or chart research is useful. In the main dataset, ask whether relative resilience is consistent across shorter windows or concentrated around a few dates. In the contrast, ask why the sector was stronger than this company. The ratios identify the comparison; they do not by themselves establish causes or replace valuation and diversification.",
-            "For a method selecting leaders, eligibility, horizon, ranking, and rebalance rules still require explicit specification. That is a later optional system-design task. The beginner task here is to calculate matched comparisons and write a coherent note. Record distributions, currency, adjustment policy, and timestamps before moving from these synthetic price-only examples to a real data provider.",
+            "For a method selecting leaders, eligibility, horizon, ranking, and rebalance rules still require explicit specification. That is a later system-design task. The beginner task here is to calculate matched comparisons and write a coherent note. Record distributions, currency, adjustment policy, and timestamps before moving from these synthetic price-only examples to a real data provider.",
             "A quick quality check is to work backward: divide the stock growth factor by the benchmark growth factor. Main end factors are 0.90/0.80 = 1.125 and 0.90/0.85 = 1.058824. A purported relative result inconsistent with those ratios has probably mixed percentages, denominators, dates, or adjustment conventions."
           ],
           "id": "use-the-comparison-to-organize-research"
@@ -2608,7 +2608,7 @@
       "figure": {
         "kind": "panels",
         "title": "Relative leadership inside absolute losses",
-        "caption": "The same 12 fictional observations underlie table, prose, example, and exercise. No distributions, splits, currency changes, or changing sessions. All initial values are rebased to 100.",
+        "caption": "The same 12 fictional observations underlie table, prose, example, and exercise. No distributions, splits, currency changes, or mismatched sessions. All initial values are rebased to 100.",
         "panels": [
           {
             "kind": "line",
@@ -2679,7 +2679,7 @@
                 "index": 11,
                 "seriesIndex": 0,
                 "label": "Stock loses 10% over the window.",
-                "shortLabel": "Stock 90",
+                "shortLabel": "90",
                 "placement": "above"
               }
             ]
@@ -2810,7 +2810,7 @@
           "sourceIds": [
             "ic-relative"
           ],
-          "location": "Fidelity Relative Strength Comparison Description/Calculation.",
+          "location": "Fidelity Relative Strength Comparison, Description (ratio calculation and up/sideways/down interpretation).",
           "summary": "Read price ratio and relative interpretation; rebasing is shown algebraically.",
           "limits": "No persistence/profitability inference is drawn from the definition.",
           "checked": "2026-10-01",
@@ -2922,9 +2922,9 @@
         {
           "title": "The advance–decline line accumulates net participation",
           "paragraphs": [
-            "Let A be the count of advancing issues and D the count of declining issues. Net advances equal A − D. An advance–decline line adds that daily net count to the preceding cumulative value. Fidelity’s glossary describes this cumulative concept. Choose a baseline such as zero at a documented start. The absolute cumulative level then depends on that start; changes and shape are the meaningful objects of comparison.",
+            "Let adv be the count of advancing issues and dec the count of declining issues. Net advances equal adv − dec. An advance–decline line adds that daily net count to the preceding cumulative value. Fidelity’s glossary describes this cumulative concept. Choose a baseline such as zero at a documented start. The absolute cumulative level then depends on that start; changes and shape are the meaningful objects of comparison.",
             "In a fictional 100-stock universe, day one has 60 advances, 30 declines, and 10 unchanged: net +30 and cumulative +30. Day two has 35 advances, 55 declines, and 10 unchanged: net −20 and cumulative +10. Day three has 45 advances, 45 declines, and 10 unchanged: net zero and cumulative still +10. A day with equal advances and declines does not imply unchanged prices for every member or an unchanged weighted index.",
-            "The final constituent table compares each stock with the common starting point. A daily A/D count uses the immediately preceding observation instead. At session 12, A rises 109→110, B and C are unchanged at 98 and 97, and D falls 96→95: A = 1, D = 1, unchanged = 2, daily net zero. Do not substitute the since-start count of one winner and three losers into the daily line."
+            "The final constituent table compares each stock with the common starting point. A daily A/D count uses the immediately preceding observation instead. At session 12, A rises 109→110, B and C are unchanged at 98 and 97, and D falls 96→95: advances = 1, declines = 1, unchanged = 2, daily net zero. Do not substitute the since-start count of one winner and three losers into the daily line."
           ],
           "tables": [
             {
@@ -3042,7 +3042,7 @@
         {
           "title": "Different breadth measures encode different questions",
           "paragraphs": [
-            "An advance/decline ratio is A/D when D is nonzero. An advancing fraction might be A/(A + D), excluding unchanged issues, or A/U, where U is all eligible issues. Those fractions differ when some issues are unchanged. In the first example, 60/90 ≈ 66.67% of movers advanced, while 60/100 = 60% of the full universe advanced. Never discuss a threshold without naming its denominator and edge-case treatment.",
+            "An advance/decline ratio is adv/dec when dec is nonzero. An advancing fraction might be adv/(adv + dec), excluding unchanged issues, or adv/U, where U is all eligible issues. Those fractions differ when some issues are unchanged. On day one of the 100-stock example, 60/90 ≈ 66.67% of movers advanced, while 60/100 = 60% of the full universe advanced. Never discuss a threshold without naming its denominator and edge-case treatment.",
             "Another measure counts stocks above a chosen moving average: 100 × eligible stocks above their average / eligible stocks with sufficient history. Equality, missing history, and the lookback must be specified. New-high and new-low counts require a lookback and a definition, such as intraday extreme versus closing extreme. Each measure condenses the market in a different way; agreement is more informative when you understand exactly which classifications are agreeing."
           ],
           "id": "different-breadth-measures-encode-different-questions"
@@ -3070,7 +3070,7 @@
           "paragraphs": [
             "At session 12, one advance, one decline, and two unchanged give advancing fraction among movers 1/(1+1) = 50%, but advancing fraction among all eligible constituents 1/4 = 25%. The daily net is zero. The since-start count instead has one gainer out of four, with net −2. All are valid measurements, but each must name its comparison period and denominator.",
             "For the core exercise, write the counts alongside the index contribution rather than calling the index healthy or weak without evidence. A defensible final note is “the fixed-weight toy index gained 4.8% from its start, led by the 60%-weight constituent; only one of four stocks gained over that interval.” It says precisely what the data establish.",
-            "For real datasets, first inspect whether the population includes common stocks, funds, or other issues, and how new listings, delistings, unchanged prices, and insufficient histories affect the denominator. The above-average metric introduced earlier requires sufficient history for the chosen window. Those eligibility questions should precede any numerical threshold. Prediction from a breadth divergence belongs in the empirical review, rather than being assumed from this accounting example."
+            "For real datasets, first inspect whether the population includes common stocks, funds, or other issues, and how new listings, delistings, unchanged prices, and insufficient histories affect the denominator. The above-average metric introduced earlier requires sufficient history for the chosen window. Those eligibility questions should precede any numerical threshold. This edition reports no study testing whether a breadth divergence — an index rising while participation narrows, or the reverse — predicts later index returns. Do not infer a forecast from this accounting example."
           ],
           "id": "write-a-breadth-note-with-a-fair-denominator"
         }
@@ -3092,7 +3092,7 @@
         "feedback": [
           "25% uses all four eligible constituents, including two unchanged, in the denominator.",
           "One advance among two moving constituents gives 50%.",
-          "Three of four are not daily advancers at 12; this likely confuses another session or a since-start classification."
+          "75% is session 11’s figure (three advances, one decline). At session 12 only A advanced, and only two constituents moved."
         ]
       },
       "sources": [
@@ -3233,7 +3233,7 @@
                 "seriesIndex": 0,
                 "label": "Index falls to 104.3 despite three daily advancers.",
                 "shortLabel": "104.30",
-                "placement": "above"
+                "placement": "below"
               }
             ]
           },
@@ -3449,7 +3449,7 @@
             "Index = 0.55 × 96 + 0.20 × 103 + 0.10 × 102 + 0.10 × 101 + 0.05 × 100 = 52.80 + 20.60 + 10.20 + 10.10 + 5.00 = 98.70. Change is −1.30 points, or −1.30% from 100. A contributes −2.20 points; B/C/D contribute +0.60/+0.20/+0.10, and E contributes zero.",
             "Compared with session 0, B/C/D advance, A declines and E is unchanged: advances 3, declines 1, unchanged 1; net advances +2. Advancing fraction among movers is 3/(3 + 1) = 75%; among all five is 3/5 = 60%. These daily counts use session 0, not session −1.",
             "Three-session SMAs use sessions −1, 0 and 1: A (98 + 100 + 96)/3 = 98; B (103 + 100 + 103)/3 = 102; C (104 + 100 + 102)/3 = 102; D (102 + 100 + 101)/3 = 101. A is below, B above, C/D equal. E has only two observations, so its three-session SMA is undefined. One of four eligible stocks is strictly above its SMA: 25%, rather than 1/5 = 20%. Including E would silently classify unavailable information as not above.",
-            "Example note: “The fixed-initial-weight index fell 1.30% despite three advancers and one decliner because A’s 55% weight dominated the aggregate. Separately, one of four stocks with sufficient three-session history was strictly above its mean.” Equivalent wording earns credit if it names both comparison periods, the weighting, equality policy and eligibility denominator. Neither count establishes future direction."
+            "Example note: “From session 0 to session 1, the fixed-initial-weight index fell 1.30% despite three advancers, one decliner and one unchanged stock, because A’s 55% weight dominated the aggregate. Separately, at the session-1 close one of four stocks with a complete three-session history (sessions −1 to 1) was strictly above its mean; E was excluded for insufficient history.” Equivalent wording earns credit if it names both comparison periods, the weighting, equality policy and eligibility denominator. Neither count establishes future direction."
           ],
           "tables": [
             {
@@ -3509,7 +3509,7 @@
           "sourceIds": [
             "ic-breadth"
           ],
-          "location": "Fidelity glossary, A/D Line (cumulative); A/D Line (breadth) is a separate advancing-fraction measure.",
+          "location": "Fidelity.com Help – Glossary: A, entries “A/D Line” (cumulative total) and “A/D Line (breadth)” (advancing ÷ advancing + declining).",
           "summary": "Read cumulative advance/decline description and advancing fraction among movers.",
           "limits": "Provider fields and universes differ; no listed bullish threshold is treated as established efficacy.",
           "checked": "2026-10-01",
@@ -3675,8 +3675,8 @@
         {
           "title": "Give the weekly and daily views separate jobs",
           "paragraphs": [
-            "For this demonstration, weekly context is up if the latest completed weekly close exceeds the preceding completed weekly close, otherwise down-or-equal. This is a close-direction teaching classification, not a full higher-high/higher-low trend definition. Daily change describes today’s close compared with yesterday. We use weekly context to decide whether an upward daily observation is aligned, conflicting, or still provisional. No order rule is implied.",
-            "Before session 5, the known weekly pair is $98→$99, so context is up. After 5, it is $99→$105, still up. During sessions 8 and 9 the daily price falls from $107 to $105 to $104, while last completed weekly close remains $105. This is a daily retreat inside the still-up completed weekly context. Calling the views contradictory would erase their different boundaries.",
+            "For this demonstration, weekly context is up if the latest completed weekly close exceeds the preceding completed weekly close, otherwise down-or-equal. This is a close-direction teaching classification, not a full higher-high/higher-low trend definition. Daily change describes today’s close compared with yesterday. We then label an upward daily change aligned when completed-week context is up and conflicting when it is down-or-equal. The label compares directions over different intervals; it does not mean either description is wrong, and the developing week is never used to assign it. No order rule is implied.",
+            "Before session 5, the known weekly pair is $98→$99, so context is up. After 5, it is $99→$105, still up. During sessions 8 and 9 the daily price falls from $107 to $105 to $104, while last completed weekly close remains $105. This is a daily retreat inside the still-up completed weekly context. The directions differ, but the descriptions do not contradict each other: they cover different intervals. Because the labels apply only to upward daily changes, sessions 8 and 9 receive neither label.",
             "At session 10 the week actually finishes at $103, below prior $105. Context changes to down at that close. Session 11 rises $103→$104, an upward daily change against down completed-week context. The analyst should record a conflict rather than quietly treating the current developing week as already complete. At session 15, the $110 completion changes weekly context back to up."
           ],
           "id": "give-the-weekly-and-daily-views-separate-jobs"
@@ -3694,7 +3694,7 @@
           "paragraphs": [
             "The confirmed series is $99 after sessions 1–4, $105 after 5–9, $103 after 10–14, and $110 after 15. It holds each established value constant and jumps only at the completion timestamp. The illustration uses a step line: a slope between sessions 4 and 5 would falsely suggest gradual availability of the next final value. Observations are sampled after the daily close; just before the session-5 close, $99 is still the latest confirmed value.",
             "A developing weekly close can be shown separately if it is labeled provisional. In this simplified close-only example, that developing value equals each latest daily close during the week. It changes with the daily line, not the confirmed step series. A reader examining session 9 must not replace it with the session-10 final close.",
-            "To check a multi-timeframe note, ask for three fields: decision timestamp, most recent completed higher-timeframe observation, and current lower-timeframe observation. At session 11 they are “after close 11,” “completed week 2 close $103 versus prior $105,” and “daily close $104 versus $103.” That record preserves the genuine conflict without requiring a trade to resolve it."
+            "To check a multi-timeframe note, ask for three fields: decision timestamp, most recent completed higher-timeframe observation, and current lower-timeframe observation. At session 11 they are “after close 11,” “completed week 2 close $103 versus prior $105,” and “daily close $104 versus $103.” That record preserves the labelled conflict without requiring a trade to resolve it."
           ],
           "id": "follow-the-clock-rather-than-interpolate"
         },
@@ -3738,8 +3738,8 @@
       ],
       "figure": {
         "kind": "line",
-        "title": "Daily closes and a truly completed-week step series",
-        "caption": "The 15 fictional sessions form three five-session weeks. Values are sampled after each daily close. Confirmed weekly close changes only at sessions 5, 10, 15; prior completed closes are $98 and $99. Daily closes do not supply weekly highs/lows.",
+        "title": "Daily closes and the last completed weekly close (step series)",
+        "caption": "The 15 fictional sessions form three five-session weeks. Values are sampled after each daily close. Confirmed weekly close changes only at sessions 5, 10 and 15, to $105, $103 and $110; prior completed closes are $98 and $99. In this close-only example the developing weekly close is the daily line itself. Daily closes do not supply weekly highs/lows.",
         "afterSection": 4,
         "xLabel": "Session",
         "yLabel": "Close ($)",
@@ -3793,22 +3793,15 @@
             "index": 4,
             "seriesIndex": 1,
             "label": "Week 1 completes: weekly close becomes $105.",
-            "shortLabel": "Week 1: 105",
-            "placement": "above"
+            "shortLabel": "105",
+            "placement": "below"
           },
           {
             "index": 9,
             "seriesIndex": 1,
             "label": "Week 2 completes: weekly close becomes $103.",
-            "shortLabel": "Week 2: 103",
-            "placement": "above"
-          },
-          {
-            "index": 14,
-            "seriesIndex": 1,
-            "label": "Week 3 completes: weekly close becomes $110.",
-            "shortLabel": "Week 3: 110",
-            "placement": "above"
+            "shortLabel": "103",
+            "placement": "below"
           }
         ]
       },
@@ -3827,7 +3820,7 @@
         {
           "kind": "flow",
           "title": "What changes at each weekly completion",
-          "caption": "The three states follow the same post-close sampling convention as the step chart.",
+          "caption": "Each state is sampled after the named daily close, the convention used throughout the chapter.",
           "afterSection": 2,
           "steps": [
             {
@@ -3876,7 +3869,7 @@
           "sourceIds": [
             "ic-timeframes"
           ],
-          "location": "TradingView Other timeframes and data, Historical and realtime behavior; Avoiding repainting: Higher-timeframe data; lookahead discussion.",
+          "location": "TradingView Other timeframes and data, Historical and realtime behavior; Avoiding repainting: Higher-timeframe data; Common characteristics: lookahead.",
           "summary": "Read distinction between evolving higher-timeframe values and confirmed values, including future leakage.",
           "limits": "This book’s post-close teaching timestamps are explicit; platform script update timing must be matched separately.",
           "checked": "2026-10-01",
@@ -3896,7 +3889,7 @@
           "claim": "Weekly close-direction context and eligibility",
           "type": "teaching-rule",
           "sourceIds": [],
-          "location": "Give the views separate jobs; aligned/conflicting cases.",
+          "location": "Give the weekly and daily views separate jobs; Work through an aligned and a conflicting case.",
           "summary": "Original comparison of successive completed weekly closes, with optional up-context research eligibility.",
           "limits": "This is not a full swing trend definition or demonstrated effective filter.",
           "checked": "2026-10-01",
@@ -3923,7 +3916,7 @@
         {
           "title": "The recent pattern is a conditional history",
           "paragraphs": [
-            "Suppose a fictional stock spends a month between $48 and $52. Its recent chart supports a description of repeated trading in that range. Now the company releases information that materially changes participants’ expectations. The next transactions may occur outside the familiar band. The old chart was not a contract requiring the next buyer and seller to negotiate inside its boundaries. It summarized trading under the information then available.",
+            "Suppose a fictional stock spends a month between $48 and $53. Its recent chart supports a description of repeated trading in that range. Now the company releases information that materially changes participants’ expectations. The next transactions may occur outside the familiar band. The old chart was not a contract requiring the next buyer and seller to negotiate inside its boundaries. It summarized trading under the information then available.",
             "Events can be scheduled, such as a results announcement, or unexpected, such as a sudden operational disruption. Other developments affect many stocks at once. You do not need to predict every headline to recognize that information arrival is part of the trading environment. A technical hypothesis should specify how it handles an event during its intended holding period, especially when the plan relies on small recent ranges or an orderly exit."
           ],
           "id": "the-recent-pattern-is-a-conditional-history"
@@ -3933,7 +3926,7 @@
           "paragraphs": [
             "The main fictional case has prior regular-session close $52 and an announcement afterward. Next regular session opens $43, reaches high $47 and low $42, then closes $46. Opening gap is 43−52 = −$9, or −17.3077% using prior close as denominator. The current candle’s body is positive because $46 exceeds $43; that does not erase the overnight loss.",
             "Open-to-close return is (46/43−1) × 100 = +6.9767%. Close-to-close return is (46/52−1) × 100 = −11.5385%. These differ because they compare different starting prices. The candle figure shows the $43 open and $46 close inside the $42–$47 range, with the previous $52 close above that entire range. Follow the table before trying to narrate why it happened.",
-            "A regular-session chart can omit trades outside its displayed session. “Opening gap” therefore specifies a sampled regular close-to-open comparison, rather than proving that no transactions occurred in between. If a missing interval is caused by incomplete data, the same visual blank has another explanation. Check instrument, session, data coverage, and corporate actions before assigning a market story."
+            "A regular-session chart can omit trades outside its displayed session. “Opening gap” therefore specifies a sampled regular close-to-open comparison, rather than proving that no transactions occurred in between. If a missing interval is caused by incomplete data, the same visual blank has another explanation. Check instrument, session, data coverage, and corporate actions before assigning a market story. A stricter test asks whether the whole new range lies outside the previous session’s range. Here both tests agree, because the $47 high is below the prior $50 low. They can disagree: an open below the prior close that later trades back into the prior high–low range is a close-to-open gap but not a range gap. State which definition a rule uses."
           ],
           "tables": [
             {
@@ -4025,10 +4018,10 @@
         {
           "title": "Write the before-and-after note",
           "paragraphs": [
-            "Before release: “The regular-session close is $52, after a month’s observations in the $48–$52 region. An announcement is scheduled after the close. Our hypothetical worksheet uses 100 shares from $52 and a $48 ordinary-stop trigger; a gap beyond it can change execution.” This note records what the chart and plan establish without forecasting the release’s sign.",
+            "Before release: “The regular-session close is $52, after a month’s observations in the $48–$53 region. An announcement is scheduled after the close. Our hypothetical worksheet uses 100 shares from $52 and a $48 ordinary-stop trigger; a gap beyond it can change execution.” This note records what the chart and plan establish without forecasting the release’s sign.",
             "After next close: “Session O = 43/H = 47/L = 42/C = 46. Gap was −17.3077%; intraday recovery +6.9767%; close-to-close result −11.5385%. The price stayed below prior $52 throughout the session. Under the explicit $43 exit model, price loss is $900, compared with $400 at the planned threshold.” The note uses exactly the illustrated values.",
             "Now separate observation from explanation. A negative reaction is visible; the claim that a particular guidance detail caused it requires the release itself and further evidence. A positive candle is also visible; the claim that the pre-release position recovered is contradicted by the $46 close. These two diagnoses build chart-reading competence without assigning a story that can accommodate every outcome.",
-            "A practical scenario exercise can compare little change, a favorable gap, and an adverse gap before the event. Use it to expose assumptions about exits, rather than inventing probabilities. The present chapter demonstrates only the adverse-gap accounting and recovery comparisons. The planning chapter broadens the record and the evidence review addresses claims about event-based strategies."
+            "A practical scenario exercise can compare little change, a favorable gap, and an adverse gap before the event. Use it to expose assumptions about exits, rather than inventing probabilities. The present chapter demonstrates only the adverse-gap accounting and recovery comparisons. The planning chapter adds an earnings calendar and halt handling to the record. This book reports no study of event-based strategies; the testing chapter describes what evidence such a rule would need."
           ],
           "id": "write-the-before-and-after-note"
         }
@@ -4094,21 +4087,21 @@
             "index": 0,
             "value": 52,
             "label": "Prior close $52; announcement afterward",
-            "shortLabel": "Prior C = 52",
+            "shortLabel": "Prior C 52",
             "placement": "above"
           },
           {
             "index": 1,
             "value": 43,
             "label": "Open $43: gap −$9 from prior close",
-            "shortLabel": "O = 43; gap −9",
+            "shortLabel": "O 43",
             "placement": "below"
           },
           {
             "index": 1,
             "value": 46,
             "label": "Close $46: intraday +$3, still −$6 from prior close",
-            "shortLabel": "C = 46; rise +3",
+            "shortLabel": "C 46",
             "placement": "above"
           }
         ]
@@ -4215,9 +4208,10 @@
           "claim": "Market/limit/ordinary-stop behavior",
           "type": "definition",
           "sourceIds": [
-            "ic-orders"
+            "ic-orders",
+            "ic-order-details"
           ],
-          "location": "Investor.gov Types of Orders.",
+          "location": "Investor.gov Types of Orders (market, limit and stop paragraphs); SEC Trading Basics printed page 2, Stop Order; printed page 3, Opening Transactions.",
           "summary": "Read price uncertainty, limit bounds, and ordinary-stop conversion to market order.",
           "limits": "The $43 execution is an explicit teaching model, not an inference from the candle.",
           "checked": "2026-10-01",
@@ -4281,15 +4275,15 @@
         {
           "title": "Last price, bid, and ask describe different things",
           "paragraphs": [
-            "A candlestick summarizes completed trades. A quote describes displayed interest to transact under particular conditions. The bid is a price buyers are willing to pay; the ask is a price sellers are willing to accept. Their difference is the quoted spread. FINRA links limited liquidity with greater difficulty transacting and wider spreads. The last completed trade can lie between current quotes or become stale after they move.",
-            "The main static book has best bid $49.90 for 300 shares and best ask $50.10 for 100 shares. Midpoint is $50 and spread $0.20. Last trade is assumed $50, but that print does not supply a counterparty for a new order. A buyer seeking immediate execution consumes an available ask; an immediate seller consumes an available bid. The SEC notes that last-traded price need not equal the price obtained by a market order."
+            "A candlestick summarizes completed trades. A quote describes displayed interest to transact under particular conditions. The bid is a price buyers are willing to pay; the ask is a price sellers are willing to accept. The highest displayed bid is the best bid and the lowest displayed ask is the best ask; the quoted spread is best ask minus best bid. FINRA links limited liquidity with greater difficulty transacting and wider spreads. The last completed trade can lie between current quotes or become stale after they move.",
+            "The main static book has best bid $49.90 for 300 shares and best ask $50.10 for 100 shares. The midpoint, the average of best bid and best ask, is ($49.90 + $50.10)/2 = $50; the spread is $0.20. Last trade is assumed $50, but that print does not supply a counterparty for a new order. A buyer seeking immediate execution consumes an available ask; an immediate seller consumes an available bid. The SEC notes that last-traded price need not equal the price obtained by a market order."
           ],
           "id": "last-price-bid-and-ask-describe-different-things"
         },
         {
           "title": "The spread is a cost even before price moves",
           "paragraphs": [
-            "In a deliberately simplified example, buy 100 shares at $50.10 and immediately sell them at $49.90, with unchanged quotes, sufficient quantity, and no fees. The round trip loses $20. The midpoint never moved. This makes the spread visible as a trading friction that a backtest using only closing prices can omit. Real execution can differ through price improvement, partial fills, changing quotes, and other costs.",
+            "In a deliberately simplified example, buy 100 shares at $50.10 and immediately sell them at $49.90, with unchanged quotes, sufficient quantity, and no fees. The round trip loses $20. The midpoint never moved. This makes the spread visible as a trading friction that a backtest using only closing prices can omit. Real execution can differ through price improvement (execution at a better price than the current quote, possible but not guaranteed), partial fills, changing quotes, and other costs.",
             "A twenty-cent spread has different proportional importance at different prices. Spread divided by midpoint gives a relative spread: $0.20/$50 = 0.4% in this example. That measure still omits size. A quote suitable for 100 shares may not support an order for 10,000 shares. When a trading method aims for small price changes or high turnover, even modest execution friction can materially alter its results. Test the cost model at the scale of the actual method."
           ],
           "id": "the-spread-is-a-cost-even-before-price-moves"
@@ -4298,8 +4292,8 @@
           "title": "Walk a 250-share buy through the ladder",
           "paragraphs": [
             "The figure lists displayed asks at $50.10 for 100 shares, $50.20 for 200, and $50.30 for 300. We assume these quantities remain fixed, no other accessible liquidity, and no competing orders arriving first. Those conditions deliberately create a small executable arithmetic model. They are not claims about a real order book’s stability.",
-            "A marketable buy for 250 shares first takes 100 at $50.10. It needs 150 more, which are taken from the 200 offered at $50.20. The third row is untouched. Fill value is 100 × 50.10 + 150 × 50.20 = $12,540. Divide by 250 to obtain the weighted fill price $50.16. The best ask $50.10 was available only for 100 shares; it was not a price offer for the whole order.",
-            "The ladder’s consumed/remaining columns make the sequence visible. The first ask is depleted, 50 remain at $50.20, and all 300 at $50.30 remain. Now compare a buy limit at $50.10 for the same 250 shares. Under this static model it can take only 100 immediately; the other 150 remain unfilled under an ordinary resting instruction. If given an immediate-or-cancel instruction, that remainder is canceled.",
+            "A market buy order for 250 shares (a buy limit at $50.20 or higher would fill the same way here) first takes 100 at $50.10. It needs 150 more, which are taken from the 200 offered at $50.20. The third row is untouched. Fill value is 100 × 50.10 + 150 × 50.20 = $12,540. Divide by 250 to obtain the weighted fill price $50.16. The best ask $50.10 was available only for 100 shares; it was not a price offer for the whole order.",
+            "The ladder’s consumed/remaining columns make the sequence visible. The first ask is depleted, 50 remain at $50.20, and all 300 at $50.30 remain. Now compare a buy limit at $50.10 for the same 250 shares. It can execute immediately only against the 100 shares offered at $50.10. Under this static model it can take only 100 immediately; the other 150 remain unfilled under an ordinary resting instruction. If given an immediate-or-cancel instruction, that remainder is canceled.",
             "A historical candle touching $50.10 does not establish either modeled outcome without the available quantities and timing. The static ladder is valuable precisely because it supplies those assumptions. Live quotes can change before the order arrives, accessible interest can exist elsewhere, and competing orders can consume it first. The SEC’s execution overview explains why order submission and execution are separate events."
           ],
           "tables": [
@@ -4313,7 +4307,7 @@
               ],
               "rows": [
                 [
-                  "Marketable 250-share buy",
+                  "Market buy, 250 shares",
                   250,
                   50.16,
                   0
@@ -4355,7 +4349,7 @@
           "title": "Measure costs against a named reference",
           "paragraphs": [
             "Using decision-time midpoint $50 as reference, the main 250-share buy at average $50.16 is $0.16 per share above midpoint, or $40 total. Relative to the best ask $50.10, it is $0.06 higher on average, or $15. These are different benchmarks for the same fill; quoting slippage without identifying the reference leaves the comparison ambiguous.",
-            "Suppose the 300-share bid at $49.90 remains available after the modeled purchase and the position is immediately sold. Sale value is 250 × 49.90 = $12,475; purchase value $12,540; price-only round-trip loss is $65. This includes the initial spread and the effect of consuming a second ask level. It differs from the earlier 100-share round trip’s $20 because order size reached beyond the first quote.",
+            "Suppose the 300-share bid at $49.90 remains available after the modeled purchase and the position is immediately sold. Sale value is 250 × 49.90 = $12,475; purchase value $12,540; price-only round-trip loss is $65. On 250 shares the $0.20 spread alone costs $50; the remaining $15 is the extra $0.10 paid on the 150 shares taken at the second ask level. Per share the loss is $0.26, against $0.20 for the earlier 100-share round trip; that $0.06 difference is what reaching beyond the first quote cost.",
             "A completed model record is now possible: “Decision reference midpoint $50; buy 250; static accessible asks 100@50.10 and at least 150@50.20; fills 100/150; mean $50.16; immediate sale assumption 250@49.90; loss $65 before fees.” If the bid changes or quantity disappears, that last result changes. Recording the assumptions makes the consequence inspectable.",
             "For actual practice, record decision time, quote reference, order instruction, requested shares, individual fills, and unfilled remainder. A no-fee statement removes fees only; it does not remove spread or price movement. The planning and testing chapters use this distinction when translating a chart event into a cost-aware opportunity. You need enough mechanics to challenge impossible fills, without mastering every exchange rule."
           ],
@@ -4455,7 +4449,7 @@
       "outcomes": [
         "Read spread and quoted quantity separately from last-traded price.",
         "Process a larger buy through a static order-book ladder and compute weighted execution.",
-        "Compare a partial limit fill with a full marketable purchase and label model assumptions."
+        "Compare a partial limit fill with a full market-order purchase and label model assumptions."
       ],
       "prerequisites": [
         "chart-anatomy",
@@ -4467,7 +4461,7 @@
         {
           "kind": "line",
           "title": "Quoted prices can widen around a flat midpoint",
-          "caption": "A separate contrast retains midpoint $50 while quoted spread changes. It illustrates a liquidity condition, not the fixed book’s post-fill evolution.",
+          "caption": "Fictional quotes. A separate contrast retains midpoint $50 while quoted spread changes. It illustrates a liquidity condition, not the fixed book’s post-fill evolution.",
           "afterSection": 4,
           "xLabel": "Quote snapshot",
           "yLabel": "Quoted price ($)",
@@ -4570,7 +4564,7 @@
           "sourceIds": [
             "ic-spread"
           ],
-          "location": "FINRA Understanding Disclosure Documents, introduction and Why Market Liquidity Matters.",
+          "location": "FINRA Understanding Market Liquidity and Your Investments, introduction and Why Market Liquidity Matters.",
           "summary": "Inspected bid/ask definitions and spread/quantity relevance to liquidity.",
           "limits": "A narrow spread alone is not a complete liquidity measure.",
           "checked": "2026-10-01",
@@ -4602,13 +4596,13 @@
           "id": "market-microstructure-auction-indications"
         },
         {
-          "claim": "IOC and stop-limit mechanics",
+          "claim": "Immediate-or-cancel remainder",
           "type": "definition",
           "sourceIds": [
             "ic-order-details"
           ],
-          "location": "SEC Trading Basics, printed page 2 Stop-limit Order; printed page 3 Immediate-Or-Cancel Orders.",
-          "summary": "Read limit conversion and cancellation of any unfilled immediate remainder.",
+          "location": "SEC Trading Basics (Pub. No. 141), printed page 3, Immediate-Or-Cancel Orders.",
+          "summary": "Read that an IOC order must execute immediately and any portion not filled immediately is cancelled.",
           "limits": "Broker availability and trigger standards vary.",
           "checked": "2026-10-01",
           "id": "market-microstructure-ioc-and-stop-limit-mechanics"
@@ -4720,7 +4714,7 @@
     "ic-splits": {
       "title": "SEC / Investor.gov · Stock split",
       "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split",
-      "supports": "Share-count and price-unit changes from splits; historical chart comparability.",
+      "supports": "Split mechanics: a two-for-one split doubles share count and halves price per share without diluting ownership (100 shares at $100 become 200 at $50). Comparability of price histories across a split is the book’s inference.",
       "accessed": "2026-10-01"
     },
     "ic-rsi-smoothing": {
@@ -4742,8 +4736,8 @@
       "accessed": "2026-10-01"
     },
     "ic-spread": {
-      "title": "FINRA · Understanding disclosure documents",
-      "url": "https://syndication.finra.org/content/understanding-disclosure-documents",
+      "title": "FINRA · Understanding market liquidity and your investments",
+      "url": "https://www.finra.org/investors/insights/market-liquidity-risk",
       "supports": "Bid, ask, spread, and the link between limited liquidity and execution difficulty.",
       "accessed": "2026-10-01"
     },

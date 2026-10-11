@@ -1,6 +1,6 @@
 # Chapter publication-review ledger
 
-Updated **2026-10-03** by `claude-code-main` for ROAD-002. **Sixteen chapters and Parts 1–3 are accepted for current editorial content; 12 chapters and three part reviews remain pending.** [Batch 1](PUBLICATION_BATCH1_20261002.md), [batch 2](PUBLICATION_BATCH2_20261002.md), [batch 3](PUBLICATION_BATCH3_20261003.md) and [batch 4](PUBLICATION_BATCH4_20261003.md) record the reviewed scopes and evidence. Edition-wide release QA, source/rights review and review/version metadata remain separate dependencies; shipping labels remain draft. Earlier revision reports retain their original scope.
+Updated **2026-10-11** by `claude-code-alpha` for ROAD-002. **Twenty-one chapters and Parts 1–4 are accepted for current editorial content; 7 chapters and two part reviews remain pending.** [Batch 1](PUBLICATION_BATCH1_20261002.md), [batch 2](PUBLICATION_BATCH2_20261002.md), [batch 3](PUBLICATION_BATCH3_20261003.md), [batch 4](PUBLICATION_BATCH4_20261003.md) and [batch 5](PUBLICATION_BATCH5_20261011.md) record the reviewed scopes and evidence. Edition-wide release QA, source/rights review and review/version metadata remain separate dependencies; shipping labels remain draft. Earlier revision reports retain their original scope.
 
 ## How to record a review
 
@@ -8,11 +8,11 @@ Claim a chapter by recording its owner and `in_progress` status. When reviewing,
 
 Acceptance requires current prose/terminology and timing review; claim/source support; exercise, quiz and unfamiliar practice consistency; numerical reproduction; actual compact/wide figure inspection; and unresolved findings linked to the feedback queue. Record browser/print scope accurately and carry any release QA still outstanding into ROAD-004. Human reader learning remains separately deferred under CA1-026. No independent reviewer approval is mandatory; attribution must reflect who actually reviewed the files.
 
-The 12-character fingerprints below abbreviate SHA-256 values in [the checkpoint](PROJECT_CHECKPOINT_20261003_045713.json). Each full fingerprint includes the compiled chapter and its chapter/evidence-linked source records. The checkpoint also pins shared authoring/build/runtime inputs and all generated outputs. After content or shared dependencies change, check affected reviews before reusing acceptance; copying a fingerprint or passing the schema checker cannot substitute for review.
+The 12-character fingerprints below abbreviate SHA-256 values in [the checkpoint](PROJECT_CHECKPOINT_20261011_182041.json). Each full fingerprint includes the compiled chapter and its chapter/evidence-linked source records. The checkpoint also pins shared authoring/build/runtime inputs and all generated outputs. After content or shared dependencies change, check affected reviews before reusing acceptance; copying a fingerprint or passing the schema checker cannot substitute for review.
 
 ## Current chapters
 
-Completed batches: Chapters **1–14, 20 and 21**, plus Parts 1–3. Next batch: Chapters **15–19**, plus the Part 4 cumulative review. Inherited evidence is the appropriate earlier revision report; later focused changes and their limits are linked in the final column.
+Completed batches: Chapters **1–21**, plus Parts 1–4. Next batch: Chapters **22–28** with the Part 5 and Part 6 cumulative reviews (PUB5-012/013 and ALPHA1-001 are open renderer items). Inherited evidence is the appropriate earlier revision report; later focused changes and their limits are linked in the final column.
 
 | Ch. | Chapter / stable ID | Current fingerprint | Publication status | Owner | Inherited revision evidence / later focused work |
 | --- | --- | --- | --- | --- | --- |
@@ -30,18 +30,18 @@ Completed batches: Chapters **1–14, 20 and 21**, plus Parts 1–3. Next batch:
 | 12 | Volatility: the size of movement / `volatility` | `729d7fc6239f` | accepted | claude-code-main (2026-10-03) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 4](PUBLICATION_BATCH4_20261003.md) |
 | 13 | Volume tools: weight, participation, and memory / `volume-tools` | `79a18cbac3f5` | accepted | claude-code-main (2026-10-03) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 4](PUBLICATION_BATCH4_20261003.md) |
 | 14 | Optional: Fibonacci retracement conventions / `fibonacci` | `81c1af3a14a0` | accepted | claude-code-main (2026-10-03) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 4](PUBLICATION_BATCH4_20261003.md) |
-| 15 | Relative strength: leading compared with what? / `relative-strength` | `23f84eef4b56` | pending | unassigned | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md) |
-| 16 | Market breadth: how many are participating? / `breadth` | `6aa7fac75cd8` | pending | unassigned | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md); [fresh practice](PRACTICE_TRANSFER_20261002.md) |
-| 17 | Multiple timeframes: one market, several summaries / `multi-timeframe` | `246eedc64012` | pending | unassigned | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md) |
-| 18 | Events and opening gaps / `events` | `002fe4e1d436` | pending | unassigned | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md); [fresh practice](PRACTICE_TRANSFER_20261002.md) |
-| 19 | Market microstructure: from a chart to an actual trade / `market-microstructure` | `370d104d5852` | pending | unassigned | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md) |
+| 15 | Relative strength: leading compared with what? / `relative-strength` | `b58535dbcd3f` | accepted | claude-code-alpha (2026-10-11) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 5](PUBLICATION_BATCH5_20261011.md) |
+| 16 | Market breadth: how many are participating? / `breadth` | `f0fe70157db2` | accepted | claude-code-alpha (2026-10-11) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md); [fresh practice](PRACTICE_TRANSFER_20261002.md)  [Batch 5](PUBLICATION_BATCH5_20261011.md) |
+| 17 | Multiple timeframes: one market, several summaries / `multi-timeframe` | `56204c545b92` | accepted | claude-code-alpha (2026-10-11) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 5](PUBLICATION_BATCH5_20261011.md) |
+| 18 | Events and opening gaps / `events` | `560e2e91f4f3` | accepted | claude-code-alpha (2026-10-11) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md); [fresh practice](PRACTICE_TRANSFER_20261002.md)  [Batch 5](PUBLICATION_BATCH5_20261011.md) |
+| 19 | Market microstructure: from a chart to an actual trade / `market-microstructure` | `278e55a54e2e` | accepted | claude-code-alpha (2026-10-11) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 5](PUBLICATION_BATCH5_20261011.md) |
 | 20 | Risk & position sizing / `risk-sizing` | `1461694d0303` | accepted | /root (2026-10-02) | [Later-chapter integration](REVISION_COMPLETION_20261001.md)  [Batch 1](PUBLICATION_BATCH1_20261002.md) |
 | 21 | From chart idea to trade plan / `trade-plans` | `631604729847` | accepted | /root (2026-10-02) | [Later-chapter integration](REVISION_COMPLETION_20261001.md)  [Batch 1](PUBLICATION_BATCH1_20261002.md) |
 | 22 | Psychology without market mythology / `psychology` | `00a0bc75ea75` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [follow-through](FOLLOW_THROUGH_20261002.md) |
 | 23 | A journal that can teach you something / `journaling` | `3fe1c869eb67` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
 | 24 | Evidence before conviction / `testing` | `7fbaf6d579a2` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
 | 25 | Statistics for a skeptical chart reader / `statistics` | `feb2ab1ce407` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
-| 26 | Designing a complete trading system / `system-design` | `288d51c9dd0c` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [follow-through](FOLLOW_THROUGH_20261002.md) |
+| 26 | Designing a complete trading system / `system-design` | `732089f4d942` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [follow-through](FOLLOW_THROUGH_20261002.md) |
 | 27 | Optional: Dow, Wyckoff, and Elliott, read critically / `classical-frameworks` | `2af70744e750` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
 | 28 | Case studies: follow the decision through / `case-studies` | `854967c1e29d` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [historical gallery](HISTORICAL_AND_READER_PREP_20261002.md) |
 
@@ -54,7 +54,7 @@ The [critical re-audit resolution](AUDIT_RESOLUTION_20261002.md) and [source aud
 | 01: Start with the foundations | 3 | accepted | /root (2026-10-02); re-accepted claude-code-main (2026-10-03) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 2](PUBLICATION_BATCH2_20261002.md); [Batch 4](PUBLICATION_BATCH4_20261003.md) |
 | 02: Read the story of price | 3 | accepted | /root (2026-10-03) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 3](PUBLICATION_BATCH3_20261003.md) |
 | 03: Look beneath the surface | 3 | accepted | claude-code-main (2026-10-03) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 4](PUBLICATION_BATCH4_20261003.md) |
-| 04: See the bigger picture | 3 | pending | unassigned | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md) |
+| 04: See the bigger picture | 3 | accepted | claude-code-alpha (2026-10-11) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 5](PUBLICATION_BATCH5_20261011.md) |
 | 05: Build a repeatable process | 3 | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
 | 06: Question, test, refine | 3 | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
 
@@ -132,3 +132,18 @@ Append records using the following fields; preserve prior evidence after a chang
 - Actual figure/browser/print inspection and its coverage limits:
 - Feedback IDs, resolutions and still-deferred issues:
 - Disposition, remaining release dependencies and reason:
+
+### Batch 5 — claude-code-alpha, 2026-10-11
+
+Claimed scope: connected prose, terminology, information timing, material claims and primary-source passages, all exercise/practice/quiz answers, independent numerical reproduction, all nine Part 4 figures at 260/760px, and all three Part 4 tasks. Five read-only reviewer agents (one per chapter) performed the full reads, reproduction scripts and source fetches; claude-code-alpha verified every finding against the files, ran the figure pass and browser checks, implemented the fixes and owns the acceptance. [The report](PUBLICATION_BATCH5_20261011.md) links 1,069 Fraction/Decimal comparisons, 34 source checks over 12 URLs, 28 rasters with measured label coverage, and native browser checks at 1280/390/320px. Full fingerprints belong to [the batch 5 checkpoint](PROJECT_CHECKPOINT_20261011_182041.json).
+
+| Chapter or part / stable ID | Full fingerprint | Findings and disposition |
+| --- | --- | --- |
+| 15 / `relative-strength` | `b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7` | Rebased ratios, matched benchmarks, splits/total return, and all answers and figures checked; PUB5-007 locators/source scope/research limit corrected; PUB5-006 compact label shortened. Accepted. |
+| 16 / `breadth` | `f0fe70157db24b1bf6f9b124168ff416801c81af7aa6fe8d5c1e30403d437fa6` | Fixed-weight index, daily and since-start counts, denominators, eligibility and the fresh five-stock task checked; PUB5-001 symbol collision and PUB5-008 evidence/quiz/model-note fixes; PUB5-006 index label moved. Accepted. Fractional count ticks open as PUB5-013. |
+| 17 / `multi-timeframe` | `56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1` | Weekly completion timing, step series, three-field note and both tasks checked; PUB5-002 aligned/conflict definition and PUB5-009 wording/locators; PUB5-006 week labels simplified. Accepted. |
+| 18 / `events` | `560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13` | Gap/intraday/close-to-close returns, multiplicative chain, gap-through stop accounting, limit-touch task and corporate-action units checked; PUB5-003 range-gap definition and PUB5-010 range/cross-reference/sourcing fixes; PUB5-006 wick-covering labels shortened. Accepted. |
+| 19 / `market-microstructure` | `278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f` | Depth walk, limit/IOC remainders, spread and benchmark costs and the fresh ladder task checked; PUB5-004 cost decomposition, PUB5-005 market-order wording and PUB5-011 definitions/source record. Accepted. Spread-chart marker residual open as PUB5-012. |
+| Part 4 / `context` | `8d0c81c416d88794641fb6981599097ad2a2f08fcb9ac27923a8689e77e65d6d` | All three tasks checked against Chapters 16–19 data: since-start/daily/weighted reconciliation (104.8; session-12 net zero), session-11 completed-week freeze ($105→$103) and gap/fill reconciliation ($12,540 / 250 = $50.16). Accepted. |
+
+Remaining dependencies: ROAD-003 edition-wide access/rights review; ROAD-004 native printer and broader release coverage; ROAD-006 shipping metadata; deferred CA1-026 human participation. Open renderer items PUB5-012/013 and ALPHA1-001 do not change any value. Browser evidence is DOM text/geometry plus scripted quiz clicks; no pointer/keyboard tests or printer output. All 16 earlier chapter acceptances and Parts 1–3 keep their fingerprints.

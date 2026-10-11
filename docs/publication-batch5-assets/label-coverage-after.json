@@ -1,0 +1,7 @@
+[{"fig":"relative-strength","panel":0,"title":"Absolute price paths","w":260,"pathPx":754,"covered":8,"pct":1.1,"hiddenMarkers":0,"otherStrokeSamplesCovered":0},
+{"fig":"relative-strength","panel":0,"title":"Absolute price paths","w":320,"pathPx":891,"covered":2,"pct":0.2,"hiddenMarkers":0,"otherStrokeSamplesCovered":0},
+{"fig":"relative-strength","panel":1,"title":"Stock/comparator relative indices","w":260,"pathPx":690,"covered":2,"pct":0.3,"hiddenMarkers":1,"otherStrokeSamplesCovered":0},
+{"fig":"relative-strength","panel":1,"title":"Stock/comparator relative indices","w":320,"pathPx":840,"covered":2,"pct":0.2,"hiddenMarkers":1,"otherStrokeSamplesCovered":0},
+{"fig":"breadth","panel":1,"title":"Toy weighted index","w":260,"pathPx":265,"covered":4,"pct":1.5,"hiddenMarkers":0,"otherStrokeSamplesCovered":0},
+{"fig":"breadth","panel":1,"title":"Toy weighted index","w":320,"pathPx":309,"covered":5,"pct":1.6,"hiddenMarkers":0,"otherStrokeSamplesCovered":0},
+{"fig":"market-microstructure-2","panel":0,"title":"Quoted prices can widen around a flat midpoint","w":260,"pathPx":709,"covered":4,"pct":0.6,"hiddenMarkers":1,"otherStrokeSamplesCovered":0}]

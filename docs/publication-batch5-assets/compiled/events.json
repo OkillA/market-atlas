@@ -1,0 +1,357 @@
+{
+ "id": "events",
+ "title": "Events and opening gaps",
+ "subtitle": "Separate the overnight repricing from the new session’s intraday recovery.",
+ "minutes": 6,
+ "status": "draft",
+ "tags": [
+  "earnings",
+  "news",
+  "gap",
+  "corporate action",
+  "dividend",
+  "event risk"
+ ],
+ "takeaway": "Event context can change both price behavior and execution. A technical level is not a promise of continuity through new information.",
+ "sections": [
+  {
+   "title": "The recent pattern is a conditional history",
+   "paragraphs": [
+    "Suppose a fictional stock spends a month between $48 and $53. Its recent chart supports a description of repeated trading in that range. Now the company releases information that materially changes participants’ expectations. The next transactions may occur outside the familiar band. The old chart was not a contract requiring the next buyer and seller to negotiate inside its boundaries. It summarized trading under the information then available.",
+    "Events can be scheduled, such as a results announcement, or unexpected, such as a sudden operational disruption. Other developments affect many stocks at once. You do not need to predict every headline to recognize that information arrival is part of the trading environment. A technical hypothesis should specify how it handles an event during its intended holding period, especially when the plan relies on small recent ranges or an orderly exit."
+   ],
+   "id": "the-recent-pattern-is-a-conditional-history"
+  },
+  {
+   "title": "Measure the gap from the correct endpoint",
+   "paragraphs": [
+    "The main fictional case has prior regular-session close $52 and an announcement afterward. Next regular session opens $43, reaches high $47 and low $42, then closes $46. Opening gap is 43−52 = −$9, or −17.3077% using prior close as denominator. The current candle’s body is positive because $46 exceeds $43; that does not erase the overnight loss.",
+    "Open-to-close return is (46/43−1) × 100 = +6.9767%. Close-to-close return is (46/52−1) × 100 = −11.5385%. These differ because they compare different starting prices. The candle figure shows the $43 open and $46 close inside the $42–$47 range, with the previous $52 close above that entire range. Follow the table before trying to narrate why it happened.",
+    "A regular-session chart can omit trades outside its displayed session. “Opening gap” therefore specifies a sampled regular close-to-open comparison, rather than proving that no transactions occurred in between. If a missing interval is caused by incomplete data, the same visual blank has another explanation. Check instrument, session, data coverage, and corporate actions before assigning a market story. A stricter test asks whether the whole new range lies outside the previous session’s range. Here both tests agree, because the $47 high is below the prior $50 low. They can disagree: an open below the prior close that later trades back into the prior high–low range is a close-to-open gap but not a range gap. State which definition a rule uses."
+   ],
+   "tables": [
+    {
+     "title": "Three comparisons in the same event case",
+     "columns": [
+      "Comparison",
+      "Dollar change",
+      "Denominator ($)",
+      "Return (%)"
+     ],
+     "rows": [
+      [
+       "Prior close 52→open 43",
+       -9,
+       52,
+       -17.307692
+      ],
+      [
+       "Open 43→close 46",
+       3,
+       43,
+       6.976744
+      ],
+      [
+       "Prior close 52→close 46",
+       -6,
+       52,
+       -11.538462
+      ]
+     ]
+    }
+   ],
+   "id": "measure-the-gap-from-the-correct-endpoint"
+  },
+  {
+   "title": "Good reported news and a falling price can coexist",
+   "paragraphs": [
+    "A headline may sound favorable in isolation while the market response is negative. Investors can care about expectations, guidance, margins, timing, or details beyond the headline. The chart records the resulting prices, but it does not identify a unique explanation. If a stock falls after an earnings release, first record the release time, visible price response, and volume. Then distinguish documented statements from your hypothesis about which detail mattered.",
+    "An analyst can otherwise build an explanation that fits every possible outcome: rising price proves strong results, falling price proves profit taking, unchanged price proves the news was priced in. A story flexible enough to explain everything cannot be tested meaningfully. Prefer a modest conclusion, such as “the observed reaction was negative over this interval,” and inspect what the company actually disclosed before attributing motives to a particular group of traders."
+   ],
+   "id": "good-reported-news-and-a-falling-price-can-coexist"
+  },
+  {
+   "title": "A trigger is different from a guaranteed fill",
+   "paragraphs": [
+    "Before the announcement, suppose a hypothetical holder entered 100 shares at $52 and recorded an intended $48 exit threshold. Planned price distance is $4 per share or $400 total. A modeled ordinary-stop execution at next open $43 gives $9 per share or $900 loss before fees. The $500 difference comes from the specified fill assumption, not a change in share count.",
+    "The SEC explains that an ordinary stop becomes a market order when triggered and does not guarantee execution price. Its extended-hours bulletin also describes liquidity, spread, and order-handling differences around news outside regular sessions. The candle does not establish an actual stop fill; this exercise explicitly models a $43 execution to examine the consequence of discontinuity.",
+    "For comparison, a modeled sell stop-limit with stop $48 and limit $47 would not sell at the $43 opening price. In the supplied next-session range, high $47 merely touches the limit; without order timing, accessible quantities, and priority, we cannot infer a fill. Price protection trades away execution certainty. The later microstructure chapter demonstrates why a candle touch is insufficient.",
+    "A learner’s record should separate trigger level, order type, assumed/actual fill, shares, and costs. These distinctions make a gap review reproducible. Keeping $48 as the loss price after showing the next observation at $43 would hide the case’s central risk."
+   ],
+   "tables": [
+    {
+     "title": "One position, two price-loss models",
+     "columns": [
+      "Case",
+      "Shares",
+      "Entry ($)",
+      "Assumed exit ($)",
+      "Price loss ($)"
+     ],
+     "rows": [
+      [
+       "Planned threshold model",
+       100,
+       52,
+       48,
+       400
+      ],
+      [
+       "Gap fill model",
+       100,
+       52,
+       43,
+       900
+      ]
+     ]
+    }
+   ],
+   "id": "a-trigger-is-different-from-a-guaranteed-fill"
+  },
+  {
+   "title": "Some apparent jumps are changes in measurement",
+   "paragraphs": [
+    "A two-for-one split changes the number of shares corresponding to the old position and the nominal price per share. Investor.gov explains that the ownership interest is not diluted by the split itself. A raw move from $100 to $50 at the split boundary is therefore not equivalent to an ordinary 50% loss for the holder whose share count doubled. Check corporate-action records before classifying the mark as a technical breakdown.",
+    "Distributions also require context. Investor.gov notes that a significant dividend can be accompanied by a price decline on the ex-dividend date. That does not imply an identical adjustment on every real market opening, because other information can move price as well. Use consistent price or total-return histories for the question at hand. Adjustment policy changes can alter old levels and indicator readings, so keep the original data convention with your analysis."
+   ],
+   "id": "some-apparent-jumps-are-changes-in-measurement"
+  },
+  {
+   "title": "Write the before-and-after note",
+   "paragraphs": [
+    "Before release: “The regular-session close is $52, after a month’s observations in the $48–$53 region. An announcement is scheduled after the close. Our hypothetical worksheet uses 100 shares from $52 and a $48 ordinary-stop trigger; a gap beyond it can change execution.” This note records what the chart and plan establish without forecasting the release’s sign.",
+    "After next close: “Session O = 43/H = 47/L = 42/C = 46. Gap was −17.3077%; intraday recovery +6.9767%; close-to-close result −11.5385%. The price stayed below prior $52 throughout the session. Under the explicit $43 exit model, price loss is $900, compared with $400 at the planned threshold.” The note uses exactly the illustrated values.",
+    "Now separate observation from explanation. A negative reaction is visible; the claim that a particular guidance detail caused it requires the release itself and further evidence. A positive candle is also visible; the claim that the pre-release position recovered is contradicted by the $46 close. These two diagnoses build chart-reading competence without assigning a story that can accommodate every outcome.",
+    "A practical scenario exercise can compare little change, a favorable gap, and an adverse gap before the event. Use it to expose assumptions about exits, rather than inventing probabilities. The present chapter demonstrates only the adverse-gap accounting and recovery comparisons. The planning chapter adds an earnings calendar and halt handling to the record. This book reports no study of event-based strategies; the testing chapter describes what evidence such a rule would need."
+   ],
+   "id": "write-the-before-and-after-note"
+  }
+ ],
+ "example": {
+  "title": "The recovery uses a different denominator",
+  "text": "A pre-release holder’s $52 reference declines to the $46 close: −$6/52 = −11.5385%. An observer beginning at the $43 open sees +$3/43 = +6.9767%. The opening gap itself is −$9/52 = −17.3077%. The same session supports all three statements. Under the separate explicit 100-share exit-at-open model, price loss is $900; a holder still present at $46 has a different, $600 price loss."
+ },
+ "exercise": "Using the event candles, calculate opening-gap, open-to-close, and close-to-close returns. For 100 shares entered $52, compare a $48 planned exit with an assumed $43 exit.",
+ "quiz": {
+  "question": "Which is the illustrated session’s open-to-close return?",
+  "options": [
+   "+5.7692%",
+   "−11.5385%",
+   "+6.9767%"
+  ],
+  "answer": 2,
+  "explanation": "(46−43)/43 gives +6.9767%.",
+  "feedback": [
+   "5.7692% divides the $3 rise by prior $52 close, mixing starting references.",
+   "−11.5385% is prior-close-to-current-close return, not intraday.",
+   "(46−43)/43 gives +6.9767%."
+  ]
+ },
+ "sources": [
+  "ic-hours",
+  "ic-orders",
+  "ic-splits",
+  "ic-dividends",
+  "ic-order-details"
+ ],
+ "related": [
+  "volatility",
+  "risk-sizing",
+  "market-microstructure"
+ ],
+ "figure": {
+  "kind": "candles",
+  "title": "A positive intraday candle after a negative opening gap",
+  "caption": "Same fictional event case as table, example, and exercise. Previous O = 51/H = 53/L = 50/C = 52. Announcement follows the prior close. Next O = 43/H = 47/L = 42/C = 46. The $3 intraday rise is distinct from the $9 opening gap and $6 close-to-close loss.",
+  "afterSection": 1,
+  "xLabel": "Regular session",
+  "yLabel": "Price ($)",
+  "showOHLC": true,
+  "candles": [
+   {
+    "open": 51,
+    "high": 53,
+    "low": 50,
+    "close": 52,
+    "label": "Before release"
+   },
+   {
+    "open": 43,
+    "high": 47,
+    "low": 42,
+    "close": 46,
+    "label": "After release"
+   }
+  ],
+  "annotations": [
+   {
+    "index": 0,
+    "value": 52,
+    "label": "Prior close $52; announcement afterward",
+    "shortLabel": "Prior C 52",
+    "placement": "above"
+   },
+   {
+    "index": 1,
+    "value": 43,
+    "label": "Open $43: gap −$9 from prior close",
+    "shortLabel": "O 43",
+    "placement": "below"
+   },
+   {
+    "index": 1,
+    "value": 46,
+    "label": "Close $46: intraday +$3, still −$6 from prior close",
+    "shortLabel": "C 46",
+    "placement": "above"
+   }
+  ]
+ },
+ "outcomes": [
+  "Calculate opening-gap, open-to-close, and close-to-close returns separately.",
+  "Trace planned versus gap-executed price loss.",
+  "Distinguish market repricing from corporate-action changes in units."
+ ],
+ "prerequisites": [
+  "chart-anatomy",
+  "volatility"
+ ],
+ "optional": false,
+ "figures": [
+  {
+   "kind": "flow",
+   "title": "Keep the two information cutoffs",
+   "caption": "A fictional sequence. Neither the candle nor a trigger level establishes a live execution.",
+   "afterSection": 5,
+   "steps": [
+    {
+     "title": "Before release",
+     "text": "Known close $52; modeled entry 100 × $52, trigger $48. Future gap unknown."
+    },
+    {
+     "title": "Next open",
+     "text": "New observation $43. Assumed exit model gives $900 price loss, not $400."
+    },
+    {
+     "title": "Next close",
+     "text": "O = 43/H = 47/L = 42/C = 46. +6.98% intraday and −11.54% close-to-close."
+    }
+   ]
+  }
+ ],
+ "solution": [
+  "Gap = (43−52)/52 = −17.3077%. Intraday = (46−43)/43 = +6.9767%. Close-to-close = (46−52)/52 = −11.5385%. Each percentage names its starting reference.",
+  "Planned price loss = 100 × (52−48) = $400. Assumed gap exit loss = 100 × (52−43) = $900. The additional $500 is the modeled execution difference; no fees or actual fills are supplied."
+ ],
+ "practice": [
+  {
+   "level": "guided",
+   "title": "Reconcile the two returns multiplicatively",
+   "question": "Show that the opening-gap growth factor followed by intraday growth gives the close-to-close factor.",
+   "solution": [
+    "(43/52) × (46/43) = 46/52 = 0.8846154, or −11.5385%. The $43 term cancels.",
+    "Adding −17.3077% and +6.9767% gives the wrong result because the two returns use different starting bases."
+   ]
+  },
+  {
+   "level": "independent",
+   "title": "A limit touch is not a completed exit",
+   "question": "Compare two separate counterfactual exit instructions for a fresh fictional holding of 60 shares bought at $80, with prior regular-session close $80: an ordinary sell stop at $77, or a sell stop-limit with stop $77 and limit $76.50. Both are active before the next regular-session open and last through that session. In this teaching model the opening trade at or below the stop triggers the order; use all regular-session trade prices in the supplied OHLC and assume no execution outside that range. Model the ordinary-stop fill at the open in each case, with no fees. Compute gap percent, frozen price-risk 1R, modeled ordinary-stop P&L and R. For each stop-limit case, state whether an exit is ruled out or unresolved. If A remains held, give its close-marked P&L and explain why that is not a realized exit result.",
+   "solution": [
+    "Opening gap = 100 × (75.50/80 − 1) = −5.625%. Frozen price-risk 1R = 60 × (80 − 77) = $180. The separate ordinary-stop model exits at $75.50: P&L = 60 × (75.50 − 80) = −$270, or −1.50R before fees. This is an assumed execution in both cases; a real stop does not guarantee that opening fill. Selling at the $77 trigger would instead hide the additional $90 loss.",
+    "Both stop-limit cases trigger at the opening trade under the declared rule. In A, the entire supplied session remains below the $76.50 sell limit: even its $76.40 high is ineligible. Under the stated range-only model, no stop-limit exit is possible in that session. The still-held position marks at 60 × (76 − 80) = −$240, or −1.333333R relative to the frozen $180 denominator; that is unrealized price P&L, not a completed trade or a sale at $76.",
+    "In B, the $76.50 high reaches an eligible price after the opening trigger. Equality satisfies the sell-limit price bound, but the candle supplies no accessible quantity or queue priority, so partial fill, full fill and no fill remain unresolved. A confirmed execution report would resolve them. The price bound is a minimum for any actual sale; it is not a promise to sell. These are counterfactual order-type comparisons, not two simultaneous exits on the same holding."
+   ],
+   "tables": [
+    {
+     "title": "Fresh gap cases: only the session high differs",
+     "columns": [
+      "Case",
+      "Open ($)",
+      "High ($)",
+      "Low ($)",
+      "Close ($)"
+     ],
+     "rows": [
+      [
+       "A",
+       75.5,
+       76.4,
+       74,
+       76
+      ],
+      [
+       "B",
+       75.5,
+       76.5,
+       74,
+       76
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "claim": "News and extended-hours execution context",
+   "type": "mechanism",
+   "sourceIds": [
+    "ic-hours"
+   ],
+   "location": "Investor.gov Extended-Hours Trading, Extended-Hours Trading Risks: Lack of Liquidity, News Announcements, Larger Quote Spreads and Order Handling.",
+   "summary": "Inspected lower-liquidity/spread issues and outside-hours news/order differences.",
+   "limits": "The case supplies fictional news and prices; no specific real earnings event is claimed.",
+   "checked": "2026-10-01",
+   "id": "events-news-and-extended-hours-execution-context"
+  },
+  {
+   "claim": "Market/limit/ordinary-stop behavior",
+   "type": "definition",
+   "sourceIds": [
+    "ic-orders",
+    "ic-order-details"
+   ],
+   "location": "Investor.gov Types of Orders (market, limit and stop paragraphs); SEC Trading Basics printed page 2, Stop Order; printed page 3, Opening Transactions.",
+   "summary": "Read price uncertainty, limit bounds, and ordinary-stop conversion to market order.",
+   "limits": "The $43 execution is an explicit teaching model, not an inference from the candle.",
+   "checked": "2026-10-01",
+   "id": "events-market-limit-ordinary-stop-behavior"
+  },
+  {
+   "claim": "Split and ex-dividend unit context",
+   "type": "mechanism",
+   "sourceIds": [
+    "ic-splits",
+    "ic-dividends"
+   ],
+   "location": "Investor.gov Stock Split glossary definition; Ex-Dividend Dates: Special Dividends.",
+   "summary": "Read split ownership/share-unit distinction and possible dividend-related price adjustment.",
+   "limits": "No exact real opening price or entitlement calendar is inferred.",
+   "checked": "2026-10-01",
+   "id": "events-split-and-ex-dividend-unit-context"
+  },
+  {
+   "claim": "Gap, recovery, loss accounting",
+   "type": "arithmetic",
+   "sourceIds": [],
+   "location": "Event figure, comparison tables and all solutions, including fresh counterfactual order-type task.",
+   "summary": "Recomputed three denominators, chained growth factors and planned/assumed price losses. Fresh gap is −5.625%; frozen price-risk $180, modeled ordinary-stop P&L −$270/−1.50R and a still-held close mark −$240 are distinct records.",
+   "limits": "Costs and live execution details are absent by design.",
+   "checked": "2026-10-02",
+   "id": "events-gap-recovery-loss-accounting"
+  },
+  {
+   "claim": "Stop-limit price bounds and possible nonexecution",
+   "type": "definition",
+   "sourceIds": [
+    "ic-order-details"
+   ],
+   "location": "SEC Trading Basics printed page 2, Stop-limit Order, in web extraction.",
+   "summary": "Read stop-to-limit conversion, distinct stop and limit prices, sell-limit price bounds and risk of nonexecution. In the new range-only task, a high below the limit rules out a modeled exit; a high equal to the limit leaves quantity/priority unresolved.",
+   "limits": "The $47 main-candle high and $76.50 independent-case high do not prove available fills. The independent task specifies its opening-trade trigger and regular-session execution range; real broker trigger standards can differ.",
+   "checked": "2026-10-02",
+   "id": "events-stop-limit-price-bounds-and-possible-nonexecution"
+  }
+ ]
+}

@@ -1,0 +1,697 @@
+{
+ "id": "breadth",
+ "title": "Market breadth: how many are participating?",
+ "subtitle": "An index can look healthy while its members tell a more varied story.",
+ "minutes": 5,
+ "status": "draft",
+ "tags": [
+  "breadth",
+  "advance decline",
+  "participation",
+  "new highs",
+  "new lows",
+  "index weighting"
+ ],
+ "takeaway": "Breadth summarizes participation across a defined universe. The universe and counting rule are as important as the indicator.",
+ "sections": [
+  {
+   "title": "One aggregate, four very different experiences",
+   "paragraphs": [
+    "The main dataset has four fictional constituents beginning at 100. A carries 60% of initial index weight, B 20%, and C/D 10% each. At the final observation A is 110, B 98, C 97, D 95. The index is positive even though three of four constituents have lost value since the start. Rather than asking which summary is correct, reproduce the weighting and count separately.",
+    "Use a fixed-initial-weight teaching index with no constituent changes, distributions, or intervening rebalance: index level is the sum of each initial weight times its rebased price. This is a transparent toy aggregation, not a reconstruction of a named exchange index. A’s gain contributes +6 percentage points; B/C/D contribute −0.4, −0.3, −0.5. The net is +4.8 points, taking 100 to 104.8."
+   ],
+   "tables": [
+    {
+     "title": "Final constituent states versus the common start",
+     "columns": [
+      "Constituent",
+      "Start",
+      "Finish",
+      "Initial weight (%)",
+      "Return (%)",
+      "Contribution (percentage points)"
+     ],
+     "rows": [
+      [
+       "A",
+       100,
+       110,
+       60,
+       10,
+       6
+      ],
+      [
+       "B",
+       100,
+       98,
+       20,
+       -2,
+       -0.4
+      ],
+      [
+       "C",
+       100,
+       97,
+       10,
+       -3,
+       -0.3
+      ],
+      [
+       "D",
+       100,
+       95,
+       10,
+       -5,
+       -0.5
+      ],
+      [
+       "Total",
+       "100",
+       "104.8",
+       100,
+       "Index +4.8",
+       4.8
+      ]
+     ]
+    }
+   ],
+   "id": "one-aggregate-four-very-different-experiences"
+  },
+  {
+   "title": "The advance–decline line accumulates net participation",
+   "paragraphs": [
+    "Let adv be the count of advancing issues and dec the count of declining issues. Net advances equal adv − dec. An advance–decline line adds that daily net count to the preceding cumulative value. Fidelity’s glossary describes this cumulative concept. Choose a baseline such as zero at a documented start. The absolute cumulative level then depends on that start; changes and shape are the meaningful objects of comparison.",
+    "In a fictional 100-stock universe, day one has 60 advances, 30 declines, and 10 unchanged: net +30 and cumulative +30. Day two has 35 advances, 55 declines, and 10 unchanged: net −20 and cumulative +10. Day three has 45 advances, 45 declines, and 10 unchanged: net zero and cumulative still +10. A day with equal advances and declines does not imply unchanged prices for every member or an unchanged weighted index.",
+    "The final constituent table compares each stock with the common starting point. A daily A/D count uses the immediately preceding observation instead. At session 12, A rises 109→110, B and C are unchanged at 98 and 97, and D falls 96→95: advances = 1, declines = 1, unchanged = 2, daily net zero. Do not substitute the since-start count of one winner and three losers into the daily line."
+   ],
+   "tables": [
+    {
+     "title": "Daily direction counts from the four price paths",
+     "columns": [
+      "Session",
+      "Advances",
+      "Declines",
+      "Unchanged",
+      "Daily net",
+      "Cumulative A/D"
+     ],
+     "rows": [
+      [
+       1,
+       0,
+       0,
+       4,
+       0,
+       0
+      ],
+      [
+       2,
+       1,
+       1,
+       2,
+       0,
+       0
+      ],
+      [
+       3,
+       1,
+       1,
+       2,
+       0,
+       0
+      ],
+      [
+       4,
+       1,
+       2,
+       1,
+       -1,
+       -1
+      ],
+      [
+       5,
+       1,
+       1,
+       2,
+       0,
+       -1
+      ],
+      [
+       6,
+       1,
+       2,
+       1,
+       -1,
+       -2
+      ],
+      [
+       7,
+       2,
+       0,
+       2,
+       2,
+       0
+      ],
+      [
+       8,
+       1,
+       3,
+       0,
+       -2,
+       -2
+      ],
+      [
+       9,
+       1,
+       0,
+       3,
+       1,
+       -1
+      ],
+      [
+       10,
+       1,
+       3,
+       0,
+       -2,
+       -3
+      ],
+      [
+       11,
+       3,
+       1,
+       0,
+       2,
+       -1
+      ],
+      [
+       12,
+       1,
+       1,
+       2,
+       0,
+       -1
+      ]
+     ]
+    }
+   ],
+   "id": "the-advance-decline-line-accumulates-net-participation"
+  },
+  {
+   "title": "Different breadth measures encode different questions",
+   "paragraphs": [
+    "An advance/decline ratio is adv/dec when dec is nonzero. An advancing fraction might be adv/(adv + dec), excluding unchanged issues, or adv/U, where U is all eligible issues. Those fractions differ when some issues are unchanged. On day one of the 100-stock example, 60/90 ≈ 66.67% of movers advanced, while 60/100 = 60% of the full universe advanced. Never discuss a threshold without naming its denominator and edge-case treatment.",
+    "Another measure counts stocks above a chosen moving average: 100 × eligible stocks above their average / eligible stocks with sufficient history. Equality, missing history, and the lookback must be specified. New-high and new-low counts require a lookback and a definition, such as intraday extreme versus closing extreme. Each measure condenses the market in a different way; agreement is more informative when you understand exactly which classifications are agreeing."
+   ],
+   "id": "different-breadth-measures-encode-different-questions"
+  },
+  {
+   "title": "The universe is part of the measurement",
+   "paragraphs": [
+    "Exchange-wide issues are not automatically the same population as common stocks in an equity index. A dataset may include funds, preferred shares, or other instruments. Membership changes, new listings, delistings, and securities without adequate lookback history can change the denominator. A rising above-average percentage may reflect improved prices or removal of weak members. A well-kept analysis records how eligibility changes over time.",
+    "The historical universe should be the one available at the historical date. Using only today’s constituents can erase unsuccessful former members and create an attractive account of the past. Exchange-level breadth can also react to concentrations in certain types of listings, while a specific index reflects its own weighting and eligibility. Compare like with like when using an index and a participation series to support a conclusion."
+   ],
+   "id": "the-universe-is-part-of-the-measurement"
+  },
+  {
+   "title": "Trace the weighted aggregate and the counts",
+   "paragraphs": [
+    "At session 2, A rises from 100 to 102 while D falls to 99 and B/C stay at 100. Index = 0.6 × 102+0.2 × 100+0.1 × 100+0.1 × 99 = 101.1. There is one advance, one decline, and two unchanged, so daily net zero. A and D receive equal votes in breadth although their initial index weights differ sixfold.",
+    "By session 10, A reaches 110 while B/C/D are 97/96/95. The index is 66+19.4+9.6+9.5 = 104.5. That session has one advance and three declines, daily net −2. At session 11 the direction count flips: A declines while B/C/D advance, daily net +2, but the index falls to 104.3 because the heavier constituent’s loss outweighs the smaller gains.",
+    "These are not just unequal gains paired with a vague story about narrowness. Every stock path is supplied, each count is derived, and both plotted summaries can be reconstructed. A positive index and weak participation invite inspection of concentration, while a negative index with more advancers invites inspection of the largest weights. The underlying table resolves the apparent contradiction.",
+    "Equal weighting would give a different final aggregation: (110+98+97+95)/4 = 100. Its zero change does not mean every stock was flat. This further contrast teaches why “the market” needs a named universe and aggregation convention, even before any indicator is added."
+   ],
+   "id": "trace-the-weighted-aggregate-and-the-counts"
+  },
+  {
+   "title": "Write a breadth note with a fair denominator",
+   "paragraphs": [
+    "At session 12, one advance, one decline, and two unchanged give advancing fraction among movers 1/(1+1) = 50%, but advancing fraction among all eligible constituents 1/4 = 25%. The daily net is zero. The since-start count instead has one gainer out of four, with net −2. All are valid measurements, but each must name its comparison period and denominator.",
+    "For the core exercise, write the counts alongside the index contribution rather than calling the index healthy or weak without evidence. A defensible final note is “the fixed-weight toy index gained 4.8% from its start, led by the 60%-weight constituent; only one of four stocks gained over that interval.” It says precisely what the data establish.",
+    "For real datasets, first inspect whether the population includes common stocks, funds, or other issues, and how new listings, delistings, unchanged prices, and insufficient histories affect the denominator. The above-average metric introduced earlier requires sufficient history for the chosen window. Those eligibility questions should precede any numerical threshold. This edition reports no study testing whether a breadth divergence — an index rising while participation narrows, or the reverse — predicts later index returns. Do not infer a forecast from this accounting example."
+   ],
+   "id": "write-a-breadth-note-with-a-fair-denominator"
+  }
+ ],
+ "example": {
+  "title": "A positive index with three since-start decliners",
+  "text": "Final weighted index = 0.60 × 110+0.20 × 98+0.10 × 97+0.10 × 95 = 104.8, a +4.8% move from 100. Only A rose from the initial 100, so since-start breadth is one advance and three declines, net −2. Daily session-12 net is instead zero because A rose, B/C were unchanged, and D fell from session 11. The same data answer two different period questions."
+ },
+ "exercise": "Recalculate final index 104.8 and the since-start advance/decline count. Then compute session-12 daily net and advancing fractions among movers and all eligible stocks.",
+ "quiz": {
+  "question": "At session 12, what fraction of daily movers advanced?",
+  "options": [
+   "25%",
+   "50%",
+   "75%"
+  ],
+  "answer": 1,
+  "explanation": "One advance among two moving constituents gives 50%.",
+  "feedback": [
+   "25% uses all four eligible constituents, including two unchanged, in the denominator.",
+   "One advance among two moving constituents gives 50%.",
+   "75% is session 11’s figure (three advances, one decline). At session 12 only A advanced, and only two constituents moved."
+  ]
+ },
+ "sources": [
+  "ic-breadth"
+ ],
+ "related": [
+  "relative-strength",
+  "volume",
+  "testing"
+ ],
+ "figure": {
+  "kind": "panels",
+  "title": "Same constituents: weighted index and daily breadth",
+  "caption": "Four fictional price paths, fixed initial weights 60/20/10/10%, no rebalances or distributions. Session 1 compares with four preceding 100 values. Daily breadth compares consecutive closes; the final weight table separately compares with the common start.",
+  "panels": [
+   {
+    "kind": "line",
+    "title": "All four constituent paths",
+    "caption": "The initial 60%-weight constituent A dominates the aggregate.",
+    "afterSection": 0,
+    "xLabel": "Session",
+    "yLabel": "Rebased price (start 100)",
+    "xStart": 1,
+    "series": [
+     {
+      "name": "A",
+      "values": [
+       100,
+       102,
+       103,
+       104,
+       105,
+       106,
+       107,
+       108,
+       109,
+       110,
+       109,
+       110
+      ],
+      "style": "line"
+     },
+     {
+      "name": "B",
+      "values": [
+       100,
+       100,
+       99,
+       99,
+       98,
+       98,
+       99,
+       98,
+       98,
+       97,
+       98,
+       98
+      ],
+      "style": "line"
+     },
+     {
+      "name": "C",
+      "values": [
+       100,
+       100,
+       100,
+       99,
+       99,
+       98,
+       98,
+       97,
+       97,
+       96,
+       97,
+       97
+      ],
+      "style": "line"
+     },
+     {
+      "name": "D",
+      "values": [
+       100,
+       99,
+       99,
+       98,
+       98,
+       97,
+       97,
+       96,
+       96,
+       95,
+       96,
+       95
+      ],
+      "style": "line"
+     }
+    ],
+    "annotations": []
+   },
+   {
+    "kind": "line",
+    "title": "Toy weighted index",
+    "caption": "Index = 0.6A+0.2B+0.1C+0.1D.",
+    "afterSection": 0,
+    "xLabel": "Session",
+    "yLabel": "Index level",
+    "xStart": 1,
+    "series": [
+     {
+      "name": "Index",
+      "values": [
+       100,
+       101.1,
+       101.5,
+       101.9,
+       102.3,
+       102.7,
+       103.5,
+       103.7,
+       104.3,
+       104.5,
+       104.3,
+       104.8
+      ],
+      "style": "line"
+     }
+    ],
+    "annotations": [
+     {
+      "index": 9,
+      "seriesIndex": 0,
+      "label": "Session 10 index 104.5.",
+      "shortLabel": "104.50",
+      "placement": "above"
+     },
+     {
+      "index": 10,
+      "seriesIndex": 0,
+      "label": "Index falls to 104.3 despite three daily advancers.",
+      "shortLabel": "104.30",
+      "placement": "below"
+     }
+    ]
+   },
+   {
+    "kind": "line",
+    "title": "Cumulative daily A/D",
+    "caption": "Count changes from prior observation equally, then accumulate from zero.",
+    "afterSection": 0,
+    "xLabel": "Session",
+    "yLabel": "Net issues",
+    "xStart": 1,
+    "series": [
+     {
+      "name": "A/D",
+      "values": [
+       0,
+       0,
+       0,
+       -1,
+       -1,
+       -2,
+       0,
+       -2,
+       -1,
+       -3,
+       -1,
+       -1
+      ],
+      "style": "step"
+     },
+     {
+      "name": "Zero",
+      "values": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "style": "line"
+     }
+    ],
+    "annotations": [
+     {
+      "index": 9,
+      "seriesIndex": 0,
+      "label": "One advance and three declines give daily net −2.",
+      "shortLabel": "Net −2",
+      "placement": "above"
+     },
+     {
+      "index": 10,
+      "seriesIndex": 0,
+      "label": "Three advances and one decline give daily net +2.",
+      "shortLabel": "Net +2",
+      "placement": "above"
+     }
+    ]
+   }
+  ],
+  "afterSection": 4
+ },
+ "outcomes": [
+  "Derive an index move and breadth count from the same constituents.",
+  "Accumulate advancing-minus-declining counts.",
+  "Compute breadth fractions with explicit unchanged/missing denominators."
+ ],
+ "prerequisites": [
+  "relative-strength",
+  "moving-averages"
+ ],
+ "optional": false,
+ "figures": [
+  {
+   "kind": "table",
+   "title": "Inputs behind the two summaries",
+   "caption": "Constituent levels are the exact data used for index and daily counts.",
+   "columns": [
+    "Session",
+    "A",
+    "B",
+    "C",
+    "D",
+    "Index"
+   ],
+   "rows": [
+    [
+     1,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    [
+     2,
+     102,
+     100,
+     100,
+     99,
+     101.1
+    ],
+    [
+     3,
+     103,
+     99,
+     100,
+     99,
+     101.5
+    ],
+    [
+     4,
+     104,
+     99,
+     99,
+     98,
+     101.9
+    ],
+    [
+     5,
+     105,
+     98,
+     99,
+     98,
+     102.3
+    ],
+    [
+     6,
+     106,
+     98,
+     98,
+     97,
+     102.7
+    ],
+    [
+     7,
+     107,
+     99,
+     98,
+     97,
+     103.5
+    ],
+    [
+     8,
+     108,
+     98,
+     97,
+     96,
+     103.7
+    ],
+    [
+     9,
+     109,
+     98,
+     97,
+     96,
+     104.3
+    ],
+    [
+     10,
+     110,
+     97,
+     96,
+     95,
+     104.5
+    ],
+    [
+     11,
+     109,
+     98,
+     97,
+     96,
+     104.3
+    ],
+    [
+     12,
+     110,
+     98,
+     97,
+     95,
+     104.8
+    ]
+   ],
+   "afterSection": 0
+  }
+ ],
+ "solution": [
+  "Weighted final level is 66+19.6+9.7+9.5 = 104.8. Since start: A rises, B/C/D fall, so advances = 1, declines = 3, net −2.",
+  "From session 11 to 12, A rises, D falls, B/C are unchanged: advances = 1, declines = 1, unchanged = 2. Daily net is zero. Among movers 1/2 = 50% advanced; among all constituents 1/4 = 25%."
+ ],
+ "practice": [
+  {
+   "level": "guided",
+   "title": "Reconstruct session 2",
+   "question": "Use A = 102, B = 100, C = 100, D = 99. Calculate weighted index, daily net, and unchanged count from initial 100s.",
+   "solution": [
+    "Index is 61.2+20+10+9.9 = 101.1. A advances, D declines, B/C unchanged; net 1−1 = 0, unchanged = 2.",
+    "The larger weight on A explains the positive aggregate; breadth gives equal directional votes."
+   ]
+  },
+  {
+   "level": "independent",
+   "title": "Three advancers while the index falls",
+   "question": "A fresh fictional five-stock index fixes the table’s initial weights at session 0, with no rebalance, distributions or membership changes. All rebased price levels are 100 at session 0. Calculate the session-1 weighted index and its change from 100; advances, declines and unchanged counts; advancing fractions among movers and among all five stocks. Then calculate each eligible three-session SMA through session 1 and the percentage strictly above it, excluding insufficient history and treating equality as not above. Explain why dividing by five is wrong for that last measure, and write a note separating weighted performance from participation.",
+   "solution": [
+    "Index = 0.55 × 96 + 0.20 × 103 + 0.10 × 102 + 0.10 × 101 + 0.05 × 100 = 52.80 + 20.60 + 10.20 + 10.10 + 5.00 = 98.70. Change is −1.30 points, or −1.30% from 100. A contributes −2.20 points; B/C/D contribute +0.60/+0.20/+0.10, and E contributes zero.",
+    "Compared with session 0, B/C/D advance, A declines and E is unchanged: advances 3, declines 1, unchanged 1; net advances +2. Advancing fraction among movers is 3/(3 + 1) = 75%; among all five is 3/5 = 60%. These daily counts use session 0, not session −1.",
+    "Three-session SMAs use sessions −1, 0 and 1: A (98 + 100 + 96)/3 = 98; B (103 + 100 + 103)/3 = 102; C (104 + 100 + 102)/3 = 102; D (102 + 100 + 101)/3 = 101. A is below, B above, C/D equal. E has only two observations, so its three-session SMA is undefined. One of four eligible stocks is strictly above its SMA: 25%, rather than 1/5 = 20%. Including E would silently classify unavailable information as not above.",
+    "Example note: “From session 0 to session 1, the fixed-initial-weight index fell 1.30% despite three advancers, one decliner and one unchanged stock, because A’s 55% weight dominated the aggregate. Separately, at the session-1 close one of four stocks with a complete three-session history (sessions −1 to 1) was strictly above its mean; E was excluded for insufficient history.” Equivalent wording earns credit if it names both comparison periods, the weighting, equality policy and eligibility denominator. Neither count establishes future direction."
+   ],
+   "tables": [
+    {
+     "title": "Fresh breadth inputs: fixed weights and three sessions",
+     "columns": [
+      "Stock",
+      "Initial weight (%)",
+      "Session −1 level",
+      "Session 0 level",
+      "Session 1 level"
+     ],
+     "rows": [
+      [
+       "A",
+       55,
+       98,
+       100,
+       96
+      ],
+      [
+       "B",
+       20,
+       103,
+       100,
+       103
+      ],
+      [
+       "C",
+       10,
+       104,
+       100,
+       102
+      ],
+      [
+       "D",
+       10,
+       102,
+       100,
+       101
+      ],
+      [
+       "E",
+       5,
+       "Missing",
+       100,
+       100
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "claim": "A/D cumulative and fraction definitions",
+   "type": "definition",
+   "sourceIds": [
+    "ic-breadth"
+   ],
+   "location": "Fidelity.com Help – Glossary: A, entries “A/D Line” (cumulative total) and “A/D Line (breadth)” (advancing ÷ advancing + declining).",
+   "summary": "Read cumulative advance/decline description and advancing fraction among movers.",
+   "limits": "Provider fields and universes differ; no listed bullish threshold is treated as established efficacy.",
+   "checked": "2026-10-01",
+   "id": "breadth-a-d-cumulative-and-fraction-definitions"
+  },
+  {
+   "claim": "Constituent-derived index and breadth",
+   "type": "arithmetic",
+   "sourceIds": [],
+   "location": "Fixed-weight table; all-path figure; daily count table; solutions; fresh five-stock independent task.",
+   "summary": "Computed initial-weight sums, contributions, daily/since-start classifications and denominator contrasts. Fresh index ends at 98.70 with 3 advances/1 decline/1 unchanged; 1 of 4 eligible stocks is strictly above its complete three-session SMA.",
+   "limits": "The four-member main index and five-member transfer task use fictional fixed initial weights; neither reconstructs a named real index methodology.",
+   "checked": "2026-10-02",
+   "id": "breadth-constituent-derived-index-and-breadth"
+  },
+  {
+   "claim": "Universe and weighting choice",
+   "type": "teaching-rule",
+   "sourceIds": [],
+   "location": "One aggregate; figure caption.",
+   "summary": "Original four-member universe, fixed initial weights, preceding 100 values, and no rebalance define the demonstration.",
+   "limits": "These assumptions simplify aggregation and cannot be silently transferred to a changing real universe.",
+   "checked": "2026-10-01",
+   "id": "breadth-universe-and-weighting-choice"
+  }
+ ]
+}

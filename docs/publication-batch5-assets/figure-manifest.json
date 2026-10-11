@@ -1,0 +1,198 @@
+[
+ {
+  "raster": "figures/breadth-2-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "d08b7db3c27f7c5c619ed140b9e26d399aec39b56395843b285bea0d244216a7",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/breadth-2-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "8e5b131e7535b1ad81152dc1c7e9280709f690130445064dc959b4baaf6ed472",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/breadth-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "1c6d7e74ce59fa9839de7511c43390968f193c2046988e469a99d7e638db2658",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/breadth-260-before.png",
+  "state": "before",
+  "width": 260,
+  "sha256": "1c6d7e74ce59fa9839de7511c43390968f193c2046988e469a99d7e638db2658",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/breadth-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "ffc5c029d8223d17f3898b880ee58633ed0ba76f404071fb8446629062531ef6",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/breadth-760-before.png",
+  "state": "before",
+  "width": 760,
+  "sha256": "5a6cfbeb034f48699c7c29bc02454b6bddd998b1bcc131239dcc6aa6447eef37",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/events-2-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "c67cb49bcf12c962075ad38be30c8138bad6b9d75489699e0d0bb3b2b177ee33",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/events-2-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "373f6c757d8311aba5550bdabbc06047f15abd6b397d9b51a15dd0793d0b80a8",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/events-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "8c00a7e57bb5e4a429a38d8ccffb10feb48aaa31412699f4d0f0030052c6ef09",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/events-260-before.png",
+  "state": "before",
+  "width": 260,
+  "sha256": "7d788ad06438c9d7827831dfe5d2651e534a8609909b6ab6589f151fbaffcfc7",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/events-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "9d00c34f2a2a0e884c050fa56ec0c35dd12c981c85e22fbd25ac4629d93c0fa5",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/events-760-before.png",
+  "state": "before",
+  "width": 760,
+  "sha256": "1c5ed0af55829876c1dff1832359e5833cc36fa3e2d0493d0a84221f2cc69630",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/market-microstructure-2-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "c6d09485b4fc8d2f0297b9e0cf3ae77a6108b955b48f8f1bfa0deddff798f078",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/market-microstructure-2-260-before.png",
+  "state": "before",
+  "width": 260,
+  "sha256": "c6d09485b4fc8d2f0297b9e0cf3ae77a6108b955b48f8f1bfa0deddff798f078",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/market-microstructure-2-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "4c6afe845ae9a40fda20bb76f03357d35f5c105ef659955f265122e57b2c6ecf",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/market-microstructure-2-760-before.png",
+  "state": "before",
+  "width": 760,
+  "sha256": "4c6afe845ae9a40fda20bb76f03357d35f5c105ef659955f265122e57b2c6ecf",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/market-microstructure-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "1e51bac315a1fbcd1b7727b2a39450b56583a55e7c587b2b327a1a047db5479d",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/market-microstructure-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "c0d765e5440b3f0df7474ede61c41f886a4d392bb3dac86c2b13718952cbabb1",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/multi-timeframe-2-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "2ce1b1cfdcacb6b698d1183ab087c850dd5d1840165829ee81252233c81268aa",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/multi-timeframe-2-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "abee12cd6b7c7211a5634a90c1e37a20156281df10a7050af097fa3ecc104d97",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/multi-timeframe-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "91f844a414ec09bc01e2b7dc8f203a3e8fd5705eeca02d019e54af49a9b5e46b",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/multi-timeframe-260-before.png",
+  "state": "before",
+  "width": 260,
+  "sha256": "ad1670b0010fe60f4dd605905071649f963802eda652c71577c814300fea35a1",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/multi-timeframe-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "2173845ab884407e8a839366f2d22ec3247351dcdb2fa71bcdf9b14b9f51ecd1",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/multi-timeframe-760-before.png",
+  "state": "before",
+  "width": 760,
+  "sha256": "6993ed222f6382d569443bb82dc50b33befc7435b057f3770c5e82a5276e144f",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/relative-strength-260-after.png",
+  "state": "after",
+  "width": 260,
+  "sha256": "b41b2e9354854437dafeba875b62749c806a1bdafffbb592a2aef2bc5118a245",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/relative-strength-260-before.png",
+  "state": "before",
+  "width": 260,
+  "sha256": "af755f13e09ee22edd5772717601c200ba1bc7858c741536c3c665f416136881",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/relative-strength-760-after.png",
+  "state": "after",
+  "width": 760,
+  "sha256": "29f7d5865581af029ed257a5253c0264532cb25b50f285b750e499aaf6beaedc",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ },
+ {
+  "raster": "figures/relative-strength-760-before.png",
+  "state": "before",
+  "width": 760,
+  "sha256": "411d98eab06b0b992e8522868d00e0ad9ead875adabe21ca66e8c403a7cc9bc8",
+  "rasterizer": "macOS Quick Look (qlmanage -t -s 1200) from portable SVG rendered by figure-renderer.js"
+ }
+]

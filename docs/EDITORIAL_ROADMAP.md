@@ -16,10 +16,10 @@ Claim a manageable package by setting its owner and status before implementation
 
 ### ROAD-002 — Complete chapter publication acceptance
 
-- Status / owner: ready / unassigned (batch 4 complete; remaining claim released).
-- Preparation: [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) contains all 28 chapters with inherited evidence and current fingerprints. Sixteen chapters and Parts 1–3 are accepted for current editorial content; 12 chapters and three part reviews remain pending. Release QA and shipping metadata remain separate gates.
+- Status / owner: ready / unassigned (batch 5 complete; remaining claim released).
+- Preparation: [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) contains all 28 chapters with inherited evidence and current fingerprints. Twenty-one chapters and Parts 1–4 are accepted for current editorial content; 7 chapters and two part reviews remain pending. Release QA and shipping metadata remain separate gates.
 - Dependencies: none. Existing revision evidence is available.
-- Next batch: Chapters 15–19 and the Part 4 cumulative review. Chapters 1–14, 20 and 21, plus Parts 1–3, have current editorial acceptance. Then remaining Parts 5–6 (include open PUB4-009 with Chapter 26), and check cumulative reviews/glossary/cross-links.
+- Next batch: Chapters 22–28 with the Part 5 and Part 6 cumulative reviews (Chapter 26's PUB4-009 figure fix is already done); then check cumulative reviews, glossary and cross-links. Open renderer items PUB5-012/013 and ALPHA1-001 change accepted chapters' exports if fixed, so re-inspect those figures.
 - Work: review connected prose, unnecessary repetition, terms, exact definitions, information timing, claim support, counterexamples, unfamiliar task inputs and complete worked answers. Inspect the actual affected figures at compact and wide widths. Preserve the book's observation/interpretation/action distinction and honest execution/evidence limits.
 - Exit criteria: each chapter has a dated reviewer, current content fingerprint, checked scope, evidence links, disposition and unresolved findings. All discovered essential defects have verified resolutions or explicit deferred treatment; each of the six part reviews is covered. A previous schema pass alone cannot fill the ledger.
 - Batch 1 progress / 2026-10-02: /root completed [batch 1](PUBLICATION_BATCH1_20261002.md): 5/28 chapters accepted at current fingerprints. PUB1-001 and reopened Chapter 20 CA1-024 / Chapter 21 AUD2-002 are resolved. Evidence covers prose, source passages, independent calculations, actual compact/wide rasters and native browser content/keyboard checks; native print and human validation remain pending. Claim released for the uncompleted remainder.
@@ -29,6 +29,8 @@ Claim a manageable package by setting its owner and status before implementation
 - Batch 3 progress / 2026-10-03: /root completed [Chapters 7–8 and Part 2](PUBLICATION_BATCH3_20261003.md): totals 11/28 chapters and 2/6 part reviews accepted. PUB3-001 source locators and PUB3-002 mirror wording corrected and verified. All nine prior chapter acceptances and Part 1 remain unchanged. Native 390px viewport and 320/1280px child-frame checks, actual figures, arithmetic and manuscript pass; native printer/human validation remain pending. Remaining claim released.
 
 - Batch 4 progress / 2026-10-03: claude-code-main completed [Chapters 10–14 and Part 3](PUBLICATION_BATCH4_20261003.md): totals 16/28 chapters and 3/6 part reviews. PUB4-001–008 resolved; that includes a shared-renderer bar-axis floor (PUB4-005) and a Chapter 3 compact-label fix (PUB4-006), with Chapter 3 and Part 1 re-accepted at new fingerprints. PUB4-009 (Chapter 26 compact labels) is open. Native top-level 1280/390/320px DOM checks; no printer or screenshot evidence. Remaining claim released.
+
+- Batch 5 progress / 2026-10-11: claude-code-alpha completed [Chapters 15–19 and Part 4](PUBLICATION_BATCH5_20261011.md): totals 21/28 chapters and 4/6 part reviews. PUB5-001–011 resolved (five P2 teaching fixes, compact-label fixes and source/locator corrections); PUB5-012/013 open renderer residuals. Reviewer agents did the full reads, 1,069 comparisons and 34 source checks; the owner verified each finding. Native 1280/390/320px DOM checks; no printer output. Remaining claim released.
 
 ### ROAD-003 — Finish source-access and data-rights release review
 

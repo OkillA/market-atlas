@@ -1,0 +1,365 @@
+{
+ "id": "market-microstructure",
+ "title": "Market microstructure: from a chart to an actual trade",
+ "subtitle": "The price you see and the price you can transact at are different questions.",
+ "minutes": 6,
+ "status": "draft",
+ "tags": [
+  "microstructure",
+  "bid",
+  "ask",
+  "spread",
+  "depth",
+  "liquidity",
+  "auction",
+  "slippage"
+ ],
+ "takeaway": "A trade requires available counterparties under specific order rules. Spread, depth, timing, and venue affect the outcome.",
+ "sections": [
+  {
+   "title": "Last price, bid, and ask describe different things",
+   "paragraphs": [
+    "A candlestick summarizes completed trades. A quote describes displayed interest to transact under particular conditions. The bid is a price buyers are willing to pay; the ask is a price sellers are willing to accept. The highest displayed bid is the best bid and the lowest displayed ask is the best ask; the quoted spread is best ask minus best bid. FINRA links limited liquidity with greater difficulty transacting and wider spreads. The last completed trade can lie between current quotes or become stale after they move.",
+    "The main static book has best bid $49.90 for 300 shares and best ask $50.10 for 100 shares. The midpoint, the average of best bid and best ask, is ($49.90 + $50.10)/2 = $50; the spread is $0.20. Last trade is assumed $50, but that print does not supply a counterparty for a new order. A buyer seeking immediate execution consumes an available ask; an immediate seller consumes an available bid. The SEC notes that last-traded price need not equal the price obtained by a market order."
+   ],
+   "id": "last-price-bid-and-ask-describe-different-things"
+  },
+  {
+   "title": "The spread is a cost even before price moves",
+   "paragraphs": [
+    "In a deliberately simplified example, buy 100 shares at $50.10 and immediately sell them at $49.90, with unchanged quotes, sufficient quantity, and no fees. The round trip loses $20. The midpoint never moved. This makes the spread visible as a trading friction that a backtest using only closing prices can omit. Real execution can differ through price improvement (execution at a better price than the current quote, possible but not guaranteed), partial fills, changing quotes, and other costs.",
+    "A twenty-cent spread has different proportional importance at different prices. Spread divided by midpoint gives a relative spread: $0.20/$50 = 0.4% in this example. That measure still omits size. A quote suitable for 100 shares may not support an order for 10,000 shares. When a trading method aims for small price changes or high turnover, even modest execution friction can materially alter its results. Test the cost model at the scale of the actual method."
+   ],
+   "id": "the-spread-is-a-cost-even-before-price-moves"
+  },
+  {
+   "title": "Walk a 250-share buy through the ladder",
+   "paragraphs": [
+    "The figure lists displayed asks at $50.10 for 100 shares, $50.20 for 200, and $50.30 for 300. We assume these quantities remain fixed, no other accessible liquidity, and no competing orders arriving first. Those conditions deliberately create a small executable arithmetic model. They are not claims about a real order book’s stability.",
+    "A market buy order for 250 shares (a buy limit at $50.20 or higher would fill the same way here) first takes 100 at $50.10. It needs 150 more, which are taken from the 200 offered at $50.20. The third row is untouched. Fill value is 100 × 50.10 + 150 × 50.20 = $12,540. Divide by 250 to obtain the weighted fill price $50.16. The best ask $50.10 was available only for 100 shares; it was not a price offer for the whole order.",
+    "The ladder’s consumed/remaining columns make the sequence visible. The first ask is depleted, 50 remain at $50.20, and all 300 at $50.30 remain. Now compare a buy limit at $50.10 for the same 250 shares. It can execute immediately only against the 100 shares offered at $50.10. Under this static model it can take only 100 immediately; the other 150 remain unfilled under an ordinary resting instruction. If given an immediate-or-cancel instruction, that remainder is canceled.",
+    "A historical candle touching $50.10 does not establish either modeled outcome without the available quantities and timing. The static ladder is valuable precisely because it supplies those assumptions. Live quotes can change before the order arrives, accessible interest can exist elsewhere, and competing orders can consume it first. The SEC’s execution overview explains why order submission and execution are separate events."
+   ],
+   "tables": [
+    {
+     "title": "Two modeled fill instructions",
+     "columns": [
+      "Instruction",
+      "Immediate filled shares",
+      "Weighted price ($)",
+      "Unfilled shares"
+     ],
+     "rows": [
+      [
+       "Market buy, 250 shares",
+       250,
+       50.16,
+       0
+      ],
+      [
+       "Buy limit $50.10, 250 shares",
+       100,
+       50.1,
+       150
+      ],
+      [
+       "Same limit, immediate-or-cancel",
+       100,
+       50.1,
+       "150 canceled"
+      ]
+     ]
+    }
+   ],
+   "id": "walk-a-250-share-buy-through-the-ladder"
+  },
+  {
+   "title": "Different mechanisms can form opening and closing prices",
+   "paragraphs": [
+    "An auction collects eligible buying and selling interest and applies exchange rules to determine a match. NYSE publishes opening and closing auction information, including indicative match prices and imbalance quantities. Those indications describe the state of the auction calculation, not a guarantee of the final auction price. Orders can change before the relevant deadlines, and exact procedures differ by venue and can change over time.",
+    "A large final volume bar can therefore include activity concentrated in a closing auction rather than the same style of continuous trading seen earlier in the day. That does not make the print unimportant. It does change what you can infer from it. If a strategy requires a closing transaction, study the actual auction mechanism and the time by which its order would have to exist. Knowing the final close afterward is not enough to assume participation at that price."
+   ],
+   "id": "different-mechanisms-can-form-opening-and-closing-prices"
+  },
+  {
+   "title": "Trading conditions vary across the session",
+   "paragraphs": [
+    "The SEC’s extended-hours bulletin highlights lower liquidity, wider spreads, uncertain prices, and differences in available venues and order handling outside regular hours. A narrow daytime spread should not be assumed for an overnight news reaction. A quote from one view may also fail to represent the liquidity reachable through your broker at that moment. Broker routing is part of the transaction path, as Investor.gov’s execution overview explains.",
+    "For a fictional illustration, let the midpoint stay near $50 while the bid and ask separate from $49.99/$50.01 to $49.60/$50.40. A close-only chart could look motionless while an immediate round trip becomes much more expensive. This is why liquidity and volume are related but distinct. A daily share count describes accumulated activity; your execution depends on available interest when, where, and at what size you arrive."
+   ],
+   "id": "trading-conditions-vary-across-the-session"
+  },
+  {
+   "title": "Measure costs against a named reference",
+   "paragraphs": [
+    "Using decision-time midpoint $50 as reference, the main 250-share buy at average $50.16 is $0.16 per share above midpoint, or $40 total. Relative to the best ask $50.10, it is $0.06 higher on average, or $15. These are different benchmarks for the same fill; quoting slippage without identifying the reference leaves the comparison ambiguous.",
+    "Suppose the 300-share bid at $49.90 remains available after the modeled purchase and the position is immediately sold. Sale value is 250 × 49.90 = $12,475; purchase value $12,540; price-only round-trip loss is $65. On 250 shares the $0.20 spread alone costs $50; the remaining $15 is the extra $0.10 paid on the 150 shares taken at the second ask level. Per share the loss is $0.26, against $0.20 for the earlier 100-share round trip; that $0.06 difference is what reaching beyond the first quote cost.",
+    "A completed model record is now possible: “Decision reference midpoint $50; buy 250; static accessible asks 100@50.10 and at least 150@50.20; fills 100/150; mean $50.16; immediate sale assumption 250@49.90; loss $65 before fees.” If the bid changes or quantity disappears, that last result changes. Recording the assumptions makes the consequence inspectable.",
+    "For actual practice, record decision time, quote reference, order instruction, requested shares, individual fills, and unfilled remainder. A no-fee statement removes fees only; it does not remove spread or price movement. The planning and testing chapters use this distinction when translating a chart event into a cost-aware opportunity. You need enough mechanics to challenge impossible fills, without mastering every exchange rule."
+   ],
+   "id": "measure-costs-against-a-named-reference"
+  }
+ ],
+ "example": {
+  "title": "Every fill has a quantity",
+  "text": "The 250-share purchase consumes 100@$50.10 and 150@$50.20. Value $5,010+$7,530 = $12,540; weighted average $50.16. Unweighted mean $50.15 would give the two price levels equal influence despite unequal quantities. An immediate 250-share sale at the assumed unchanged $49.90 bid receives $12,475, producing a $65 price loss before fees."
+ },
+ "exercise": "Process the 250-share buy through the displayed asks. Compute weighted fill price and each remaining ask quantity, then the modeled immediate round-trip loss at the unchanged $49.90 bid.",
+ "quiz": {
+  "question": "What is the weighted execution price of the 250-share main buy?",
+  "options": [
+   "$50.16",
+   "$50.10",
+   "$50.15"
+  ],
+  "answer": 0,
+  "explanation": "(100 × 50.10+150 × 50.20)/250 gives $50.16.",
+  "feedback": [
+   "(100 × 50.10+150 × 50.20)/250 gives $50.16.",
+   "$50.10 is the best ask for only 100 shares.",
+   "$50.15 weights the two price levels equally rather than weighting 100 and 150 shares."
+  ]
+ },
+ "sources": [
+  "ic-spread",
+  "ic-orders",
+  "ic-execution",
+  "ic-auctions",
+  "ic-hours",
+  "ic-order-details"
+ ],
+ "related": [
+  "volume-tools",
+  "events",
+  "testing"
+ ],
+ "figure": {
+  "kind": "table",
+  "title": "A 250-share buy consumes two ask levels",
+  "caption": "Fictional static book. Buy consumes 100 shares at $50.10 then 150 at $50.20; average price $50.16. Rows show the whole visible ladder and remaining quantities. No other accessible liquidity, cancellations, or competing orders are assumed.",
+  "columns": [
+   "Side",
+   "Price ($)",
+   "Available shares",
+   "Buy consumes",
+   "Remaining"
+  ],
+  "rows": [
+   [
+    "Ask",
+    "$50.30",
+    300,
+    0,
+    300
+   ],
+   [
+    "Ask",
+    "$50.20",
+    200,
+    150,
+    50
+   ],
+   [
+    "Ask",
+    "$50.10",
+    100,
+    100,
+    0
+   ],
+   [
+    "Bid",
+    "$49.90",
+    300,
+    0,
+    300
+   ],
+   [
+    "Bid",
+    "$49.80",
+    500,
+    0,
+    500
+   ],
+   [
+    "Bid",
+    "$49.70",
+    400,
+    0,
+    400
+   ]
+  ],
+  "afterSection": 2
+ },
+ "outcomes": [
+  "Read spread and quoted quantity separately from last-traded price.",
+  "Process a larger buy through a static order-book ladder and compute weighted execution.",
+  "Compare a partial limit fill with a full market-order purchase and label model assumptions."
+ ],
+ "prerequisites": [
+  "chart-anatomy",
+  "volume",
+  "events"
+ ],
+ "optional": false,
+ "figures": [
+  {
+   "kind": "line",
+   "title": "Quoted prices can widen around a flat midpoint",
+   "caption": "Fictional quotes. A separate contrast retains midpoint $50 while quoted spread changes. It illustrates a liquidity condition, not the fixed book’s post-fill evolution.",
+   "afterSection": 4,
+   "xLabel": "Quote snapshot",
+   "yLabel": "Quoted price ($)",
+   "xStart": 1,
+   "series": [
+    {
+     "name": "Ask",
+     "values": [
+      50.01,
+      50.01,
+      50.02,
+      50.03,
+      50.05,
+      50.1,
+      50.2,
+      50.4,
+      50.3,
+      50.15,
+      50.08,
+      50.03
+     ],
+     "style": "line"
+    },
+    {
+     "name": "Midpoint",
+     "values": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "style": "line"
+    },
+    {
+     "name": "Bid",
+     "values": [
+      49.99,
+      49.99,
+      49.98,
+      49.97,
+      49.95,
+      49.9,
+      49.8,
+      49.6,
+      49.7,
+      49.85,
+      49.92,
+      49.97
+     ],
+     "style": "line"
+    }
+   ],
+   "annotations": [
+    {
+     "index": 7,
+     "seriesIndex": 0,
+     "label": "Ask $50.40 and bid $49.60: spread $0.80.",
+     "shortLabel": "Spread $0.80",
+     "placement": "above"
+    }
+   ]
+  }
+ ],
+ "solution": [
+  "Take 100 at $50.10 and 150 at $50.20. Value $5,010+$7,530 = $12,540; divided by 250 gives $50.16. Remaining asks: 0 at $50.10, 50 at $50.20, 300 at $50.30.",
+  "With at least 250 shares still bid at $49.90, sale value is $12,475, so price-only loss is $65. No fees, competing fills, other venues, or quote changes are included."
+ ],
+ "practice": [
+  {
+   "level": "guided",
+   "title": "Compare reference prices",
+   "question": "Using the $50.16 weighted buy price, compute total difference versus midpoint $50 and versus first ask $50.10 on 250 shares.",
+   "solution": [
+    "Versus midpoint: (50.16−50) × 250 = $40. Versus first ask: (50.16−50.10) × 250 = $15.",
+    "Both compare the same fill with different references. Their $25 difference is the original $0.10 midpoint-to-ask distance times 250."
+   ]
+  },
+  {
+   "level": "independent",
+   "title": "A partial fill under a tighter limit",
+   "question": "A fresh static ask book offers 80 shares at $32.05, 120 at $32.10 and 200 at $32.20. Submit a 300-share buy limit at $32.10, immediate-or-cancel; assume those offers remain available and no fees. Give filled quantity, average execution, cash spent and canceled remainder. Can the journal count the full order as filled?",
+   "solution": [
+    "The first two levels satisfy the limit: 80 + 120 = 200 shares. Spend = 80 × 32.05 + 120 × 32.10 = $6,416; filled average = 6,416/200 = $32.08. The remaining 100 shares are canceled; the $32.20 level is outside the limit.",
+    "Record 200 filled and 100 unfilled, not 300 filled at the limit. The supplied static availability is a modeling assumption; actual changing queues could produce a different execution."
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "claim": "Bid, ask, spread, and liquidity",
+   "type": "definition",
+   "sourceIds": [
+    "ic-spread"
+   ],
+   "location": "FINRA Understanding Market Liquidity and Your Investments, introduction and Why Market Liquidity Matters.",
+   "summary": "Inspected bid/ask definitions and spread/quantity relevance to liquidity.",
+   "limits": "A narrow spread alone is not a complete liquidity measure.",
+   "checked": "2026-10-01",
+   "id": "market-microstructure-bid-ask-spread-and-liquidity"
+  },
+  {
+   "claim": "Last price, routing, and quantity-limited quotes",
+   "type": "mechanism",
+   "sourceIds": [
+    "ic-orders",
+    "ic-execution"
+   ],
+   "location": "Investor.gov Types of Orders, Market Order; Executing an Order: Trade Execution Isn’t Instantaneous and Your Broker Has Options for Executing Your Trade.",
+   "summary": "Read execution delay, quantity-specific quotations, and available routing choices.",
+   "limits": "The toy book is a static model, not a prediction of live routing or fills.",
+   "checked": "2026-10-01",
+   "id": "market-microstructure-last-price-routing-and-quantity-limited-quotes"
+  },
+  {
+   "claim": "Auction indications",
+   "type": "definition",
+   "sourceIds": [
+    "ic-auctions"
+   ],
+   "location": "NYSE Auctions, Auction Imbalance Publication Information: Indicative Match Price, Total Imbalance and Paired Quantity.",
+   "summary": "Read indicative price, paired quantity, and imbalance definitions.",
+   "limits": "Venue rules change; no indicative value is guaranteed final.",
+   "checked": "2026-10-01",
+   "id": "market-microstructure-auction-indications"
+  },
+  {
+   "claim": "Immediate-or-cancel remainder",
+   "type": "definition",
+   "sourceIds": [
+    "ic-order-details"
+   ],
+   "location": "SEC Trading Basics (Pub. No. 141), printed page 3, Immediate-Or-Cancel Orders.",
+   "summary": "Read that an IOC order must execute immediately and any portion not filled immediately is cancelled.",
+   "limits": "Broker availability and trigger standards vary.",
+   "checked": "2026-10-01",
+   "id": "market-microstructure-ioc-and-stop-limit-mechanics"
+  },
+  {
+   "claim": "Ladder fills and cost references",
+   "type": "arithmetic",
+   "sourceIds": [],
+   "location": "Primary ladder, fill table, example, and solutions.",
+   "summary": "Recomputed 100/150 fills, weighted $50.16, residual shares, $40/$15 references, and $65 round-trip loss.",
+   "limits": "Assumes static accessible book, no other venues, enough unchanged bid size, and no fees.",
+   "checked": "2026-10-01",
+   "id": "market-microstructure-ladder-fills-and-cost-references"
+  }
+ ]
+}

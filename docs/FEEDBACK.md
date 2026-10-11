@@ -162,3 +162,29 @@ The user requested a public alpha on GitHub with free static hosting. PUB4-009 i
 - Acceptance criteria: All exported bar figures at 260/760px keep tick labels clear of bars; no new clipping.
 - Discussion / progress: None yet.
 
+
+## Publication batch 5 — claude-code-alpha, 2026-10-11
+
+ROAD-002 batch 5: Chapters 15–19 and Part 4. PUB5-001–011 were found by five read-only reviewer agents and by claude-code-alpha's figure pass; all were verified against current files, implemented and archived with full findings in the [resolution history](FEEDBACK_RESOLVED.md). [Batch 5](PUBLICATION_BATCH5_20261011.md) accepts Chapters 15–19 and Part 4. PUB5-012 and PUB5-013 below are shared-renderer residuals left open rather than changing the renderer inside this batch. ALPHA1-001 and CA1-026 are unchanged.
+
+### PUB5-012 — A label clamped at the plot edge can cover its own marker
+- Priority / type: P3 / defect
+- Status: open
+- Owner: unassigned
+- Reviewer / date: claude-code-alpha / 2026-10-11
+- Location: `figure-renderer.js` line-chart annotation placement (candidate boxes are clamped to the plot after the overlap test). Seen in Chapter 15 relative-index panel (“112.50”, 260/320px) and Chapter 19 spread chart (“Spread $0.80”, 260px).
+- Finding and evidence: When the preferred box is pushed back inside the plot, it can land on the annotated point; the circle is drawn before the label background. [label-coverage-after.json](publication-batch5-assets/label-coverage-after.json) reports 3 hidden markers, plus 2–8 covered path samples at 260px in Chapters 15/16/19. The values remain readable in labels, captions and tables, so this is not a misleading-data defect.
+- Proposed resolution: Treat the annotated point's own small box as occupied during placement (or skip clamped candidates that cover it), then re-render every affected export and re-inspect accepted chapters' figures.
+- Acceptance criteria: No annotated marker hidden at 260/320/390/760px across all exports; accepted chapters re-checked where exports change.
+- Discussion / progress: None yet. Related renderer item: ALPHA1-001.
+
+### PUB5-013 — Count panels get fractional y-axis ticks
+- Priority / type: P3 / editorial recommendation
+- Status: open
+- Owner: unassigned
+- Reviewer / date: claude-code-alpha / 2026-10-11
+- Location: `figure-renderer.js` tick generation; Chapter 16 “Cumulative daily A/D” panel.
+- Finding and evidence: The integer net-issue count is labelled 0.36, −0.57, −1.50, −2.43, −3.36 at both widths ([breadth-760-after.png](publication-batch5-assets/figures/breadth-760-after.png)). The step values themselves are correct.
+- Proposed resolution: Allow a figure-level integer-tick option (or detect all-integer series) and use whole-number ticks.
+- Acceptance criteria: Count panels show integer ticks; other figures unchanged or re-inspected.
+- Discussion / progress: None yet.

@@ -381,7 +381,7 @@
             "fp-volume",
             "ic-spread"
           ],
-          "location": "Chapter 3, What volume actually counts / Every transaction has two sides / Volume and liquidity; Fidelity Why to consider stock volume, Volume is vital; FINRA disclosure introduction.",
+          "location": "Chapter 3, What volume actually counts / Every transaction has two sides / Volume and liquidity; Fidelity Why to consider stock volume, Volume is vital; FINRA Understanding Market Liquidity and Your Investments, introduction.",
           "summary": "Volume counts transferred shares; liquidity also concerns price, available quantity and cost.",
           "limits": "This does not identify trader motives or promise an order fill.",
           "checked": "2026-10-02",
@@ -2310,7 +2310,7 @@
         {
           "title": "A price ratio is not a momentum portfolio",
           "paragraphs": [
-            "The relative index above describes one matched price comparison. Jegadeesh and Titman instead rank a stock universe, form winner-minus-loser portfolios and specify formation and holding periods. That supportive portfolio evidence does not validate buying this example’s leader. The research appendix keeps its market, comparator and cost assumptions visible."
+            "The relative index above describes one matched price comparison. Jegadeesh and Titman instead rank a stock universe, form winner-minus-loser portfolios and specify formation and holding periods; in their 1965–1989 NYSE/AMEX sample those portfolios earned positive returns. That portfolio evidence does not validate buying this example’s leader. The research appendix keeps its market, comparator and cost assumptions visible."
           ],
           "id": "a-price-ratio-is-not-a-momentum-portfolio"
         }
@@ -2327,7 +2327,7 @@
           ],
           "location": "Sections I–IV; Table III and market-model/transaction-cost paragraph, printed pp. 67–78, especially p. 77 (PDF page 14).",
           "summary": "Read the universe, formation/holding rules, benchmarks, and assumed cost adjustment.",
-          "limits": "Historical portfolio evidence; distinct from a discretionary breakout and not a current performance forecast.",
+          "limits": "Historical cross-sectional portfolio evidence; distinct from a single stock/benchmark price ratio and not a current performance forecast. The study also reports that part of the first-year abnormal return dissipates over the following two years.",
           "checked": "2026-10-02",
           "study": {
             "sample": "NYSE/AMEX stocks, 1965–1989.",

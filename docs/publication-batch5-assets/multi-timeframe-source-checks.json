@@ -1,0 +1,32 @@
+[
+  {
+    "sourceId": "ic-timeframes",
+    "url": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/",
+    "accessed": "2026-10-11",
+    "method": "WebFetch (truncated at 100k chars) then curl -sL --compressed with browser User-Agent (HTTP 200, 499,027 bytes decompressed); headings and section text extracted locally",
+    "claim": "Ch. 17 section 'An unfinished higher-timeframe bar is provisional': TradingView's documentation explains why higher-timeframe requests can repaint as unconfirmed values evolve and why confirmation changes availability.",
+    "status": "supported",
+    "locator": "Historical and realtime behavior (h2); Historical and realtime behavior > Avoiding repainting > Higher-timeframe data (h4)",
+    "note": "States request.security() 'only confirms the requested values when a bar from its context closes' and 'requested data may repaint when its values fluctuate on realtime bars without confirmation'; Higher-timeframe data: 'realtime bars can contain unconfirmed information from developing HTF bars'. Platform-mechanics source only; says nothing about effectiveness of timeframe alignment, and the chapter makes no such claim."
+  },
+  {
+    "sourceId": "ic-timeframes",
+    "url": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/",
+    "accessed": "2026-10-11",
+    "method": "curl -sL --compressed with browser User-Agent; local text extraction",
+    "claim": "Evidence record multi-timeframe-unconfirmed-higher-timeframe-data-and-lookahead: distinction between evolving and confirmed higher-timeframe values, including future leakage; chapter: 'presenting its final historical value as known earlier is the problem'.",
+    "status": "supported",
+    "locator": "Common characteristics > lookahead (h3); Avoiding repainting > Higher-timeframe data (h4)",
+    "note": "lookahead: barmerge.lookahead_on without an offset 'shows final HTF high prices before they are actually available on historical bars'; scripts that 'leak future data into the past are extremely misleading'. The lookahead_off series 'has a new historical value at the end of each HTF period', matching the chapter's step-at-completion convention."
+  },
+  {
+    "sourceId": "ic-timeframes",
+    "url": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/",
+    "accessed": "2026-10-11",
+    "method": "curl heading extraction (h2-h4 list)",
+    "claim": "Evidence-record locator 'Historical and realtime behavior; Avoiding repainting: Higher-timeframe data; lookahead discussion' resolves to current page headings.",
+    "status": "partial",
+    "locator": "Headings present: 'Historical and realtime behavior', 'Avoiding repainting', 'Higher-timeframe data', 'lookahead' (under 'Common characteristics')",
+    "note": "First three headings exist verbatim. 'lookahead discussion' is not a heading; the passage is the 'lookahead' subsection of 'Common characteristics'. Locator precision only, not a support problem."
+  }
+]
