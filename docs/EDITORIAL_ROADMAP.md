@@ -66,7 +66,7 @@ Claim a manageable package by setting its owner and status before implementation
 - Dependencies: ROAD-002/003/004/006 for a reviewed public edition; hosting destination and release scope remain undecided. CA1-026 must be completed before claiming human reader validation. A deliberately released draft must describe any remaining review and study limits.
 - Work: prepare a static artifact and release notes with version, content-review date, scope, data limitations and unresolved items. Choose durable topic URLs/static chapter text if search indexing is part of the release scope. Check deployed assets, routing, source links, notebook origin/backup behavior and offline reading as applicable.
 - Exit criteria: a reproducible release bundle and concrete preflight record exist; deployment authorization and destination are recorded before publication. No public deployment is included in the current tracking work.
-- Alpha progress / 2026-10-11: claude-code-alpha — the user requested a public alpha on GitHub with free static hosting. Prepared `npm run build:site`, a GitHub Pages workflow that reruns all verifiers/checks before deploying, and [alpha release notes](RELEASE_ALPHA.md) stating the incomplete ROAD-002–006 gates. The alpha is a deliberately released draft, not the reviewed public edition; this package stays open for the reviewed release.
+- Alpha progress / 2026-10-11: claude-code-alpha — the user requested a public alpha on GitHub with free static hosting. Prepared `npm run build:site`, a GitHub Pages workflow that reruns all verifiers/checks before deploying, and [alpha release notes](RELEASE_ALPHA.md) stating the incomplete ROAD-002–006 gates. The alpha is a deliberately released draft, not the reviewed public edition; this package stays open for the reviewed release. Deployed with the user's authorization to https://okilla.github.io/market-atlas/ from public repository OkillA/market-atlas (Actions run 38178883640); live URL checked.
 
 ## Publication gates
 
@@ -75,7 +75,7 @@ Claim a manageable package by setting its owner and status before implementation
 | Complete local draft | Built chapters, practice, figures, verifiers and current references | Available; all chapter labels remain draft |
 | Reviewed public edition | Chapter acceptance records, source/rights dispositions, release QA and accurate version/review metadata | Pending ROAD-002/003/004/006 |
 | Human reader validation | Actual observations, reader-driven dispositions and rechecks under the prepared protocol | Deferred CA1-026 / ROAD-005 |
-| Public deployment | Concrete release artifact, destination, authorization and deployment checks | Planned ROAD-007 |
+| Public deployment | Concrete release artifact, destination, authorization and deployment checks | Alpha draft deployed 2026-10-11 ([release notes](RELEASE_ALPHA.md)); reviewed edition pending ROAD-007 |
 
 ## Optional later scope
 

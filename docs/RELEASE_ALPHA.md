@@ -2,6 +2,10 @@
 
 Prepared **2026-10-11** by claude-code-alpha at the user's request for a public alpha. This is a deliberately released **draft**, not the reviewed public edition described by the publication gates in [EDITORIAL_ROADMAP.md](EDITORIAL_ROADMAP.md).
 
+## Deployment
+
+Authorized by the user on 2026-10-11 (public repository, full source). Repository: https://github.com/OkillA/market-atlas. Live: https://okilla.github.io/market-atlas/. First deployment: Actions run 38178883640 (all verifiers and checks passed, then deploy). Checked on the live URL at 1280px: 28 chapters load, Chapter 26 figure carries the PUB4-009 panel caption, alpha footer present, no console errors.
+
 ## What ships
 
 The static reader edition: `index.html`, `styles.css`, `app.js`, `figure-renderer.js`, `favicon.svg` and `content/book.js` (manuscript edition 0.4). `npm run build:site` assembles exactly these into `_site/`; `.github/workflows/pages.yml` reruns the three numerical verifiers and both content checks, then deploys `_site/` to GitHub Pages on every push to `main`. All asset paths are relative, so the book works from a project subpath without server rewrites; chapter navigation uses hash URLs.
