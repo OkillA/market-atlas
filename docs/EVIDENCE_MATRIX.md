@@ -1482,7 +1482,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 - Limits: The paper’s PBO/CSCV estimate is not computed in this chapter.
 - Sources: [Bailey, Borwein, López de Prado & Zhu · The Probability of Backtest Overfitting](https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf)
 
-**A large multiple-testing study of technical rules is summarized in the research section**
+**A large multiple-testing study of technical rules is summarized in the Research and evidence appendix**
 
 - Classification: empirical; checked 2026-10-02.
 - Location: Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
@@ -1612,7 +1612,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 
 - Classification: arithmetic; checked 2026-10-01.
 - Location: Dow table and panels; spring table and figure; Elliott rule-check table, schematic, exercise and practice solutions.
-- Support: Recomputed with a script: first A crossing at step 8 and first simultaneous crossing at step 11; breach 0.5 ÷ 30 = 1.67% and threshold $29.70; reentry at session 18 and breakdown at session 20; wave lengths 4/8/6, 4/11/2, and 8/6/2 with each rule comparison; practice values (t3 and t2 confirmations; 6/8.5/5.5 lengths, 75% retracement, 25.50 < 26 overlap).
+- Support: Recomputed with a script: first A crossing at step 8 and first simultaneous crossing at step 11; breach 0.5 ÷ 30 = 1.67% and threshold $29.70; reentry at session 18 and breakdown at session 20; wave lengths 4/8/6, 4/11/2, and 8/6/2 with each rule comparison; practice values (t3 and t2 confirmations; 6/8.5/5.5 lengths, 75% retracement, 25.50 < 26 overlap); the reaction-extremes table against the plotted closes; and count B’s $44 invalidation level.
 - Limits: Arithmetic on invented data only.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 
@@ -1620,7 +1620,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 
 - Classification: teaching-rule; checked 2026-10-01.
 - Location: Dow and Wyckoff sections.
-- Support: Stated before each worked chronology so that two readers classify the same bars identically; the alternative readings (lagged confirmation, same-session reentry) are shown rather than hidden.
+- Support: Stated before each worked chronology so that two readers classify the same bars identically. The spring window counts the breach session’s own close and the next three closes, and later breaches inside an open window belong to the same event; the alternative readings (lagged confirmation, same-session reentry) are shown rather than hidden.
 - Limits: Arbitrary thresholds; not canonical versions of either framework and not optimized or tested.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 
@@ -1689,6 +1689,14 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 - Support: Checked seven-for-one ratio, record date and split-adjusted trading date.
 - Limits: The original algebra is a unit transformation, not a historical price series or return forecast.
 - Sources: [Apple (April 23, 2014), Capital Return Program and Stock Split](https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/)
+
+**An Apple dividend fell between the February 1 levels and the February 5 diagnostic bar**
+
+- Classification: historical; checked 2026-10-12.
+- Location: Issuer release, January 26, 2016, final dividend paragraph.
+- Support: Checked the $0.52 per-share dividend payable February 11, 2016, to holders of record on February 8. The February 4 ex-date follows from the then two-business-day convention; the release does not state it. The archive high clears the adjusted upper level by about $0.05.
+- Limits: No unadjusted 2016 quotes were retrieved, so the unadjusted geometry is described as probable, not observed.
+- Sources: [Apple (January 26, 2016), Apple Reports Record First Quarter Results](https://www.apple.com/newsroom/2016/01/26Apple-Reports-Record-First-Quarter-Results/)
 
 **Reuse statement is scoped to Government-created SEC content**
 

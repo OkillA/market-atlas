@@ -333,8 +333,9 @@ has("stage one", stage1, "and the decision criteria: what held-out result would 
 has("stage six", P("put-the-research-on-a-timeline", 2), "criteria written at stage one")
 has("figure step 1", ch["figures"][0]["steps"][0]["text"], "and the decision criteria")
 has("figure step 6", ch["figures"][0]["steps"][5]["text"], "step-1 criteria")
-has("criteria", interp, "Her stage-one criteria said to begin a paper forward study only if the locked rule’s held-out result stayed positive under model B")
-has("criteria", interp, "negative under both models A and B")
+has("criteria", interp, "Her stage-one criteria said to begin a paper forward study only if the locked rule’s held-out result was positive under model B")
+has("criteria", interp, "negative even under model A, and otherwise to measure costs before deciding")
+has("entry-day rule", spec, "counts as a stop; this applies on the entry day too")
 has("criteria", interp, "The model B result, +$32.99, meets the first condition")
 check("numeric", G - costs["B"] > 0, "model B held-out net is positive (first condition met)")
 check("numeric", G - costs["A"] > 0, "model A held-out net is positive (set-aside condition not met)")
@@ -422,7 +423,7 @@ if "criteria written at stage one" in P("put-the-research-on-a-timeline", 2) and
 if all(B(c["q"]) >= A(c["q"]) for c in calc) and "negative under both models A and B" in interp:
     observations.append("Criteria: model B cost ≥ model A cost on every trade, so 'negative under both A and B' equals 'negative under A'; "
                         "the case A positive / B negative is left without a stated decision.")
-if spec.index("the same stop-first convention") < spec.index("counts as a stop"):
+if "the same stop-first convention" in spec and spec.index("the same stop-first convention") < spec.index("counts as a stop"):
     observations.append("Spec: 'Entry-day stop/target conflicts use the same stop-first convention' precedes the sentence that defines that convention.")
 
 print(f"Chapter 24 `testing` reproduction: {counts['numeric']} numeric, {counts['text']} text, {counts['structural']} structural comparisons; "

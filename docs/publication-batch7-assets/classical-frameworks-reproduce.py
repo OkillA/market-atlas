@@ -321,7 +321,7 @@ has(wcap, "reaction lows ($30.00–$30.40) and highs ($33.60–$34.00)", "Wyckof
 sol = " ".join(ch["solution"])
 for ph in ["(30.00 − 29.50) ÷ 30.00 = 0.0167, or 1.67%", "29.50 ≤ 29.70", "breach session’s own close of 29.80 is not above 30.00",
            "window stays open through sessions 18–20", "session-18 close of 30.60", "(31.00, 31.40)", "closes of 29.40, 29.10, and 28.60",
-           "session 17 closes at 29.80", "so the alternative is strictly stricter"]:
+           "session 17 closes at 29.80", "is a strict subset: every same-session spring is a frozen-rule spring"]:
     has(sol, ph, "exercise solution")
 has(ch["exercise"], "stricter teaching rule", "exercise calls same-session rule stricter")
 has(ch["example"]["text"], "1.67% breach", "example breach")

@@ -151,7 +151,7 @@ structural("Ch25 no longer uses 'total return' for the equity change", "total re
 t2q, t2s = plain(tasks[1]["question"]), plain(" ".join(tasks[1]["solution"]))
 E, cash, risk_pct, notional_pct, stop_dist, fee = F(50000), F(12000), F(5, 1000), F(10, 100), F(2), F(5, 2)
 for needle in ["equity E = $50,000", "$12,000 is cash", "four held positions have risen since entry",
-               "one slot is free", "$2 stop distance", "0.5% price-risk allowance",
+               "they occupy four of the five slots", "$2 stop distance", "0.5% price-risk allowance",
                "10% notional cap measured at the limit price", "(cash - $2.50 entry fee) ÷ limit",
                "A: close 40.00, prior-20 high 39.00", "B: close 20.40, prior-20 high 20.00",
                "100 x (close - prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point",
@@ -218,7 +218,7 @@ structural("Ch26 no longer claims earlier chapters described Atlas-20", "Earlier
 t3q, t3s = plain(tasks[2]["question"]), plain(" ".join(tasks[2]["solution"]))
 for needle in ["logs six variants on 2015-19 data", "locks one by a pre-written rule",
                "+0.02R over 14 trades", "After charting the held-out losers",
-               "at least 1% below frozen range support", "within three sessions",
+               "at least 1% below range support frozen before that low", "within the breach session or the next three sessions", "no later than the breakout's decision close",
                "+0.31R over 8 trades", "Chapter 25's independence model", "5% test"]:
     text("T3 prompt", t3q.replace("–", "-").replace("’", "'"), needle)
 structural("T3 meta-question about Chapter 27 removed", "Chapter 27" not in t3q and "core path" not in t3q)

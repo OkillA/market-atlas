@@ -251,7 +251,9 @@ num(p, '46.2%', 100 * F(10125, 10000) / (F(1179, 1000) + F(10125, 10000)), sub='
 text(p, 'tell 60% from 46%')
 p = S1 + '.paragraphs[0]'
 struct(sum(1 for x in gross if x < 0) == 7 and sum(1 for x in gross if x == 0) == 1, 'gross column 12 wins, 7 losses, 1 scratch')
-text(p, 'there are 12 wins, 7 losses and 1 scratch')
+text(p, 'In the before-cost (gross) column of the ledger, for example, there are 12 wins, 7 losses and 1 scratch')
+text('sections[3].paragraphs[2]', 'so the band is too narrow throughout, most of all early on')
+struct(all(T975[k] > 2 for k in (4, 19)) and T975[4] > T975[19], 't multiplier exceeds 2 at every n and most at small n')
 num(p, '35%', F(700, 20), sub='7 ÷ 20 = 35%')
 num(p, '0.7375', F(6, 10) * g_aw_pre, sub='0.60 × (14.75 ÷ 12) − 0.35 × 1.10 = 0.7375 − 0.3850')
 num(p, '0.3850', F(35, 100) * g_al_pre, sub='0.7375 − 0.3850 = +0.3525R')
@@ -430,10 +432,10 @@ struct(1 / D(4).sqrt() == Decimal('0.5'), 'halving the band needs 4x trades (1/s
 text(p, 'about four times as many trades')
 p = S3 + '.paragraphs[2]'
 struct(D(mean) - 2 * se20 < 0 < D(mean) + 2 * se20, 'zero inside final band')
-num(p, '2.09', T975[19], sub='multiplier of about 2.09 rather than 2')
+num(p, '2.09', T975[19], sub='multiplier larger than 2: about 2.09 at 20 trades')
 num(p, '−0.31R', D(mean) - T975[19] * se20, sub='(about −0.31R to +0.91R)')
 num(p, '+0.91R', D(mean) + T975[19] * se20, sub='(about −0.31R to +0.91R)')
-num(p, '2.78', T975[4], sub='about 2.78 at five trades')
+num(p, '2.78', T975[4], sub='and 2.78 at five')
 
 
 def wilson(k, n, z):
@@ -650,6 +652,21 @@ struct(sorted(bin_members[4]) == [F(-45, 100), F(-5, 100)], 'bin 4 members are �
 struct(bin_members[2] == [F(-105, 100)] * 5 and bin_members[8] == [F(195, 100)] * 5, 'stop and target bins')
 text('figure.caption', 'every bin includes its lower edge')
 text('figure.caption', 'Fictional paper record')
+text('figure.caption', 'the single gap loss in the left tail')
+struct(bin_members[0] == [F(-235, 100)] and bins[0] == 1, 'left-tail bin holds only the gap loss (caption)')
+struct(all(a['index'] != 0 for a in fig['annotations']), 'gap annotation removed; caption carries it')
+for a in fig['annotations']:
+    m_ = re.match(r'(\d+) × ([−+]\d+\.\d+)R$', a.get('shortLabel', ''))
+    if m_:
+        counts['numeric'] += 2
+        k_, v_ = int(m_.group(1)), parse(m_.group(2))
+        if bin_members[a['index']] != [v_] * k_:
+            hard.append(f"short label {a['shortLabel']} vs bin {a['index']} {bin_members[a['index']]}")
+    else:
+        vals_ = [parse(v) for v in re.findall(r'[−+]?\d+\.\d+', a.get('shortLabel', ''))]
+        counts['numeric'] += 1
+        if sorted(vals_) != sorted(bin_members[a['index']]):
+            hard.append(f"short label {a['shortLabel']} vs bin {a['index']}")
 
 pf = ch['figures'][0]
 eqp, uwp = pf['panels']
@@ -716,6 +733,7 @@ for s in ('+14.15R', '−8.10R', '1.179R', '1.0125R', '+0.3025R', '+0.3525R', '$
           '$20,265', '$19,925', '$340 = 1.68%', '1.71%', 'trade 17', '$810 = 4.05%', '4.22%', 'trade 16',
           '$20,605 (3.025%)', '+0.216R', '+0.442R', '1.308R (n − 1 divisor)', 'SE 0.2925R', '−0.28R to +0.89R',
           'break-even transaction costs computed ex ante (pp. 22, 24)', 'ex post (p. 21)',
+          'out-of-sample performance disappears (Table 5, p. 24)',
           'z = 1.95996398454', '1 − 0.95⁶ ≈ 26%', '38.66%–78.12%'):
     counts['text'] += 1
     if s not in ev:

@@ -894,7 +894,7 @@
           "title": "GME event reaction: a large move still leaves execution unknown",
           "paragraphs": [
             "At the January 13 close, compare the two completed closing observations and volumes shown in the first panel. Price change is 31.40 − 19.95 = $11.45, or 57.39%; approximate share volume is roughly 20 times the previous session (about 144 million against 7 million shares). These are observations. The words “breakout” or “short squeeze” add an interpretation whose definition and evidence must be supplied.",
-            "Freeze a retrospective teaching decision at that close: require a complete preceding 20-session OHLC window, a defined event calendar, and an executable next-session quote before accepting P1’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff."
+            "Freeze a retrospective teaching decision at that close: require enough preceding OHLC to map and freeze a range boundary before January 13 (P1’s signal input), a defined event calendar, and an executable next-session opening offer before accepting P1’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff."
           ],
           "id": "gme-event-reaction-a-large-move-still-leaves-execution-unknown"
         },
@@ -2173,7 +2173,7 @@
           "kind": "panels",
           "historical": true,
           "title": "One historical candle, two possible orders",
-          "caption": "AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts. A dividend went ex on February 4, so the adjusted levels and bar may not span both levels in unadjusted prices.",
+          "caption": "AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts. A dividend went ex on February 4, so in unadjusted prices the bar may not have reached the upper level.",
           "afterAddedSection": 9,
           "panels": [
             {
@@ -2274,6 +2274,18 @@
           "limits": "The original algebra is a unit transformation, not a historical price series or return forecast.",
           "checked": "2026-10-01",
           "id": "case-studies-apple-s-announced-split-changes-share-price-units"
+        },
+        {
+          "claim": "An Apple dividend fell between the February 1 levels and the February 5 diagnostic bar",
+          "type": "historical",
+          "sourceIds": [
+            "rc-apple-dividend-2016"
+          ],
+          "location": "Issuer release, January 26, 2016, final dividend paragraph",
+          "summary": "Checked the $0.52 per-share dividend payable February 11, 2016, to holders of record on February 8. The February 4 ex-date follows from the then two-business-day convention; the release does not state it. The archive high clears the adjusted upper level by about $0.05.",
+          "limits": "No unadjusted 2016 quotes were retrieved, so the unadjusted geometry is described as probable, not observed.",
+          "checked": "2026-10-12",
+          "id": "case-studies-an-apple-dividend-fell-between-the-february-1-levels-and-the-february-5-diagnostic-bar"
         },
         {
           "claim": "Reuse statement is scoped to Government-created SEC content",

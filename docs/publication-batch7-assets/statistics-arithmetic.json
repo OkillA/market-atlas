@@ -1,9 +1,9 @@
 {
   "chapter": "statistics",
   "counts": {
-    "numeric": 455,
-    "text": 253,
-    "structural": 167
+    "numeric": 459,
+    "text": 256,
+    "structural": 169
   },
   "hard_mismatches": [],
   "displayed_chain_mismatches": [],

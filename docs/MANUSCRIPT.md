@@ -5523,7 +5523,7 @@ Two tempting shortcuts give the wrong answer. At step 8, A is up 12% from the st
 
 Wyckoff analysis organizes price and volume into trading ranges and a repeating cycle of accumulation, markup, distribution, and markdown. Wyckoff Analytics presents three laws: supply and demand, cause and effect, and effort versus result. It describes a spring as a move that takes price below the low of the trading range and then reverses to close within it, and it notes that springs are not required: some accumulation ranges do not have one. The “Composite Man” is a teaching device: the analyst studies the market as if one operator were behind its movements. It helps generate questions about who might be buying or selling. It is not an observation of an actual person.
 
-Here is the fictional range. Over sessions 1 to 16, the reaction lows are $30.00, $30.20, and $30.40 (sessions 4, 9, and 14), and the reaction highs are $34.00, $33.80, and $33.60 (sessions 2, 7, and 12). The first table below lists them beside the closes that the figure plots; a close line alone cannot show them. The figure shades a support zone from $30.00 to $30.40 and a resistance zone from $33.60 to $34.00. A zone is a good way to show where reactions occurred, but a rule needs a single number, so after session 16 support is frozen at the lowest low, $30.00. The spring rule is frozen at the same time. A breach is a completed session whose low is at least 1% below support, that is, $29.70 or lower. A breach becomes a spring candidate at the first completed close strictly above $30.00, counting from the breach session’s own close through the three sessions after it. It becomes a breakdown if none of those four closes is above $30.00. While that window is open, further lows at or below $29.70 belong to the same breach event and do not open a new window; a new event can begin only after the current one is classified. A low between $29.70 and $30.00 is an undercut smaller than this rule’s breach threshold and is not classified. The 1% and three-session settings are this chapter’s own research choices, not canonical Wyckoff values.
+Here is the fictional range. Over sessions 1 to 16, the reaction lows are $30.00, $30.20, and $30.40 (sessions 4, 9, and 14), and the reaction highs are $34.00, $33.80, and $33.60 (sessions 2, 7, and 12). The first table below lists them beside the closes that the figure plots; a close line alone cannot show them. No other session in 1–16 trades below $30.00 or above $34.00. The figure shades a support zone from $30.00 to $30.40 and a resistance zone from $33.60 to $34.00. A zone is a good way to show where reactions occurred, but a rule needs a single number, so after session 16 support is frozen at the lowest low, $30.00. The spring rule is frozen at the same time. A breach is a completed session whose low is at least 1% below support, that is, $29.70 or lower. A breach becomes a spring candidate at the first completed close strictly above $30.00, counting from the breach session’s own close through the three sessions after it. It becomes a breakdown if none of those four closes is above $30.00. While that window is open, further lows at or below $29.70 belong to the same breach event and do not open a new window; a new event can begin only after the current one is classified. A low between $29.70 and $30.00 is an undercut smaller than this rule’s breach threshold and is not classified. The 1% and three-session settings are this chapter’s own research choices, not canonical Wyckoff values.
 
 Session 17 opens at $30.50, trades as high as $30.60 and as low as $29.50, and closes at $29.80. The breach is (30.00 − 29.50) ÷ 30.00 = 1.67%, so it qualifies. The close of $29.80 is still below support, which means the price has not yet reversed to close inside the range. Our rule therefore has not classified a recovery. At this cutoff the only correct record is “breach; window open.” Calling it a spring, or a breakdown, would be using bars that do not yet exist.
 
@@ -5585,7 +5585,7 @@ Good practice is to freeze the preferred count, the alternate, and the price tha
 
 #### From vocabulary to an honest test
 
-An empirical claim can be tested only one precise proposition at a time, and the proposition has to be fixed before the outcomes are known. The spring rule above is a ready-made example. Apply it to every breach in a defined universe and period, keep both branches, and declare an action in advance: perhaps a next-open entry after the reentry close, a stop below the breach low, a time exit, and modeled costs, the same structure as the breakout plan in Chapter 9 and the casebook in the next chapter. Then compare the outcomes with a stated alternative, such as breaches that did not reenter or all sessions in the same stocks. A favorable result on that one specification would support that one specification, not Wyckoff analysis as a whole.
+An empirical claim can be tested only one precise proposition at a time, and the proposition has to be fixed before the outcomes are known. The spring rule above is a ready-made example. Apply it to every breach in a defined universe and period, state when support is re-frozen after a breakdown so that later lows do not keep opening new events, keep both branches, and declare an action in advance: perhaps a next-open entry after the reentry close, a stop below the breach low, a time exit, and modeled costs, the same structure as the breakout plan in Chapter 9 and the casebook in the next chapter. Then compare the outcomes with a stated alternative, such as breaches that did not reenter or all sessions in the same stocks. A favorable result on that one specification would support that one specification, not Wyckoff analysis as a whole.
 
 Where discretion is essential, as in choosing between Elliott counts, test the discretion itself. Ask two readers to label the same charts with the future bars hidden, timestamp their preferred and alternate counts, and keep their disagreements. Measure agreement first, then forecast accuracy, then net results. Lo, Mamaysky, and Wang took another route: they replaced visual judgment with an algorithm that detects chart patterns, then compared returns after detected patterns with ordinary returns in U.S. stocks. Their findings concern their own pattern definitions. They are not tests of Dow confirmation, springs, or wave counts.
 
@@ -5606,7 +5606,7 @@ Session-17 close: breach size = (30.00 − 29.50) ÷ 30.00 = 0.0167, or 1.67%, w
 
 Spring branch: the session-18 close of 30.60 is above 30.00 and inside the window, so a spring candidate is recorded at that close. The session-19 and session-20 closes (31.00, 31.40) do not change the record. Breakdown branch: closes of 29.40, 29.10, and 28.60 are all at or below 30.00. The record stays undecided through session 19 and becomes a breakdown at the session-20 close, when the window ends.
 
-Alternative same-session rule: session 17 closes at 29.80, below support, so neither branch has a spring under that definition. The spring branch’s session-18 recovery would have to be recorded under some other label, such as “breach followed by a later recovery.” Every same-session spring would also be a spring under the frozen rule, so the alternative is strictly stricter; the two definitions still classify these bars differently, so the definition must be frozen before outcomes are counted. Neither version establishes accumulation or predicts the next move.
+Alternative same-session rule: session 17 closes at 29.80, below support, so neither branch has a spring under that definition. The spring branch’s session-18 recovery would have to be recorded under some other label, such as “breach followed by a later recovery.” The same-session rule is a strict subset: every same-session spring is a frozen-rule spring, but the spring branch here is not a same-session spring. The two definitions therefore classify these bars differently, so the definition must be frozen before outcomes are counted. Neither version establishes accumulation or predicts the next move.
 
 </details>
 
@@ -5808,7 +5808,7 @@ The missed advance is observable, and it can motivate a ceiling-change hypothesi
 
 #### Case four: two clocks and a daily ambiguity
 
-MIXD isolates a difference between two clocks without an order. At M0, the latest two completed weekly closes are $48.90 and $50.30, up under Chapter 17’s close-direction description. M0 is the first session of a new week, and its daily close is $49.70: down from $50.30 and below a previously frozen $50 boundary. Chapter 17 would give this down day neither the aligned nor the conflicting label, because those labels apply only to upward daily changes; the two clocks simply describe different intervals. Rule M1 uses completed-week direction only as context and requires a daily close strictly above 50 before any next-opening order. M0 supplies no daily signal, so no trade is authorized. Calling the rising weekly context “confirmation” cannot supply the missing daily trigger.
+MIXD isolates a difference between two clocks without an order. At M0, the latest two completed weekly closes are $48.90 and $49.90, up under Chapter 17’s close-direction description. M0 is the first session of a new week, and its daily close is $49.70: down from $49.90 and below a previously frozen $50 boundary. Chapter 17 would give this down day neither the aligned nor the conflicting label, because those labels apply only to upward daily changes; the two clocks simply describe different intervals. Rule M1 uses completed-week direction only as context and requires a daily close strictly above 50 before any next-opening order. M0 supplies no daily signal, so no trade is authorized. Calling the rising weekly context “confirmation” cannot supply the missing daily trigger.
 
 AMB is a separate P1 filled-position branch. At its decision cutoff, it shares the 50-share 50.60 entry, $100 price-risk 1R, stop 48.60 and target 54.60. Its next held-position bar is O50.80/H54.80/L48.20/C51.00. Both stop and target are reached, and the open lies between them. P1 records a stop-first modeled loss of $105/1.05R. A target-first model would give +$195/+1.95R: a $300 or 3R difference caused entirely by a sequence assumption.
 
@@ -5833,7 +5833,7 @@ A failed alternative shares R0–R2, then gives R3 O30.70/H31.20/L28.80/C29.20. 
 | Session | Accepted-path O/H/L/C ($) | Record |
 | --- | --- | --- |
 | R0 | 30.50 / 30.60 / 29.50 / 29.80 | Breach; no recovery trigger |
-| R1 | 29.90 / 30.80 / 29.70 / 30.60 | Recovery known at close; freeze R1 entry ceiling 31 |
+| R1 | 29.90 / 30.80 / 29.70 / 30.60 | R1 close: recovery trigger; freeze R2 entry ceiling 31 |
 | R2 | 31.00 / 32.20 / 30.80 / 32.00 | Supplied fill 50 @31; stop 29/target 35; 1R100 |
 | R3 | 32.10 / 33.80 / 31.80 / 33.50 | Neither exit |
 | R4 | 34.00 / 35.20 / 33.70 / 34.90 | Target model 35; net +195 |
@@ -5846,7 +5846,7 @@ A failed alternative shares R0–R2, then gives R3 O30.70/H31.20/L28.80/C29.20. 
 
 The completed summary distinguishes a trade’s net P&L from a skip and an unresolved execution fact. Each filled result reports its own frozen price-risk denominator and its separate fee model. The gap uses a different price scale and stop distance; the recovery uses a different trigger. Summing their R as if they were interchangeable observations from one locked rule would obscure the very distinctions the cases teach.
 
-Selection explains what this casebook can support. We deliberately chose follow-through, ordinary loss, gap, skip, conflict and recovery paths. Those cases demonstrate rule application; they were not sampled from a real opportunity set. A count of winners in the gallery would mostly measure the author’s selection. Chapter 24 shows how a frozen research rule and chronological evaluation window address a different question.
+Selection explains what this casebook can support. We deliberately chose follow-through, ordinary loss, gap, skip, two-clock and recovery paths. Those cases demonstrate rule application; they were not sampled from a real opportunity set. A count of winners in the gallery would mostly measure the author’s selection. Chapter 24 shows how a frozen research rule and chronological evaluation window address a different question.
 
 The historical additions that follow have distinct evidence contracts. Sparse source facts teach when an execution claim must stop; the calendar-selected archive gallery supplies small OHLC windows with retrospective adjustments and undocumented session details. Apply the same three-pass method: freeze the stated clock, identify missing inputs and distinguish later classifications from the earlier decision. Neither documented market facts nor a systematically recorded gallery turn a hypothetical fill into a historical transaction.
 
@@ -5875,7 +5875,7 @@ Reuse basis: the SEC’s Webmaster FAQ states that Government-created site conte
 
 At the January 13 close, compare the two completed closing observations and volumes shown in the first panel. Price change is 31.40 − 19.95 = $11.45, or 57.39%; approximate share volume is roughly 20 times the previous session (about 144 million against 7 million shares). These are observations. The words “breakout” or “short squeeze” add an interpretation whose definition and evidence must be supplied.
 
-Freeze a retrospective teaching decision at that close: require a complete preceding 20-session OHLC window, a defined event calendar, and an executable next-session quote before accepting P1’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff.
+Freeze a retrospective teaching decision at that close: require enough preceding OHLC to map and freeze a range boundary before January 13 (P1’s signal input), a defined event calendar, and an executable next-session opening offer before accepting P1’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff.
 
 ![GME: sparse documented observations, with cutoffs preserved](../assets/figures/case-studies-4.svg)
 
@@ -6078,7 +6078,7 @@ Reveal February 5: O/H/L/C = 93.429/93.816/90.690/91.009. The open is between th
 
 ![One historical candle, two possible orders](../assets/figures/case-studies-9.svg)
 
-*AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts. A dividend went ex on February 4, so the adjusted levels and bar may not span both levels in unadjusted prices.*
+*AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts. A dividend went ex on February 4, so in unadjusted prices the bar may not have reached the upper level.*
 
 #### Worked example: A fee convention changes the smaller gap’s net R
 
@@ -6130,11 +6130,11 @@ The historical GME extract supplies closes and an intraday high but no full OHLC
 <details>
 <summary>Reveal the worked solution</summary>
 
-Price changes between supplied closes can be calculated. The extract cannot establish P1’s previously frozen boundary, event eligibility, opening offer, preceding window for a channel variant, or exit order. Record insufficient data/no modeled order; request a feed with permitted reuse, adjustments, regular-session OHLC and quotes/timing. Do not substitute the later high for an executable exit.
+Price changes between supplied closes can be calculated. The extract cannot establish P1’s previously frozen boundary, event eligibility, opening offer, preceding OHLC needed to map a boundary, or exit order. Record insufficient data/no modeled order; request a feed with permitted reuse, adjustments, regular-session OHLC and quotes/timing. Do not substitute the later high for an executable exit.
 
 </details>
 
-#### Transfer practice: Audit a calendar-selected historical cutoff
+#### independent practice: Audit a calendar-selected historical cutoff
 
 The gallery ledger lists SPY’s April 2016 cell as adverse, but the chapter never works it. Using only the archive rows below (adjusted dollars, as supplied), (a) reproduce the prior-five mean and the gate, (b) compute the unrounded upper and lower levels, (c) find the first resolving observation, and (d) explain what kind of resolution this is and what it does not establish about a historical stop execution.
 
@@ -6154,13 +6154,13 @@ The gallery ledger lists SPY’s April 2016 cell as adverse, but the chapter nev
 <details>
 <summary>Reveal the worked solution</summary>
 
-(a) The five closes before the cutoff are 197.06, 197.18, 199.01, 199.88 and 199.39; March 25 has no archive row and is not interpolated. Their sum is 992.52 and their mean 198.504. The cutoff close C = 200.77 is strictly higher, so the window is observed.
+(a) The five closes before the cutoff are 197.06, 197.18, 199.01, 199.88 and 199.39; March 25, 2016 was Good Friday, an NYSE holiday, so there is no row to interpolate. Their sum is 992.52 and their mean 198.504. The cutoff close C = 200.77 is strictly higher, so the window is observed.
 
 (b) Upper = 1.01 × 200.77 = 202.7777; lower = 0.99 × 200.77 = 198.7623.
 
 (c) April 4 opens at 200.68, between the levels; its high 200.91 stays below 202.7777 and its low 199.75 stays above 198.7623, so nothing resolves. April 5 opens at 198.58, below 198.7623, so the lower side resolves first, at the open. Its later 200.12 high and 197.81 low are not consulted for classification.
 
-(d) This is the gallery’s only adverse-at-the-open cell: the level was skipped over between closes rather than crossed during the session. A stop order would have faced an opening price below its level, but the archive is retrospectively adjusted and supplies no quotes, auction size, timestamps or costs, so no stop fill, slippage or loss is claimed.
+(d) This is the gallery’s only adverse-at-the-open cell: price moved past the lower level between the April 4 close (200.10) and the April 5 open (198.58), rather than crossing it during a session. A stop order would have faced an opening price below its level, but the archive is retrospectively adjusted and supplies no quotes, auction size, timestamps or costs, so no stop fill, slippage or loss is claimed.
 
 </details>
 
@@ -6215,7 +6215,7 @@ Gross R = 8−5−2 = 1R; gross $80. Costs $40 = 0.5R, net $40 = 0.5R; gross exp
 
 #### Allocate simultaneous candidates
 
-A simplified Atlas-20 variant has equity E = $50,000, of which $12,000 is cash; its four held positions have risen since entry, so one slot is free. Use a $2 stop distance, a 0.5% price-risk allowance, a 10% notional cap measured at the limit price, and a cash allowance of (cash − $2.50 entry fee) ÷ limit. Eligible A: close 40.00, prior-20 high 39.00. Eligible B: close 20.40, prior-20 high 20.00. Rank by breakout margin, 100 × (close − prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point. Each limit is close × 1.01, rounded down to the cent. Which candidate gets the order, how many shares, and what cash reserve?
+A simplified Atlas-20 variant has equity E = $50,000, of which $12,000 is cash; its four held positions have risen since entry, and they occupy four of the five slots. Use a $2 stop distance, a 0.5% price-risk allowance, a 10% notional cap measured at the limit price, and a cash allowance of (cash − $2.50 entry fee) ÷ limit; round each allowance down to whole shares, and reserve shares × limit + $2.50. Eligible A: close 40.00, prior-20 high 39.00. Eligible B: close 20.40, prior-20 high 20.00. Rank by breakout margin, 100 × (close − prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point. Each limit is close × 1.01, rounded down to the cent. Which candidate gets the order, how many shares, and what cash reserve?
 
 <details>
 <summary>Reveal the worked solution</summary>
@@ -6226,12 +6226,12 @@ A’s margin = 100 × (40.00 − 39.00) ÷ 39.00 = 2.5641…, which rounds to 2.
 
 #### Identify the research clock
 
-A researcher logs six variants on 2015–19 data and locks one by a pre-written rule. Run once on held-out 2020–21 data, it averages +0.02R over 14 trades. After charting the held-out losers, she adds a filter: trade only if, within the prior 20 sessions, a completed low fell at least 1% below frozen range support and a later close within three sessions returned above it. On 2020–21 the filtered version earns +0.31R over 8 trades. (a) Label both results. (b) How many variants has the search now tried, and under Chapter 25’s independence model what is the chance that at least one no-edge variant passes a 5% test? (c) At which close is each filter event first known? (d) What data may evaluate the new version, and what must be frozen first?
+A researcher logs six variants on 2015–19 data and locks one by a pre-written rule. Run once on held-out 2020–21 data, it averages +0.02R over 14 trades. After charting the held-out losers, she adds a filter: trade only if, within the prior 20 sessions, a completed low fell at least 1% below range support frozen before that low, and a close strictly above support followed within the breach session or the next three sessions, no later than the breakout’s decision close. On 2020–21 the filtered version earns +0.31R over 8 trades. (a) Label both results. (b) How many variants has the search now tried, and under Chapter 25’s independence model what is the chance that at least one no-edge variant passes a 5% test? (c) At which close is each filter event first known? (d) What data may evaluate the new version, and what must be frozen first?
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-(a) The locked result, +0.02R over 14 trades, stays the held-out result for v1 as recorded. The filtered +0.31R is development evidence for a new version, v2, because the 2020–21 window shaped the filter; it is not a held-out test.
+(a) The locked result, +0.02R over 14 trades, stays the held-out result for v1 as recorded. The filtered +0.31R is development evidence for a new version, v2: its 8 trades are a subset of the 14, kept after their outcomes were seen, and the 2020–21 window shaped the filter, so it is not a held-out test.
 
 (b) Seven variants. If each were an independent 5% test of a rule with no edge, 1 − 0.95⁷ ≈ 0.302, about 30%; variants that share trades make the true figure different, but reporting only the survivor still overstates the evidence. (c) Each filter event is known only at the close that returns above support, not at the breach low; using it earlier is look-ahead. (d) Only a fresh window or a paper forward study. Before it starts, freeze the filter definition and its recognition time, the comparator (v1 on the same window), the cost model and the decision criteria.
 
