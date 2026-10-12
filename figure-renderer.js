@@ -13,6 +13,11 @@
     if (low === high) high = low + 1;
     return Array.from({ length: 5 }, (_, index) => low + (high - low) * index / 4);
   }
+  function integerTicks(low, high) {
+    const step = Math.max(1, Math.round((high - low) / 4));
+    const first = Math.ceil(low / step) * step;
+    return Array.from({ length: Math.floor((high - first) / step) + 1 }, (_, index) => first + index * step);
+  }
   function precision(step) { return Math.min(6, Math.max(0, Math.ceil(-Math.log10(Math.abs(step) || 1)) + 1)); }
   function formatTicks(values) {
     const step = values.length > 1 ? values[1] - values[0] : 1;
@@ -71,7 +76,27 @@
   function multiText(x, y, lines, options = {}) {
     return lines.map((line, index) => text(x, y + index * 19, line, options)).join('');
   }
-  function rectangleOverlap(a, b) { return a.x < b.x + b.w + 4 && a.x + a.w + 4 > b.x && a.y < b.y + b.h + 4 && a.y + a.h + 4 > b.y; }
+  function rectangleOverlap(a, b, gap = 4) { return a.x < b.x + b.w + gap && a.x + a.w + gap > b.x && a.y < b.y + b.h + gap && a.y + a.h + gap > b.y; }
+  function placeLabel(px, py, w, h, bounds, placements, occupied, markers) {
+    // Check the actual background after clamping, against every marker (including
+    // annotations that have not been drawn yet) and previously placed labels.
+    const blocked = candidate => occupied.some(item => rectangleOverlap(candidate, item)) || markers.some(marker => rectangleOverlap({ x: candidate.x - 2, y: candidate.y - 2, w: w + 4, h: h + 3 }, marker, 0));
+    for (const [dx, dy] of placements) {
+      const candidate = { x: Math.min(bounds.right - w, Math.max(bounds.left, px + dx)), y: Math.min(bounds.bottom - h, Math.max(bounds.top, py + dy)), w, h };
+      if (!blocked(candidate)) return candidate;
+    }
+    let box, distance = Infinity;
+    for (let yy = bounds.top; yy <= bounds.bottom - h; yy += 12) {
+      for (let xx = bounds.left; xx <= bounds.right - w; xx += 12) {
+        const candidate = { x: xx, y: yy, w, h };
+        if (blocked(candidate)) continue;
+        const nextDistance = (xx + w / 2 - px) ** 2 + (yy + h / 2 - py) ** 2;
+        if (nextDistance < distance) { box = candidate; distance = nextDistance; }
+      }
+    }
+    // Authoring review must simplify a figure if no free position remains.
+    return box || { x: bounds.left, y: bounds.top, w, h };
+  }
   function chart(figure, width, colors) {
     const isBar = series => series.style === 'bar' || (figure.kind === 'bars' && !series.style);
     const compact = width < 430;
@@ -88,6 +113,7 @@
     let low = Math.min(...numbers), high = Math.max(...numbers);
     const rawSpan = high - low || Math.max(1, Math.abs(high) * .02);
     const logarithmic = figure.yScale === 'log';
+    if (figure.integerTicks && logarithmic) throw new Error(`Integer ticks require a linear scale: ${figure.title}`);
     if (logarithmic && low <= 0) throw new Error(`Log scale requires positive values: ${figure.title}`);
     if (logarithmic) { low /= Math.exp(.12 * Math.log(high / low || 1.1)); high *= Math.exp(.12 * Math.log(high / low || 1.1)); }
     else {
@@ -96,10 +122,11 @@
       if (figure.series.some(isBar) && dataLow >= 0) low = 0;
     }
     const transform = value => logarithmic ? Math.log(value) : value;
-    const x = index => left + index / Math.max(1, count - 1) * (width - left - right);
+    const hasBars = figure.series.some(isBar);
+    const x = index => left + (hasBars ? (index + .5) / count : index / Math.max(1, count - 1)) * (width - left - right);
     const y = value => height - bottom - (transform(value) - transform(low)) / (transform(high) - transform(low)) * (height - top - bottom);
-    const tickValues = logarithmic ? ticks(Math.log(low), Math.log(high)).map(Math.exp) : ticks(low, high);
-    const labels = formatTicks(tickValues);
+    const tickValues = logarithmic ? ticks(Math.log(low), Math.log(high)).map(Math.exp) : figure.integerTicks ? integerTicks(low, high) : ticks(low, high);
+    const labels = figure.integerTicks ? tickValues.map(String) : formatTicks(tickValues);
     let markup = text(left, 19, figure.yLabel || 'Value', { color: colors.muted, size: compact ? 12 : 13 });
     tickValues.forEach((value, index) => {
       markup += `<line x1="${left}" y1="${y(value)}" x2="${width - right}" y2="${y(value)}" stroke="${colors.grid}"/>`;
@@ -138,6 +165,7 @@
       }
     });
     const occupied = [];
+    const markers = (figure.annotations || []).map(annotation => ({ px: x(annotation.index), py: y(annotationValue(figure, annotation)) })).filter(point => Number.isFinite(point.py)).map(point => ({ x: point.px - 4.35, y: point.py - 4.35, w: 8.7, h: 8.7 }));
     for (const annotation of figure.annotations || []) {
       const value = annotationValue(figure, annotation);
       if (!Number.isFinite(value)) continue;
@@ -147,25 +175,7 @@
       const labelWidth = Math.min(width - left - right, Math.max(...labelLines.map(line => line.length)) * (compact ? 6 : 6.8) + 8);
       const labelHeight = labelLines.length * 18;
       const candidates = annotation.placement === 'below' ? [[8, 15], [-labelWidth - 8, 15], [8, -labelHeight - 8], [-labelWidth - 8, -labelHeight - 8]] : [[8, -labelHeight - 8], [-labelWidth - 8, -labelHeight - 8], [8, 15], [-labelWidth - 8, 15]];
-      let box;
-      for (const [dx, dy] of candidates) {
-        const candidate = { x: Math.min(width - right - labelWidth, Math.max(left + 3, px + dx)), y: Math.min(height - bottom - labelHeight - 2, Math.max(top + 2, py + dy)), w: labelWidth, h: labelHeight };
-        if (!occupied.some(item => rectangleOverlap(candidate, item))) { box = candidate; break; }
-      }
-      if (!box) {
-        let distance = Infinity;
-        for (let yy = top + 2; yy <= height - bottom - labelHeight - 2; yy += 12) {
-          for (let xx = left + 3; xx <= width - right - labelWidth; xx += 12) {
-            const candidate = { x: xx, y: yy, w: labelWidth, h: labelHeight };
-            if (occupied.some(item => rectangleOverlap(candidate, item))) continue;
-            const nextDistance = (xx + labelWidth / 2 - px) ** 2 + (yy + labelHeight / 2 - py) ** 2;
-            if (nextDistance < distance) { box = candidate; distance = nextDistance; }
-          }
-        }
-        // Extremely dense charts still get a bounded label; authoring review
-        // must simplify a figure if no unoccupied position remains.
-        box ||= { x: left + 3, y: top + 2, w: labelWidth, h: labelHeight };
-      }
+      const box = placeLabel(px, py, labelWidth, labelHeight, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, candidates, occupied, markers);
       occupied.push(box);
       markup += `<line x1="${px}" y1="${py}" x2="${box.x + box.w / 2}" y2="${box.y + box.h / 2}" stroke="${colors.muted}" stroke-width=".7"/>`;
       markup += `<circle data-annotation-series="${annotation.seriesIndex ?? 0}" data-value="${value}" cx="${px}" cy="${py}" r="3.5" fill="${colors.paper}" stroke="${colors.series[(annotation.seriesIndex ?? 0) % 4]}" stroke-width="1.7"><title>${escape(annotation.label)}</title></circle>`;
@@ -212,6 +222,7 @@
 
     }
     const occupied = [];
+    const markers = (figure.annotations || []).filter(annotation => data[annotation.index]).map(annotation => ({ x: x(annotation.index) - 3, y: y(annotation.value ?? data[annotation.index].close) - 3, w: 6, h: 6 }));
     for (const annotation of figure.annotations || []) {
       const candle = data[annotation.index]; if (!candle) continue;
       const value = annotation.value ?? candle.close;
@@ -227,12 +238,8 @@
         const bh = lines.length * 19;
         const above = [[8,-bh-8],[-bw-8,-bh-8],[8,12],[-bw-8,12]];
         const candidates = annotation.placement === 'below' ? [...above.slice(2),...above.slice(0,2)] : above;
-        let box;
-        for (const [dx,dy] of candidates) {
-          const candidate = {x:Math.max(left+3,Math.min(width-right-bw,px+dx)),y:Math.max(top+2,Math.min(height-bottom-bh-2,py+dy)),w:bw,h:bh};
-          if (!occupied.some(item => rectangleOverlap(candidate,item))) { box=candidate;break; }
-        }
-        box ||= {x:left+3,y:top+2,w:bw,h:bh}; occupied.push(box);
+        const box = placeLabel(px, py, bw, bh, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, candidates, occupied, markers);
+        occupied.push(box);
         markup += `<line x1="${px}" y1="${py}" x2="${box.x+bw/2}" y2="${box.y+bh/2}" stroke="${colors.muted}" stroke-width=".7"/><circle cx="${px}" cy="${py}" r="2.5" fill="${colors.paper}" stroke="${colors.series[0]}"/><rect x="${box.x-2}" y="${box.y-2}" width="${bw+4}" height="${bh+3}" fill="${colors.paper}" opacity=".95"/>`;
         markup += multiText(box.x+2,box.y+12,lines,{size:12});
       }

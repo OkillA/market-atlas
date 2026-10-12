@@ -37,6 +37,10 @@ function checkFigure(figure,id) {
     figure.candles.forEach(candle=>assert.ok([candle.open,candle.high,candle.low,candle.close].every(Number.isFinite)&&candle.low<=Math.min(candle.open,candle.close)&&candle.high>=Math.max(candle.open,candle.close),`Invalid OHLC ${id}`)); return;
   }
   assert.ok(['line','bars'].includes(kind),`Unsupported kind ${kind}`);
+  if (figure.integerTicks !== undefined) {
+    assert.equal(typeof figure.integerTicks, 'boolean', `Invalid integerTicks ${id}`);
+    assert.ok(!figure.integerTicks || figure.yScale !== 'log', `Integer ticks require a linear scale ${id}`);
+  }
   assert.ok(figure.xLabel && figure.yLabel && figure.series.length>=1 && figure.series.length<=4, `Figure labels ${id}`);
   const length=figure.series[0].values.length; assert.ok(length>=2);
   figure.series.forEach(series=>{assert.equal(series.values.length,length,`Series alignment ${id}`);assert.ok(series.name);series.values.forEach(value=>assert.ok(Number.isFinite(value)||value===null));});

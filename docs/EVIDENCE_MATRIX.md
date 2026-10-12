@@ -1332,17 +1332,17 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 
 **Cash, R and excursion records reconcile**
 
-- Classification: arithmetic; checked 2026-10-01.
+- Classification: arithmetic; checked 2026-10-11.
 - Location: Worked sections, tables, figures and solutions.
-- Support: Recomputed $19,895 ending cash, −1.05R, BRDG MFE$35/0.35R and model-cutoff MAE$100/1R; separate excursion net$70/0.70R.
+- Support: Recomputed $19,895 ending cash, −1.05R, BRDG MFE$35/0.35R and model-cutoff MAE$100/1R; separate excursion net$70/0.70R. Fresh five-candidate audit: frozen R $50/$60/$20, completed net $70/−$88, mean −0.0333R, cash $19,480 plus open holdings $510 = equity $19,990; closed-net dollars per candidate −$3.60.
 - Limits: Original fictional teaching example; not an empirical performance estimate.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 
 **Hypothetical performance and selective presentations need scrutiny**
 
-- Classification: definition; checked 2026-10-01.
+- Classification: definition; checked 2026-10-11.
 - Location: Investor.gov Performance Claims.
-- Support: Read SEC staff Performance Claims bulletin, Back-Testing, Cherry-picking and Benchmark Performance sections.
+- Support: Read SEC staff Investor Bulletin: Performance Claims, Back-Testing, Cherry-picking past performance and Benchmark performance passages.
 - Limits: The bulletin motivates transparent reporting; it does not validate journal interventions or fictional fills.
 - Sources: [SEC / Investor.gov · Investor Bulletin: Performance Claims](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47)
 

@@ -1,6 +1,6 @@
 # Editorial roadmap
 
-Updated **2026-10-03**. Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
+Updated **2026-10-11** by `/root` after publication batch 6. Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
 
 The complete 28-chapter revision, six part reviews, selected-source synthesis, historical gallery and recorded re-audit fixes are complete within their documented scope. The next stage is publication acceptance. Human-reader participation remains deferred, and independent editorial work can continue.
 
@@ -16,10 +16,10 @@ Claim a manageable package by setting its owner and status before implementation
 
 ### ROAD-002 — Complete chapter publication acceptance
 
-- Status / owner: ready / unassigned (batch 5 complete; remaining claim released).
-- Preparation: [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) contains all 28 chapters with inherited evidence and current fingerprints. Twenty-one chapters and Parts 1–4 are accepted for current editorial content; 7 chapters and two part reviews remain pending. Release QA and shipping metadata remain separate gates.
+- Status / owner: ready / unassigned (batch 6 complete; remaining claim released).
+- Preparation: [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) contains all 28 chapters with inherited evidence and current fingerprints. Twenty-three chapters and Parts 1–5 are accepted for current editorial content; 5 chapters and one part review remain pending. Release QA and shipping metadata remain separate gates.
 - Dependencies: none. Existing revision evidence is available.
-- Next batch: Chapters 22–28 with the Part 5 and Part 6 cumulative reviews (Chapter 26's PUB4-009 figure fix is already done); then check cumulative reviews, glossary and cross-links. Open renderer items PUB5-012/013 and ALPHA1-001 change accepted chapters' exports if fixed, so re-inspect those figures.
+- Next batch: Chapters 24–28 with the Part 6 cumulative review (Chapter 26's PUB4-009 figure fix is already done); then check cumulative reviews, glossary and cross-links. Renderer items PUB5-012/013 and ALPHA1-001 are resolved; affected accepted chapters' figures were rechecked in the [renderer batch](RENDERER_BATCH_20261011.md).
 - Work: review connected prose, unnecessary repetition, terms, exact definitions, information timing, claim support, counterexamples, unfamiliar task inputs and complete worked answers. Inspect the actual affected figures at compact and wide widths. Preserve the book's observation/interpretation/action distinction and honest execution/evidence limits.
 - Exit criteria: each chapter has a dated reviewer, current content fingerprint, checked scope, evidence links, disposition and unresolved findings. All discovered essential defects have verified resolutions or explicit deferred treatment; each of the six part reviews is covered. A previous schema pass alone cannot fill the ledger.
 - Batch 1 progress / 2026-10-02: /root completed [batch 1](PUBLICATION_BATCH1_20261002.md): 5/28 chapters accepted at current fingerprints. PUB1-001 and reopened Chapter 20 CA1-024 / Chapter 21 AUD2-002 are resolved. Evidence covers prose, source passages, independent calculations, actual compact/wide rasters and native browser content/keyboard checks; native print and human validation remain pending. Claim released for the uncompleted remainder.
@@ -31,6 +31,10 @@ Claim a manageable package by setting its owner and status before implementation
 - Batch 4 progress / 2026-10-03: claude-code-main completed [Chapters 10–14 and Part 3](PUBLICATION_BATCH4_20261003.md): totals 16/28 chapters and 3/6 part reviews. PUB4-001–008 resolved; that includes a shared-renderer bar-axis floor (PUB4-005) and a Chapter 3 compact-label fix (PUB4-006), with Chapter 3 and Part 1 re-accepted at new fingerprints. PUB4-009 (Chapter 26 compact labels) is open. Native top-level 1280/390/320px DOM checks; no printer or screenshot evidence. Remaining claim released.
 
 - Batch 5 progress / 2026-10-11: claude-code-alpha completed [Chapters 15–19 and Part 4](PUBLICATION_BATCH5_20261011.md): totals 21/28 chapters and 4/6 part reviews. PUB5-001–011 resolved (five P2 teaching fixes, compact-label fixes and source/locator corrections); PUB5-012/013 open renderer residuals. Reviewer agents did the full reads, 1,069 comparisons and 34 source checks; the owner verified each finding. Native 1280/390/320px DOM checks; no printer output. Remaining claim released.
+
+- Renderer progress / 2026-10-11: /root completed the [shared-renderer correction batch](RENDERER_BATCH_20261011.md): ALPHA1-001, PUB5-012 and PUB5-013 resolved; all 26 changed panels inspected at 260/760px, all chart panels checked at four widths, native light/dark and nine reader-route checks passed. Chapter 16 and Part 4 re-accepted for the count-axis flag; no new chapter acceptances. Totals remain 21/28 and 4/6. Chapters 22–28 and Parts 5–6 remain ready/unassigned for full review.
+
+- Batch 6 progress / 2026-10-11: /root completed [Chapters 22–23 and Part 5](PUBLICATION_BATCH6_20261011.md): totals 23/28 chapters and 5/6 part reviews. Reopened CA1-015 resolves fresh journal transfer and complete execution/cancellation inputs; PUB6-001 resolves path occlusion. All earlier chapter/part fingerprints remain unchanged. Native 1280/390px and 320px child-frame DOM checks; actual portable rasters; no native printer pagination or human observations. Remaining claim released.
 
 ### ROAD-003 — Finish source-access and data-rights release review
 

@@ -1,0 +1,6933 @@
+{
+  "summary": {
+    "renders": 364,
+    "markers": 572,
+    "obscuredMarkers": 0,
+    "barRenders": 24,
+    "barsOutsidePlot": 0,
+    "integerTickRenders": 12,
+    "badIntegerTicks": 0
+  },
+  "records": [
+    {
+      "id": "market-language",
+      "panel": 0,
+      "title": "Description before explanation",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.3",
+        "41.1",
+        "43.0",
+        "44.9",
+        "46.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "market-language",
+      "panel": 0,
+      "title": "Description before explanation",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.3",
+        "41.1",
+        "43.0",
+        "44.9",
+        "46.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "market-language",
+      "panel": 0,
+      "title": "Description before explanation",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.3",
+        "41.1",
+        "43.0",
+        "44.9",
+        "46.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "market-language",
+      "panel": 0,
+      "title": "Description before explanation",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.3",
+        "41.1",
+        "43.0",
+        "44.9",
+        "46.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy",
+      "panel": 0,
+      "title": "One interval: O100, H108, L98, C105",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy",
+      "panel": 0,
+      "title": "One interval: O100, H108, L98, C105",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy",
+      "panel": 0,
+      "title": "One interval: O100, H108, L98, C105",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy",
+      "panel": 0,
+      "title": "One interval: O100, H108, L98, C105",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 0,
+      "title": "Route A: $99 is reached first",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 0,
+      "title": "Route A: $99 is reached first",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 0,
+      "title": "Route A: $99 is reached first",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 0,
+      "title": "Route A: $99 is reached first",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 1,
+      "title": "Route B: $107 is reached first",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 1,
+      "title": "Route B: $107 is reached first",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 1,
+      "title": "Route B: $107 is reached first",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 1,
+      "title": "Route B: $107 is reached first",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.8",
+        "99.9",
+        "103.0",
+        "106.1",
+        "109.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 0,
+      "title": "Harbor closing prices",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.20",
+        "39.98",
+        "40.75",
+        "41.52",
+        "42.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 0,
+      "title": "Harbor closing prices",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.20",
+        "39.98",
+        "40.75",
+        "41.52",
+        "42.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 0,
+      "title": "Harbor closing prices",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.20",
+        "39.98",
+        "40.75",
+        "41.52",
+        "42.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 0,
+      "title": "Harbor closing prices",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.20",
+        "39.98",
+        "40.75",
+        "41.52",
+        "42.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 1,
+      "title": "Share volume and a defined reference",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 7,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.56",
+        "1.12",
+        "1.68",
+        "2.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 1,
+      "title": "Share volume and a defined reference",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 7,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.56",
+        "1.12",
+        "1.68",
+        "2.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 1,
+      "title": "Share volume and a defined reference",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 7,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.56",
+        "1.12",
+        "1.68",
+        "2.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume",
+      "panel": 1,
+      "title": "Share volume and a defined reference",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 7,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.56",
+        "1.12",
+        "1.68",
+        "2.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-2",
+      "panel": 0,
+      "title": "Today’s unfinished volume versus historical noon totals",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 6,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.20",
+        "0.39",
+        "0.59",
+        "0.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-2",
+      "panel": 0,
+      "title": "Today’s unfinished volume versus historical noon totals",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 6,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.20",
+        "0.39",
+        "0.59",
+        "0.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-2",
+      "panel": 0,
+      "title": "Today’s unfinished volume versus historical noon totals",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 6,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.20",
+        "0.39",
+        "0.59",
+        "0.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-2",
+      "panel": 0,
+      "title": "Today’s unfinished volume versus historical noon totals",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 6,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.20",
+        "0.39",
+        "0.59",
+        "0.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 0,
+      "title": "Linear: equal dollars occupy equal distance",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "2",
+        "23",
+        "45",
+        "67",
+        "88"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 0,
+      "title": "Linear: equal dollars occupy equal distance",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "2",
+        "23",
+        "45",
+        "67",
+        "88"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 0,
+      "title": "Linear: equal dollars occupy equal distance",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "2",
+        "23",
+        "45",
+        "67",
+        "88"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 0,
+      "title": "Linear: equal dollars occupy equal distance",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "2",
+        "23",
+        "45",
+        "67",
+        "88"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 1,
+      "title": "Log: equal ratios occupy equal distance",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "7.8",
+        "15.0",
+        "28.7",
+        "55.1",
+        "105.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 1,
+      "title": "Log: equal ratios occupy equal distance",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "7.8",
+        "15.0",
+        "28.7",
+        "55.1",
+        "105.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 1,
+      "title": "Log: equal ratios occupy equal distance",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "7.8",
+        "15.0",
+        "28.7",
+        "55.1",
+        "105.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes",
+      "panel": 1,
+      "title": "Log: equal ratios occupy equal distance",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "7.8",
+        "15.0",
+        "28.7",
+        "55.1",
+        "105.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 0,
+      "title": "Daily inputs",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 0,
+      "title": "Daily inputs",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 0,
+      "title": "Daily inputs",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 0,
+      "title": "Daily inputs",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 1,
+      "title": "Combined week",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 1,
+      "title": "Combined week",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 1,
+      "title": "Combined week",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "timeframes-2",
+      "panel": 1,
+      "title": "Combined week",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "96.5",
+        "99.8",
+        "103.0",
+        "106.3",
+        "109.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends",
+      "panel": 0,
+      "title": "One swing map, a line break, and a later transition",
+      "width": 260,
+      "markerCount": 6,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.6",
+        "42.3",
+        "46.0",
+        "49.7",
+        "53.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends",
+      "panel": 0,
+      "title": "One swing map, a line break, and a later transition",
+      "width": 320,
+      "markerCount": 6,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.6",
+        "42.3",
+        "46.0",
+        "49.7",
+        "53.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends",
+      "panel": 0,
+      "title": "One swing map, a line break, and a later transition",
+      "width": 390,
+      "markerCount": 6,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.6",
+        "42.3",
+        "46.0",
+        "49.7",
+        "53.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends",
+      "panel": 0,
+      "title": "One swing map, a line break, and a later transition",
+      "width": 760,
+      "markerCount": 6,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.6",
+        "42.3",
+        "46.0",
+        "49.7",
+        "53.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends-3",
+      "panel": 0,
+      "title": "A minor turn disappears under a coarser rule",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.5",
+        "40.8",
+        "42.0",
+        "43.2",
+        "44.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends-3",
+      "panel": 0,
+      "title": "A minor turn disappears under a coarser rule",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.5",
+        "40.8",
+        "42.0",
+        "43.2",
+        "44.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends-3",
+      "panel": 0,
+      "title": "A minor turn disappears under a coarser rule",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.5",
+        "40.8",
+        "42.0",
+        "43.2",
+        "44.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trends-3",
+      "panel": 0,
+      "title": "A minor turn disappears under a coarser rule",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.5",
+        "40.8",
+        "42.0",
+        "43.2",
+        "44.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 0,
+      "title": "Construction: only D1–D12",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.2",
+        "40.8",
+        "42.4",
+        "44.0",
+        "45.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 0,
+      "title": "Construction: only D1–D12",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.2",
+        "40.8",
+        "42.4",
+        "44.0",
+        "45.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 0,
+      "title": "Construction: only D1–D12",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.2",
+        "40.8",
+        "42.4",
+        "44.0",
+        "45.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 0,
+      "title": "Construction: only D1–D12",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.2",
+        "40.8",
+        "42.4",
+        "44.0",
+        "45.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 1,
+      "title": "Reveal: D13–D18",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.92",
+        "39.64",
+        "40.35",
+        "41.06",
+        "41.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 1,
+      "title": "Reveal: D13–D18",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.92",
+        "39.64",
+        "40.35",
+        "41.06",
+        "41.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 1,
+      "title": "Reveal: D13–D18",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.92",
+        "39.64",
+        "40.35",
+        "41.06",
+        "41.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance",
+      "panel": 1,
+      "title": "Reveal: D13–D18",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.92",
+        "39.64",
+        "40.35",
+        "41.06",
+        "41.78"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance-2",
+      "panel": 0,
+      "title": "D15 crosses the intraday threshold, but not the close rule",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.13",
+        "39.49",
+        "39.85",
+        "40.21",
+        "40.56"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance-2",
+      "panel": 0,
+      "title": "D15 crosses the intraday threshold, but not the close rule",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.13",
+        "39.49",
+        "39.85",
+        "40.21",
+        "40.56"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance-2",
+      "panel": 0,
+      "title": "D15 crosses the intraday threshold, but not the close rule",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.13",
+        "39.49",
+        "39.85",
+        "40.21",
+        "40.56"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "support-resistance-2",
+      "panel": 0,
+      "title": "D15 crosses the intraday threshold, but not the close rule",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "39.13",
+        "39.49",
+        "39.85",
+        "40.21",
+        "40.56"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 0,
+      "title": "Doji-like: body 5% of range",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.70",
+        "49.35",
+        "50.00",
+        "50.65",
+        "51.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 0,
+      "title": "Doji-like: body 5% of range",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.70",
+        "49.35",
+        "50.00",
+        "50.65",
+        "51.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 0,
+      "title": "Doji-like: body 5% of range",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.70",
+        "49.35",
+        "50.00",
+        "50.65",
+        "51.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 0,
+      "title": "Doji-like: body 5% of range",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.70",
+        "49.35",
+        "50.00",
+        "50.65",
+        "51.30"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 1,
+      "title": "Near miss: same body, 50% of range",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.920",
+        "49.985",
+        "50.050",
+        "50.115",
+        "50.180"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 1,
+      "title": "Near miss: same body, 50% of range",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.920",
+        "49.985",
+        "50.050",
+        "50.115",
+        "50.180"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 1,
+      "title": "Near miss: same body, 50% of range",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.920",
+        "49.985",
+        "50.050",
+        "50.115",
+        "50.180"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 1,
+      "title": "Near miss: same body, 50% of range",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.920",
+        "49.985",
+        "50.050",
+        "50.115",
+        "50.180"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 2,
+      "title": "Decline then hammer-like lower shadow",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 2,
+      "title": "Decline then hammer-like lower shadow",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 2,
+      "title": "Decline then hammer-like lower shadow",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 2,
+      "title": "Decline then hammer-like lower shadow",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 3,
+      "title": "Near miss: lower shadow only 1.375 × body",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.59",
+        "49.27",
+        "49.95",
+        "50.63",
+        "51.31"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 3,
+      "title": "Near miss: lower shadow only 1.375 × body",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.59",
+        "49.27",
+        "49.95",
+        "50.63",
+        "51.31"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 3,
+      "title": "Near miss: lower shadow only 1.375 × body",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.59",
+        "49.27",
+        "49.95",
+        "50.63",
+        "51.31"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns",
+      "panel": 3,
+      "title": "Near miss: lower shadow only 1.375 × body",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.59",
+        "49.27",
+        "49.95",
+        "50.63",
+        "51.31"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 0,
+      "title": "Engulfing body, inside full range",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 0,
+      "title": "Engulfing body, inside full range",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 0,
+      "title": "Engulfing body, inside full range",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 0,
+      "title": "Engulfing body, inside full range",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 1,
+      "title": "Near miss: second body ends below 52",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 1,
+      "title": "Near miss: second body ends below 52",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 1,
+      "title": "Near miss: second body ends below 52",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-2",
+      "panel": 1,
+      "title": "Near miss: second body ends below 52",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.4",
+        "49.7",
+        "51.0",
+        "52.3",
+        "53.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-attempt-1",
+      "panel": 0,
+      "title": "The three completed candles at the D3 cutoff",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-attempt-1",
+      "panel": 0,
+      "title": "The three completed candles at the D3 cutoff",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-attempt-1",
+      "panel": 0,
+      "title": "The three completed candles at the D3 cutoff",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "candlestick-patterns-attempt-1",
+      "panel": 0,
+      "title": "The three completed candles at the D3 cutoff",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.8",
+        "48.4",
+        "51.0",
+        "53.6",
+        "56.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 0,
+      "title": "Candidate after D11",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 0,
+      "title": "Candidate after D11",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 0,
+      "title": "Candidate after D11",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 0,
+      "title": "Candidate after D11",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 1,
+      "title": "Branch A: completed on D12, reference not reached",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.6",
+        "50.3",
+        "54.0",
+        "57.7",
+        "61.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 1,
+      "title": "Branch A: completed on D12, reference not reached",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.6",
+        "50.3",
+        "54.0",
+        "57.7",
+        "61.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 1,
+      "title": "Branch A: completed on D12, reference not reached",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.6",
+        "50.3",
+        "54.0",
+        "57.7",
+        "61.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 1,
+      "title": "Branch A: completed on D12, reference not reached",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.6",
+        "50.3",
+        "54.0",
+        "57.7",
+        "61.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 2,
+      "title": "Branch B: new high invalidates the candidate",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.0",
+        "55.5",
+        "58.0",
+        "60.5",
+        "63.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 2,
+      "title": "Branch B: new high invalidates the candidate",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.0",
+        "55.5",
+        "58.0",
+        "60.5",
+        "63.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 2,
+      "title": "Branch B: new high invalidates the candidate",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.0",
+        "55.5",
+        "58.0",
+        "60.5",
+        "63.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns",
+      "panel": 2,
+      "title": "Branch B: new high invalidates the candidate",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.0",
+        "55.5",
+        "58.0",
+        "60.5",
+        "63.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 0,
+      "title": "Rectangle",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.3",
+        "40.1",
+        "42.0",
+        "43.9",
+        "45.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 0,
+      "title": "Rectangle",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.3",
+        "40.1",
+        "42.0",
+        "43.9",
+        "45.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 0,
+      "title": "Rectangle",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.3",
+        "40.1",
+        "42.0",
+        "43.9",
+        "45.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 0,
+      "title": "Rectangle",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.3",
+        "40.1",
+        "42.0",
+        "43.9",
+        "45.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 1,
+      "title": "Symmetrical triangle",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.3",
+        "45.1",
+        "47.0",
+        "48.9",
+        "50.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 1,
+      "title": "Symmetrical triangle",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.3",
+        "45.1",
+        "47.0",
+        "48.9",
+        "50.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 1,
+      "title": "Symmetrical triangle",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.3",
+        "45.1",
+        "47.0",
+        "48.9",
+        "50.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 1,
+      "title": "Symmetrical triangle",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.3",
+        "45.1",
+        "47.0",
+        "48.9",
+        "50.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 2,
+      "title": "Ascending triangle",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.2",
+        "45.3",
+        "47.5",
+        "49.7",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 2,
+      "title": "Ascending triangle",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.2",
+        "45.3",
+        "47.5",
+        "49.7",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 2,
+      "title": "Ascending triangle",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.2",
+        "45.3",
+        "47.5",
+        "49.7",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 2,
+      "title": "Ascending triangle",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "43.2",
+        "45.3",
+        "47.5",
+        "49.7",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 3,
+      "title": "Descending triangle",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "42.2",
+        "44.3",
+        "46.5",
+        "48.7",
+        "50.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 3,
+      "title": "Descending triangle",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "42.2",
+        "44.3",
+        "46.5",
+        "48.7",
+        "50.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 3,
+      "title": "Descending triangle",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "42.2",
+        "44.3",
+        "46.5",
+        "48.7",
+        "50.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 3,
+      "title": "Descending triangle",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "42.2",
+        "44.3",
+        "46.5",
+        "48.7",
+        "50.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 4,
+      "title": "Flag",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.1",
+        "45.5",
+        "48.9",
+        "52.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 4,
+      "title": "Flag",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.1",
+        "45.5",
+        "48.9",
+        "52.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 4,
+      "title": "Flag",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.1",
+        "45.5",
+        "48.9",
+        "52.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 4,
+      "title": "Flag",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.1",
+        "45.5",
+        "48.9",
+        "52.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 5,
+      "title": "Pennant",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.0",
+        "45.3",
+        "48.5",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 5,
+      "title": "Pennant",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.0",
+        "45.3",
+        "48.5",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 5,
+      "title": "Pennant",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.0",
+        "45.3",
+        "48.5",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-2",
+      "panel": 5,
+      "title": "Pennant",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.7",
+        "42.0",
+        "45.3",
+        "48.5",
+        "51.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 0,
+      "title": "Double-bottom mirror",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.8",
+        "49.9",
+        "53.0",
+        "56.1",
+        "59.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 0,
+      "title": "Double-bottom mirror",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.8",
+        "49.9",
+        "53.0",
+        "56.1",
+        "59.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 0,
+      "title": "Double-bottom mirror",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.8",
+        "49.9",
+        "53.0",
+        "56.1",
+        "59.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 0,
+      "title": "Double-bottom mirror",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "46.8",
+        "49.9",
+        "53.0",
+        "56.1",
+        "59.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 1,
+      "title": "Head and shoulders top",
+      "width": 260,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "50.2",
+        "54.9",
+        "59.5",
+        "64.2",
+        "68.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 1,
+      "title": "Head and shoulders top",
+      "width": 320,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "50.2",
+        "54.9",
+        "59.5",
+        "64.2",
+        "68.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 1,
+      "title": "Head and shoulders top",
+      "width": 390,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "50.2",
+        "54.9",
+        "59.5",
+        "64.2",
+        "68.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 1,
+      "title": "Head and shoulders top",
+      "width": 760,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "50.2",
+        "54.9",
+        "59.5",
+        "64.2",
+        "68.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 2,
+      "title": "Head and shoulders bottom: mirror",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "41.2",
+        "45.9",
+        "50.5",
+        "55.1",
+        "59.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 2,
+      "title": "Head and shoulders bottom: mirror",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "41.2",
+        "45.9",
+        "50.5",
+        "55.1",
+        "59.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 2,
+      "title": "Head and shoulders bottom: mirror",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "41.2",
+        "45.9",
+        "50.5",
+        "55.1",
+        "59.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 2,
+      "title": "Head and shoulders bottom: mirror",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "41.2",
+        "45.9",
+        "50.5",
+        "55.1",
+        "59.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-attempt-1",
+      "panel": 0,
+      "title": "The unlabelled D1–D11 close path",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-attempt-1",
+      "panel": 0,
+      "title": "The unlabelled D1–D11 close path",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-attempt-1",
+      "panel": 0,
+      "title": "The unlabelled D1–D11 close path",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "chart-patterns-attempt-1",
+      "panel": 0,
+      "title": "The unlabelled D1–D11 close path",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "53.3",
+        "55.1",
+        "57.0",
+        "58.9",
+        "60.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts",
+      "panel": 0,
+      "title": "A closing breakout followed by a return below",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts",
+      "panel": 0,
+      "title": "A closing breakout followed by a return below",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts",
+      "panel": 0,
+      "title": "A closing breakout followed by a return below",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts",
+      "panel": 0,
+      "title": "A closing breakout followed by a return below",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-2",
+      "panel": 0,
+      "title": "The signal close and the ineligible next open",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.6",
+        "49.7",
+        "50.9",
+        "52.0",
+        "53.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-2",
+      "panel": 0,
+      "title": "The signal close and the ineligible next open",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.6",
+        "49.7",
+        "50.9",
+        "52.0",
+        "53.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-2",
+      "panel": 0,
+      "title": "The signal close and the ineligible next open",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.6",
+        "49.7",
+        "50.9",
+        "52.0",
+        "53.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-2",
+      "panel": 0,
+      "title": "The signal close and the ineligible next open",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.6",
+        "49.7",
+        "50.9",
+        "52.0",
+        "53.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-attempt-1",
+      "panel": 0,
+      "title": "Harbor observations available at the session-9 close",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-attempt-1",
+      "panel": 0,
+      "title": "Harbor observations available at the session-9 close",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-attempt-1",
+      "panel": 0,
+      "title": "Harbor observations available at the session-9 close",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breakouts-attempt-1",
+      "panel": 0,
+      "title": "Harbor observations available at the session-9 close",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.66",
+        "48.53",
+        "49.40",
+        "50.27",
+        "51.14"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 0,
+      "title": "Main path",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9.4",
+        "10.9",
+        "12.5",
+        "14.1",
+        "15.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 0,
+      "title": "Main path",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9.4",
+        "10.9",
+        "12.5",
+        "14.1",
+        "15.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 0,
+      "title": "Main path",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9.4",
+        "10.9",
+        "12.5",
+        "14.1",
+        "15.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 0,
+      "title": "Main path",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9.4",
+        "10.9",
+        "12.5",
+        "14.1",
+        "15.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 1,
+      "title": "Range and whipsaws",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "10.76",
+        "11.38",
+        "12.00",
+        "12.62",
+        "13.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 1,
+      "title": "Range and whipsaws",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "10.76",
+        "11.38",
+        "12.00",
+        "12.62",
+        "13.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 1,
+      "title": "Range and whipsaws",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "10.76",
+        "11.38",
+        "12.00",
+        "12.62",
+        "13.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "moving-averages",
+      "panel": 1,
+      "title": "Range and whipsaws",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "10.76",
+        "11.38",
+        "12.00",
+        "12.62",
+        "13.24"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 0,
+      "title": "Selected price peaks",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "54.2",
+        "61.0",
+        "67.8",
+        "74.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 0,
+      "title": "Selected price peaks",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "54.2",
+        "61.0",
+        "67.8",
+        "74.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 0,
+      "title": "Selected price peaks",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "54.2",
+        "61.0",
+        "67.8",
+        "74.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 0,
+      "title": "Selected price peaks",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "54.2",
+        "61.0",
+        "67.8",
+        "74.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 1,
+      "title": "Five-session ROC",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-3.1",
+        "4.8",
+        "12.7",
+        "20.6",
+        "28.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 1,
+      "title": "Five-session ROC",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-3.1",
+        "4.8",
+        "12.7",
+        "20.6",
+        "28.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 1,
+      "title": "Five-session ROC",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-3.1",
+        "4.8",
+        "12.7",
+        "20.6",
+        "28.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum",
+      "panel": 1,
+      "title": "Five-session ROC",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-3.1",
+        "4.8",
+        "12.7",
+        "20.6",
+        "28.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 0,
+      "title": "MACD and signal",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-0.6",
+        "1.0",
+        "2.6",
+        "4.2",
+        "5.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 0,
+      "title": "MACD and signal",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-0.6",
+        "1.0",
+        "2.6",
+        "4.2",
+        "5.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 0,
+      "title": "MACD and signal",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-0.6",
+        "1.0",
+        "2.6",
+        "4.2",
+        "5.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 0,
+      "title": "MACD and signal",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-0.6",
+        "1.0",
+        "2.6",
+        "4.2",
+        "5.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 1,
+      "title": "Histogram = MACD − signal",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 18,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.47",
+        "0.95",
+        "1.42",
+        "1.90"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 1,
+      "title": "Histogram = MACD − signal",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 18,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.47",
+        "0.95",
+        "1.42",
+        "1.90"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 1,
+      "title": "Histogram = MACD − signal",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 18,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.47",
+        "0.95",
+        "1.42",
+        "1.90"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "momentum-2",
+      "panel": 1,
+      "title": "Histogram = MACD − signal",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 18,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0.00",
+        "0.47",
+        "0.95",
+        "1.42",
+        "1.90"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility",
+      "panel": 0,
+      "title": "What the overnight gap adds to true range",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.8",
+        "100.4",
+        "103.0",
+        "105.6",
+        "108.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility",
+      "panel": 0,
+      "title": "What the overnight gap adds to true range",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.8",
+        "100.4",
+        "103.0",
+        "105.6",
+        "108.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility",
+      "panel": 0,
+      "title": "What the overnight gap adds to true range",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.8",
+        "100.4",
+        "103.0",
+        "105.6",
+        "108.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility",
+      "panel": 0,
+      "title": "What the overnight gap adds to true range",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.8",
+        "100.4",
+        "103.0",
+        "105.6",
+        "108.2"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility-2",
+      "panel": 0,
+      "title": "The worked three-close Bollinger example",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.8",
+        "98.2",
+        "100.7",
+        "103.1",
+        "105.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility-2",
+      "panel": 0,
+      "title": "The worked three-close Bollinger example",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.8",
+        "98.2",
+        "100.7",
+        "103.1",
+        "105.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility-2",
+      "panel": 0,
+      "title": "The worked three-close Bollinger example",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.8",
+        "98.2",
+        "100.7",
+        "103.1",
+        "105.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volatility-2",
+      "panel": 0,
+      "title": "The worked three-close Bollinger example",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.8",
+        "98.2",
+        "100.7",
+        "103.1",
+        "105.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 0,
+      "title": "Price and cumulative VWAP",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "8.3",
+        "10.1",
+        "12.0",
+        "13.9",
+        "15.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 0,
+      "title": "Price and cumulative VWAP",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "8.3",
+        "10.1",
+        "12.0",
+        "13.9",
+        "15.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 0,
+      "title": "Price and cumulative VWAP",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "8.3",
+        "10.1",
+        "12.0",
+        "13.9",
+        "15.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 0,
+      "title": "Price and cumulative VWAP",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "8.3",
+        "10.1",
+        "12.0",
+        "13.9",
+        "15.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 1,
+      "title": "Shares per trade",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 12,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0",
+        "84",
+        "168",
+        "252",
+        "336"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 1,
+      "title": "Shares per trade",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 12,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0",
+        "84",
+        "168",
+        "252",
+        "336"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 1,
+      "title": "Shares per trade",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 12,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0",
+        "84",
+        "168",
+        "252",
+        "336"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "volume-tools",
+      "panel": 1,
+      "title": "Shares per trade",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 12,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "0",
+        "84",
+        "168",
+        "252",
+        "336"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "fibonacci",
+      "panel": 0,
+      "title": "Same high, two chosen origins",
+      "width": 260,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.6",
+        "103.8",
+        "110.0",
+        "116.2",
+        "122.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "fibonacci",
+      "panel": 0,
+      "title": "Same high, two chosen origins",
+      "width": 320,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.6",
+        "103.8",
+        "110.0",
+        "116.2",
+        "122.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "fibonacci",
+      "panel": 0,
+      "title": "Same high, two chosen origins",
+      "width": 390,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.6",
+        "103.8",
+        "110.0",
+        "116.2",
+        "122.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "fibonacci",
+      "panel": 0,
+      "title": "Same high, two chosen origins",
+      "width": 760,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.6",
+        "103.8",
+        "110.0",
+        "116.2",
+        "122.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 0,
+      "title": "Absolute price paths",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "77.5",
+        "84.0",
+        "90.5",
+        "97.0",
+        "103.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 0,
+      "title": "Absolute price paths",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "77.5",
+        "84.0",
+        "90.5",
+        "97.0",
+        "103.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 0,
+      "title": "Absolute price paths",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "77.5",
+        "84.0",
+        "90.5",
+        "97.0",
+        "103.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 0,
+      "title": "Absolute price paths",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "77.5",
+        "84.0",
+        "90.5",
+        "97.0",
+        "103.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 1,
+      "title": "Stock/comparator relative indices",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.5",
+        "102.4",
+        "106.3",
+        "110.1",
+        "114.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 1,
+      "title": "Stock/comparator relative indices",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.5",
+        "102.4",
+        "106.3",
+        "110.1",
+        "114.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 1,
+      "title": "Stock/comparator relative indices",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.5",
+        "102.4",
+        "106.3",
+        "110.1",
+        "114.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "relative-strength",
+      "panel": 1,
+      "title": "Stock/comparator relative indices",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.5",
+        "102.4",
+        "106.3",
+        "110.1",
+        "114.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 0,
+      "title": "All four constituent paths",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "93.2",
+        "97.8",
+        "102.5",
+        "107.2",
+        "111.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 0,
+      "title": "All four constituent paths",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "93.2",
+        "97.8",
+        "102.5",
+        "107.2",
+        "111.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 0,
+      "title": "All four constituent paths",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "93.2",
+        "97.8",
+        "102.5",
+        "107.2",
+        "111.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 0,
+      "title": "All four constituent paths",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "93.2",
+        "97.8",
+        "102.5",
+        "107.2",
+        "111.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 1,
+      "title": "Toy weighted index",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.4",
+        "100.9",
+        "102.4",
+        "103.9",
+        "105.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 1,
+      "title": "Toy weighted index",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.4",
+        "100.9",
+        "102.4",
+        "103.9",
+        "105.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 1,
+      "title": "Toy weighted index",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.4",
+        "100.9",
+        "102.4",
+        "103.9",
+        "105.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 1,
+      "title": "Toy weighted index",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.4",
+        "100.9",
+        "102.4",
+        "103.9",
+        "105.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 2,
+      "title": "Cumulative daily A/D",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "-3",
+        "-2",
+        "-1",
+        "0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 2,
+      "title": "Cumulative daily A/D",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "-3",
+        "-2",
+        "-1",
+        "0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 2,
+      "title": "Cumulative daily A/D",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "-3",
+        "-2",
+        "-1",
+        "0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "breadth",
+      "panel": 2,
+      "title": "Cumulative daily A/D",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "-3",
+        "-2",
+        "-1",
+        "0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "multi-timeframe",
+      "panel": 0,
+      "title": "Daily closes and the last completed weekly close (step series)",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.7",
+        "101.1",
+        "104.5",
+        "107.9",
+        "111.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "multi-timeframe",
+      "panel": 0,
+      "title": "Daily closes and the last completed weekly close (step series)",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.7",
+        "101.1",
+        "104.5",
+        "107.9",
+        "111.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "multi-timeframe",
+      "panel": 0,
+      "title": "Daily closes and the last completed weekly close (step series)",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.7",
+        "101.1",
+        "104.5",
+        "107.9",
+        "111.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "multi-timeframe",
+      "panel": 0,
+      "title": "Daily closes and the last completed weekly close (step series)",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.7",
+        "101.1",
+        "104.5",
+        "107.9",
+        "111.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "events",
+      "panel": 0,
+      "title": "A positive intraday candle after a negative opening gap",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "40.4",
+        "43.9",
+        "47.5",
+        "51.1",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "events",
+      "panel": 0,
+      "title": "A positive intraday candle after a negative opening gap",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "40.4",
+        "43.9",
+        "47.5",
+        "51.1",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "events",
+      "panel": 0,
+      "title": "A positive intraday candle after a negative opening gap",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "40.4",
+        "43.9",
+        "47.5",
+        "51.1",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "events",
+      "panel": 0,
+      "title": "A positive intraday candle after a negative opening gap",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "40.4",
+        "43.9",
+        "47.5",
+        "51.1",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "market-microstructure-2",
+      "panel": 0,
+      "title": "Quoted prices can widen around a flat midpoint",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.50",
+        "49.75",
+        "50.00",
+        "50.25",
+        "50.50"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "market-microstructure-2",
+      "panel": 0,
+      "title": "Quoted prices can widen around a flat midpoint",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.50",
+        "49.75",
+        "50.00",
+        "50.25",
+        "50.50"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "market-microstructure-2",
+      "panel": 0,
+      "title": "Quoted prices can widen around a flat midpoint",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.50",
+        "49.75",
+        "50.00",
+        "50.25",
+        "50.50"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "market-microstructure-2",
+      "panel": 0,
+      "title": "Quoted prices can widen around a flat midpoint",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.50",
+        "49.75",
+        "50.00",
+        "50.25",
+        "50.50"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "risk-sizing",
+      "panel": 0,
+      "title": "Compounding a run of losses",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.2k",
+        "16.5k",
+        "17.8k",
+        "19.2k",
+        "20.5k"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "risk-sizing",
+      "panel": 0,
+      "title": "Compounding a run of losses",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.2k",
+        "16.5k",
+        "17.8k",
+        "19.2k",
+        "20.5k"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "risk-sizing",
+      "panel": 0,
+      "title": "Compounding a run of losses",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.2k",
+        "16.5k",
+        "17.8k",
+        "19.2k",
+        "20.5k"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "risk-sizing",
+      "panel": 0,
+      "title": "Compounding a run of losses",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.2k",
+        "16.5k",
+        "17.8k",
+        "19.2k",
+        "20.5k"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trade-plans",
+      "panel": 0,
+      "title": "BRDG-P1: the supplied orderly failure",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trade-plans",
+      "panel": 0,
+      "title": "BRDG-P1: the supplied orderly failure",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trade-plans",
+      "panel": 0,
+      "title": "BRDG-P1: the supplied orderly failure",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "trade-plans",
+      "panel": 0,
+      "title": "BRDG-P1: the supplied orderly failure",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "psychology",
+      "panel": 0,
+      "title": "Escalation changes the recovery problem",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9192",
+        "9471",
+        "9750",
+        "10029",
+        "10308"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "psychology",
+      "panel": 0,
+      "title": "Escalation changes the recovery problem",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9192",
+        "9471",
+        "9750",
+        "10029",
+        "10308"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "psychology",
+      "panel": 0,
+      "title": "Escalation changes the recovery problem",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9192",
+        "9471",
+        "9750",
+        "10029",
+        "10308"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "psychology",
+      "panel": 0,
+      "title": "Escalation changes the recovery problem",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "9192",
+        "9471",
+        "9750",
+        "10029",
+        "10308"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing",
+      "panel": 0,
+      "title": "Twelve held-out trades under four cost descriptions",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-96",
+        "2",
+        "100",
+        "197",
+        "295"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing",
+      "panel": 0,
+      "title": "Twelve held-out trades under four cost descriptions",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-96",
+        "2",
+        "100",
+        "197",
+        "295"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing",
+      "panel": 0,
+      "title": "Twelve held-out trades under four cost descriptions",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-96",
+        "2",
+        "100",
+        "197",
+        "295"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing",
+      "panel": 0,
+      "title": "Twelve held-out trades under four cost descriptions",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-96",
+        "2",
+        "100",
+        "197",
+        "295"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing-3",
+      "panel": 0,
+      "title": "A close-based signal and the first feasible fill",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.39",
+        "50.07",
+        "50.75",
+        "51.43",
+        "52.11"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing-3",
+      "panel": 0,
+      "title": "A close-based signal and the first feasible fill",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.39",
+        "50.07",
+        "50.75",
+        "51.43",
+        "52.11"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing-3",
+      "panel": 0,
+      "title": "A close-based signal and the first feasible fill",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.39",
+        "50.07",
+        "50.75",
+        "51.43",
+        "52.11"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "testing-3",
+      "panel": 0,
+      "title": "A close-based signal and the first feasible fill",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.39",
+        "50.07",
+        "50.75",
+        "51.43",
+        "52.11"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics",
+      "panel": 0,
+      "title": "Payoff distribution of twenty net outcomes",
+      "width": 260,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 9,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics",
+      "panel": 0,
+      "title": "Payoff distribution of twenty net outcomes",
+      "width": 320,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 9,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics",
+      "panel": 0,
+      "title": "Payoff distribution of twenty net outcomes",
+      "width": 390,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 9,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics",
+      "panel": 0,
+      "title": "Payoff distribution of twenty net outcomes",
+      "width": 760,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 9,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 0,
+      "title": "Equity after each trade",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "19020",
+        "19459",
+        "19898",
+        "20336",
+        "20775"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 0,
+      "title": "Equity after each trade",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "19020",
+        "19459",
+        "19898",
+        "20336",
+        "20775"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 0,
+      "title": "Equity after each trade",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "19020",
+        "19459",
+        "19898",
+        "20336",
+        "20775"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 0,
+      "title": "Equity after each trade",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "19020",
+        "19459",
+        "19898",
+        "20336",
+        "20775"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 1,
+      "title": "Underwater plot: percent below the running peak",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-4.5",
+        "-3.3",
+        "-2.0",
+        "-0.8",
+        "0.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 1,
+      "title": "Underwater plot: percent below the running peak",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-4.5",
+        "-3.3",
+        "-2.0",
+        "-0.8",
+        "0.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 1,
+      "title": "Underwater plot: percent below the running peak",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-4.5",
+        "-3.3",
+        "-2.0",
+        "-0.8",
+        "0.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-2",
+      "panel": 1,
+      "title": "Underwater plot: percent below the running peak",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-4.5",
+        "-3.3",
+        "-2.0",
+        "-0.8",
+        "0.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-3",
+      "panel": 0,
+      "title": "The running average and a rough uncertainty band",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-1.56",
+        "-0.59",
+        "0.38",
+        "1.35",
+        "2.33"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-3",
+      "panel": 0,
+      "title": "The running average and a rough uncertainty band",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-1.56",
+        "-0.59",
+        "0.38",
+        "1.35",
+        "2.33"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-3",
+      "panel": 0,
+      "title": "The running average and a rough uncertainty band",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-1.56",
+        "-0.59",
+        "0.38",
+        "1.35",
+        "2.33"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "statistics-3",
+      "panel": 0,
+      "title": "The running average and a rough uncertainty band",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "-1.56",
+        "-0.59",
+        "0.38",
+        "1.35",
+        "2.33"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 0,
+      "title": "Equity at each close ($)",
+      "width": 260,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99911",
+        "100140",
+        "100370",
+        "100599",
+        "100828"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 0,
+      "title": "Equity at each close ($)",
+      "width": 320,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99911",
+        "100140",
+        "100370",
+        "100599",
+        "100828"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 0,
+      "title": "Equity at each close ($)",
+      "width": 390,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99911",
+        "100140",
+        "100370",
+        "100599",
+        "100828"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 0,
+      "title": "Equity at each close ($)",
+      "width": 760,
+      "markerCount": 4,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99911",
+        "100140",
+        "100370",
+        "100599",
+        "100828"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 1,
+      "title": "Slot use at each close (count; maximum 5 combined)",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 16,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 1,
+      "title": "Slot use at each close (count; maximum 5 combined)",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 16,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 1,
+      "title": "Slot use at each close (count; maximum 5 combined)",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 16,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 1,
+      "title": "Slot use at each close (count; maximum 5 combined)",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 16,
+      "barsOutsidePlot": [],
+      "integerTicks": true,
+      "tickLabels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 2,
+      "title": "Holdings as a share of equity (%)",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.5",
+        "23.8",
+        "32.1",
+        "40.5",
+        "48.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 2,
+      "title": "Holdings as a share of equity (%)",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.5",
+        "23.8",
+        "32.1",
+        "40.5",
+        "48.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 2,
+      "title": "Holdings as a share of equity (%)",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.5",
+        "23.8",
+        "32.1",
+        "40.5",
+        "48.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design",
+      "panel": 2,
+      "title": "Holdings as a share of equity (%)",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "15.5",
+        "23.8",
+        "32.1",
+        "40.5",
+        "48.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design-3",
+      "panel": 0,
+      "title": "Exposure timing changes a path (separate illustration)",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "84",
+        "95",
+        "107",
+        "118",
+        "130"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design-3",
+      "panel": 0,
+      "title": "Exposure timing changes a path (separate illustration)",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "84",
+        "95",
+        "107",
+        "118",
+        "130"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design-3",
+      "panel": 0,
+      "title": "Exposure timing changes a path (separate illustration)",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "84",
+        "95",
+        "107",
+        "118",
+        "130"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "system-design-3",
+      "panel": 0,
+      "title": "Exposure timing changes a path (separate illustration)",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "84",
+        "95",
+        "107",
+        "118",
+        "130"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks",
+      "panel": 0,
+      "title": "An idealized wave template",
+      "width": 260,
+      "markerCount": 8,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.4",
+        "42.5",
+        "46.5",
+        "50.5",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks",
+      "panel": 0,
+      "title": "An idealized wave template",
+      "width": 320,
+      "markerCount": 8,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.4",
+        "42.5",
+        "46.5",
+        "50.5",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks",
+      "panel": 0,
+      "title": "An idealized wave template",
+      "width": 390,
+      "markerCount": 8,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.4",
+        "42.5",
+        "46.5",
+        "50.5",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks",
+      "panel": 0,
+      "title": "An idealized wave template",
+      "width": 760,
+      "markerCount": 8,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "38.4",
+        "42.5",
+        "46.5",
+        "50.5",
+        "54.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 0,
+      "title": "Average A and its 110 reference",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.3",
+        "102.7",
+        "107.0",
+        "111.3",
+        "115.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 0,
+      "title": "Average A and its 110 reference",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.3",
+        "102.7",
+        "107.0",
+        "111.3",
+        "115.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 0,
+      "title": "Average A and its 110 reference",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.3",
+        "102.7",
+        "107.0",
+        "111.3",
+        "115.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 0,
+      "title": "Average A and its 110 reference",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "98.3",
+        "102.7",
+        "107.0",
+        "111.3",
+        "115.7"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 1,
+      "title": "Average B and its 106 reference",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.1",
+        "101.4",
+        "103.6",
+        "105.8",
+        "108.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 1,
+      "title": "Average B and its 106 reference",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.1",
+        "101.4",
+        "103.6",
+        "105.8",
+        "108.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 1,
+      "title": "Average B and its 106 reference",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.1",
+        "101.4",
+        "103.6",
+        "105.8",
+        "108.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 1,
+      "title": "Average B and its 106 reference",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "99.1",
+        "101.4",
+        "103.6",
+        "105.8",
+        "108.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-3",
+      "panel": 0,
+      "title": "A trading range with a spring branch and a breakdown branch",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.0",
+        "29.6",
+        "31.3",
+        "33.0",
+        "34.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-3",
+      "panel": 0,
+      "title": "A trading range with a spring branch and a breakdown branch",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.0",
+        "29.6",
+        "31.3",
+        "33.0",
+        "34.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-3",
+      "panel": 0,
+      "title": "A trading range with a spring branch and a breakdown branch",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.0",
+        "29.6",
+        "31.3",
+        "33.0",
+        "34.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "classical-frameworks-3",
+      "panel": 0,
+      "title": "A trading range with a spring branch and a breakdown branch",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.0",
+        "29.6",
+        "31.3",
+        "33.0",
+        "34.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 0,
+      "title": "ATLS: trades beyond the target",
+      "width": 260,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.6",
+        "51.1",
+        "52.5",
+        "54.0",
+        "55.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 0,
+      "title": "ATLS: trades beyond the target",
+      "width": 320,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.6",
+        "51.1",
+        "52.5",
+        "54.0",
+        "55.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 0,
+      "title": "ATLS: trades beyond the target",
+      "width": 390,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.6",
+        "51.1",
+        "52.5",
+        "54.0",
+        "55.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 0,
+      "title": "ATLS: trades beyond the target",
+      "width": 760,
+      "markerCount": 2,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "49.6",
+        "51.1",
+        "52.5",
+        "54.0",
+        "55.5"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 1,
+      "title": "BRDG: trades through the stop",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 1,
+      "title": "BRDG: trades through the stop",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 1,
+      "title": "BRDG: trades through the stop",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies",
+      "panel": 1,
+      "title": "BRDG: trades through the stop",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.96",
+        "48.91",
+        "49.85",
+        "50.79",
+        "51.73"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 0,
+      "title": "Target can be first",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 0,
+      "title": "Target can be first",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 0,
+      "title": "Target can be first",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 0,
+      "title": "Target can be first",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 1,
+      "title": "Stop can be first",
+      "width": 260,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 1,
+      "title": "Stop can be first",
+      "width": 320,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 1,
+      "title": "Stop can be first",
+      "width": 390,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-2",
+      "panel": 1,
+      "title": "Stop can be first",
+      "width": 760,
+      "markerCount": 1,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "47.4",
+        "49.5",
+        "51.5",
+        "53.5",
+        "55.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-3",
+      "panel": 0,
+      "title": "RIVR: breach, recognition, execution and target",
+      "width": 260,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.6",
+        "30.5",
+        "32.4",
+        "34.2",
+        "36.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-3",
+      "panel": 0,
+      "title": "RIVR: breach, recognition, execution and target",
+      "width": 320,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.6",
+        "30.5",
+        "32.4",
+        "34.2",
+        "36.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-3",
+      "panel": 0,
+      "title": "RIVR: breach, recognition, execution and target",
+      "width": 390,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.6",
+        "30.5",
+        "32.4",
+        "34.2",
+        "36.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-3",
+      "panel": 0,
+      "title": "RIVR: breach, recognition, execution and target",
+      "width": 760,
+      "markerCount": 3,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "28.6",
+        "30.5",
+        "32.4",
+        "34.2",
+        "36.1"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.1",
+        "99.5",
+        "101.8",
+        "104.1",
+        "106.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.1",
+        "99.5",
+        "101.8",
+        "104.1",
+        "106.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.1",
+        "99.5",
+        "101.8",
+        "104.1",
+        "106.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "97.1",
+        "99.5",
+        "101.8",
+        "104.1",
+        "106.4"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "91.5",
+        "94.4",
+        "97.4",
+        "100.3",
+        "103.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "91.5",
+        "94.4",
+        "97.4",
+        "100.3",
+        "103.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "91.5",
+        "94.4",
+        "97.4",
+        "100.3",
+        "103.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-5",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "91.5",
+        "94.4",
+        "97.4",
+        "100.3",
+        "103.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.2",
+        "49.5",
+        "50.8",
+        "52.0",
+        "53.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.2",
+        "49.5",
+        "50.8",
+        "52.0",
+        "53.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.2",
+        "49.5",
+        "50.8",
+        "52.0",
+        "53.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "48.2",
+        "49.5",
+        "50.8",
+        "52.0",
+        "53.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.2",
+        "47.1",
+        "49.0",
+        "50.9",
+        "52.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.2",
+        "47.1",
+        "49.0",
+        "50.9",
+        "52.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.2",
+        "47.1",
+        "49.0",
+        "50.9",
+        "52.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-6",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "45.2",
+        "47.1",
+        "49.0",
+        "50.9",
+        "52.8"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "89.2",
+        "91.6",
+        "93.9",
+        "96.3",
+        "98.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "89.2",
+        "91.6",
+        "93.9",
+        "96.3",
+        "98.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "89.2",
+        "91.6",
+        "93.9",
+        "96.3",
+        "98.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "89.2",
+        "91.6",
+        "93.9",
+        "96.3",
+        "98.6"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.9",
+        "97.1",
+        "98.4",
+        "99.7",
+        "101.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.9",
+        "97.1",
+        "98.4",
+        "99.7",
+        "101.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.9",
+        "97.1",
+        "98.4",
+        "99.7",
+        "101.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-7",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "95.9",
+        "97.1",
+        "98.4",
+        "99.7",
+        "101.0"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "208.9",
+        "210.0",
+        "211.1",
+        "212.2",
+        "213.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "208.9",
+        "210.0",
+        "211.1",
+        "212.2",
+        "213.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "208.9",
+        "210.0",
+        "211.1",
+        "212.2",
+        "213.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 0,
+      "title": "First pass: five preceding bars and cutoff 0",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "208.9",
+        "210.0",
+        "211.1",
+        "212.2",
+        "213.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "209.35",
+        "210.22",
+        "211.08",
+        "211.94",
+        "212.81"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "209.35",
+        "210.22",
+        "211.08",
+        "211.94",
+        "212.81"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "209.35",
+        "210.22",
+        "211.08",
+        "211.94",
+        "212.81"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-8",
+      "panel": 1,
+      "title": "Reveal second: following archive sessions +1 to +5",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "209.35",
+        "210.22",
+        "211.08",
+        "211.94",
+        "212.81"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 0,
+      "title": "Actual archived daily bar · February 5, 2016",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.2",
+        "91.2",
+        "92.3",
+        "93.3",
+        "94.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 0,
+      "title": "Actual archived daily bar · February 5, 2016",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.2",
+        "91.2",
+        "92.3",
+        "93.3",
+        "94.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 0,
+      "title": "Actual archived daily bar · February 5, 2016",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.2",
+        "91.2",
+        "92.3",
+        "93.3",
+        "94.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 0,
+      "title": "Actual archived daily bar · February 5, 2016",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.2",
+        "91.2",
+        "92.3",
+        "93.3",
+        "94.3"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 1,
+      "title": "Possible high then low · imagined order, no timestamps",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 1,
+      "title": "Possible high then low · imagined order, no timestamps",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 1,
+      "title": "Possible high then low · imagined order, no timestamps",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 1,
+      "title": "Possible high then low · imagined order, no timestamps",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 2,
+      "title": "Possible low then high · imagined order, no timestamps",
+      "width": 260,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 2,
+      "title": "Possible low then high · imagined order, no timestamps",
+      "width": 320,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 2,
+      "title": "Possible low then high · imagined order, no timestamps",
+      "width": 390,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    },
+    {
+      "id": "case-studies-9",
+      "panel": 2,
+      "title": "Possible low then high · imagined order, no timestamps",
+      "width": 760,
+      "markerCount": 0,
+      "obscuredMarkers": [],
+      "barCount": 0,
+      "barsOutsidePlot": [],
+      "integerTicks": false,
+      "tickLabels": [
+        "90.31",
+        "91.28",
+        "92.25",
+        "93.22",
+        "94.19"
+      ],
+      "badIntegerTicks": []
+    }
+  ]
+}

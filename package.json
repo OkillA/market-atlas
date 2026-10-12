@@ -7,6 +7,7 @@
     "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
     "build:content": "node scripts/build-content.cjs",
     "check": "node scripts/check-content.cjs",
+    "check:figures": "node scripts/verify-figures.cjs",
     "status": "node scripts/project-status.cjs",
     "build:site": "node scripts/build-site.cjs"
   }

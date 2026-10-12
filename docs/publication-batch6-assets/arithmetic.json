@@ -1,0 +1,13 @@
+{
+  "mode": "compiled",
+  "exactFractionComparisons": 117,
+  "textChecks": 38,
+  "structureChecks": 25,
+  "mismatches": 0,
+  "freshAudit": {
+    "cash": "19480",
+    "equity": "19990",
+    "meanCompletedNetR": "-1/30",
+    "closedNetPerCandidate": "-18/5"
+  }
+}

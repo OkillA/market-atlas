@@ -4144,7 +4144,7 @@ The separate escalation illustration isolates another question: what happens to 
 
 ![Escalation changes the recovery problem](../assets/figures/psychology.svg)
 
-*Fictional account paths in dollars. Both start at $10,000. The disciplined path uses −$100, −$100, −$100, +$200, −$100, +$200, −$100, +$200, −$100, +$200, −$100; the escalated path changes loss sizes after early losses. No frequencies or predictive claims are implied. Compare the third-loss annotation: the same early losing direction has a different dollar consequence because the escalated path doubles and then doubles its loss exposure.*
+*Fictional account paths in dollars. Both start at $10,000. The fixed-dollar path uses −$100, −$100, −$100, +$200, −$100, +$200, −$100, +$200, −$100, +$200, −$100. The escalated path replaces the first three losses with −$100, −$200 and −$400, then uses the same later dollar changes. After outcome 3, the accounts are $9,700 and $9,300: a $400 difference that persists through outcome 11 ($10,100 versus $9,700). Compare the exposure policy as well as the final equity. No frequencies or predictive claims are implied.*
 
 #### Reconcile the unfamiliar cutoff note
 
@@ -4373,14 +4373,28 @@ For entry 50/stop 48, 50 shares, high 54, low 48.80 and exit 51.50, calculate pr
 
 #### independent practice: Audit a journal summary
 
-A dashboard reports BRDG −1.05R and SKIP 0R, averaging −0.525R per trade. Correct the summary and propose a separate opportunity-level report.
+Audit this unfamiliar fictional paper journal at the review cutoff. The account starts with $20,000 cash and no holdings. The table contains all five screened candidates; T1 and T2 close before H opens. Entries and exits are supplied confirmed paper reports, not fills inferred from candle touches. Fees paid include all executed-side charges to this cutoff; K and U incur none. A dashboard treats all five candidates as completed trades. Recompute each filled position’s frozen price-risk 1R, the two completed trades’ gross/net dollars and net R, and mean net R per completed trade. Reconcile cash, H’s marked holdings and total equity. Separately report closed-trade net dollars per screened candidate, retaining all five records. Explain why that metric excludes H’s open marked contribution and why neither metric proves strategy performance.
+
+**Five screened candidates at the review cutoff (fictional USD)**
+
+| Record / status | Filled shares | Entry ($) | Initial stop ($) | Exit ($) | Fees paid ($) | Cutoff mark ($) |
+| --- | --- | --- | --- | --- | --- | --- |
+| T1: closed | 25 | 80 | 78 | 83 | 5 | — |
+| T2: closed | 40 | 30 | 28.5 | 28 | 8 | — |
+| K: opening-gate skip; no order | 0 | — | — | — | 0 | — |
+| U: order expired unfilled; cancellation confirmed | 0 | — | — | — | 0 | — |
+| H: still open | 10 | 50 | 48 | — | 2 | 51 |
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-Completed-trade mean is −1.05R because there is one completed trade. SKIP has no position-specific R. Report one fill and one skip, with $19,895 final cash and no performance inference.
+T1 freezes 1R = 25 × (80−78) = $50. Gross = 25 × (83−80) = $75; net = $75−$5 = $70, or +1.40R. T2 freezes 1R = 40 × (30−28.50) = $60. Gross = 40 × (28−30) = −$80; net = −$80−$8 = −$88, or −1.4667R. Mean net R per completed trade = (1.40−1.466666…)/2 = −0.0333R, using exact values before rounding. Do not divide by five or divide aggregate net dollars by aggregate initial risk: those are different statistics.
 
-An opportunity-level study could report net dollars per screened candidate (−$105/2 = −$52.50) for this explicitly defined pair, keeping nontrades visible. It remains a constructed demonstration, and is not the same statistic as mean R per completed trade.
+K has no order or position; U has an expired unfilled order but no position. Neither has a trade R denominator. H is a confirmed open position with frozen 1R = 10 × (50−48) = $20, but no completed outcome yet. Retain all five records while excluding K, U and H from the completed-trade mean.
+
+The completed trades contribute $70−$88 = −$18 to cash. H then spends 10 × $50 + $2 = $502. Cash = $20,000−$18−$502 = $19,480. Marked holdings = 10 × $51 = $510; equity = $19,990. H’s marked price gain is $10, or $8 after its paid entry charge, so total equity change is −$18+$8 = −$10. The mark is not a guaranteed liquidation price; no future exit fee or slippage has been modeled.
+
+Closed-trade net dollars per screened candidate = −$18/5 = −$3.60 for this declared cutoff and complete five-record teaching set. Its numerator includes only closed trades, so it omits H’s $8 open marked contribution; it is neither account return nor mean trade R. The account’s marked change is −$10/$20,000 = −0.05%. These constructed records establish accounting, not a representative performance estimate or evidence of rule compliance.
 
 </details>
 
@@ -4415,7 +4429,7 @@ Option 3: MAE ends at the modeled exit; $2/share × 50 = $100, or 1R. The cutoff
 
 #### Size a cost-inclusive plan
 
-Unfamiliar fictional stock: E32/S30.50, $90 cost-inclusive budget, $0.12/share round-trip costs, $1,600 notional cap and ample cash. Compute shares, notional,1R, ordinary net loss and net R if it gaps to 28. Split costs equally between sides.
+Unfamiliar fictional stock: entry $32/stop $30.50, $90 cost-inclusive budget, $0.12/share round-trip costs, $1,600 notional cap and ample cash. Compute shares, notional, 1R, ordinary net loss and net R if it gaps to $28. Split costs equally between sides. For this arithmetic, model the entry at $32 and the exit at the stated stop or gap price; actual stop execution may differ.
 
 <details>
 <summary>Reveal the worked solution</summary>
@@ -4426,23 +4440,23 @@ Budget allowance = floor(90/1.62) = 55; notional allowance = floor(1600/32) = 50
 
 #### Complete a decision and a partial fill
 
-A frozen range edge is 40; a completed close is 40.30. Rule: ceiling 40.70, fixed stop 38.70, target 44.70, at most 50 shares, day order, cancel remainder, stop-first on dual-touch bars, $2.50 per side. Opening offer 40.70 passes and a supplied report fills 20 shares. Write the entry and review fields if the next bar is O40.80/H44.90/L38.50/C41.
+A frozen range edge is $40; a completed close is $40.30. Rule: opening offer must be strictly above the $38.70 stop and at or below the $40.70 ceiling; if it passes, submit one day buy limit at $40.70 for at most 50 shares. Keep a confirmed partial fill and cancel the remainder, with no retry. Standing stop $38.70/target $44.70; model stop first if both levels occur in a held-position bar. Costs are $2.50 per executed side. Required calendar and account checks pass. The opening offer is $40.70; a supplied execution report confirms 20 shares at $40.70. A cancellation report confirms the remaining 30 shares canceled before the next bar. Write the entry and review fields if that later held-position bar is O40.80/H44.90/L38.50/C41. Apply the declared exact-stop model; OHLC alone does not prove a real fill or the true stop/target sequence.
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-Order 50/fill 20/cancel 30; entry debit 20 × 40.70+2.50 = $816.50;1R = 20 × 2 = $40. The held bar reaches both levels; modeled stop 38.70 gives gross −$40, net −$45/−1.125R. Exit credit $771.50. Preserve true sequence as unresolved; compliance and modeled loss are separate fields.
+The supplied reports establish order 50/fill 20 at $40.70/cancel 30 before the later bar; the opening offer alone would not establish those fills. Entry debit = 20 × $40.70 + $2.50 = $816.50; frozen 1R = 20 × ($40.70−$38.70) = $40. The later held bar opens inside both exit levels and reaches both; modeled stop $38.70 gives gross −$40, net −$45/−1.125R. Exit credit = 20 × $38.70−$2.50 = $771.50. Cash change is −$816.50+$771.50 = −$45. Preserve true sequence as unresolved; compliance under the supplied contract and modeled loss are separate fields.
 
 </details>
 
 #### Review without rewriting
 
-That trade loses; a separate candidate fails the opening ceiling then rallies. Write a frozen-note review and identify a defensible research proposal.
+That trade loses; a separate candidate fails the opening ceiling then rallies. The supplied frozen record contains the original signal and execution rules, but no pre-outcome counterargument or probability estimate. Write an appended review that preserves the available record, identifies those missing fields without inventing them, and proposes defensible future research.
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-Keep the original signal, counterargument and exit priority unchanged. Record the loss under the declared model and the gate rejection as a nontrade with no R denominator. A ceiling relaxation or close-exit rule is a new version motivated by discovery cases. Freeze it and compare later opportunities, including rebounds and losing gaps. Do not diagnose motive or promise improved returns from journaling.
+Keep the supplied original signal and exit priority unchanged. Mark the pre-outcome counterargument and probability estimate as not recorded; do not write a hindsight objection as though it existed before entry. A missing note is a record-quality limitation, not by itself a violation of an execution rule that never required that field. Record the loss under the declared model and the gate rejection as a nontrade with no R denominator. A ceiling relaxation or close-exit rule is a new version motivated by discovery cases. Freeze it and compare later opportunities, including rebounds and losing gaps. Do not diagnose motive or promise improved returns from journaling.
 
 </details>
 

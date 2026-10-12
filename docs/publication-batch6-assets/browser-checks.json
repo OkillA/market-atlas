@@ -1,0 +1,512 @@
+[
+  {
+    "surface": "native top-level",
+    "requestedWidth": 1280,
+    "cellsChecked": 93,
+    "failures": [],
+    "figures": 2,
+    "initial": {
+      "continuation": false,
+      "quizVisible": false,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [
+      {
+        "answers": false,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "none",
+          "none",
+          "none"
+        ],
+        "tableCells": 5
+      },
+      {
+        "answers": true,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "block",
+          "block",
+          "block"
+        ],
+        "tableCells": 5
+      }
+    ],
+    "quiz": [
+      {
+        "correct": true,
+        "option": 0
+      },
+      {
+        "correct": true,
+        "option": 1
+      },
+      {
+        "correct": true,
+        "option": 2
+      }
+    ],
+    "route": "#/chapter/psychology",
+    "stringsChecked": 48,
+    "width": 1280
+  },
+  {
+    "surface": "native top-level",
+    "requestedWidth": 1280,
+    "cellsChecked": 91,
+    "failures": [],
+    "figures": 2,
+    "initial": {
+      "continuation": null,
+      "quizVisible": true,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [
+      {
+        "answers": false,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "none",
+          "none",
+          "none"
+        ],
+        "tableCells": 35
+      },
+      {
+        "answers": true,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "block",
+          "block",
+          "block"
+        ],
+        "tableCells": 35
+      }
+    ],
+    "quiz": [
+      {
+        "correct": true,
+        "option": 0
+      },
+      {
+        "correct": true,
+        "option": 1
+      },
+      {
+        "correct": true,
+        "option": 2
+      }
+    ],
+    "route": "#/chapter/journaling",
+    "stringsChecked": 44,
+    "width": 1280
+  },
+  {
+    "surface": "native top-level",
+    "requestedWidth": 1280,
+    "cellsChecked": 0,
+    "failures": [],
+    "figures": 0,
+    "initial": {
+      "continuation": null,
+      "quizVisible": false,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [],
+    "quiz": [],
+    "route": "#/practice/risk",
+    "stringsChecked": 9,
+    "width": 1280
+  },
+  {
+    "surface": "native top-level",
+    "requestedWidth": 390,
+    "cellsChecked": 93,
+    "failures": [],
+    "figures": 2,
+    "initial": {
+      "continuation": false,
+      "quizVisible": false,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [
+      {
+        "answers": false,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "none",
+          "none",
+          "none"
+        ],
+        "tableCells": 5
+      },
+      {
+        "answers": true,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "block",
+          "block",
+          "block"
+        ],
+        "tableCells": 5
+      }
+    ],
+    "quiz": [
+      {
+        "correct": true,
+        "option": 0
+      },
+      {
+        "correct": true,
+        "option": 1
+      },
+      {
+        "correct": true,
+        "option": 2
+      }
+    ],
+    "route": "#/chapter/psychology",
+    "stringsChecked": 48,
+    "width": 390
+  },
+  {
+    "surface": "native top-level",
+    "requestedWidth": 390,
+    "cellsChecked": 91,
+    "failures": [],
+    "figures": 2,
+    "initial": {
+      "continuation": null,
+      "quizVisible": true,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [
+      {
+        "answers": false,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "none",
+          "none",
+          "none"
+        ],
+        "tableCells": 35
+      },
+      {
+        "answers": true,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "block",
+          "block",
+          "block"
+        ],
+        "tableCells": 35
+      }
+    ],
+    "quiz": [
+      {
+        "correct": true,
+        "option": 0
+      },
+      {
+        "correct": true,
+        "option": 1
+      },
+      {
+        "correct": true,
+        "option": 2
+      }
+    ],
+    "route": "#/chapter/journaling",
+    "stringsChecked": 44,
+    "width": 390
+  },
+  {
+    "surface": "native top-level",
+    "requestedWidth": 390,
+    "cellsChecked": 0,
+    "failures": [],
+    "figures": 0,
+    "initial": {
+      "continuation": null,
+      "quizVisible": false,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [],
+    "quiz": [],
+    "route": "#/practice/risk",
+    "stringsChecked": 9,
+    "width": 390
+  },
+  {
+    "cellsChecked": 93,
+    "failures": [],
+    "figures": 2,
+    "initial": {
+      "continuation": false,
+      "quizVisible": false,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [
+      {
+        "answers": false,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "none",
+          "none",
+          "none"
+        ],
+        "tableCells": 5
+      },
+      {
+        "answers": true,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "block",
+          "block",
+          "block"
+        ],
+        "tableCells": 5
+      }
+    ],
+    "quiz": [
+      {
+        "correct": true,
+        "option": 0
+      },
+      {
+        "correct": true,
+        "option": 1
+      },
+      {
+        "correct": true,
+        "option": 2
+      }
+    ],
+    "requestedWidth": 320,
+    "route": "#/chapter/psychology",
+    "stringsChecked": 48,
+    "surface": "same-origin native child frame",
+    "width": 320
+  },
+  {
+    "cellsChecked": 91,
+    "failures": [],
+    "figures": 2,
+    "initial": {
+      "continuation": null,
+      "quizVisible": true,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [
+      {
+        "answers": false,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "none",
+          "none",
+          "none"
+        ],
+        "tableCells": 35
+      },
+      {
+        "answers": true,
+        "inputVisible": true,
+        "solutionDisplays": [
+          "block",
+          "block",
+          "block"
+        ],
+        "tableCells": 35
+      }
+    ],
+    "quiz": [
+      {
+        "correct": true,
+        "option": 0
+      },
+      {
+        "correct": true,
+        "option": 1
+      },
+      {
+        "correct": true,
+        "option": 2
+      }
+    ],
+    "requestedWidth": 320,
+    "route": "#/chapter/journaling",
+    "stringsChecked": 44,
+    "surface": "same-origin native child frame",
+    "width": 320
+  },
+  {
+    "cellsChecked": 0,
+    "failures": [],
+    "figures": 0,
+    "initial": {
+      "continuation": null,
+      "quizVisible": false,
+      "solutions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "missing": [],
+    "palettes": [
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "light"
+      },
+      {
+        "clippedSvgText": [],
+        "pageOverflow": false,
+        "palette": "dark"
+      }
+    ],
+    "printPolicies": [],
+    "quiz": [],
+    "requestedWidth": 320,
+    "route": "#/practice/risk",
+    "stringsChecked": 9,
+    "surface": "same-origin native child frame",
+    "width": 320
+  }
+]

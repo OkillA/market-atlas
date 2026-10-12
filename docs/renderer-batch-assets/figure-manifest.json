@@ -1,0 +1,361 @@
+{
+  "baseline": "1c901566a5ccc0dc6a88c83b86596e4598640b61",
+  "figures": [
+    {
+      "id": "market-language",
+      "chapter": "market-language",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "chart-anatomy-2",
+      "chapter": "chart-anatomy",
+      "changedWidths": [
+        260,
+        320
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "volume",
+      "chapter": "volume",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "volume-2",
+      "chapter": "volume",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "chart-patterns-3",
+      "chapter": "chart-patterns",
+      "changedWidths": [
+        260,
+        320,
+        390
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "breakouts",
+      "chapter": "breakouts",
+      "changedWidths": [
+        260,
+        320
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "momentum",
+      "chapter": "momentum",
+      "changedWidths": [
+        260,
+        320,
+        390
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "momentum-2",
+      "chapter": "momentum",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "volume-tools",
+      "chapter": "volume-tools",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "relative-strength",
+      "chapter": "relative-strength",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "breadth",
+      "chapter": "breadth",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "market-microstructure-2",
+      "chapter": "market-microstructure",
+      "changedWidths": [
+        260
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "psychology",
+      "chapter": "psychology",
+      "changedWidths": [
+        260,
+        320,
+        390
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "testing",
+      "chapter": "testing",
+      "changedWidths": [
+        260
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "testing-3",
+      "chapter": "testing",
+      "changedWidths": [
+        260,
+        320,
+        390
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "statistics",
+      "chapter": "statistics",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "statistics-2",
+      "chapter": "statistics",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "statistics-3",
+      "chapter": "statistics",
+      "changedWidths": [
+        260,
+        320
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "system-design",
+      "chapter": "system-design",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "classical-frameworks-2",
+      "chapter": "classical-frameworks",
+      "changedWidths": [
+        260,
+        320,
+        390
+      ],
+      "exportChanged": false
+    },
+    {
+      "id": "classical-frameworks-3",
+      "chapter": "classical-frameworks",
+      "changedWidths": [
+        260,
+        320,
+        390,
+        760
+      ],
+      "exportChanged": true
+    },
+    {
+      "id": "case-studies-3",
+      "chapter": "case-studies",
+      "changedWidths": [
+        260,
+        320,
+        390
+      ],
+      "exportChanged": false
+    }
+  ],
+  "panels": [
+    {
+      "id": "market-language",
+      "panel": 0,
+      "title": "Description before explanation"
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 0,
+      "title": "Route A: $99 is reached first"
+    },
+    {
+      "id": "chart-anatomy-2",
+      "panel": 1,
+      "title": "Route B: $107 is reached first"
+    },
+    {
+      "id": "volume",
+      "panel": 0,
+      "title": "Harbor closing prices"
+    },
+    {
+      "id": "volume",
+      "panel": 1,
+      "title": "Share volume and a defined reference"
+    },
+    {
+      "id": "volume-2",
+      "panel": 0,
+      "title": "Today’s unfinished volume versus historical noon totals"
+    },
+    {
+      "id": "chart-patterns-3",
+      "panel": 0,
+      "title": "Double-bottom mirror"
+    },
+    {
+      "id": "breakouts",
+      "panel": 0,
+      "title": "A closing breakout followed by a return below"
+    },
+    {
+      "id": "momentum",
+      "panel": 0,
+      "title": "Selected price peaks"
+    },
+    {
+      "id": "momentum-2",
+      "panel": 1,
+      "title": "Histogram = MACD − signal"
+    },
+    {
+      "id": "volume-tools",
+      "panel": 1,
+      "title": "Shares per trade"
+    },
+    {
+      "id": "relative-strength",
+      "panel": 1,
+      "title": "Stock/comparator relative indices"
+    },
+    {
+      "id": "breadth",
+      "panel": 2,
+      "title": "Cumulative daily A/D"
+    },
+    {
+      "id": "market-microstructure-2",
+      "panel": 0,
+      "title": "Quoted prices can widen around a flat midpoint"
+    },
+    {
+      "id": "psychology",
+      "panel": 0,
+      "title": "Escalation changes the recovery problem"
+    },
+    {
+      "id": "testing",
+      "panel": 0,
+      "title": "Twelve held-out trades under four cost descriptions"
+    },
+    {
+      "id": "testing-3",
+      "panel": 0,
+      "title": "A close-based signal and the first feasible fill"
+    },
+    {
+      "id": "statistics",
+      "panel": 0,
+      "title": "Payoff distribution of twenty net outcomes"
+    },
+    {
+      "id": "statistics-2",
+      "panel": 0,
+      "title": "Equity after each trade"
+    },
+    {
+      "id": "statistics-2",
+      "panel": 1,
+      "title": "Underwater plot: percent below the running peak"
+    },
+    {
+      "id": "statistics-3",
+      "panel": 0,
+      "title": "The running average and a rough uncertainty band"
+    },
+    {
+      "id": "system-design",
+      "panel": 1,
+      "title": "Slot use at each close (count; maximum 5 combined)"
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 0,
+      "title": "Average A and its 110 reference"
+    },
+    {
+      "id": "classical-frameworks-2",
+      "panel": 1,
+      "title": "Average B and its 106 reference"
+    },
+    {
+      "id": "classical-frameworks-3",
+      "panel": 0,
+      "title": "A trading range with a spring branch and a breakdown branch"
+    },
+    {
+      "id": "case-studies-3",
+      "panel": 0,
+      "title": "RIVR: breach, recognition, execution and target"
+    }
+  ]
+}

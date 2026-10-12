@@ -1,0 +1,727 @@
+{
+  "date": "2026-10-11T22:52:48.001Z",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) T3Code(Alpha)/0.0.45 Chrome/152.0.7977.130 Electron/44.4.2 Safari/537.36",
+  "widths": [
+    260,
+    320,
+    390,
+    760
+  ],
+  "surveys": [
+    {
+      "name": "before",
+      "summary": {
+        "renders": 364,
+        "hiddenMarkers": 68,
+        "barsOutsidePlot": 48,
+        "textClips": 0
+      },
+      "failures": [
+        {
+          "chapter": "market-language",
+          "figure": 0,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "market-language",
+          "figure": 0,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "market-language",
+          "figure": 0,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "market-language",
+          "figure": 0,
+          "panel": 0,
+          "width": 760,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "chart-anatomy",
+          "figure": 1,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "chart-anatomy",
+          "figure": 1,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "chart-anatomy",
+          "figure": 1,
+          "panel": 1,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 0,
+          "width": 260,
+          "hidden": 2,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 0,
+          "width": 760,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 1,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 1,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 1,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 0,
+          "panel": 1,
+          "width": 760,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 1,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 1,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 1,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume",
+          "figure": 1,
+          "panel": 0,
+          "width": 760,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "chart-patterns",
+          "figure": 2,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "chart-patterns",
+          "figure": 2,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "chart-patterns",
+          "figure": 2,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "breakouts",
+          "figure": 0,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "breakouts",
+          "figure": 0,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "momentum",
+          "figure": 0,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "momentum",
+          "figure": 0,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "momentum",
+          "figure": 0,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "momentum",
+          "figure": 1,
+          "panel": 1,
+          "width": 260,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "momentum",
+          "figure": 1,
+          "panel": 1,
+          "width": 320,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "momentum",
+          "figure": 1,
+          "panel": 1,
+          "width": 390,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "momentum",
+          "figure": 1,
+          "panel": 1,
+          "width": 760,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume-tools",
+          "figure": 0,
+          "panel": 1,
+          "width": 260,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume-tools",
+          "figure": 0,
+          "panel": 1,
+          "width": 320,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume-tools",
+          "figure": 0,
+          "panel": 1,
+          "width": 390,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "volume-tools",
+          "figure": 0,
+          "panel": 1,
+          "width": 760,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "relative-strength",
+          "figure": 0,
+          "panel": 1,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "relative-strength",
+          "figure": 0,
+          "panel": 1,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "relative-strength",
+          "figure": 0,
+          "panel": 1,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "relative-strength",
+          "figure": 0,
+          "panel": 1,
+          "width": 760,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "market-microstructure",
+          "figure": 1,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "psychology",
+          "figure": 0,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "psychology",
+          "figure": 0,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "psychology",
+          "figure": 0,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "testing",
+          "figure": 0,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "testing",
+          "figure": 2,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "testing",
+          "figure": 2,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 0,
+          "panel": 0,
+          "width": 260,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 0,
+          "panel": 0,
+          "width": 320,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 0,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 0,
+          "panel": 0,
+          "width": 760,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 1,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 1,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 1,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 1,
+          "panel": 0,
+          "width": 760,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 1,
+          "panel": 1,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 1,
+          "panel": 1,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 1,
+          "panel": 1,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 2,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "statistics",
+          "figure": 2,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "system-design",
+          "figure": 0,
+          "panel": 1,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "system-design",
+          "figure": 0,
+          "panel": 1,
+          "width": 320,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "system-design",
+          "figure": 0,
+          "panel": 1,
+          "width": 390,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "system-design",
+          "figure": 0,
+          "panel": 1,
+          "width": 760,
+          "hidden": 0,
+          "barsOutsidePlot": 2,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 1,
+          "panel": 0,
+          "width": 260,
+          "hidden": 2,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 1,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 1,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 1,
+          "panel": 1,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 1,
+          "panel": 1,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 1,
+          "panel": 1,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 2,
+          "panel": 0,
+          "width": 260,
+          "hidden": 3,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 2,
+          "panel": 0,
+          "width": 320,
+          "hidden": 3,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 2,
+          "panel": 0,
+          "width": 390,
+          "hidden": 3,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "classical-frameworks",
+          "figure": 2,
+          "panel": 0,
+          "width": 760,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "case-studies",
+          "figure": 2,
+          "panel": 0,
+          "width": 260,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "case-studies",
+          "figure": 2,
+          "panel": 0,
+          "width": 320,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        },
+        {
+          "chapter": "case-studies",
+          "figure": 2,
+          "panel": 0,
+          "width": 390,
+          "hidden": 1,
+          "barsOutsidePlot": 0,
+          "clips": []
+        }
+      ]
+    },
+    {
+      "name": "after",
+      "summary": {
+        "renders": 364,
+        "hiddenMarkers": 0,
+        "barsOutsidePlot": 0,
+        "textClips": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "dark",
+      "summary": {
+        "renders": 364,
+        "hiddenMarkers": 0,
+        "barsOutsidePlot": 0,
+        "textClips": 0
+      },
+      "failures": []
+    }
+  ]
+}

@@ -149,42 +149,20 @@ PUB4-001–008 are resolved and archived with their full findings and verificati
 
 ## Alpha release preparation — claude-code-alpha, 2026-10-11
 
-The user requested a public alpha on GitHub with free static hosting. PUB4-009 is resolved and archived. ALPHA1-001 below was found while verifying it and is left open; it does not block an alpha that is clearly labelled as a draft. CA1-026 remains deferred.
-
-### ALPHA1-001 — Wide slot-count panel draws session-0 bars over the y-axis labels
-- Priority / type: P3 / defect
-- Status: open
-- Owner: unassigned
-- Reviewer / date: claude-code-alpha / 2026-10-11
-- Location: `figure-renderer.js` grouped `bars` layout; seen in Chapter 26 `system-design` “Slot use at each close” panel at 760px.
-- Finding and evidence: In the 760px export the session-0 “Open positions” bar starts at the plot's left edge, and the “1.4” and “0.0” tick labels sit under it. The session-7 bar likewise touches the right edge. Same geometry in batch 4's `publication-batch4-assets/system-design-760.png`, so it predates PUB4-009. The 260px layout is unaffected. Other grouped-bar figures have not been surveyed.
-- Proposed resolution: Inset the first and last grouped-bar slots from the plot edges in the shared renderer, then re-inspect every bar figure.
-- Acceptance criteria: All exported bar figures at 260/760px keep tick labels clear of bars; no new clipping.
-- Discussion / progress: None yet.
-
+The user requested a public alpha on GitHub with free static hosting. PUB4-009 is resolved and archived. ALPHA1-001 was found while verifying it and was left open at the alpha checkpoint; the renderer batch below subsequently resolved it. CA1-026 remains deferred.
 
 ## Publication batch 5 — claude-code-alpha, 2026-10-11
 
-ROAD-002 batch 5: Chapters 15–19 and Part 4. PUB5-001–011 were found by five read-only reviewer agents and by claude-code-alpha's figure pass; all were verified against current files, implemented and archived with full findings in the [resolution history](FEEDBACK_RESOLVED.md). [Batch 5](PUBLICATION_BATCH5_20261011.md) accepts Chapters 15–19 and Part 4. PUB5-012 and PUB5-013 below are shared-renderer residuals left open rather than changing the renderer inside this batch. ALPHA1-001 and CA1-026 are unchanged.
+ROAD-002 batch 5: Chapters 15–19 and Part 4. PUB5-001–011 were found by five read-only reviewer agents and by claude-code-alpha's figure pass; all were verified against current files, implemented and archived with full findings in the [resolution history](FEEDBACK_RESOLVED.md). [Batch 5](PUBLICATION_BATCH5_20261011.md) accepts Chapters 15–19 and Part 4. PUB5-012 and PUB5-013 were left open at the batch-5 checkpoint; the renderer batch below subsequently resolved them with ALPHA1-001. CA1-026 remains deferred.
 
-### PUB5-012 — A label clamped at the plot edge can cover its own marker
-- Priority / type: P3 / defect
-- Status: open
-- Owner: unassigned
-- Reviewer / date: claude-code-alpha / 2026-10-11
-- Location: `figure-renderer.js` line-chart annotation placement (candidate boxes are clamped to the plot after the overlap test). Seen in Chapter 15 relative-index panel (“112.50”, 260/320px) and Chapter 19 spread chart (“Spread $0.80”, 260px).
-- Finding and evidence: When the preferred box is pushed back inside the plot, it can land on the annotated point; the circle is drawn before the label background. [label-coverage-after.json](publication-batch5-assets/label-coverage-after.json) reports 3 hidden markers, plus 2–8 covered path samples at 260px in Chapters 15/16/19. The values remain readable in labels, captions and tables, so this is not a misleading-data defect.
-- Proposed resolution: Treat the annotated point's own small box as occupied during placement (or skip clamped candidates that cover it), then re-render every affected export and re-inspect accepted chapters' figures.
-- Acceptance criteria: No annotated marker hidden at 260/320/390/760px across all exports; accepted chapters re-checked where exports change.
-- Discussion / progress: None yet. Related renderer item: ALPHA1-001.
+## Renderer batch completion — /root, 2026-10-11
 
-### PUB5-013 — Count panels get fractional y-axis ticks
-- Priority / type: P3 / editorial recommendation
-- Status: open
-- Owner: unassigned
-- Reviewer / date: claude-code-alpha / 2026-10-11
-- Location: `figure-renderer.js` tick generation; Chapter 16 “Cumulative daily A/D” panel.
-- Finding and evidence: The integer net-issue count is labelled 0.36, −0.57, −1.50, −2.43, −3.36 at both widths ([breadth-760-after.png](publication-batch5-assets/figures/breadth-760-after.png)). The step values themselves are correct.
-- Proposed resolution: Allow a figure-level integer-tick option (or detect all-integer series) and use whole-number ticks.
-- Acceptance criteria: Count panels show integer ticks; other figures unchanged or re-inspected.
-- Discussion / progress: None yet.
+ALPHA1-001, PUB5-012 and PUB5-013 are resolved and archived with their full findings, dispositions and verification. [The batch report](RENDERER_BATCH_20261011.md) records all current chart panels at four widths, portable figure screenshots, native light/dark checks, reader integration and an identical isolated rebuild. Accepted chapters’ affected figures were rechecked; totals remain 21/28 chapters and 4/6 part reviews. CA1-026 remains deferred; ROAD-002 Chapters 22–28, broader release QA, source/rights review and metadata remain pending. Changes are local; no push or deployment.
+
+## Publication batch 6 review — /root, 2026-10-11
+
+Claimed ROAD-002 scope: Chapters 22–23 and Part 5. The findings reused CA1-015 for worked-solution/unfamiliar-practice criteria and added PUB6-001 for the chart defect. Both are now archived; earlier fixes remain preserved.
+
+## Publication batch 6 completion — /root, 2026-10-11
+
+Reopened CA1-015 and PUB6-001 are verified and archived with their full findings and dispositions. [Batch 6](PUBLICATION_BATCH6_20261011.md) accepts Chapters 22–23 and Part 5 at current fingerprints, bringing totals to 23/28 chapters and 5/6 part reviews. Chapters 24–28 and Part 6 remain pending. Source/rights release review, broader browser/printer QA and metadata remain on the roadmap. CA1-026 remains deferred for actual readers. Changes are local and unpushed.

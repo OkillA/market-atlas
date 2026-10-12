@@ -1,0 +1,20 @@
+{
+  "baseline": "1c901566a5ccc0dc6a88c83b86596e4598640b61",
+  "onlyCompiledChanges": [
+    {
+      "chapter": "breadth",
+      "title": "Cumulative daily A/D"
+    },
+    {
+      "chapter": "statistics",
+      "title": "Payoff distribution of twenty net outcomes"
+    },
+    {
+      "chapter": "system-design",
+      "title": "Slot use at each close (count; maximum 5 combined)"
+    }
+  ],
+  "unchanged": "All prose, numerical series, task inputs/solutions, quiz content, source records, research, glossary and part reviews match baseline exactly after omitting integerTicks.",
+  "generatedFiles": 74,
+  "mismatches": []
+}

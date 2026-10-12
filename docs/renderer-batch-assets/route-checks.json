@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": "volume",
+    "clippedTexts": [],
+    "figureTables": 3,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      650,
+      650
+    ],
+    "width": 1280
+  },
+  {
+    "chapter": "breadth",
+    "clippedTexts": [],
+    "figureTables": 4,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      650,
+      650
+    ],
+    "width": 1280
+  },
+  {
+    "chapter": "system-design",
+    "clippedTexts": [],
+    "figureTables": 4,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      650,
+      650,
+      650
+    ],
+    "width": 1280
+  },
+  {
+    "chapter": "volume",
+    "clippedTexts": [],
+    "figureTables": 3,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      305,
+      305
+    ],
+    "width": 390
+  },
+  {
+    "chapter": "breadth",
+    "clippedTexts": [],
+    "figureTables": 4,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      305,
+      305
+    ],
+    "width": 390
+  },
+  {
+    "chapter": "system-design",
+    "clippedTexts": [],
+    "figureTables": 4,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      305,
+      305,
+      305
+    ],
+    "width": 390
+  },
+  {
+    "chapter": "volume",
+    "clippedTexts": [],
+    "figureTables": 3,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      247,
+      247
+    ],
+    "width": 320
+  },
+  {
+    "chapter": "breadth",
+    "clippedTexts": [],
+    "figureTables": 4,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      247,
+      247
+    ],
+    "width": 320
+  },
+  {
+    "chapter": "system-design",
+    "clippedTexts": [],
+    "figureTables": 4,
+    "hiddenMarkers": [],
+    "missingCells": [],
+    "pageOverflow": false,
+    "svgWidths": [
+      247,
+      247,
+      247
+    ],
+    "width": 320
+  }
+]

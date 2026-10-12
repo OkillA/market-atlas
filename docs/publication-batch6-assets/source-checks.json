@@ -1,0 +1,21 @@
+{
+  "checked": "2026-10-11",
+  "reviewer": "/root",
+  "method": "Web reader opened official pages and the author-hosted original study; linked full Library of Congress report also inspected. Passage checks are separate from the authoring source accessed dates, which remain unchanged.",
+  "sourceIds": 3,
+  "urlsInspected": 4,
+  "checks": [
+    {"id":"ra-behavior","url":"https://www.sec.gov/investor/tools/behaviorialpatterns.htm","locator":"Disposition Effect paragraph","claim":"Disposition effect describes a tendency to retain losers and realize winners.","disposition":"supported"},
+    {"id":"ra-behavior","url":"https://www.sec.gov/investor/tools/behaviorialpatterns.htm","locator":"Opening attribution and disclaimer","claim":"The page summarizes Library of Congress research; it is not an individual psychological diagnosis.","disposition":"supported within stated scope"},
+    {"id":"ra-behavior","url":"https://www.sec.gov/investor/locinvestorbehaviorreport.pdf","locator":"Printed p. 8, Disposition Effect; PDF index 10","claim":"The full report supplies the investor-tendency definition behind the SEC overview.","disposition":"supported; secondary research overview"},
+    {"id":"rc-bo","url":"https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf","locator":"Section II.A, printed pp. 777–778; footnote 4","claim":"66,465 common-stock households; account period 1991–1996, measured returns February 1991–January 1997.","disposition":"supported"},
+    {"id":"rc-bo","url":"https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf","locator":"Section II.B, printed pp. 779–782","claim":"Net returns incorporate commissions and an estimated spread; main calculation approximates trade timing and excludes intramonth round trips.","disposition":"supported"},
+    {"id":"rc-bo","url":"https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf","locator":"Printed p. 774 and Section IV/Table V, printed pp. 792–794","claim":"Average-household, market and most-active results and turnover comparisons match the chapter's study record.","disposition":"supported"},
+    {"id":"rc-bo","url":"https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf","locator":"Household-account methods and turnover-quintile comparisons","claim":"The design is observational. It does not randomize a journaling or pause intervention.","disposition":"supported design boundary; no inference of intervention efficacy"},
+    {"id":"ra-performance","url":"https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47","locator":"How is performance calculated and presented? Fees and expenses; Methodology","claim":"Costs and calculation conventions affect the interpretation of a performance presentation.","disposition":"supported"},
+    {"id":"ra-performance","url":"https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47","locator":"How reliable is a performance claim? Back-Testing","claim":"A retrospective simulated result is hypothetical performance rather than actual execution.","disposition":"supported; journal analogy is the author's teaching application"},
+    {"id":"ra-performance","url":"https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47","locator":"Cherry-picking past performance","claim":"Selective inclusion of favorable periods or investments impairs a performance presentation.","disposition":"supported"},
+    {"id":"ra-performance","url":"https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47","locator":"Benchmark performance","claim":"Benchmark choice and deductions must be compared on a suitable basis.","disposition":"supported"}
+  ],
+  "boundaries": "Original risk/accounting fixtures and proposed note/review routines are disclosed teaching examples. No journal treatment effect, diagnosis, source-wide approval or whole-edition source/rights audit is claimed. No URL or global source access date was changed."
+}

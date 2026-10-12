@@ -1,0 +1,866 @@
+{
+  "chapters": [
+    {
+      "id": "psychology",
+      "title": "Psychology without market mythology",
+      "subtitle": "Design decisions that survive a persuasive story.",
+      "minutes": 8,
+      "status": "draft",
+      "tags": [
+        "psychology",
+        "bias",
+        "disposition effect",
+        "confirmation bias",
+        "process"
+      ],
+      "takeaway": "Record beliefs before outcomes arrive, and use process constraints to make changing your mind easier.",
+      "sections": [
+        {
+          "title": "The problem is judgment under uncertainty",
+          "paragraphs": [
+            "Technical analysis involves looking for structure in noisy observations. That makes it easy to mistake an explanation that feels coherent for an explanation that has earned confidence. You can describe a chart eloquently while leaving its predictive claim untested. Good psychological practice begins by accepting that an uncertain decision can produce either outcome.",
+            "Maya’s BRDG-P1 trade connects this chapter with the completed plan. The initial interpretation was continuation beyond $50; the supplied path is revealed after the cutoff attempt. The same note could instead precede a rally. The exercise is to preserve what she knew, then grade what she did, with the outcome recorded in its own field. The figures and counterfactuals are fictional, constructed to make the comparison inspectable."
+          ],
+          "id": "the-problem-is-judgment-under-uncertainty"
+        },
+        {
+          "title": "A price is not a personal obligation",
+          "paragraphs": [
+            "The disposition effect describes a tendency to realize gains more readily than losses. The SEC-hosted Library of Congress investor-behavior review discusses this among several potentially harmful investing behaviors. This is a description of observed tendencies, not a diagnosis of every trader or proof about the motive behind a particular trade.",
+            "Maya buys at $40 and plans an exit if her specific hypothesis fails near $38. Price reaches $37.80. She changes the rationale to “I will wait until it gets back to $40.” Her purchase price has become a psychological reference point even though it does not oblige future buyers to transact there. The key process failure is the unrecorded change in hypothesis. A fresh long-term investment thesis could be evaluated separately, but silently converting a short trade into that thesis prevents a fair assessment of either decision."
+          ],
+          "id": "a-price-is-not-a-personal-obligation"
+        },
+        {
+          "title": "Confirmation becomes an editing habit",
+          "paragraphs": [
+            "Suppose Maya believes a breakout is forming. She notices a rising moving average and ignores weak sector performance. Then she searches only for commentary supporting the rally. Each supporting observation may be real; the problem is that the selection rule favors her initial conclusion. Adding more agreeable indicators can create an appearance of corroboration without adding independent information.",
+            "Try a concrete counterargument exercise. Before committing, write the strongest observable reason the trade might fail. For BRDG this could be a prior breakout that quickly reentered the range, an upcoming event, or an entry price already far from the planned invalidation. Next specify what new observation would change the decision. This exercise is a proposed discipline, not a proven treatment with a guaranteed return benefit. Its usefulness comes from exposing the criteria you are actually using."
+          ],
+          "id": "confirmation-becomes-an-editing-habit"
+        },
+        {
+          "title": "Outcome bias and hindsight work together",
+          "paragraphs": [
+            "A rule violation followed by profit can look brilliant in the journal. A careful decision followed by loss can look foolish. This is outcome-based grading. It becomes more misleading when hindsight changes the remembered difficulty of the original decision. After a rally, yesterday's ambiguity can feel like an obvious opportunity; after a decline, the same setup can feel obviously defective.",
+            "Freeze a short note and screenshot at the decision time, showing only information then available. Record an estimated scenario range rather than a single confident target. After the outcome, compare that frozen view with the narrative you now feel tempted to tell. If your original note considered both breakout and failure, keep both visible. Do not rewrite uncertainty as certainty merely because the next ten bars resolved it. A loss can teach something without proving that the initial choice was irrational."
+          ],
+          "id": "outcome-bias-and-hindsight-work-together"
+        },
+        {
+          "title": "Read one frozen note against its continuation",
+          "paragraphs": [
+            "The table is Maya’s actual completed note in the fictional paper exercise, recorded after S0 and before S1. It does not claim three independent reasons to buy. The completed close crosses the boundary; the upper shadow supplies a concrete counterobservation. These are both derived from the same candle, so counting them as statistically independent evidence would be a mistake. The record also says which context data were not supplied, rather than filling that field with an agreeable story.",
+            "Hide the continuation and ask what this note licenses. It licenses applying P1 at the next opening opportunity. It does not license buying at the already completed S0 close, increasing quantity after a losing week, or widening the stop because the word “retest” sounds reassuring. It explicitly allows the continuation hypothesis to weaken before the operational stop executes. Keeping those two conditions distinct makes it possible to evaluate both the interpretation and the exit rule.",
+            "Now reveal the appended record. At S2, the $49.60 close is back below the range edge; at S3, the supplied stop model produces −$105 net. Maya may feel she should have “known” the breakout would fail. Compare that impression with the unchanged S0 note. It recognized both possibilities and supplied no probability. The correct update is that this continuation failed. A statement that the original outcome was obvious would add certainty that the original record did not contain.",
+            "There is a reasonable alternative editorial reading: the S0 upper shadow is not compelling counterevidence and may deserve little weight. Another analyst might focus on a prior failure or sector weakness if those data were supplied. The rubric asks for an observable counterargument and a clear limit on the inference, not agreement with Maya’s chosen weighting. Both readers must distinguish a new interpretation from changing P1’s written orders.",
+            "The same process can record a winning violation. Suppose Maya bought 200 rather than 50 shares at $50.60 without revising the risk authorization, and this time the path reached $54.60. Price gain would be $800 instead of $200; under the plan’s flat $5 cost assumption the net figures would be $795 and $195. That modeled fee convention is kept constant for this counterfactual, while actual liquidity might make such proportional fills unrealistic. Profit scales with quantity on the same path; policy adherence does not become better because the sign is positive."
+          ],
+          "tables": [
+            {
+              "title": "Frozen decision note: BRDG-P1, S0 after the completed close",
+              "columns": [
+                "Field",
+                "Original note (retained after S3)"
+              ],
+              "rows": [
+                [
+                  "Observation for",
+                  "S0 C50.40 is above the previously frozen $50.00 range edge."
+                ],
+                [
+                  "Observation against",
+                  "S0 H50.70/C50.40 leaves a $0.30 upper shadow: the close is not the high. No breadth/sector series is supplied, so no corroboration is claimed."
+                ],
+                [
+                  "Interpretation",
+                  "Continuation is possible; reentry into the old range is also possible. The pattern supplies no numerical win probability."
+                ],
+                [
+                  "Action",
+                  "Apply P1 opening gate and first-hour limit; at most 50 shares. Fixed stop 48.60/target 54.60; worst entry price-risk budget $115."
+                ],
+                [
+                  "What would change my view",
+                  "A completed close below $50 weakens continuation. P1 operational exit still uses the stop, not that close; change requires a new version."
+                ],
+                [
+                  "Expected record",
+                  "Keep entry/expiry facts, filled-share 1R, fees and alternative paths. Missing quote/calendar/account: skip."
+                ]
+              ]
+            },
+            {
+              "title": "After the reveal: append, do not overwrite",
+              "columns": [
+                "Cutoff",
+                "New information",
+                "Process / interpretation record"
+              ],
+              "rows": [
+                [
+                  "S1 09:31",
+                  "50 simulated shares filled at $50.60",
+                  "P1 gate passed; 1R freezes $100; cost $2.50."
+                ],
+                [
+                  "S2 close",
+                  "Close $49.60 is below $50",
+                  "Continuation weakened as anticipated; no stop yet. No retroactive close-exit rule."
+                ],
+                [
+                  "S3 stop model",
+                  "Exit $48.60; gross −$100, costs $5, net −$105",
+                  "P1 complied; net −1.05R. Hypothesis failed on this path; no general strategy conclusion."
+                ],
+                [
+                  "Review after S3",
+                  "Temptation: “The upper shadow made failure obvious.”",
+                  "Original note allowed failure but predicted no probability. Keep the note; propose P2 close-exit research without changing P1."
+                ]
+              ]
+            }
+          ],
+          "id": "read-one-frozen-note-against-its-continuation"
+        },
+        {
+          "title": "Make pressure smaller and decisions slower",
+          "paragraphs": [
+            "Imagine that Maya doubles her normal position after three losses because she wants to recover the week immediately. The next trade may still meet her chart criteria, but its size now responds to a financial and emotional deadline rather than the documented risk policy. It is useful to separate the signal decision from the exposure decision: a qualifying signal does not authorize any share count she happens to want.",
+            "Possible constraints include a maximum aggregate exposure, a waiting period before discretionary rule changes, and a pause in new entries when she cannot explain the plan calmly. These are examples to evaluate, not universal psychological prescriptions. A smaller paper exercise may reveal whether the process is understandable without the urgency of money. If repeatedly monitoring positions disrupts sleep or necessary work, that information belongs in the decision about whether this activity fits her life."
+          ],
+          "id": "make-pressure-smaller-and-decisions-slower"
+        },
+        {
+          "title": "Calibration is more useful than bravado",
+          "paragraphs": [
+            "A forecast is calibrated when events assigned similar probabilities occur at comparable frequencies over many relevant observations. If Maya labels ten scenarios “70% likely” and six occur, one small group is insufficient to declare her well or poorly calibrated. She needs a larger record, consistent event definitions, and awareness that market conditions can change. Even a well-calibrated forecast may offer no worthwhile trade after costs.",
+            "The separate escalation illustration isolates another question: what happens to account damage when only the first three loss quantities grow? The ordinary sequence loses $100 three times; the escalation sequence loses $100, $200 and $400. Both then use the same subsequent dollar changes. The difference is $400 after the third loss and stays $400; the later recoveries are held equal. It is a sizing arithmetic demonstration, not an estimate of how often revenge trading occurs. A prospective process record can reveal escalation without claiming to read the trader’s motive."
+          ],
+          "id": "calibration-is-more-useful-than-bravado"
+        },
+        {
+          "id": "reconcile-the-unfamiliar-cutoff-note",
+          "title": "Reconcile the unfamiliar cutoff note",
+          "paragraphs": [
+            "One defensible Q0 note is: “The completed $64.40 close is above the frozen $64 boundary; its $0.30 upper shadow is a counterobservation from the same candle, not independent sector evidence. Apply L1 only if the opening quote and fill conditions pass. A completed close below $64 would weaken continuation without rewriting the standing exits.” Another supplied observation may receive different weight; the rubric rewards a timestamp and bounded inference.",
+            "The fictional reveal supplies a Q1 09:30 ET opening ask of $64.60, above $62.60 and no higher than $64.90. A confirmed paper execution report then fills all 50 shares at $64.60 at 09:31, within the $64.90 limit and first-hour window; no remainder is left. The Q2 close is $63.60 and the supplied position report confirms that no standing exit has executed. At Q3, the supplied stop execution report closes the 50 shares at $62.60, with no earlier target or gap exit. These reports are scenario inputs, not facts inferred from daily closes. Filled price-risk is 50 × (64.60 − 62.60) = $100; gross result −$100, fees $5 and net −$105/−1.05R. Cash falls by $3,232.50 at entry and receives $3,127.50 at exit, ending at $19,895. The weakening observation appeared before the modeled exit. Keep the original note unchanged, record a compliant loss separately from the failed continuation hypothesis, and propose any new close-exit rule only for future evaluation.",
+            "The BRDG-P1 note earlier in this reference is a shared worked rehearsal whose outcome readers may already know from Chapter 21. Reconstructing it cannot demonstrate a fresh prospective decision. The unfamiliar Q0 packet is the chapter’s attempt-first exercise; neither a model-generated note nor this constructed continuation validates a psychological intervention."
+          ]
+        },
+        {
+          "title": "Observation does not prove an intervention",
+          "paragraphs": [
+            "Barber and Odean’s brokerage sample connects turnover with net performance after trading costs. It does not assign people to journal, pause or counterargument exercises. The process proposals in this chapter aim to make decisions inspectable; this edition supplies no experiment showing that they improve returns."
+          ],
+          "id": "observation-does-not-prove-an-intervention"
+        }
+      ],
+      "example": {
+        "title": "The lucky violation",
+        "text": "The same fictional winning path earns +2 times initial price risk before costs. At the documented $100 risk size it would earn $200. Maya instead quadruples quantity and risks $400 without a recorded reason, earning $800 on that same path. Assume proportional fills and omit costs for this comparison. The gain is real in the scenario; it supplies no evidence that breaking the documented sizing policy was a sound decision. Grade policy adherence and outcome in separate fields."
+      },
+      "exercise": "For rehearsal, reconstruct a four-field S0 note from O49.90/H50.70/L49.70/C50.40 and the $50 boundary, then reconcile the already explained P1 continuation (S2 C49.60 and the S3 modeled stop). Keep observation, counterargument, conditional action and weakening condition separate. Because the shared P1 outcome has appeared in Chapter 21 and this chapter, this reconstruction is not a prospective learning test; attempt the unfamiliar LARK cutoff packet first.",
+      "quiz": {
+        "question": "After S2 closes below $50, Maya labels the original P1 trade “noncompliant” because it did not exit at that close. Which review is defensible?",
+        "options": [
+          "Compliant so far: P1 used a fixed stop, and a close-based exit would be a new version.",
+          "Noncompliant: the hypothesis weakened, so the plan necessarily required a closing exit.",
+          "Compliant only if the eventual outcome is positive."
+        ],
+        "answer": 0,
+        "explanation": "P1 did not define a close-below-$50 exit. Append the concern, preserve P1, and record P2 separately.",
+        "feedback": [
+          "P1 did not define a close-below-$50 exit. Append the concern, preserve P1, and record P2 separately.",
+          "A weakened hypothesis is not automatically the plan’s operational exit.",
+          "Compliance concerns the frozen decision protocol, not the eventual profit sign."
+        ]
+      },
+      "sources": [
+        "ra-behavior",
+        "rc-bo"
+      ],
+      "related": [
+        "journaling",
+        "risk-sizing",
+        "statistics"
+      ],
+      "figure": {
+        "title": "Escalation changes the recovery problem",
+        "caption": "Fictional account paths in dollars. Both start at $10,000. The disciplined path uses −$100, −$100, −$100, +$200, −$100, +$200, −$100, +$200, −$100, +$200, −$100; the escalated path changes loss sizes after early losses. No frequencies or predictive claims are implied. Compare the third-loss annotation: the same early losing direction has a different dollar consequence because the escalated path doubles and then doubles its loss exposure.",
+        "xLabel": "Outcome number, starting at 0",
+        "yLabel": "Account equity ($)",
+        "series": [
+          {
+            "name": "Fixed dollar illustration",
+            "values": [
+              10000,
+              9900,
+              9800,
+              9700,
+              9900,
+              9800,
+              10000,
+              9900,
+              10100,
+              10000,
+              10200,
+              10100
+            ]
+          },
+          {
+            "name": "Escalated-loss illustration",
+            "values": [
+              10000,
+              9900,
+              9700,
+              9300,
+              9500,
+              9400,
+              9600,
+              9500,
+              9700,
+              9600,
+              9800,
+              9700
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "index": 3,
+            "label": "Third loss: different exposure",
+            "seriesIndex": 0,
+            "shortLabel": "Fixed: $9,700"
+          },
+          {
+            "index": 11,
+            "label": "Compare process, not just final equity",
+            "seriesIndex": 0
+          }
+        ],
+        "xStart": 0,
+        "afterSection": 6
+      },
+      "optional": false,
+      "prerequisites": [
+        "risk-sizing",
+        "trade-plans"
+      ],
+      "outcomes": [
+        "Separate a frozen observation, hypothesis and action from a later outcome story.",
+        "Identify a changed rule or denominator without diagnosing the trader’s motive.",
+        "Compare identical price paths at two position sizes.",
+        "Write a counterargument and a prospective test for a proposed revision."
+      ],
+      "figures": [
+        {
+          "kind": "table",
+          "title": "The note stays frozen as facts arrive",
+          "caption": "Fictional BRDG-P1 record. The outcome and the temptation to rewrite it are appended beside the original note, not substituted for it.",
+          "afterSection": 4,
+          "columns": [
+            "Cutoff",
+            "New information",
+            "Process / interpretation record"
+          ],
+          "rows": [
+            [
+              "S1 09:31",
+              "50 simulated shares filled at $50.60",
+              "P1 gate passed; 1R freezes $100; cost $2.50."
+            ],
+            [
+              "S2 close",
+              "Close $49.60 is below $50",
+              "Continuation weakened as anticipated; no stop yet. No retroactive close-exit rule."
+            ],
+            [
+              "S3 stop model",
+              "Exit $48.60; gross −$100, costs $5, net −$105",
+              "P1 complied; net −1.05R. Hypothesis failed on this path; no general strategy conclusion."
+            ],
+            [
+              "Review after S3",
+              "Temptation: “The upper shadow made failure obvious.”",
+              "Original note allowed failure but predicted no probability. Keep the note; propose P2 close-exit research without changing P1."
+            ]
+          ]
+        }
+      ],
+      "solution": [
+        "One defensible note: “C50.40 is above the prior $50 edge. The close is $0.30 below its high; this one candle does not show independent sector support. Apply P1 only if the next opening gate and account checks pass. A completed close below $50 weakens continuation; P1 still exits via its declared stop/target/time rules.” Other observable counterarguments are acceptable if supplied before the outcome.",
+        "Afterward: S2 close 49.60 meets the named weakening observation; S3 modeled stop yields −$105/−1.05R. Grade P1 compliance separately from loss. Keep the S0 note unchanged. Full credit requires no use of S1–S3 data in the initial note and no invented probability."
+      ],
+      "practice": [
+        {
+          "title": "Hold the winning path constant",
+          "question": "The documented position carries $100 price risk and its winning path earns +2R gross. A violation quadruples the shares. Calculate both gross results and both net results under a fixed $5 modeled round-trip fee.",
+          "solution": [
+            "Documented: $200 gross/$195 net. Quadrupled: $800 gross/$795 net. Own frozen R denominators are $100 and $400, so net R is +1.95 and +1.9875. Different fee fractions explain the difference; neither establishes that the violation was justified."
+          ],
+          "level": "guided"
+        },
+        {
+          "title": "Write a useful revision hypothesis",
+          "question": "After the loss, Maya writes “I should always exit a failed breakout early.” Turn this into a prospective rule proposal and explain which data remain development data.",
+          "solution": [
+            "One proposal: P2 exits at the next feasible opening price after any completed close below the original boundary, unless the standing stop/target has already exited. Declare whether a close-exit request replaces or supplements standing orders. Compare P2 with P1 on later opportunities, including rebounds after reentry.",
+            "The BRDG loss motivated the proposal and remains development evidence. It is not a fresh test of P2. The rubric rewards a timestamp, price field, order priority and prospective comparator; no particular threshold is required."
+          ],
+          "level": "independent"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Before/after notes and review constraints are instructional proposals",
+          "type": "teaching-rule",
+          "sourceIds": [],
+          "location": "Worked sections, tables, figures and solutions",
+          "summary": "The frozen note and appended P1 review expose timestamps, missing evidence and rule revisions; no intervention benefit is claimed.",
+          "limits": "Original fictional teaching example; not an empirical performance estimate.",
+          "checked": "2026-10-01",
+          "id": "psychology-before-after-notes-and-review-constraints-are-instructional-proposals"
+        },
+        {
+          "claim": "Same-path quantity changes preserve outcome direction",
+          "type": "arithmetic",
+          "sourceIds": [],
+          "location": "Worked sections, tables, figures and solutions",
+          "summary": "Checked $100×2=$200, $400×2=$800, flat-fee net $195/$795, the $400 difference between escalation paths and BRDG −$105/−1.05R.",
+          "limits": "Original fictional teaching example; not an empirical performance estimate.",
+          "checked": "2026-10-01",
+          "id": "psychology-same-path-quantity-changes-preserve-outcome-direction"
+        },
+        {
+          "claim": "Disposition effect is a described investor tendency",
+          "type": "definition",
+          "sourceIds": [
+            "ra-behavior"
+          ],
+          "location": "SEC behavioral-pattern overview, Disposition Effect",
+          "summary": "Read the SEC-hosted Library of Congress overview’s disposition-effect paragraph; it describes a tendency, not a diagnosis of this fictional trader.",
+          "limits": "Secondary research overview; no experiment showing that the proposed note improves returns.",
+          "checked": "2026-10-01",
+          "id": "psychology-disposition-effect-is-a-described-investor-tendency"
+        },
+        {
+          "claim": "Confirmation, outcome grading and calibration are used as explicit review vocabulary",
+          "type": "teaching-rule",
+          "sourceIds": [],
+          "location": "Confirmation becomes an editing habit; Outcome bias and hindsight; Calibration sections.",
+          "summary": "The chapter defines the behaviors to inspect and uses invented examples; calibration compares stated probabilities with repeated event frequencies.",
+          "limits": "No prevalence estimate, individual diagnosis, causal psychology result or treatment-effect claim is inferred.",
+          "checked": "2026-10-01",
+          "id": "psychology-confirmation-outcome-grading-and-calibration-are-used-as-explicit-review-vocabulary"
+        },
+        {
+          "claim": "Research boundary: higher household turnover is associated with worse net performance here",
+          "type": "empirical",
+          "sourceIds": [
+            "rc-bo"
+          ],
+          "location": "Section II.A and footnote 4, printed pp. 777–778; Table I; Section II.B costs/timing; Figure 1 and Section IV/Table V, pp. 791–794.",
+          "summary": "Inspected the common-stock sample, account/return date distinction, turnover groups, market comparator and gross/net calculation.",
+          "limits": "One broker in one historical period; observational association does not establish motive or a journal intervention benefit.",
+          "checked": "2026-10-02",
+          "study": {
+            "sample": "66,465 common-stock households at one discount broker; account records January 1991–December 1996; measured returns February 1991–January 1997.",
+            "rule": "Sort households by turnover; reconstruct monthly common-stock portfolio returns.",
+            "comparator": "Turnover quintiles, average household and value-weighted market; risk-adjusted analyses also reported.",
+            "costs": "Net returns subtract commissions and estimated bid–ask spread; main method approximates trade timing and omits intramonth round trips.",
+            "result": "Annualized geometric net: most-active quintile 11.4%, average household 16.4%; market 17.9%. Overconfidence is an interpretation, not randomized causation."
+          },
+          "id": "psychology-research-boundary-higher-household-turnover-is-associated-with-worse-net-performance-here"
+        }
+      ],
+      "learnerAttempt": {
+        "title": "First pass: write an unfamiliar Q0 decision note",
+        "paragraphs": [
+          "For a fresh fictional stock LARK, the Q0 close supplies only O63.80/H64.70/L63.60/C64.40 and a previously frozen $64 boundary. This is a separate path from the P1 example in earlier chapters; its continuation is hidden. Sector, breadth and executable next-session quotes are absent.",
+          "For this paper attempt, L1 begins with $20,000 cash and no positions. The known calendar has no scheduled earnings in Q1–Q10. The $64.90 entry ceiling, $62.60 stop and $68.60 target are frozen teaching choices. The table states the opening gate, exact order, expiry and exit priority; do not infer a fill from the already completed Q0 close.",
+          "Write an observation, a counterargument limited to supplied data, a conditional L1 action and an observation that would weaken the interpretation. Record uncertainty without a numerical win probability. After revealing the continuation, append the outcome and a separate compliance review; keep this note unchanged."
+        ],
+        "tables": [
+          {
+            "title": "Completed Q0 candle only (fictional USD)",
+            "columns": [
+              "Open",
+              "High",
+              "Low",
+              "Close",
+              "Frozen boundary"
+            ],
+            "rows": [
+              [
+                "63.80",
+                "64.70",
+                "63.60",
+                "64.40",
+                "64.00"
+              ]
+            ]
+          },
+          {
+            "title": "L1: instructions frozen at Q0 (fictional paper study)",
+            "columns": [
+              "Field",
+              "Instruction"
+            ],
+            "rows": [
+              [
+                "Opening opportunity",
+                "At Q1 09:30 ET, require a supplied opening ask strictly above $62.60 and at or below $64.90. If the gate fails or required quote/calendar/account facts are missing, skip with no Q1 retry."
+              ],
+              [
+                "Entry and expiry",
+                "If the gate passes, submit one buy limit at $64.90 for at most 50 shares. It is eligible Q1 09:30–10:30 ET only. Cancel any unfilled remainder at 10:30; do not top up or retry."
+              ],
+              [
+                "Risk and cash",
+                "Maximum planned price-risk = 50 × (64.90 − 62.60) = $115. Reserve 50 × 64.90 + $2.50 = $3,247.50 from the $20,000 cash account; no leverage."
+              ],
+              [
+                "Execution record",
+                "Use the supplied confirmed execution reports, not a candle touch, to establish entry quantity and price. Keep a confirmed partial fill and resize exits to its shares."
+              ],
+              [
+                "Frozen R and costs",
+                "For a long fill, 1R = filled shares × (actual fill − $62.60), excluding costs. Charge $2.50 per executed side; no fill means no fee or position R."
+              ],
+              [
+                "Standing exits",
+                "After entry, stop-market trigger $62.60; target sell limit $68.60. For prior holdings, opening stop/target gap has priority; otherwise stop before target if both occur in one daily bar. Intraday target credit requires a trade strictly above $68.60. Use supplied exit reports here."
+              ],
+              [
+                "Time and exceptions",
+                "Scheduled time exit Q10 close if entry is Q1 (entry session counts as 1). A halt cannot produce a fill: retain the position/stale mark. After an overdue deadline, opening gap checks come first; otherwise exit at the first resumed open. Unknown order status requires reconciliation before new orders."
+              ],
+              [
+                "Interpretation and orders",
+                "A completed close below $64 weakens continuation but does not replace the standing exits. Keep the original note; any different exit or size policy is a future L2 proposal."
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "journaling",
+      "title": "A journal that can teach you something",
+      "subtitle": "Preserve the decision, the opportunity set, and the result.",
+      "minutes": 7,
+      "status": "draft",
+      "tags": [
+        "journal",
+        "MFE",
+        "MAE",
+        "review",
+        "R multiple"
+      ],
+      "takeaway": "A journal is useful when it makes your decisions reproducible and keeps inconvenient observations in the record.",
+      "sections": [
+        {
+          "title": "Build a record rather than a scrapbook",
+          "paragraphs": [
+            "A collection of attractive screenshots can make a method look coherent while hiding its failures. A trading journal should preserve the decision process and the opportunity set, not merely memorable trades. Keep the original signal, the time it was identified, the available data, the rule version, and the intended action. Then record what actually occurred without editing the earlier note.",
+            "This chapter fills the record instead of leaving a blank template. The data are the fictional BRDG-P1 failure from Chapters 21–22 plus a separately identified skipped candidate, SKIP. The example keeps both so that a paper result cannot be made more attractive by losing the nontrades. All fills below are simulated, and fees are model debits, not broker statements."
+          ],
+          "id": "build-a-record-rather-than-a-scrapbook"
+        },
+        {
+          "title": "Define fields another person can interpret",
+          "paragraphs": [
+            "An entry can include instrument, timestamp, timeframe, setup identifier, rule version, entry assumption, initial stop, target or exit logic, share count, original dollar risk, modeled costs, and current portfolio exposure. For actual trades add order and fill records, cancellations, partial fills, and actual costs. For paper studies explicitly mark every assumed fill as simulated.",
+            "Use consistent units and field meanings. “Risk = 1” is ambiguous unless you specify whether it means 1% of equity, $1 per share, or 1R. Save the initial risk separately from later modifications. A label such as “strong breakout” needs an objective definition or an explicit discretionary note. Free prose remains valuable for context, but structured fields make comparison possible. Do not collect dozens of measures simply because they are available; each field should answer a question you expect to review."
+          ],
+          "id": "define-fields-another-person-can-interpret"
+        },
+        {
+          "title": "Fill one trade, one skip and one review",
+          "paragraphs": [
+            "Read the completed trade row as a chain of evidence. The signal timestamp points back to the frozen plan; the entry report names shares and price; the cash debit includes the entry charge; the exit row records the declared stop model. Anyone can compare these fields against P1 without relying on a story about what the trader intended. A note such as “good setup, unfortunate result” would omit almost everything needed to reproduce it.",
+            "The two cash flows give a compact reconciliation. Starting from $20,000, the $2,532.50 entry debit leaves $17,467.50. The $2,427.50 exit credit returns cash to $19,895. Difference from the start is −$105, exactly the $100 price loss plus $5 charges. Frozen price-risk 1R is $100, so net R is −1.05. Do not use the $115 maximum order risk or the $105 cost-inclusive modeled stop loss as the filled trade’s denominator.",
+            "The skip occurs at a separate K0/K1 decision, after the BRDG record. Its $52 opening offer fails the same $50.90 ceiling. No order exists, no fee is charged and no R denominator is created. Enter “not applicable,” not “0R,” in its trade-result field; counting a skip as a scratch would dilute the mean outcome per completed trade. A separate opportunity metric may assign a zero account contribution, but it must include all screened opportunities under an explicit definition.",
+            "The $56 later close supplies a review observation, not an alternative execution record. A ceiling-change experiment would need its own entry order, fill, costs, exit and losing paths. Do not subtract an invented $200 “missed profit” from the account. Opportunity cost can be studied only with a specified comparison, whose whole opportunity set is retained.",
+            "The review row separates record quality, compliance, outcome and proposed research. This small log contains one loss and one missed rally because those cases exercise different rules. It is a purposive teaching selection, not a strategy sample. The useful next step is to collect the same fields for every later opportunity, rather than decorate this pair with a success rate or a claim that a different ceiling would work better."
+          ],
+          "tables": [
+            {
+              "title": "Completed trade row: BRDG-P1",
+              "columns": [
+                "Field",
+                "Filled value"
+              ],
+              "rows": [
+                [
+                  "Record / version",
+                  "P1-001 / BRDG-P1; long paper trade"
+                ],
+                [
+                  "Cutoff / signal",
+                  "S0 completed close 50.40 > previously frozen edge 50.00; calendar clear S1–S10."
+                ],
+                [
+                  "Opening gate / order",
+                  "S1 09:30 offer 50.60 passes; buy limit 50.90, 50 shares, expiry 10:30."
+                ],
+                [
+                  "Execution report",
+                  "S1 09:31 simulated fill 50 @50.60; no remainder."
+                ],
+                [
+                  "Entry cash / risk",
+                  "Debit $2,532.50 including $2.50 fee. 1R = 50 × (50.60−48.60) = $100 PRICE risk."
+                ],
+                [
+                  "Levels / time",
+                  "Stop 48.60, target 54.60; time exit S10 close."
+                ],
+                [
+                  "Intermediate observation",
+                  "S2 C49.60 reenters the range; interpretation weakens, original exit rule retained."
+                ],
+                [
+                  "Exit / cash",
+                  "S3 simulated stop 48.60; credit $2,427.50 including $2.50 exit fee."
+                ],
+                [
+                  "Result",
+                  "Gross −$100; modeled costs $5; net −$105; net R −1.05; account cash $19,895."
+                ],
+                [
+                  "Compliance / evidence",
+                  "Compliant P1; exact stop fill modeled, not established by OHLC alone. No efficacy inference from one trade."
+                ]
+              ]
+            },
+            {
+              "title": "Completed nontrade row: SKIP at a separate decision",
+              "columns": [
+                "Field",
+                "Filled value"
+              ],
+              "rows": [
+                [
+                  "Record / version",
+                  "P1-002 / BRDG-P1 opportunity rule applied to fictional SKIP"
+                ],
+                [
+                  "Cutoff / signal",
+                  "K0 C50.40 > frozen edge 50.00; no scheduled earnings K1–K10; cash $19,895 after BRDG."
+                ],
+                [
+                  "New observation",
+                  "K1 opening offer 52.00 > ceiling 50.90."
+                ],
+                [
+                  "Decision",
+                  "Skip; no order, no fee, no position and no trade R denominator."
+                ],
+                [
+                  "Later reveal",
+                  "K2 C56.00. Retained for opportunity review; no fictitious $52 purchase entered."
+                ],
+                [
+                  "Compliance / limitation",
+                  "Compliant gate rejection; later closing price is not an achievable alternative exit."
+                ]
+              ]
+            },
+            {
+              "title": "Filled review entry, after both records",
+              "columns": [
+                "Question",
+                "Recorded answer"
+              ],
+              "rows": [
+                [
+                  "Record completeness",
+                  "Two screened candidates; one filled trade and one opening-gate skip. Costs and cash reconcile."
+                ],
+                [
+                  "Process",
+                  "P1-001 and P1-002 compliant under their stated inputs. No actual fills were collected."
+                ],
+                [
+                  "Outcome",
+                  "One completed modeled trade: −$105/−1.05R. Skip has no trade P&L; account remains $19,895."
+                ],
+                [
+                  "Interpretation",
+                  "BRDG continuation failed; SKIP later rose. Neither is a representative sample."
+                ],
+                [
+                  "Research proposal",
+                  "P2 close-below-boundary exit; development motivation is BRDG. Separately log any ceiling-change proposal."
+                ],
+                [
+                  "Next observation",
+                  "Timestamp later P1 opportunities; compare any locked P2 with P1 on fresh records, including failed rebounds and losing gaps."
+                ]
+              ]
+            }
+          ],
+          "id": "fill-one-trade-one-skip-and-one-review"
+        },
+        {
+          "title": "Track the journey inside the trade",
+          "paragraphs": [
+            "Maximum favorable excursion, or MFE, is the greatest unrealized gain relative to entry during the defined holding interval. Maximum adverse excursion, or MAE, is the greatest unrealized loss over that interval. State whether you measure these from highs and lows, executable quotes, or another price series, and whether costs are included. They are path summaries, not automatically attainable gains or losses.",
+            "Suppose a simulated long enters at $50, has a highest subsequent traded price of $54 and a lowest of $48.80, then exits at $51.50. Price MFE is $4 per share and MAE is $1.20 per share. With $2 initial risk per share, these are 2R favorable and 0.6R adverse excursions; the exit is +0.75R before costs. Knowing the high afterward does not mean Maya could identify it in real time. Repeatedly replacing exits with retrospectively ideal highs creates an untradeable comparison. This separate E50/S48 example isolates the measurement definition and is not BRDG’s execution record.",
+            "For BRDG, the supplied high while held is $51.30, so price MFE is $0.70/share, $35 or 0.35R. Under the exact-stop model, the measurement ends at the $48.60 fill: price MAE is $2/share, $100 or 1R. The S3 low of $48.40 may occur after the position has exited, so it is not automatically a $110 holding-period MAE. If only daily bars exist, intraday excursion precision is model-dependent; disclose that cutoff instead of claiming the whole daily extreme belonged to the position."
+          ],
+          "id": "track-the-journey-inside-the-trade"
+        },
+        {
+          "title": "Review behavior and outcome separately",
+          "paragraphs": [
+            "A review should show planned action, actual action, and consequence. If Maya's entry rule required a close above $50, but she entered before the close at $49.80, mark that as a timing deviation even if it earned a profit. If she followed the rule and exited at a loss, mark implementation as compliant while still asking whether the rule has sufficient evidence.",
+            "The SEC's performance bulletin warns that hypothetical results deserve careful scrutiny. A paper journal is likewise a modeled record. It may omit hesitation, unavailable liquidity, and uncertain fills. Keep its performance distinct from actual execution. Compare both against a defined alternative, such as holding the relevant benchmark during comparable exposure windows or doing nothing. The benchmark needs its own costs and risk interpretation; a journal's profitable trades do not by themselves establish that the activity was worthwhile."
+          ],
+          "id": "review-behavior-and-outcome-separately"
+        },
+        {
+          "title": "Look for patterns without inventing discoveries",
+          "paragraphs": [
+            "Maya reviews 30 fictional outcomes and notices that trades after a green Monday did better. Before calling this a rule, count how many alternative groupings she inspected. Sector, weekday, candle color, indicator threshold, and holding time can generate many apparently interesting partitions. A small favorable subgroup may be a chance finding selected from a large search.",
+            "Record the observation as a new hypothesis and test it on later eligible cases. Keep the original sample labeled as discovery data. Also inspect concentration: did one stock or one unusually favorable week explain most of the result? Several trades during one rally are not necessarily independent evidence. The journal's value lies in preserving enough detail to ask these questions. It cannot create a large, representative sample merely by offering elaborate dashboards or persuasive summaries."
+          ],
+          "id": "look-for-patterns-without-inventing-discoveries"
+        },
+        {
+          "title": "Choose a review cadence and a revision rule",
+          "paragraphs": [
+            "Daily review can confirm whether records are complete; a scheduled longer review can evaluate the method. Mixing the two encourages strategic changes after every emotional result. Maya might verify fields each evening, compare execution weekly, and assess a predeclared research question after a complete batch of eligible cases. These intervals are process examples rather than statistically sufficient sample sizes.",
+            "When a revision is justified, assign a new version and preserve the older rule’s outcomes. The completed review proposes P2 but keeps P1-001 untouched. A weekly field-completeness check can be sensible without being a statistically sufficient batch for strategy evaluation. Record what was checked and what remains unknown: broker fills, calendar errors, concentration, and the representativeness of opportunities. Elaborate charts cannot supply information that the journal did not collect."
+          ],
+          "id": "choose-a-review-cadence-and-a-revision-rule"
+        },
+        {
+          "title": "What the journal cannot certify",
+          "paragraphs": [
+            "A timestamped journal makes the author’s stated plan and later edits visible. It cannot by itself establish calibration, causation or a profitable strategy. Keep every eligible opportunity and use the testing chapter’s chronology before treating a journal’s selected wins as evidence."
+          ],
+          "id": "what-the-journal-cannot-certify"
+        }
+      ],
+      "example": {
+        "title": "A transparent excursion record",
+        "text": "Fictional 50-share trade: entry $50, initial planned exit $48, highest price $54, lowest $48.80, final exit $51.50. Initial price risk is $100; MFE is $200, MAE is $60, and realized price profit is $75. Any costs reduce net profit. The MFE was not a guaranteed available exit."
+      },
+      "exercise": "Reconstruct BRDG’s journal cash flows and net R, then add SKIP without treating it as a trade. Compare BRDG’s modeled MAE to using the full S3 low 48.40. State what the full daily low cannot establish.",
+      "quiz": {
+        "question": "The BRDG stop model exits at 48.60; the same daily bar later has a low 48.40. Which MAE entry is defensible?",
+        "options": [
+          "1.10R as the proven holding-period MAE because the full daily low is known.",
+          "−1.05R because MAE is the net realized trade loss.",
+          "1R under the declared exact-stop model, with daily-sequence limitations noted."
+        ],
+        "answer": 2,
+        "explanation": "MAE ends at the modeled exit; $2/share × 50 = $100, or 1R. The cutoff is an assumption until execution timing is known.",
+        "feedback": [
+          "The full-bar extreme can occur after exit; it does not establish a held-position excursion.",
+          "MAE is a path measurement with a declared price convention, not net realized P&L.",
+          "MAE ends at the modeled exit; $2/share × 50 = $100, or 1R. The cutoff is an assumption until execution timing is known."
+        ]
+      },
+      "sources": [
+        "ra-performance"
+      ],
+      "related": [
+        "trade-plans",
+        "psychology",
+        "testing"
+      ],
+      "figure": {
+        "kind": "table",
+        "title": "One trade and one skip reconcile to cash",
+        "caption": "Fictional connected P1 journal. Skips contribute no account cash flow and are excluded from completed-trade averages.",
+        "afterSection": 2,
+        "columns": [
+          "Event",
+          "Cash flow ($)",
+          "Account cash ($)"
+        ],
+        "rows": [
+          [
+            "Start",
+            "0.00",
+            "20,000.00"
+          ],
+          [
+            "BRDG entry incl. fee",
+            "−2,532.50",
+            "17,467.50"
+          ],
+          [
+            "BRDG stop incl. fee",
+            "+2,427.50",
+            "19,895.00"
+          ],
+          [
+            "SKIP: no order",
+            "0.00",
+            "19,895.00"
+          ]
+        ]
+      },
+      "optional": false,
+      "prerequisites": [
+        "risk-sizing",
+        "trade-plans",
+        "psychology"
+      ],
+      "outcomes": [
+        "Complete a connected trade, skip and review record.",
+        "Reconcile fees, cash, price-risk 1R and net R.",
+        "Distinguish a holding-period excursion from a hindsight optimal exit.",
+        "Preserve hypotheses and rule versions when exploring subgroups."
+      ],
+      "figures": [
+        {
+          "kind": "flow",
+          "title": "Preserve the record through review",
+          "caption": "Fictional journal process. A proposal creates a version for later evaluation; it does not overwrite the earlier decision.",
+          "afterSection": 5,
+          "steps": [
+            {
+              "title": "Before outcome",
+              "text": "Save version, cutoff, observed data, action or skip reason and original risk contract."
+            },
+            {
+              "title": "During implementation",
+              "text": "Append order acknowledgements and filled/canceled quantities; mark simulated versus actual."
+            },
+            {
+              "title": "After exit",
+              "text": "Reconcile price P&L, charges, cash and frozen-denominator R; retain ambiguous or missing facts."
+            },
+            {
+              "title": "Research review",
+              "text": "Count explored groupings, preserve the discovery sample, and freeze a new version for fresh observations."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        "$20,000 − $2,532.50 + $2,427.50 = $19,895. Net −$105; 1R $100; net −1.05R. SKIP: no order/fee/position; no trade R, cash unchanged. One completed trade remains in the trade mean.",
+        "Under the exact-stop model, MAE before exit is 50 × (50.60−48.60) = $100/1R. Whole-bar low gives 50 × 2.20 = $110/1.10R, but may include post-exit prices. Without a timestamped sequence, that is a full-bar statistic, not established holding-period MAE."
+      ],
+      "practice": [
+        {
+          "title": "Recompute the separate excursion example",
+          "question": "For entry 50/stop 48, 50 shares, high 54, low 48.80 and exit 51.50, calculate price MFE, MAE, gross and net result with $5 costs.",
+          "solution": [
+            "1R = $100. MFE = $200/2R; MAE = $60/0.6R; gross = $75/0.75R; net = $70/0.70R. The high is a path observation, not a guaranteed executable exit."
+          ],
+          "level": "guided"
+        },
+        {
+          "title": "Audit a journal summary",
+          "question": "A dashboard reports BRDG −1.05R and SKIP 0R, averaging −0.525R per trade. Correct the summary and propose a separate opportunity-level report.",
+          "solution": [
+            "Completed-trade mean is −1.05R because there is one completed trade. SKIP has no position-specific R. Report one fill and one skip, with $19,895 final cash and no performance inference.",
+            "An opportunity-level study could report net dollars per screened candidate (−$105/2 = −$52.50) for this explicitly defined pair, keeping nontrades visible. It remains a constructed demonstration, and is not the same statistic as mean R per completed trade."
+          ],
+          "level": "independent"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Trade, skip and review records form one consistent P1 chain",
+          "type": "teaching-rule",
+          "sourceIds": [],
+          "location": "Worked sections, tables, figures and solutions",
+          "summary": "Checked timestamps and version links against Chapters 21–22; skip is not counted as a completed trade; proposed P2 remains development work.",
+          "limits": "Original fictional teaching example; not an empirical performance estimate.",
+          "checked": "2026-10-01",
+          "id": "journaling-trade-skip-and-review-records-form-one-consistent-p1-chain"
+        },
+        {
+          "claim": "Cash, R and excursion records reconcile",
+          "type": "arithmetic",
+          "sourceIds": [],
+          "location": "Worked sections, tables, figures and solutions",
+          "summary": "Recomputed $19,895 ending cash, −1.05R, BRDG MFE$35/0.35R and model-cutoff MAE$100/1R; separate excursion net$70/0.70R.",
+          "limits": "Original fictional teaching example; not an empirical performance estimate.",
+          "checked": "2026-10-01",
+          "id": "journaling-cash-r-and-excursion-records-reconcile"
+        },
+        {
+          "claim": "Hypothetical performance and selective presentations need scrutiny",
+          "type": "definition",
+          "sourceIds": [
+            "ra-performance"
+          ],
+          "location": "Investor.gov Performance Claims",
+          "summary": "Read SEC staff Performance Claims bulletin, Back-Testing, Cherry-picking and Benchmark Performance sections.",
+          "limits": "The bulletin motivates transparent reporting; it does not validate journal interventions or fictional fills.",
+          "checked": "2026-10-01",
+          "id": "journaling-hypothetical-performance-and-selective-presentations-need-scrutiny"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "ra-behavior": {
+      "title": "SEC · Library of Congress Report: Behavioral Patterns of U.S. Investors",
+      "url": "https://www.sec.gov/investor/tools/behaviorialpatterns.htm",
+      "supports": "Overview of investor-behavior research and disposition effect. Proposed decision-recording practices are instructional suggestions, not proven psychological interventions.",
+      "accessed": "2026-10-01"
+    },
+    "ra-performance": {
+      "title": "SEC / Investor.gov · Investor Bulletin: Performance Claims",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47",
+      "supports": "Scrutiny of hypothetical performance and performance presentations. Journal designs and fictional case calculations are original instructional examples.",
+      "accessed": "2026-10-01"
+    },
+    "rc-bo": {
+      "title": "Barber & Odean (2000), Trading Is Hazardous to Your Wealth",
+      "url": "https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf",
+      "supports": "Household turnover and net performance, observed brokerage sample rather than a randomized psychology intervention.",
+      "accessed": "2026-10-01"
+    }
+  },
+  "part": {
+    "id": "risk",
+    "number": "05",
+    "title": "Build a repeatable process",
+    "short": "Risk & process",
+    "level": "ALL LEVELS",
+    "description": "Translate an observation into a clear hypothesis, with a defined risk budget.",
+    "chapters": [
+      "risk-sizing",
+      "trade-plans",
+      "psychology",
+      "journaling"
+    ]
+  },
+  "partPractice": {
+    "title": "Process review: one complete record, from budget to review",
+    "tasks": [
+      {
+        "title": "Size a cost-inclusive plan",
+        "question": "Unfamiliar fictional stock: E32/S30.50, $90 cost-inclusive budget, $0.12/share round-trip costs, $1,600 notional cap and ample cash. Compute shares, notional,1R, ordinary net loss and net R if it gaps to 28. Split costs equally between sides.",
+        "solution": [
+          "Budget allowance = floor(90/1.62) = 55; notional allowance = floor(1600/32) = 50; use 50. Notional $1,600; entry charge $3; price-risk 1R $75; ordinary net loss $81/−1.08R. Gap price loss $200 plus $6 costs = $206; net R−2.7467."
+        ]
+      },
+      {
+        "title": "Complete a decision and a partial fill",
+        "question": "A frozen range edge is 40; a completed close is 40.30. Rule: ceiling 40.70, fixed stop 38.70, target 44.70, at most 50 shares, day order, cancel remainder, stop-first on dual-touch bars, $2.50 per side. Opening offer 40.70 passes and a supplied report fills 20 shares. Write the entry and review fields if the next bar is O40.80/H44.90/L38.50/C41.",
+        "solution": [
+          "Order 50/fill 20/cancel 30; entry debit 20 × 40.70+2.50 = $816.50;1R = 20 × 2 = $40. The held bar reaches both levels; modeled stop 38.70 gives gross −$40, net −$45/−1.125R. Exit credit $771.50. Preserve true sequence as unresolved; compliance and modeled loss are separate fields."
+        ]
+      },
+      {
+        "title": "Review without rewriting",
+        "question": "That trade loses; a separate candidate fails the opening ceiling then rallies. Write a frozen-note review and identify a defensible research proposal.",
+        "solution": [
+          "Keep the original signal, counterargument and exit priority unchanged. Record the loss under the declared model and the gate rejection as a nontrade with no R denominator. A ceiling relaxation or close-exit rule is a new version motivated by discovery cases. Freeze it and compare later opportunities, including rebounds and losing gaps. Do not diagnose motive or promise improved returns from journaling."
+        ]
+      }
+    ]
+  }
+}

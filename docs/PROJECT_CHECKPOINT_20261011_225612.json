@@ -1,0 +1,539 @@
+{
+  "checked": "2026-10-11",
+  "reviewer": "/root",
+  "edition": "0.4",
+  "scope": "Shared-renderer correction batch ALPHA1-001/PUB5-012/PUB5-013 after one rebuild. All chart panels surveyed at four widths, all changed panels visually inspected, native light/dark and representative reader integration checked. Prior chapter acceptance scopes inherited; Chapter 16 and Part 4 re-accepted for count-axis metadata. Chapters 22–28 remain pending.",
+  "inventory": {
+    "chapters": 28,
+    "parts": 6,
+    "sections": 210,
+    "sectionProseWords": 41241,
+    "glossaryTerms": 105,
+    "sourceEntries": 73,
+    "uniqueSourceURLs": 70,
+    "practiceTasks": 65,
+    "partReviews": 6,
+    "partReviewTasks": 18,
+    "attemptPackets": 7,
+    "portableFigures": 71
+  },
+  "checks": [
+    {
+      "command": "node scripts/verify-early-chapters.cjs",
+      "result": "passed: 617 comparisons"
+    },
+    {
+      "command": "node scripts/verify-revision.cjs",
+      "result": "passed"
+    },
+    {
+      "command": "node scripts/verify-historical.cjs",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check",
+      "result": "passed"
+    },
+    {
+      "command": "node scripts/check-content.cjs --strict-revision",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check:figures",
+      "result": "passed: 364 chart renders, 572 marker instances, 0 covered markers/escaped bars/fractional count ticks"
+    },
+    {
+      "command": "node --check on runtime/content/check/evidence JavaScript files",
+      "result": "passed: 19 files"
+    },
+    {
+      "command": "node docs/renderer-batch-assets/check-artifacts.cjs",
+      "result": "passed: only three integerTicks authoring flags differ; isolated build matches all 74 generated files"
+    },
+    {
+      "command": "native T3 browser figure survey",
+      "result": "passed: 364 native-metric renders in each of light/dark palettes, 0 marker/bar/text-clip defects"
+    },
+    {
+      "command": "native T3 browser reader integration",
+      "result": "passed: Chapters 3/16/26 at 1280/390/320px, 0 missing series-table cells, covered markers, clipped text or page overflow"
+    },
+    {
+      "command": "native T3 browser screenshots of portable SVG panels",
+      "result": "inspected all 26 changed panels at 260/760px, 13 retained PNG sheets"
+    },
+    {
+      "command": "npm run build:site",
+      "result": "passed: static alpha site built locally"
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "id": "market-language",
+      "title": "The language of the market",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 2,
+      "id": "chart-anatomy",
+      "title": "Anatomy of a stock chart",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "99726d7e5c814c61b7797dfff884d34ef70f05a56808d28b8002b505bc42cead",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 3,
+      "id": "volume",
+      "title": "Volume: participation behind price",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 4,
+      "id": "timeframes",
+      "title": "Timeframes, sessions & chart scales",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "2dd2a6d99752d60451375a2783bf2f57697e9129e1aeeeae50347d0a390fb357"
+    },
+    {
+      "number": 5,
+      "id": "trends",
+      "title": "Trends, swings & changing structure",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "38a32b5630782592f5203b27abb91a781a5d8226e5f45c96cfc00b3230b2798d"
+    },
+    {
+      "number": 6,
+      "id": "support-resistance",
+      "title": "Support, resistance & price areas",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "05ed799ba54c8ab48b2b51baa7c2eca545743f821de438a73f27faa9b9731e95"
+    },
+    {
+      "number": 7,
+      "id": "candlestick-patterns",
+      "title": "Candlestick patterns in context",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "52dfd1429fda68811d29288c3395df86f16f8604c8a16d0f1c2725a16aeeee7c"
+    },
+    {
+      "number": 8,
+      "id": "chart-patterns",
+      "title": "Classical chart patterns",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "751502bb362100dc01902c5698b56e920090efbe0bd759e4fb2ffa9ff0ba2d7e",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 9,
+      "id": "breakouts",
+      "title": "Breakouts, pullbacks & failed moves",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "a0f8ef618394df0351b2e0d41c7ae0733f64ae3a213e0dac34cc1bb93f6cde46",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 10,
+      "id": "moving-averages",
+      "title": "Moving averages",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "b390711586369320abbef5ca3b397958c5354cf363c56766d6dfb1a69a87599f"
+    },
+    {
+      "number": 11,
+      "id": "momentum",
+      "title": "Momentum: pace and persistence",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 12,
+      "id": "volatility",
+      "title": "Volatility: the size of movement",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2"
+    },
+    {
+      "number": 13,
+      "id": "volume-tools",
+      "title": "Volume tools: weight, participation, and memory",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 14,
+      "id": "fibonacci",
+      "title": "Optional: Fibonacci retracement conventions",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826"
+    },
+    {
+      "number": 15,
+      "id": "relative-strength",
+      "title": "Relative strength: leading compared with what?",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 16,
+      "id": "breadth",
+      "title": "Market breadth: how many are participating?",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 17,
+      "id": "multi-timeframe",
+      "title": "Multiple timeframes: one market, several summaries",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1"
+    },
+    {
+      "number": 18,
+      "id": "events",
+      "title": "Events and opening gaps",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13"
+    },
+    {
+      "number": 19,
+      "id": "market-microstructure",
+      "title": "Market microstructure: from a chart to an actual trade",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
+      "figureRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Changed compact/wide figures checked; substantive source/prose acceptance inherited."
+      }
+    },
+    {
+      "number": 20,
+      "id": "risk-sizing",
+      "title": "Risk & position sizing",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35"
+    },
+    {
+      "number": 21,
+      "id": "trade-plans",
+      "title": "From chart idea to trade plan",
+      "status": "draft",
+      "publicationAcceptance": "accepted",
+      "sha256": "63160472984777838a1c865bfb1bcb28b44a1ab15cae2e885995d262b9989163"
+    },
+    {
+      "number": 22,
+      "id": "psychology",
+      "title": "Psychology without market mythology",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "00a0bc75ea75f572d8be5740517874570cb31311503a6643376958dabbdbd5e4"
+    },
+    {
+      "number": 23,
+      "id": "journaling",
+      "title": "A journal that can teach you something",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "3fe1c869eb675321e4a93607e7b2e01e4d74cf9119ddbc74ce7017e8e5640042"
+    },
+    {
+      "number": 24,
+      "id": "testing",
+      "title": "Evidence before conviction",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "7fbaf6d579a2d91296597b9209105da44f1c1ec0b16310fb23ce00b9e7d26e01"
+    },
+    {
+      "number": 25,
+      "id": "statistics",
+      "title": "Statistics for a skeptical chart reader",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "fa017fbb5e5ccc792e40f26c8e39e772057cb7e8f42dca21189d2476079b6813"
+    },
+    {
+      "number": 26,
+      "id": "system-design",
+      "title": "Designing a complete trading system",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "0af51acb8e24c379a5ef732f692c421074c0432afc66f11732d12d5098c18b2c"
+    },
+    {
+      "number": 27,
+      "id": "classical-frameworks",
+      "title": "Optional: Dow, Wyckoff, and Elliott, read critically",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "2af70744e750eddbca5e38bc4830bb6e1d4221eac2867efec2d3c4e22d7aea3d"
+    },
+    {
+      "number": 28,
+      "id": "case-studies",
+      "title": "Case studies: follow the decision through",
+      "status": "draft",
+      "publicationAcceptance": "pending",
+      "sha256": "854967c1e29d95b333307a76177544d58a1407a548b7eca66f0eab51a8083622"
+    }
+  ],
+  "partReviews": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "Turn a chart into a reproducible observation",
+      "publicationAcceptance": "accepted",
+      "sha256": "dc0455a5949706ae1300f6d523615b5029abd9438a4fd54a87ddb4eb5ed99818"
+    },
+    {
+      "id": "price-action",
+      "number": "02",
+      "title": "Write an analysis with the next bars covered",
+      "publicationAcceptance": "accepted",
+      "sha256": "b2ac0eaba83fa9a2708f618bad39905119da82d611d5d4db4e1059b9d3beb2b5"
+    },
+    {
+      "id": "indicators",
+      "number": "03",
+      "title": "Indicator review: calculate, compare, explain",
+      "publicationAcceptance": "accepted",
+      "sha256": "6e30dde5ad913cec5c1de5bc85c9376631cd2e033224fb70187116c539d5f10e"
+    },
+    {
+      "id": "context",
+      "number": "04",
+      "title": "Context review: participation, clock, and execution",
+      "publicationAcceptance": "accepted",
+      "sha256": "a91a8a2f3cd9f5d838e10c08b08e9927a77fc206e8c2fa4170fce41eacdc5973",
+      "figureDependencyRecheck": {
+        "reviewer": "/root",
+        "date": "2026-10-11",
+        "report": "docs/RENDERER_BATCH_20261011.md",
+        "scope": "Chapter 16 count-axis flag re-accepted; task inputs and answers unchanged."
+      }
+    },
+    {
+      "id": "risk",
+      "number": "05",
+      "title": "Process review: one complete record, from budget to review",
+      "publicationAcceptance": "pending",
+      "sha256": "f40e5f1c1f9e117b7d7292653239bf5b35f7fe27941dd76f04365ec64a8fdece"
+    },
+    {
+      "id": "advanced",
+      "number": "06",
+      "title": "Evidence review: evaluate a claim, then process a system",
+      "publicationAcceptance": "pending",
+      "sha256": "6299066f4982ca820b87661a540d11064b09ed3390030247b7fe3ec743d82da9"
+    }
+  ],
+  "sha256": {
+    ".github/workflows/pages.yml": "59e179b0511ca0b781d5b30086b6e6d5a745ef55d801995c31ad69221c500961",
+    "app.js": "b455b48d9d0f4885a884936d03280807f574470f881a36c885d63ac9b68db030",
+    "assets/figures/breadth-2.svg": "23ebd792b925d7db2fa664cb9c42015406722e5dc1504232b5909b954f57ab2d",
+    "assets/figures/breadth.svg": "ea0e9fd3411e5e6a843ce82859dd5eea15a0ebd084209438e2bef3a617bd23c2",
+    "assets/figures/breakouts-2.svg": "9746cd230c7833614bc89d91b03e5044d5398631431e423b43c7c7512436eef5",
+    "assets/figures/breakouts-attempt-1.svg": "7c113079e4feb2c18f24708921c4e4e18d59bc6859fead94bee4de5db35e825f",
+    "assets/figures/breakouts.svg": "1640353919ce6403c6ec2b1a640d3e4d2913fdb7a72fda51901ba835a98997a4",
+    "assets/figures/candlestick-patterns-2.svg": "ffcedc45dce02de27bd43b3a825093e591a128882ce8eb127a68760221ab782b",
+    "assets/figures/candlestick-patterns-3.svg": "7bebf22902812102a23645ecaf3c617c02c2206d4a5ced18f2c69da473f10883",
+    "assets/figures/candlestick-patterns-attempt-1.svg": "062ac674b5c4112875f95be7b359eb854b8f5f846dfa61e4ae42dbcb745b9428",
+    "assets/figures/candlestick-patterns.svg": "491c791ecf534fd657531b84aba3bbefcd86b888e74fb9df6cbbfa0984eec451",
+    "assets/figures/case-studies-2.svg": "72237eb26a335047251f99d3e9b5bd6c40f954a2840ff6ec04a8cf6f5279ea0d",
+    "assets/figures/case-studies-3.svg": "fa00a11c5eb6c0d936774c640b872a6e866cee7d87dcdc2d09529628ea9003c3",
+    "assets/figures/case-studies-4.svg": "93136642a7c105d939b0a64eb22c82dfe6332802ef8f1370c3ab62e7d47c861c",
+    "assets/figures/case-studies-5.svg": "e0914c0ce94af964f7465fdb61bca103b014405c49c0a451bb2a5663ee18be44",
+    "assets/figures/case-studies-6.svg": "272999352a05bccb27b96f49d46fe2d6fe7f409f232c62261790176268a2cefc",
+    "assets/figures/case-studies-7.svg": "e5f75a4a7811bef5e0682609ea77e1c31d06d66a87a692fbc127f82bc75bfe28",
+    "assets/figures/case-studies-8.svg": "a7c4e7f3b89a1a0dda7702926989560efffa5f190ff95858032701247a892251",
+    "assets/figures/case-studies-9.svg": "23394660ba99637ed18c433297e84697c4c99ee932a1bfd44d47fa6a4ecb3d89",
+    "assets/figures/case-studies.svg": "f20bdf3fa13046d187b3c77f3c679027aa15be6370b82fb4c258afabb99c8a14",
+    "assets/figures/chart-anatomy-2.svg": "2696c8727cd8de4b59ac12a5188933a80d14e953c3033b89bcd3094c7c4a996f",
+    "assets/figures/chart-anatomy.svg": "91a4ab988e65517c42750363b72db32f53adecaedb4a1162b322b8d1bc225484",
+    "assets/figures/chart-patterns-2.svg": "94bd74348f755a69d1c122962ebe65d712992f3e831ef4f1b1ebeefe1ac271f5",
+    "assets/figures/chart-patterns-3.svg": "46118b7700a85a6464820748eadd7355b2f5c7d21e167672c2ceec44fff5774a",
+    "assets/figures/chart-patterns-attempt-1.svg": "ba5dab83dc65cff4e1e7e0f934bd64fdb80b48b0f19b0529ec39892f532c2f56",
+    "assets/figures/chart-patterns.svg": "4f50ddc2155cc832e663c28ae99916dccca7c0ad7e26ec8e618bdecdb1b56c64",
+    "assets/figures/classical-frameworks-2.svg": "5ef6ec08fd05b27e3f5f453cb419c6b8224eefd4ef2f61e199e1582699d66880",
+    "assets/figures/classical-frameworks-3.svg": "fd937c6dce033ceadeec77651f5697d4f4b1bfa01f99b8b4a068c64db3b442c7",
+    "assets/figures/classical-frameworks.svg": "8c949b152223b6aa0463539d8b17d3154b158b0cb56c134ec5e89270014740be",
+    "assets/figures/events-2.svg": "1a65f53c0aaea65abe6834c5aabe182c0a480a37ba1ec283f757d014b32d0e5f",
+    "assets/figures/events.svg": "00a68adf3edd4f93f22fc855d6b762b23adff76b6349aeee0e426ac331f2ba4a",
+    "assets/figures/fibonacci.svg": "db4e3c9590d58c4e79e8fce8f4e84654c49bbe06c9e11d822fc8639b577c2c80",
+    "assets/figures/journaling-2.svg": "507ab3eeaf53cf137559b0c075a1bd8f8a62142655487e90a607ce9865a05ead",
+    "assets/figures/journaling.svg": "0de1de84b1a1d5500f8764578e5b68a944915080fb37fbd398e17a25780e7c8d",
+    "assets/figures/market-language-2.svg": "7acaee8fe77dc58e75ffe36085285ada98e82730892fda5b29e47bcb656dc0f7",
+    "assets/figures/market-language.svg": "80b6d425f3ec4613fe4c263ae18e0aacb0a5c6a96571cc1dd52a8f0924ea5919",
+    "assets/figures/market-microstructure-2.svg": "9c540855c95c7e4e63214e9de47f6ca794e7d749ce18f52736ca6c7cc63a8e1a",
+    "assets/figures/market-microstructure.svg": "c79bbee2bc099f0e105328bb435500d8025b58b050113ecd0a64e59cb89487bf",
+    "assets/figures/momentum-2.svg": "1e75a141caf46a0b3e5c07eabd17b81069684f61062872d301d31320a150468f",
+    "assets/figures/momentum.svg": "4e39d34b04560cc228c2d282e123fc15dd577d535ad547bccafd3bf17ee2bb04",
+    "assets/figures/moving-averages.svg": "94959c776b92f96fc0a3307de41161e978ab38be69e3e97557f50b4a014a53f1",
+    "assets/figures/multi-timeframe-2.svg": "516a8f378b8a1811401fdf5573887830019655b9d5472d908b186ee94f417df0",
+    "assets/figures/multi-timeframe.svg": "506ea217e3c3d1bac5a1b0e6958d0ae0054eb5b3411da247ada9b6cd5edc61a6",
+    "assets/figures/psychology-2.svg": "d45d751b5f6683506d5ffca2cd5cc7b67a3ef82df66f6d8905fa0982b07d010d",
+    "assets/figures/psychology.svg": "ea8f9ae2353fe41566d494187fabb7fde605d089536c8c2fe2e0241b21ff6177",
+    "assets/figures/relative-strength.svg": "435aed80f764fc98accff28e8adff8a58f4bf43c8257a36eac541c68ef414134",
+    "assets/figures/risk-sizing-2.svg": "f58a0684c82c7fe4f9265c08aff42a9a600ae34f650d2f609960420c9eca73f1",
+    "assets/figures/risk-sizing.svg": "be49807964059b6c5c3cc4b8f9e2df641997d5d7d3e37add941fd0ce5bfbe5f2",
+    "assets/figures/statistics-2.svg": "3446fc21b392fb3bd7b8ace6e57ee123578bf6bb5214c46ddb5fbd62023853db",
+    "assets/figures/statistics-3.svg": "65af4362f725e1f4a835219f96dddcfe341ebc1cca9e1cd855d37dcd40959de9",
+    "assets/figures/statistics.svg": "554f403a236adbdf4f1af8107b95873353e5434f6cbe623933fe2d5b5b25dda3",
+    "assets/figures/support-resistance-2.svg": "83fb9d2304d5f96de572a721c109647ae6a17972d57d8cd073b32b5cfb25a658",
+    "assets/figures/support-resistance.svg": "95578c794abfb754a7d020e97d51e675b2102f363ac71021e3130b4ab9bfdcfe",
+    "assets/figures/system-design-2.svg": "d94f6ceddd34bad204214855d8623b39894cd238eeff220101829aef54db55b1",
+    "assets/figures/system-design-3.svg": "af7ff4d9fab4dc81ac842ba718e65b55e1b581f7e31ecf65d08560e0d622e25c",
+    "assets/figures/system-design.svg": "b2d4235a119a64258e62f58a1f4de797ef8bb63267e7e4c407aa10dcc433f947",
+    "assets/figures/testing-2.svg": "5d22a3f6216ec73db1bfdb10d00f060fc99f7dbc50bff171a82d911fce66779e",
+    "assets/figures/testing-3.svg": "4bc536b63bec3d5a342251a15564c5e04e4eb3a1e804972c71a8ce7b8c618da9",
+    "assets/figures/testing.svg": "ff87c95173a59bb11f0a57cd38090b3d886777616b4b6671332ca4778dd353ca",
+    "assets/figures/timeframes-2.svg": "3ae34d4afa41aff0e7084ea6827309b1a7fc4ec6c82b0cdb115a786fd79d2022",
+    "assets/figures/timeframes.svg": "2a094d20f224d64e3d9d854dc843bb0103c0d510159a0fd7d9ae7c1584264116",
+    "assets/figures/trade-plans-2.svg": "c93a0eae0fea54a1b31cb898bb1f37df819a7df5308f478b90a4f4a0eee6f238",
+    "assets/figures/trade-plans.svg": "634877fc36d212b06d1d59627aa5aeba8dc0828b334b5df152242517f9ffd24e",
+    "assets/figures/trends-2.svg": "261f64e12852611706fc274ee9dc461a0f38f743eb516f77bf49b1e4079e393b",
+    "assets/figures/trends-3.svg": "f5a0f58367850175d51cd0691bfcf44aeb439dab530bc6e7f069903d5998613c",
+    "assets/figures/trends.svg": "b98f5a02c4439f8ff327ee3d811f8a2e4eab960ef12e80ae5965eb4faed3b652",
+    "assets/figures/volatility-2.svg": "8365b3a1b4ed49a85dcc8811e29049baff1b792185f02a1931162ec4daef893e",
+    "assets/figures/volatility.svg": "c4bff7b427dac2afea1399a1a889dea01de7621c5ae18d8dd5b445bff0fd3ea7",
+    "assets/figures/volume-2.svg": "ac9f4948d997bc297fa05ee02081f5aacc52dc3efdf9279790fd96c9b0bc7ebb",
+    "assets/figures/volume-tools-2.svg": "7674f5ef7c0430f1d8ed623ce1a29740b03b58de8de5bd87c7a12bfaa88f6844",
+    "assets/figures/volume-tools-3.svg": "707dffab4d37e0beb8d64b84c34b3cefbfa472ed1060b2af2758fb725015fddf",
+    "assets/figures/volume-tools.svg": "c16d40a0a5a2e5bc85f9e0b4a441d1d2581ac96df1c881438818b9ae3f9d1cd0",
+    "assets/figures/volume.svg": "a13c724698baabb932c4b77786fe0ed0594f5f398a81e111a13a84e6439a2773",
+    "content/book.js": "93cbc18a2b15b6044d1a24d734c6cf919b9a370dbf439f690d4f0dc631ba3ec5",
+    "content/curriculum.js": "c2b6d48e9202a3bddcad0e0e8eed18a2dc2fc0af64598bec780e6ee9021c99f3",
+    "content/foundations-price.json": "7ba4355886009bd270be0f7de27933c1662a3bce94849c6d35b3c93edfb62598",
+    "content/indicators-context.json": "462f9016c2d4426223ecc6dcb0da5f387fd9624f8d4c0a524a224ec7f4e41433",
+    "content/research-context.json": "f1de1d60318f3b76f98bf4937880182b1a4a286333c9ec85ebda209c3b486c64",
+    "content/risk-advanced.json": "8cdae00dc1a513d317831d0b0bfb2ab06d75cba99827cc18335262052b337190",
+    "docs/EVIDENCE_MATRIX.md": "9c4fe031040344b7d08e101537c5e67d49bb9988d9ad24af2b6922898e0365a3",
+    "docs/MANUSCRIPT.md": "10154430d599aba68ab6cf628cdf4ba952f2c9cb293ebf704426ea579c0ac56b",
+    "docs/RENDERER_BATCH_20261011.md": "735bc8da845d12995be2e67fdc8fb4493e6a0777355dae07e6fedf2e2f87b260",
+    "docs/renderer-batch-assets/after.json": "b2ba7ffe8985e7a2a65fb8df7a1bdbe6771693610a7e3b5102ba3decca4f7d86",
+    "docs/renderer-batch-assets/before-renderer.js": "4bae042f3dfdf9961e639331a70e54615f1d4672825c6e764cb074fbfb38c9f5",
+    "docs/renderer-batch-assets/before.json": "1d65d1fd3abfd5e4e90d5bdeb4837779ee4377fde698eacb9e5a583caa9c8b7f",
+    "docs/renderer-batch-assets/browser-checks.json": "ab462cd90738c5e5c97acf4a27c7105158d2b97bd5fe8c470479aa8e0dc9335b",
+    "docs/renderer-batch-assets/browser-survey.js": "a5e7d5207b555c0361851db9e4f2e74fef3eee5f8d5ff5ca487a95600aea90df",
+    "docs/renderer-batch-assets/build-checks.json": "49bba1eaac34a4120da1518ede2312de44fb5582cc5292d30f45096ebdd921a2",
+    "docs/renderer-batch-assets/check-artifacts.cjs": "c02e6739a6cbe948c4af6f28af72acc46a54b6427116090370105fcfc441c60e",
+    "docs/renderer-batch-assets/figure-manifest.json": "861acf999adc9306842340b844241e498276027c9de91f622909ada7e17f4760",
+    "docs/renderer-batch-assets/fingerprints.json": "5d8e1c0c9a96160ab24c465de588e7e367363d681fc75df9dfae930c0e3ed8a6",
+    "docs/renderer-batch-assets/inspection-data.js": "f547a718e77677935ff63880fd9cb07e6e849ab77e9cabf9d525834f2e9cb097",
+    "docs/renderer-batch-assets/inspection.html": "a822235f643895531125ba712623873e63baace80f3b02dd45ecf8117d85bf81",
+    "docs/renderer-batch-assets/portable-sheet-01.png": "cdd1c8feeac2ab6d98bf8bca86bab8aaa1a19c71ae6e0ebb6ed963f35d7153eb",
+    "docs/renderer-batch-assets/portable-sheet-02.png": "ea08b704d3f6c694a584b4e54dcd26ddc7d0ce651ee80d9740628f3915e277f8",
+    "docs/renderer-batch-assets/portable-sheet-03.png": "297494eec1a9873cd3bc53b54beeee146fcb475734eb621ece35af19b4b218c0",
+    "docs/renderer-batch-assets/portable-sheet-04.png": "cb5cc3c4ff04455ce22eb02fd42d8d7dd73682ea3877d837d19105cffd48c6f6",
+    "docs/renderer-batch-assets/portable-sheet-05.png": "461aec9228e554f2dc7fe3337acb918c000875aa6f8d540ddd33f27e54fbe80f",
+    "docs/renderer-batch-assets/portable-sheet-06.png": "8a21b2aa009fb55a797f56f5ac47711376b4a61d0b7cea86bf4e1c0bcb352acb",
+    "docs/renderer-batch-assets/portable-sheet-07.png": "d64837d8b9a4f457b79f1e2f5b7adcca88fcef6577e186e1e3e413020988c527",
+    "docs/renderer-batch-assets/portable-sheet-08.png": "30505f11d9ec4808e2e0496cafd70f0dec00e6f042053f1c4f6dcff54e90c019",
+    "docs/renderer-batch-assets/portable-sheet-09.png": "35691d21298ee5fddf2fb02ae78fb1531ac34dd921b578e983bee35d0be3a3bf",
+    "docs/renderer-batch-assets/portable-sheet-10.png": "e46c5c51a8d8cf433efb19a9c3849cf2818cd64308fdb8e560f7f500a11b52ec",
+    "docs/renderer-batch-assets/portable-sheet-11.png": "c5166d8c940b95ecd1daa93e9188b8225b1f572fd8cc7590467e87e8e0e980f9",
+    "docs/renderer-batch-assets/portable-sheet-12.png": "efdf2e50317ba5985b88cf0f27657c79b61ebbb8695934ed6ccdc52f7196b10e",
+    "docs/renderer-batch-assets/portable-sheet-13.png": "57b88c61eb5a77f7469a9f9c622d3011ce221456f7af25f444a8459b47a4f714",
+    "docs/renderer-batch-assets/prepare-inspection.cjs": "2d6cd1e3ff0d516cbc3fb80334f5bc9098933944c14c15e5e818e35108683194",
+    "docs/renderer-batch-assets/route-check.js": "4cf24c53e07576f48900533fee7a5674ec44204a0d9f7ec6aa818d768035319c",
+    "docs/renderer-batch-assets/route-checks.json": "fd7998a197f292d37278fe89d7efcb85e61d8ce739fd8937ccb7d8b426e8e3b1",
+    "favicon.svg": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
+    "figure-renderer.js": "ea1745c6ffc3ecd4ef44078c4a656ab6e98c837d0202ecf64a5a83ba839da0d7",
+    "index.html": "7f554943e5b91f5dca82c9ee3c14c9b0e4f2f8bcc2392cb59955fa7f983b817f",
+    "package.json": "940cfb84ebfa080c40c4ad8ce6ed5b03368dd74d8baaa159b56e6fa5fc55b2e0",
+    "scripts/atlas20-sim.cjs": "1e8343e76e9817d801cc257b37ab40cff726e7ad3c7227727653bf611695aa32",
+    "scripts/build-content.cjs": "f85068a41e7cae9eed4235390cb0f19d7d8c3d914f95867a67f3ba3bfc4dd122",
+    "scripts/build-site.cjs": "e7b88d4289d8df4ee0c0d75fd956e6a8685529ab14d66b649570b6acd563e797",
+    "scripts/check-content.cjs": "de0440cf0ed365c9a4c603910415dc095dd0b7d906919433198e71b53b27517e",
+    "scripts/project-status.cjs": "1c2acfd77ba323e91110f16f25df70ee08047fdb92f9550a8b18e938d0e954a2",
+    "scripts/verify-early-chapters.cjs": "e415ee94f15d8afac5a88a333cc47f0c1c6612a77d51c7a428c92e3a9333360f",
+    "scripts/verify-figures.cjs": "eb717f9d5a1c27cbc25ec33e06b5bd6f4e08f66871f299bfb8bf112ffe84b276",
+    "scripts/verify-historical.cjs": "612c2572bfa8d2698e870b9f088010f3137a49588f58e59f2501845ac84dfd47",
+    "scripts/verify-revision.cjs": "d039e62d68a68c77178d71c4424c023afbe66cc7ca8156e1fe10509ed8ac55a3",
+    "styles.css": "26416208eeb8fe8569a756badcf70c4da2dbdbd3c0e431f85a8ef5e9354e6477"
+  },
+  "reviewReport": "docs/RENDERER_BATCH_20261011.md",
+  "priorCheckpoint": "docs/PROJECT_CHECKPOINT_20261011_182041.json",
+  "fingerprintMethod": {
+    "chapter": "sha256(JSON.stringify({chapter, sources: ids.map(id => [id, book.sources[id]])})) over the compiled book.js chapter, ids = sorted union of chapter.sources and evidence[].sourceIds; reproduces every unchanged prior chapter fingerprint.",
+    "part": "sha256(JSON.stringify({part, practice: book.partPractice[part.id], chapters: part.chapters.map(id => [id, chapterFingerprint])})); same method as the prior checkpoint."
+  },
+  "createdAt": "2026-10-11T22:59:26.297Z",
+  "reviewDateTimezone": "America/New_York"
+}

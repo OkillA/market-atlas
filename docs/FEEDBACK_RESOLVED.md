@@ -1571,3 +1571,101 @@ Scope: Chapters 15–19 and Part 4. Reviewers: five read-only reviewer agents (o
 - Resolution: Added best bid/ask and midpoint definitions with ($49.90 + $50.10)/2 = $50; price improvement defined; IOC record narrowed to IOC with its page locator; `ic-spread` now titled “FINRA · Understanding market liquidity and your investments” at https://www.finra.org/investors/insights/market-liquidity-risk, with both locators updated; caption begins “Fictional quotes.”
 - Changed locations: content/indicators-context.json; content/research-context.json; rebuilt outputs.
 - Verification: Both FINRA URLs fetched and compared; reproduction 151/151; market-microstructure-source-checks.json (14 checks).
+
+
+## Renderer correction batch — /root, 2026-10-11
+
+[Report](RENDERER_BATCH_20261011.md) and [retained evidence](renderer-batch-assets/) cover one shared rebuild, all current chart panels and every changed compact/wide figure. No new chapter publication acceptance or human validation is claimed.
+
+### ALPHA1-001 — Wide slot-count panel draws session-0 bars over the y-axis labels
+- Priority / type: P3 / defect
+- Status: resolved
+- Owner: /root (renderer batch, 2026-10-11)
+- Reviewer / date: claude-code-alpha / 2026-10-11
+- Location: `figure-renderer.js` grouped `bars` layout; seen in Chapter 26 `system-design` “Slot use at each close” panel at 760px.
+- Finding and evidence: In the 760px export the session-0 “Open positions” bar starts at the plot's left edge, and the “1.4” and “0.0” tick labels sit under it. The session-7 bar likewise touches the right edge. Same geometry in batch 4's `publication-batch4-assets/system-design-760.png`, so it predates PUB4-009. The 260px layout is unaffected. Other grouped-bar figures have not been surveyed.
+- Proposed resolution: Inset the first and last grouped-bar slots from the plot edges in the shared renderer, then re-inspect every bar figure.
+- Acceptance criteria: All exported bar figures at 260/760px keep tick labels clear of bars; no new clipping.
+- Discussion / progress: /root, 2026-10-11 — Claimed together for one shared-renderer correction batch; survey all exported charts and re-inspect changed figures before closure.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-11
+- Resolution: Inset observation slots in the shared renderer keep every single/grouped bar inside the plot. Overlaid lines, annotations and tick labels use the same centers. All six bar panels were re-inspected; numerical inputs are unchanged.
+- Changed locations: `figure-renderer.js`; authoring count flags in `content/indicators-context.json` and `content/risk-advanced.json` where applicable; rebuilt `content/book.js` and 11 SVG exports; cache keys, regression script, content guide and Pages check gate.
+- Verification: [Renderer batch](RENDERER_BATCH_20261011.md): 364 portable chart renders at 260/320/390/760px, 69 marker/background overlaps → 0, 48 escaped bars → 0, integer ticks in all 12 enabled renders; native light/dark surveys also have 0 defects/clips. All 26 changed panels inspected at 260/760px (13 retained PNGs); nine native reader route/viewport checks pass. Documented arithmetic/content checks pass; isolated build matches all 74 outputs. Full compiled content is unchanged except three count-axis flags.
+- Scope / limits: This closes the recorded marker/bar/tick issue. It does not promise zero path/wick coverage in every dense chart; no native print output or human learner observations. Accepted chapters’ affected figures rechecked; Chapter 16/Part 4 re-accepted for the flag change; Chapter 25/26 full reviews stay pending.
+- Related IDs: PUB5-012, PUB5-013.
+
+### PUB5-012 — A label clamped at the plot edge can cover its own marker
+- Priority / type: P3 / defect
+- Status: resolved
+- Owner: /root (renderer batch, 2026-10-11)
+- Reviewer / date: claude-code-alpha / 2026-10-11
+- Location: `figure-renderer.js` line-chart annotation placement (candidate boxes are clamped to the plot after the overlap test). Seen in Chapter 15 relative-index panel (“112.50”, 260/320px) and Chapter 19 spread chart (“Spread $0.80”, 260px).
+- Finding and evidence: When the preferred box is pushed back inside the plot, it can land on the annotated point; the circle is drawn before the label background. [label-coverage-after.json](publication-batch5-assets/label-coverage-after.json) reports 3 hidden markers, plus 2–8 covered path samples at 260px in Chapters 15/16/19. The values remain readable in labels, captions and tables, so this is not a misleading-data defect.
+- Proposed resolution: Treat the annotated point's own small box as occupied during placement (or skip clamped candidates that cover it), then re-render every affected export and re-inspect accepted chapters' figures.
+- Acceptance criteria: No annotated marker hidden at 260/320/390/760px across all exports; accepted chapters re-checked where exports change.
+- Discussion / progress: /root, 2026-10-11 — Claimed together for one shared-renderer correction batch; survey all exported charts and re-inspect changed figures before closure. Related renderer item: ALPHA1-001.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-11
+- Resolution: Shared post-clamp placement checks actual label backgrounds against all marker bounds, including later annotations, for line/bar and multi-candle charts. Nearby candidates or the nearest free grid position are used. Expanded survey found the same issue beyond the two originally reported chapters; all changed panels were inspected.
+- Changed locations: `figure-renderer.js`; authoring count flags in `content/indicators-context.json` and `content/risk-advanced.json` where applicable; rebuilt `content/book.js` and 11 SVG exports; cache keys, regression script, content guide and Pages check gate.
+- Verification: [Renderer batch](RENDERER_BATCH_20261011.md): 364 portable chart renders at 260/320/390/760px, 69 marker/background overlaps → 0, 48 escaped bars → 0, integer ticks in all 12 enabled renders; native light/dark surveys also have 0 defects/clips. All 26 changed panels inspected at 260/760px (13 retained PNGs); nine native reader route/viewport checks pass. Documented arithmetic/content checks pass; isolated build matches all 74 outputs. Full compiled content is unchanged except three count-axis flags.
+- Scope / limits: This closes the recorded marker/bar/tick issue. It does not promise zero path/wick coverage in every dense chart; no native print output or human learner observations. Accepted chapters’ affected figures rechecked; Chapter 16/Part 4 re-accepted for the flag change; Chapter 25/26 full reviews stay pending.
+- Related IDs: ALPHA1-001, PUB5-013.
+
+### PUB5-013 — Count panels get fractional y-axis ticks
+- Priority / type: P3 / editorial recommendation
+- Status: resolved
+- Owner: /root (renderer batch, 2026-10-11)
+- Reviewer / date: claude-code-alpha / 2026-10-11
+- Location: `figure-renderer.js` tick generation; Chapter 16 “Cumulative daily A/D” panel.
+- Finding and evidence: The integer net-issue count is labelled 0.36, −0.57, −1.50, −2.43, −3.36 at both widths ([breadth-760-after.png](publication-batch5-assets/figures/breadth-760-after.png)). The step values themselves are correct.
+- Proposed resolution: Allow a figure-level integer-tick option (or detect all-integer series) and use whole-number ticks.
+- Acceptance criteria: Count panels show integer ticks; other figures unchanged or re-inspected.
+- Discussion / progress: /root, 2026-10-11 — Claimed together for one shared-renderer correction batch; survey all exported charts and re-inspect changed figures before closure.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-11
+- Resolution: Added explicit integerTicks for linear axes in the renderer and schema checks. Enabled it in authoring JSON for Chapter 16 net issues, Chapter 25 trade-count bins and Chapter 26 occupied/order slots. Count ticks are now whole numbers; integer-valued prices do not opt in automatically.
+- Changed locations: `figure-renderer.js`; authoring count flags in `content/indicators-context.json` and `content/risk-advanced.json` where applicable; rebuilt `content/book.js` and 11 SVG exports; cache keys, regression script, content guide and Pages check gate.
+- Verification: [Renderer batch](RENDERER_BATCH_20261011.md): 364 portable chart renders at 260/320/390/760px, 69 marker/background overlaps → 0, 48 escaped bars → 0, integer ticks in all 12 enabled renders; native light/dark surveys also have 0 defects/clips. All 26 changed panels inspected at 260/760px (13 retained PNGs); nine native reader route/viewport checks pass. Documented arithmetic/content checks pass; isolated build matches all 74 outputs. Full compiled content is unchanged except three count-axis flags.
+- Scope / limits: This closes the recorded marker/bar/tick issue. It does not promise zero path/wick coverage in every dense chart; no native print output or human learner observations. Accepted chapters’ affected figures rechecked; Chapter 16/Part 4 re-accepted for the flag change; Chapter 25/26 full reviews stay pending.
+- Related IDs: ALPHA1-001, PUB5-012.
+
+
+## Publication batch 6 resolutions — /root, 2026-10-11
+
+[Batch report](PUBLICATION_BATCH6_20261011.md) records current acceptance of Chapters 22–23 and Part 5, including the following fixes. Earlier CA1-015 findings and closures remain preserved.
+
+### CA1-015 — Reopened: journal transfer and Part 5 execution inputs
+- Priority / type: P2 / teaching gap
+- Status: resolved
+- Owner: /root (publication batch 6, claimed 2026-10-11)
+- Reviewer / date: /root / 2026-10-11
+- Location: `content/risk-advanced.json`, `journaling.practice` independent task “Audit a journal summary”; `partPractice.risk` tasks “Complete a decision and a partial fill” and “Review without rewriting”. Original CA1-015 finding and previous verified closures remain in [the resolution history](FEEDBACK_RESOLVED.md).
+- Finding and evidence: Chapter 23 asks readers to correct a dashboard's BRDG −1.05R/SKIP 0R mean; the preceding worked journal already gives the corrected single-trade −1.05R and explicitly excludes the skip. This is rehearsal rather than unfamiliar independent transfer. Part 5 supplies an opening offer of $40.70 and a report filling 20 shares, but never states the actual fill price; its answer assumes $40.70 to compute $816.50, $40 1R and −1.125R. A quote and execution price are different inputs. It also assumes cancellation of the other 30 shares before the next bar without supplying a confirmation, and task 3's answer asks readers to preserve an original counterargument that the task never supplies.
+- Proposed resolution: Give the journal task fresh completed-trade, skip, unfilled-order and open-position inputs with a full cash/R/account reconciliation. Supply the Part 5 fill price and cancellation report; distinguish supplied frozen fields from a missing original counterargument instead of reconstructing it after the outcome.
+- Acceptance criteria: Independent answers require new calculations unavailable in preceding prose; all requested fields have checked solutions and explicit units/denominators/status. Part 5's partial-fill arithmetic is determined by supplied execution/cancellation facts, and its review does not invent an earlier note. Inputs precede concealed answers in browser/manuscript; learner print retains inputs while answers remain omitted. Preserve task titles/deep links and earlier CA1-015 fixes.
+- Discussion / progress: Full Chapter 22–23 prose, figures, exercises, quizzes, evidence and Part 5 tasks read against the compiled book; BRDG reference checked against current Chapter 21. Source passages inspected separately. One shared rebuild will follow authoring edits and arithmetic checks; no human learning study is claimed.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-11
+- Resolution: Replaced the residual Chapter 23 rehearsal-only independent task with a complete unfamiliar five-candidate audit, including closed trades, skip, unfilled order and open holdings. Supplied every Part 5 fill/cancellation fact needed by its arithmetic and a rubric for genuinely missing original note fields. Preserved practice/review titles and the earlier CA1-015 fixes.
+- Changed locations: `content/risk-advanced.json`; rebuilt `content/book.js`, `docs/MANUSCRIPT.md`, `docs/EVIDENCE_MATRIX.md` and `assets/figures/psychology.svg`; `index.html` book cache key; `scripts/verify-revision.cjs` now recomputes the new audit and requires the Part 5 execution/cancellation facts.
+- Verification: [Batch 6](PUBLICATION_BATCH6_20261011.md): 117 exact numeric comparisons, 38 text and 25 structural checks on compiled content, zero mismatches; all documented verifiers/checks pass and isolated build matches 74 outputs. Nine browser route checks at native 1280/390px and 320px child-frame widths match all text/table inputs and quiz feedback. Actual print stylesheet display-policy checks retain raw inputs and hide learner solutions. All four compact/wide figures inspected as eight Quick Look rasters; fixed-path label coverage falls from 44–45% compact / 14.30% wide to zero at all four tested widths.
+- Scope / limits: This closes the stated practice/figure issues and accepts Chapters 22–23/Part 5 editorial content. Native print pagination, a complete release/access/rights audit and human learning are separate pending gates. Final browser screenshots failed; the report distinguishes native DOM checks, child-frame coverage and portable rasters. No human observations or independent agent review are claimed.
+
+### PUB6-001 — Chapter 22 chart commentary obscures the recovery path
+- Priority / type: P2 / defect
+- Status: resolved
+- Owner: /root (publication batch 6, 2026-10-11)
+- Reviewer / date: /root / 2026-10-11
+- Location: `content/risk-advanced.json`, psychology figure “Escalation changes the recovery problem”, at compact/wide widths.
+- Finding and evidence: The “Fixed: $9,700” and “Compare process, not just final equity” backgrounds obscure the fixed-dollar line, including several later recoveries/declines. Actual native rendering of the portable SVG confirms the loss of path detail. Independent path sampling reports 44.18%/45.07%/45.02% covered at 260/320/390px and 14.30% at 760px (`publication-batch6-assets/path-coverage-before.json`). The previous renderer pass correctly checked marker visibility, not this path-coverage property; its stated scope remains intact. The numerical values are correct and table-accessible.
+- Proposed resolution: Move the explanatory comparison and exact third-loss values to the caption, remove the opaque chart commentary, and label the outcome indices needed to locate the comparison.
+- Acceptance criteria: Both plotted account paths remain visible at 260/320/390/760px, the third-loss $9,700/$9,300 comparison is explicit, all inputs remain unchanged and accessible, and the actual compact/wide figures are inspected after rebuilding.
+- Discussion / progress: Confirmed in the initial batch-6 figure inspection; `/root` owns the additional coordinated correction rebuild. Related earlier scope: PUB5-012 covers marker placement; this finding concerns hidden path segments in a new chapter review.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-11
+- Resolution: Moved the comparison to the figure caption, removed the opaque annotations and enabled all outcome labels. Preserved both numeric series; both paths are now completely visible under the measured label-coverage criterion.
+- Changed locations: `content/risk-advanced.json`; rebuilt `content/book.js`, `docs/MANUSCRIPT.md`, `docs/EVIDENCE_MATRIX.md` and `assets/figures/psychology.svg`; `index.html` book cache key; `scripts/verify-revision.cjs` now recomputes the new audit and requires the Part 5 execution/cancellation facts.
+- Verification: [Batch 6](PUBLICATION_BATCH6_20261011.md): 117 exact numeric comparisons, 38 text and 25 structural checks on compiled content, zero mismatches; all documented verifiers/checks pass and isolated build matches 74 outputs. Nine browser route checks at native 1280/390px and 320px child-frame widths match all text/table inputs and quiz feedback. Actual print stylesheet display-policy checks retain raw inputs and hide learner solutions. All four compact/wide figures inspected as eight Quick Look rasters; fixed-path label coverage falls from 44–45% compact / 14.30% wide to zero at all four tested widths.
+- Scope / limits: This closes the stated practice/figure issues and accepts Chapters 22–23/Part 5 editorial content. Native print pagination, a complete release/access/rights audit and human learning are separate pending gates. Final browser screenshots failed; the report distinguishes native DOM checks, child-frame coverage and portable rasters. No human observations or independent agent review are claimed.

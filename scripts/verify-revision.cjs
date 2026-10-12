@@ -66,6 +66,28 @@ assert.ok(deadlineRows[0][2]>initialTarget&&deadlineRows[0][3]<initialStop,'Insi
 near(50*(51.3-50.6),35);near(50*(50.6-48.6),100);near(50*(50.6-48.4),110);
 const j=chapter('journaling').figure.rows;let cash=20000;for(const row of j){cash+=num(row[1]);near(cash,num(row[2]));}near(cash,19895);
 near(50*(54-50),200);near(50*(50-48.8),60);near(50*(51.5-50)-5,70);
+// Ch23 independent audit: compute from supplied rows, retaining open and unfilled records.
+const journalAudit=chapter('journaling').practice.find(task=>task.title==='Audit a journal summary');
+const auditRows=journalAudit.tables[0].rows;
+assert.equal(auditRows.length,5);
+const auditClosed=auditRows.filter(row=>Number.isFinite(row[4]));
+const auditOpen=auditRows.filter(row=>row[1]>0&&!Number.isFinite(row[4]));
+assert.equal(auditClosed.length,2);assert.equal(auditOpen.length,1);
+auditRows.filter(row=>row[1]===0).forEach(row=>{assert.equal(row[5],0);assert.equal(row[2],'—');});
+const auditResults=auditClosed.map(([,q,e,s,x,fee])=>{
+ const oneR=q*(cents(e)-cents(s)),gross=q*(cents(x)-cents(e)),net=gross-cents(fee);
+ return {oneR,gross,net,netR:net/oneR};
+});
+assert.deepEqual(auditResults.map(row=>[row.oneR,row.gross,row.net]),[[5000,7500,7000],[6000,-8000,-8800]]);
+const auditNet=sum(auditResults.map(row=>row.net));
+near(sum(auditResults.map(row=>row.netR))/auditClosed.length,-1/30);
+const [,auditQty,auditEntry,auditStop,,auditFee,auditMark]=auditOpen[0];
+assert.equal(auditQty*(cents(auditEntry)-cents(auditStop)),2000);
+const auditCash=2000000+auditNet-auditQty*cents(auditEntry)-cents(auditFee),auditHoldings=auditQty*cents(auditMark);
+assert.equal(auditCash,1948000);assert.equal(auditHoldings,51000);assert.equal(auditCash+auditHoldings,1999000);
+near(money(auditNet)/auditRows.length,-3.6);
+const auditAnswer=journalAudit.solution.join(' ');
+for(const token of ['−0.0333R','$19,480','$510','$19,990','−$3.60','−0.05%'])assert.ok(auditAnswer.includes(token),'Missing journal audit answer: '+token);
 const ps=chapter('psychology').figure.series;for(let i=3;i<ps[0].values.length;i++)near(ps[0].values[i]-ps[1].values[i],400);near(100*2-5,195);near(400*2-5,795);
 // Ch24: integer-cent sizing, all ledger cells, cumulative paths and cost thresholds.
 const testing=chapter('testing'),rows=testing.sections[5].tables[0].rows,costRows=testing.sections[5].tables[1].rows;
@@ -187,6 +209,11 @@ r=result(50,31,29,35,5);near(r.net,195);near(r.netR,1.95);
 // Both cumulative reviews: independent calculations.
 assert.equal(Math.min(Math.floor(90/1.62),Math.floor(1600/32)),50);near(result(50,32,30.5,28,6).netR,-206/75);
 near(result(20,40.7,38.7,38.7,5).netR,-1.125);near(20*40.7+2.5,816.5);near(20*38.7-2.5,771.5);
+const part5Fill=reviews.risk.tasks[1].question.match(/execution report confirms (\d+) shares at \$(\d+\.\d+)/);
+assert.ok(part5Fill,'Part 5 requires a supplied confirmed fill quantity and price');
+assert.equal(Number(part5Fill[1]),20);near(Number(part5Fill[2]),40.7);
+assert.match(reviews.risk.tasks[1].question,/cancellation report confirms the remaining 30 shares canceled before the next bar/);
+assert.match(reviews.risk.tasks[2].solution.join(' '),/not recorded/);
 near((4*2-5-2)/10,.1);near((80-10*4)/80/10,.05);near(40/10000*100,.4);near(80/10,8);
 assert.ok(100*(40-39)/39>100*(20.4-20)/20);assert.equal(Math.floor(4000*101/100),4040);
 const limit=4040,qty=Math.min(Math.floor(25000/200),Math.floor(500000/limit),Math.floor((1200000-250)/limit));assert.equal(qty,123);near(money(qty*limit+250),4971.7);near(12000-4971.7,7028.3);

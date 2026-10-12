@@ -27,6 +27,7 @@ jobs:
       - run: node scripts/verify-revision.cjs
       - run: node scripts/verify-historical.cjs
       - run: npm run check
+      - run: npm run check:figures
       - run: node scripts/check-content.cjs --strict-revision
       - run: npm run build:site
       - uses: actions/upload-pages-artifact@v3

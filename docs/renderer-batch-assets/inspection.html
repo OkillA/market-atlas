@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Renderer batch — portable figure inspection</title>
+<style>body{margin:20px;font:14px Arial;background:#fffefa;color:#263831}h1{font-size:20px}h2{font-size:16px;margin:8px 0}section{margin-bottom:20px;border-top:1px solid #bbb;padding-top:8px}.pair{display:flex;gap:28px;align-items:flex-start}svg{display:block}p{margin:4px 0}#probe{position:absolute;left:-10000px;top:0}body.dark{background:#14241d;color:#edf1e8;--surface:#14241d;--ink:#edf1e8;--muted:#aebcae;--grid:#35483b;--green:#a7c8a3;--rust:#dfaa91;--gold:#d6c67e}</style>
+<h1>Renderer corrections — after figures at 260px and 760px</h1><p id="page"></p><main></main><div id="probe"></div>
+<script src="../../content/book.js"></script><script src="before-renderer.js"></script><script>window.beforeFigures=AtlasFigures;</script><script src="../../figure-renderer.js"></script><script src="inspection-data.js"></script><script src="browser-survey.js"></script>
+<script>
+window.showPage = function(page){document.querySelector('#page').textContent=`Sheet ${page+1} / ${Math.ceil(inspectionPanels.length/2)}; portable light palette`;document.querySelector('main').innerHTML=inspectionPanels.slice(page*2,page*2+2).map(({id,panel,spec,portable})=>`<section><h2>${id} — panel ${panel}: ${spec.title}</h2><div class="pair">${[260,760].map(width=>`<div style="width:${width}px;flex:none"><p>${width}px</p>${portable[width]}</div>`).join('')}</div></section>`).join('');scrollTo(0,0);return {page,total:inspectionPanels.length};};showPage(0);
+</script></html>

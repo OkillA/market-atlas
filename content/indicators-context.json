@@ -3244,6 +3244,7 @@
             "afterSection": 0,
             "xLabel": "Session",
             "yLabel": "Net issues",
+            "integerTicks": true,
             "xStart": 1,
             "series": [
               {

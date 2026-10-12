@@ -1,0 +1,58 @@
+[
+  {
+    "width": 260,
+    "series": 0,
+    "covered": 148,
+    "total": 335,
+    "percent": 44.18
+  },
+  {
+    "width": 260,
+    "series": 1,
+    "covered": 0,
+    "total": 399,
+    "percent": 0
+  },
+  {
+    "width": 320,
+    "series": 0,
+    "covered": 169,
+    "total": 375,
+    "percent": 45.07
+  },
+  {
+    "width": 320,
+    "series": 1,
+    "covered": 0,
+    "total": 436,
+    "percent": 0
+  },
+  {
+    "width": 390,
+    "series": 0,
+    "covered": 190,
+    "total": 422,
+    "percent": 45.02
+  },
+  {
+    "width": 390,
+    "series": 1,
+    "covered": 0,
+    "total": 478,
+    "percent": 0
+  },
+  {
+    "width": 760,
+    "series": 0,
+    "covered": 107,
+    "total": 748,
+    "percent": 14.3
+  },
+  {
+    "width": 760,
+    "series": 1,
+    "covered": 0,
+    "total": 804,
+    "percent": 0
+  }
+]
