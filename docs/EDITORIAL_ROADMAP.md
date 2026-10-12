@@ -16,7 +16,7 @@ Claim a manageable package by setting its owner and status before implementation
 
 ### ROAD-002 — Complete chapter publication acceptance
 
-- Status / owner: in_progress / claude-code-pub7, 2026-10-12 (batch 7: Chapters 24–28 and Part 6).
+- Status / owner: ready / unassigned (batch 7 content and renderer work done by claude-code-pub7, 2026-10-12; paperwork, browser QA and acceptance pending — see [handoff](PUBLICATION_BATCH7_HANDOFF.md); claim released).
 - Preparation: [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) contains all 28 chapters with inherited evidence and current fingerprints. Twenty-three chapters and Parts 1–5 are accepted for current editorial content; 5 chapters and one part review remain pending. Release QA and shipping metadata remain separate gates.
 - Dependencies: none. Existing revision evidence is available.
 - Next batch: Chapters 24–28 with the Part 6 cumulative review (Chapter 26's PUB4-009 figure fix is already done); then check cumulative reviews, glossary and cross-links. Renderer items PUB5-012/013 and ALPHA1-001 are resolved; affected accepted chapters' figures were rechecked in the [renderer batch](RENDERER_BATCH_20261011.md).
