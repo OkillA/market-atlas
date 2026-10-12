@@ -1,0 +1,848 @@
+{
+  "chapter": {
+    "id": "classical-frameworks",
+    "title": "Optional: Dow, Wyckoff, and Elliott, read critically",
+    "subtitle": "Apply one core rule from each framework to a fictional chart, and keep description, causal story, and evidence apart.",
+    "minutes": 13,
+    "status": "draft",
+    "tags": [
+      "Dow theory",
+      "Dow confirmation",
+      "nonconfirmation",
+      "Wyckoff",
+      "trading range",
+      "spring",
+      "Elliott wave",
+      "impulse wave",
+      "alternate count",
+      "classical analysis",
+      "subjectivity",
+      "optional"
+    ],
+    "takeaway": "Each classical framework can be made precise enough to test one claim at a time; its labels, and its advocates’ confidence, do not by themselves establish a trading edge.",
+    "optional": true,
+    "prerequisites": [
+      "trends",
+      "support-resistance",
+      "volume",
+      "chart-patterns",
+      "breakouts",
+      "testing"
+    ],
+    "outcomes": [
+      "Classify a two-average Dow-style move as unconfirmed or confirmed by comparing each average’s close with its own reference high, at the close where the classification becomes known.",
+      "Apply a frozen spring rule, with a stated breach size and reentry window, to a fictional trading range, and classify the alternative breakdown branch under the same rule.",
+      "Check a proposed Elliott impulse count against the three standard rules, and show that more than one count can pass them.",
+      "Separate each framework’s descriptive convention, causal story, and empirical claim, and name the evidence each layer would need."
+    ],
+    "sections": [
+      {
+        "title": "What this optional chapter covers",
+        "paragraphs": [
+          "Dow theory, Wyckoff analysis, and Elliott wave analysis are older than most of the indicators in this book, and they still shape market commentary. You will meet sentences such as “the averages have not confirmed,” “that dip looked like a spring,” or “we are in wave three.” This chapter teaches enough of each framework to read those sentences precisely and to test one of their claims. It is an optional branch. Nothing later in the core path depends on it, and it is not a practitioner’s manual.",
+          "The scope is deliberately narrow. From Dow theory we take one idea: confirmation between two averages, each judged against its own reference high. The full classification of primary, secondary, and minor movements is left out. From Wyckoff we take the trading range and the spring. Point-and-figure “cause” counts, the full phase schematics, and the distribution events are left out. From Elliott we take the five-wave impulse, its three standard rules, and the idea of alternate counts. Corrective-pattern families, diagonals, and Fibonacci ratio guidelines are left out. Each framework gets its own worked example and its own figure. All of the charts are invented for teaching.",
+          "One distinction organizes everything that follows. A framework offers a descriptive convention: what is labeled, from which data, at what time. It usually adds a causal story: why the labeled pattern supposedly happens. Many presentations then make an empirical claim, about later returns or reliability. The three layers need different evidence. A description can be checked by reproducing it. A causal story needs evidence about participants and mechanisms. An empirical claim needs a defined test across many cases. The definitions in this chapter come from CMT Association, Wyckoff Analytics, and Elliott Wave International. These are proponent organizations: they are the right sources for what the frameworks say, but they are not independent evidence that following them earns money."
+        ],
+        "tables": [
+          {
+            "title": "Three layers in each framework",
+            "columns": [
+              "Framework",
+              "Descriptive convention (reproducible)",
+              "Causal story (interpretation)",
+              "Empirical claim (needs a test)"
+            ],
+            "rows": [
+              [
+                "Dow",
+                "Each average’s close compared with its own prior reference high",
+                "Related parts of the economy should move together if a primary trend is genuine",
+                "A confirmed advance is followed by better outcomes than an unconfirmed one"
+              ],
+              [
+                "Wyckoff",
+                "A trading range; a session low below support, followed by a close back inside the range",
+                "Large informed interests shake out weaker holders before a markup",
+                "Springs precede advances more often, or by more, than comparable breaches that do not reenter"
+              ],
+              [
+                "Elliott",
+                "Swings labeled 1–5 and A–C that satisfy stated counting rules",
+                "Collective psychology unfolds in a recurring, nested pattern",
+                "A valid count improves the odds of correctly calling the next direction"
+              ]
+            ]
+          }
+        ],
+        "id": "what-this-optional-chapter-covers"
+      },
+      {
+        "title": "Dow theory: each average against its own reference high",
+        "paragraphs": [
+          "Dow theory grew out of Charles Dow’s editorials and the work of later interpreters. In the CMT Association’s summary, the two averages must confirm each other: a primary uptrend is signaled when both rise above their respective highs of previous upward secondary reactions. Only closing prices count. Confirmation does not have to arrive on the same day or even in the same month, and a nonconfirmation, where one average exceeds its prior extreme while the other does not, is treated as a warning to stay alert, not as a signal in its own right. Historically the averages were industrial and railroad indexes, chosen because they represented related parts of economic activity.",
+          "The figure follows two fictional averages, A and B, both indexed to 100 at step 0. At step 3, A closes at 110 and B at 106. Both then decline to step 5, A to 103 and B to 100. For this exercise, treat the rise to step 3 as the previous upward secondary reaction; its step-3 closes are given as the reference highs. Deciding whether a move qualifies as a secondary reaction, and which primary trend it interrupts, needs further rules, which this chapter does not teach. Freeze the teaching rule before reading on: a close strictly above the reference counts, and equality does not; confirmation is recorded at the first completed close at which both averages are above their own references at the same time.",
+          "Now walk forward one close at a time. At step 7, A closes at 109 and B at 103; neither has crossed. At step 8, A closes at 112, above 110, while B closes at 104, below 106. That close establishes a nonconfirmation, and nothing more. Through steps 9 and 10, A stays above its reference while B reaches only 103 and 105. At step 11, B closes at 107 while A closes at 113. Both are now above their own references, so confirmation is recorded at the step-11 close, three observations after A’s first crossing, with A at 113, one point above its step-8 close.",
+          "Two tempting shortcuts give the wrong answer. At step 8, A is up 12% from the start and B is up 4%, so both are up, but neither gain decides confirmation; only the reference high does. If B’s reference had been 103 instead of 106, the same 104 close would already be above it. And an intraday high above 106 would not count, because the convention uses closes. The test also leaves several decisions open: which averages to use, whether the second crossing may come weeks later, as the source allows, and what action, if any, follows. The empirical claim, that confirmed moves are followed by better outcomes, can only be judged by applying one frozen version of the rule across many episodes, nonconfirmations included."
+        ],
+        "tables": [
+          {
+            "title": "The confirmation test, one close at a time",
+            "columns": [
+              "Step",
+              "A close (index)",
+              "A above 110?",
+              "B close (index)",
+              "B above 106?",
+              "Record at this close"
+            ],
+            "rows": [
+              [
+                7,
+                109,
+                "No",
+                103,
+                "No",
+                "No crossing"
+              ],
+              [
+                8,
+                112,
+                "Yes",
+                104,
+                "No",
+                "Nonconfirmation: A only"
+              ],
+              [
+                9,
+                111,
+                "Yes",
+                103,
+                "No",
+                "Nonconfirmation continues"
+              ],
+              [
+                10,
+                112,
+                "Yes",
+                105,
+                "No",
+                "Nonconfirmation continues"
+              ],
+              [
+                11,
+                113,
+                "Yes",
+                107,
+                "Yes",
+                "Confirmed at this close"
+              ]
+            ]
+          }
+        ],
+        "id": "dow-theory-each-average-against-its-own-reference-high"
+      },
+      {
+        "title": "Wyckoff: a range, a spring candidate, and a breakdown branch",
+        "paragraphs": [
+          "Wyckoff analysis organizes price and volume into trading ranges and a repeating cycle of accumulation, markup, distribution, and markdown. Wyckoff Analytics presents three laws: supply and demand, cause and effect, and effort versus result. It describes a spring as a move that takes price below the low of the trading range and then reverses to close within it, and it notes that springs are not required: some accumulation ranges do not have one. The “Composite Man” is a teaching device: the analyst studies the market as if one operator were behind its movements. It helps generate questions about who might be buying or selling. It is not an observation of an actual person.",
+          "Here is the fictional range. Over sessions 1 to 16, the reaction lows are $30.00, $30.20, and $30.40 (sessions 4, 9, and 14), and the reaction highs are $34.00, $33.80, and $33.60 (sessions 2, 7, and 12). The first table below lists them beside the closes that the figure plots; a close line alone cannot show them. The figure shades a support zone from $30.00 to $30.40 and a resistance zone from $33.60 to $34.00. A zone is a good way to show where reactions occurred, but a rule needs a single number, so after session 16 support is frozen at the lowest low, $30.00. The spring rule is frozen at the same time. A breach is a completed session whose low is at least 1% below support, that is, $29.70 or lower. A breach becomes a spring candidate at the first completed close strictly above $30.00, counting from the breach session’s own close through the three sessions after it. It becomes a breakdown if none of those four closes is above $30.00. While that window is open, further lows at or below $29.70 belong to the same breach event and do not open a new window; a new event can begin only after the current one is classified. A low between $29.70 and $30.00 is an undercut smaller than this rule’s breach threshold and is not classified. The 1% and three-session settings are this chapter’s own research choices, not canonical Wyckoff values.",
+          "Session 17 opens at $30.50, trades as high as $30.60 and as low as $29.50, and closes at $29.80. The breach is (30.00 − 29.50) ÷ 30.00 = 1.67%, so it qualifies. The close of $29.80 is still below support, which means the price has not yet reversed to close inside the range. Our rule therefore has not classified a recovery. At this cutoff the only correct record is “breach; window open.” Calling it a spring, or a breakdown, would be using bars that do not yet exist.",
+          "Two continuations share that session-17 record. In the spring branch, session 18 trades between $29.70 and $30.80 and closes at $30.60; its $29.70 low belongs to the open session-17 event rather than starting a new one. That is a close above $30.00 in the first session of the window, so a spring candidate is recorded at the session-18 close; the later closes of $31.00 and $31.40 do not change the classification. In the breakdown branch, sessions 18 to 20 close at $29.40, $29.10, and $28.60. None is above $30.00, so the breakdown is recorded only at the session-20 close, when the window ends. Before that close it was undecided, not “probably a breakdown.”",
+          "Notice what the rule has and has not established. The spring branch is a rule event. It says nothing about accumulation by hidden buyers. Wyckoff Analytics interprets a low-volume spring as a sign of readiness to rise; adding a volume condition, such as breach-session volume below its 20-session average, would need its own threshold and would change which breaches count. The causal story remains a hypothesis. The empirical claim requires counting every breach in a defined universe, with both branches kept in the record."
+        ],
+        "tables": [
+          {
+            "title": "Reaction extremes behind the support and resistance zones (sessions 1–16)",
+            "columns": [
+              "Session",
+              "Close ($)",
+              "Reaction low ($)",
+              "Reaction high ($)"
+            ],
+            "rows": [
+              [
+                "2",
+                "33.50",
+                "—",
+                "34.00"
+              ],
+              [
+                "4",
+                "30.60",
+                "30.00",
+                "—"
+              ],
+              [
+                "7",
+                "33.40",
+                "—",
+                "33.80"
+              ],
+              [
+                "9",
+                "30.70",
+                "30.20",
+                "—"
+              ],
+              [
+                "12",
+                "33.20",
+                "—",
+                "33.60"
+              ],
+              [
+                "14",
+                "30.90",
+                "30.40",
+                "—"
+              ]
+            ]
+          },
+          {
+            "title": "The frozen spring rule applied to both branches",
+            "columns": [
+              "Session",
+              "Spring branch O/H/L/C ($)",
+              "Breakdown branch O/H/L/C ($)",
+              "Record at the close"
+            ],
+            "rows": [
+              [
+                17,
+                "30.50 / 30.60 / 29.50 / 29.80",
+                "Same session",
+                "Both: breach of 1.67%; window open for sessions 18–20"
+              ],
+              [
+                18,
+                "29.90 / 30.80 / 29.70 / 30.60",
+                "29.70 / 29.90 / 29.20 / 29.40",
+                "Spring: candidate recorded (close 30.60). Breakdown branch: undecided"
+              ],
+              [
+                19,
+                "30.60 / 31.20 / 30.40 / 31.00",
+                "29.40 / 29.60 / 28.90 / 29.10",
+                "Spring: unchanged. Breakdown branch: undecided"
+              ],
+              [
+                20,
+                "31.00 / 31.60 / 30.80 / 31.40",
+                "29.10 / 29.30 / 28.50 / 28.60",
+                "Spring: unchanged. Breakdown branch: breakdown recorded, no reentry in window"
+              ]
+            ]
+          }
+        ],
+        "id": "wyckoff-a-range-a-spring-candidate-and-a-breakdown-branch"
+      },
+      {
+        "title": "Elliott wave: an impulse must pass three rules",
+        "paragraphs": [
+          "Elliott wave analysis classifies swings into nested structures. Elliott Wave International describes an impulse as five subwaves moving in the direction of the next larger trend, and a correction as three subwaves. These patterns combine into larger patterns of the same form, at larger “degrees.” For a standard impulse, EWI states three rules: wave 2 never retraces more than 100% of wave 1; wave 3 is never the shortest of waves 1, 3, and 5; and wave 4 never ends in the price territory of wave 1. EWI distinguishes these rules, which it says govern every impulse, from guidelines such as alternation, extension, and truncation, which describe typical but not inevitable features. Diagonals are a separate pattern family with their own rules, which this chapter does not review. Switching to a diagonal to rescue a count that has broken a rule is a change of classification, and it should be recorded as one.",
+          "The schematic in the figure has swing endpoints at $40 (the start, step 0), $44, $42, $50, $47, and $53, followed by $49, $51, and $46. Check the labeled count one rule at a time. Rule 1: wave 2 ends at $42, above the $40 start; it retraces $2 of a $4 advance, or 50%. Rule 2: waves 1, 3, and 5 measure $4, $8, and $6, so wave 3 is the longest, not the shortest. Rule 3: wave 4 ends at $47, above wave 1’s $44 high. The count passes all three rules, and the final $53 → $49 → $51 → $46 sequence is labeled as an A–B–C correction.",
+          "Two cautions apply even to this tidy picture. First, the two EWI pages word rule 3 slightly differently: one says wave 4 does not “end in” wave-1 territory, the other that it does not “enter” or overlap it. EWI’s Impulse entry states that the no-overlap form holds for all non-leveraged cash markets, which include the stocks in this book, so this exercise uses it: no point of wave 4 may enter wave-1 territory. The endpoint is its lowest point in this schematic. A real intraday overlap would invalidate this standard-impulse classification even if the close later recovered; the endpoint-only paraphrase is insufficient. Second, the intermediate points are straight-line fillers, not lower-degree waves. A full analysis would also require the impulse to subdivide 5-3-5-3-5, with waves 1, 3, and 5 themselves motive waves, and the schematic does not attempt that."
+        ],
+        "id": "elliott-wave-an-impulse-must-pass-three-rules"
+      },
+      {
+        "title": "Alternate counts and the timing of a label",
+        "paragraphs": [
+          "EWI states that two or more valid wave interpretations usually exist at any time, and that analysts rank them as “preferred” and “alternate” according to how well each fits the guidelines. The same nine swing points show why. Count B treats the rise from $42 to $53 as one extended wave 3, with $50 and $47 as internal swings. It then labels $49 as wave 4 and $51 as wave 5. Its lengths are $4, $11, and $2, so wave 3 is not the shortest, and wave 4 ends at $49, above $44. Count B passes these three top-level comparisons; subdivisions are not supplied, so this is a candidate count, not a validated impulse. Its fifth wave ends below the end of wave 3, a “truncation,” which EWI treats as a guideline-level feature rather than a rule violation. Count C starts at $42 and labels $50, $47, $53, $49, and $51 as waves 1 through 5. Its wave 4 ends at $49, inside wave 1’s territory below $50, so it fails rule 3.",
+          "The top-level checks remove count C, but they cannot choose between candidates A and B. Passing necessary checks is not sufficient to validate either complete wave structure. Those two counts imply different provisional claims at the same moment. At step 12, with price at $49 and no later bar, count A treats the decline from $53 as a possible wave A of a correction and expects a wave-B rally followed by a wave-C decline. Count B treats it as a possible wave 4 and expects a fifth advance. Both expect the next swing to be up, so the next bar cannot separate them, and neither can yet know that $49 is a completed low. Ranking them as preferred and alternate is a judgment about guidelines, and it is exactly the judgment a test must capture. Labels also arrive late. At step 10 no reader could know that $53 was the end of an impulse rather than part of a longer advance. An endpoint label remains provisional until a declared reversal criterion recognizes it; hindsight endpoints cannot be treated as known in real time.",
+          "Good practice is to freeze the preferred count, the alternate, and the price that would invalidate each, at every cutoff. At step 12, count B would be invalidated by any trade at or below $44, where wave 4 would enter wave-1 territory. The three impulse rules give count A no invalidation level, because a correction is not an impulse, and this chapter does not teach the corrective-pattern rules that would supply one; the analyst must declare it. If an analyst re-labels after each surprise and keeps only the final count, the method will look continuously right, because the record contains only the interpretation that survived. Three outcomes can then be measured separately: whether the counts obeyed the rules, whether the frozen forecasts were directionally right over a stated horizon, and whether any action based on them earned money after costs. They are different questions."
+        ],
+        "tables": [
+          {
+            "title": "Rule check for three counts of the same swings",
+            "columns": [
+              "Count",
+              "Endpoints of waves 0–5 ($)",
+              "Wave 1 / 3 / 5 lengths ($)",
+              "Rule 1: wave 2 end at or above wave 1 start",
+              "Rule 2: wave 3 not shortest",
+              "Rule 3: wave 4 low above wave 1 high (no overlap)",
+              "Result"
+            ],
+            "rows": [
+              [
+                "A (figure labels)",
+                "40, 44, 42, 50, 47, 53",
+                "4 / 8 / 6",
+                "42 ≥ 40: pass",
+                "pass",
+                "47 > 44: pass",
+                "Top-level compatible; subdivisions unchecked"
+              ],
+              [
+                "B (extended wave 3)",
+                "40, 44, 42, 53, 49, 51",
+                "4 / 11 / 2",
+                "42 ≥ 40: pass",
+                "pass",
+                "49 > 44: pass",
+                "Top-level compatible; proposed truncated fifth unchecked"
+              ],
+              [
+                "C (starts at 42)",
+                "42, 50, 47, 53, 49, 51",
+                "8 / 6 / 2",
+                "47 ≥ 42: pass",
+                "pass (2 is shortest)",
+                "49 < 50: fail",
+                "Fails standard-impulse no-overlap rule"
+              ]
+            ]
+          }
+        ],
+        "id": "alternate-counts-and-the-timing-of-a-label"
+      },
+      {
+        "title": "From vocabulary to an honest test",
+        "paragraphs": [
+          "An empirical claim can be tested only one precise proposition at a time, and the proposition has to be fixed before the outcomes are known. The spring rule above is a ready-made example. Apply it to every breach in a defined universe and period, keep both branches, and declare an action in advance: perhaps a next-open entry after the reentry close, a stop below the breach low, a time exit, and modeled costs, the same structure as the breakout plan in Chapter 9 and the casebook in the next chapter. Then compare the outcomes with a stated alternative, such as breaches that did not reenter or all sessions in the same stocks. A favorable result on that one specification would support that one specification, not Wyckoff analysis as a whole.",
+          "Where discretion is essential, as in choosing between Elliott counts, test the discretion itself. Ask two readers to label the same charts with the future bars hidden, timestamp their preferred and alternate counts, and keep their disagreements. Measure agreement first, then forecast accuracy, then net results. Lo, Mamaysky, and Wang took another route: they replaced visual judgment with an algorithm that detects chart patterns, then compared returns after detected patterns with ordinary returns in U.S. stocks. Their findings concern their own pattern definitions. They are not tests of Dow confirmation, springs, or wave counts.",
+          "This book has not reviewed an independent study that establishes the predictive value of these three frameworks as defined here. That is a statement about the evidence considered, not a proof that they have none. The research appendix summarizes the studies that were examined. Historical influence earns a framework a place in study. Reproducible evidence determines how much confidence any particular claim deserves."
+        ],
+        "id": "from-vocabulary-to-an-honest-test"
+      }
+    ],
+    "example": {
+      "title": "Disagreement is data",
+      "text": "At the session-17 close of the Wyckoff example, one fictional reader writes “spring developing” and another writes “breakdown under way.” Under the frozen rule, both are premature: the only valid record is a 1.67% breach with the window open. Each reader should still save their label, reasons, invalidation level, and any proposed action before session 18 appears. The later close can then test those frozen interpretations. It cannot tell you what either reader knew at the time."
+    },
+    "exercise": "Using the Wyckoff table, state the record for each branch at the session-17, 18, 19, and 20 closes under the frozen spring rule. Then reclassify the spring branch under an alternative, stricter teaching rule requiring the breach session itself to close back inside the range, and explain why the two classifications differ.",
+    "solution": [
+      "Session-17 close: breach size = (30.00 − 29.50) ÷ 30.00 = 0.0167, or 1.67%, which is at least 1% (equivalently, 29.50 ≤ 29.70). A breach is recorded. The breach session’s own close of 29.80 is not above 30.00, so the window stays open through sessions 18–20 and both branches are undecided. They are identical up to this point.",
+      "Spring branch: the session-18 close of 30.60 is above 30.00 and inside the window, so a spring candidate is recorded at that close. The session-19 and session-20 closes (31.00, 31.40) do not change the record. Breakdown branch: closes of 29.40, 29.10, and 28.60 are all at or below 30.00. The record stays undecided through session 19 and becomes a breakdown at the session-20 close, when the window ends.",
+      "Alternative same-session rule: session 17 closes at 29.80, below support, so neither branch has a spring under that definition. The spring branch’s session-18 recovery would have to be recorded under some other label, such as “breach followed by a later recovery.” Every same-session spring would also be a spring under the frozen rule, so the alternative is strictly stricter; the two definitions still classify these bars differently, so the definition must be frozen before outcomes are counted. Neither version establishes accumulation or predicts the next move."
+    ],
+    "practice": [
+      {
+        "title": "Two versions of confirmation",
+        "level": "guided",
+        "question": "Fictional averages C and D have reference highs of 220 and 85. Their closes are: t0 C 218.0, D 85.0; t1 C 221.0, D 84.2; t2 C 219.5, D 85.4; t3 C 222.4, D 85.3. (a) Under this chapter’s simultaneous-close rule, when is confirmation recorded? (b) Under an alternative rule that records confirmation once each average has closed above its own reference at least once since the reference highs were set, when is it recorded? (c) What does t0 teach?",
+        "solution": [
+          "(a) t1: C 221.0 > 220 but D 84.2 is not above 85, so this is a nonconfirmation. t2: D 85.4 > 85, but C 219.5 has fallen back below 220, so the two are not above at the same close. t3: C 222.4 > 220 and D 85.3 > 85, so confirmation is recorded at t3.",
+          "(b) C first closes above at t1 and D first closes above at t2. Once both have crossed, the alternative rule records confirmation at t2, one observation earlier than the simultaneous rule.",
+          "(c) At t0, D’s 85.0 equals its reference. Under a strictly-above rule, equality does not count. The two rule versions are both defensible readings of a source that allows lag, which is why the version must be frozen before outcomes are compared."
+        ]
+      },
+      {
+        "title": "Check a new count before forecasting",
+        "level": "independent",
+        "question": "A reader labels fictional swings $20 (start), $26, $21.50, $30, $25.50, and $31 as waves 0–5 of a standard impulse, then forecasts a decline. Check all three rules, show your arithmetic, and state what the reader must record if they want to keep a bullish or bearish interpretation.",
+        "solution": [
+          "Wave lengths: wave 1 = 26 − 20 = $6; wave 3 = 30 − 21.50 = $8.50; wave 5 = 31 − 25.50 = $5.50. Rule 1: wave 2 ends at 21.50 ≥ 20, a 4.50 ÷ 6 = 75% retracement, so it passes. Rule 2: wave 3 ($8.50) is the longest, so it passes. Rule 3: wave 4 ends at 25.50, below wave 1’s $26 high, so it ends inside wave-1 territory and fails.",
+          "The labels are not a valid standard impulse, so the forecast cannot rest on “wave 5 is complete.” The reader can (1) state that no valid impulse count exists here, (2) propose a different structure, such as a diagonal, whose separate rules this chapter does not teach, or (3) change the degree or starting point. Whichever they choose, they should timestamp the new label, record that the original count failed rule 3, and state the new invalidation level, taken from the rules of whichever structure they choose, before the next swing appears. This chapter supplies those rules only for the standard impulse. The overlap is a classification fact. It is not, on its own, evidence about the next direction."
+        ]
+      },
+      {
+        "title": "Sort framework statements into layers",
+        "level": "guided",
+        "question": "Classify each statement as a descriptive convention, a causal story, or an empirical claim, and name the evidence that would check it. (a) “Both averages closed above their own reference highs at step 11.” (b) “The averages must confirm because industry and transport move together in a genuine expansion.” (c) “Springs in large U.S. stocks are followed by higher 20-session returns than breaches that do not reenter.” (d) “At step 12, count B labels $49 as the end of wave 4.”",
+        "solution": [
+          "(a) Descriptive convention. Check it by reproducing the closes against the frozen simultaneous-close rule; two readers should agree.",
+          "(b) Causal story. It needs evidence about economic linkages and participants, not just chart agreement; a reproducible confirmation record cannot establish why it happens.",
+          "(c) Empirical claim. It needs one frozen spring rule applied to every breach in a defined universe and period, a stated comparator, a fixed horizon and costs if trades are implied, with both branches kept.",
+          "(d) A descriptive label, but a provisional one. It can be checked against the three impulse rules, yet passing them does not validate the count, $49 is not yet a recognized low at step 12, and the label is not by itself a forecast. Its predictive value would be an empirical claim needing frozen, timestamped counts across many charts."
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "Average A closes at 112 and average B at 104; both started at 100. Their reference highs are 110 and 106. Under this chapter’s closing-price rule, what should be recorded at this close?",
+      "options": [
+        "Unconfirmed: A is above its own reference high, but B’s close is not above 106.",
+        "Confirmed: both averages are above their common starting value of 100.",
+        "Confirmed, provided B traded as high as 106.50 during the session."
+      ],
+      "answer": 0,
+      "explanation": "Each average is compared with its own reference high, using completed closes. B has not closed above 106, so the record at this close is a nonconfirmation. A later close can change it.",
+      "feedback": [
+        "Correct: 112 > 110, but 104 is not above 106. Record a nonconfirmation at this close, and keep watching for a later close.",
+        "This uses the wrong comparator. Confirmation compares each average with its own prior reference high, not with the starting value; percentage gains from 100 do not decide it.",
+        "This uses the wrong price field. The convention described here counts closing prices only, so an intraday high above 106 does not confirm."
+      ]
+    },
+    "sources": [
+      "ra-dow",
+      "ra-dow-reference",
+      "ra-wyckoff",
+      "ra-elliott",
+      "ra-elliott-rules",
+      "ra-elliott-constraints",
+      "ra-pattern-research",
+      "ra-wyckoff-text"
+    ],
+    "related": [
+      "trends",
+      "support-resistance",
+      "chart-patterns",
+      "breakouts",
+      "testing",
+      "case-studies"
+    ],
+    "figure": {
+      "title": "An idealized wave template",
+      "caption": "Invented Elliott-style schematic; the initial state is step 0. Labels 1–5 and A–C mark the swing endpoints of count A: wave 2 ends at 42, above the 40 start; wave 4 ends at 47, above the wave-1 high of 44; impulse lengths are 4, 8, and 6, so wave 3 is not the shortest. Intermediate points are straight-line fillers, not lower-degree waves. The rule-check table shows that a different count of the same swings also passes.",
+      "afterSection": 3,
+      "xLabel": "Schematic step, starting at 0",
+      "yLabel": "Fictional price ($)",
+      "series": [
+        {
+          "name": "Schematic price",
+          "values": [
+            40,
+            42,
+            44,
+            43,
+            42,
+            46,
+            50,
+            48.5,
+            47,
+            50,
+            53,
+            51,
+            49,
+            50,
+            51,
+            48.5,
+            46
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "index": 2,
+          "label": "1",
+          "seriesIndex": 0,
+          "shortLabel": "1",
+          "placement": "above"
+        },
+        {
+          "index": 4,
+          "label": "2",
+          "seriesIndex": 0,
+          "shortLabel": "2",
+          "placement": "below"
+        },
+        {
+          "index": 6,
+          "label": "3",
+          "seriesIndex": 0,
+          "shortLabel": "3",
+          "placement": "above"
+        },
+        {
+          "index": 8,
+          "label": "4",
+          "seriesIndex": 0,
+          "shortLabel": "4",
+          "placement": "below"
+        },
+        {
+          "index": 10,
+          "label": "5",
+          "seriesIndex": 0,
+          "shortLabel": "5",
+          "placement": "above"
+        },
+        {
+          "index": 12,
+          "label": "A",
+          "seriesIndex": 0,
+          "shortLabel": "A",
+          "placement": "below"
+        },
+        {
+          "index": 14,
+          "label": "B",
+          "seriesIndex": 0,
+          "shortLabel": "B",
+          "placement": "above"
+        },
+        {
+          "index": 16,
+          "label": "C",
+          "seriesIndex": 0,
+          "shortLabel": "C",
+          "placement": "below"
+        }
+      ],
+      "xStart": 0
+    },
+    "figures": [
+      {
+        "kind": "panels",
+        "title": "Dow confirmation: each average against its own reference high",
+        "caption": "Fictional averages indexed to 100 at step 0. Each reference line starts at the step-3 close that becomes that average’s reference high. A first closes above 110 at step 8, while B stays below 106 (a nonconfirmation). B closes above 106 at step 11, while A is still above 110, so confirmation is recorded at that close.",
+        "afterSection": 1,
+        "panels": [
+          {
+            "title": "Average A and its 110 reference",
+            "xLabel": "Observation step, starting at 0",
+            "yLabel": "Index level (start = 100)",
+            "xStart": 0,
+            "series": [
+              {
+                "name": "Average A close",
+                "values": [
+                  100,
+                  104,
+                  108,
+                  110,
+                  106,
+                  103,
+                  106,
+                  109,
+                  112,
+                  111,
+                  112,
+                  113,
+                  114,
+                  113
+                ]
+              },
+              {
+                "name": "A reference high (110)",
+                "values": [
+                  null,
+                  null,
+                  null,
+                  110,
+                  110,
+                  110,
+                  110,
+                  110,
+                  110,
+                  110,
+                  110,
+                  110,
+                  110,
+                  110
+                ]
+              }
+            ],
+            "annotations": [
+              {
+                "index": 3,
+                "seriesIndex": 1,
+                "label": "Reference high 110 (step-3 close)",
+                "shortLabel": "Ref. 110",
+                "placement": "above"
+              },
+              {
+                "index": 8,
+                "seriesIndex": 0,
+                "label": "Step 8: 112, above 110",
+                "shortLabel": "8: 112 > 110",
+                "placement": "above"
+              },
+              {
+                "index": 11,
+                "seriesIndex": 0,
+                "label": "Step 11: 113, still above",
+                "shortLabel": "11: 113",
+                "placement": "below"
+              }
+            ]
+          },
+          {
+            "title": "Average B and its 106 reference",
+            "xLabel": "Observation step, starting at 0",
+            "yLabel": "Index level (start = 100)",
+            "xStart": 0,
+            "series": [
+              {
+                "name": "Average B close",
+                "values": [
+                  100,
+                  102,
+                  104,
+                  106,
+                  103,
+                  100,
+                  101,
+                  103,
+                  104,
+                  103,
+                  105,
+                  107,
+                  106.6,
+                  107.2
+                ]
+              },
+              {
+                "name": "B reference high (106)",
+                "values": [
+                  null,
+                  null,
+                  null,
+                  106,
+                  106,
+                  106,
+                  106,
+                  106,
+                  106,
+                  106,
+                  106,
+                  106,
+                  106,
+                  106
+                ]
+              }
+            ],
+            "annotations": [
+              {
+                "index": 3,
+                "seriesIndex": 1,
+                "label": "Reference high 106 (step-3 close)",
+                "shortLabel": "Ref. 106",
+                "placement": "above"
+              },
+              {
+                "index": 8,
+                "seriesIndex": 0,
+                "label": "Step 8: 104, not above 106",
+                "shortLabel": "8: 104 < 106",
+                "placement": "above"
+              },
+              {
+                "index": 11,
+                "seriesIndex": 0,
+                "label": "Step 11: 107 confirms",
+                "shortLabel": "11: 107",
+                "placement": "above"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A trading range with a spring branch and a breakdown branch",
+        "caption": "Fictional daily closes. Shaded zones show where the session-1–16 reaction lows ($30.00–$30.40) and highs ($33.60–$34.00) occurred. The frozen rule uses $30.00 support. Session 17 breaches it with a $29.50 low (marked). The close line does not show highs or lows, so the session-1–16 reaction extremes behind the zones are listed in the chapter’s table. The spring branch closes back above $30.00 at session 18; the breakdown branch never does within sessions 18–20 and closes at $28.60 at session 20.",
+        "afterSection": 2,
+        "xLabel": "Fictional session",
+        "yLabel": "Price ($)",
+        "xStart": 1,
+        "zones": [
+          {
+            "low": 33.6,
+            "high": 34,
+            "label": "Resistance zone",
+            "from": 0,
+            "to": 19
+          },
+          {
+            "low": 30,
+            "high": 30.4,
+            "label": "Support zone",
+            "from": 0,
+            "to": 19
+          }
+        ],
+        "series": [
+          {
+            "name": "Spring branch close",
+            "values": [
+              31.6,
+              33.5,
+              32.4,
+              30.6,
+              31.5,
+              32.8,
+              33.4,
+              32,
+              30.7,
+              31.6,
+              32.9,
+              33.2,
+              32.1,
+              30.9,
+              31.8,
+              31,
+              29.8,
+              30.6,
+              31,
+              31.4
+            ]
+          },
+          {
+            "name": "Breakdown branch close",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              29.8,
+              29.4,
+              29.1,
+              28.6
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "index": 16,
+            "seriesIndex": 0,
+            "value": 29.5,
+            "label": "Session 17 low $29.50, a 1.67% breach",
+            "shortLabel": "17: low 29.50",
+            "placement": "below"
+          },
+          {
+            "index": 17,
+            "seriesIndex": 0,
+            "label": "Session 18 close $30.60: reentry",
+            "shortLabel": "18: 30.60",
+            "placement": "below"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "Dow confirmation compares each average’s close with its own prior reference extreme, and confirmation may lag.",
+        "type": "definition",
+        "sourceIds": [
+          "ra-dow-reference"
+        ],
+        "location": "CMT Association, Technically Speaking, October 2011, “Dow Theory”: principles 5 and 6 and the elaboration on confirmation timing and non-confirmations.",
+        "summary": "Re-read on 2026-10-01: both averages must rise above their respective highs of previous upward secondary reactions; only closing prices are considered; confirmation need not occur on the same day or month; non-confirmations function only as warnings. The A/B values and the simultaneous-close rule are this chapter’s own.",
+        "limits": "Proponent description. The two-high exercise does not implement the full secondary-reaction classification or establish that confirmation predicts returns.",
+        "checked": "2026-10-01",
+        "id": "classical-frameworks-dow-confirmation-compares-each-average-s-close-with-its-own-prior-reference-extreme-and-confirmation"
+      },
+      {
+        "claim": "A Wyckoff spring is a move below the trading-range low followed by a reversal back inside; springs are not required elements.",
+        "type": "definition",
+        "sourceIds": [
+          "ra-wyckoff-text"
+        ],
+        "location": "Author-hosted tutorial PDF, Composite Man / laws sections, printed pp. 2–4; Accumulation Events and Phase C, pp. 7–9",
+        "summary": "Read the author-hosted PDF because the HTML page blocked retrieval. It describes a breach followed by a reversal/close in the range and optional springs, without specifying a one-session deadline. Same-session and three-session limits are explicitly alternative teaching choices.",
+        "limits": "Proponent description. The 1% breach and three-session reentry window are the chapter’s own research settings. Statements about large interests and readiness to rise are interpretations, not tested here.",
+        "checked": "2026-10-01",
+        "id": "classical-frameworks-a-wyckoff-spring-is-a-move-below-the-trading-range-low-followed-by-a-reversal-back-inside-springs-ar"
+      },
+      {
+        "claim": "A standard Elliott impulse is governed by three rules, distinct from guidelines such as alternation and truncation.",
+        "type": "definition",
+        "sourceIds": [
+          "ra-elliott-constraints",
+          "ra-elliott-rules"
+        ],
+        "location": "EWI, “Elevate Your Elliott Wave Analysis” (statement of the three rules and the rule/guideline distinction); EWI Waveopedia “Impulse” (wave-4 overlap wording; rules versus guidelines).",
+        "summary": "Read the rules as worded: wave 2 never retraces more than 100% of wave 1; wave 3 is never the shortest of waves 1, 3 and 5; wave 4 never ends in wave-1 price territory (the Impulse page says it does not enter or overlap it). Checked that truncation is listed among guidelines.",
+        "limits": "Classification rules within the method. Passing them is not evidence of forecast accuracy or net profit. Diagonal rules were not reviewed.",
+        "checked": "2026-10-01",
+        "id": "classical-frameworks-a-standard-elliott-impulse-is-governed-by-three-rules-distinct-from-guidelines-such-as-alternation-a"
+      },
+      {
+        "claim": "Elliott practitioners expect more than one valid count to exist at a time.",
+        "type": "definition",
+        "sourceIds": [
+          "ra-elliott"
+        ],
+        "location": "EWI, Introduction to the Wave Principle: passages on five/three structure, degree, and preferred versus alternate interpretations.",
+        "summary": "Read that two or more valid wave interpretations usually exist and are ranked as preferred or alternate by guidelines. The page also describes the principle as an objective means of determining probabilities; that is reported as a proponent claim and not evaluated.",
+        "limits": "Proponent source; no independent test of count agreement or forecast accuracy was reviewed for this chapter.",
+        "checked": "2026-10-01",
+        "id": "classical-frameworks-elliott-practitioners-expect-more-than-one-valid-count-to-exist-at-a-time"
+      },
+      {
+        "claim": "The Dow, Wyckoff, and Elliott worked numbers are internally consistent.",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Dow table and panels; spring table and figure; Elliott rule-check table, schematic, exercise and practice solutions.",
+        "summary": "Recomputed with a script: first A crossing at step 8 and first simultaneous crossing at step 11; breach 0.5 ÷ 30 = 1.67% and threshold $29.70; reentry at session 18 and breakdown at session 20; wave lengths 4/8/6, 4/11/2, and 8/6/2 with each rule comparison; practice values (t3 and t2 confirmations; 6/8.5/5.5 lengths, 75% retracement, 25.50 < 26 overlap).",
+        "limits": "Arithmetic on invented data only.",
+        "checked": "2026-10-01",
+        "id": "classical-frameworks-the-dow-wyckoff-and-elliott-worked-numbers-are-internally-consistent"
+      },
+      {
+        "claim": "The simultaneous-close confirmation rule and the 1%/three-session spring rule are original teaching specifications.",
+        "type": "teaching-rule",
+        "sourceIds": [],
+        "location": "Dow and Wyckoff sections.",
+        "summary": "Stated before each worked chronology so that two readers classify the same bars identically; the alternative readings (lagged confirmation, same-session reentry) are shown rather than hidden.",
+        "limits": "Arbitrary thresholds; not canonical versions of either framework and not optimized or tested.",
+        "checked": "2026-10-01",
+        "id": "classical-frameworks-the-simultaneous-close-confirmation-rule-and-the-1-three-session-spring-rule-are-original-teaching-s"
+      },
+      {
+        "claim": "Independent evidence for the predictive value of these three frameworks, as defined here, has not been established in this book.",
+        "type": "unresolved",
+        "sourceIds": [],
+        "location": "Final section, “From vocabulary to an honest test.”",
+        "summary": "No independent study testing Dow confirmation, the spring rule, or Elliott counts was reviewed for this revision. Lo, Mamaysky and Wang is cited only as an example of algorithmic pattern definition, with its own pattern set.",
+        "limits": "Absence of reviewed evidence is not evidence of no effect. A literature search for framework-specific tests remains open.",
+        "checked": "2026-10-01",
+        "id": "classical-frameworks-independent-evidence-for-the-predictive-value-of-these-three-frameworks-as-defined-here-has-not-been"
+      }
+    ]
+  },
+  "sources": {
+    "ra-dow": {
+      "title": "CMT Association · Technically Speaking, September 2016",
+      "url": "https://cmtassociation.org/technically_speaking/technically-speaking-september-2016/",
+      "supports": "Practitioner account of Dow trends and confirmation using industrial and railroad averages. Cited for description, not independent proof of returns.",
+      "accessed": "2026-10-01"
+    },
+    "ra-dow-reference": {
+      "title": "CMT Association · Technically Speaking, October 2011: Dow Theory",
+      "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+      "supports": "Practitioner definitions of confirmation against each average’s prior secondary-reaction extremes, completed closes, and potentially lagged confirmation; not independent efficacy evidence.",
+      "accessed": "2026-10-01"
+    },
+    "ra-wyckoff": {
+      "title": "Wyckoff Analytics · Wyckoff Method",
+      "url": "https://www.wyckoffanalytics.com/wyckoff-method/",
+      "supports": "Proponent description of phases, traditional laws, springs, and Composite Man heuristic. Cited for terminology; interpretations of institutional intent are not treated as observed fact.",
+      "accessed": "2026-10-01"
+    },
+    "ra-elliott": {
+      "title": "Elliott Wave International · Introduction to the Wave Principle",
+      "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+      "supports": "Proponent account of nested five/three-wave structures and alternate counts. Cited for description, not independent validation of forecasting claims.",
+      "accessed": "2026-10-01"
+    },
+    "ra-elliott-rules": {
+      "title": "Elliott Wave International · Impulse",
+      "url": "https://www.elliottwave.com/waveopedia/impulse/",
+      "supports": "Standard-impulse counting constraints; other wave structures require different rules. The textbook schematic omits lower-degree subdivisions.",
+      "accessed": "2026-10-01"
+    },
+    "ra-elliott-constraints": {
+      "title": "Elliott Wave International · Elevate Your Elliott Wave Analysis",
+      "url": "https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/",
+      "supports": "Proponent description of the three standard impulse rules, distinguished from guidelines. Classification compatibility does not establish forecast probabilities.",
+      "accessed": "2026-10-01"
+    },
+    "ra-pattern-research": {
+      "title": "Lo, Mamaysky & Wang · Foundations of Technical Analysis (2000 working paper)",
+      "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+      "supports": "Algorithmic technical-pattern recognition and conditional return-distribution research using historical U.S. stocks. Does not validate all chart methods or net profitability of textbook examples.",
+      "accessed": "2026-10-01"
+    },
+    "ra-wyckoff-text": {
+      "title": "Wyckoff Analytics · Wyckoff Method (author-hosted tutorial PDF)",
+      "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+      "supports": "Proponent spring, range and Composite Man definitions, three laws, optional springs and Phase C interpretations; not independent efficacy evidence.",
+      "accessed": "2026-10-01"
+    }
+  }
+}

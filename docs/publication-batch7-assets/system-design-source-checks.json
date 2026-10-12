@@ -1,0 +1,113 @@
+{
+  "checked": "2026-10-12",
+  "reviewer": "reviewer agent for claude-code-pub7",
+  "method": "Retrieved each URL with curl -sL -A 'Mozilla/5.0' into an isolated temporary directory (Investor.gov HTML stripped of tags; Bailey PDF converted with pdftotext -layout). Located the exact passage for each chapter claim and evidence-record statement in sections[3].paragraphs[0-2], sections[10].paragraphs[1] and the chapter evidence records. Printed page numbers are cited for the PDF. No WebFetch summarisation was relied on. Rechecked the revised sections[3].paragraphs[2] on 2026-10-12 against the same retrieved passage.",
+  "checks": [
+    {
+      "id": "ra-orders",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "locator": "Page title 'Understanding Order Types – Investor Bulletin'; MARKET, LIMIT and STOP ORDERS > Limit Order",
+      "claim": "sections[3].paragraphs[0]: a buy limit executes only at its limit or lower",
+      "disposition": "supported",
+      "passage": "A buy limit order can only be executed at the limit price or lower, and a sell limit order can only be executed at the limit price or higher."
+    },
+    {
+      "id": "ra-orders",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "locator": "Limit Order paragraph",
+      "claim": "sections[3].paragraphs[0]: a buy limit is not guaranteed to execute",
+      "disposition": "supported",
+      "passage": "A limit order is not guaranteed to execute. A limit order can only be filled if the stock's market price reaches the limit price."
+    },
+    {
+      "id": "ra-orders",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "locator": "Timing restrictions list > 'Day' (the heading is 'Day', not 'Day Orders' as the evidence-record locator says)",
+      "claim": "sections[3].paragraphs[0]: a day order generally cancels at the end of the regular session",
+      "disposition": "supported",
+      "passage": "Day orders, if not executed, generally cancel at the end of regular trading hours of the trading day that they are entered and will not carry over to the extended hours session or the next trading day."
+    },
+    {
+      "id": "ra-orders",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "locator": "Stop, Stop-Limit, and Trailing Stop Orders > Stop Order",
+      "claim": "sections[3].paragraphs[1]: a stop becomes a market order once its price is reached",
+      "disposition": "supported",
+      "passage": "When the stop price is reached, a stop order becomes a market order."
+    },
+    {
+      "id": "ra-orders",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "locator": "Stop Order > 'Before using a stop order, investors should consider the following'",
+      "claim": "sections[3].paragraphs[1] and evidence record: a triggered stop can execute well away from the stop price",
+      "disposition": "supported",
+      "passage": "The stop price is not the guaranteed execution price for a stop order. ... The execution price an investor receives for this market order can deviate significantly from the stop price due to the demand for a stock and the prices of available liquidity."
+    },
+    {
+      "id": "ra-orders",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "locator": "Limit Order paragraph",
+      "claim": "sections[3].paragraphs[0]: touch-is-not-a-fill, 1% participation cap and exact-stop fills are Atlas-20 conventions",
+      "disposition": "not stated",
+      "passage": "The bulletin gives no fill-quantity or touch rule. The chapter correctly labels these as conventions, and the evidence record's limits field says so. Not a source-support defect."
+    },
+    {
+      "id": "ra-halts",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+      "locator": "Glossary entry 'Trading Halts and Delays', paragraph 1",
+      "claim": "sections[3].paragraphs[2]: the most common regulatory halt occurs when news is pending",
+      "disposition": "supported",
+      "passage": "The most common regulatory halt and delay happens when a company has pending news that may affect the security's price (a \"news pending\" halt or delay)."
+    },
+    {
+      "id": "ra-halts",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+      "locator": "Glossary entry, final paragraph",
+      "claim": "sections[3].paragraphs[2]: who decides a halt. Pre-revision: 'the security's primary exchange decides whether to impose it'. Revised 2026-10-12: 'the most common regulatory halt occurs when news is pending, and securities exchanges, not the SEC, decide whether to impose it; other U.S. markets honor a halt imposed by the security’s primary market.'",
+      "disposition": "supported",
+      "passage": "When a regulatory halt or delay is imposed by a security's primary market, the other U.S. markets that also trade the security honor this halt. Securities exchanges, not the SEC, determine whether to impose a trading halt or delay in a stock. The source says that exchanges (not the SEC) decide and that other markets honor a halt imposed by the primary market. It does not say that only the primary exchange decides. The evidence record's own summary ('exchanges, not the SEC, decide') is accurate; the prose narrows it. Rechecked 2026-10-12 after the revision: the revised wording matches both passages.",
+      "initialDisposition": "partial (pre-revision wording)"
+    },
+    {
+      "id": "ra-halts",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+      "locator": "Glossary entry, whole",
+      "claim": "Evidence record limits: the entry does not describe reopening prices; the stale-mark and gap-on-resumption rules are Atlas-20 conventions",
+      "disposition": "supported",
+      "passage": "The entry contains no reopening-price or valuation guidance, so the chapter's labelling of its halt accounting as convention is accurate."
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "Section 1 Introduction, printed p. 4",
+      "claim": "sections[10].paragraphs[1]: the chance of a false discovery rises with the number of configurations tried on the same data",
+      "disposition": "supported",
+      "passage": "The probability of finding false positives increases with the number of tests conducted on the same data (Miller [25]). Also printed pp. 3-4: '...we are applying the test on the same data multiple times (indeed, billions of times), making the emergence of false positives almost certain.'"
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "Section 1 Introduction, printed p. 4",
+      "claim": "sections[10].paragraphs[1]: published backtests rarely report how many trials were run",
+      "disposition": "supported",
+      "passage": "Backtests published in academic or practitioners' publications almost never declare the number of trials involved in a discovery."
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "Abstract (printed p. 2); Introduction (printed p. 4)",
+      "claim": "Evidence record summary: the PBO framework and CSCV are proposed; calibrated parameters can fit past noise",
+      "disposition": "supported",
+      "passage": "Abstract: 'We propose a general framework to assess the probability of backtest overfitting (PBO) ... which implementations we call combinatorially symmetric cross-validation (CSCV).' p. 4: 'parameters are chosen to profit from past noise rather than future signal.'"
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "Abstract (printed p. 2); Section 2 discussion of hold-out, 'Fifth' (printed p. 7); Section on number of trials (printed p. 22)",
+      "claim": "sections[10].paragraphs[1]: immediately after 'Bailey and coauthors explain why this matters', the chapter advises to 'evaluate on data not used to choose the change'",
+      "disposition": "partial",
+      "passage": "The paper qualifies hold-out evaluation. Abstract: 'Standard statistical techniques designed to prevent regression overfitting, such as hold-out, tend to be unreliable and inaccurate in the context of investment backtests.' p. 7: 'The hold-out method does not take into account the number of trials attempted before selecting a particular strategy configuration, and consequently hold-out cannot correctly assess a backtest's representativeness.' The advice is the book's own and reasonable, but as placed it can read as Bailey's recommendation."
+    }
+  ],
+  "boundaries": "13 checks over 3 URLs (3 source entries). All three retrievals succeeded on 2026-10-12. The Bailey PDF is the February 2015 revised version hosted by the first author; journal pagination was not checked. Section 11's reference to 'supportive momentum evidence and adverse rule-selection evidence' points to the internal research appendix (research-context.json sections 'supportive-stock-evidence-cross-sectional-momentum', 'supportive-evidence-with-a-different-market-time-series-momentum' and 'adverse-evidence-rule-selection-and-trading-costs'). Those sections exist; their own sources belong to other reviews and were not re-fetched here. The arithmetic, teaching-rule and figure evidence records have no external source; they are covered by system-design-reproduce.py. No rights or reuse review was performed (ROAD-003)."
+}

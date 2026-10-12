@@ -139,23 +139,11 @@ window.ATLAS = {
     ].map(([id, title, outline]) => ({ id, title, subtitle: outline, status: 'planned', tags: outline.toLowerCase().split(/[;,]/), outline }))
   ],
   glossary: [
-    ['Backtest', 'A simulation of a defined rule using historical data. Its result depends on the data, timing, costs, and execution assumptions.', 'testing'],
     ['Breakout', 'A move beyond a previously defined price area. A useful rule specifies what counts as crossing it.', 'support-resistance'],
     ['Candlestick', 'A chart mark summarizing open, high, low, and close for one interval.', 'chart-anatomy'],
     ['Close', 'The final recorded price for the chosen interval and session convention.', 'chart-anatomy'],
-    ['Drawdown', 'A decline from a prior peak in the value of an account or strategy.', 'risk-sizing'],
-    ['EMA', 'Exponential moving average: an average that assigns greater weight to recent observations.', 'moving-averages'],
-    ['Gap', 'A discontinuity between price intervals, such as an opening price beyond the prior session’s range.', 'risk-sizing'],
-    ['Liquidity', 'The ability to transact with limited cost and price impact; volume alone is not a complete measure.', 'volume'],
-    ['Look-ahead bias', 'Using information in a historical decision before that information would have been available.', 'testing'],
-    ['OHLC', 'Open, high, low, and close: four prices that summarize an interval.', 'chart-anatomy'],
-    ['Overfitting', 'Adapting a rule to historical noise so closely that its apparent success may not generalize.', 'testing'],
-    ['Resistance', 'An area where previous advances have encountered enough supply to interrupt them.', 'support-resistance'],
     ['Risk budget', 'An amount selected for a planned loss calculation. Actual losses can exceed it.', 'risk-sizing'],
-    ['SMA', 'Simple moving average: the arithmetic mean of a fixed number of recent observations.', 'moving-averages'],
     ['Stop order', 'An order triggered at a specified price; a stop-market order does not guarantee that execution price.', 'risk-sizing'],
-    ['Support', 'An area where previous declines have encountered enough demand to interrupt them.', 'support-resistance'],
-    ['Survivorship bias', 'Distortion caused by leaving failed, delisted, or otherwise missing securities out of historical study.', 'testing'],
     ['Timeframe', 'The time interval represented by each chart bar or candle.', 'chart-anatomy'],
     ['Trend', 'A description of the direction of price structure over a chosen timeframe.', 'trends'],
     ['Volume', 'The number of shares traded over a specified interval.', 'volume']

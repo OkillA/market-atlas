@@ -1,0 +1,994 @@
+{
+  "chapter": {
+    "id": "testing",
+    "title": "Evidence before conviction",
+    "subtitle": "Turn a chart story into a test that could disappoint you.",
+    "minutes": 14,
+    "status": "draft",
+    "tags": [
+      "backtest",
+      "look-ahead",
+      "survivorship",
+      "overfitting",
+      "validation",
+      "walk-forward",
+      "transaction costs",
+      "break-even cost"
+    ],
+    "takeaway": "A historical simulation measures a rule under assumptions. Honest evaluation fixes the rule, the information clock, and the cost models before the evidence arrives, then reports how the conclusion changes with them.",
+    "optional": false,
+    "prerequisites": [
+      "breakouts",
+      "market-microstructure",
+      "risk-sizing",
+      "trade-plans",
+      "journaling"
+    ],
+    "outcomes": [
+      "Place each research activity on a timeline and state which information it is allowed to use.",
+      "Detect a look-ahead error by comparing a feasible implementation with one that uses later information.",
+      "Process a small trade ledger under declared cost models, from gross to net in dollars and R.",
+      "Calculate a break-even cost per round trip and per share, and explain how a conclusion depends on it.",
+      "Explain why survivorship, unlogged variants, and a reused held-out window weaken evidence."
+    ],
+    "sections": [
+      {
+        "title": "Start with a reproducible question",
+        "paragraphs": [
+          "A backtest is a historical simulation of a decision rule, portfolio process, and execution model. “Buy strong stocks” leaves too many choices unresolved. A reproducible specification names the universe, data availability, signal, execution timing, sizing, exits, costs, and treatment of missing or exceptional events. Another reader should be able to implement it without guessing which charts you considered attractive.",
+          "Maya’s research question is narrow: when a completed daily close is strictly above the highest high of the prior twenty completed sessions, what happens under a specified next-session entry and exit? Version v1-b of her specification reads as follows. Universe: a point-in-time list of liquid U.S. common stocks, recorded as of each date. Signal: the regular-session close of day t is strictly above the highest high of days t−20 through t−1; the signal day’s own high is excluded. Entry: the next session’s opening price, only if it is no more than 1% above the signal close, rounded down to the cent; otherwise the candidate is a recorded skip. Stop: the lowest low of the ten completed sessions before entry. If the eligible open is at or below that stop, record a skip rather than size a zero or negative distance. Size: shares = floor($100 ÷ (entry − stop)), so 1R, the frozen planned price risk, is about $100 per trade. Because the quantity uses the opening price itself, this is a signal-study simplification: a live order must fix its quantity before the open, for example by sizing from the entry ceiling, and its filled 1R would then fall below $100 whenever the open is lower (Chapter 20). Exits: a target two planned per-share stop distances above entry, the stop, or the close of holding session 10, counting the entry session as session 1, whichever comes first. An opening gap through the stop exits at that open, and a daily bar that contains both stop and target counts as a stop; this applies on the entry day too. For an entry at session E1, the scheduled time exit is therefore the E10 close, not E11. If a halt prevents that exit, keep the holding and stale mark visible; on the first tradable bar after the overdue deadline, apply any opening stop/target gap first, otherwise model the overdue time exit at that opening price. An overdue time exit does not wait for another ten-session period. Costs are reported separately under three declared models introduced later.",
+          "Two features of this specification deserve attention. First, it is a signal study: every qualifying signal is evaluated with its own $100 budget, as though capital and position slots were unlimited. That keeps the arithmetic transparent, but it is not a portfolio simulation; Chapter 26 adds slots, cash, and simultaneous candidates. Second, every price, trade, and result in this chapter is invented for teaching so that you can reproduce each step. None of it estimates how a real breakout rule performs."
+        ],
+        "id": "start-with-a-reproducible-question"
+      },
+      {
+        "title": "Put the research on a timeline",
+        "paragraphs": [
+          "The most important protection in research is chronological: decide what you will do before you see the evidence that will judge it. The timeline figure lays out Maya’s sequence, and each stage carries a rule about which information it may use. The stages are easy to list and easy to violate, because violations rarely feel like cheating. Glancing at recent charts “just to check that the code works” is enough to let later information shape an earlier choice.",
+          "Stage one freezes the written question before any result exists: the v1 specification, the data definitions, the three cost models, the list of variants to explore, the rule that will choose among them, the dates of the development and evaluation windows, and the decision criteria: what held-out result would justify a paper forward study, and what result would end the idea. Stage two runs the listed variants on the earlier development window and logs every one, including the unattractive ones. Stage three applies the declared lock rule, saves the code and data snapshot, and records how many variants were tried. Only then does stage four run the locked rule, once, on the later held-out window, and record the result under every declared cost model.",
+          "Walk-forward evaluation repeats stages two to four through time. Develop on, say, the first five years, lock, and evaluate year six; then develop on years one to six, lock again, and evaluate year seven. Each evaluation window is opened only after the rule applied to it has been locked. Stage five, a paper forward study, applies the locked rule to sessions that have not yet happened, with each decision timestamped before its outcome and every fill labeled as simulated. Stage six compares the results with criteria written at stage one. Any change after that point creates a new version, v2, whose development data now include the old held-out window. Evaluating v2 needs a fresh window or more forward observation."
+        ],
+        "id": "put-the-research-on-a-timeline"
+      },
+      {
+        "title": "Use only information that existed then",
+        "paragraphs": [
+          "Look-ahead bias occurs when a simulated decision uses information unavailable at its timestamp. Buying at an earlier price because later bars confirm a swing high is an obvious example. Less obvious forms include using revised data, today’s index constituents throughout history, or a completed daily close to justify an assumed earlier intraday fill.",
+          "Look-ahead is easiest to recognize on data. In the look-ahead table, the highest high of the twenty sessions before day S is $50.00. On day S the stock opens at $49.80, trades up to $50.90, and closes at $50.40. The close is strictly above $50.00, so v1-b signals, but only once the close is final. Day S+1 opens at $50.70, inside the $50.90 entry ceiling (1% above $50.40 is $50.904, rounded down). To isolate the effect of the entry assumption alone, give every implementation 50 shares and measure each to the same S+2 close of $51.50.",
+          "Implementation A is feasible: each input existed before it was used, and the gross result is 50 × ($51.50 − $50.70) = $40. Implementation B fills at the $50.40 signal close and reports $55. That close was a real traded price, but the signal did not exist until it printed; trading there requires a declared closing-auction model with its own order deadline, as Chapter 19 described, rather than a default assumption. Implementation C buys at the $49.80 open of day S because the day later closed above the channel. It reports $85, more than double the feasible result, by using the close to justify an earlier trade. Implementation D makes a different mistake. Its window includes day S, so the channel becomes that day’s own $50.90 high, and a close can never be strictly above the high of its own bar. The signal silently disappears. That is not look-ahead, but it changes the opportunity set, which is why the window boundaries belong in the written rule.",
+          "The sizes matter. Implementation B overstates this trade by $15 and C by $45. In the held-out study later in this chapter, the feasible rule earns only about $7.60 gross per trade, so a timing error worth $15 per trade would be roughly twice the effect being measured. Other forms of look-ahead are harder to see: a liquidity filter computed from the full sample, a sector classification known only today, or a stop placed at a low that was identified later. Delisting, suspension, and corporate-action handling must also be documented; silently dropping difficult records can change both signals and results."
+        ],
+        "tables": [
+          {
+            "title": "One stock around a signal day (fictional OHLC)",
+            "columns": [
+              "Day",
+              "Open ($)",
+              "High ($)",
+              "Low ($)",
+              "Close ($)",
+              "Known at that close"
+            ],
+            "rows": [
+              [
+                "S−1",
+                "49.60",
+                "49.95",
+                "49.30",
+                "49.70",
+                "Close below the $50.00 prior-20 high: no signal"
+              ],
+              [
+                "S",
+                "49.80",
+                "50.90",
+                "49.70",
+                "50.40",
+                "Close above $50.00: signal; entry ceiling $50.90"
+              ],
+              [
+                "S+1",
+                "50.70",
+                "51.40",
+                "50.30",
+                "51.10",
+                "Open $50.70 ≤ $50.90: feasible entry at the open"
+              ],
+              [
+                "S+2",
+                "51.00",
+                "51.80",
+                "50.90",
+                "51.50",
+                "Common comparison exit for the table below"
+              ]
+            ]
+          },
+          {
+            "title": "Four implementations of the same sentence (50 shares, exit at S+2 close)",
+            "columns": [
+              "Implementation",
+              "Channel used ($)",
+              "Signal at S close?",
+              "Modeled entry ($)",
+              "Gross to $51.50 ($)",
+              "Information problem"
+            ],
+            "rows": [
+              [
+                "A. Prior 20 completed days; next open",
+                "50.00",
+                "Yes",
+                "50.70 (S+1 open)",
+                "+40.00",
+                "None: each input existed before it was used"
+              ],
+              [
+                "B. Fill at the signal close",
+                "50.00",
+                "Yes",
+                "50.40 (S close)",
+                "+55.00",
+                "Trades at the price that created the signal; needs a declared auction model"
+              ],
+              [
+                "C. Buy at the signal day’s open",
+                "50.00",
+                "Yes",
+                "49.80 (S open)",
+                "+85.00",
+                "Look-ahead: uses the S close to justify an earlier trade"
+              ],
+              [
+                "D. Window includes day S",
+                "50.90",
+                "No: 50.40 < 50.90",
+                "None",
+                "No trade",
+                "Off-by-one definition that deletes the signal"
+              ]
+            ]
+          }
+        ],
+        "id": "use-only-information-that-existed-then"
+      },
+      {
+        "title": "Preserve the original opportunity set",
+        "paragraphs": [
+          "Survivorship bias arises when the available sample excludes securities or strategies that disappeared. Studying only companies trading today can remove failed or acquired companies from a historical stock universe. Defining a past portfolio with a current list then gives the simulation information the historical researcher would not have had.",
+          "A small example shows the size of the effect. Suppose ten stocks were in a universe at the start of a period. Eight still trade at the end and returned an average of +12%. Two were delisted after falling 70% on average. The equal-weighted average of all ten is (8 × 12% + 2 × (−70%)) ÷ 10 = (96% − 140%) ÷ 10 = −4.4%. A study that starts from today’s list sees only the eight survivors and reports +12%. Nothing in the survivors’ own charts reveals the missing two.",
+          "Use point-in-time membership records where the research question requires them. Save the rules for inclusion, exclusions, unavailable data, and final liquidation. Separately audit split adjustments, cash distributions, ticker changes, and whether a series represents price or total return. A split can create a false signal in an untreated price series. A total-return benchmark compared with price-only strategy returns can also distort the comparison. These are data-engineering questions, but they determine what the financial claim actually means."
+        ],
+        "id": "preserve-the-original-opportunity-set"
+      },
+      {
+        "title": "Do not hide the search behind the winner",
+        "paragraphs": [
+          "Overfitting selects features of historical accidents as though they were durable relationships. If Maya tries fifty lookbacks, eight exits, and six filters, then reports only the best combination, she has conducted a large search. The winning result carries information about that selection process as well as about the rule. The original research by Bailey and coauthors addresses the problem of backtest selection and proposes a framework for evaluating overfitting risk.",
+          "Maya’s stage-one list was deliberately small: three lookbacks (10, 20, and 55 sessions) crossed with two exit styles, six variants in all. Her lock rule, written before any run, was to choose the highest development average net R under cost model B among variants with at least 30 development trades. The variant log shows the result. The 55-session target version had the most impressive average, +0.34R, but only 22 trades, so the declared rule excluded it, and v1-b, at +0.21R over 41 trades, was locked. Writing the rule first matters. Otherwise the 30-trade minimum, or the choice of net rather than gross results, could itself be tuned after looking.",
+          "The same v1-b rule then produced 12 trades in the held-out window, with an average net result under model B of about +0.03R. Selection can produce such a decline because the chosen variant may have benefited from favorable development noise. Market changes and sampling variation could also explain it; the decline alone does not diagnose overfitting. Twelve trades are also far too few to estimate anything precisely, and Chapter 25 shows how wide the uncertainty remains even for twenty. Neither number is a performance estimate. What the record does show is a fair procedure: six variants were tried, one was chosen by a pre-written rule, and the evaluation was run once.",
+          "A held-out interval is useful only while it remains outside the design process. Looking at it repeatedly and tuning accordingly turns it into another development set. Bailey and coauthors list further weaknesses of a simple hold-out. A researcher may already know how markets behaved during the held-out years, which can shape the design consciously or not. Short samples leave both windows too small to support a conclusion. And a single held-out test ignores how many configurations were tried before the one being tested. Walk-forward evaluation, a logged variant count, and fresh forward data each address part of this. No split scheme automatically prevents researcher discretion from leaking into conclusions."
+        ],
+        "tables": [
+          {
+            "title": "Development variant log (fictional development window)",
+            "columns": [
+              "Variant",
+              "Lookback (sessions)",
+              "Exit rule",
+              "Development trades",
+              "Average net R, model B",
+              "Lock-rule status"
+            ],
+            "rows": [
+              [
+                "v1-a",
+                "10",
+                "Stop, +2R target, 10-session time exit",
+                64,
+                "+0.03",
+                "Eligible"
+              ],
+              [
+                "v1-b",
+                "20",
+                "Stop, +2R target, 10-session time exit",
+                41,
+                "+0.21",
+                "Eligible; highest: locked"
+              ],
+              [
+                "v1-c",
+                "55",
+                "Stop, +2R target, 10-session time exit",
+                22,
+                "+0.34",
+                "Excluded: fewer than 30 trades"
+              ],
+              [
+                "v1-d",
+                "10",
+                "Stop, 10-session time exit only",
+                64,
+                "−0.04",
+                "Eligible"
+              ],
+              [
+                "v1-e",
+                "20",
+                "Stop, 10-session time exit only",
+                41,
+                "+0.08",
+                "Eligible"
+              ],
+              [
+                "v1-f",
+                "55",
+                "Stop, 10-session time exit only",
+                22,
+                "+0.15",
+                "Excluded: fewer than 30 trades"
+              ]
+            ]
+          }
+        ],
+        "id": "do-not-hide-the-search-behind-the-winner"
+      },
+      {
+        "title": "Execution assumptions belong in the result",
+        "paragraphs": [
+          "Costs can include commissions, the bid–ask spread, slippage, market impact, financing, and applicable charges. Which matter depends on the instrument and the trading process. Maya declared three cost models at stage one, each building on the last. Model A charges a $1 commission per order, or $2 per round trip. Model B adds half of an assumed quoted spread on each side, $0.02 per share: buying at the ask and later selling at the bid each cost about half the spread relative to the midpoint, as Chapter 19 showed. Model C adds $0.03 per share of slippage on each side for adverse movement between decision and fill. Per round trip, A costs $2, B costs $2 + $0.04 × shares, and C costs $2 + $0.10 × shares. These are declared assumptions, not estimates of any broker’s or stock’s actual costs.",
+          "The entry and exit columns are friction-free reference prices, not already executable ask and bid fills. Spread and slippage are debited once as dollar adjustments in the cost models. If a ledger instead uses actual ask/bid fills, their spread effect is already in price P&L and should not be charged again. The ledger supplies completed teaching trades; it omits their full lookback histories, so it demonstrates accounting, not a reimplementation of every signal in v1-b.",
+          "The held-out ledger lists the 12 trades, and each line can be reproduced from three prices. Trade 2 enters BRDG at $31.10 with a $29.60 stop. Risk of $1.50 per share gives floor(100 ÷ 1.50) = 66 shares and planned price risk of 66 × $1.50 = $99, which is that trade’s 1R. The stop exit loses 66 × $1.50 = $99, or −1.00R gross. Trade 8, HALO, gaps below its $26.30 stop and exits at the $25.90 open: 66 × ($25.90 − $27.80) = −$125.40, or −1.27R. Net R always divides by the trade’s frozen planned price risk. It is never divided by a cost-inclusive figure chosen afterward.",
+          "The cost table applies the three models trade by trade. Because every position is sized to roughly $100 of price risk, a cheap stock with a tight stop needs many shares, and per-share costs follow the shares. FERN’s 133 shares cost $15.30 under model C, while IRIS’s 25 shares cost $4.50. The four stocks priced under $25 account for 458 of the 854 shares traded and $53.80 of the $109.40 model C total. Risk-based sizing equalizes planned price risk, not cost burden.",
+          "The totals table shows the conclusion changing. Gross, the 12 trades earn $91.15, or +0.90R summed. Model A leaves $67.15, model B $32.99, and model C −$18.25 (−0.20R). Under the first three descriptions the rule looks mildly profitable; under the most conservative it loses money. The main figure plots the same four running totals. Notice that the lines separate steadily rather than at one dramatic trade, because costs are charged on every trade, winners and losers alike."
+        ],
+        "tables": [
+          {
+            "title": "Held-out ledger, rule v1-b (simulated fills)",
+            "columns": [
+              "Trade",
+              "Stock",
+              "Entry ($)",
+              "Stop ($)",
+              "Shares",
+              "1R planned risk ($)",
+              "Exit ($)",
+              "Exit type",
+              "Gross P&L ($)",
+              "Gross R"
+            ],
+            "rows": [
+              [
+                1,
+                "ATLS",
+                "50.20",
+                "48.20",
+                50,
+                "100.00",
+                "54.20",
+                "Target (+2R)",
+                "+200.00",
+                "+2.00"
+              ],
+              [
+                2,
+                "BRDG",
+                "31.10",
+                "29.60",
+                66,
+                "99.00",
+                "29.60",
+                "Stop",
+                "−99.00",
+                "−1.00"
+              ],
+              [
+                3,
+                "CRSC",
+                "82.40",
+                "79.40",
+                33,
+                "99.00",
+                "84.10",
+                "Time exit",
+                "+56.10",
+                "+0.57"
+              ],
+              [
+                4,
+                "DUNE",
+                "18.30",
+                "17.30",
+                100,
+                "100.00",
+                "17.30",
+                "Stop",
+                "−100.00",
+                "−1.00"
+              ],
+              [
+                5,
+                "ELMS",
+                "64.00",
+                "61.50",
+                40,
+                "100.00",
+                "69.00",
+                "Target (+2R)",
+                "+200.00",
+                "+2.00"
+              ],
+              [
+                6,
+                "FERN",
+                "12.40",
+                "11.65",
+                133,
+                "99.75",
+                "11.65",
+                "Stop",
+                "−99.75",
+                "−1.00"
+              ],
+              [
+                7,
+                "GRAN",
+                "45.50",
+                "43.50",
+                50,
+                "100.00",
+                "45.10",
+                "Time exit",
+                "−20.00",
+                "−0.20"
+              ],
+              [
+                8,
+                "HALO",
+                "27.80",
+                "26.30",
+                66,
+                "99.00",
+                "25.90",
+                "Gap below stop (open)",
+                "−125.40",
+                "−1.27"
+              ],
+              [
+                9,
+                "IRIS",
+                "95.00",
+                "91.00",
+                25,
+                "100.00",
+                "103.00",
+                "Target (+2R)",
+                "+200.00",
+                "+2.00"
+              ],
+              [
+                10,
+                "JUNO",
+                "22.60",
+                "21.60",
+                100,
+                "100.00",
+                "21.60",
+                "Stop",
+                "−100.00",
+                "−1.00"
+              ],
+              [
+                11,
+                "KILN",
+                "38.20",
+                "36.70",
+                66,
+                "99.00",
+                "39.40",
+                "Time exit",
+                "+79.20",
+                "+0.80"
+              ],
+              [
+                12,
+                "LARK",
+                "15.10",
+                "14.30",
+                125,
+                "100.00",
+                "14.30",
+                "Stop",
+                "−100.00",
+                "−1.00"
+              ]
+            ]
+          },
+          {
+            "title": "Costs per trade under the three declared models",
+            "columns": [
+              "Trade",
+              "Shares",
+              "Model A cost ($)",
+              "Model B cost ($)",
+              "Model C cost ($)",
+              "Net P&L, B ($)",
+              "Net P&L, C ($)",
+              "Net R, C"
+            ],
+            "rows": [
+              [
+                1,
+                50,
+                "2.00",
+                "4.00",
+                "7.00",
+                "+196.00",
+                "+193.00",
+                "+1.93"
+              ],
+              [
+                2,
+                66,
+                "2.00",
+                "4.64",
+                "8.60",
+                "−103.64",
+                "−107.60",
+                "−1.09"
+              ],
+              [
+                3,
+                33,
+                "2.00",
+                "3.32",
+                "5.30",
+                "+52.78",
+                "+50.80",
+                "+0.51"
+              ],
+              [
+                4,
+                100,
+                "2.00",
+                "6.00",
+                "12.00",
+                "−106.00",
+                "−112.00",
+                "−1.12"
+              ],
+              [
+                5,
+                40,
+                "2.00",
+                "3.60",
+                "6.00",
+                "+196.40",
+                "+194.00",
+                "+1.94"
+              ],
+              [
+                6,
+                133,
+                "2.00",
+                "7.32",
+                "15.30",
+                "−107.07",
+                "−115.05",
+                "−1.15"
+              ],
+              [
+                7,
+                50,
+                "2.00",
+                "4.00",
+                "7.00",
+                "−24.00",
+                "−27.00",
+                "−0.27"
+              ],
+              [
+                8,
+                66,
+                "2.00",
+                "4.64",
+                "8.60",
+                "−130.04",
+                "−134.00",
+                "−1.35"
+              ],
+              [
+                9,
+                25,
+                "2.00",
+                "3.00",
+                "4.50",
+                "+197.00",
+                "+195.50",
+                "+1.96"
+              ],
+              [
+                10,
+                100,
+                "2.00",
+                "6.00",
+                "12.00",
+                "−106.00",
+                "−112.00",
+                "−1.12"
+              ],
+              [
+                11,
+                66,
+                "2.00",
+                "4.64",
+                "8.60",
+                "+74.56",
+                "+70.60",
+                "+0.71"
+              ],
+              [
+                12,
+                125,
+                "2.00",
+                "7.00",
+                "14.50",
+                "−107.00",
+                "−114.50",
+                "−1.15"
+              ]
+            ]
+          },
+          {
+            "title": "Gross to net for the whole ledger (12 trades, 854 shares)",
+            "columns": [
+              "Model",
+              "Cost rule",
+              "Total cost ($)",
+              "Net P&L ($)",
+              "Net per trade ($)",
+              "Sum of net R",
+              "Reading"
+            ],
+            "rows": [
+              [
+                "Gross",
+                "No costs",
+                "0.00",
+                "+91.15",
+                "+7.60",
+                "+0.90",
+                "Mildly positive"
+              ],
+              [
+                "A",
+                "$1 commission per order ($2 per round trip)",
+                "24.00",
+                "+67.15",
+                "+5.60",
+                "+0.66",
+                "Mildly positive"
+              ],
+              [
+                "B",
+                "A + $0.02/share half-spread each side",
+                "58.16",
+                "+32.99",
+                "+2.75",
+                "+0.32",
+                "Barely positive"
+              ],
+              [
+                "C",
+                "B + $0.03/share slippage each side",
+                "109.40",
+                "−18.25",
+                "−1.52",
+                "−0.20",
+                "Negative"
+              ]
+            ]
+          }
+        ],
+        "id": "execution-assumptions-belong-in-the-result"
+      },
+      {
+        "title": "Find the cost that would erase the result",
+        "paragraphs": [
+          "Instead of asking only “what is the net result?”, ask “how large would costs have to be to erase the gross result?” That break-even cost turns an uncertain assumption into a threshold you can investigate. With a flat cost per round trip, break-even is gross profit ÷ number of trades: $91.15 ÷ 12 ≈ $7.60 per round trip. With per-share costs on top of model A’s $24 of commissions, break-even is ($91.15 − $24.00) ÷ 854 shares ≈ $0.079 per share per round trip, or about $0.039 per share on each side. Model B’s $0.04 per share per round trip sits below that line; model C’s $0.10 sits above it.",
+          "The worked example at the end of this chapter applies the same method to a larger fictional study whose break-even lies between two plausible cost assumptions, so the sign of its result depends on which one is right. When break-even sits close to plausible costs, the result needs direct execution evidence: actual fills, quoted spreads at the decision time, and order sizes relative to typical volume.",
+          "Sensitivity analysis applies the same idea to other assumptions. If entry and stop are touched in one daily bar, resolve the sequence with suitable data or a declared conservative rule, as v1-b does. If a model assumes every limit order fills completely when touched, test a less favorable fill convention. Report every declared cost model rather than the friendliest one. Bajgrowicz and Scaillet make a sharper point about break-even costs in large rule searches: rules that survive costs are often not the ones that looked best before costs, and a break-even calculated after the best rule has been chosen is an after-the-fact number. Costs belong inside the selection process, which is why Maya’s lock rule ranks variants on model B rather than on gross results."
+        ],
+        "id": "find-the-cost-that-would-erase-the-result"
+      },
+      {
+        "title": "Interpret the evidence at the right level",
+        "paragraphs": [
+          "A simulation can be useful without being conclusive. Lo, Mamaysky, and Wang studied algorithmic recognition of technical patterns in U.S. stocks from 1962 to 1996 and found that several patterns provided incremental information about conditional return distributions. Their comparison is between distributions, not a completed net trading account, so it does not establish that every visually identified pattern offers net profits today. Pattern definition, sample period, execution, and economic significance remain separate questions. The evidence appendix compares several such studies by market, rule, comparator, and costs.",
+          "Report returns beside exposure, turnover, drawdown, benchmark behavior, and the number of substantially independent opportunities. Maya’s honest summary of v1-b is short: six logged variants; one locked by a pre-written rule; twelve held-out trades whose net result runs from +$67.15 to −$18.25 depending on a cost assumption she has not measured; break-even near $7.60 per round trip. Her stage-one criteria said to begin a paper forward study only if the locked rule’s held-out result was positive under model B, to set the idea aside if it was negative even under model A, and otherwise to measure costs before deciding. The model B result, +$32.99, meets the first condition, so the responsible next step is a paper forward study under the frozen rule, with timestamped decisions and labeled simulated fills, together with direct measurement of spreads. The strongest responsible conclusion may be that the idea is worth further study, or that its current evidence is insufficient. A test that rejects an appealing rule has done useful work: it saved the reader from confusing a persuasive example with a reliable method."
+        ],
+        "id": "interpret-the-evidence-at-the-right-level"
+      },
+      {
+        "title": "Use the appropriate empirical comparator",
+        "paragraphs": [
+          "For a rule-selection question, read the adverse DJIA study in the appendix, especially its chronological persistence and cost tests. For a pattern-information question, read Lo, Mamaysky and Wang’s distribution comparison. Neither supplies a performance estimate for Maya’s invented ledger. The study specification must match the claim."
+        ],
+        "id": "use-the-appropriate-empirical-comparator"
+      }
+    ],
+    "example": {
+      "title": "The cost that reverses a conclusion",
+      "text": "Fictional study: 200 round trips generate $1,600 gross profit, so the break-even cost is $1,600 ÷ 200 = $8 per round trip. A modeled $5 cost leaves $1,600 − $1,000 = $600; a modeled $9 cost leaves $1,600 − $1,800 = −$200. Because $8 lies between the two assumptions, a $4 difference per trade reverses the conclusion. The 12-trade held-out ledger in this chapter has a similar break-even, about $7.60 per round trip, so its sign also depends on execution evidence that has not yet been collected."
+    },
+    "exercise": "Use the held-out ledger. (a) Verify the shares, 1R, and gross P&L of trades 2 and 8. (b) Compute total cost and net P&L under models A, B, and C. (c) Compute the break-even flat cost per round trip and the break-even per-share cost per round trip above model A’s commissions. (d) A different fictional study of 150 round trips earns $975 gross. Find its flat break-even cost and its net results at $5 and $8 per round trip.",
+    "solution": [
+      "(a) Trade 2: risk per share = $31.10 − $29.60 = $1.50; shares = floor(100 ÷ 1.50) = floor(66.67) = 66; 1R = 66 × $1.50 = $99.00. The stop exit gives 66 × ($29.60 − $31.10) = −$99.00, or −$99.00 ÷ $99.00 = −1.00R. Trade 8: risk per share = $27.80 − $26.30 = $1.50, so again 66 shares and 1R = $99.00. The gap exit at the $25.90 open gives 66 × ($25.90 − $27.80) = −$125.40, or −$125.40 ÷ $99.00 ≈ −1.27R. The R denominator stays $99 even though the loss exceeded it.",
+      "(b) Total shares = 854 and gross P&L = +$91.15. Model A: 12 × $2 = $24.00, net +$67.15. Model B: $24.00 + $0.04 × 854 = $24.00 + $34.16 = $58.16, net +$32.99. Model C: $24.00 + $0.10 × 854 = $24.00 + $85.40 = $109.40, net −$18.25. In R, summing each trade’s net P&L ÷ its own 1R gives +0.90R gross, +0.66R (A), +0.32R (B), and −0.20R (C).",
+      "(c) Flat break-even = $91.15 ÷ 12 = $7.596, about $7.60 per round trip. Per-share break-even above commissions = ($91.15 − $24.00) ÷ 854 = $67.15 ÷ 854 ≈ $0.0786 per share per round trip, or about $0.039 per share on each side. Model B ($0.04 per share per round trip) is below it and stays positive; model C ($0.10) is above it and turns negative.",
+      "(d) $975 ÷ 150 = $6.50 per round trip. At $5: $975 − 150 × $5 = $975 − $750 = +$225. At $8: $975 − 150 × $8 = $975 − $1,200 = −$225. The $6.50 break-even lies between the two assumptions, so a $3 difference in cost per trade reverses the sign. Like the held-out ledger, this result should not be reported without its cost model attached."
+    ],
+    "practice": [
+      {
+        "title": "Same R, different cost burden",
+        "level": "guided",
+        "question": "Trades 6 (FERN) and 9 (IRIS) both have about $100 of planned price risk. Under model C, compute each trade’s cost, net P&L, and net R. Explain why their costs differ so much.",
+        "solution": [
+          "FERN: risk per share $12.40 − $11.65 = $0.75; shares = floor(100 ÷ 0.75) = 133; 1R = 133 × $0.75 = $99.75. Model C cost = $2 + 133 × $0.10 = $15.30. Gross = 133 × ($11.65 − $12.40) = −$99.75; net = −$115.05; net R = −115.05 ÷ 99.75 ≈ −1.15R.",
+          "IRIS: risk per share $95.00 − $91.00 = $4.00; shares = 25; 1R = $100. Model C cost = $2 + 25 × $0.10 = $4.50. Gross = 25 × ($103.00 − $95.00) = +$200; net = +$195.50; net R = +1.955R (shown as +1.96R in the cost table).",
+          "Both positions risk about the same dollars, but FERN needs more than five times as many shares because its stop is $0.75 away rather than $4.00. Per-share costs scale with shares, so the tight-stop, low-price trade pays about 0.15R in costs while IRIS pays about 0.045R."
+        ]
+      },
+      {
+        "title": "A colleague’s cost model",
+        "level": "independent",
+        "question": "A colleague reruns the 12 held-out trades with no commission, a $0.05 per share half-spread on each side, and no slippage. Compute total cost and net P&L, the break-even half-spread per share on each side under zero commission, and say whether the colleague’s result should change Maya’s conclusion.",
+        "solution": [
+          "Cost per share per round trip = 2 × $0.05 = $0.10, so total cost = 854 × $0.10 = $85.40 and net P&L = $91.15 − $85.40 = +$5.75, about $0.48 per trade.",
+          "With zero commission, break-even half-spread per side = $91.15 ÷ (2 × 854) ≈ $0.053 per share. The colleague’s $0.05 assumption sits only about a third of a cent below it.",
+          "The colleague’s positive result is not reassuring evidence. It shows the conclusion still hinges on a per-share cost within a fraction of a cent of break-even. The useful next step is to measure actual spreads at the decision times, not to choose the friendliest of four assumptions."
+        ]
+      },
+      {
+        "title": "Audit a backtest description",
+        "level": "independent",
+        "question": "A report says: (1) the universe is the current members of a stock index, tested over the previous ten years; (2) the signal is a close above the 20-day high “including today”; (3) entries fill at the signal close; (4) the reported lookback is the best of 40 tried; (5) each stop is placed at the lowest low of the three sessions after entry. Classify each problem and propose a repair.",
+        "solution": [
+          "(1) Survivorship: today’s members exclude stocks that were removed or delisted. Use point-in-time membership. (2) A definition error: a close cannot be strictly above a window that contains its own high, so signals vanish or the code silently uses something else. State the window as the prior 20 completed days. (3) Timing: the fill uses the price whose completion created the signal. Enter at the next open, or declare and justify a closing-auction model. (4) Selection: the best of 40 is an optimistic estimate. Report the variant count and all results, and evaluate the chosen version on data not used to choose it. (5) Look-ahead: the stop uses lows that do not yet exist at entry. Base the stop on completed data before entry."
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "Maya’s locked v1-b rule gives a weak result on the held-out window. She changes the lookback from 20 to 30 sessions, reruns the same held-out window, and the result improves. How should she label the 30-session result?",
+      "options": [
+        "As a held-out result for the new version, because the 30-session rule was never fitted on the development window.",
+        "As development evidence for a new version v2, which still needs a fresh evaluation window or forward data.",
+        "As the replacement for the v1-b result, which should be deleted because that version has been superseded."
+      ],
+      "answer": 1,
+      "explanation": "The 30-session choice was made after seeing the held-out results, so that window now helped design v2. The original v1-b result stays in the record.",
+      "feedback": [
+        "The held-out window was used to choose the change, so it is no longer outside the design process. Where a rule was first fitted does not matter; what matters is which data influenced the choice.",
+        "Correct: any change made after viewing evaluation data creates a new version whose evaluation must use data that did not influence it.",
+        "Deleting the v1-b result hides one of the trials. The record should keep every tested version, which is what makes the search visible."
+      ]
+    },
+    "sources": [
+      "ra-overfit",
+      "ra-pattern-research",
+      "rc-bs",
+      "rc-lo"
+    ],
+    "related": [
+      "journaling",
+      "statistics",
+      "system-design",
+      "market-microstructure"
+    ],
+    "figure": {
+      "title": "Twelve held-out trades under four cost descriptions",
+      "caption": "Fictional held-out ledger from this chapter. Running total P&L in dollars after each trade, starting from 0 before trade 1. All four lines use the same trades and fills; only the declared cost model changes. Compare the endpoints: +$91.15 gross, +$67.15 (A), +$32.99 (B), −$18.25 (C).",
+      "afterSection": 5,
+      "xStart": 0,
+      "xLabel": "Completed trades (0 = initial)",
+      "yLabel": "Cumulative P&L ($)",
+      "series": [
+        {
+          "name": "Gross",
+          "values": [
+            0,
+            200,
+            101,
+            157.1,
+            57.1,
+            257.1,
+            157.35,
+            137.35,
+            11.95,
+            211.95,
+            111.95,
+            191.15,
+            91.15
+          ]
+        },
+        {
+          "name": "Model A: commission",
+          "values": [
+            0,
+            198,
+            97,
+            151.1,
+            49.1,
+            247.1,
+            145.35,
+            123.35,
+            -4.05,
+            193.95,
+            91.95,
+            169.15,
+            67.15
+          ]
+        },
+        {
+          "name": "Model B: + half-spread",
+          "values": [
+            0,
+            196,
+            92.36,
+            145.14,
+            39.14,
+            235.54,
+            128.47,
+            104.47,
+            -25.57,
+            171.43,
+            65.43,
+            139.99,
+            32.99
+          ]
+        },
+        {
+          "name": "Model C: + slippage",
+          "values": [
+            0,
+            193,
+            85.4,
+            136.2,
+            24.2,
+            218.2,
+            103.15,
+            76.15,
+            -57.85,
+            137.65,
+            25.65,
+            96.25,
+            -18.25
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "index": 12,
+          "seriesIndex": 0,
+          "label": "Gross total +$91.15",
+          "shortLabel": "Gross +$91.15"
+        },
+        {
+          "index": 12,
+          "seriesIndex": 3,
+          "label": "Model C total −$18.25",
+          "shortLabel": "C −$18.25",
+          "placement": "below"
+        },
+        {
+          "index": 8,
+          "seriesIndex": 3,
+          "label": "After the trade-8 gap loss, model C total is −$57.85",
+          "shortLabel": "Gap: C −$57.85",
+          "placement": "below"
+        }
+      ]
+    },
+    "figures": [
+      {
+        "kind": "flow",
+        "title": "A research timeline: what each stage may see",
+        "caption": "Maya’s fictional study in chronological order. Each step lists the information it may use. Information from a later step must not flow back into an earlier one; any change after step 4 starts a new version.",
+        "afterSection": 1,
+        "steps": [
+          {
+            "title": "Freeze the question (before any results)",
+            "text": "Write rule v1, data and universe definitions, cost models A–C, the six-variant list, the lock rule, the window dates, and the decision criteria. Allowed: definitions and data-quality checks. Not allowed: any performance figure."
+          },
+          {
+            "title": "Development window (earlier dates only)",
+            "text": "Run the six listed variants and log every result, including weak ones. Allowed: development-window data. Not allowed: charts or results from evaluation dates."
+          },
+          {
+            "title": "Lock",
+            "text": "Apply the declared lock rule (v1-b is chosen), save code, data snapshot, and the variant count. The rule cannot change for this evaluation."
+          },
+          {
+            "title": "Held-out or walk-forward evaluation",
+            "text": "Run the locked rule once on later dates and report every cost model. Walk-forward repeats steps 2–4, each time using only data before the next window. Not allowed: retuning after seeing the result."
+          },
+          {
+            "title": "Paper forward study",
+            "text": "Apply the locked rule to new sessions as they arrive. Timestamp each decision before its outcome and label every fill as simulated."
+          },
+          {
+            "title": "Review and version",
+            "text": "Compare results with the step-1 criteria. Any change becomes v2; the old held-out window is now development data for v2, which needs fresh evaluation data."
+          }
+        ]
+      },
+      {
+        "kind": "candles",
+        "title": "A close-based signal and the first feasible fill",
+        "caption": "Fictional OHLC from the look-ahead table. The day-S close of $50.40 is above the $50.00 prior-20 high, but it is known only at the close; the first feasible fill is the S+1 open of $50.70. Buying at the $49.80 S open would use information that did not yet exist.",
+        "afterSection": 2,
+        "xLabel": "Regular session",
+        "yLabel": "Price ($)",
+        "showOHLC": true,
+        "candles": [
+          {
+            "open": 49.8,
+            "high": 50.9,
+            "low": 49.7,
+            "close": 50.4,
+            "label": "S: signal"
+          },
+          {
+            "open": 50.7,
+            "high": 51.4,
+            "low": 50.3,
+            "close": 51.1,
+            "label": "S+1: fill"
+          },
+          {
+            "open": 51,
+            "high": 51.8,
+            "low": 50.9,
+            "close": 51.5,
+            "label": "S+2"
+          }
+        ],
+        "annotations": [
+          {
+            "index": 0,
+            "value": 50.4,
+            "label": "Close $50.40 is above the $50.00 prior-20 high",
+            "shortLabel": "Signal C 50.40"
+          },
+          {
+            "index": 1,
+            "value": 50.7,
+            "label": "Open $50.70 is within the $50.90 entry ceiling",
+            "shortLabel": "Fill O 50.70",
+            "placement": "below"
+          }
+        ]
+      }
+    ],
+    "diagram": "testing",
+    "evidence": [
+      {
+        "claim": "The 12-trade held-out ledger reproduces gross and net results under three declared cost models",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Held-out ledger, cost and totals tables, main figure, exercise solution",
+        "summary": "Script recomputed shares = floor(100 ÷ (entry − stop)), 1R, gross P&L, per-trade costs ($2; $2 + $0.04 × shares; $2 + $0.10 × shares), totals of $91.15, $24.00, $58.16 and $109.40, net +$67.15/+$32.99/−$18.25, summed net R +0.90/+0.66/+0.32/−0.20, and every cumulative figure value.",
+        "limits": "Invented trades, prices and cost parameters; simulated fills; not an estimate of any real rule, broker or stock.",
+        "checked": "2026-10-01",
+        "id": "testing-the-12-trade-held-out-ledger-reproduces-gross-and-net-results-under-three-declared-cost-models"
+      },
+      {
+        "claim": "Break-even cost converts an uncertain assumption into a threshold",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Break-even section, worked example, exercise (d), practice tasks",
+        "summary": "Recalculated $91.15 ÷ 12 ≈ $7.60 per round trip, ($91.15 − $24) ÷ 854 ≈ $0.0786 per share, $91.15 ÷ 1,708 ≈ $0.053 per share per side, $1,600 ÷ 200 = $8 with $600 and −$200 results at $5 and $9, and the exercise’s $975 ÷ 150 = $6.50 with +$225 and −$225 at $5 and $8.",
+        "limits": "Break-even is computed after the fact for one fixed ledger; it is not a selection method and says nothing about future costs.",
+        "checked": "2026-10-01",
+        "id": "testing-break-even-cost-converts-an-uncertain-assumption-into-a-threshold"
+      },
+      {
+        "claim": "Entry timing assumptions can create look-ahead gains larger than the measured effect",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Look-ahead tables and candle figure",
+        "summary": "Checked 50 × (51.50 − 50.70) = $40, 50 × (51.50 − 50.40) = $55 and 50 × (51.50 − 49.80) = $85; the entry ceiling 50.40 × 1.01 = 50.904 rounds down to $50.90; a close cannot exceed a window containing its own high.",
+        "limits": "One invented signal day; the size of real timing errors depends on data and execution.",
+        "checked": "2026-10-01",
+        "id": "testing-entry-timing-assumptions-can-create-look-ahead-gains-larger-than-the-measured-effect"
+      },
+      {
+        "claim": "The research timeline, lock rule and variant log are disclosed teaching rules",
+        "type": "teaching-rule",
+        "sourceIds": [],
+        "location": "Specification, timeline figure, variant log",
+        "summary": "The six-variant log and the 30-trade minimum are invented to show a pre-declared selection rule; the survivorship example arithmetic (−4.4% versus +12%) was rechecked.",
+        "limits": "Development averages are fictional; the procedure does not guarantee unbiased results and is not the only defensible design.",
+        "checked": "2026-10-01",
+        "id": "testing-the-research-timeline-lock-rule-and-variant-log-are-disclosed-teaching-rules"
+      },
+      {
+        "claim": "A simple hold-out has specific weaknesses for investment backtests",
+        "type": "mechanism",
+        "sourceIds": [
+          "ra-overfit"
+        ],
+        "location": "Bailey, Borwein, López de Prado & Zhu, abstract (p. 2) and “Comparisons to other approaches” (pp. 6–7)",
+        "summary": "Read the abstract’s statement that hold-out tends to be unreliable for investment backtests, and the listed reasons: researchers may have used or know the hold-out period, small samples, and the hold-out ignoring the number of trials attempted.",
+        "limits": "The paper proposes a probability-of-overfitting framework (CSCV); this chapter does not compute it, and a methodological argument is not a measured error rate for this rule.",
+        "checked": "2026-10-01",
+        "id": "testing-a-simple-hold-out-has-specific-weaknesses-for-investment-backtests"
+      },
+      {
+        "claim": "In a large DJIA rule search, costs removed out-of-sample performance and break-evens computed after selection are ex post",
+        "type": "empirical",
+        "sourceIds": [
+          "rc-bs"
+        ],
+        "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+        "summary": "Inspected the author-hosted sample and selection procedure, chronological persistence, and Table 5’s Sharpe-criterion portfolios. FDR break-even one-way costs are 30–35, 0–5 and 0–5 basis points in the first three periods; later FDR portfolios are negative before costs. The authors raise costs inside the monthly ex ante selection until the selected portfolios’ out-of-sample performance disappears (Table 5, p. 24) and call these break-even transaction costs computed ex ante (pp. 22, 24); they criticize break-evens computed after rules are chosen as ex post (p. 21). Either kind is a backtest threshold, not a measurement of the costs an investor would actually pay.",
+        "limits": "An index experiment with a specific rule universe; it does not test individual-stock breakout rules like v1-b or prove every technical method useless.",
+        "checked": "2026-10-02",
+        "study": {
+          "sample": "Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date.",
+          "rule": "7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods.",
+          "comparator": "Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion.",
+          "costs": "Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately.",
+          "result": "Past winners cannot reliably be selected to persist; plausible costs erase remaining early-period out-of-sample gains; later FDR portfolios are negative before costs."
+        },
+        "id": "testing-in-a-large-djia-rule-search-costs-removed-out-of-sample-performance-and-break-evens-computed-after-s"
+      },
+      {
+        "claim": "Some algorithmically detected patterns carried incremental distributional information in historical U.S. stocks",
+        "type": "empirical",
+        "sourceIds": [
+          "rc-lo"
+        ],
+        "location": "Section II.A–B definitions/delay; Section III.B–F sample and results, Tables III–VIII; Section V conclusion, printed p. 1753. Tables I–II are pattern counts.",
+        "summary": "Inspected Section II pattern definitions/detection timing and Section III sample, conditional-versus-unconditional distributions and goodness-of-fit results. The test concerns distributional information, not a completed net trading account.",
+        "limits": "Distributional information is not net trading profit; it does not validate discretionary drawings or the book’s rules.",
+        "checked": "2026-10-02",
+        "study": {
+          "sample": "NYSE/AMEX and Nasdaq stocks, 1962–1996; separate five-year subperiod and size-quintile samples.",
+          "rule": "Kernel smoothing and ten algorithmically defined pattern classes; detection delay included before conditional next-day returns.",
+          "comparator": "Pattern-conditioned versus unconditional return distributions, using goodness-of-fit tests.",
+          "costs": "No completed net trading strategy or cost-adjusted account is tested by this distribution comparison.",
+          "result": "Some defined patterns add distributional information; economic profit remains a separate question."
+        },
+        "id": "testing-some-algorithmically-detected-patterns-carried-incremental-distributional-information-in-historical-"
+      }
+    ]
+  },
+  "sources": {
+    "ra-overfit": {
+      "title": "Bailey, Borwein, López de Prado & Zhu · The Probability of Backtest Overfitting",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "supports": "Original research on strategy selection and backtest overfitting. Textbook examples do not implement or claim a computed probability of backtest overfitting.",
+      "accessed": "2026-10-01"
+    },
+    "ra-pattern-research": {
+      "title": "Lo, Mamaysky & Wang · Foundations of Technical Analysis (2000 working paper)",
+      "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+      "supports": "Algorithmic technical-pattern recognition and conditional return-distribution research using historical U.S. stocks. Does not validate all chart methods or net profitability of textbook examples.",
+      "accessed": "2026-10-01"
+    },
+    "rc-bs": {
+      "title": "Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "supports": "Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.",
+      "accessed": "2026-10-01"
+    },
+    "rc-lo": {
+      "title": "Lo, Mamaysky & Wang (2000), Foundations of Technical Analysis",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "supports": "Algorithmic pattern recognition and conditional return distributions, distinct from net trading profitability.",
+      "accessed": "2026-10-01"
+    }
+  }
+}

@@ -120,6 +120,15 @@ near((6.05-1.95)/19,.215789473684,1e-8);near((6.05+2.35)/19,.442105263158,1e-8);
 // Ch26: independent cash-flow/accounting checks plus both allocation variants.
 const sim=require('./atlas20-sim.cjs'),s=sim.run(),sc=chapter('system-design');
 assert.ok(sc.sections[4].paragraphs.some(p=>p.includes('Every unlisted non-held stock')));
+// Completeness: no stock that is unheld at a decision close may signal there without a screen-log row.
+// Pre-session-0 highs are bounded by the D0 prior-20 high, so a close above max(that bound, supplied highs) is a definite signal.
+{const h20=Object.fromEntries(sim.SCREEN[0].map(x=>[x.stock,x.h20]));
+ for(let t=1;t<=7;t++) for(const stock of sim.STOCKS){
+  const bar=sim.BARS[stock]?.[t]; if(!bar||h20[stock]===undefined) continue;
+  if(s.ledger[t].holdings.some(h=>h.stock===stock)) continue;
+  const prior=Math.max(h20[stock],...Array.from({length:t},(_,k)=>sim.BARS[stock][k]?.h??-Infinity));
+  if(bar.c>prior) assert.ok(sim.SCREEN[t].some(x=>x.stock===stock),`Unlisted signal: ${stock} at decision close ${t}`);
+ }}
 // Compare the supplied manuscript inputs with the executable scenario, not only its outputs.
 const inputTables=sc.sections[4].tables;
 for(const table of inputTables.slice(2)) {
@@ -206,6 +215,8 @@ const cases=chapter('case-studies'),caseRows=cases.sections[6].tables[0].rows;fo
 r=result(30,80,77,70,5);near(r.net,-305);near(r.netR,-305/90);r=result(15,80,77,70,5);near(r.net,-155);near(r.netR,-155/45);near(20000-15*80-2.5+15*70-2.5,19845);
 const amb=cases.figures[0].panels.map(p=>p.series[0].values);const ohlc=a=>[a[0],Math.max(...a),Math.min(...a),a.at(-1)];assert.deepEqual(ohlc(amb[0]),ohlc(amb[1]));near(195-(-105),300);
 r=result(50,31,29,35,5);near(r.net,195);near(r.netR,1.95);
+// Ch28 unfamiliar ambiguous-bar task: 40 shares, 25/24/27, $5 costs; stop-first, target-first and gap-open branches.
+near(result(40,25,24,24,5).netR,-1.125);near(result(40,25,24,27,5).netR,1.875);near(result(40,25,24,23.9,5).netR,-1.225);near(20000+result(40,25,24,24,5).net,19955);near(20000+result(40,25,24,27,5).net,20075);
 // Both cumulative reviews: independent calculations.
 assert.equal(Math.min(Math.floor(90/1.62),Math.floor(1600/32)),50);near(result(50,32,30.5,28,6).netR,-206/75);
 near(result(20,40.7,38.7,38.7,5).netR,-1.125);near(20*40.7+2.5,816.5);near(20*38.7-2.5,771.5);
@@ -214,7 +225,7 @@ assert.ok(part5Fill,'Part 5 requires a supplied confirmed fill quantity and pric
 assert.equal(Number(part5Fill[1]),20);near(Number(part5Fill[2]),40.7);
 assert.match(reviews.risk.tasks[1].question,/cancellation report confirms the remaining 30 shares canceled before the next bar/);
 assert.match(reviews.risk.tasks[2].solution.join(' '),/not recorded/);
-near((4*2-5-2)/10,.1);near((80-10*4)/80/10,.05);near(40/10000*100,.4);near(80/10,8);
+near((4*2-5-2)/10,.1);{const t1=[1.95,1.95,1.95,1.95,-1.05,-1.05,-1.05,-1.05,-1.05,-2.05],m=sum(t1)/10,sd=Math.sqrt(sum(t1.map(x=>(x-m)**2))/9);near(m,.05);near(round(sd,2),1.66);near(round(sd/Math.sqrt(10),2),.53);near(round(m-2*sd/Math.sqrt(10),2),-1);near(round(m+2*sd/Math.sqrt(10),2),1.1);near(round((sum(t1)-1.95)/9,2),-.16);near(round(1-.95**7,3),.302);}near((80-10*4)/80/10,.05);near(40/10000*100,.4);near(80/10,8);
 assert.ok(100*(40-39)/39>100*(20.4-20)/20);assert.equal(Math.floor(4000*101/100),4040);
 const limit=4040,qty=Math.min(Math.floor(25000/200),Math.floor(500000/limit),Math.floor((1200000-250)/limit));assert.equal(qty,123);near(money(qty*limit+250),4971.7);near(12000-4971.7,7028.3);
 assert.equal(reviews.risk.tasks.length,3);assert.equal(reviews.advanced.tasks.length,3);

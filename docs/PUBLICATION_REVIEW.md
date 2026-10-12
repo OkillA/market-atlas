@@ -39,11 +39,11 @@ Completed batches: Chapters **1–23**, plus Parts 1–5. Next batch: Chapters *
 | 21 | From chart idea to trade plan / `trade-plans` | `631604729847` | accepted | /root (2026-10-02) | [Later-chapter integration](REVISION_COMPLETION_20261001.md)  [Batch 1](PUBLICATION_BATCH1_20261002.md) |
 | 22 | Psychology without market mythology / `psychology` | `f3e9f5992868` | accepted | /root (2026-10-11) | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [follow-through](FOLLOW_THROUGH_20261002.md); [Batch 6](PUBLICATION_BATCH6_20261011.md) |
 | 23 | A journal that can teach you something / `journaling` | `5cd904e206c2` | accepted | /root (2026-10-11) | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [Batch 6](PUBLICATION_BATCH6_20261011.md) |
-| 24 | Evidence before conviction / `testing` | `7fbaf6d579a2` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
-| 25 | Statistics for a skeptical chart reader / `statistics` | `fa017fbb5e5c` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [Renderer batch](RENDERER_BATCH_20261011.md) (figure changes; full review pending) |
-| 26 | Designing a complete trading system / `system-design` | `0af51acb8e24` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [follow-through](FOLLOW_THROUGH_20261002.md); [Renderer batch](RENDERER_BATCH_20261011.md) (figure changes; full review pending) |
-| 27 | Optional: Dow, Wyckoff, and Elliott, read critically / `classical-frameworks` | `2af70744e750` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
-| 28 | Case studies: follow the decision through / `case-studies` | `854967c1e29d` | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [historical gallery](HISTORICAL_AND_READER_PREP_20261002.md) |
+| 24 | Evidence before conviction / `testing` | `7fbaf6d579a2` | in_progress | claude-code-pub7 (2026-10-12) | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
+| 25 | Statistics for a skeptical chart reader / `statistics` | `fa017fbb5e5c` | in_progress | claude-code-pub7 (2026-10-12) | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [Renderer batch](RENDERER_BATCH_20261011.md) (figure changes; full review pending) |
+| 26 | Designing a complete trading system / `system-design` | `0af51acb8e24` | in_progress | claude-code-pub7 (2026-10-12) | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [follow-through](FOLLOW_THROUGH_20261002.md); [Renderer batch](RENDERER_BATCH_20261011.md) (figure changes; full review pending) |
+| 27 | Optional: Dow, Wyckoff, and Elliott, read critically / `classical-frameworks` | `2af70744e750` | in_progress | claude-code-pub7 (2026-10-12) | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
+| 28 | Case studies: follow the decision through / `case-studies` | `854967c1e29d` | in_progress | claude-code-pub7 (2026-10-12) | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [historical gallery](HISTORICAL_AND_READER_PREP_20261002.md) |
 
 The [critical re-audit resolution](AUDIT_RESOLUTION_20261002.md) and [source audit](SOURCE_AUDIT_20261002.md) apply across these groups. They document their actual checked snapshots; consult the [resolution history](FEEDBACK_RESOLVED.md) for complete findings and later reopenings.
 
@@ -56,7 +56,7 @@ The [critical re-audit resolution](AUDIT_RESOLUTION_20261002.md) and [source aud
 | 03: Look beneath the surface | 3 | accepted | claude-code-main (2026-10-03) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 4](PUBLICATION_BATCH4_20261003.md) |
 | 04: See the bigger picture | 3 | accepted | claude-code-alpha (2026-10-11); figure dependency re-accepted /root (2026-10-11) | [Teaching acceptance](TEACHING_ACCEPTANCE_20261001.md)  [Batch 5](PUBLICATION_BATCH5_20261011.md); [Renderer batch](RENDERER_BATCH_20261011.md) |
 | 05: Build a repeatable process | 3 | accepted | /root (2026-10-11) | [Later-chapter integration](REVISION_COMPLETION_20261001.md); [Batch 6](PUBLICATION_BATCH6_20261011.md) |
-| 06: Question, test, refine | 3 | pending | unassigned | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
+| 06: Question, test, refine | 3 | in_progress | claude-code-pub7 (2026-10-12) | [Later-chapter integration](REVISION_COMPLETION_20261001.md) |
 
 Part-review fingerprints in the checkpoint include the part definition, complete tasks and constituent chapter/source fingerprints. This pins both the task inputs and the teaching dependencies.
 

@@ -1,0 +1,99 @@
+{
+  "checked": "2026-10-12",
+  "reviewer": "reviewer agent for claude-code-pub7",
+  "method": "Each URL was retrieved with curl -sL -A 'Mozilla/5.0' (all HTTP 200) into a temporary directory outside the repository. HTML was reduced to text; PDFs were converted with pdftotext -layout and searched by page (pdftotext -f/-l) for the exact passages. Only chapter-25 compiled claims and the chapter's evidence records were checked; the research-appendix text is referenced only where the chapter points to it.",
+  "checks": [
+    {
+      "id": "ra-wilson-dataplot",
+      "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm",
+      "locator": "AGRESTI COULL (LET), Description: U.L./L.L. formulas; sentence 'Another advantage is that the limits are in the (0,1) interval. This is not true for the frequently used normal approximation'; Note: 'now commonly referred to as the Wilson method'; 'The default method is the Wilson interval.'",
+      "claim": "sections[4].paragraphs[0]: Dataplot gives the Wilson score interval as an alternative to a symmetric normal-approximation interval; its limits stay within the probability range; the formula used is the documented one.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-wilson-dataplot",
+      "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm",
+      "locator": "Note paragraph on Brown, Cai and DasGupta coverage study ('they recommend the Wilson and Jeffreys methods for n <= 40')",
+      "claim": "Implicit in sections[4]: the 95% Wilson level is a coverage property of the procedure. The page frames coverage as a studied approximate property, which supports the chapter's caution; the chapter does not say 'nominal'.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-nist",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "locator": "7.2.4.1 Confidence intervals: 'Formulas for the confidence intervals' (Wilson U.L./L.L.); 'Another advantage is that the lower limit cannot be negative'; 'Exact Intervals for Small Numbers of Failures and/or Small Sample Sizes'; Terminology Note (Wilson vs Agresti-Coull)",
+      "claim": "sections[4].paragraphs[0]: the linked handbook also discusses exact binomial intervals; evidence[3]: the handbook contains the Wilson score expression.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-confidence-mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "locator": "1.3.5.2 Purpose: 'a 95 % confidence interval does not mean that there is a 95 % probability that the interval contains the true mean ... in the long run about 95 % of these intervals would contain the true mean'; Definition: Y-bar ± t(1−α/2, N−1) s/√N, 's is the sample standard deviation'",
+      "claim": "sections[4].paragraphs[1] long-run coverage interpretation; sections[3] standard error = sample SD ÷ √n; evidence[8].",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-confidence-mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "locator": "Definition: t multiplier with N−1 degrees of freedom",
+      "claim": "sections[3].paragraphs[2] (revised): the ±2 SE band is rough; the chapter now states the t multiplier (about 2.09 at 20 trades, −0.31R to +0.91R; 2.78 at five trades), matching the source's t(1−α/2, N−1) definition.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-pvalue",
+      "url": "https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm",
+      "locator": "7.1.3.1, 'p-values': 'the probability of the test statistic being at least as extreme as the one observed given that the null hypothesis is true'; 'Good practice': 'decide in advance of the test how small a p-value is required to reject the test'",
+      "claim": "sections[7].paragraphs[0]: p-value definition under a specified null model; NIST advises deciding the rejection threshold before seeing results; evidence[5].",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-sharpe",
+      "url": "https://web.stanford.edu/~wfsharpe/art/sr/sr.htm",
+      "locator": "'The Ex Post Sharpe Ratio' (D_t differential return; 'historic average differential return per unit of historic variability of the differential return'); 'Time Dependence' ('Assume that the differential return over T periods is measured by simply summing the one-period differential returns and that the latter have zero serial correlation'; 'Even if the underlying process does not involve serial correlation, a specific ex post sample may')",
+      "claim": "sections[6].paragraphs[1]: definition using differential/excess returns over a consistent interval; √T scaling relies on zero serial correlation; evidence[4].",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "Revised version February 2015; Introduction ('never declare the number of trials involved in a discovery'); hold-out discussion ('the hold-out method does not take into account the number of trials attempted'), text lines on PDF pp. 4-7",
+      "claim": "evidence[6]: published backtests rarely declare trial counts; calibration can fit noise; hold-out ignores the number of trials. Chapter prose sections[7].paragraphs[1] ('reporting only the passing variant still overstates the evidence') is consistent.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "Introduction, printed p. 3: 'the 7,846 trading rules of STW on daily prices of the Dow Jones Industrial Average (DJIA) index between January 1897 and July 2011'; p. 4: 'apply the False Discovery Rate (FDR) methodology'",
+      "claim": "sections[7].paragraphs[1]: 7,846 technical rules on daily DJIA data with a false-discovery-rate method; evidence[7].study.sample/rule.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "Section 3.2 (PDF p. 16): 'our benchmark is being out of the market and earning the risk-free rate'; monthly rebalancing PDF p. 6; Table 5 (PDF p. 49), FDR column: 1897-1914 30-35 bps, 1915-1938 0-5 bps, 1939-1962 0-5 bps, later periods '-'; PDF p. 24 'an investor cannot realistically select the future outperforming rules'; PDF p. 25 'In later periods, out-of-sample performance is already negative before costs'",
+      "claim": "evidence[7].study comparator/costs/result fields: zero excess-performance threshold and persistence; Sharpe criterion; FDR break-even one-way costs 30-35, 0-5, 0-5 bps; later FDR portfolios negative before costs; past winners cannot reliably be selected.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "PDF p. 21: 'it is difficult to use break-even costs in a rules selection process because they are computed ex post, once the trading rules have already been selected ... Transaction costs must be treated as endogenous'; PDF p. 22: 'They can be viewed as break-even transaction costs computed ex ante'; PDF p. 24: 'we can view the reported levels as break-even transaction costs computed ex ante'",
+      "claim": "evidence[7].summary (revised): authors raise costs inside the ex ante selection and call the results break-even transaction costs computed ex ante (pp. 22, 24); they criticize break-evens computed after rules are chosen as ex post (p. 21); either is a backtest threshold. Original wording 'These thresholds are ex post' was not stated by the source (finding 1); revised wording rechecked after the rebuild.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "Title page and full text (58 pages); PDF metadata CreationDate 2011-12-16",
+      "claim": "Source title/evidence location (revised): 'author-hosted manuscript, sample to July 2011; published 2012'; study.sample: 'the PDF text carries no version date'. Original 'October 2011' date was not stated in the PDF (metadata CreationDate 2011-12-16; finding 12); revised wording rechecked.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-lo",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "locator": "Abstract (printed p. 1705): 'By comparing the unconditional empirical distribution of daily stock returns to the conditional distribution ... several technical indicators do provide incremental information'; Section III.A (sample): seven five-year subperiods 1962-1996, 10 stocks per size quintile, 50 per subperiod, 80% nonmissing observations",
+      "claim": "sections[8].paragraphs[0]: a difference between conditional return distributions asks about information, distinct from a cost-adjusted portfolio return.",
+      "disposition": "supported"
+    }
+  ],
+  "boundaries": "Thirteen checks over eight URLs (eight source entries); three checks were re-run on 2026-10-12 against the revised compiled chapter (rc-bs ex ante wording, rc-bs version date, t multiplier). Dispositions: 13 supported. All retrievals succeeded; nothing is recorded as a retrieval failure. Checks cover the chapter's sourced claims and evidence records only. The fictional ledger, its arithmetic, the six-test 26% figure and the 12/20 Wilson computation are original arithmetic (see statistics-reproduce.py), not source claims. The research-appendix paragraph 'These break-even ranges are known after the results' (research-context.json research[3]) is outside this chapter's compiled text, but it shares the rc-bs wording issue and is noted in the report. Source access dates in the book were not changed."
+}

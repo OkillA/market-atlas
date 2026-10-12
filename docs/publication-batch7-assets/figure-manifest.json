@@ -1,0 +1,212 @@
+[
+  {
+    "id": "testing",
+    "chapter": "testing",
+    "title": "Twelve held-out trades under four cost descriptions",
+    "kind": "line",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "testing-2",
+    "chapter": "testing",
+    "title": "A research timeline: what each stage may see",
+    "kind": "flow",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "testing-3",
+    "chapter": "testing",
+    "title": "A close-based signal and the first feasible fill",
+    "kind": "candles",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "statistics",
+    "chapter": "statistics",
+    "title": "Payoff distribution of twenty net outcomes",
+    "kind": "bars",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "statistics-2",
+    "chapter": "statistics",
+    "title": "The same twenty trades in two orders: equity and drawdown",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "statistics-3",
+    "chapter": "statistics",
+    "title": "The running average and a rough uncertainty band",
+    "kind": "line",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "system-design",
+    "chapter": "system-design",
+    "title": "Atlas-20 scenario: equity, slots, and exposure at each close",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "system-design-2",
+    "chapter": "system-design",
+    "title": "Atlas-20 daily processing order",
+    "kind": "flow",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "system-design-3",
+    "chapter": "system-design",
+    "title": "Exposure timing changes a path (separate illustration)",
+    "kind": "line",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "classical-frameworks",
+    "chapter": "classical-frameworks",
+    "title": "An idealized wave template",
+    "kind": "line",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "classical-frameworks-2",
+    "chapter": "classical-frameworks",
+    "title": "Dow confirmation: each average against its own reference high",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "classical-frameworks-3",
+    "chapter": "classical-frameworks",
+    "title": "A trading range with a spring branch and a breakdown branch",
+    "kind": "line",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies",
+    "chapter": "case-studies",
+    "title": "One frozen P1 entry, two observed continuations",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-2",
+    "chapter": "case-studies",
+    "title": "AMB: identical OHLC, different first exits",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-3",
+    "chapter": "case-studies",
+    "title": "RIVR: breach, recognition, execution and target",
+    "kind": "candles",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-4",
+    "chapter": "case-studies",
+    "title": "GME: sparse documented observations, with cutoffs preserved",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-5",
+    "chapter": "case-studies",
+    "title": "AAPL January: a completed skip · 2016-01-04",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-6",
+    "chapter": "case-studies",
+    "title": "MSFT February: the continuation check fails · 2016-02-01",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-7",
+    "chapter": "case-studies",
+    "title": "AAPL March: favorable follow-through · 2016-03-01",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-8",
+    "chapter": "case-studies",
+    "title": "SPY October: an ordinary unresolved window · 2016-10-03",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  },
+  {
+    "id": "case-studies-9",
+    "chapter": "case-studies",
+    "title": "One historical candle, two possible orders",
+    "kind": "panels",
+    "widths": [
+      260,
+      760
+    ]
+  }
+]

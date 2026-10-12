@@ -70,21 +70,21 @@ The figures label the instrument Sharpe ratios as gross. These are not net retur
 
 Bajgrowicz and Scaillet test 7,846 technical rules on daily DJIA data from January 1897–July 2011 in the author-hosted version cited here. Their tests address the chance discoveries created by searching many rules, then examine whether past winners can be selected to perform later. Historical in-sample successes do not yield a reliable ex ante selection procedure in this experiment. Costs eliminate the out-of-sample performance of the investigated portfolios.
 
-Table 5 reports break-even one-way costs rather than a universally correct fee. For the FDR-selected portfolios, the first three period ranges are 30–35, 0–5 and 0–5 basis points; the later periods have negative out-of-sample performance before costs. A basis point is 0.01 percentage point. These break-even ranges are known after the results, not a cost policy one could select beforehand. Compare turnover, spread and impact as well as commission. The study challenges extrapolating the best backtest; its daily index universe and tested rule set limit any claim about every stock method.
+Table 5 reports break-even one-way costs rather than a universally correct fee. For the FDR-selected portfolios, the first three period ranges are 30–35, 0–5 and 0–5 basis points; the later periods have negative out-of-sample performance before costs. A basis point is 0.01 percentage point. The authors call these break-evens ex ante because costs are raised inside the selection procedure itself (pp. 22, 24), unlike break-evens computed after rules are chosen (p. 21). They are still backtest thresholds, not cost levels an investor would have measured beforehand. Compare turnover, spread and impact as well as commission. The study challenges extrapolating the best backtest; its daily index universe and tested rule set limit any claim about every stock method.
 
 **Searching historical technical rules did not secure persistent net performance here**
 
 - Classification: empirical; checked 2026-10-02.
-- Location: Author-hosted October 2011 version: introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
+- Location: Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
 - Support: Inspected false-discovery adjustment, chronological persistence tests and cost sensitivity against zero excess-performance criteria.
 - Limits: Results concern the authors’ index/rule experiment; they neither prove all technical methods useless nor license ignoring adverse results.
-- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
+- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
 
 **Study specification**
 
 | Field | What was tested |
 | --- | --- |
-| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted version dated October 2011. |
+| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date. |
 | Rule | 7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods. |
 | Comparator | Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion. |
 | Costs | Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately. |
@@ -857,16 +857,16 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Research boundary: searching historical technical rules did not secure persistent net performance here**
 
 - Classification: empirical; checked 2026-10-02.
-- Location: Author-hosted October 2011 version: introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
+- Location: Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
 - Support: Inspected false-discovery adjustment, chronological persistence tests and cost sensitivity against zero excess-performance criteria.
 - Limits: Results concern the authors’ index/rule experiment; they neither prove all technical methods useless nor license ignoring adverse results.
-- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
+- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
 
 **Study specification**
 
 | Field | What was tested |
 | --- | --- |
-| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted version dated October 2011. |
+| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date. |
 | Rule | 7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods. |
 | Comparator | Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion. |
 | Costs | Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately. |
@@ -1359,8 +1359,8 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **Break-even cost converts an uncertain assumption into a threshold**
 
 - Classification: arithmetic; checked 2026-10-01.
-- Location: Break-even section, worked example, practice tasks.
-- Support: Recalculated $91.15 ÷ 12 ≈ $7.60 per round trip, ($91.15 − $24) ÷ 854 ≈ $0.0786 per share, $91.15 ÷ 1,708 ≈ $0.053 per share per side, and $1,600 ÷ 200 = $8 with $600 and −$200 results at $5 and $9.
+- Location: Break-even section, worked example, exercise (d), practice tasks.
+- Support: Recalculated $91.15 ÷ 12 ≈ $7.60 per round trip, ($91.15 − $24) ÷ 854 ≈ $0.0786 per share, $91.15 ÷ 1,708 ≈ $0.053 per share per side, $1,600 ÷ 200 = $8 with $600 and −$200 results at $5 and $9, and the exercise’s $975 ÷ 150 = $6.50 with +$225 and −$225 at $5 and $8.
 - Limits: Break-even is computed after the fact for one fixed ledger; it is not a selection method and says nothing about future costs.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 
@@ -1391,16 +1391,16 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **In a large DJIA rule search, costs removed out-of-sample performance and break-evens computed after selection are ex post**
 
 - Classification: empirical; checked 2026-10-02.
-- Location: Author-hosted October 2011 version: introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
-- Support: Inspected the author-hosted sample and selection procedure, chronological persistence, and Table 5’s Sharpe-criterion portfolios. FDR break-even one-way costs are 30–35, 0–5 and 0–5 basis points in the first three periods; later FDR portfolios are negative before costs. These thresholds are ex post, not a tradable selection rule.
+- Location: Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
+- Support: Inspected the author-hosted sample and selection procedure, chronological persistence, and Table 5’s Sharpe-criterion portfolios. FDR break-even one-way costs are 30–35, 0–5 and 0–5 basis points in the first three periods; later FDR portfolios are negative before costs. The authors raise costs inside the monthly ex ante selection until the selected portfolios’ out-of-sample performance disappears (Table 5, p. 24) and call these break-even transaction costs computed ex ante (pp. 22, 24); they criticize break-evens computed after rules are chosen as ex post (p. 21). Either kind is a backtest threshold, not a measurement of the costs an investor would actually pay.
 - Limits: An index experiment with a specific rule universe; it does not test individual-stock breakout rules like v1-b or prove every technical method useless.
-- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
+- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
 
 **Study specification**
 
 | Field | What was tested |
 | --- | --- |
-| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted version dated October 2011. |
+| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date. |
 | Rule | 7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods. |
 | Comparator | Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion. |
 | Costs | Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately. |
@@ -1446,7 +1446,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 
 - Classification: arithmetic; checked 2026-10-01.
 - Location: Uncertainty section, sensitivity table and running-mean figure.
-- Support: Recomputed leave-one-out means +0.216R and +0.442R, sample SD 1.308R (n − 1 divisor), SE 0.293R, band −0.28R to +0.89R, and every running-mean and band value plotted.
+- Support: Recomputed leave-one-out means +0.216R and +0.442R, sample SD 1.308R (n − 1 divisor), SE 0.2925R, band −0.28R to +0.89R, and every running-mean and band value plotted.
 - Limits: The ±2 SE band is a teaching approximation assuming independent, identically distributed trades; with n = 20 and lumpy outcomes it is crude.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 
@@ -1485,16 +1485,16 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 **A large multiple-testing study of technical rules is summarized in the research section**
 
 - Classification: empirical; checked 2026-10-02.
-- Location: Author-hosted October 2011 version: introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
-- Support: Inspected the author-hosted sample and selection procedure, chronological persistence, and Table 5’s Sharpe-criterion portfolios. FDR break-even one-way costs are 30–35, 0–5 and 0–5 basis points in the first three periods; later FDR portfolios are negative before costs. These thresholds are ex post, not a tradable selection rule.
+- Location: Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
+- Support: Inspected the author-hosted sample and selection procedure, chronological persistence, and Table 5’s Sharpe-criterion portfolios. FDR break-even one-way costs are 30–35, 0–5 and 0–5 basis points in the first three periods; later FDR portfolios are negative before costs. The authors raise costs inside the monthly ex ante selection until the selected portfolios’ out-of-sample performance disappears (Table 5, p. 24) and call these break-even transaction costs computed ex ante (pp. 22, 24); they criticize break-evens computed after rules are chosen as ex post (p. 21). Either kind is a backtest threshold, not a measurement of the costs an investor would actually pay.
 - Limits: Index-level experiment; not a test of the book’s fictional rules or of individual-stock methods generally.
-- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
+- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
 
 **Study specification**
 
 | Field | What was tested |
 | --- | --- |
-| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted version dated October 2011. |
+| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date. |
 | Rule | 7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods. |
 | Comparator | Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion. |
 | Costs | Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately. |
@@ -1638,7 +1638,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 
 - Classification: teaching-rule; checked 2026-10-01.
 - Location: Worked sections, tables, figures and solutions.
-- Support: Reviewed P1 links against Chapters21–23; G1 and R1 specify cutoffs, entry gates, shares, exits, costs and skipped/unresolved branches. Separate accounts prevent a false combined portfolio.
+- Support: Reviewed P1 links against Chapters 21–23; GR1 and RR1 specify cutoffs, entry gates, shares, exits, costs and skipped/unresolved branches. Separate accounts prevent a false combined portfolio.
 - Limits: Original fictional teaching example; not an empirical performance estimate.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 
@@ -1646,7 +1646,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 
 - Classification: arithmetic; checked 2026-10-01.
 - Location: Worked sections, tables, figures and solutions.
-- Support: Recomputed +195/−105 P1 branches, GAPS−305/−3.3889R,15-share−155/−3.4444R, AMB3R model difference, and RIVR+195/−105.
+- Support: Recomputed +195/−105 P1 branches, GAPS −305/−3.3889R, 15-share −155/−3.4444R, AMB 3R model difference, and RIVR+195/−105.
 - Limits: Original fictional teaching example; not an empirical performance estimate.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 

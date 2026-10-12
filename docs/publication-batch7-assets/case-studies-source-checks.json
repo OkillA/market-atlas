@@ -1,0 +1,127 @@
+{
+  "checked": "2026-10-12",
+  "reviewer": "reviewer agent for claude-code-pub7",
+  "method": "Fetched each URL with curl (browser or declared research User-Agent; SEC requires a declared agent) into an isolated temp directory, stripped HTML/converted PDF with pdftotext -layout, and located the exact passage for each chapter claim. Kaggle live pages returned a reCAPTCHA challenge, so the preserved API metadata in data/historical/kaggle-metadata.json and kaggle-listing.json was read instead. Two additional primary/secondary records (Apple Q1 FY16 release; Nasdaq AAPL/MSFT dividend history) were consulted only to test a reviewer finding about dividend adjustment; they are not chapter sources.",
+  "checks": [
+    {
+      "id": "rc-sec-case",
+      "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+      "locator": "Section 3.2 'GME Equities Trading', printed p. 18 (PDF page 19)",
+      "claim": "Jan 13, 2021 close rose to $31.40 from $19.95; share volume approximately 144 million vs approximately 7 million the day before.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-sec-case",
+      "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+      "locator": "Section 3.2, printed p. 18 (PDF page 19)",
+      "claim": "Jan 27 close $347.51; Jan 28 intraday high $483.00.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-sec-case",
+      "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+      "locator": "Section 3.2, printed p. 19 (PDF page 20), paragraph before Figure 2",
+      "claim": "Daily closing-price changes of +$199.53 (Jan 26 to 27) and -$153.91 (Jan 27 to 28), from which the chapter derives Jan 26 $147.98 and Jan 28 $193.60.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-sec-case",
+      "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+      "locator": "Section 3.2, printed pp. 18-19",
+      "claim": "Chapter describes the reported closes as 'U.S. regular-session closing observations'.",
+      "disposition": "partial"
+    },
+    {
+      "id": "rc-sec-case",
+      "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+      "locator": "Evidence locator 'printed pp. 18-19 (PDF pages 19-20)'",
+      "claim": "Locator page numbering.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-sec-reuse",
+      "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+      "locator": "General Questions: 'Do I need permission to reuse EDGAR content?' and 'Is any of the content not free to reuse?'",
+      "claim": "Government-created site content is free to access and reuse; some content such as stock art is excluded.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-apple-split",
+      "url": "https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/",
+      "locator": "Press release dated April 23, 2014, final split paragraph",
+      "claim": "Seven-for-one split announced April 23, 2014; June 2 record date; split-adjusted trading begins June 9; holders receive six additional shares per share (N -> 7N).",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-open-stock-archive",
+      "url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+      "locator": "Live page and /api/v1/datasets/view returned a reCAPTCHA challenge on 2026-10-12",
+      "claim": "Depositor applies CC0-1.0; prices adjusted for dividends and splits; version 3.",
+      "disposition": "retrieval failed"
+    },
+    {
+      "id": "rc-open-stock-archive",
+      "url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+      "locator": "Preserved API metadata data/historical/kaggle-metadata.json (info.licenses[0].name, description 'Content'/'Acknowledgements') and kaggle-listing.json (currentVersionNumber, licenseName)",
+      "claim": "CC0-1.0 declared; 'prices have been adjusted for dividends and splits'; 'This dataset belongs to me'; version 3; no upstream source (userSpecifiedSources empty).",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-open-stock-archive",
+      "url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+      "locator": "Preserved description: 'The data (last updated 11/10/2017)'",
+      "claim": "Chapter states the 'adjustment vintage' is undocumented.",
+      "disposition": "partial"
+    },
+    {
+      "id": "rc-cc0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "locator": "Deed: 'No Copyright' and 'Other Information' paragraphs",
+      "claim": "The affirmer waives copyright and related rights to the extent allowed by law; other persons' rights are not affected; no warranties.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-orders",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "locator": "'Limit Order' and 'Stop Order' paragraphs",
+      "claim": "Limit orders are not guaranteed to execute; the stop price is a trigger, not a guaranteed execution price, and fills can deviate significantly.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-performance",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47",
+      "locator": "'Back-Testing' and 'Cherry-picking past performance' paragraphs",
+      "claim": "Back-tested performance is hypothetical; cherry-picked presentations highlight only favorable periods/investments.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-apple-dividend-2016",
+      "url": "https://www.apple.com/newsroom/2016/01/26Apple-Reports-Record-First-Quarter-Results/",
+      "locator": "Final dividend paragraph",
+      "claim": "New chapter source (revision): issuer declares a $0.52 per-share dividend payable February 11, 2016 to holders of record February 8, 2016; the record says the February 4 ex-date is not stated in the release.",
+      "disposition": "supported"
+    },
+    {
+      "id": "reviewer-evidence-exdates",
+      "url": "https://api.nasdaq.com/api/quote/AAPL/dividends?assetclass=stocks",
+      "locator": "Rows for 2016 (also MSFT endpoint)",
+      "claim": "Reviewer finding CS28-DIV: AAPL ex-date 02/04/2016 ($0.52, record 02/08/2016); later 2016 AAPL ex-dates 05/05, 08/04, 11/03; MSFT 02/16, 05/17, 08/16, 11/15. SPY history not available from this endpoint.",
+      "disposition": "supported"
+    },
+    {
+      "id": "reviewer-evidence-raw-quotes",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL",
+      "locator": "Yahoo chart API (HTTP 429), Nasdaq historical (0 records for 2016), Stooq (JavaScript challenge)",
+      "claim": "Unadjusted AAPL OHLC for 2016-02-01 and 2016-02-05 to confirm the raw-unit level comparison directly.",
+      "disposition": "retrieval failed"
+    },
+    {
+      "id": "rc-apple-dividend-2016",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ex-dividend-dates-when-are-you-entitled-stock-and",
+      "locator": "'The ex-dividend date for stocks is usually set as the record date or one business day before ...'",
+      "claim": "Chapter's 'under the 2016 settlement cycle the shares went ex-dividend on February 4'. The page describes only the current convention, not the 2016 two-business-day rule; the February 4 date itself is supported by the Nasdaq dividend-history check above.",
+      "disposition": "partial"
+    }
+  ],
+  "boundaries": "Revision re-check: the chapter now lists eight source records. Fourteen checks cover them over eight URLs (one Kaggle live retrieval failed; preserved metadata used). Three further checks over three URLs support or attempt to test a reviewer finding and are not chapter sources. Partial: the SEC report says 'closing price' without stating 'regular-session' (the official close is conventionally the regular-session close; wording could say 'reported closing prices'); the Kaggle description gives a last-update date (11/10/2017) that bounds the adjustment vintage although the formula remains undocumented. Fictional cases have no source by design. Edition-wide rights review (ROAD-003) is out of scope; nothing alarming beyond the already-disclosed limits of a depositor-asserted CC0 on vendor-origin market data. Retrieval failure is not evidence of an unsupported claim. Revision note: the 2016 two-business-day ex-date convention is not stated in any fetched page; the ex-date is nonetheless supported by Nasdaq's AAPL dividend history (ex 02/04/2016, record 02/08/2016). The revised wording 'Reported closing prices' and the bounded vintage note resolve the two earlier partial dispositions in the chapter text."
+}

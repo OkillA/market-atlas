@@ -1,0 +1,95 @@
+{
+  "chapter": "statistics",
+  "counts": {
+    "numeric": 455,
+    "text": 253,
+    "structural": 167
+  },
+  "hard_mismatches": [],
+  "displayed_chain_mismatches": [],
+  "notes": [
+    {
+      "id": "t-quantiles",
+      "t975_19": "2.093024",
+      "t975_4": "2.776445"
+    },
+    {
+      "id": "gross-formula-scratch",
+      "correct_loss_rate_7_of_20": "0.3525",
+      "wrong_loss_rate_0.40": "0.2975"
+    },
+    {
+      "id": "doubling-claim",
+      "ending_equity_at_200_per_R": "21210",
+      "recorded_mdd_dollars": "680",
+      "recorded_mdd_pct": "3.312",
+      "losses_first_mdd_dollars": "1620",
+      "losses_first_mdd_pct": "8.100",
+      "comment": "dollar P&L and drawdowns double; equity levels (20,605 -> 21,210) do not; recorded % drawdown 1.68 -> 3.31 (< 2x)"
+    },
+    {
+      "id": "worst-ordering",
+      "sum_losses_dollars": "810",
+      "losses_first_is_worst_possible": "True"
+    },
+    {
+      "id": "leave-one-out-share",
+      "drop_win_share": "0.2866",
+      "drop_gap_share": "0.4615"
+    },
+    {
+      "id": "sd-reproduction",
+      "sum_sq_dev": "260099/8000",
+      "sample_var_n_minus_1": "1.711178",
+      "sample_sd": "1.30812",
+      "sample_se": "0.29250",
+      "population_sd_n": "1.27500",
+      "population_se": "0.28510",
+      "t_statistic_mean_over_se": "1.0342",
+      "t19_95pct_interval": [
+        "-0.3097",
+        "0.9147"
+      ]
+    },
+    {
+      "id": "wilson-5dp-chain",
+      "lower": "38.66",
+      "upper": "78.12"
+    },
+    {
+      "id": "half-up-dependence",
+      "series": 1,
+      "point": 1,
+      "exact": "-0.525",
+      "shown": -0.53
+    },
+    {
+      "id": "half-up-dependence",
+      "series": 1,
+      "point": 3,
+      "exact": "-2.225",
+      "shown": -2.23
+    },
+    {
+      "id": "half-up-dependence",
+      "series": 1,
+      "point": 7,
+      "exact": "-3.525",
+      "shown": -3.53
+    },
+    {
+      "id": "half-up-dependence",
+      "series": 1,
+      "point": 11,
+      "exact": "-1.825",
+      "shown": -1.83
+    },
+    {
+      "id": "half-up-dependence",
+      "running_mean_n": 20,
+      "exact": "0.3025",
+      "shown": 0.303
+    }
+  ],
+  "rounding_rule": "round half away from zero at displayed precision; roots at 60 significant digits with boundary check"
+}

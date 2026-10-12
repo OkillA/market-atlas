@@ -2574,7 +2574,7 @@
         "explanation": "39.70 is below the 39.80 zone edge but above the 39.50 closing threshold.",
         "feedback": [
           "This substitutes the intraday low for the completed close specified by the rule.",
-          "Near is not the criterion:39.70 is numerically below 39.80 even though it is near 40.",
+          "Near is not the criterion: 39.70 is numerically below 39.80 even though it is near 40.",
           "Correct: the two fixed boundaries identify different events."
         ]
       },
@@ -2996,7 +2996,7 @@
           "title": "Hammer-like: measure the tail and the context",
           "paragraphs": [
             "Use O50/H51/L47/C50.80. Body is $0.80, upper shadow $0.20, lower shadow $3, range $4. Under this chapter’s rule, a hammer-like shape needs a positive body, lower shadow at least twice that body, and upper shadow no greater than the body. Here 3/0.80 = 3.75 and 0.20≤0.80, so it qualifies. The exact thresholds are a teaching definition within conventional long-lower-shadow vocabulary.",
-            "The prior-trend panel adds two down candles:54/55/52/53 and 53/54/49/50. Their closes fall 53 →50, then the measured candle closes 50.80. You can now see a preceding decline and an interval finishing well above its low. That motivates investigating a possible upward change. It does not establish the order of every transaction or the cause of the rebound. The same geometry after an advance has a different conventional contextual label, often hanging man.",
+            "The prior-trend panel adds two down candles: 54/55/52/53 and 53/54/49/50. Their closes fall 53 →50, then the measured candle closes 50.80. You can now see a preceding decline and an interval finishing well above its low. That motivates investigating a possible upward change. It does not establish the order of every transaction or the cause of the rebound. The same geometry after an advance has a different conventional contextual label, often hanging man.",
             "The near miss changes only the low to 48.90: O50/H51/L48.90/C50.80. Body and upper shadow stay unchanged, but the lower shadow is 1.10, only 1.375 times the body, so it fails the stated tail criterion. It can still be an up candle. “Up candle” and “hammer-like shape under this definition” answer different questions."
           ],
           "tables": [
@@ -3788,7 +3788,7 @@
           "title": "Ranges and triangles use the same boundary discipline",
           "paragraphs": [
             "A rectangle organizes repeated reactions between approximately horizontal upper and lower areas. For the supplied rectangle panel, closes 40, 44, 40.20, 43.80, 40.10, 44 establish a lower area near 40 and upper area near 44. At the sixth close, freeze a teaching upper boundary 44 and lower boundary 40. A later close 44.60 completes an upward closing-cross condition; a competing later 39.50 close exits downward instead. The six-price prefix alone chooses neither direction.",
-            "For the symmetrical-triangle panel, selected highs 50, 49, 48 pair with lows 44, 45, 46. Their separation narrows 6 →4 →2. Fix the last upper/lower reference at 48/46 for this simplified completion exercise rather than silently extending a discretionary sloping line. A next 48.50 close exits above the last upper reference;45.50 exits below the last lower reference. A true sloping-boundary detector would need dated anchors and projected values, as chapter 5 demonstrated.",
+            "For the symmetrical-triangle panel, selected highs 50, 49, 48 pair with lows 44, 45, 46. Their separation narrows 6 →4 →2. Fix the last upper/lower reference at 48/46 for this simplified completion exercise rather than silently extending a discretionary sloping line. A next 48.50 close exits above the last upper reference; 45.50 exits below the last lower reference. A true sloping-boundary detector would need dated anchors and projected values, as chapter 5 demonstrated.",
             "Ascending and descending triangles make one boundary approximately horizontal and the other sloping. Their small panels display the selected sequences. Do not infer direction from the category name alone: define the boundary and observe the actual crossing. Contraction is a description of the range; the next transition is another observation. The guided and independent tasks ask you to apply those ideas to new values."
           ],
           "id": "ranges-and-triangles-use-the-same-boundary-discipline"

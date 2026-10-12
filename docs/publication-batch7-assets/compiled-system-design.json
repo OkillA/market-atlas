@@ -1,0 +1,1808 @@
+{
+  "chapter": {
+    "id": "system-design",
+    "title": "Designing a complete trading system",
+    "subtitle": "A signal is one component of a much larger decision process.",
+    "minutes": 16,
+    "status": "draft",
+    "tags": [
+      "system design",
+      "portfolio",
+      "regime",
+      "turnover",
+      "specification",
+      "Atlas-20",
+      "rule sheet",
+      "allocation",
+      "portfolio ledger",
+      "partial fill",
+      "cash reservation"
+    ],
+    "takeaway": "A complete system specifies data, eligibility, ranking, sizing, fills, exits, and accounting so precisely that two people processing the same inputs produce the same ledger.",
+    "optional": false,
+    "prerequisites": [
+      "breakouts",
+      "events",
+      "market-microstructure",
+      "risk-sizing",
+      "trade-plans",
+      "journaling",
+      "testing"
+    ],
+    "outcomes": [
+      "Screen, rank with a deterministic tie-break, and size simultaneous candidates as the smallest of the risk, notional, and cash allowances.",
+      "Process fills, partial fills, nonfills, halts, gaps, same-bar ambiguity, and time exits in a declared order.",
+      "Keep a ledger in which cash + holdings = equity at every close, with reserved cash and costs, and report net R on each trade’s frozen 1R.",
+      "Distinguish definitions, conventions, and arbitrary teaching settings, and explain why any rule change, including a regime filter, is a new version."
+    ],
+    "sections": [
+      {
+        "title": "Start with an economic question",
+        "paragraphs": [
+          "A trading system is an organized set of decisions that can be applied consistently. It need not be automated, but its rules should be clear enough to evaluate. Begin with a proposed mechanism and an observable claim. “Trends may persist over this horizon” is a research hypothesis. “This indicator predicts everything” is not a useful specification. The mechanism does not prove an edge; it tells you what evidence would support or weaken the idea.",
+          "Chapter 24 tested a twenty-session breakout signal one trade at a time, as though capital and position slots were unlimited. This chapter builds Atlas-20, a complete fictional research system around the same kind of daily breakout signal, and makes every remaining decision explicit. It freezes version 1.0 of the rule sheet, supplies a small invented market of eight stocks over eight sessions, and processes each decision in order until the ledger reconciles to the cent. All companies, prices, volumes, and calendars are fictional. The percentages are teaching settings, not recommended allocations, and the system has no demonstrated performance. The scenario was built to exercise the rules, including a tie, a partial fill, an unfilled order, a halt, and other exceptions, so it is not a typical week.",
+          "Use one test for completeness: two careful readers given the same inputs should produce the same ledger without asking the author anything. Each rule below is labeled as a definition, a modeling convention, a scope choice, or an arbitrary teaching setting. The included scripts/atlas20-sim.cjs processes the supplied scenario under the rule sheet and reproduces its accounting; it is a teaching simulator, not a trading engine. You can also reproduce every number by hand from this chapter’s tables."
+        ],
+        "id": "start-with-an-economic-question"
+      },
+      {
+        "title": "Write the data and eligibility contract",
+        "paragraphs": [
+          "Atlas-20 uses a point-in-time universe and completed regular-session daily bars. “Point in time” means the system uses the member list, prices, and calendar as they were known at each decision close, not as they are known today. The signal needs the twenty sessions before the decision day, so a stock needs 21 consecutive valid bars before it can be screened. If any of those bars is missing, v1.0 records an incomplete record and evaluates nothing that day. It does not fill the gap with yesterday’s price, because an invented bar could create or hide a breakout.",
+          "Each filter is part of the research claim, so each is stated with its data and timing. The liquidity filter averages close × volume over the twenty sessions ending at the decision close. A cutoff chosen from the full sample would quietly use the future. The price band keeps the fixed $2 stop between 2% and 10% of the share price. Without it, the same rule would mean very different risks for a $15 stock and a $150 stock. The earnings exclusion covers sessions t+1 through t+10 because this is the planned ten-session holding window for an entry in t+1 (holding session 1), ending at t+10 (holding session 10), so entries exclude announcements known at the decision close within that window. A rescheduled or unexpected announcement remains possible; the calendar is not insurance. The checks run in a declared order, and the first failure is recorded. That keeps the record of skipped candidates honest. A halt can extend the actual elapsed holding beyond that planned window; the calendar filter cannot exclude every announcement during an overdue holding."
+        ],
+        "tables": [
+          {
+            "title": "Atlas-20 v1.0 rule sheet, part 1: data, universe, and eligibility",
+            "columns": [
+              "Rule",
+              "Atlas-20 v1.0 setting",
+              "Kind"
+            ],
+            "rows": [
+              [
+                "Scope",
+                "Long-only fictional U.S.-listed common stocks in one U.S.-dollar account; no leverage, short sales, or derivatives.",
+                "Scope choice"
+              ],
+              [
+                "Universe",
+                "Point-in-time member list as of each decision date. Scenario members throughout: Alder, Birch, Cedar, Dogwood, Elm, Fir, Ginkgo, Hazel.",
+                "Convention"
+              ],
+              [
+                "Data and clock",
+                "Completed regular-session daily OHLC and share volume; split adjustment uses only actions effective by the decision date. Decisions are computed after the close; orders are submitted before the next open.",
+                "Convention"
+              ],
+              [
+                "Minimum history",
+                "21 consecutive valid bars: sessions t−20 through t.",
+                "Teaching setting"
+              ],
+              [
+                "Missing data",
+                "Any absent or invalid bar in t−20…t: no signal is evaluated that day. No interpolation or carried-forward bars.",
+                "Convention"
+              ],
+              [
+                "Already held",
+                "A stock with an open position or a working order is not screened; v1.0 never adds to a position.",
+                "Teaching setting"
+              ],
+              [
+                "Signal",
+                "Close at t strictly above the highest high of sessions t−20…t−1.",
+                "Definition"
+              ],
+              [
+                "Price band",
+                "$20.00 ≤ decision close ≤ $100.00, so the fixed $2 stop is 2%–10% of price.",
+                "Teaching setting"
+              ],
+              [
+                "Liquidity",
+                "Mean of close × volume over sessions t−19…t ≥ $2,000,000 (past data only).",
+                "Teaching setting"
+              ],
+              [
+                "Earnings",
+                "No scheduled earnings in sessions t+1…t+10 (the planned ten-session holding window; a halt can delay exit), per the calendar snapshot at the decision close.",
+                "Teaching setting"
+              ],
+              [
+                "Regime filter",
+                "None in v1.0.",
+                "Scope choice"
+              ],
+              [
+                "Check order",
+                "Complete record → signal → price band → liquidity → earnings. The first failure is recorded.",
+                "Convention"
+              ]
+            ]
+          }
+        ],
+        "id": "write-the-data-and-eligibility-contract"
+      },
+      {
+        "title": "Translate a signal into portfolio decisions",
+        "paragraphs": [
+          "An eligible stock signals when its completed close exceeds the highest high of the prior twenty completed sessions. When several qualify at the same close, Atlas-20 ranks them by breakout margin, the percentage by which the close clears that high. Rank the margin rounded to 0.01 percentage point, as stated in the table; ties in that rounded value are broken alphabetically. Two unequal raw margins can therefore receive the same rank value. Do not silently switch to unrounded ranking. This rule is not wise or optimized. Its only virtue is that it is written down. Without a declared order, a backtest quietly selects candidates by file order or by whichever result the researcher noticed first.",
+          "At most five slots exist, and a slot is occupied by any open position, including a halted one, and by any order placed at the current close. Each order’s quantity is the smallest of three allowances computed from equity E at the decision close. The risk allowance spends at most 0.5% of E on planned price risk at $2 per share. The notional allowance keeps the position at or below 10% of E at the limit price. The cash allowance uses only cash not already reserved for an order placed earlier at the same close. Following the book’s contract, 1R is the frozen planned price risk: filled shares × $2.00, fixed at the fill. The $5 round-trip cost is shown separately. So an ordinary stop exit for a full 250-share position loses $500 of price and $505 including costs. That cost-inclusive figure is a separate, labeled quantity, not 1R.",
+          "The cash test deserves a remark. Five slots at a 10% notional cap can commit only about half of equity, so cash does not bind in this unleveraged, mildly varying scenario. Large mark changes, stale valuations, or a later version can make the cash test important; the entry caps do not bound subsequent market values. It is still computed at every decision, for two reasons. Reservations must prevent the same dollars from funding two orders, and any later version with larger caps or more slots can make cash bind. One of the practice tasks shows such a variant."
+        ],
+        "tables": [
+          {
+            "title": "Atlas-20 v1.0 rule sheet, part 2: ranking, slots, sizing, and costs",
+            "columns": [
+              "Rule",
+              "Atlas-20 v1.0 setting",
+              "Kind"
+            ],
+            "rows": [
+              [
+                "Ranking value",
+                "Breakout margin = 100 × (close − prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point; larger ranks first.",
+                "Teaching setting"
+              ],
+              [
+                "Tie-break",
+                "Alphabetical by company name.",
+                "Convention"
+              ],
+              [
+                "Slots",
+                "At most 5 = open positions (halted ones included) + orders placed at this close.",
+                "Teaching setting"
+              ],
+              [
+                "Sizing equity E",
+                "Cash + shares × close for every holding, after the session’s exits and fills; a halted holding uses its last valid close.",
+                "Definition"
+              ],
+              [
+                "Limit price L",
+                "1.01 × signal close, rounded down to the cent.",
+                "Teaching setting"
+              ],
+              [
+                "Risk allowance",
+                "floor(0.5% × E ÷ $2.00) shares.",
+                "Teaching setting"
+              ],
+              [
+                "Notional allowance",
+                "floor(10% × E ÷ L) shares.",
+                "Teaching setting"
+              ],
+              [
+                "Cash allowance",
+                "floor((cash − cash already reserved at this close − $2.50) ÷ L) shares.",
+                "Definition"
+              ],
+              [
+                "Quantity",
+                "Smallest of the three allowances; fewer than 1 share means no order.",
+                "Definition"
+              ],
+              [
+                "Cash reservation",
+                "Shares × L + $2.50, held from order placement until the order fills or expires.",
+                "Convention"
+              ],
+              [
+                "R",
+                "1R = filled shares × $2.00, frozen at the fill. Net R = net P&L ÷ 1R. Costs are shown separately.",
+                "Book contract"
+              ],
+              [
+                "Costs",
+                "$2.50 per executed fill (entry, exit, or partial entry), so $5.00 per round trip. No separate spread or slippage charge beyond the fill rules.",
+                "Teaching setting"
+              ],
+              [
+                "Cash interest and settlement",
+                "Cash earns zero; settlement timing is ignored.",
+                "Convention"
+              ]
+            ]
+          }
+        ],
+        "id": "translate-a-signal-into-portfolio-decisions"
+      },
+      {
+        "title": "Exits, gaps, and time are first-class rules",
+        "paragraphs": [
+          "Entries use a day-limit buy order for the next session at 1.01 × the signal close, rounded down to the cent. Investor.gov explains that a buy limit executes only at its limit or lower and is not guaranteed to execute, and that a day order generally cancels at the end of the regular session. Atlas-20 models those facts with deliberately conservative conventions. An open at or below the limit fills at the open. A later trade strictly below the limit fills at the limit. A low exactly equal to the limit shows only that the price was touched, which does not prove that shares were available, so it is not a fill. The filled quantity is capped at 1% of the session’s share volume, and the rest of the order is canceled.",
+          "Each fill receives a sell stop $2.00 below and a sell limit target $4.00 above the actual fill price, plus a time exit at the close of the tenth holding session. Investor.gov notes that a stop becomes a market order once its price is reached and can execute well away from that price. Atlas-20 therefore models an ordinary stop at the stop price, an opening gap through the stop at the open, and a bar that contains both levels as a stop. Daily data cannot show which level traded first, and assuming the favorable order would flatter the record. These are assumptions about fills, not reports of actual executions.",
+          "A trading halt is a different problem. According to Investor.gov, the most common regulatory halt occurs when news is pending, and securities exchanges, not the SEC, decide whether to impose it; other U.S. markets honor a halt imposed by the security’s primary market. While a held stock has no bar, no exit can be modeled. Atlas-20 marks the stock at its last valid close, flags that mark as stale, keeps the slot occupied, and applies the gap rule to the first new bar. Cash earns nothing, settlement timing is ignored, and short sales, leverage, and derivatives are outside the scope of v1.0.",
+          "The 1% volume cap is a retrospective daily-bar fill model: the total session volume is unknown at the opening trade. It cannot be used as an instruction for how many shares to execute at that open. A live participation algorithm would need intraday volume and quote data, which this scenario does not provide. There are no splits, dividends, membership changes or calendar revisions during these eight sessions; a deployment specification would need separate policies for them. The supplied rolling-high, liquidity and completeness fields are sufficient statistics for this exercise, not a full historical feed.",
+          "If a halt spans holding-session-10 close, record an overdue time exit and retain the slot and stale mark. At the first subsequent tradable opening, opening stop/target gap rules have priority; otherwise exit at that open for the overdue deadline, before considering that bar’s intraday range. For entry E1 and a halt at E10–E12, a reopening at E13 executes this overdue rule. E10 remains the scheduled date; E13 is the later modeled execution date."
+        ],
+        "tables": [
+          {
+            "title": "Atlas-20 v1.0 rule sheet, part 3: orders, fills, exits, and review",
+            "columns": [
+              "Rule",
+              "Atlas-20 v1.0 setting",
+              "Kind"
+            ],
+            "rows": [
+              [
+                "Entry order",
+                "Buy day-limit order at L for the next session only; any unfilled remainder cancels at that session’s close.",
+                "Convention"
+              ],
+              [
+                "Entry fill",
+                "Open ≤ L: fill at the open. Otherwise, low strictly below L: fill at L. A low exactly at L is a touch, not a fill.",
+                "Convention (conservative)"
+              ],
+              [
+                "Partial fill",
+                "Filled shares ≤ floor(1% × entry-session volume). Keep the filled shares, cancel the rest, never top up.",
+                "Teaching setting"
+              ],
+              [
+                "Rejected or unfilled candidates",
+                "Not re-offered. A stock needs a new signal at a later close.",
+                "Convention"
+              ],
+              [
+                "Stop",
+                "Sell stop at fill − $2.00; triggered when low ≤ stop.",
+                "Teaching setting"
+              ],
+              [
+                "Target",
+                "Sell limit at fill + $4.00; fills only when high is strictly above the target.",
+                "Teaching setting"
+              ],
+              [
+                "Time exit",
+                "At the close of holding session 10 (entry session = 1; exchange sessions counted, including halted ones).",
+                "Teaching setting"
+              ],
+              [
+                "Exit priority (held from an earlier session)",
+                "1. Open ≤ stop: exit at open. 2. Open ≥ target: exit at open. 3. Low ≤ stop and high > target: stop assumed first. 4. Low ≤ stop: exit at stop. 5. High > target: exit at target. 6. Holding session 10: exit at close. After opening checks 1–2, an overdue time deadline exits at the open before steps 3–5; a scheduled session-10 close uses step 6.",
+                "Convention (conservative)"
+              ],
+              [
+                "Entry bar",
+                "Fill at the open: steps 3–5 apply to the rest of that bar. Fill at L intraday: the stop applies if low ≤ stop; a target is not credited.",
+                "Convention (conservative)"
+              ],
+              [
+                "Halt or missing bar while held",
+                "No exit is possible. Mark at the last valid close, flagged stale; the position keeps its slot. The first new bar starts at step 1.",
+                "Convention"
+              ],
+              [
+                "Processing order",
+                "Batch accounting: held-position exits and reserved entries, then close marks and screening. Entry quantities are fixed at the previous close and fully cash-reserved; no same-session exit funds a larger order. Within-session event rows are not a timestamped tape.",
+                "Convention"
+              ],
+              [
+                "Review triggers",
+                "Operational: a held stock without a bar; any nonzero reconciliation difference; an actual fill differing from the modeled fill. Performance: drawdown above 8% of the equity peak; observed costs differing from modeled costs by more than 50% over 20 fills. A trigger starts a review; any rule change becomes a new version.",
+                "Teaching setting"
+              ],
+              [
+                "Overdue time exit after halt",
+                "First resumed open: opening stop/target gap first; otherwise overdue time exit at the open, before intraday tests. Keep stale marks and occupied slot until then.",
+                "Convention"
+              ]
+            ]
+          }
+        ],
+        "id": "exits-gaps-and-time-are-first-class-rules"
+      },
+      {
+        "title": "The supplied scenario",
+        "paragraphs": [
+          "The account begins at the session-0 close with $100,000.00 of equity: $81,330.00 in cash and two positions entered before the scenario. Hazel’s tenth holding session is session 2; Fir’s would be session 7. The screen log is supplied data. It lists every stock that was not held and whose close exceeded its prior-20 high at a decision close, along with the pre-computed liquidity, the calendar, and the completeness facts. Every unlisted non-held stock and decision-close pair did not signal. Held stocks are excluded before screening; their omission says nothing about whether their close exceeded a rolling high. The two price grids supply each bar the rules need. A dash means the bar is not needed because the stock was neither held nor being bought. “No bar” means the record does not exist.",
+          "Before reading on, apply the rule sheet to decision close 0 yourself. List the six signals, decide which are eligible, rank them, and size whatever fits in the free slots."
+        ],
+        "tables": [
+          {
+            "title": "Opening state at the session-0 close",
+            "columns": [
+              "Holding",
+              "Shares",
+              "Entry session",
+              "Fill ($)",
+              "Stop / target ($)",
+              "1R ($)",
+              "Session-0 close ($)",
+              "Value ($)"
+            ],
+            "rows": [
+              [
+                "Hazel",
+                200,
+                "−7 (holding session 10 = session 2)",
+                "47.00",
+                "45.00 / 51.00",
+                "400.00",
+                "48.60",
+                "9,720.00"
+              ],
+              [
+                "Fir",
+                250,
+                "−2 (holding session 10 = session 7)",
+                "36.00",
+                "34.00 / 40.00",
+                "500.00",
+                "35.80",
+                "8,950.00"
+              ],
+              [
+                "Cash",
+                "—",
+                "—",
+                "—",
+                "—",
+                "—",
+                "—",
+                "81,330.00"
+              ],
+              [
+                "Equity",
+                "—",
+                "—",
+                "—",
+                "—",
+                "—",
+                "—",
+                "100,000.00"
+              ]
+            ]
+          },
+          {
+            "title": "Screen log: every non-held stock whose close exceeded its prior-20 high",
+            "columns": [
+              "Decision close",
+              "Stock",
+              "Close ($)",
+              "Prior-20 high ($)",
+              "20-session mean dollar volume ($ million)",
+              "Next scheduled earnings (session)",
+              "21-bar record"
+            ],
+            "rows": [
+              [
+                "D0",
+                "Alder",
+                "31.96",
+                "31.00",
+                "9.8",
+                "31",
+                "complete"
+              ],
+              [
+                "D0",
+                "Birch",
+                "71.75",
+                "70.00",
+                "2.3",
+                "40",
+                "complete"
+              ],
+              [
+                "D0",
+                "Cedar",
+                "40.80",
+                "40.00",
+                "6.4",
+                "25",
+                "complete"
+              ],
+              [
+                "D0",
+                "Dogwood",
+                "61.20",
+                "60.00",
+                "14.1",
+                "35",
+                "complete"
+              ],
+              [
+                "D0",
+                "Elm",
+                "55.40",
+                "54.00",
+                "11.7",
+                "6",
+                "complete"
+              ],
+              [
+                "D0",
+                "Ginkgo",
+                "24.60",
+                "24.10",
+                "1.6",
+                "44",
+                "complete"
+              ],
+              [
+                "D1",
+                "Dogwood",
+                "62.40",
+                "61.50",
+                "14.3",
+                "35",
+                "complete"
+              ],
+              [
+                "D2",
+                "Cedar",
+                "42.30",
+                "41.95",
+                "6.6",
+                "25",
+                "complete"
+              ],
+              [
+                "D3",
+                "Hazel",
+                "51.80",
+                "50.90",
+                "5.2",
+                "38",
+                "complete"
+              ],
+              [
+                "D5",
+                "Ginkgo",
+                "25.40",
+                "25.00",
+                "not computed",
+                "44",
+                "session-3 bar missing"
+              ],
+              [
+                "D6",
+                "Elm",
+                "58.90",
+                "56.30",
+                "13.9",
+                "68",
+                "complete"
+              ]
+            ]
+          },
+          {
+            "title": "Supplied bars, part 1 (O/H/L/C in $; volume in shares where an entry needs it)",
+            "columns": [
+              "Session",
+              "Alder",
+              "Birch",
+              "Cedar",
+              "Dogwood"
+            ],
+            "rows": [
+              [
+                "0",
+                "31.10/32.05/31.00/31.96",
+                "70.40/71.90/70.10/71.75",
+                "40.10/41.60/40.00/40.80",
+                "60.30/61.50/60.10/61.20"
+              ],
+              [
+                "1",
+                "32.10/32.60/31.70/32.45; vol 410,000",
+                "72.20/73.10/71.60/72.80; vol 11,800",
+                "41.60/41.95/41.20/41.50; vol 240,000",
+                "61.40/62.60/61.20/62.40"
+              ],
+              [
+                "2",
+                "32.50/33.40/32.20/33.20",
+                "72.90/73.60/72.10/73.30",
+                "41.70/42.40/41.40/42.30",
+                "62.80/63.30/62.10/62.90; vol 520,000"
+              ],
+              [
+                "3",
+                "33.30/34.10/33.00/33.90",
+                "73.20/74.00/72.60/73.10",
+                "43.00/43.40/42.50/43.10; vol 260,000",
+                "62.70/63.20/61.90/62.20"
+              ],
+              [
+                "4",
+                "33.80/34.70/33.50/34.40",
+                "73.00/73.50/72.20/72.90",
+                "43.20/43.90/42.80/43.60",
+                "62.30/63.80/62.00/63.50"
+              ],
+              [
+                "5",
+                "34.50/35.60/34.30/35.40",
+                "72.90/76.60/70.00/71.20",
+                "43.50/44.20/43.10/43.30",
+                "63.40/64.10/62.60/62.90"
+              ],
+              [
+                "6",
+                "35.50/36.40/35.20/35.50",
+                "—",
+                "43.40/44.00/42.70/43.80",
+                "62.80/63.40/61.70/62.10"
+              ],
+              [
+                "7",
+                "—",
+                "—",
+                "43.90/44.60/43.50/44.30",
+                "62.20/63.60/61.90/63.30"
+              ]
+            ]
+          },
+          {
+            "title": "Supplied bars, part 2 (— = not needed; no bar = record absent)",
+            "columns": [
+              "Session",
+              "Elm",
+              "Fir",
+              "Ginkgo",
+              "Hazel"
+            ],
+            "rows": [
+              [
+                "0",
+                "54.20/55.60/54.00/55.40",
+                "35.90/36.20/35.40/35.80",
+                "24.00/24.70/23.90/24.60",
+                "48.20/48.90/47.90/48.60"
+              ],
+              [
+                "1",
+                "—",
+                "35.70/35.95/34.60/34.90",
+                "—",
+                "48.70/49.40/48.30/49.10"
+              ],
+              [
+                "2",
+                "—",
+                "34.80/35.30/34.40/35.10",
+                "—",
+                "49.20/49.80/48.90/49.30"
+              ],
+              [
+                "3",
+                "—",
+                "no bar",
+                "no bar",
+                "49.60/51.95/49.50/51.80"
+              ],
+              [
+                "4",
+                "—",
+                "33.10/33.60/32.40/33.20",
+                "—",
+                "—"
+              ],
+              [
+                "5",
+                "—",
+                "—",
+                "25.00/25.50/24.90/25.40",
+                "—"
+              ],
+              [
+                "6",
+                "57.00/59.20/56.80/58.90",
+                "—",
+                "—",
+                "—"
+              ],
+              [
+                "7",
+                "59.10/59.90/58.70/59.60; vol 300,000",
+                "—",
+                "—",
+                "—"
+              ]
+            ]
+          }
+        ],
+        "id": "the-supplied-scenario"
+      },
+      {
+        "title": "Decision close 0: four eligible candidates, three slots",
+        "paragraphs": [
+          "Six stocks signal. Elm is excluded because its scheduled earnings fall in session 6, inside the window from session 1 to session 10. Ginkgo is excluded because its mean dollar volume of $1.6 million is below the $2.0 million threshold. Both would have looked attractive on a chart, and both stay in the opportunity record as ineligible. The remaining four rank as Alder at 3.10%, Birch at 2.50%, and then Cedar and Dogwood tied at exactly 2.00%. Cedar wins the tie alphabetically. Hazel and Fir occupy two of the five slots, so only three are free, and Dogwood is recorded as “eligible, no free slot.”",
+          "At E = $100,000.00, the risk allowance is floor(500 ÷ 2) = 250 shares for every candidate. Alder’s limit is $32.27, so its notional allowance is floor(10,000 ÷ 32.27) = 309, and risk binds at 250 shares. Birch’s limit is $72.46, so notional binds at 138 shares, which is $9,999.48 at the limit. Cedar’s notional allowance is 242 shares at $41.20. The cash allowances, computed in rank order after earlier reservations, are far larger. The three reservations total $28,044.88 and leave $53,285.12 available. The same price-risk rule produces a full-risk Alder order and two smaller orders because the notional cap binds for the higher-priced stocks."
+        ],
+        "tables": [
+          {
+            "title": "Decision close 0: screening, ranking, and sizing (E = $100,000.00; 3 free slots)",
+            "columns": [
+              "Candidate",
+              "Margin (%)",
+              "Eligibility",
+              "Rank",
+              "Limit L ($)",
+              "Risk / notional / cash allowance (shares)",
+              "Order (shares)",
+              "Reserved ($)"
+            ],
+            "rows": [
+              [
+                "Alder",
+                "3.10",
+                "Yes",
+                1,
+                "32.27",
+                "250 / 309 / 2,520",
+                "250 (risk binds)",
+                "8,070.00"
+              ],
+              [
+                "Birch",
+                "2.50",
+                "Yes",
+                2,
+                "72.46",
+                "250 / 138 / 1,011",
+                "138 (notional binds)",
+                "10,001.98"
+              ],
+              [
+                "Cedar",
+                "2.00",
+                "Yes",
+                3,
+                "41.20",
+                "250 / 242 / 1,535",
+                "242 (notional binds)",
+                "9,972.90"
+              ],
+              [
+                "Dogwood",
+                "2.00",
+                "Yes",
+                4,
+                "61.81",
+                "250 / 161 / 862",
+                "0: no free slot",
+                "—"
+              ],
+              [
+                "Elm",
+                "2.59",
+                "No: earnings in session 6",
+                "—",
+                "—",
+                "—",
+                "—",
+                "—"
+              ],
+              [
+                "Ginkgo",
+                "2.07",
+                "No: $1.6M < $2.0M",
+                "—",
+                "—",
+                "—",
+                "—",
+                "—"
+              ],
+              [
+                "Total",
+                "—",
+                "—",
+                "—",
+                "—",
+                "—",
+                "3 orders",
+                "28,044.88"
+              ]
+            ]
+          }
+        ],
+        "id": "decision-close-0-four-eligible-candidates-three-slots"
+      },
+      {
+        "title": "Sessions 1–3: fills, a nonfill, a time exit, and a halt",
+        "paragraphs": [
+          "Session 1 begins with the held positions. Hazel’s range stays between its $45 stop and $51 target. Fir’s low of $34.60 stays above its $34.00 stop. Next come the entries. Alder opens at $32.10, below its $32.27 limit, so all 250 shares fill at the open. Its stop is $30.10, its target is $36.10, and 1R is $500. Birch opens at $72.20, within its limit, but only 11,800 shares trade, so the 1% cap allows 118 of the 138 shares ordered. The remainder cancels, and Birch’s 1R is 118 × $2 = $236, not the $276 planned at the order. Cedar opens at $41.60, above its $41.20 limit, and its low is exactly $41.20. That is a touch, so there is no fill, and the $9,972.90 reservation is released. Cash falls from $81,330.00 by $8,027.50 and $8,522.10 to $64,780.40, and equity at the close is $100,028.30.",
+          "Cedar’s unused slot does not go back to Dogwood, because candidates are offered only at their own signal close. Dogwood earns a new chance by signaling again at decision close 1: its $62.40 close exceeds the new prior-20 high of $61.50. The 158-share order reflects the notional allowance, floor(10,002.83 ÷ 63.02). In session 2, Dogwood opens at $62.80, below its limit, and fills there. Hazel reaches holding session 10 without touching either level and exits at the $49.30 close for +$455 net, or +1.14R on its $400 denominator. At decision close 2, Cedar signals again at $42.30, above the $41.95 high it set in session 1, and receives a 234-share order at $42.72.",
+          "In session 3, Fir has no bar: trading is halted. Fir is marked at its session-2 close of $35.10 and flagged stale, and the missing bar fires an operational review trigger. Cedar opens at $43.00, above its limit, then trades down to $42.50, so the model fills it at $42.72. Because the fill happened intraday, the entry bar cannot credit a target, and the stop is not reached. At the close, five slots are in use: Fir, Alder, Birch, Dogwood, and Cedar. Hazel then signals at $51.80 and passes every filter, but the halted Fir still holds a slot, so Hazel gets no order. Equity is $100,502.82, and holdings are 45.6% of it, the highest exposure so far.",
+          "Pause here. The worksheet below starts from this session-3 state and asks you to process sessions 4 and 5 before you open the complete ledger."
+        ],
+        "id": "sessions-1-3-fills-a-nonfill-a-time-exit-and-a-halt"
+      },
+      {
+        "title": "Sessions 4–7 and the complete ledger",
+        "paragraphs": [
+          "Fir resumes trading in session 4 with an open of $33.10, below its $34.00 stop, so the exit occurs at the open. The loss is −$725 of price and −$730 net, or −1.46R. That is well beyond the ordinary $505 cost-inclusive modeled loss, because the gap skipped the stop price. In session 5, Birch trades from $70.00 to $76.60, a bar that contains both its $70.20 stop and its $76.20 target. The conservative priority records a stop: −$241 net, or −1.02R. A reader who assumed the target came first would report +$467, or +1.98R. A single unverifiable assumption about the order of trades moves this result by three R. At decision close 5, Ginkgo’s close is above its prior-20 high, but its session-3 bar is missing from the record, so nothing is evaluated.",
+          "Alder trades above its $36.10 target in session 6 and exits there for +$995 net, or +1.99R. At that close, Elm signals again. Its earnings date of session 6 is now in the past, and its next scheduled report falls outside the window. It receives a 168-share order, which fills at the $59.10 open of session 7. The scenario ends with Dogwood, Cedar, and Elm open and marked at the session-7 close.",
+          "Every row of the ledger satisfies cash + holdings = equity. Equity rises from $100,000.00 to $100,739.22, a change of $739.22. Measured from the session-0 marks, the closed trades contribute +$137.50 for Hazel, −$677.50 for Fir, −$241.00 for Birch, and +$995.00 for Alder, a total of $214.00. The three open positions contribute $532.72 of unrealized price gain less $7.50 of entry costs, or $525.22. The total, $214.00 + $525.22, equals the $739.22 change. Nine fills cost $22.50 inside the scenario."
+        ],
+        "tables": [
+          {
+            "title": "Session event log (cash flows include the $2.50 fill cost)",
+            "columns": [
+              "Session",
+              "Event",
+              "Cash flow ($)"
+            ],
+            "rows": [
+              [
+                "0",
+                "Opening state; orders placed at the close (see allocation table)",
+                "—"
+              ],
+              [
+                "0",
+                "Close marks: Hazel 200 × 48.60 = 9,720.00; Fir 250 × 35.80 = 8,950.00",
+                "—"
+              ],
+              [
+                "1",
+                "Alder buy 250 @ $32.10 (open); stop $30.10, target $36.10",
+                "−8,027.50"
+              ],
+              [
+                "1",
+                "Birch buy 118 of 138 (partial: cap 118) @ $72.20 (open); stop $70.20, target $76.20",
+                "−8,522.10"
+              ],
+              [
+                "1",
+                "Cedar buy 242 @ limit $41.20: no fill; $9,972.90 released",
+                "0.00"
+              ],
+              [
+                "1",
+                "Close marks: Hazel 200 × 49.10 = 9,820.00; Fir 250 × 34.90 = 8,725.00; Alder 250 × 32.45 = 8,112.50; Birch 118 × 72.80 = 8,590.40",
+                "—"
+              ],
+              [
+                "2",
+                "Hazel exit 200 @ $49.30 (time exit at close (holding session 10))",
+                "9,857.50"
+              ],
+              [
+                "2",
+                "Dogwood buy 158 @ $62.80 (open); stop $60.80, target $66.80",
+                "−9,924.90"
+              ],
+              [
+                "2",
+                "Close marks: Fir 250 × 35.10 = 8,775.00; Alder 250 × 33.20 = 8,300.00; Birch 118 × 73.30 = 8,649.40; Dogwood 158 × 62.90 = 9,938.20",
+                "—"
+              ],
+              [
+                "3",
+                "Fir halted: no bar; marked at last close $35.10",
+                "0.00"
+              ],
+              [
+                "3",
+                "Cedar buy 234 @ $42.72 (intraday limit fill); stop $40.72, target $46.72",
+                "−9,998.98"
+              ],
+              [
+                "3",
+                "Close marks: Fir 250 × 35.10 (stale) = 8,775.00; Alder 250 × 33.90 = 8,475.00; Birch 118 × 73.10 = 8,625.80; Dogwood 158 × 62.20 = 9,827.60; Cedar 234 × 43.10 = 10,085.40",
+                "—"
+              ],
+              [
+                "4",
+                "Fir exit 250 @ $33.10 (gap through stop, exit at open)",
+                "8,272.50"
+              ],
+              [
+                "4",
+                "Close marks: Alder 250 × 34.40 = 8,600.00; Birch 118 × 72.90 = 8,602.20; Dogwood 158 × 63.50 = 10,033.00; Cedar 234 × 43.60 = 10,202.40",
+                "—"
+              ],
+              [
+                "5",
+                "Birch exit 118 @ $70.20 (stop and target in one bar: stop assumed first)",
+                "8,281.10"
+              ],
+              [
+                "5",
+                "Close marks: Alder 250 × 35.40 = 8,850.00; Dogwood 158 × 62.90 = 9,938.20; Cedar 234 × 43.30 = 10,132.20",
+                "—"
+              ],
+              [
+                "6",
+                "Alder exit 250 @ $36.10 (target)",
+                "9,022.50"
+              ],
+              [
+                "6",
+                "Close marks: Dogwood 158 × 62.10 = 9,811.80; Cedar 234 × 43.80 = 10,249.20",
+                "—"
+              ],
+              [
+                "7",
+                "Elm buy 168 @ $59.10 (open); stop $57.10, target $63.10",
+                "−9,931.30"
+              ],
+              [
+                "7",
+                "Close marks: Dogwood 158 × 63.30 = 10,001.40; Cedar 234 × 44.30 = 10,366.20; Elm 168 × 59.60 = 10,012.80",
+                "—"
+              ]
+            ]
+          },
+          {
+            "title": "Close-of-session accounting (cash + holdings = equity)",
+            "columns": [
+              "Session",
+              "Cash ($)",
+              "Holdings at close ($)",
+              "Equity ($)",
+              "Open positions",
+              "Orders placed at this close",
+              "Reserved ($)",
+              "Available cash ($)"
+            ],
+            "rows": [
+              [
+                "0",
+                "81,330.00",
+                "18,670.00",
+                "100,000.00",
+                "2",
+                "3 orders; Dogwood: no slot; Elm, Ginkgo ineligible",
+                "28,044.88",
+                "53,285.12"
+              ],
+              [
+                "1",
+                "64,780.40",
+                "35,247.90",
+                "100,028.30",
+                "4",
+                "Dogwood 158 @ 63.02",
+                "9,959.66",
+                "54,820.74"
+              ],
+              [
+                "2",
+                "64,713.00",
+                "35,662.60",
+                "100,375.60",
+                "4",
+                "Cedar 234 @ 42.72",
+                "9,998.98",
+                "54,714.02"
+              ],
+              [
+                "3",
+                "54,714.02",
+                "45,788.80",
+                "100,502.82",
+                "5 (Fir stale)",
+                "None: Hazel eligible, no free slot",
+                "0.00",
+                "54,714.02"
+              ],
+              [
+                "4",
+                "62,986.52",
+                "37,437.60",
+                "100,424.12",
+                "4",
+                "None: no signal",
+                "0.00",
+                "62,986.52"
+              ],
+              [
+                "5",
+                "71,267.62",
+                "28,920.40",
+                "100,188.02",
+                "3",
+                "None: Ginkgo record incomplete",
+                "0.00",
+                "71,267.62"
+              ],
+              [
+                "6",
+                "80,290.12",
+                "20,061.00",
+                "100,351.12",
+                "2",
+                "Elm 168 @ 59.48",
+                "9,995.14",
+                "70,294.98"
+              ],
+              [
+                "7",
+                "70,358.82",
+                "30,380.40",
+                "100,739.22",
+                "3",
+                "None: no signal (scenario ends)",
+                "0.00",
+                "70,358.82"
+              ]
+            ]
+          },
+          {
+            "title": "Closed trades (net = gross − $5.00 round-trip cost; R on the frozen 1R)",
+            "columns": [
+              "Trade",
+              "Shares",
+              "Entry → exit",
+              "Exit reason",
+              "1R ($)",
+              "Gross / costs / net ($)",
+              "Net R"
+            ],
+            "rows": [
+              [
+                "Hazel",
+                200,
+                "S-7 @ 47.00 → S2 @ 49.30",
+                "time exit at close",
+                "400.00",
+                "460.00 / 5.00 / 455.00",
+                "+1.14"
+              ],
+              [
+                "Fir",
+                250,
+                "S-2 @ 36.00 → S4 @ 33.10",
+                "gap through stop: open",
+                "500.00",
+                "−725.00 / 5.00 / −730.00",
+                "−1.46"
+              ],
+              [
+                "Birch",
+                118,
+                "S1 @ 72.20 → S5 @ 70.20",
+                "both levels in bar: stop first",
+                "236.00",
+                "−236.00 / 5.00 / −241.00",
+                "−1.02"
+              ],
+              [
+                "Alder",
+                250,
+                "S1 @ 32.10 → S6 @ 36.10",
+                "target",
+                "500.00",
+                "1,000.00 / 5.00 / 995.00",
+                "+1.99"
+              ]
+            ]
+          },
+          {
+            "title": "Open positions at the session-7 close",
+            "columns": [
+              "Position",
+              "Shares",
+              "Fill ($)",
+              "Stop / target ($)",
+              "1R ($)",
+              "Session-7 close ($)",
+              "Unrealized gross ($)"
+            ],
+            "rows": [
+              [
+                "Dogwood",
+                158,
+                "S2 @ 62.80",
+                "60.80 / 66.80",
+                "316.00",
+                "63.30",
+                "79.00"
+              ],
+              [
+                "Cedar",
+                234,
+                "S3 @ 42.72",
+                "40.72 / 46.72",
+                "468.00",
+                "44.30",
+                "369.72"
+              ],
+              [
+                "Elm",
+                168,
+                "S7 @ 59.10",
+                "57.10 / 63.10",
+                "336.00",
+                "59.60",
+                "84.00"
+              ]
+            ]
+          }
+        ],
+        "id": "sessions-4-7-and-the-complete-ledger"
+      },
+      {
+        "title": "What the ledger can and cannot tell you",
+        "paragraphs": [
+          "The +0.74% change over seven sessions is evidence of nothing about Atlas-20’s merit. It comes from four closed trades and three open ones, invented to exercise the rules. What the ledger does show is structural. Exposure peaked at 45.6% in this supplied path. Entry caps constrain orders at their limits; subsequent mark changes can move holdings above those percentages. Slots, not cash, rationed the opportunities: Dogwood at decision close 0 and Hazel at decision close 3 were eligible and turned away. The conventions also matter, though not in one direction. Stop-first turned Birch’s ambiguous bar into −$241 instead of +$467. The participation cap shrank that same losing trade from 138 to 118 shares, which reduced its loss by $40. The touch rule kept Cedar out at $41.20, which changed which candidates later received slots; the supplied bars cannot price that alternative path. Conservative here means not assuming an unproven favorable fill, not always lowering the result.",
+          "The ledger also keeps the decisions that never became trades. Elm and Ginkgo were ineligible, Cedar did not fill, Dogwood and Hazel found no free slot, and Ginkgo’s record was incomplete. Testing, discussed in the earlier evidence chapter, needs exactly this full opportunity set. A researcher who keeps only the trades cannot ask whether the ranking rule, the slot limit, or the earnings window is doing useful work. Answering those questions takes many more opportunities than this scenario provides, held-out data, and realistic costs. The case studies in the last chapter return to such records."
+        ],
+        "id": "what-the-ledger-can-and-cannot-tell-you"
+      },
+      {
+        "title": "A regime filter would be version 1.1",
+        "paragraphs": [
+          "A regime filter restricts trading according to a defined market state. Atlas-20 v1.0 has none. Adding one creates a new version that needs its own data contract. A complete specification might read: “No new entries at a decision close unless the fictional benchmark’s completed close exceeds the simple average of its previous 50 completed closes. Existing positions are unaffected. If the benchmark bar is missing, no new entries.” That sentence names the series, the lookback, the timestamp, what the filter blocks, and its missing-data rule. It is still a hypothesis, not an improvement. A filter can skip losing periods and also miss rebounds. If its definition is repeatedly altered to fit the same history, the search grows while the final system appears more careful.",
+          "The separate fictional figure contrasts two predetermined exposure schedules over an invented price path. The switching path holds 101 in cash for steps 4–7 and reenters at an index of 92, so its later values equal 101 × index ÷ 92. The figure shows the consequences of exposure timing, not evidence that any filter can identify those dates. In a real test, every switch must follow information available at the time, and cash returns and costs must be included. Measuring only the invested periods would hide the opportunity cost of sitting in cash."
+        ],
+        "id": "a-regime-filter-would-be-version-1-1"
+      },
+      {
+        "title": "Specify when to pause and how to improve",
+        "paragraphs": [
+          "A monitoring plan compares observed behavior with the specification: signal counts, data completeness, exposure, costs, and differences between modeled and actual fills. Atlas-20 separates operational triggers from performance triggers. Fir’s missing bar in session 3 fired an operational trigger. The right response is to confirm the halt and the data feed, not to change a parameter. The scenario’s largest decline from an equity peak, from $100,502.82 to $100,188.02, is about 0.31%, far from the 8% performance trigger. Even a breached trigger only starts a review; a losing week is not proof that the hypothesis has failed.",
+          "Any change to the rule sheet, whether a new ranking, a different cap, or a regime filter, becomes a new version with its own record. Bailey and coauthors explain why this matters. The chance of a false discovery rises with the number of configurations tried on the same data, and published backtests rarely report how many trials were run. Keep every version and the reason for it, evaluate on data not used to choose the change, and compare with simpler alternatives. A complete system is valuable because it exposes every decision to scrutiny. It becomes credible only through honest evidence, feasible execution, and a risk policy suited to its uncertainty."
+        ],
+        "id": "specify-when-to-pause-and-how-to-improve"
+      },
+      {
+        "title": "Atlas-20 still needs its own empirical test",
+        "paragraphs": [
+          "The research appendix gives supportive momentum evidence and adverse rule-selection evidence under other specifications. Atlas-20’s thresholds, allocation and fills are original teaching choices. The cash reconciliation proves that the scenario’s accounting works; it is not a held-out real-stock trial or an estimate of its profitability."
+        ],
+        "id": "atlas-20-still-needs-its-own-empirical-test"
+      }
+    ],
+    "example": {
+      "title": "Two limits disagree",
+      "text": "At decision close 0, equity is $100,000.00 and the risk allowance is 250 shares for every candidate. Alder’s $32.27 limit allows 309 shares under the 10% notional cap, so risk binds at 250 shares: $8,067.50 of notional and a 1R of $500. Birch’s $72.46 limit allows only 138 shares, so notional binds. Its planned risk is $276, but after the partial fill of 118 shares its frozen 1R is $236. The qualifying signal does not override the tighter limit, and the denominator follows the shares actually filled."
+    },
+    "exercise": "Start from the session-3 close. Cash is $54,714.02; the holdings are Fir 250 shares (halted, last close $35.10, stop $34.00), Alder 250 (stop $30.10, target $36.10), Birch 118 (stop $70.20, target $76.20), Dogwood 158 (stop $60.80, target $66.80), and Cedar 234 (stop $40.72, target $46.72); no orders are working. Using the rule sheet, the price grids, and the screen log, process session 4, decision close 4, session 5, and decision close 5. For each, record every exit price and reason, cash after the fills, each close mark, equity, free slots, and any order. Then give the net P&L and net R of the Fir and Birch trades.",
+    "solution": [
+      "Session 4, held positions. Fir’s first bar since the halt opens at $33.10, at or below its $34.00 stop, so step 1 exits at the open. The proceeds are 250 × $33.10 − $2.50 = $8,272.50, and cash becomes $54,714.02 + $8,272.50 = $62,986.52. Alder (low $33.50, high $34.70), Birch (low $72.20, high $73.50), Dogwood (low $62.00, high $63.80), and Cedar (low $42.80, high $43.90) reach neither their stops nor their targets. No entry orders are working.",
+      "Session-4 close. The marks are Alder 250 × $34.40 = $8,600.00, Birch 118 × $72.90 = $8,602.20, Dogwood 158 × $63.50 = $10,033.00, and Cedar 234 × $43.60 = $10,202.40, totaling $37,437.60. Equity = $62,986.52 + $37,437.60 = $100,424.12. Decision close 4 has four positions and one free slot, but the screen log lists no signal, so no order is placed.",
+      "The Fir trade. Gross = 250 × ($33.10 − $36.00) = −$725.00. Costs = $2.50 at entry + $2.50 at exit = $5.00, so net = −$730.00. 1R = 250 × $2.00 = $500, so net R = −730 ÷ 500 = −1.46R. The $505 ordinary cost-inclusive loss does not apply, because the gap skipped the stop price.",
+      "Session 5. Birch’s bar (O $72.90, H $76.60, L $70.00) contains both its $70.20 stop and its $76.20 target, and the open is between them. Step 3 applies: the stop is assumed first, and the exit is at $70.20. The proceeds are 118 × $70.20 − $2.50 = $8,281.10, so cash = $71,267.62. Alder’s high of $35.60 is still below its $36.10 target, and Dogwood and Cedar stay inside their levels. The marks are Alder $8,850.00, Dogwood $9,938.20, and Cedar $10,132.20, totaling $28,920.40, so equity = $100,188.02.",
+      "The Birch trade. Gross = 118 × ($70.20 − $72.20) = −$236.00, net = −$241.00, and 1R = 118 × $2.00 = $236, so net R = −1.02R. Using the 138 shares ordered would give a $276 denominator, which is wrong, because 1R is frozen on the filled shares. At decision close 5, Ginkgo’s close of $25.40 exceeds its $25.00 prior-20 high, but its session-3 bar is missing, so no signal is evaluated. With three positions and two free slots, no order is placed. Every figure should match the ledger rows for sessions 4 and 5."
+    ],
+    "practice": [
+      {
+        "title": "Rerank decision close 0 by liquidity",
+        "level": "guided",
+        "question": "Keep every v1.0 rule except the ranking: rank eligible candidates by 20-session mean dollar volume, largest first. Using the screen log, which three candidates receive orders at decision close 0, how many shares each, and how much cash is reserved? Hint: rank first, then size in rank order, deducting each reservation before computing the next cash allowance.",
+        "solution": [
+          "The eligible set is unchanged: Alder, Birch, Cedar, and Dogwood. Ranked by dollar volume, the order is Dogwood ($14.1M), Alder ($9.8M), Cedar ($6.4M), and Birch ($2.3M). With three free slots, Birch is left out.",
+          "Dogwood: L = floor(1.01 × 61.20) = $61.81. The allowances are 250 shares for risk, floor(10,000 ÷ 61.81) = 161 for notional, and 1,315 for cash, so the order is 161 shares and the reservation is 161 × 61.81 + 2.50 = $9,953.91. Alder: the cash available is now $71,376.09, and its order stays at 250 shares (risk binds) with an $8,070.00 reservation. Cedar: 242 shares, $9,972.90. Total reserved: $27,996.81, leaving $53,333.19 available.",
+          "This is a different system version. Birch’s later stop-out might make the change look better here, but judging the ranking by this one week’s outcome is exactly the kind of outcome-driven selection the testing chapter warns against."
+        ]
+      },
+      {
+        "title": "A variant in which cash binds",
+        "level": "independent",
+        "question": "A deliberately aggressive teaching variant, for arithmetic only, raises the risk budget to 2% of equity and the notional cap to 40%, with every other v1.0 rule unchanged. Redo the decision-close-0 sizing for Alder, Birch, and Cedar. Which allowance binds for each, and how much cash is left after the three reservations?",
+        "solution": [
+          "Risk allowance = floor(2,000 ÷ 2) = 1,000 shares. Alder: notional floor(40,000 ÷ 32.27) = 1,239 and cash 2,520, so risk binds at 1,000 shares, with a reservation of 1,000 × 32.27 + 2.50 = $32,272.50. Birch: notional floor(40,000 ÷ 72.46) = 552, and cash floor((49,057.50 − 2.50) ÷ 72.46) = 676, so notional binds at 552 shares; the reservation is 552 × 72.46 + 2.50 = $40,000.42.",
+          "Cedar: $9,057.08 remains, so the cash allowance is floor((9,057.08 − 2.50) ÷ 41.20) = 219 shares, below the risk (1,000) and notional (970) allowances. Cash binds at 219 shares, with a reservation of $9,025.30, leaving $31.78. Without reservations, the account would appear to fund three full orders worth more than its cash. Rank order now also decides who gets the leftover cash, and Alder’s 1R alone would be 2% of equity."
+        ]
+      },
+      {
+        "title": "Diagnose a substituted order",
+        "level": "independent",
+        "question": "A colleague’s ledger shows Dogwood bought during session 1 at its decision-close-0 limit of $61.81. The colleague reasons that Cedar failed to fill, so its slot should pass to the next-ranked candidate. The session-1 open of $61.40 then fills Dogwood below the limit. Identify every rule this record breaks, and give the v1.0 treatment of Dogwood.",
+        "solution": [
+          "First, v1.0 places orders only at a decision close, using information through that close. Cedar’s nonfill became known only during session 1. Second, rejected candidates are not re-offered. Third, Cedar’s reservation and slot are released only when its order expires, and a new slot can be used only at the next decision close. The substitution is a new rule, invented after seeing the outcome, and it would flatter the record by buying $1.40 per share cheaper than v1.0 does.",
+          "Under v1.0, Dogwood is recorded as eligible with no free slot at decision close 0. It signals again at decision close 1 and receives 158 shares at a $63.02 limit, filled at the $62.80 open of session 2. Testing a substitution rule properly would mean writing it into a new version and applying it to every opportunity, including the cases where it would buy a loser."
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "Birch holds 118 shares filled at $72.20, from a 138-share order, with a $70.20 stop and a $76.20 target. In session 5 its bar is O $72.90 / H $76.60 / L $70.00 / C $71.20. Under Atlas-20 v1.0, what is the trade’s net result after the $5.00 round-trip cost?",
+      "options": [
+        "+$467, or +1.98R: the high exceeded the target, so the target exit is recorded.",
+        "−$241, or −1.02R: both levels lie inside the bar, so the stop is assumed first and 1R = 118 × $2.",
+        "−$241, or −0.87R: the stop is assumed first, and 1R = 138 ordered shares × $2 = $276."
+      ],
+      "answer": 1,
+      "explanation": "Daily OHLC cannot show which level traded first, so the declared conservative priority records the stop. R uses the frozen denominator of the shares actually filled.",
+      "feedback": [
+        "This credits the favorable sequence. The bar also reached the stop, and v1.0 assumes the stop came first whenever both levels lie inside one bar.",
+        "Correct. The stop-first convention gives 118 × (−$2) − $5 = −$241, and the denominator is the filled shares’ frozen 1R of $236.",
+        "The exit is right, but the denominator is not. The 20 unfilled shares were canceled and never carried risk, so 1R is 118 × $2, not the planned 138 × $2."
+      ]
+    },
+    "sources": [
+      "ra-orders",
+      "ra-halts",
+      "ra-overfit"
+    ],
+    "related": [
+      "testing",
+      "trade-plans",
+      "statistics",
+      "case-studies"
+    ],
+    "figure": {
+      "kind": "panels",
+      "title": "Atlas-20 scenario: equity, slots, and exposure at each close",
+      "caption": "Fictional Atlas-20 v1.0 scenario, read from the close-of-session ledger; session 0 is the opening state. Equity moves by less than 1% while exposure never exceeds 45.6%, under the supplied path and entry caps. Subsequent prices can change exposure; the cap is applied at order placement. Look at session 3, where all five slots are used even though Fir is halted.",
+      "afterSection": 7,
+      "panels": [
+        {
+          "kind": "line",
+          "title": "Equity at each close ($)",
+          "caption": "Closed trades, net of costs: S2 Hazel time exit +$455; S4 Fir gap exit −$730; S5 Birch stop −$241; S6 Alder target +$995.",
+          "xLabel": "Session close",
+          "yLabel": "Equity ($)",
+          "xStart": 0,
+          "series": [
+            {
+              "name": "Mark-to-market equity",
+              "values": [
+                100000,
+                100028.3,
+                100375.6,
+                100502.82,
+                100424.12,
+                100188.02,
+                100351.12,
+                100739.22
+              ]
+            }
+          ],
+          "annotations": [
+            {
+              "index": 2,
+              "seriesIndex": 0,
+              "label": "Session 2: Hazel time exit at the close, +$455 net",
+              "shortLabel": "S2",
+              "placement": "below"
+            },
+            {
+              "index": 4,
+              "seriesIndex": 0,
+              "label": "Session 4: Fir reopens below its stop, −$730 net",
+              "shortLabel": "S4"
+            },
+            {
+              "index": 5,
+              "seriesIndex": 0,
+              "label": "Session 5: Birch stop assumed first on an ambiguous bar, −$241 net",
+              "shortLabel": "S5",
+              "placement": "below"
+            },
+            {
+              "index": 6,
+              "seriesIndex": 0,
+              "label": "Session 6: Alder target, +$995 net",
+              "shortLabel": "S6",
+              "placement": "below"
+            }
+          ]
+        },
+        {
+          "kind": "bars",
+          "title": "Slot use at each close (count; maximum 5 combined)",
+          "xLabel": "Session close",
+          "yLabel": "Count",
+          "integerTicks": true,
+          "xStart": 0,
+          "series": [
+            {
+              "name": "Open positions",
+              "values": [
+                2,
+                4,
+                4,
+                5,
+                4,
+                3,
+                2,
+                3
+              ]
+            },
+            {
+              "name": "New orders working into next session",
+              "values": [
+                3,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "annotations": [
+            {
+              "index": 3,
+              "seriesIndex": 0,
+              "label": "Five positions, Fir halted: Hazel gets no slot",
+              "shortLabel": "S3: 5 of 5 used"
+            }
+          ]
+        },
+        {
+          "kind": "line",
+          "title": "Holdings as a share of equity (%)",
+          "xLabel": "Session close",
+          "yLabel": "Invested (% of equity)",
+          "xStart": 0,
+          "series": [
+            {
+              "name": "Holdings ÷ equity",
+              "values": [
+                18.7,
+                35.2,
+                35.5,
+                45.6,
+                37.3,
+                28.9,
+                20,
+                30.2
+              ]
+            }
+          ],
+          "annotations": [
+            {
+              "index": 3,
+              "seriesIndex": 0,
+              "label": "Maximum exposure 45.6% at the session-3 close",
+              "shortLabel": "S3: 45.6%"
+            }
+          ]
+        }
+      ]
+    },
+    "figures": [
+      {
+        "kind": "flow",
+        "title": "Atlas-20 daily processing order",
+        "caption": "Fixed daily-bar accounting sequence for the fictional scenario. Orders and cash reservations are frozen at the prior close. Batch processing of a close exit before an opening entry is an accounting order only; no later proceeds fund that entry or increase its quantity.",
+        "afterSection": 3,
+        "steps": [
+          {
+            "title": "Carry in the frozen state",
+            "text": "Rule sheet v1.0, holdings with their stops, targets and holding-session counts, orders placed at the previous close, and reserved cash."
+          },
+          {
+            "title": "Process held positions",
+            "text": "No bar: mark stale and keep the slot. Otherwise apply the exit priority: gap at the open, both levels in one bar (stop first), stop, target, then the time exit at the close."
+          },
+          {
+            "title": "Process entry orders",
+            "text": "Open at or below the limit fills at the open; a trade below the limit fills at the limit; a touch or a higher low cancels. Cap shares at 1% of volume and release every reservation."
+          },
+          {
+            "title": "Mark the close",
+            "text": "Equity = cash + shares × close (halted: last valid close). Check that cash flows reconcile to the cent."
+          },
+          {
+            "title": "Screen",
+            "text": "Skip held stocks. Then check the complete 21-bar record, the signal, the price band, liquidity, and the earnings window, recording the first failure."
+          },
+          {
+            "title": "Rank, size, reserve",
+            "text": "Sort by breakout margin, then name. Free slots = 5 − open positions. Shares = the smallest of the risk, notional, and cash allowances; reserve shares × limit + $2.50."
+          },
+          {
+            "title": "Log and review",
+            "text": "Record orders, rejections, skips, and any review trigger before the next open. A trigger starts a review; it does not change the rules."
+          }
+        ]
+      },
+      {
+        "title": "Exposure timing changes a path (separate illustration)",
+        "caption": "Separate fictional illustration, not part of the Atlas-20 scenario. Normalized wealth starts at step 0. The switching path follows the stock through step 3, holds 101 in cash for steps 4–7, and reenters after step 7 at stock index 92; later values equal 101 × (index ÷ 92), rounded to two decimals. Cash earns zero and costs are omitted. The switch dates are given, not produced by a tested filter.",
+        "xLabel": "Illustrative step, starting at 0",
+        "yLabel": "Normalized wealth",
+        "series": [
+          {
+            "name": "Always invested",
+            "values": [
+              100,
+              102,
+              104,
+              101,
+              96,
+              90,
+              88,
+              92,
+              98,
+              105,
+              110,
+              114
+            ]
+          },
+          {
+            "name": "Illustrative switching",
+            "values": [
+              100,
+              102,
+              104,
+              101,
+              101,
+              101,
+              101,
+              101,
+              107.59,
+              115.27,
+              120.76,
+              125.15
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "index": 3,
+            "label": "Switch to cash after step 3",
+            "seriesIndex": 1
+          },
+          {
+            "index": 7,
+            "label": "Reenter after step 7",
+            "seriesIndex": 1
+          }
+        ],
+        "xStart": 0,
+        "afterSection": 9
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "Atlas-20 v1.0 is a complete, arbitrary teaching specification",
+        "type": "teaching-rule",
+        "sourceIds": [],
+        "location": "Rule sheet parts 1–3 and the scenario sections of this chapter",
+        "summary": "Reviewed the rule sheet against scripts/atlas20-sim.cjs and ran the supplied scenario and both allocation variants. Cash is reserved before the next session; volume-based opening fill quantities are explicitly retrospective model assumptions. Data-scope exclusions are stated.",
+        "limits": "The thresholds (0.5% risk, 10% cap, $2/$4/10 sessions, $2M liquidity, 1% participation, $2.50 per fill) are not optimized, tested, or recommended.",
+        "checked": "2026-10-01",
+        "id": "system-design-atlas-20-v1-0-is-a-complete-arbitrary-teaching-specification"
+      },
+      {
+        "claim": "The decision-close-0 allocation and all later order sizes follow the stated formulas",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Decision-close-0 table; sessions 1–3 and 4–7 sections; practice tasks",
+        "summary": "Recomputed in integer cents: limits, the risk, notional, and cash allowances, the reservations ($28,044.88 at decision close 0), the orders at decision closes 1, 2, and 6, and both practice variants ($27,996.81 reserved; the cash-binding Cedar order of 219 shares leaving $31.78).",
+        "limits": "Fictional data; the liquidity and earnings fields are supplied, not derived from bars shown in the book.",
+        "checked": "2026-10-01",
+        "id": "system-design-the-decision-close-0-allocation-and-all-later-order-sizes-follow-the-stated-formulas"
+      },
+      {
+        "claim": "The ledger reconciles at every close, and trade R uses the frozen filled-share denominator",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Session event log, close-of-session accounting, closed and open trade tables, exercise solution, quiz",
+        "summary": "The script asserts cash + holdings = equity at each close, cash change = logged cash flows each session, available cash ≥ 0, slots ≤ 5, and E7 − E0 = $739.22 = $214.00 closed contribution + $525.22 open contribution. Net R: Hazel +1.14 (1.1375), Fir −1.46, Birch −1.02 (−1.0212), Alder +1.99.",
+        "limits": "Exact stop and limit fills are modeled assumptions; real executions can differ.",
+        "checked": "2026-10-01",
+        "id": "system-design-the-ledger-reconciles-at-every-close-and-trade-r-uses-the-frozen-filled-share-denominator"
+      },
+      {
+        "claim": "The conservative fill and exit conventions are modeling choices",
+        "type": "teaching-rule",
+        "sourceIds": [],
+        "location": "Rule sheet part 3; Birch session 5; Cedar session 1",
+        "summary": "The touch-is-not-a-fill rule, the 1% participation cap, stop-first on a two-level bar, and no target on an intraday entry bar are declared before processing. The Birch alternative (+$467, +1.98R) was recomputed to show the 3R sensitivity.",
+        "limits": "No intraday data are supplied, so the true trade sequence is unknown by construction.",
+        "checked": "2026-10-01",
+        "id": "system-design-the-conservative-fill-and-exit-conventions-are-modeling-choices"
+      },
+      {
+        "claim": "Limit orders may not execute; stop orders become market orders and can execute away from the stop price; day orders generally cancel at the end of regular trading",
+        "type": "definition",
+        "sourceIds": [
+          "ra-orders"
+        ],
+        "location": "Investor.gov, Understanding Order Types: “Limit Order”, “Stop Order”, and “Day Orders” paragraphs",
+        "summary": "Read the market, limit, stop, stop-limit, and time-in-force paragraphs, including that the execution price of a triggered stop “can deviate significantly from the stop price.”",
+        "limits": "The bulletin does not validate the chapter’s fill-quantity cap, the touch rule, or the exact-stop fills; broker and venue practices vary.",
+        "checked": "2026-10-01",
+        "id": "system-design-limit-orders-may-not-execute-stop-orders-become-market-orders-and-can-execute-away-from-the-stop-pri"
+      },
+      {
+        "claim": "Regulatory halts commonly occur for pending news and are imposed by exchanges",
+        "type": "definition",
+        "sourceIds": [
+          "ra-halts"
+        ],
+        "location": "Investor.gov glossary, Trading Halts and Delays",
+        "summary": "Read the entry: there are regulatory and non-regulatory halts; news-pending halts are the most common regulatory halts; a primary-market halt is honored by other U.S. markets; exchanges, not the SEC, decide.",
+        "limits": "The entry does not describe reopening prices; the stale-mark and gap-on-resumption treatment are Atlas-20 conventions.",
+        "checked": "2026-10-01",
+        "id": "system-design-regulatory-halts-commonly-occur-for-pending-news-and-are-imposed-by-exchanges"
+      },
+      {
+        "claim": "Trying many configurations on the same data raises the risk of false discoveries, so versions and trials should be recorded",
+        "type": "mechanism",
+        "sourceIds": [
+          "ra-overfit"
+        ],
+        "location": "Bailey, Borwein, López de Prado & Zhu, abstract and section 1 (pp. 2–4)",
+        "summary": "Read the abstract (the proposed PBO framework and CSCV) and the introduction: false positives become likely when a test is applied many times to the same data, calibrated parameters can fit past noise, and published backtests rarely declare the number of trials.",
+        "limits": "The chapter computes no PBO, and the paper’s framework is not applied to Atlas-20.",
+        "checked": "2026-10-01",
+        "id": "system-design-trying-many-configurations-on-the-same-data-raises-the-risk-of-false-discoveries-so-versions-and-tri"
+      },
+      {
+        "claim": "The separate exposure-timing figure follows its stated construction",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Exposure-timing figure",
+        "summary": "Rechecked that the switching path holds 101 at steps 4–7 and equals 101 × index ÷ 92 at steps 8–11 (107.59, 115.27, 120.76, 125.15).",
+        "limits": "The switch dates are given, not produced by a rule; cash return and costs are omitted.",
+        "checked": "2026-10-01",
+        "id": "system-design-the-separate-exposure-timing-figure-follows-its-stated-construction"
+      }
+    ],
+    "learnerAttempt": {
+      "afterSection": 6,
+      "title": "First pass: reconcile the S4–S5 accounting replay",
+      "paragraphs": [
+        "This worksheet begins from the supplied S3-close state. Cash is $54,714.02, the five filled holdings are listed below, and no entry orders are working. Each prior entry incurred $2.50; an exit incurs another $2.50. Use filled shares, not earlier order quantities, to calculate each position’s frozen R.",
+        "This is an accounting replay, not a forecast or an unseen-chart learning test. The S4/S5 bars and screen facts are exercise inputs, released for this replay. Process S4 and its decision close before using S5. The resulting exits, cash, equity and full reference ledger stay behind the continuation reveal. All stocks and records are fictional.",
+        "The three unchanged v1.0 rule tables are restated here for reference. For each session, record exits in priority order, cash after fills, every surviving close mark, equity, occupied/free slots and any new order. Then give Fir’s and Birch’s net trade dollars and net R. Start Fir’s trade P&L from its $36.00 entry, even though the replay starts from a later close mark.",
+        "Fir’s S5 bar is not supplied. If your S4 processing leaves it held, flag that missing input rather than inventing a mark. For D4/D5, the supplied screen facts cover the unheld candidates; no omitted stock supplies an additional signal. Freeze your working below before opening the complete continuation."
+      ],
+      "tables": [
+        {
+          "title": "Starting position state at S3 close (fictional USD; Fir mark stale)",
+          "columns": [
+            "Position",
+            "Filled shares",
+            "Entry session / fill ($)",
+            "Stop / target ($)",
+            "Frozen 1R ($)",
+            "Last close ($)"
+          ],
+          "rows": [
+            [
+              "Fir",
+              250,
+              "S−2 / 36.00",
+              "34.00 / 40.00",
+              "500.00",
+              "35.10 (stale: S3 has no bar)"
+            ],
+            [
+              "Alder",
+              250,
+              "S1 / 32.10",
+              "30.10 / 36.10",
+              "500.00",
+              "33.90"
+            ],
+            [
+              "Birch",
+              118,
+              "S1 / 72.20",
+              "70.20 / 76.20",
+              "236.00",
+              "73.10"
+            ],
+            [
+              "Dogwood",
+              158,
+              "S2 / 62.80",
+              "60.80 / 66.80",
+              "316.00",
+              "62.20"
+            ],
+            [
+              "Cedar",
+              234,
+              "S3 / 42.72",
+              "40.72 / 46.72",
+              "468.00",
+              "43.10"
+            ]
+          ]
+        },
+        {
+          "title": "Atlas-20 v1.0 rule sheet, part 1: data, universe, and eligibility",
+          "columns": [
+            "Rule",
+            "Atlas-20 v1.0 setting",
+            "Kind"
+          ],
+          "rows": [
+            [
+              "Scope",
+              "Long-only fictional U.S.-listed common stocks in one U.S.-dollar account; no leverage, short sales, or derivatives.",
+              "Scope choice"
+            ],
+            [
+              "Universe",
+              "Point-in-time member list as of each decision date. Scenario members throughout: Alder, Birch, Cedar, Dogwood, Elm, Fir, Ginkgo, Hazel.",
+              "Convention"
+            ],
+            [
+              "Data and clock",
+              "Completed regular-session daily OHLC and share volume; split adjustment uses only actions effective by the decision date. Decisions are computed after the close; orders are submitted before the next open.",
+              "Convention"
+            ],
+            [
+              "Minimum history",
+              "21 consecutive valid bars: sessions t−20 through t.",
+              "Teaching setting"
+            ],
+            [
+              "Missing data",
+              "Any absent or invalid bar in t−20…t: no signal is evaluated that day. No interpolation or carried-forward bars.",
+              "Convention"
+            ],
+            [
+              "Already held",
+              "A stock with an open position or a working order is not screened; v1.0 never adds to a position.",
+              "Teaching setting"
+            ],
+            [
+              "Signal",
+              "Close at t strictly above the highest high of sessions t−20…t−1.",
+              "Definition"
+            ],
+            [
+              "Price band",
+              "$20.00 ≤ decision close ≤ $100.00, so the fixed $2 stop is 2%–10% of price.",
+              "Teaching setting"
+            ],
+            [
+              "Liquidity",
+              "Mean of close × volume over sessions t−19…t ≥ $2,000,000 (past data only).",
+              "Teaching setting"
+            ],
+            [
+              "Earnings",
+              "No scheduled earnings in sessions t+1…t+10 (the planned ten-session holding window; a halt can delay exit), per the calendar snapshot at the decision close.",
+              "Teaching setting"
+            ],
+            [
+              "Regime filter",
+              "None in v1.0.",
+              "Scope choice"
+            ],
+            [
+              "Check order",
+              "Complete record → signal → price band → liquidity → earnings. The first failure is recorded.",
+              "Convention"
+            ]
+          ]
+        },
+        {
+          "title": "Atlas-20 v1.0 rule sheet, part 2: ranking, slots, sizing, and costs",
+          "columns": [
+            "Rule",
+            "Atlas-20 v1.0 setting",
+            "Kind"
+          ],
+          "rows": [
+            [
+              "Ranking value",
+              "Breakout margin = 100 × (close − prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point; larger ranks first.",
+              "Teaching setting"
+            ],
+            [
+              "Tie-break",
+              "Alphabetical by company name.",
+              "Convention"
+            ],
+            [
+              "Slots",
+              "At most 5 = open positions (halted ones included) + orders placed at this close.",
+              "Teaching setting"
+            ],
+            [
+              "Sizing equity E",
+              "Cash + shares × close for every holding, after the session’s exits and fills; a halted holding uses its last valid close.",
+              "Definition"
+            ],
+            [
+              "Limit price L",
+              "1.01 × signal close, rounded down to the cent.",
+              "Teaching setting"
+            ],
+            [
+              "Risk allowance",
+              "floor(0.5% × E ÷ $2.00) shares.",
+              "Teaching setting"
+            ],
+            [
+              "Notional allowance",
+              "floor(10% × E ÷ L) shares.",
+              "Teaching setting"
+            ],
+            [
+              "Cash allowance",
+              "floor((cash − cash already reserved at this close − $2.50) ÷ L) shares.",
+              "Definition"
+            ],
+            [
+              "Quantity",
+              "Smallest of the three allowances; fewer than 1 share means no order.",
+              "Definition"
+            ],
+            [
+              "Cash reservation",
+              "Shares × L + $2.50, held from order placement until the order fills or expires.",
+              "Convention"
+            ],
+            [
+              "R",
+              "1R = filled shares × $2.00, frozen at the fill. Net R = net P&L ÷ 1R. Costs are shown separately.",
+              "Book contract"
+            ],
+            [
+              "Costs",
+              "$2.50 per executed fill (entry, exit, or partial entry), so $5.00 per round trip. No separate spread or slippage charge beyond the fill rules.",
+              "Teaching setting"
+            ],
+            [
+              "Cash interest and settlement",
+              "Cash earns zero; settlement timing is ignored.",
+              "Convention"
+            ]
+          ]
+        },
+        {
+          "title": "Atlas-20 v1.0 rule sheet, part 3: orders, fills, exits, and review",
+          "columns": [
+            "Rule",
+            "Atlas-20 v1.0 setting",
+            "Kind"
+          ],
+          "rows": [
+            [
+              "Entry order",
+              "Buy day-limit order at L for the next session only; any unfilled remainder cancels at that session’s close.",
+              "Convention"
+            ],
+            [
+              "Entry fill",
+              "Open ≤ L: fill at the open. Otherwise, low strictly below L: fill at L. A low exactly at L is a touch, not a fill.",
+              "Convention (conservative)"
+            ],
+            [
+              "Partial fill",
+              "Filled shares ≤ floor(1% × entry-session volume). Keep the filled shares, cancel the rest, never top up.",
+              "Teaching setting"
+            ],
+            [
+              "Rejected or unfilled candidates",
+              "Not re-offered. A stock needs a new signal at a later close.",
+              "Convention"
+            ],
+            [
+              "Stop",
+              "Sell stop at fill − $2.00; triggered when low ≤ stop.",
+              "Teaching setting"
+            ],
+            [
+              "Target",
+              "Sell limit at fill + $4.00; fills only when high is strictly above the target.",
+              "Teaching setting"
+            ],
+            [
+              "Time exit",
+              "At the close of holding session 10 (entry session = 1; exchange sessions counted, including halted ones).",
+              "Teaching setting"
+            ],
+            [
+              "Exit priority (held from an earlier session)",
+              "1. Open ≤ stop: exit at open. 2. Open ≥ target: exit at open. 3. Low ≤ stop and high > target: stop assumed first. 4. Low ≤ stop: exit at stop. 5. High > target: exit at target. 6. Holding session 10: exit at close. After opening checks 1–2, an overdue time deadline exits at the open before steps 3–5; a scheduled session-10 close uses step 6.",
+              "Convention (conservative)"
+            ],
+            [
+              "Entry bar",
+              "Fill at the open: steps 3–5 apply to the rest of that bar. Fill at L intraday: the stop applies if low ≤ stop; a target is not credited.",
+              "Convention (conservative)"
+            ],
+            [
+              "Halt or missing bar while held",
+              "No exit is possible. Mark at the last valid close, flagged stale; the position keeps its slot. The first new bar starts at step 1.",
+              "Convention"
+            ],
+            [
+              "Processing order",
+              "Batch accounting: held-position exits and reserved entries, then close marks and screening. Entry quantities are fixed at the previous close and fully cash-reserved; no same-session exit funds a larger order. Within-session event rows are not a timestamped tape.",
+              "Convention"
+            ],
+            [
+              "Review triggers",
+              "Operational: a held stock without a bar; any nonzero reconciliation difference; an actual fill differing from the modeled fill. Performance: drawdown above 8% of the equity peak; observed costs differing from modeled costs by more than 50% over 20 fills. A trigger starts a review; any rule change becomes a new version.",
+              "Teaching setting"
+            ],
+            [
+              "Overdue time exit after halt",
+              "First resumed open: opening stop/target gap first; otherwise overdue time exit at the open, before intraday tests. Keep stale marks and occupied slot until then.",
+              "Convention"
+            ]
+          ]
+        },
+        {
+          "title": "Replay inputs: completed S4 and S5 bars (O/H/L/C, fictional USD)",
+          "columns": [
+            "Session",
+            "Fir",
+            "Alder",
+            "Birch",
+            "Dogwood",
+            "Cedar"
+          ],
+          "rows": [
+            [
+              "S4",
+              "33.10/33.60/32.40/33.20",
+              "33.80/34.70/33.50/34.40",
+              "73.00/73.50/72.20/72.90",
+              "62.30/63.80/62.00/63.50",
+              "43.20/43.90/42.80/43.60"
+            ],
+            [
+              "S5",
+              "Not supplied; first determine whether S4 leaves it held",
+              "34.50/35.60/34.30/35.40",
+              "72.90/76.60/70.00/71.20",
+              "63.40/64.10/62.60/62.90",
+              "43.50/44.20/43.10/43.30"
+            ]
+          ]
+        },
+        {
+          "title": "Replay inputs: screen facts released at each decision close",
+          "columns": [
+            "Decision close",
+            "Unheld candidate / close ($)",
+            "Prior-20 high ($)",
+            "20-session mean dollar volume",
+            "Next earnings session",
+            "History completeness"
+          ],
+          "rows": [
+            [
+              "D4",
+              "No non-held stock signals",
+              "—",
+              "—",
+              "—",
+              "Supplied screen covers every non-held stock"
+            ],
+            [
+              "D5",
+              "Ginkgo / 25.40",
+              "25.00",
+              "Not computed",
+              "44",
+              "S3 bar missing in required history"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "sources": {
+    "ra-orders": {
+      "title": "SEC / Investor.gov · Understanding Order Types",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+      "supports": "Market, limit, stop, and stop-limit mechanics; triggered stops do not guarantee execution price. Numerical plans and paths in the chapters are original fictional examples.",
+      "accessed": "2026-10-01"
+    },
+    "ra-halts": {
+      "title": "SEC / Investor.gov · Trading Halts and Delays",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+      "supports": "Regulatory versus non-regulatory halts; news-pending halts as the most common regulatory halt; primary-market halts honored by other U.S. markets; exchanges decide. Does not describe reopening prices; Atlas-20 halt accounting is a teaching convention.",
+      "accessed": "2026-10-01"
+    },
+    "ra-overfit": {
+      "title": "Bailey, Borwein, López de Prado & Zhu · The Probability of Backtest Overfitting",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "supports": "Original research on strategy selection and backtest overfitting. Textbook examples do not implement or claim a computed probability of backtest overfitting.",
+      "accessed": "2026-10-01"
+    }
+  }
+}

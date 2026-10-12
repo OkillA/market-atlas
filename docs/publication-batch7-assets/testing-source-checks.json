@@ -1,0 +1,113 @@
+{
+  "checked": "2026-10-12",
+  "reviewer": "reviewer agent for claude-code-pub7",
+  "method": "Downloaded each chapter source URL with curl -sL -A 'Mozilla/5.0' into an isolated temporary directory (all four returned HTTP 200 application/pdf), extracted text with pdftotext (-layout, and -raw for the rotated Bajgrowicz-Scaillet Table 5 page), located the exact passages and compared them with the chapter prose (compiled-testing.json) and its evidence/study records. Printed page numbers are given where the PDF carries them; otherwise PDF page numbers. Only the passages listed were read closely; this is not a full replication of any study.",
+  "checks": [
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "Revised version February 2015, Abstract, p. 2",
+      "claim": "Chapter sections[4].paragraphs[0]/[3] and evidence 'A simple hold-out has specific weaknesses': standard techniques such as hold-out tend to be unreliable for investment backtests; the paper proposes a framework to assess the probability of backtest overfitting (CSCV).",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "'Comparisons to other approaches', pp. 6-7, second reason",
+      "claim": "sections[4].paragraphs[3]: a researcher may already know how markets behaved during the held-out years, which can shape the design consciously or not.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "'Comparisons to other approaches', p. 7, third reason",
+      "claim": "sections[4].paragraphs[3]: short samples leave both windows too small to support a conclusion ('the IS dataset will be too short to fit, and the OOS dataset too short to conclude anything').",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "'Comparisons to other approaches', p. 7, fifth reason",
+      "claim": "sections[4].paragraphs[3]: a single held-out test ignores how many configurations were tried before the one being tested.",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-overfit",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "locator": "Whole-text search for 'walk-forward'/'walk forward'/'rolling'",
+      "claim": "sections[4].paragraphs[3]: 'Walk-forward evaluation, a logged variant count, and fresh forward data each address part of this.' The chapter does not attribute this sentence to the paper.",
+      "disposition": "not stated"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "Abstract p. 2; Introduction p. 3",
+      "claim": "Evidence study.sample/rule: daily DJIA prices January 1897-July 2011; the 7,846 STW technical rules; FDR multiple-testing selection.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "Section 5 'Persistence analysis', pp. 22-24",
+      "claim": "Evidence study.rule/result and sections[8]: monthly ex ante rule portfolios evaluated out of sample the following month; investors could not have selected the future best-performing rules ex ante.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "Section 4, pp. 21-22 (paragraph beginning 'Some studies, e.g., STW and Bessembinder and Chan (1998), compute a break-even transaction cost')",
+      "claim": "sections[6].paragraphs[2]: rules that survive costs are often not the ones that looked best before costs; a break-even calculated after the rules have been selected is an after-the-fact number; costs belong inside the selection process ('Transaction costs must be treated as endogenous and not exogenous to the selection process').",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "Table 5, printed p. 49 (FDR portfolio column); Table 4, p. 48 (FDR OOS Sharpe -0.31/-0.34/-0.74 in periods 4-6)",
+      "claim": "Evidence study.costs/result: FDR break-even one-way costs 30-35, 0-5 and 0-5 bp in the first three periods; later FDR portfolios are negative before costs.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-bs",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "locator": "p. 22 ('They can be viewed as break-even transaction costs computed ex ante') and p. 24 ('we treat the transaction costs as endogenous to the selection process, and we can view the reported levels as break-even transaction costs computed ex ante')",
+      "claim": "Evidence summary (chapters[4].evidence[5].summary, shared with statistics chapters[5].evidence[7]). Initial snapshot: 'These thresholds are ex post, not a tradable selection rule.' — partial: the numbers were supported, but the paper labels the Table 5 levels as ex ante break-evens and aims its ex post criticism at break-evens of rules already selected (p. 21). Revised snapshot (re-extracted 2026-10-12): 'The authors raise costs inside the monthly ex ante selection until no positive performance is detected and call these break-even transaction costs computed ex ante (pp. 22, 24); they criticize break-evens computed after rules are chosen as ex post (p. 21).' The same wording is in the research appendix. The revised text matches the passages.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-lo",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "locator": "Abstract, printed p. 1705",
+      "claim": "sections[7].paragraphs[0]: algorithmic recognition of technical patterns in U.S. stocks from 1962 to 1996; several patterns provided incremental information.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-lo",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "locator": "Section II.A-B, printed p. 1719 (parameter d detection lag)",
+      "claim": "Evidence study.rule: ten algorithmically defined pattern classes; detection delay before conditional returns.",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-lo",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "locator": "Section III.A-B, printed pp. 1726-1728; Tables VII-VIII captions",
+      "claim": "Evidence study.sample/comparator: NYSE/AMEX and Nasdaq stocks 1962-1996 with five-year subperiods and size quintiles; pattern-conditioned versus unconditional distributions compared with a decile goodness-of-fit test (Section III.A) and Kolmogorov-Smirnov tests (Tables VII-VIII).",
+      "disposition": "supported"
+    },
+    {
+      "id": "rc-lo",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "locator": "Section V Conclusion, printed p. 1753",
+      "claim": "sections[7].paragraphs[0] and evidence limits: the comparison is between distributions, not a completed net trading account; it does not establish net profits ('this does not necessarily imply that technical analysis can be used to generate excess trading profits').",
+      "disposition": "supported"
+    },
+    {
+      "id": "ra-pattern-research",
+      "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+      "locator": "Cover page and abstract (NBER Working Paper 7613, March 2000)",
+      "claim": "Source title '(2000 working paper)' and supports text: the same Lo-Mamaysky-Wang study in working-paper form, with the same 1962-1996 incremental-information abstract claim. No evidence record uses this ID; it duplicates rc-lo in the chapter source list.",
+      "disposition": "supported"
+    }
+  ],
+  "boundaries": "Fifteen passage checks over four URLs (four source IDs). All retrievals succeeded; no retrieval failure is recorded. The chapter's empirical-study records were checked for sample, rule, comparator, costs and result against the originals. Teaching rules, the fictional ledger, the cost models and the variant log are invented and have no source; they are covered by testing-reproduce.py instead. The walk-forward sentence is the book's own methodological statement and is recorded as 'not stated' in Bailey et al. only to make clear that the paper was not used for it; it is not a finding. Source access dates and rights were not reviewed (ROAD-003)."
+}

@@ -93,4 +93,17 @@ const diagnosticFigure = additions.figures.find(f => f.title === 'One historical
 assert.equal(diagnosticFigure.afterAddedSection, additions.sections.indexOf(diagnostic));
 assert.deepEqual(diagnosticFigure.panels[1].series[0].values,[93.429,93.816,90.69,91.009]);
 assert.deepEqual(diagnosticFigure.panels[2].series[0].values,[93.429,90.69,93.816,91.009]);
+// Chapter 28 transfer task: its SPY rows must equal the archive, and its stated levels and open-stage resolution must follow.
+{
+  const spyRows = Object.fromEntries(read('data/historical/spy.csv').trim().split('\n').slice(1).map(line => line.split(',')).map(([d,o,h,l,c]) => [d, [o,h,l,c].map(Number)]));
+  const caseChapter = JSON.parse(read('content/risk-advanced.json')).chapters.find(c => c.id === 'case-studies');
+  const task = caseChapter.practice.find(t => t.title === 'Audit a calendar-selected historical cutoff');
+  for (const row of task.tables[0].rows) assert.deepEqual(row.slice(1).map(Number), spyRows[row[0].slice(0, 10)], `SPY task row ${row[0]}`);
+  const priorFive = task.tables[0].rows.slice(0, 5).map(r => Number(r[4])), cutoffClose = Number(task.tables[0].rows[5][4]);
+  near(priorFive.reduce((a, b) => a + b, 0), 992.52); near(priorFive.reduce((a, b) => a + b, 0) / 5, 198.504); assert.ok(cutoffClose > 198.504);
+  near(1.01 * cutoffClose, 202.7777); near(0.99 * cutoffClose, 198.7623);
+  const spyCase = ledger.cases.find(c => c.id === 'SPY-2016-04'); assert.equal(spyCase.category, 'adverse'); assert.equal(spyCase.decisive_phase, 'open');
+  assert.equal(ledger.cases.filter(c => c.decisive_phase === 'open').length, 1);
+  assert.match(task.solution.join(' '), /198\.504/); assert.match(task.solution.join(' '), /202\.7777/); assert.match(task.solution.join(' '), /198\.7623/);
+}
 console.log('Historical gallery verified: source hashes/OHLC, all 36 fixed windows, exact means/levels/clock, four first representatives, tables/figures, and separately selected sequence diagnostic.');

@@ -13,7 +13,7 @@
       "accessed": "2026-10-01"
     },
     "rc-bs": {
-      "title": "Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)",
+      "title": "Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)",
       "url": "https://scaillet.ch/pdfs/BajSca.pdf",
       "supports": "Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.",
       "accessed": "2026-10-01"
@@ -47,6 +47,12 @@
       "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
       "supports": "Government-created SEC content is free to access and reuse; some site content, such as stock art, is excluded. Not a license for underlying vendor data.",
       "accessed": "2026-10-01"
+    },
+    "rc-apple-dividend-2016": {
+      "title": "Apple (January 26, 2016), Apple Reports Record First Quarter Results",
+      "url": "https://www.apple.com/newsroom/2016/01/26Apple-Reports-Record-First-Quarter-Results/",
+      "supports": "Issuer declaration of a $0.52 per-share dividend payable February 11, 2016, to holders of record on February 8, 2016; the February 4 ex-date follows from the then two-business-day ex-date convention, not from this release.",
+      "accessed": "2026-10-12"
     },
     "rc-apple-split": {
       "title": "Apple (April 23, 2014), Capital Return Program and Stock Split",
@@ -151,7 +157,7 @@
       "title": "Adverse evidence: rule selection and trading costs",
       "paragraphs": [
         "Bajgrowicz and Scaillet test 7,846 technical rules on daily DJIA data from January 1897–July 2011 in the author-hosted version cited here. Their tests address the chance discoveries created by searching many rules, then examine whether past winners can be selected to perform later. Historical in-sample successes do not yield a reliable ex ante selection procedure in this experiment. Costs eliminate the out-of-sample performance of the investigated portfolios.",
-        "Table 5 reports break-even one-way costs rather than a universally correct fee. For the FDR-selected portfolios, the first three period ranges are 30–35, 0–5 and 0–5 basis points; the later periods have negative out-of-sample performance before costs. A basis point is 0.01 percentage point. These break-even ranges are known after the results, not a cost policy one could select beforehand. Compare turnover, spread and impact as well as commission. The study challenges extrapolating the best backtest; its daily index universe and tested rule set limit any claim about every stock method."
+        "Table 5 reports break-even one-way costs rather than a universally correct fee. For the FDR-selected portfolios, the first three period ranges are 30–35, 0–5 and 0–5 basis points; the later periods have negative out-of-sample performance before costs. A basis point is 0.01 percentage point. The authors call these break-evens ex ante because costs are raised inside the selection procedure itself (pp. 22, 24), unlike break-evens computed after rules are chosen (p. 21). They are still backtest thresholds, not cost levels an investor would have measured beforehand. Compare turnover, spread and impact as well as commission. The study challenges extrapolating the best backtest; its daily index universe and tested rule set limit any claim about every stock method."
       ],
       "evidence": [
         {
@@ -160,12 +166,12 @@
           "sourceIds": [
             "rc-bs"
           ],
-          "location": "Author-hosted October 2011 version: introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+          "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
           "summary": "Inspected false-discovery adjustment, chronological persistence tests and cost sensitivity against zero excess-performance criteria.",
           "limits": "Results concern the authors’ index/rule experiment; they neither prove all technical methods useless nor license ignoring adverse results.",
           "checked": "2026-10-02",
           "study": {
-            "sample": "Daily DJIA index prices, January 1897–July 2011; author-hosted version dated October 2011.",
+            "sample": "Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date.",
             "rule": "7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods.",
             "comparator": "Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion.",
             "costs": "Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately.",
@@ -879,7 +885,7 @@
           "title": "Historical case selection and data conventions",
           "paragraphs": [
             "The historical cases below were selected to teach two data problems: an event-driven price move and a share-unit change. Selection is purposive, based on publicly documented episodes, rather than a random screen or an outcome-blind trading sample. Both the surge and subsequent fall in the selected GME episode are included. These cases cannot estimate a hit rate. Use the fictional cases earlier in the chapter to rehearse fully specified execution; these historical records teach what can and cannot be inferred from limited observations.",
-            "Provenance: GME, January 12–28, 2021, is reconstructed from SEC staff report section 3.2, printed pp. 18–19, published October 14, 2021. Prices use the dollar/share units reported for that period, not a later split-adjusted chart. U.S. regular-session closing observations are distinguished from intraday highs; the report does not supply a complete OHLC series or exact timestamps for the highs. No dividend reinvestment or price adjustment is performed here. Two closes are derived from explicitly reported daily dollar changes, with the arithmetic disclosed in the table. Missing sessions remain missing.",
+            "Provenance: GME, January 12–28, 2021, is reconstructed from SEC staff report section 3.2, printed pp. 18–19, published October 14, 2021. Prices use the dollar/share units reported for that period, not a later split-adjusted chart. Reported closing prices are distinguished from intraday highs; the report does not supply a complete OHLC series or exact timestamps for the highs. No dividend reinvestment or price adjustment is performed here. Two closes are derived from explicitly reported daily dollar changes, with the arithmetic disclosed in the table. Missing sessions remain missing.",
             "Reuse basis: the SEC’s Webmaster FAQ states that Government-created site content is free to access and reuse, while some content such as stock art is excluded. This book attributes a few numeric facts from the staff report and makes its own table and diagram; it copies no vendor chart, artwork or logo. The FAQ is not a license for a vendor’s underlying market-data feed. The Apple case paraphrases the issuer’s dated announcement and uses original algebra, with no copied chart or photo."
           ],
           "id": "historical-case-selection-and-data-conventions"
@@ -887,15 +893,15 @@
         {
           "title": "GME event reaction: a large move still leaves execution unknown",
           "paragraphs": [
-            "At the January 13 close, compare the two completed closing observations and volumes shown in the first panel. Price change is 31.40 − 19.95 = $11.45, or 57.39%; approximate share volume is 144/7 ≈ 20.6 times the previous session. These are observations. The words “breakout” or “short squeeze” add an interpretation whose definition and evidence must be supplied.",
-            "Freeze a retrospective teaching decision at that close: require a complete preceding 20-session OHLC window, a defined event calendar, and an executable next-session quote before accepting the book’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff."
+            "At the January 13 close, compare the two completed closing observations and volumes shown in the first panel. Price change is 31.40 − 19.95 = $11.45, or 57.39%; approximate share volume is roughly 20 times the previous session (about 144 million against 7 million shares). These are observations. The words “breakout” or “short squeeze” add an interpretation whose definition and evidence must be supplied.",
+            "Freeze a retrospective teaching decision at that close: require a complete preceding 20-session OHLC window, a defined event calendar, and an executable next-session quote before accepting P1’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff."
           ],
           "id": "gme-event-reaction-a-large-move-still-leaves-execution-unknown"
         },
         {
           "title": "GME surge and reversal: do not turn a high into a closing fill",
           "paragraphs": [
-            "The second panel contains three consecutive closes. January 26 is $147.98, derived as $347.51 − $199.53; January 28 is $193.60, derived as $347.51 − $153.91. Close-to-close changes are +134.83% then −44.29%. The separately reported January 28 intraday high, $483, is not that day’s closing price.",
+            "The second panel contains three consecutive closes. January 26 is $147.98, derived as $347.51 − $199.53; January 28 is $193.60, derived as $347.51 − $153.91. Close-to-close changes are +134.84% then −44.29%. The separately reported January 28 intraday high, $483, is not that day’s closing price.",
             "At the January 27 close, a momentum description is supported by the supplied pair of closes. An execution claim is not: the next opening price, spread, halt timing, low, and fill sequence are absent. If a learner writes “bought the January 27 close and sold the January 28 high,” mark both fills as invented until independent transaction data supports them. The subsequent fall is a contrasting observation within the same chosen episode, not a countable failure of an unspecified strategy. Review outcome: the direction description transferred; the order model did not have enough input to run."
           ],
           "id": "gme-surge-and-reversal-do-not-turn-a-high-into-a-closing-fill"
@@ -916,7 +922,7 @@
             "The exercise gate is deliberately simple: compare the cutoff close C with the arithmetic mean of the five preceding closes, excluding C. If C is not strictly higher, record “skipped.” If it is higher, observe the next five archive sessions against an upper level of 1.01C and a lower level of 0.99C. A session opening at or beyond a level resolves that side first. Otherwise compare its high and low: a sole upper touch is “favorable,” a sole lower touch “adverse,” and touching both in that first resolving bar is “ambiguous.” No touch within five sessions is “ordinary/unresolved.” These labels describe a price path under an invented exercise rule. They are not successful or failed historical trades.",
             "The full ledger below contains 18 skips, six favorable paths, eleven adverse paths and one ordinary/unresolved path; none is an ambiguous first resolving bar. We show the earliest example of each represented class, with alphabetical symbol order breaking date ties. This representative choice is intentionally outcome-stratified, so the four illustrations are not a sample from which to estimate probabilities. Do not divide favorable counts by eligible counts to infer a strategy’s success rate. There is no order, position, fill, stop execution, cash account, commission model or held-out strategy test.",
             "Provenance and reuse: Boris Marjanovic’s Huge Stock Market Dataset on Kaggle, version 3, provides the three daily files. Retrieved metadata explicitly declares CC0-1.0, and the depositor states that prices are adjusted for dividends and splits. We copied numeric observations into original tables and diagrams. The stated permission is the depositor’s; metadata does not identify an upstream provider or establish others’ rights. The local source snapshots, exact download URLs, SHA-256 hashes, extracts and frozen selection sheet are preserved in data/historical/ for independent inspection.",
-            "Data conventions: source date labels and all OHLC decimals are retained, in the archive’s adjusted dollar scale. Daily aggregation is reported, but exact regular/extended-session inclusion, time zone, adjustment formula and adjustment vintage are undocumented. We therefore call them archive sessions, not certified regular-session candles. No missing date is interpolated. Volume is unused because its adjustment convention is unspecified. These are retrospectively adjusted records, not a reconstruction of prices published at each 2016 cutoff. The cutoff exercise hides future bars; it does not make the adjusted vintage contemporaneous. Before modeling real transactions, obtain documented raw quotes, corporate actions, precise sessions, spread and order information."
+            "Data conventions: source date labels and all OHLC decimals are retained, in the archive’s adjusted dollar scale. Daily aggregation is reported, but exact regular/extended-session inclusion, time zone and adjustment formula are undocumented, and the adjustment vintage is bounded only by the depositor’s note “last updated 11/10/2017”. We therefore call them archive sessions, not certified regular-session candles. No missing date is interpolated. Volume is unused because its adjustment convention is unspecified. These are retrospectively adjusted records, not a reconstruction of prices published at each 2016 cutoff. The cutoff exercise hides future bars; it does not make the adjusted vintage contemporaneous. Before modeling real transactions, obtain documented raw quotes, corporate actions, precise sessions, spread and order information."
           ],
           "tables": [
             {
@@ -1587,7 +1593,7 @@
           "paragraphs": [
             "The fixed ledger has no ambiguous first resolving bar. We did not change its rule or add dates to manufacture one. After reviewing the cohort, we separately looked for a later candle whose open lies between the frozen levels while its high and low span both. The first such date is February 5 in the AAPL February window. This is a disclosed post-audit diagnostic, selected for its geometry; it does not replace that window’s skipped classification or establish an ambiguous trade.",
             "At the February 1 cutoff, C = 92.839 is below the prior-five mean 93.2486, so the original gate skips. Its analytical levels, retained only for this diagnostic, are 91.91061 and 93.76739. Pose a fresh question after February 4 closes: what can the next daily candle tell us about the order in which those two levels are visited? No position is assumed to survive earlier bars, and neither later extreme is known at that question cutoff.",
-            "Reveal February 5: O/H/L/C = 93.429/93.816/90.690/91.009. The open is between the levels, high is above the upper, and low below the lower. Both high-before-low and low-before-high are compatible with these four observations. The alternative lines below are invented possible orders through the recorded extrema, not measured intraday paths or times. A target-first or stop-first assertion needs intraday observations and an execution model; a daily bar alone cannot settle it. Keep this ambiguity visible without undoing the original skip."
+            "Reveal February 5: O/H/L/C = 93.429/93.816/90.690/91.009. The open is between the levels, high is above the upper, and low below the lower. Both high-before-low and low-before-high are compatible with these four observations. The alternative lines below are invented possible orders through the recorded extrema, not measured intraday paths or times. A target-first or stop-first assertion needs intraday observations and an execution model; a daily bar alone cannot settle it. Keep this ambiguity visible without undoing the original skip. One further caution concerns the data themselves. Apple’s $0.52 quarterly dividend was payable to holders of record on February 8, so under the 2016 settlement cycle the shares went ex-dividend on February 4, between the February 1 levels and this bar. The archive adjusts for dividends, so the levels and the bar carry different adjustment factors, and the high clears the adjusted upper level by only about $0.05, far less than the dividend. In unadjusted prices this bar probably reached only the lower level. The lesson concerns what any daily bar cannot reveal about order; it is not a claim that published February 5 prices spanned both levels."
           ],
           "tables": [
             {
@@ -2167,7 +2173,7 @@
           "kind": "panels",
           "historical": true,
           "title": "One historical candle, two possible orders",
-          "caption": "AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts.",
+          "caption": "AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts. A dividend went ex on February 4, so the adjusted levels and bar may not span both levels in unadjusted prices.",
           "afterAddedSection": 9,
           "panels": [
             {
@@ -2240,6 +2246,7 @@
         "rc-sec-case",
         "rc-sec-reuse",
         "rc-apple-split",
+        "rc-apple-dividend-2016",
         "rc-open-stock-archive",
         "rc-cc0"
       ],
@@ -2360,7 +2367,7 @@
         {
           "title": "Do not confuse different evidence tests",
           "paragraphs": [
-            "A difference between conditional return distributions asks about information; a cost-adjusted portfolio return asks about implementation. The pattern and DJIA-rule studies in the appendix use different comparisons. Neither a small p-value nor a gross mean alone supplies an executable net advantage."
+            "A difference between conditional return distributions asks about information; a cost-adjusted portfolio return asks about implementation. The pattern and DJIA-rule studies in the Research and evidence appendix use different comparisons. Neither a statistically significant difference nor a gross mean alone supplies an executable net advantage."
           ],
           "id": "do-not-confuse-different-evidence-tests"
         }
@@ -2402,12 +2409,12 @@
           "sourceIds": [
             "rc-bs"
           ],
-          "location": "Author-hosted October 2011 version: introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+          "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
           "summary": "Inspected false-discovery adjustment, chronological persistence tests and cost sensitivity against zero excess-performance criteria.",
           "limits": "Results concern the authors’ index/rule experiment; they neither prove all technical methods useless nor license ignoring adverse results.",
           "checked": "2026-10-02",
           "study": {
-            "sample": "Daily DJIA index prices, January 1897–July 2011; author-hosted version dated October 2011.",
+            "sample": "Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date.",
             "rule": "7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods.",
             "comparator": "Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion.",
             "costs": "Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately.",

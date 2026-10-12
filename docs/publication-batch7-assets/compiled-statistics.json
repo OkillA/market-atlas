@@ -1,0 +1,1093 @@
+{
+  "chapter": {
+    "id": "statistics",
+    "title": "Statistics for a skeptical chart reader",
+    "subtitle": "Understand what the numbers measure before trusting their precision.",
+    "minutes": 12,
+    "status": "draft",
+    "tags": [
+      "expectancy",
+      "win rate",
+      "drawdown",
+      "underwater plot",
+      "standard error",
+      "confidence interval",
+      "Sharpe ratio",
+      "statistics"
+    ],
+    "takeaway": "Average outcome, return, drawdown, and uncertainty are four different measurements of the same trades. Compute each from the list of outcomes, and let the uncertainty decide how much the others can mean.",
+    "optional": false,
+    "prerequisites": [
+      "risk-sizing",
+      "journaling",
+      "testing"
+    ],
+    "outcomes": [
+      "Summarize a list of net R outcomes as a distribution, a win rate, average win and loss, and an expectancy computed two ways, before and after costs.",
+      "Convert R outcomes into a dollar equity path and measure account return, maximum drawdown, the gain needed to recover, and the recovery point.",
+      "Explain why the same outcomes in a different order share an average and an ending value but not a drawdown.",
+      "Show how far a 20-trade estimate can move, using one-trade sensitivity, a rough standard-error band, and the break-even win rate.",
+      "In the optional sections, interpret a Wilson interval, CAGR, a Sharpe ratio, and a p-value together with the assumptions each requires."
+    ],
+    "sections": [
+      {
+        "title": "Start with the outcomes, not a summary",
+        "paragraphs": [
+          "A performance statistic compresses a list of outcomes into one number. Before compressing, look at the list. The ledger below holds twenty completed trades from Maya’s paper record under one frozen rule version. Like every number in this chapter, they are invented so that each statistic can be recomputed by hand, and they estimate nothing about a real strategy. Each trade was sized so that 1R, the frozen planned price risk from entry to stop, equals $100. A modeled cost of $5 per round trip, or 0.05R, is recorded separately, and net R = net P&L ÷ $100.",
+          "Read down the columns before summarizing. Five trades reached the +2R target and five hit the −1R stop. The rest left on the time rule with assorted smaller results. One trade gapped below its stop and lost 2.30R before costs; it is recorded as it happened rather than forced to equal −1R. One time exit finished exactly at its entry price, a gross scratch, and the $5 cost turns it into a small net loss of −0.05R. Whether such a trade counts as a win, a loss, or a separate scratch category must be declared. This chapter defines a win as a net result above zero, so the scratch is a loss.",
+          "The main figure groups the twenty net outcomes into half-R bins; the frequency table gives the same counts. This shape is the payoff distribution: a cluster of stop losses just below −1R, a single gap loss in the far-left tail, a spread of small time-exit results near zero, and a cluster of target exits just below +2R. Two methods with the same average can have very differently shaped histograms. The shape tells you what experience the average summarizes: frequent small losses with occasional large wins, or frequent small wins with occasional large losses."
+        ],
+        "tables": [
+          {
+            "title": "Twenty fictional paper trades (1R = $100; cost $5 = 0.05R per trade)",
+            "columns": [
+              "Trade",
+              "Exit type",
+              "Gross R",
+              "Cost (R)",
+              "Net R",
+              "Net P&L ($)"
+            ],
+            "rows": [
+              [
+                1,
+                "Target (+2R)",
+                "+2.00",
+                "0.05",
+                "+1.95",
+                "+195.00"
+              ],
+              [
+                2,
+                "Stop",
+                "−1.00",
+                "0.05",
+                "−1.05",
+                "−105.00"
+              ],
+              [
+                3,
+                "Time exit",
+                "+0.60",
+                "0.05",
+                "+0.55",
+                "+55.00"
+              ],
+              [
+                4,
+                "Stop",
+                "−1.00",
+                "0.05",
+                "−1.05",
+                "−105.00"
+              ],
+              [
+                5,
+                "Target (+2R)",
+                "+2.00",
+                "0.05",
+                "+1.95",
+                "+195.00"
+              ],
+              [
+                6,
+                "Time exit",
+                "+0.35",
+                "0.05",
+                "+0.30",
+                "+30.00"
+              ],
+              [
+                7,
+                "Gap below stop",
+                "−2.30",
+                "0.05",
+                "−2.35",
+                "−235.00"
+              ],
+              [
+                8,
+                "Stop",
+                "−1.00",
+                "0.05",
+                "−1.05",
+                "−105.00"
+              ],
+              [
+                9,
+                "Time exit",
+                "+0.90",
+                "0.05",
+                "+0.85",
+                "+85.00"
+              ],
+              [
+                10,
+                "Target (+2R)",
+                "+2.00",
+                "0.05",
+                "+1.95",
+                "+195.00"
+              ],
+              [
+                11,
+                "Time exit (scratch)",
+                "0.00",
+                "0.05",
+                "−0.05",
+                "−5.00"
+              ],
+              [
+                12,
+                "Time exit",
+                "+0.25",
+                "0.05",
+                "+0.20",
+                "+20.00"
+              ],
+              [
+                13,
+                "Stop",
+                "−1.00",
+                "0.05",
+                "−1.05",
+                "−105.00"
+              ],
+              [
+                14,
+                "Time exit",
+                "+1.40",
+                "0.05",
+                "+1.35",
+                "+135.00"
+              ],
+              [
+                15,
+                "Time exit",
+                "+0.15",
+                "0.05",
+                "+0.10",
+                "+10.00"
+              ],
+              [
+                16,
+                "Time exit",
+                "−0.40",
+                "0.05",
+                "−0.45",
+                "−45.00"
+              ],
+              [
+                17,
+                "Target (+2R)",
+                "+2.00",
+                "0.05",
+                "+1.95",
+                "+195.00"
+              ],
+              [
+                18,
+                "Stop",
+                "−1.00",
+                "0.05",
+                "−1.05",
+                "−105.00"
+              ],
+              [
+                19,
+                "Time exit",
+                "+1.10",
+                "0.05",
+                "+1.05",
+                "+105.00"
+              ],
+              [
+                20,
+                "Target (+2R)",
+                "+2.00",
+                "0.05",
+                "+1.95",
+                "+195.00"
+              ]
+            ]
+          },
+          {
+            "title": "Frequency table of net R (each bin includes its lower edge)",
+            "columns": [
+              "Net R bin",
+              "Trades"
+            ],
+            "rows": [
+              [
+                "−2.5 to −2",
+                1
+              ],
+              [
+                "−2 to −1.5",
+                0
+              ],
+              [
+                "−1.5 to −1",
+                5
+              ],
+              [
+                "−1 to −0.5",
+                0
+              ],
+              [
+                "−0.5 to 0",
+                2
+              ],
+              [
+                "0 to 0.5",
+                3
+              ],
+              [
+                "0.5 to 1",
+                2
+              ],
+              [
+                "1 to 1.5",
+                2
+              ],
+              [
+                "1.5 to 2",
+                5
+              ]
+            ]
+          }
+        ],
+        "id": "start-with-the-outcomes-not-a-summary"
+      },
+      {
+        "title": "Average outcome: expectancy computed two ways",
+        "paragraphs": [
+          "Win rate is the proportion of trades with a positive net result: 12 of 20, or 60%. On its own it says little. The twelve net wins sum to +14.15R, an average win of 14.15 ÷ 12 ≈ +1.18R. The eight net losses sum to −8.10R, an average loss of 8.10 ÷ 8 ≈ 1.01R in magnitude. Expectancy, the average result per trade, can be computed two ways. By formula: win rate × average win − loss rate × average loss = 0.60 × 1.179 − 0.40 × 1.0125 ≈ +0.30R. Directly: total net R ÷ number of trades = (14.15 − 8.10) ÷ 20 = 6.05 ÷ 20 = +0.3025R. The two agree because they are the same arithmetic rearranged. If they disagree in your own work, a trade has been miscounted, or the loss rate was taken as 1 − win rate although a scratch belongs to neither group. In the before-cost (gross) column of the ledger, for example, there are 12 wins, 7 losses and 1 scratch, so the loss rate is 7 ÷ 20 = 35%: 0.60 × (14.75 ÷ 12) − 0.35 × 1.10 = 0.7375 − 0.3850 = +0.3525R.",
+          "Costs enter every trade. Gross, the same twenty trades total +7.05R, a gross expectancy of +0.3525R. Twenty costs of 0.05R remove 1.00R, leaving +6.05R. In dollars at $100 per R, that is $705 gross, $100 of costs, and $605 net. Costs also changed one classification, turning the gross scratch into a net loss. In a real record, prefer the direct average: it automatically includes the gap loss, the scratch, and every partial result, whereas the two-group formula is easily fed planned values, such as −1R for every loss, instead of the recorded averages.",
+          "The formula is still useful for reasoning about assumed distributions. If 40% of trades earn +2R and 60% lose 1R, gross expectancy is 0.40 × 2 − 0.60 × 1 = +0.20R; deducting 0.08R of average costs leaves +0.12R. A second assumed method wins 80% of the time for +0.25R and loses 20% of the time for 1.5R: 0.20 − 0.30 = −0.10R before costs, despite its high win rate. Rearranging the formula gives a break-even win rate, average loss ÷ (average win + average loss). For Maya’s sample that is 1.0125 ÷ (1.179 + 1.0125) ≈ 46.2%. Her observed 60% is above it, but the section on uncertainty asks whether twenty trades can tell 60% from 46%."
+        ],
+        "tables": [
+          {
+            "title": "The same twenty trades, before and after costs",
+            "columns": [
+              "Measure",
+              "Gross",
+              "Net (after $5 per trade)"
+            ],
+            "rows": [
+              [
+                "Wins (result > 0)",
+                "12",
+                "12"
+              ],
+              [
+                "Losses (result < 0)",
+                "7",
+                "8"
+              ],
+              [
+                "Scratches (result = 0)",
+                "1",
+                "0"
+              ],
+              [
+                "Win rate",
+                "60% (12 of 20)",
+                "60% (12 of 20)"
+              ],
+              [
+                "Total R",
+                "+7.05R",
+                "+6.05R"
+              ],
+              [
+                "Expectancy (total ÷ 20)",
+                "+0.3525R",
+                "+0.3025R"
+              ],
+              [
+                "Average win",
+                "+1.229R (14.75 ÷ 12)",
+                "+1.179R (14.15 ÷ 12)"
+              ],
+              [
+                "Average loss (magnitude)",
+                "1.10R (7.70 ÷ 7)",
+                "1.0125R (8.10 ÷ 8)"
+              ],
+              [
+                "Total in dollars",
+                "$705",
+                "$605"
+              ]
+            ]
+          }
+        ],
+        "id": "average-outcome-expectancy-computed-two-ways"
+      },
+      {
+        "title": "From R to dollars: the equity path and its drawdowns",
+        "paragraphs": [
+          "Expectancy describes the average trade, but the account experiences trades in order. Start Maya’s paper account at $20,000, add each net result at $100 per R, and you get an equity path: $20,195 after trade 1, $20,090 after trade 2, and so on to $20,605 after trade 20. Account return (ending equity ÷ starting equity − 1) is $605 ÷ $20,000 = 3.025%, about 3.03%. Because each trade risks a fixed $100 rather than a fraction of current equity, the order of the trades does not change this ending value.",
+          "Drawdown measures the decline from the highest equity reached so far, the running peak: drawdown = (running peak − current equity) ÷ running peak. An underwater plot draws this percentage below zero at every point and returns to zero whenever a new peak is set. In the recorded order, equity peaks at $20,265 after trade 6, falls through the gap loss to $19,925 after trade 8, and does not exceed $20,265 again until trade 17. The maximum drawdown is $340, or 340 ÷ 20,265 ≈ 1.68% of the peak. Recovering it requires a 340 ÷ 19,925 ≈ 1.71% gain from the trough, slightly more than the percentage lost because the denominator is now smaller, the same asymmetry Chapter 20 showed. The account stayed below the trade-6 peak at ten successive closes (trades 7–16), recovering at trade 17, eleven trade intervals after that peak.",
+          "Now rearrange the same twenty outcomes so that the eight losses come first. The average is still +0.3025R, the win rate still 60%, and the ending equity still $20,605. But the account falls from $20,000 to $19,190 before the first win: an $810 drawdown of 4.05%, which needs a 4.22% gain to recover and is regained at trade 16. The panel figure shows both orderings, with dollars and percentages on separate axes. Doubling the dollars per R would double every dollar gain, loss and drawdown, though not the account balances; the percentage drawdowns would also roughly double, to 3.31% and 8.10%. Average outcome, account return, and drawdown answer three different questions. A recorded drawdown is the worst decline in one ordering of one sample. It is not a maximum future loss, and other orderings of the same trades can be much deeper."
+        ],
+        "tables": [
+          {
+            "title": "Same trades, two orders ($20,000 start, $100 per R)",
+            "columns": [
+              "Measure",
+              "Recorded order",
+              "Losses-first order"
+            ],
+            "rows": [
+              [
+                "Ending equity ($)",
+                "20,605",
+                "20,605"
+              ],
+              [
+                "Account return",
+                "3.03%",
+                "3.03%"
+              ],
+              [
+                "Expectancy (net R per trade)",
+                "+0.3025R",
+                "+0.3025R"
+              ],
+              [
+                "Running peak before the deepest decline ($)",
+                "20,265 (after trade 6)",
+                "20,000 (start)"
+              ],
+              [
+                "Trough ($)",
+                "19,925 (after trade 8)",
+                "19,190 (after trade 8)"
+              ],
+              [
+                "Maximum drawdown",
+                "$340 = 1.68% of peak",
+                "$810 = 4.05% of peak"
+              ],
+              [
+                "Gain needed from trough",
+                "1.71%",
+                "4.22%"
+              ],
+              [
+                "First trade back at or above that peak",
+                "Trade 17 ($20,410)",
+                "Trade 16 ($20,100)"
+              ]
+            ]
+          }
+        ],
+        "id": "from-r-to-dollars-the-equity-path-and-its-drawdowns"
+      },
+      {
+        "title": "How much can twenty trades tell you?",
+        "paragraphs": [
+          "The arithmetic above describes twenty trades; interpreting it as an estimate of a repeatable outcome process requires a sampling model, and twenty is a small sample. You can see how fragile the estimate is without any formula. Drop one of the five +1.95R target trades and the average of the remaining nineteen falls to +0.22R. Drop the gap loss instead and it rises to +0.44R. One trade in twenty moves the estimate by roughly a quarter to a half of its value. Removing a genuine loss because it is inconvenient is not analysis; this calculation only shows how much a single observation weighs. If a trade was a data error, correct it and keep the audit trail.",
+          "The uncertainty figure tracks the running average after each trade. It is +1.95R after one trade, turns negative after trade 8 (−0.09R), and finishes at +0.30R. Around it, from trade 5 onward, is a rough band of plus or minus two standard errors. The standard error is the sample standard deviation of net R divided by the square root of the number of trades. After 20 trades the standard deviation is about 1.31R. To reproduce it, subtract the mean (0.3025R) from each net result, square and add the differences (32.512), divide by n − 1 = 19 (1.7112), and take the square root: 1.308R. Dividing by 20 instead, as Chapter 12’s population bands do, would give 1.275R; the n − 1 divisor is the usual choice when a sample estimates an unknown spread. The standard error is then about 0.29R, and the band runs from roughly −0.28R to +0.89R. At a fixed standard deviation under the independence model, band width falls as one over the square root of the trade count, so halving it needs about four times as many trades. The realized sample standard deviation also changes as observations arrive.",
+          "The band is a rough guide, not a precise interval. It treats the trades as independent draws from one unchanging distribution, and with twenty lumpy outcomes even that approximation is crude. Even within that model, a t-interval would use a multiplier larger than 2: about 2.09 at 20 trades (about −0.31R to +0.91R) and 2.78 at five, so the band is too narrow throughout, most of all early on. Zero lies inside this approximate band, so it does not provide convincing evidence of a positive mean under that model. This is an illustration of imprecision, not a calibrated hypothesis test for these twenty lumpy observations. The win-rate interval illustrates another dimension of uncertainty. The 60% observed win rate has a 95% Wilson interval of about 38.7% to 78.1%, explained in the optional section that follows, and that range contains the 46.2% break-even computed from the observed payoffs. That comparison is illustrative: the average win and loss used to compute break-even are themselves uncertain, so the Wilson interval alone is not a test of positive expectancy. A sample this size can teach the arithmetic. It cannot validate a strategy, whether its trades are fictional or real."
+        ],
+        "tables": [
+          {
+            "title": "How far the twenty-trade estimate can move",
+            "columns": [
+              "Calculation",
+              "Result",
+              "What it shows"
+            ],
+            "rows": [
+              [
+                "Mean net R, all 20 trades",
+                "+0.3025R",
+                "The point estimate"
+              ],
+              [
+                "Mean without one +1.95R target trade (19 trades)",
+                "+0.216R",
+                "One winner carries about 0.09R of the average"
+              ],
+              [
+                "Mean without the −2.35R gap loss (19 trades)",
+                "+0.442R",
+                "One loss carries about 0.14R of the average"
+              ],
+              [
+                "Sample standard deviation of net R",
+                "1.308R",
+                "Typical spread of single outcomes"
+              ],
+              [
+                "Standard error (1.3081 ÷ √20)",
+                "0.2925R",
+                "Rough uncertainty of the mean"
+              ],
+              [
+                "Mean ± 2 standard errors",
+                "−0.28R to +0.89R",
+                "Includes zero"
+              ],
+              [
+                "Win rate and 95% Wilson interval",
+                "60%; 38.66% to 78.12%",
+                "Includes the break-even win rate"
+              ],
+              [
+                "Break-even win rate (1.0125 ÷ 2.1917)",
+                "46.2%",
+                "Win rate needed at these average payoffs"
+              ]
+            ]
+          }
+        ],
+        "id": "how-much-can-twenty-trades-tell-you"
+      },
+      {
+        "title": "Optional: an interval for a win rate",
+        "optional": true,
+        "paragraphs": [
+          "Prerequisites: the expectancy and uncertainty sections of this chapter, and comfort with a square root. An observed proportion is an estimate. NIST’s Dataplot documentation gives the Wilson score interval as an alternative to a symmetric normal-approximation interval. Its limits stay within the probability range. The formula used here comes from that documentation; the linked handbook also discusses exact binomial intervals. With p̂ = 12/20 = 0.60, n = 20, and z ≈ 1.96 for 95%, the limits are [p̂ + z²/(2n) ± z × √(p̂(1 − p̂)/n + z²/(4n²))] ÷ (1 + z²/n). Numerically, the center term is 0.60 + 0.09604 = 0.69604, the square-root term is 1.96 × √(0.0120 + 0.002401) ≈ 0.23521, and the divisor is 1.19208. The interval is approximately 38.66% to 78.12%. That range is compatible with materially different trading interpretations.",
+          "This interval assumes independent Bernoulli trials with a common probability. Trades across changing regimes or simultaneous stocks may violate those assumptions. It is not a 95% probability guarantee for the next trade, nor a direct interval for expected profit. Win sizes and loss sizes remain unknown even when the win probability is well estimated. A frequentist confidence procedure describes its long-run coverage under its model; the particular observed interval does not assign a probability to a fixed underlying parameter."
+        ],
+        "id": "optional-an-interval-for-a-win-rate"
+      },
+      {
+        "title": "Optional: dependence reduces the information you have",
+        "optional": true,
+        "paragraphs": [
+          "Prerequisites: the uncertainty section of this chapter. Twenty trades taken during one sector rally may share a driver. Counting each as independent can make the sample look more informative than it is. If Maya’s twenty trades came in four bursts of five, each during a different market episode, the record may behave more like four observations of “how the rule did in that episode” than twenty independent draws, and the standard-error band above would be too narrow. Overlapping holding periods create dependence as well. Inspect results by period, instrument group, and market condition, while remembering that increasingly fine partitions produce small subgroups and additional opportunities to select attractive accidents.",
+          "As a brief introduction to a topic needing separate technical study, a bootstrap resamples observed data to study variation in a statistic under a chosen resampling model. For time-dependent returns, block resampling preserves some local sequences rather than shuffling individual days independently. Choosing blocks requires judgment, and a bootstrap cannot manufacture unobserved crises or repair biased data. Treat simulated distributions as conditional on their assumptions. Report whether the result changes materially when a few concentrated observations or one particular period dominate the sample."
+        ],
+        "id": "optional-dependence-reduces-the-information-you-have"
+      },
+      {
+        "title": "Optional: annualized return and the Sharpe ratio",
+        "optional": true,
+        "paragraphs": [
+          "Prerequisites: the equity-path section of this chapter, exponents, and the idea of a standard deviation. Compound annual growth rate summarizes start-to-finish compounding: CAGR = (ending equity ÷ starting equity)^(1 ÷ years) − 1, assuming external cash flows have been handled appropriately. If Maya’s twenty paper trades spanned six months, CAGR = (20,605 ÷ 20,000)^(1 ÷ 0.5) − 1 = 1.03025² − 1 ≈ 6.14%. Annualizing expresses the observed growth as an equivalent constant yearly rate. It adds no information and forecasts nothing; projecting that rate forward would assume the observed growth repeats. A short interval can produce a striking annualized number. Report the period and the raw account return beside it.",
+          "The Sharpe ratio divides the mean excess, or differential, return by the standard deviation of those same excess returns over a consistent interval. “Excess” requires specifying the reference rate or benchmark. Sharpe shows that multiplying a one-period ratio by the square root of the number of periods relies on zero serial correlation, so multiplying a daily ratio by √252 is a common convention under restrictive assumptions rather than a universally valid step. Dividing Maya’s mean net R by its standard deviation (0.3025 ÷ 1.308 ≈ 0.23) is not a Sharpe ratio: R per trade is not a return over a fixed time interval, and no reference rate has been subtracted. Standard deviation also treats upside and downside variation together and does not directly describe liquidity, leverage, or catastrophic tail exposure. Two methods with similar summary ratios can feel very different to the person holding them."
+        ],
+        "id": "optional-annualized-return-and-the-sharpe-ratio"
+      },
+      {
+        "title": "Optional: p-values and how many numbers were considered",
+        "optional": true,
+        "paragraphs": [
+          "Prerequisites: the uncertainty section of this chapter and the variant log in Chapter 24. A p-value is the probability, computed under a specified null model, of a test statistic at least as extreme as the one observed. NIST advises deciding the rejection threshold before seeing the results. A p-value is not the probability that the null hypothesis is true (for example, that the rule has no edge), and by itself it says nothing about whether a gross effect survives costs.",
+          "Searching changes the interpretation. Maya’s development log in Chapter 24 had six variants. If six independent tests were each run at a 5% threshold on rules with no edge, the chance that at least one passes is 1 − 0.95⁶ ≈ 26%. Variants that share trades are related, which changes that figure, but reporting only the passing variant still overstates the evidence. Bajgrowicz and Scaillet address this at scale, testing 7,846 technical rules on daily Dow Jones Industrial Average data with a false-discovery-rate method; the Research and evidence appendix at the end of the book summarizes what they found. Use each statistic for its own question, then state the uncertainty it leaves unresolved. Apparent precision in a spreadsheet should never conceal fragile definitions, limited independent data, or a large unreported search."
+        ],
+        "id": "optional-p-values-and-how-many-numbers-were-considered"
+      },
+      {
+        "title": "Do not confuse different evidence tests",
+        "paragraphs": [
+          "A difference between conditional return distributions asks about information; a cost-adjusted portfolio return asks about implementation. The pattern and DJIA-rule studies in the Research and evidence appendix use different comparisons. Neither a statistically significant difference nor a gross mean alone supplies an executable net advantage."
+        ],
+        "id": "do-not-confuse-different-evidence-tests"
+      }
+    ],
+    "example": {
+      "title": "A payoff ratio is not expectancy",
+      "text": "A planned +2R target and −1R stop give a nominal payoff ratio of 2. If the target occurs only 25% of the time and every other outcome is exactly −1R, gross expectancy is 0.25 × 2 − 0.75 × 1 = −0.25R. The break-even win rate for these two outcomes is 1 ÷ (2 + 1) ≈ 33.3%. Costs raise it, and real trades also include time exits and gaps that a two-outcome picture leaves out."
+    },
+    "exercise": "Using the twenty-trade ledger: (a) compute the net win rate, average win, average loss, and expectancy by formula and by direct average, then the gross expectancy; (b) build the equity path from $20,000 at $100 per R and find account return, maximum drawdown in dollars and percent, the gain needed to recover, and the trade at which equity first regains the earlier peak; (c) compute the mean net R without trade 7 and explain why that number is not the rule’s result.",
+    "solution": [
+      "(a) Net wins are trades 1, 3, 5, 6, 9, 10, 12, 14, 15, 17, 19 and 20, so the win rate is 12 ÷ 20 = 60%. Their net R sum is 5 × 1.95 + 0.55 + 0.30 + 0.85 + 0.20 + 1.35 + 0.10 + 1.05 = 14.15R, so the average win is 14.15 ÷ 12 ≈ 1.179R. The losses sum to 5 × (−1.05) − 2.35 − 0.05 − 0.45 = −8.10R, an average loss of 1.0125R. Formula: 0.60 × (14.15 ÷ 12) − 0.40 × 1.0125 = 0.7075 − 0.4050 = +0.3025R. Direct: (14.15 − 8.10) ÷ 20 = +0.3025R. Gross: (6.05 + 20 × 0.05) ÷ 20 = 7.05 ÷ 20 = +0.3525R.",
+      "(b) Multiply each net R by $100 and add: 20,000 → 20,195 → 20,090 → 20,145 → 20,040 → 20,235 → 20,265 → 20,030 → 19,925 → 20,010 → 20,205 → 20,200 → 20,220 → 20,115 → 20,250 → 20,260 → 20,215 → 20,410 → 20,305 → 20,410 → 20,605. Account return = 605 ÷ 20,000 = 3.025%. The running peak of $20,265 (trade 6) is followed by the lowest later value, $19,925 (trade 8): drawdown = $340, and 340 ÷ 20,265 ≈ 1.68%. Gain needed = 340 ÷ 19,925 ≈ 1.71%. Equity first reaches $20,265 or more at trade 17 ($20,410). The smaller dip after trade 4 ($20,040 from a $20,195 peak, 0.77%) is not the maximum.",
+      "(c) Without trade 7: (6.05 + 2.35) ÷ 19 = 8.40 ÷ 19 ≈ +0.442R. The gap loss happened under the rule, so it belongs in the result; dropping it measures only how much one observation moves a small-sample average. A trade could be removed only if it were shown to be a data error, with the correction documented."
+    ],
+    "practice": [
+      {
+        "title": "Drawdown when the losses come first",
+        "level": "guided",
+        "question": "Reorder the twenty net results with the eight losses first, in ledger order (−1.05, −1.05, −2.35, −1.05, −0.05, −1.05, −0.45, −1.05), followed by the twelve wins in ledger order. Starting at $20,000 with $100 per R, find the trough, the maximum drawdown in dollars and percent, the percentage gain needed to recover, and the trade at which the account first returns to $20,000.",
+        "solution": [
+          "The eight losses total −8.10R, or −$810, so equity bottoms at $20,000 − $810 = $19,190 after trade 8. The peak before it is the $20,000 start, so maximum drawdown = $810 ÷ $20,000 = 4.05%.",
+          "Recovery needs $810 ÷ $19,190 ≈ 4.22%. The wins in order add $195, $55, $195, $30, $85, $195, $20, $135, giving running gains of $195, $250, $445, $475, $560, $755, $775, and $910. The account first reaches at least $20,000 after the eighth win, which is trade 16, at $19,190 + $910 = $20,100.",
+          "Ending equity is still $20,605 and expectancy still +0.3025R. Only the path, and therefore the drawdown, changed."
+        ]
+      },
+      {
+        "title": "Break-even win rate with costs",
+        "level": "independent",
+        "question": "An assumed method wins 35% of the time for +3R and otherwise loses 1R, before costs. Average costs are 0.12R per trade. Compute gross and net expectancy, then the break-even win rate before and after costs.",
+        "solution": [
+          "Gross expectancy = 0.35 × 3 − 0.65 × 1 = 1.05 − 0.65 = +0.40R. Net expectancy = 0.40 − 0.12 = +0.28R. Equivalently, winners net +2.88R and losers −1.12R: 0.35 × 2.88 − 0.65 × 1.12 = 1.008 − 0.728 = +0.28R.",
+          "Before costs, the break-even win rate p solves 3p = 1 × (1 − p), so p = 1 ÷ 4 = 25%. After costs, 2.88p = 1.12(1 − p), so p = 1.12 ÷ 4.00 = 28%. Costs raise the win rate the method needs by three percentage points. These are assumed probabilities and payoffs, not estimates."
+        ]
+      },
+      {
+        "title": "Evaluate a confident claim",
+        "level": "independent",
+        "question": "A reader looks at the twenty-trade record and writes: “Twelve wins in twenty and +0.30R per trade. This rule works.” Using only numbers from this chapter, write a short reply that separates what the record shows from what it cannot show.",
+        "solution": [
+          "A strong reply makes four points. First, the arithmetic is right: 60% net wins and +0.3025R expectancy after the modeled $5 cost. Second, the estimate is fragile: removing one +1.95R trade gives +0.22R, removing the gap loss gives +0.44R, and the rough ±2 standard-error band runs from about −0.28R to +0.89R, which includes zero.",
+          "Third, the 95% Wilson interval for the win rate is about 38.7% to 78.1%, which includes the sample-based 46.2% break-even. Both payoff estimates are uncertain too, so this comparison does not constitute an expectancy test. Fourth, the record does not show whether trades were clustered in time or shared a market driver; if they were, independence fails and these intervals are too narrow. These fictional outcomes teach calculations; establishing a real rule’s merit needs independent evaluation, a suitable comparator, and execution evidence."
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "Maya’s twenty net results contain 12 wins averaging +1.18R and 8 losses averaging −1.01R. A colleague reports expectancy as 1.18 − 1.01 = +0.17R. What is the correction?",
+      "options": [
+        "Divide the difference by the number of trades: (1.18 − 1.01) ÷ 20 ≈ +0.01R per trade.",
+        "Use the gross averages instead, because the $5 cost is already built into the $100 R denominator.",
+        "Weight each average by its frequency: 0.60 × 1.18 − 0.40 × 1.01 ≈ +0.30R, which matches the direct average of the twenty net results."
+      ],
+      "answer": 2,
+      "explanation": "Expectancy weights the average win and the average loss by how often each occurs. The result matches 6.05R ÷ 20 = +0.3025R.",
+      "feedback": [
+        "Subtracting the two group averages omits their 60%/40% frequencies. Dividing that unweighted difference by 20 does not repair the error; the direct method divides the sum of all outcomes by 20.",
+        "The R denominator is the $100 planned price risk only; costs are recorded separately and must be subtracted. Gross figures would overstate expectancy by 0.05R per trade.",
+        "Correct: with 60% wins and 40% losses, the weighted result equals the total net R divided by the number of trades."
+      ]
+    },
+    "sources": [
+      "ra-nist",
+      "ra-overfit",
+      "ra-pvalue",
+      "ra-sharpe",
+      "ra-wilson-dataplot",
+      "ra-confidence-mean",
+      "rc-lo",
+      "rc-bs"
+    ],
+    "related": [
+      "testing",
+      "risk-sizing",
+      "journaling",
+      "system-design"
+    ],
+    "figure": {
+      "kind": "bars",
+      "title": "Payoff distribution of twenty net outcomes",
+      "caption": "Fictional paper record from this chapter’s ledger, net of a $5 (0.05R) cost per trade. Bar height is the number of trades in each half-R bin; every bin includes its lower edge. Look at the two clusters near −1R and +2R and the single gap loss in the left tail.",
+      "afterSection": 0,
+      "xStart": 1,
+      "xLabel": "Net R bin lower edge (each bin is 0.5R wide)",
+      "yLabel": "Number of trades",
+      "integerTicks": true,
+      "xLabels": [
+        "−2.5",
+        "−2",
+        "−1.5",
+        "−1",
+        "−0.5",
+        "0",
+        "0.5",
+        "1",
+        "1.5"
+      ],
+      "series": [
+        {
+          "name": "Trades per net R bin",
+          "values": [
+            1,
+            0,
+            5,
+            0,
+            2,
+            3,
+            2,
+            2,
+            5
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "index": 2,
+          "seriesIndex": 0,
+          "label": "Five stop exits at −1.05R",
+          "shortLabel": "5 × −1.05R"
+        },
+        {
+          "index": 4,
+          "seriesIndex": 0,
+          "label": "Time exits at −0.45R and −0.05R (the scratch after costs)",
+          "shortLabel": "−0.45R, −0.05R"
+        },
+        {
+          "index": 8,
+          "seriesIndex": 0,
+          "label": "Five target exits at +1.95R",
+          "shortLabel": "5 × +1.95R"
+        }
+      ],
+      "showAllXLabels": true
+    },
+    "figures": [
+      {
+        "kind": "panels",
+        "title": "The same twenty trades in two orders: equity and drawdown",
+        "caption": "Fictional paper account, $20,000 start, $100 per R, net of costs. Both orders end at $20,605 with the same +0.3025R average; only the path differs. Dollars and percentages are on separate panels.",
+        "afterSection": 2,
+        "panels": [
+          {
+            "kind": "line",
+            "title": "Equity after each trade",
+            "xStart": 0,
+            "xLabel": "Trade number (0 = start)",
+            "yLabel": "Equity ($)",
+            "series": [
+              {
+                "name": "Recorded order",
+                "values": [
+                  20000,
+                  20195,
+                  20090,
+                  20145,
+                  20040,
+                  20235,
+                  20265,
+                  20030,
+                  19925,
+                  20010,
+                  20205,
+                  20200,
+                  20220,
+                  20115,
+                  20250,
+                  20260,
+                  20215,
+                  20410,
+                  20305,
+                  20410,
+                  20605
+                ]
+              },
+              {
+                "name": "Losses first",
+                "values": [
+                  20000,
+                  19895,
+                  19790,
+                  19555,
+                  19450,
+                  19445,
+                  19340,
+                  19295,
+                  19190,
+                  19385,
+                  19440,
+                  19635,
+                  19665,
+                  19750,
+                  19945,
+                  19965,
+                  20100,
+                  20110,
+                  20305,
+                  20410,
+                  20605
+                ]
+              }
+            ],
+            "annotations": [
+              {
+                "index": 6,
+                "seriesIndex": 0,
+                "label": "Recorded-order peak $20,265 after trade 6",
+                "shortLabel": "Peak $20,265"
+              },
+              {
+                "index": 8,
+                "seriesIndex": 1,
+                "label": "Losses-first trough $19,190 after trade 8",
+                "shortLabel": "Trough $19,190",
+                "placement": "below"
+              },
+              {
+                "index": 20,
+                "seriesIndex": 0,
+                "label": "Both end at $20,605",
+                "shortLabel": "Both $20,605"
+              }
+            ]
+          },
+          {
+            "kind": "line",
+            "title": "Underwater plot: percent below the running peak",
+            "xStart": 0,
+            "xLabel": "Trade number (0 = start)",
+            "yLabel": "Drawdown (%)",
+            "series": [
+              {
+                "name": "Recorded order",
+                "values": [
+                  0,
+                  0,
+                  -0.52,
+                  -0.25,
+                  -0.77,
+                  0,
+                  0,
+                  -1.16,
+                  -1.68,
+                  -1.26,
+                  -0.3,
+                  -0.32,
+                  -0.22,
+                  -0.74,
+                  -0.07,
+                  -0.02,
+                  -0.25,
+                  0,
+                  -0.51,
+                  0,
+                  0
+                ]
+              },
+              {
+                "name": "Losses first",
+                "values": [
+                  0,
+                  -0.53,
+                  -1.05,
+                  -2.23,
+                  -2.75,
+                  -2.78,
+                  -3.3,
+                  -3.53,
+                  -4.05,
+                  -3.08,
+                  -2.8,
+                  -1.83,
+                  -1.68,
+                  -1.25,
+                  -0.28,
+                  -0.18,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "annotations": [
+              {
+                "index": 8,
+                "seriesIndex": 0,
+                "label": "Recorded order maximum drawdown −1.68%",
+                "shortLabel": "−1.68%"
+              },
+              {
+                "index": 8,
+                "seriesIndex": 1,
+                "label": "Losses-first maximum drawdown −4.05%",
+                "shortLabel": "−4.05%",
+                "placement": "below"
+              },
+              {
+                "index": 17,
+                "seriesIndex": 0,
+                "label": "Recorded order back to a new peak at trade 17",
+                "shortLabel": "New peak: 17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "line",
+        "title": "The running average and a rough uncertainty band",
+        "caption": "Fictional ledger from this chapter. The running mean of net R after each trade, with a rough band of ±2 standard errors from trade 5 onward. The band still includes zero after twenty trades. It assumes independent trades and is a guide, not a precise interval.",
+        "afterSection": 3,
+        "xStart": 1,
+        "xLabel": "Number of trades included",
+        "yLabel": "Net R per trade",
+        "series": [
+          {
+            "name": "Running mean",
+            "values": [
+              1.95,
+              0.45,
+              0.483,
+              0.1,
+              0.47,
+              0.442,
+              0.043,
+              -0.094,
+              0.011,
+              0.205,
+              0.182,
+              0.183,
+              0.088,
+              0.179,
+              0.173,
+              0.134,
+              0.241,
+              0.169,
+              0.216,
+              0.303
+            ]
+          },
+          {
+            "name": "Mean + 2 SE",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              1.812,
+              1.539,
+              1.266,
+              1,
+              0.999,
+              1.17,
+              1.056,
+              0.981,
+              0.846,
+              0.903,
+              0.848,
+              0.77,
+              0.875,
+              0.784,
+              0.805,
+              0.888
+            ]
+          },
+          {
+            "name": "Mean − 2 SE",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              -0.872,
+              -0.656,
+              -1.18,
+              -1.188,
+              -0.976,
+              -0.76,
+              -0.692,
+              -0.614,
+              -0.669,
+              -0.546,
+              -0.501,
+              -0.501,
+              -0.393,
+              -0.445,
+              -0.373,
+              -0.283
+            ]
+          },
+          {
+            "name": "Zero",
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "index": 7,
+            "seriesIndex": 0,
+            "label": "Running mean −0.09R after 8 trades",
+            "shortLabel": "After 8: −0.09R",
+            "placement": "below"
+          },
+          {
+            "index": 19,
+            "seriesIndex": 0,
+            "label": "Running mean +0.30R after 20 trades",
+            "shortLabel": "Mean +0.30R"
+          },
+          {
+            "index": 19,
+            "seriesIndex": 2,
+            "label": "Lower band −0.28R after 20 trades",
+            "shortLabel": "Low −0.28R",
+            "placement": "below"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "The twenty-trade ledger gives a 60% win rate and +0.3025R net expectancy by both methods",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Ledger, frequency and before/after-cost tables; exercise solution; main figure",
+        "summary": "Script recomputed net R = gross − 0.05, 12 wins summing +14.15R, 8 losses summing −8.10R, averages 1.179R and 1.0125R, formula and direct expectancy +0.3025R, gross +0.3525R, $705/$100/$605, the half-R bin counts, and the 46.2% break-even win rate.",
+        "limits": "Invented outcomes with a fixed $100 1R and a flat modeled cost; not an estimate of any strategy.",
+        "checked": "2026-10-01",
+        "id": "statistics-the-twenty-trade-ledger-gives-a-60-win-rate-and-0-3025r-net-expectancy-by-both-methods"
+      },
+      {
+        "claim": "Equity, drawdown and recovery figures for both orderings",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Equity section, two-order table, panel figure, guided practice",
+        "summary": "Script rebuilt both equity paths from $20,000; recorded order peaks $20,265 (trade 6), troughs $19,925 (trade 8), drawdown $340 = 1.68%, recovery gain 1.71%, regained at trade 17; losses-first drawdown $810 = 4.05%, recovery gain 4.22%, regained at trade 16; both end at $20,605 (3.025%).",
+        "limits": "Deterministic orderings of one fictional sample; a recorded drawdown is not a maximum future loss.",
+        "checked": "2026-10-01",
+        "id": "statistics-equity-drawdown-and-recovery-figures-for-both-orderings"
+      },
+      {
+        "claim": "Single-trade sensitivity and a rough two-standard-error band show the mean is poorly determined",
+        "type": "arithmetic",
+        "sourceIds": [],
+        "location": "Uncertainty section, sensitivity table and running-mean figure",
+        "summary": "Recomputed leave-one-out means +0.216R and +0.442R, sample SD 1.308R (n − 1 divisor), SE 0.2925R, band −0.28R to +0.89R, and every running-mean and band value plotted.",
+        "limits": "The ±2 SE band is a teaching approximation assuming independent, identically distributed trades; with n = 20 and lumpy outcomes it is crude.",
+        "checked": "2026-10-01",
+        "id": "statistics-single-trade-sensitivity-and-a-rough-two-standard-error-band-show-the-mean-is-poorly-determined"
+      },
+      {
+        "claim": "The Wilson score interval for 12 wins in 20 trials is about 38.66%–78.12%",
+        "type": "definition",
+        "sourceIds": [
+          "ra-wilson-dataplot",
+          "ra-nist"
+        ],
+        "location": "NIST Dataplot AGRESTI COULL, Wilson formula; NIST handbook 7.2.4.1, Wilson/proportion interval expression.",
+        "summary": "Independently evaluated the Wilson formula at 12/20 with z = 1.95996398454. Both the current NIST handbook page and Dataplot documentation contain the Wilson score expression; other interval methods are separately described.",
+        "limits": "Assumes independent Bernoulli trials with a common probability; it does not describe payoff sizes or expected profit.",
+        "checked": "2026-10-01",
+        "id": "statistics-the-wilson-score-interval-for-12-wins-in-20-trials-is-about-38-66-78-12"
+      },
+      {
+        "claim": "Sharpe ratio time-scaling by the square root of T assumes zero serial correlation",
+        "type": "definition",
+        "sourceIds": [
+          "ra-sharpe"
+        ],
+        "location": "Sharpe (1994), “The Ratio” and “Time Dependence” sections",
+        "summary": "Read the ex post definition (average differential return ÷ its standard deviation) and the statement that the T-period ratio equals the one-period ratio × √T when differential returns have zero serial correlation.",
+        "limits": "Definitions only; the chapter computes no Sharpe ratio for the fictional ledger, and per-trade mean/SD is explicitly not one.",
+        "checked": "2026-10-01",
+        "id": "statistics-sharpe-ratio-time-scaling-by-the-square-root-of-t-assumes-zero-serial-correlation"
+      },
+      {
+        "claim": "A p-value is computed under a null hypothesis and its threshold should be set in advance",
+        "type": "definition",
+        "sourceIds": [
+          "ra-pvalue"
+        ],
+        "location": "NIST/SEMATECH e-Handbook 7.1.3.1, Critical values and p values",
+        "summary": "Read the definition (probability of a test statistic at least as extreme as observed, given the null) and the advice to decide the rejection threshold before seeing results. The 1 − 0.95⁶ ≈ 26% figure is the chapter’s own arithmetic for six independent tests.",
+        "limits": "The source does not address trading-rule searches; the six-variant figure assumes independence that overlapping variants do not have.",
+        "checked": "2026-10-01",
+        "id": "statistics-a-p-value-is-computed-under-a-null-hypothesis-and-its-threshold-should-be-set-in-advance"
+      },
+      {
+        "claim": "Selecting among many tested configurations inflates apparent performance",
+        "type": "mechanism",
+        "sourceIds": [
+          "ra-overfit"
+        ],
+        "location": "Bailey, Borwein, López de Prado & Zhu, introduction and “Comparisons to other approaches” (pp. 4–7)",
+        "summary": "Read the argument that published backtests rarely declare the number of trials, that calibration can fit noise, and that hold-out ignores the number of trials attempted.",
+        "limits": "The paper’s PBO/CSCV estimate is not computed in this chapter.",
+        "checked": "2026-10-01",
+        "id": "statistics-selecting-among-many-tested-configurations-inflates-apparent-performance"
+      },
+      {
+        "claim": "A large multiple-testing study of technical rules is summarized in the research section",
+        "type": "empirical",
+        "sourceIds": [
+          "rc-bs"
+        ],
+        "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+        "summary": "Inspected the author-hosted sample and selection procedure, chronological persistence, and Table 5’s Sharpe-criterion portfolios. FDR break-even one-way costs are 30–35, 0–5 and 0–5 basis points in the first three periods; later FDR portfolios are negative before costs. The authors raise costs inside the monthly ex ante selection until the selected portfolios’ out-of-sample performance disappears (Table 5, p. 24) and call these break-even transaction costs computed ex ante (pp. 22, 24); they criticize break-evens computed after rules are chosen as ex post (p. 21). Either kind is a backtest threshold, not a measurement of the costs an investor would actually pay.",
+        "limits": "Index-level experiment; not a test of the book’s fictional rules or of individual-stock methods generally.",
+        "checked": "2026-10-02",
+        "study": {
+          "sample": "Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date.",
+          "rule": "7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods.",
+          "comparator": "Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion.",
+          "costs": "Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately.",
+          "result": "Past winners cannot reliably be selected to persist; plausible costs erase remaining early-period out-of-sample gains; later FDR portfolios are negative before costs."
+        },
+        "id": "statistics-a-large-multiple-testing-study-of-technical-rules-is-summarized-in-the-research-section"
+      },
+      {
+        "claim": "Confidence describes long-run interval-procedure coverage",
+        "type": "definition",
+        "sourceIds": [
+          "ra-confidence-mean"
+        ],
+        "location": "NIST 1.3.5.2, Purpose/Interval Estimate for Mean and Definition: Confidence Interval.",
+        "summary": "Read the repeated-sample interpretation, s/√N term and t multiplier; compare with the textbook’s explicitly crude ±2 SE illustration.",
+        "limits": "The source does not validate dependent, nonstationary trade outcomes or the fictional band as an exact 95% interval.",
+        "checked": "2026-10-01",
+        "id": "statistics-confidence-describes-long-run-interval-procedure-coverage"
+      }
+    ]
+  },
+  "sources": {
+    "ra-nist": {
+      "title": "NIST/SEMATECH · Confidence Intervals for a Binomial Proportion",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "supports": "Binomial proportion confidence-interval methods and assumptions; the 12-of-20 Wilson interval is independently calculated for illustration.",
+      "accessed": "2026-10-01"
+    },
+    "ra-overfit": {
+      "title": "Bailey, Borwein, López de Prado & Zhu · The Probability of Backtest Overfitting",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "supports": "Original research on strategy selection and backtest overfitting. Textbook examples do not implement or claim a computed probability of backtest overfitting.",
+      "accessed": "2026-10-01"
+    },
+    "ra-pvalue": {
+      "title": "NIST/SEMATECH · Critical Values and p Values",
+      "url": "https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm",
+      "supports": "Meaning of a p-value under a specified null hypothesis.",
+      "accessed": "2026-10-01"
+    },
+    "ra-sharpe": {
+      "title": "William F. Sharpe · The Sharpe Ratio (1994)",
+      "url": "https://web.stanford.edu/~wfsharpe/art/sr/sr.htm",
+      "supports": "Definition using differential returns and dependence on measurement interval; assumptions behind time scaling.",
+      "accessed": "2026-10-01"
+    },
+    "ra-wilson-dataplot": {
+      "title": "NIST Dataplot · Agresti Coull: Wilson score interval",
+      "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm",
+      "supports": "Wilson score interval formula and distinction from adjusted Wald; original 12/20 arithmetic computed independently.",
+      "accessed": "2026-10-01"
+    },
+    "ra-confidence-mean": {
+      "title": "NIST · Confidence Limits for the Mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "supports": "Long-run coverage interpretation and standard-error mean formula; not an exact justification of the textbook’s crude ±2 SE band.",
+      "accessed": "2026-10-01"
+    },
+    "rc-lo": {
+      "title": "Lo, Mamaysky & Wang (2000), Foundations of Technical Analysis",
+      "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+      "supports": "Algorithmic pattern recognition and conditional return distributions, distinct from net trading profitability.",
+      "accessed": "2026-10-01"
+    },
+    "rc-bs": {
+      "title": "Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)",
+      "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+      "supports": "Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.",
+      "accessed": "2026-10-01"
+    }
+  }
+}

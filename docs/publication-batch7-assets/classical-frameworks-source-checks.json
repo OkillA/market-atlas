@@ -1,0 +1,210 @@
+{
+ "checked": "2026-10-12",
+ "reviewer": "reviewer agent for claude-code-pub7",
+ "method": "Each URL in the compiled chapter's source records was retrieved on 2026-10-12. CMT pages, the Wyckoff HTML page, the Wyckoff PDF and the Lo-Mamaysky-Wang PDF were downloaded with curl -sL -A 'Mozilla/5.0 ...' into an isolated /tmp directory and converted to text (HTML tag stripping; pdftotext -layout), then searched for the exact passages. The three elliottwave.com pages returned HTTP 403 to curl and were read with WebFetch, which returned quoted sentences/summaries (it declined full verbatim reproduction). The Brown-Goetzmann-Kumar abstract was read on RePEc as a possible addition. Dispositions compare the chapter wording with the located passage.",
+ "checks": [
+  {
+   "id": "ra-dow-reference",
+   "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+   "locator": "Colby, 'Dow Theory: an introduction and updated approach', Seven Basic Principles, principle on mutual confirmation",
+   "claim": "Both averages must rise above their respective highs of previous upward secondary reactions (sections[1].paragraphs[0]).",
+   "disposition": "supported",
+   "note": "Source context is the signal of a Primary Tide Bull Market: the reference is the high of a previous UPWARD secondary reaction (a rally). The chapter's next paragraph instead asks whether a DECLINE qualifies as the secondary reaction; see finding on Dow reference wording."
+  },
+  {
+   "id": "ra-dow-reference",
+   "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+   "locator": "Same principle list: 'Only end-of-day, closing prices on the averages are considered. Price movements during the day are ignored.'",
+   "claim": "Only closing prices count; intraday highs do not confirm (Dow prose, quiz option 2 feedback).",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-dow-reference",
+   "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+   "locator": "Same list: 'does not stipulate any time limit on trend confirmation'; elaboration: 'not necessary that both Averages confirm on the same day or even the same month'",
+   "claim": "Confirmation need not arrive on the same day or month (Dow prose; practice 1(c) 'a source that allows lag').",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-dow-reference",
+   "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+   "locator": "'Further Helpful Elaboration': non-confirmations 'function only as warnings to be alert for the possibility of an actual signal ahead'",
+   "claim": "Nonconfirmation is a warning, not a signal (Dow prose; glossary 'Nonconfirmation').",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-dow-reference",
+   "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+   "locator": "Elaboration: 'the most minimal unit of price measure ... strictly counts, when comparing the current closing price of each Average to its previous Secondary Wave extreme close'",
+   "claim": "Reference is an extreme close and comparison is strict (supports the chapter's close-based reference and strict-inequality teaching rule).",
+   "disposition": "supported",
+   "note": "The strictly-above treatment of equality remains the chapter's own disclosed choice."
+  },
+  {
+   "id": "ra-dow-reference",
+   "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+   "locator": "Shread, 'Dow Theory: a century of success and uncertainty' (same newsletter page): Industrials and Transports as 'the makers and transporters' of goods; DJTA originally nine railroads",
+   "claim": "Historically the averages were industrial and railroad indexes chosen because they represented related parts of economic activity; three-layer table Dow causal story.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-dow",
+   "url": "https://cmtassociation.org/technically_speaking/technically-speaking-september-2016/",
+   "locator": "Article on Dow's Confirmation concept: 'he created industrial and railroad averages'; 'railroad and the industrial averages had to confirm each other'",
+   "claim": "Industrial and railroad averages confirming each other.",
+   "disposition": "supported",
+   "note": "The same article reports a practitioner signal test (1-year SMA 'Confirmed Uptrend', DJIA/TRAN 1934-2016) with improved metrics vs random buying; Colby's 2011 excerpt also reports 'very positive results'. These are proponent tests; the chapter makes no contrary claim."
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "'Three Wyckoff Laws' panel (supply and demand; cause and effect; effort versus result)",
+   "claim": "Wyckoff Analytics presents three laws.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "Note after accumulation events: 'A “spring” takes price below the low of the TR and then reverses to close within the TR'; Phase C: 'quickly reverses and moves back into the TR'",
+   "claim": "Spring definition: below the range low, then reverses to close within it; no session deadline specified.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "Same note: 'springs and terminal shakeouts are not required elements: Accumulation Schematic 1 depicts a spring, while Accumulation Schematic 2 shows a TR without a spring'",
+   "claim": "Springs are not required; some accumulation ranges have none.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "\"Wyckoff's 'Composite Man'\": 'a heuristic device'; quoted course text 'studied as if they were the result of one man's operations'",
+   "claim": "Composite Man is a teaching device: study the market as if one operator were behind it.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "'Wyckoff Price Cycle' section: preparation for markup (accumulation) and markdown (distribution)",
+   "claim": "Repeating cycle of accumulation, markup, distribution and markdown.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "Phase C: 'A low-volume spring ... indicates that the stock is likely to be ready to move up'",
+   "claim": "Wyckoff Analytics interprets a low-volume spring as a sign of readiness to rise.",
+   "disposition": "supported",
+   "note": "Same passage calls a spring 'a high-probability trading opportunity' (a proponent performance claim, appropriately not repeated as fact)."
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "Spring note: 'allows large interests to mislead the public ... and to acquire additional shares at bargain prices'",
+   "claim": "Three-layer table causal story: large informed interests shake out weaker holders before a markup.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-wyckoff-text",
+   "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+   "locator": "Event list: 'Test— Large operators always test the market for supply throughout a TR (e.g., STs and springs)'",
+   "claim": "Chapter label 'A low between $29.70 and $30.00 is a test of support, not a breach'.",
+   "disposition": "partial",
+   "note": "In Wyckoff vocabulary a spring is itself a 'test'; a sub-1% undercut that reverses is a spring under the source definition. The chapter's local label reuses a framework term with a different meaning (P3 finding)."
+  },
+  {
+   "id": "ra-wyckoff",
+   "url": "https://www.wyckoffanalytics.com/wyckoff-method/",
+   "locator": "HTML page body: same spring, not-required, Composite Man and three-laws passages",
+   "claim": "Proponent terminology (chapter sources list).",
+   "disposition": "supported",
+   "note": "Retrieved 2026-10-12 with a browser user agent; earlier records say this page blocked retrieval."
+  },
+  {
+   "id": "ra-elliott-constraints",
+   "url": "https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/",
+   "locator": "Rules list: 'Wave 2 can never retrace more than 100% of wave 1'; 'Wave 3 can never be the shortest of waves 1, 3 and 5'; 'Wave 4 can never end in the price territory of wave 1'; 'The Elliott Wave Principle has three'",
+   "claim": "Three standard impulse rules as stated in sections[3].paragraphs[0].",
+   "disposition": "supported",
+   "note": "WebFetch (curl returned 403). This page names only alternation as a guideline."
+  },
+  {
+   "id": "ra-elliott-rules",
+   "url": "https://www.elliottwave.com/waveopedia/impulse/",
+   "locator": "Impulse entry: 'wave 4 does not enter the price territory of (i.e., “overlap”) wave 1'; 'This rule holds for all non-leveraged “cash” markets'; futures overlap 'usually confined to daily and intraday ... rare'",
+   "claim": "Two EWI pages word rule 3 differently ('end in' vs 'enter/overlap'); chapter adopts no-overlap 'for this stocks-focused exercise'.",
+   "disposition": "supported",
+   "note": "The source itself ties no-overlap to cash markets, so the chapter's stocks choice is source-backed rather than only an authorial choice (P3 attribution suggestion)."
+  },
+  {
+   "id": "ra-elliott-rules",
+   "url": "https://www.elliottwave.com/waveopedia/impulse/",
+   "locator": "Impulse entry: rules govern every wave they apply to and 'should never be disregarded'; 'Guidelines of impulse formation, such as extension, truncation and alternation'; 'Typical, yet not inevitable, characteristics of waves are called guidelines'",
+   "claim": "Rules govern every impulse; alternation, extension and truncation are guidelines; truncation is guideline-level.",
+   "disposition": "supported",
+   "note": "Read via WebFetch summary plus quoted sentences; verbatim reproduction declined by the tool for copyright."
+  },
+  {
+   "id": "ra-elliott-rules",
+   "url": "https://www.elliottwave.com/waveopedia/impulse/",
+   "locator": "Impulse entry: 'subdivides 5-3-5-3-5'; 'the actionary subwaves (1, 3 and 5) of an impulse are themselves motive, and subwave 3 is always an impulse'",
+   "claim": "'A full analysis would also require wave 3 itself to subdivide into five smaller waves.'",
+   "disposition": "partial",
+   "note": "Correct but narrower than the source: all five subwaves have required structures (P3 finding)."
+  },
+  {
+   "id": "ra-elliott-rules",
+   "url": "https://www.elliottwave.com/waveopedia/impulse/",
+   "locator": "Impulse entry (whole page)",
+   "claim": "'Diagonals follow different rules.'",
+   "disposition": "not stated",
+   "note": "None of the three cited EWI pages discusses diagonals; the evidence record already says 'Diagonal rules were not reviewed'. The statement is standard EWP content; add a source or keep as an unsourced pointer."
+  },
+  {
+   "id": "ra-elliott",
+   "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+   "locator": "'An impulsive wave is composed of five subwaves. It moves in the same direction as the trend of the next larger size.' 'A corrective wave is divided into three subwaves.' Degree passage.",
+   "claim": "Impulse = five subwaves with the next larger trend; correction = three; nested degrees.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-elliott",
+   "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+   "locator": "'At any time, two or more valid wave interpretations usually exist.' '“preferred” the one that satisfies the largest number of guidelines'; 'The top “alternate” is the one that satisfies the next largest number of guidelines'",
+   "claim": "Two or more valid interpretations usually exist; ranked preferred/alternate by guidelines.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-elliott",
+   "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+   "locator": "'a detailed description of how groups of people behave'; 'mass psychology swings from pessimism to optimism and back in a natural sequence'",
+   "claim": "Three-layer table causal story: collective psychology in a recurring nested pattern.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-elliott",
+   "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+   "locator": "'it gives you an objective means of determining the probability of a future direction'",
+   "claim": "Evidence record: probability statement reported as a proponent claim, not evaluated.",
+   "disposition": "supported"
+  },
+  {
+   "id": "ra-pattern-research",
+   "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+   "locator": "NBER WP 7613 (March 2000) abstract: 'nonparametric kernel regression ... U.S. stocks from 1962 to 1996 ... comparing the unconditional empirical distribution of daily stock returns to the conditional distribution ... several technical indicators do provide incremental information'",
+   "claim": "LMW replaced visual judgment with an algorithm detecting chart patterns and compared returns after detected patterns with ordinary returns in U.S. stocks; findings concern their own pattern definitions.",
+   "disposition": "supported",
+   "note": "Columbia-hosted PDF retrieved (earlier records said it blocked). Study fields in the appendix record (rc-lo) were not re-audited here; this chapter has no study record of its own."
+  },
+  {
+   "id": "additional: Brown, Goetzmann & Kumar (1998)",
+   "url": "https://ideas.repec.org/p/ysm/somwrk/ysm30.html",
+   "locator": "RePEc abstract of Yale SOM working paper ysm30 (published J. Finance 53(4), 1998, 1311-1333)",
+   "claim": "Not cited. An independent academic test of Hamilton's Dow-theory editorials, 1902-1929, reporting high Sharpe ratios and positive alphas and re-reading Cowles (1934).",
+   "disposition": "supported",
+   "note": "Abstract only; the full paper was not read, so sample/rule/comparator/costs fields are not verified. Offered as a suggested evidence addition, not as proof of the chapter's simultaneous-close rule."
+  }
+ ],
+ "boundaries": "Proponent pages (CMT Association, Wyckoff Analytics, EWI) support definitions only, not predictive performance. Elliott pages were read through a summarizing fetch tool, so short quoted sentences were relied on rather than full-page reading. The appendix study record for Lo-Mamaysky-Wang (rc-lo, MIT copy) was not re-audited in this chapter review. The BGK check is abstract-level only. Retrieval failure is not treated as evidence against a claim."
+}

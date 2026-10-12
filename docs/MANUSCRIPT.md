@@ -1147,7 +1147,7 @@ Answer: 3. 39.70 is below the 39.80 zone edge but above the 39.50 closing thresh
 
 Option 1: This substitutes the intraday low for the completed close specified by the rule.
 
-Option 2: Near is not the criterion:39.70 is numerically below 39.80 even though it is near 40.
+Option 2: Near is not the criterion: 39.70 is numerically below 39.80 even though it is near 40.
 
 Option 3: Correct: the two fixed boundaries identify different events.
 
@@ -1205,7 +1205,7 @@ The name alone is neutral. After a sustained rise, a small-body interval may pro
 
 Use O50/H51/L47/C50.80. Body is $0.80, upper shadow $0.20, lower shadow $3, range $4. Under this chapter’s rule, a hammer-like shape needs a positive body, lower shadow at least twice that body, and upper shadow no greater than the body. Here 3/0.80 = 3.75 and 0.20≤0.80, so it qualifies. The exact thresholds are a teaching definition within conventional long-lower-shadow vocabulary.
 
-The prior-trend panel adds two down candles:54/55/52/53 and 53/54/49/50. Their closes fall 53 →50, then the measured candle closes 50.80. You can now see a preceding decline and an interval finishing well above its low. That motivates investigating a possible upward change. It does not establish the order of every transaction or the cause of the rebound. The same geometry after an advance has a different conventional contextual label, often hanging man.
+The prior-trend panel adds two down candles: 54/55/52/53 and 53/54/49/50. Their closes fall 53 →50, then the measured candle closes 50.80. You can now see a preceding decline and an interval finishing well above its low. That motivates investigating a possible upward change. It does not establish the order of every transaction or the cause of the rebound. The same geometry after an advance has a different conventional contextual label, often hanging man.
 
 The near miss changes only the low to 48.90: O50/H51/L48.90/C50.80. Body and upper shadow stay unchanged, but the lower shadow is 1.10, only 1.375 times the body, so it fails the stated tail criterion. It can still be an up candle. “Up candle” and “hammer-like shape under this definition” answer different questions.
 
@@ -1517,7 +1517,7 @@ A reader using a longer horizon could reach a different outcome on additional da
 
 A rectangle organizes repeated reactions between approximately horizontal upper and lower areas. For the supplied rectangle panel, closes 40, 44, 40.20, 43.80, 40.10, 44 establish a lower area near 40 and upper area near 44. At the sixth close, freeze a teaching upper boundary 44 and lower boundary 40. A later close 44.60 completes an upward closing-cross condition; a competing later 39.50 close exits downward instead. The six-price prefix alone chooses neither direction.
 
-For the symmetrical-triangle panel, selected highs 50, 49, 48 pair with lows 44, 45, 46. Their separation narrows 6 →4 →2. Fix the last upper/lower reference at 48/46 for this simplified completion exercise rather than silently extending a discretionary sloping line. A next 48.50 close exits above the last upper reference;45.50 exits below the last lower reference. A true sloping-boundary detector would need dated anchors and projected values, as chapter 5 demonstrated.
+For the symmetrical-triangle panel, selected highs 50, 49, 48 pair with lows 44, 45, 46. Their separation narrows 6 →4 →2. Fix the last upper/lower reference at 48/46 for this simplified completion exercise rather than silently extending a discretionary sloping line. A next 48.50 close exits above the last upper reference; 45.50 exits below the last lower reference. A true sloping-boundary detector would need dated anchors and projected values, as chapter 5 demonstrated.
 
 Ascending and descending triangles make one boundary approximately horizontal and the other sloping. Their small panels display the selected sequences. Do not infer direction from the category name alone: define the boundary and observe the actual crossing. Contraction is a description of the range; the next transition is another observation. The guided and independent tasks ask you to apply those ideas to new values.
 
@@ -2081,7 +2081,7 @@ Option 3: $69 divided by five gives $13.80.
 - [Fidelity · Simple moving average](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma) — Arithmetic moving-average definition and smoothing/lag tradeoff; no claim of profitable crossover rules.
 - [Fidelity · Exponential moving average](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema) — Recursive EMA definition and SMA seed convention.
 - [TradingView · Moving Averages](https://www.tradingview.com/support/solutions/43000502589-moving-averages/) — Conventional EMA smoothing multiplier 2/(N + 1).
-- [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf) — Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.
+- [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf) — Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.
 
 ---
 
@@ -4482,9 +4482,9 @@ Builds on: Breakouts, pullbacks & failed moves; Market microstructure: from a ch
 
 #### Start with a reproducible question
 
-A backtest is a historical simulation of a decision rule, portfolio process, and execution model. “Buy strong stocks” leaves too many choices unresolved. A reproducible specification names the universe, data availability, signal, execution timing, sizing, exits, costs, and treatment of missing or exceptional events. Another reader should be able to implement it without guessing which charts you considered attractive. For an entry at session E1, the scheduled time exit is E10 close, not E11. If a halt prevents that exit, keep the holding and stale mark visible; on the first tradable bar after the overdue deadline, apply any opening stop/target gap first, otherwise model the overdue time exit at that opening price. An overdue time exit does not wait for another ten-session period.
+A backtest is a historical simulation of a decision rule, portfolio process, and execution model. “Buy strong stocks” leaves too many choices unresolved. A reproducible specification names the universe, data availability, signal, execution timing, sizing, exits, costs, and treatment of missing or exceptional events. Another reader should be able to implement it without guessing which charts you considered attractive.
 
-Maya’s research question is narrow: when a completed daily close is strictly above the highest high of the prior twenty completed sessions, what happens under a specified next-session entry and exit? Version v1-b of her specification reads as follows. Universe: a point-in-time list of liquid U.S. common stocks, recorded as of each date. Signal: the regular-session close of day t is strictly above the highest high of days t−20 through t−1; the signal day’s own high is excluded. Entry: the next session’s opening price, only if it is no more than 1% above the signal close, rounded down to the cent; otherwise the candidate is a recorded skip. Stop: the lowest low of the ten completed sessions before entry. If the eligible open is at or below that stop, record a skip rather than size a zero or negative distance. Entry-day stop/target conflicts use the same stop-first convention; entry day counts as holding session 1 and the time exit is that session count’s tenth close. Size: shares = floor($100 ÷ (entry − stop)), so 1R, the frozen planned price risk, is about $100 per trade. Exits: a target two planned per-share stop distances above entry, the stop, or the close of the tenth session after entry, whichever comes first. An opening gap through the stop exits at that open, and a daily bar that contains both stop and target counts as a stop. Costs are reported separately under three declared models introduced later.
+Maya’s research question is narrow: when a completed daily close is strictly above the highest high of the prior twenty completed sessions, what happens under a specified next-session entry and exit? Version v1-b of her specification reads as follows. Universe: a point-in-time list of liquid U.S. common stocks, recorded as of each date. Signal: the regular-session close of day t is strictly above the highest high of days t−20 through t−1; the signal day’s own high is excluded. Entry: the next session’s opening price, only if it is no more than 1% above the signal close, rounded down to the cent; otherwise the candidate is a recorded skip. Stop: the lowest low of the ten completed sessions before entry. If the eligible open is at or below that stop, record a skip rather than size a zero or negative distance. Size: shares = floor($100 ÷ (entry − stop)), so 1R, the frozen planned price risk, is about $100 per trade. Because the quantity uses the opening price itself, this is a signal-study simplification: a live order must fix its quantity before the open, for example by sizing from the entry ceiling, and its filled 1R would then fall below $100 whenever the open is lower (Chapter 20). Exits: a target two planned per-share stop distances above entry, the stop, or the close of holding session 10, counting the entry session as session 1, whichever comes first. An opening gap through the stop exits at that open, and a daily bar that contains both stop and target counts as a stop; this applies on the entry day too. For an entry at session E1, the scheduled time exit is therefore the E10 close, not E11. If a halt prevents that exit, keep the holding and stale mark visible; on the first tradable bar after the overdue deadline, apply any opening stop/target gap first, otherwise model the overdue time exit at that opening price. An overdue time exit does not wait for another ten-session period. Costs are reported separately under three declared models introduced later.
 
 Two features of this specification deserve attention. First, it is a signal study: every qualifying signal is evaluated with its own $100 budget, as though capital and position slots were unlimited. That keeps the arithmetic transparent, but it is not a portfolio simulation; Chapter 26 adds slots, cash, and simultaneous candidates. Second, every price, trade, and result in this chapter is invented for teaching so that you can reproduce each step. None of it estimates how a real breakout rule performs.
 
@@ -4492,7 +4492,7 @@ Two features of this specification deserve attention. First, it is a signal stud
 
 The most important protection in research is chronological: decide what you will do before you see the evidence that will judge it. The timeline figure lays out Maya’s sequence, and each stage carries a rule about which information it may use. The stages are easy to list and easy to violate, because violations rarely feel like cheating. Glancing at recent charts “just to check that the code works” is enough to let later information shape an earlier choice.
 
-Stage one freezes the written question before any result exists: the v1 specification, the data definitions, the three cost models, the list of variants to explore, the rule that will choose among them, and the dates of the development and evaluation windows. Stage two runs the listed variants on the earlier development window and logs every one, including the unattractive ones. Stage three applies the declared lock rule, saves the code and data snapshot, and records how many variants were tried. Only then does stage four run the locked rule, once, on the later held-out window, and record the result under every declared cost model.
+Stage one freezes the written question before any result exists: the v1 specification, the data definitions, the three cost models, the list of variants to explore, the rule that will choose among them, the dates of the development and evaluation windows, and the decision criteria: what held-out result would justify a paper forward study, and what result would end the idea. Stage two runs the listed variants on the earlier development window and logs every one, including the unattractive ones. Stage three applies the declared lock rule, saves the code and data snapshot, and records how many variants were tried. Only then does stage four run the locked rule, once, on the later held-out window, and record the result under every declared cost model.
 
 Walk-forward evaluation repeats stages two to four through time. Develop on, say, the first five years, lock, and evaluate year six; then develop on years one to six, lock again, and evaluate year seven. Each evaluation window is opened only after the rule applied to it has been locked. Stage five, a paper forward study, applies the locked rule to sessions that have not yet happened, with each decision timestamped before its outcome and every fill labeled as simulated. Stage six compares the results with criteria written at stage one. Any change after that point creates a new version, v2, whose development data now include the old held-out window. Evaluating v2 needs a fresh window or more forward observation.
 
@@ -4612,7 +4612,7 @@ The totals table shows the conclusion changing. Gross, the 12 trades earn $91.15
 | Model | Cost rule | Total cost ($) | Net P&L ($) | Net per trade ($) | Sum of net R | Reading |
 | --- | --- | --- | --- | --- | --- | --- |
 | Gross | No costs | 0.00 | +91.15 | +7.60 | +0.90 | Mildly positive |
-| A | $1 commission per order ($2 per round trip) | 24.00 | +67.15 | +5.60 | +0.66 | Positive |
+| A | $1 commission per order ($2 per round trip) | 24.00 | +67.15 | +5.60 | +0.66 | Mildly positive |
 | B | A + $0.02/share half-spread each side | 58.16 | +32.99 | +2.75 | +0.32 | Barely positive |
 | C | B + $0.03/share slippage each side | 109.40 | −18.25 | −1.52 | −0.20 | Negative |
 
@@ -4624,7 +4624,7 @@ The totals table shows the conclusion changing. Gross, the 12 trades earn $91.15
 
 Instead of asking only “what is the net result?”, ask “how large would costs have to be to erase the gross result?” That break-even cost turns an uncertain assumption into a threshold you can investigate. With a flat cost per round trip, break-even is gross profit ÷ number of trades: $91.15 ÷ 12 ≈ $7.60 per round trip. With per-share costs on top of model A’s $24 of commissions, break-even is ($91.15 − $24.00) ÷ 854 shares ≈ $0.079 per share per round trip, or about $0.039 per share on each side. Model B’s $0.04 per share per round trip sits below that line; model C’s $0.10 sits above it.
 
-The same method explains a summary often quoted in this lesson. A fictional study of 200 round trips earns $1,600 gross. Break-even is $1,600 ÷ 200 = $8 per round trip. At a modeled $5, net is $1,600 − 200 × $5 = $600; at $9, net is $1,600 − $1,800 = −$200. The two conclusions differ by only $4 per trade because $8 lies between them. When break-even sits close to plausible costs, the result needs direct execution evidence: actual fills, quoted spreads at the decision time, and order sizes relative to typical volume.
+The worked example at the end of this chapter applies the same method to a larger fictional study whose break-even lies between two plausible cost assumptions, so the sign of its result depends on which one is right. When break-even sits close to plausible costs, the result needs direct execution evidence: actual fills, quoted spreads at the decision time, and order sizes relative to typical volume.
 
 Sensitivity analysis applies the same idea to other assumptions. If entry and stop are touched in one daily bar, resolve the sequence with suitable data or a declared conservative rule, as v1-b does. If a model assumes every limit order fills completely when touched, test a less favorable fill convention. Report every declared cost model rather than the friendliest one. Bajgrowicz and Scaillet make a sharper point about break-even costs in large rule searches: rules that survive costs are often not the ones that looked best before costs, and a break-even calculated after the best rule has been chosen is an after-the-fact number. Costs belong inside the selection process, which is why Maya’s lock rule ranks variants on model B rather than on gross results.
 
@@ -4632,7 +4632,7 @@ Sensitivity analysis applies the same idea to other assumptions. If entry and st
 
 A simulation can be useful without being conclusive. Lo, Mamaysky, and Wang studied algorithmic recognition of technical patterns in U.S. stocks from 1962 to 1996 and found that several patterns provided incremental information about conditional return distributions. Their comparison is between distributions, not a completed net trading account, so it does not establish that every visually identified pattern offers net profits today. Pattern definition, sample period, execution, and economic significance remain separate questions. The evidence appendix compares several such studies by market, rule, comparator, and costs.
 
-Report returns beside exposure, turnover, drawdown, benchmark behavior, and the number of substantially independent opportunities. Maya’s honest summary of v1-b is short: six logged variants; one locked by a pre-written rule; twelve held-out trades whose net result runs from +$67.15 to −$18.25 depending on a cost assumption she has not measured; break-even near $7.60 per round trip. The responsible next step is a paper forward study under the frozen rule, with timestamped decisions and labeled simulated fills, together with direct measurement of spreads. The strongest responsible conclusion may be that the idea is worth further study, or that its current evidence is insufficient. A test that rejects an appealing rule has done useful work: it saved the reader from confusing a persuasive example with a reliable method.
+Report returns beside exposure, turnover, drawdown, benchmark behavior, and the number of substantially independent opportunities. Maya’s honest summary of v1-b is short: six logged variants; one locked by a pre-written rule; twelve held-out trades whose net result runs from +$67.15 to −$18.25 depending on a cost assumption she has not measured; break-even near $7.60 per round trip. Her stage-one criteria said to begin a paper forward study only if the locked rule’s held-out result was positive under model B, to set the idea aside if it was negative even under model A, and otherwise to measure costs before deciding. The model B result, +$32.99, meets the first condition, so the responsible next step is a paper forward study under the frozen rule, with timestamped decisions and labeled simulated fills, together with direct measurement of spreads. The strongest responsible conclusion may be that the idea is worth further study, or that its current evidence is insufficient. A test that rejects an appealing rule has done useful work: it saved the reader from confusing a persuasive example with a reliable method.
 
 #### Use the appropriate empirical comparator
 
@@ -4644,7 +4644,7 @@ Fictional study: 200 round trips generate $1,600 gross profit, so the break-even
 
 #### Exercise
 
-Use the held-out ledger. (a) Verify the shares, 1R, and gross P&L of trades 2 and 8. (b) Compute total cost and net P&L under models A, B, and C. (c) Compute the break-even flat cost per round trip and the break-even per-share cost per round trip above model A’s commissions. (d) Apply the flat break-even method to the 200-trade, $1,600 example and state the results at $5 and $9.
+Use the held-out ledger. (a) Verify the shares, 1R, and gross P&L of trades 2 and 8. (b) Compute total cost and net P&L under models A, B, and C. (c) Compute the break-even flat cost per round trip and the break-even per-share cost per round trip above model A’s commissions. (d) A different fictional study of 150 round trips earns $975 gross. Find its flat break-even cost and its net results at $5 and $8 per round trip.
 
 <details>
 <summary>Reveal the worked solution</summary>
@@ -4655,7 +4655,7 @@ Use the held-out ledger. (a) Verify the shares, 1R, and gross P&L of trades 2 an
 
 (c) Flat break-even = $91.15 ÷ 12 = $7.596, about $7.60 per round trip. Per-share break-even above commissions = ($91.15 − $24.00) ÷ 854 = $67.15 ÷ 854 ≈ $0.0786 per share per round trip, or about $0.039 per share on each side. Model B ($0.04 per share per round trip) is below it and stays positive; model C ($0.10) is above it and turns negative.
 
-(d) $1,600 ÷ 200 = $8.00 per round trip. At $5: $1,600 − 200 × $5 = $600. At $9: $1,600 − 200 × $9 = −$200. Both studies have break-evens close to the costs being debated, so neither result should be reported without the cost model attached.
+(d) $975 ÷ 150 = $6.50 per round trip. At $5: $975 − 150 × $5 = $975 − $750 = +$225. At $8: $975 − 150 × $8 = $975 − $1,200 = −$225. The $6.50 break-even lies between the two assumptions, so a $3 difference in cost per trade reverses the sign. Like the held-out ledger, this result should not be reported without its cost model attached.
 
 </details>
 
@@ -4725,7 +4725,7 @@ Option 3: Deleting the v1-b result hides one of the trials. The record should ke
 
 - [Bailey, Borwein, López de Prado & Zhu · The Probability of Backtest Overfitting](https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf) — Original research on strategy selection and backtest overfitting. Textbook examples do not implement or claim a computed probability of backtest overfitting.
 - [Lo, Mamaysky & Wang · Foundations of Technical Analysis (2000 working paper)](https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf) — Algorithmic technical-pattern recognition and conditional return-distribution research using historical U.S. stocks. Does not validate all chart methods or net profitability of textbook examples.
-- [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf) — Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.
+- [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf) — Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.
 - [Lo, Mamaysky & Wang (2000), Foundations of Technical Analysis](https://www.mit.edu/~alo/Papers/1705-1765.pdf) — Algorithmic pattern recognition and conditional return distributions, distinct from net trading profitability.
 
 ---
@@ -4739,7 +4739,7 @@ Understand what the numbers measure before trusting their precision.
 **Learning outcomes**
 
 - Summarize a list of net R outcomes as a distribution, a win rate, average win and loss, and an expectancy computed two ways, before and after costs.
-- Convert R outcomes into a dollar equity path and measure total return, maximum drawdown, the gain needed to recover, and the recovery point.
+- Convert R outcomes into a dollar equity path and measure account return, maximum drawdown, the gain needed to recover, and the recovery point.
 - Explain why the same outcomes in a different order share an average and an ending value but not a drawdown.
 - Show how far a 20-trade estimate can move, using one-trade sensitivity, a rough standard-error band, and the break-even win rate.
 - In the optional sections, interpret a Wilson interval, CAGR, a Sharpe ratio, and a p-value together with the assumptions each requires.
@@ -4799,9 +4799,9 @@ The main figure groups the twenty net outcomes into half-R bins; the frequency t
 
 #### Average outcome: expectancy computed two ways
 
-Win rate is the proportion of trades with a positive net result: 12 of 20, or 60%. On its own it says little. The twelve net wins sum to +14.15R, an average win of 14.15 ÷ 12 ≈ +1.18R. The eight net losses sum to −8.10R, an average loss of 8.10 ÷ 8 ≈ 1.01R in magnitude. Expectancy, the average result per trade, can be computed two ways. By formula: win rate × average win − loss rate × average loss = 0.60 × 1.179 − 0.40 × 1.0125 ≈ +0.30R. Directly: total net R ÷ number of trades = (14.15 − 8.10) ÷ 20 = 6.05 ÷ 20 = +0.3025R. The two agree because they are the same arithmetic rearranged. If they disagree in your own work, a trade has been miscounted or a scratch has been left out of both groups.
+Win rate is the proportion of trades with a positive net result: 12 of 20, or 60%. On its own it says little. The twelve net wins sum to +14.15R, an average win of 14.15 ÷ 12 ≈ +1.18R. The eight net losses sum to −8.10R, an average loss of 8.10 ÷ 8 ≈ 1.01R in magnitude. Expectancy, the average result per trade, can be computed two ways. By formula: win rate × average win − loss rate × average loss = 0.60 × 1.179 − 0.40 × 1.0125 ≈ +0.30R. Directly: total net R ÷ number of trades = (14.15 − 8.10) ÷ 20 = 6.05 ÷ 20 = +0.3025R. The two agree because they are the same arithmetic rearranged. If they disagree in your own work, a trade has been miscounted, or the loss rate was taken as 1 − win rate although a scratch belongs to neither group. In the before-cost (gross) column of the ledger, for example, there are 12 wins, 7 losses and 1 scratch, so the loss rate is 7 ÷ 20 = 35%: 0.60 × (14.75 ÷ 12) − 0.35 × 1.10 = 0.7375 − 0.3850 = +0.3525R.
 
-Costs enter every trade. Gross, the same twenty trades total +7.05R, a gross expectancy of +0.3525R. Twenty costs of 0.05R remove 1.00R, leaving +6.05R. In dollars at $100 per R, that is $705 gross, $100 of costs, and $605 net. Costs also changed one classification, turning the gross scratch into a net loss. In a real record, prefer the direct average: it automatically includes the gap loss, the scratch, and every partial result, whereas the two-group formula invites you to pretend that every loss was exactly −1R.
+Costs enter every trade. Gross, the same twenty trades total +7.05R, a gross expectancy of +0.3525R. Twenty costs of 0.05R remove 1.00R, leaving +6.05R. In dollars at $100 per R, that is $705 gross, $100 of costs, and $605 net. Costs also changed one classification, turning the gross scratch into a net loss. In a real record, prefer the direct average: it automatically includes the gap loss, the scratch, and every partial result, whereas the two-group formula is easily fed planned values, such as −1R for every loss, instead of the recorded averages.
 
 The formula is still useful for reasoning about assumed distributions. If 40% of trades earn +2R and 60% lose 1R, gross expectancy is 0.40 × 2 − 0.60 × 1 = +0.20R; deducting 0.08R of average costs leaves +0.12R. A second assumed method wins 80% of the time for +0.25R and loses 20% of the time for 1.5R: 0.20 − 0.30 = −0.10R before costs, despite its high win rate. Rearranging the formula gives a break-even win rate, average loss ÷ (average win + average loss). For Maya’s sample that is 1.0125 ÷ (1.179 + 1.0125) ≈ 46.2%. Her observed 60% is above it, but the section on uncertainty asks whether twenty trades can tell 60% from 46%.
 
@@ -4821,18 +4821,18 @@ The formula is still useful for reasoning about assumed distributions. If 40% of
 
 #### From R to dollars: the equity path and its drawdowns
 
-Expectancy describes the average trade, but the account experiences trades in order. Start Maya’s paper account at $20,000, add each net result at $100 per R, and you get an equity path: $20,195 after trade 1, $20,090 after trade 2, and so on to $20,605 after trade 20. Total return is $605 ÷ $20,000 = 3.025%, about 3.03%. Because each trade risks a fixed $100 rather than a fraction of current equity, the order of the trades does not change this ending value.
+Expectancy describes the average trade, but the account experiences trades in order. Start Maya’s paper account at $20,000, add each net result at $100 per R, and you get an equity path: $20,195 after trade 1, $20,090 after trade 2, and so on to $20,605 after trade 20. Account return (ending equity ÷ starting equity − 1) is $605 ÷ $20,000 = 3.025%, about 3.03%. Because each trade risks a fixed $100 rather than a fraction of current equity, the order of the trades does not change this ending value.
 
 Drawdown measures the decline from the highest equity reached so far, the running peak: drawdown = (running peak − current equity) ÷ running peak. An underwater plot draws this percentage below zero at every point and returns to zero whenever a new peak is set. In the recorded order, equity peaks at $20,265 after trade 6, falls through the gap loss to $19,925 after trade 8, and does not exceed $20,265 again until trade 17. The maximum drawdown is $340, or 340 ÷ 20,265 ≈ 1.68% of the peak. Recovering it requires a 340 ÷ 19,925 ≈ 1.71% gain from the trough, slightly more than the percentage lost because the denominator is now smaller, the same asymmetry Chapter 20 showed. The account stayed below the trade-6 peak at ten successive closes (trades 7–16), recovering at trade 17, eleven trade intervals after that peak.
 
-Now rearrange the same twenty outcomes so that the eight losses come first. The average is still +0.3025R, the win rate still 60%, and the ending equity still $20,605. But the account falls from $20,000 to $19,190 before the first win: an $810 drawdown of 4.05%, which needs a 4.22% gain to recover and is regained at trade 16. The panel figure shows both orderings, with dollars and percentages on separate axes. Doubling the dollars per R would double every dollar figure here. Average outcome, total return, and drawdown answer three different questions. A recorded drawdown is the worst decline in one ordering of one sample. It is not a maximum future loss, and other orderings of the same trades can be much deeper.
+Now rearrange the same twenty outcomes so that the eight losses come first. The average is still +0.3025R, the win rate still 60%, and the ending equity still $20,605. But the account falls from $20,000 to $19,190 before the first win: an $810 drawdown of 4.05%, which needs a 4.22% gain to recover and is regained at trade 16. The panel figure shows both orderings, with dollars and percentages on separate axes. Doubling the dollars per R would double every dollar gain, loss and drawdown, though not the account balances; the percentage drawdowns would also roughly double, to 3.31% and 8.10%. Average outcome, account return, and drawdown answer three different questions. A recorded drawdown is the worst decline in one ordering of one sample. It is not a maximum future loss, and other orderings of the same trades can be much deeper.
 
 **Same trades, two orders ($20,000 start, $100 per R)**
 
 | Measure | Recorded order | Losses-first order |
 | --- | --- | --- |
 | Ending equity ($) | 20,605 | 20,605 |
-| Total return | 3.03% | 3.03% |
+| Account return | 3.03% | 3.03% |
 | Expectancy (net R per trade) | +0.3025R | +0.3025R |
 | Running peak before the deepest decline ($) | 20,265 (after trade 6) | 20,000 (start) |
 | Trough ($) | 19,925 (after trade 8) | 19,190 (after trade 8) |
@@ -4848,9 +4848,9 @@ Now rearrange the same twenty outcomes so that the eight losses come first. The 
 
 The arithmetic above describes twenty trades; interpreting it as an estimate of a repeatable outcome process requires a sampling model, and twenty is a small sample. You can see how fragile the estimate is without any formula. Drop one of the five +1.95R target trades and the average of the remaining nineteen falls to +0.22R. Drop the gap loss instead and it rises to +0.44R. One trade in twenty moves the estimate by roughly a quarter to a half of its value. Removing a genuine loss because it is inconvenient is not analysis; this calculation only shows how much a single observation weighs. If a trade was a data error, correct it and keep the audit trail.
 
-The uncertainty figure tracks the running average after each trade. It is +1.95R after one trade, turns negative after trade 8 (−0.09R), and finishes at +0.30R. Around it, from trade 5 onward, is a rough band of plus or minus two standard errors. The standard error is the sample standard deviation of net R divided by the square root of the number of trades. After 20 trades the standard deviation is about 1.31R, the standard error about 0.29R, and the band runs from roughly −0.28R to +0.89R. At a fixed standard deviation under the independence model, band width falls as one over the square root of the trade count, so halving it needs about four times as many trades. The realized sample standard deviation also changes as observations arrive.
+The uncertainty figure tracks the running average after each trade. It is +1.95R after one trade, turns negative after trade 8 (−0.09R), and finishes at +0.30R. Around it, from trade 5 onward, is a rough band of plus or minus two standard errors. The standard error is the sample standard deviation of net R divided by the square root of the number of trades. After 20 trades the standard deviation is about 1.31R. To reproduce it, subtract the mean (0.3025R) from each net result, square and add the differences (32.512), divide by n − 1 = 19 (1.7112), and take the square root: 1.308R. Dividing by 20 instead, as Chapter 12’s population bands do, would give 1.275R; the n − 1 divisor is the usual choice when a sample estimates an unknown spread. The standard error is then about 0.29R, and the band runs from roughly −0.28R to +0.89R. At a fixed standard deviation under the independence model, band width falls as one over the square root of the trade count, so halving it needs about four times as many trades. The realized sample standard deviation also changes as observations arrive.
 
-The band is a rough guide, not a precise interval. It treats the trades as independent draws from one unchanging distribution, and with twenty lumpy outcomes even that approximation is crude. Zero lies inside this approximate band, so it does not provide convincing evidence of a positive mean under that model. This is an illustration of imprecision, not a calibrated hypothesis test for these twenty lumpy observations. The win-rate interval illustrates another dimension of uncertainty. The 60% observed win rate has a 95% Wilson interval of about 38.7% to 78.1%, explained in the optional section that follows, and that range contains the 46.2% break-even computed from the observed payoffs. That comparison is illustrative: the average win and loss used to compute break-even are themselves uncertain, so the Wilson interval alone is not a test of positive expectancy. A sample this size can teach the arithmetic. It cannot validate a strategy, whether its trades are fictional or real.
+The band is a rough guide, not a precise interval. It treats the trades as independent draws from one unchanging distribution, and with twenty lumpy outcomes even that approximation is crude. Even within that model, a t-interval would use a multiplier larger than 2: about 2.09 at 20 trades (about −0.31R to +0.91R) and 2.78 at five, so the band is too narrow throughout, most of all early on. Zero lies inside this approximate band, so it does not provide convincing evidence of a positive mean under that model. This is an illustration of imprecision, not a calibrated hypothesis test for these twenty lumpy observations. The win-rate interval illustrates another dimension of uncertainty. The 60% observed win rate has a 95% Wilson interval of about 38.7% to 78.1%, explained in the optional section that follows, and that range contains the 46.2% break-even computed from the observed payoffs. That comparison is illustrative: the average win and loss used to compute break-even are themselves uncertain, so the Wilson interval alone is not a test of positive expectancy. A sample this size can teach the arithmetic. It cannot validate a strategy, whether its trades are fictional or real.
 
 **How far the twenty-trade estimate can move**
 
@@ -4860,7 +4860,7 @@ The band is a rough guide, not a precise interval. It treats the trades as indep
 | Mean without one +1.95R target trade (19 trades) | +0.216R | One winner carries about 0.09R of the average |
 | Mean without the −2.35R gap loss (19 trades) | +0.442R | One loss carries about 0.14R of the average |
 | Sample standard deviation of net R | 1.308R | Typical spread of single outcomes |
-| Standard error (1.308 ÷ √20) | 0.293R | Rough uncertainty of the mean |
+| Standard error (1.3081 ÷ √20) | 0.2925R | Rough uncertainty of the mean |
 | Mean ± 2 standard errors | −0.28R to +0.89R | Includes zero |
 | Win rate and 95% Wilson interval | 60%; 38.66% to 78.12% | Includes the break-even win rate |
 | Break-even win rate (1.0125 ÷ 2.1917) | 46.2% | Win rate needed at these average payoffs |
@@ -4871,7 +4871,7 @@ The band is a rough guide, not a precise interval. It treats the trades as indep
 
 #### Optional: an interval for a win rate (optional extension)
 
-Prerequisites: the expectancy and uncertainty sections of this chapter, and comfort with a square root. An observed proportion is an estimate. NIST’s Dataplot documentation gives the Wilson score interval as an alternative to a symmetric normal-approximation interval. Its limits stay within the probability range. The formula used here comes from that documentation; the linked handbook also discusses exact binomial intervals. With p̂ = 12/20 = 0.60, n = 20, and z ≈ 1.96 for 95%, the limits are [p̂ + z²/(2n) ± z × √(p̂(1 − p̂)/n + z²/(4n²))] ÷ (1 + z²/n). Numerically, the center term is 0.60 + 0.0960 = 0.6960, the square-root term is 1.96 × √(0.0120 + 0.0024) ≈ 0.2352, and the divisor is 1.1921. The interval is approximately 38.66% to 78.12%. That range is compatible with materially different trading interpretations.
+Prerequisites: the expectancy and uncertainty sections of this chapter, and comfort with a square root. An observed proportion is an estimate. NIST’s Dataplot documentation gives the Wilson score interval as an alternative to a symmetric normal-approximation interval. Its limits stay within the probability range. The formula used here comes from that documentation; the linked handbook also discusses exact binomial intervals. With p̂ = 12/20 = 0.60, n = 20, and z ≈ 1.96 for 95%, the limits are [p̂ + z²/(2n) ± z × √(p̂(1 − p̂)/n + z²/(4n²))] ÷ (1 + z²/n). Numerically, the center term is 0.60 + 0.09604 = 0.69604, the square-root term is 1.96 × √(0.0120 + 0.002401) ≈ 0.23521, and the divisor is 1.19208. The interval is approximately 38.66% to 78.12%. That range is compatible with materially different trading interpretations.
 
 This interval assumes independent Bernoulli trials with a common probability. Trades across changing regimes or simultaneous stocks may violate those assumptions. It is not a 95% probability guarantee for the next trade, nor a direct interval for expected profit. Win sizes and loss sizes remain unknown even when the win probability is well estimated. A frequentist confidence procedure describes its long-run coverage under its model; the particular observed interval does not assign a probability to a fixed underlying parameter.
 
@@ -4883,19 +4883,19 @@ As a brief introduction to a topic needing separate technical study, a bootstrap
 
 #### Optional: annualized return and the Sharpe ratio (optional extension)
 
-Prerequisites: the equity-path section of this chapter, exponents, and the idea of a standard deviation. Compound annual growth rate summarizes start-to-finish compounding: CAGR = (ending equity ÷ starting equity)^(1 ÷ years) − 1, assuming external cash flows have been handled appropriately. If Maya’s twenty paper trades spanned six months, CAGR = (20,605 ÷ 20,000)^(1 ÷ 0.5) − 1 = 1.03025² − 1 ≈ 6.14%. Annualizing expresses the observed growth as an equivalent constant yearly rate. It adds no information and forecasts nothing; projecting that rate forward would assume the observed growth repeats. A short interval can produce a striking annualized number. Report the period and the raw total return beside it.
+Prerequisites: the equity-path section of this chapter, exponents, and the idea of a standard deviation. Compound annual growth rate summarizes start-to-finish compounding: CAGR = (ending equity ÷ starting equity)^(1 ÷ years) − 1, assuming external cash flows have been handled appropriately. If Maya’s twenty paper trades spanned six months, CAGR = (20,605 ÷ 20,000)^(1 ÷ 0.5) − 1 = 1.03025² − 1 ≈ 6.14%. Annualizing expresses the observed growth as an equivalent constant yearly rate. It adds no information and forecasts nothing; projecting that rate forward would assume the observed growth repeats. A short interval can produce a striking annualized number. Report the period and the raw account return beside it.
 
 The Sharpe ratio divides the mean excess, or differential, return by the standard deviation of those same excess returns over a consistent interval. “Excess” requires specifying the reference rate or benchmark. Sharpe shows that multiplying a one-period ratio by the square root of the number of periods relies on zero serial correlation, so multiplying a daily ratio by √252 is a common convention under restrictive assumptions rather than a universally valid step. Dividing Maya’s mean net R by its standard deviation (0.3025 ÷ 1.308 ≈ 0.23) is not a Sharpe ratio: R per trade is not a return over a fixed time interval, and no reference rate has been subtracted. Standard deviation also treats upside and downside variation together and does not directly describe liquidity, leverage, or catastrophic tail exposure. Two methods with similar summary ratios can feel very different to the person holding them.
 
 #### Optional: p-values and how many numbers were considered (optional extension)
 
-Prerequisites: the uncertainty section of this chapter and the variant log in Chapter 24. A p-value is the probability, computed under a specified null model, of a test statistic at least as extreme as the one observed. NIST advises deciding the rejection threshold before seeing the results. A p-value is not the probability that a strategy is false, and by itself it says nothing about whether a gross effect survives costs.
+Prerequisites: the uncertainty section of this chapter and the variant log in Chapter 24. A p-value is the probability, computed under a specified null model, of a test statistic at least as extreme as the one observed. NIST advises deciding the rejection threshold before seeing the results. A p-value is not the probability that the null hypothesis is true (for example, that the rule has no edge), and by itself it says nothing about whether a gross effect survives costs.
 
-Searching changes the interpretation. Maya’s development log in Chapter 24 had six variants. If six independent tests were each run at a 5% threshold on rules with no edge, the chance that at least one passes is 1 − 0.95⁶ ≈ 26%. Variants that share trades are related, which changes that figure, but reporting only the passing variant still overstates the evidence. Bajgrowicz and Scaillet address this at scale, testing 7,846 technical rules on daily Dow Jones Industrial Average data with a false-discovery-rate method; the research section after this chapter summarizes what they found. Use each statistic for its own question, then state the uncertainty it leaves unresolved. Apparent precision in a spreadsheet should never conceal fragile definitions, limited independent data, or a large unreported search.
+Searching changes the interpretation. Maya’s development log in Chapter 24 had six variants. If six independent tests were each run at a 5% threshold on rules with no edge, the chance that at least one passes is 1 − 0.95⁶ ≈ 26%. Variants that share trades are related, which changes that figure, but reporting only the passing variant still overstates the evidence. Bajgrowicz and Scaillet address this at scale, testing 7,846 technical rules on daily Dow Jones Industrial Average data with a false-discovery-rate method; the Research and evidence appendix at the end of the book summarizes what they found. Use each statistic for its own question, then state the uncertainty it leaves unresolved. Apparent precision in a spreadsheet should never conceal fragile definitions, limited independent data, or a large unreported search.
 
 #### Do not confuse different evidence tests
 
-A difference between conditional return distributions asks about information; a cost-adjusted portfolio return asks about implementation. The pattern and DJIA-rule studies in the appendix use different comparisons. Neither a small p-value nor a gross mean alone supplies an executable net advantage.
+A difference between conditional return distributions asks about information; a cost-adjusted portfolio return asks about implementation. The pattern and DJIA-rule studies in the Research and evidence appendix use different comparisons. Neither a statistically significant difference nor a gross mean alone supplies an executable net advantage.
 
 #### Worked example: A payoff ratio is not expectancy
 
@@ -4903,14 +4903,14 @@ A planned +2R target and −1R stop give a nominal payoff ratio of 2. If the tar
 
 #### Exercise
 
-Using the twenty-trade ledger: (a) compute the net win rate, average win, average loss, and expectancy by formula and by direct average, then the gross expectancy; (b) build the equity path from $20,000 at $100 per R and find total return, maximum drawdown in dollars and percent, the gain needed to recover, and the trade at which equity first regains the earlier peak; (c) compute the mean net R without trade 7 and explain why that number is not the rule’s result.
+Using the twenty-trade ledger: (a) compute the net win rate, average win, average loss, and expectancy by formula and by direct average, then the gross expectancy; (b) build the equity path from $20,000 at $100 per R and find account return, maximum drawdown in dollars and percent, the gain needed to recover, and the trade at which equity first regains the earlier peak; (c) compute the mean net R without trade 7 and explain why that number is not the rule’s result.
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-(a) Net wins are trades 1, 3, 5, 6, 9, 10, 12, 14, 15, 17, 19 and 20, so the win rate is 12 ÷ 20 = 60%. Their net R sum is 5 × 1.95 + 0.55 + 0.30 + 0.85 + 0.20 + 1.35 + 0.10 + 1.05 = 14.15R, so the average win is 14.15 ÷ 12 ≈ 1.179R. The losses sum to 5 × (−1.05) − 2.35 − 0.05 − 0.45 = −8.10R, an average loss of 1.0125R. Formula: 0.60 × 1.179 − 0.40 × 1.0125 = 0.7075 − 0.4050 = +0.3025R. Direct: (14.15 − 8.10) ÷ 20 = +0.3025R. Gross: (6.05 + 20 × 0.05) ÷ 20 = 7.05 ÷ 20 = +0.3525R.
+(a) Net wins are trades 1, 3, 5, 6, 9, 10, 12, 14, 15, 17, 19 and 20, so the win rate is 12 ÷ 20 = 60%. Their net R sum is 5 × 1.95 + 0.55 + 0.30 + 0.85 + 0.20 + 1.35 + 0.10 + 1.05 = 14.15R, so the average win is 14.15 ÷ 12 ≈ 1.179R. The losses sum to 5 × (−1.05) − 2.35 − 0.05 − 0.45 = −8.10R, an average loss of 1.0125R. Formula: 0.60 × (14.15 ÷ 12) − 0.40 × 1.0125 = 0.7075 − 0.4050 = +0.3025R. Direct: (14.15 − 8.10) ÷ 20 = +0.3025R. Gross: (6.05 + 20 × 0.05) ÷ 20 = 7.05 ÷ 20 = +0.3525R.
 
-(b) Multiply each net R by $100 and add: 20,000 → 20,195 → 20,090 → 20,145 → 20,040 → 20,235 → 20,265 → 20,030 → 19,925 → 20,010 → 20,205 → 20,200 → 20,220 → 20,115 → 20,250 → 20,260 → 20,215 → 20,410 → 20,305 → 20,410 → 20,605. Total return = 605 ÷ 20,000 = 3.025%. The running peak of $20,265 (trade 6) is followed by the lowest later value, $19,925 (trade 8): drawdown = $340, and 340 ÷ 20,265 ≈ 1.68%. Gain needed = 340 ÷ 19,925 ≈ 1.71%. Equity first reaches $20,265 or more at trade 17 ($20,410). The smaller dip after trade 4 ($20,040 from a $20,195 peak, 0.77%) is not the maximum.
+(b) Multiply each net R by $100 and add: 20,000 → 20,195 → 20,090 → 20,145 → 20,040 → 20,235 → 20,265 → 20,030 → 19,925 → 20,010 → 20,205 → 20,200 → 20,220 → 20,115 → 20,250 → 20,260 → 20,215 → 20,410 → 20,305 → 20,410 → 20,605. Account return = 605 ÷ 20,000 = 3.025%. The running peak of $20,265 (trade 6) is followed by the lowest later value, $19,925 (trade 8): drawdown = $340, and 340 ÷ 20,265 ≈ 1.68%. Gain needed = 340 ÷ 19,925 ≈ 1.71%. Equity first reaches $20,265 or more at trade 17 ($20,410). The smaller dip after trade 4 ($20,040 from a $20,195 peak, 0.77%) is not the maximum.
 
 (c) Without trade 7: (6.05 + 2.35) ÷ 19 = 8.40 ÷ 19 ≈ +0.442R. The gap loss happened under the rule, so it belongs in the result; dropping it measures only how much one observation moves a small-sample average. A trade could be removed only if it were shown to be a data error, with the correction documented.
 
@@ -4953,7 +4953,7 @@ A reader looks at the twenty-trade record and writes: “Twelve wins in twenty a
 
 A strong reply makes four points. First, the arithmetic is right: 60% net wins and +0.3025R expectancy after the modeled $5 cost. Second, the estimate is fragile: removing one +1.95R trade gives +0.22R, removing the gap loss gives +0.44R, and the rough ±2 standard-error band runs from about −0.28R to +0.89R, which includes zero.
 
-Third, the 95% Wilson interval for the win rate is about 38.7% to 78.1%, which includes the sample-based 46.2% break-even. Both payoff estimates are uncertain too, so this comparison does not constitute an expectancy test. Fourth, clustered trades violate independence and can make conventional intervals too narrow. These fictional outcomes teach calculations; establishing a real rule’s merit needs independent evaluation, a suitable comparator, and execution evidence.
+Third, the 95% Wilson interval for the win rate is about 38.7% to 78.1%, which includes the sample-based 46.2% break-even. Both payoff estimates are uncertain too, so this comparison does not constitute an expectancy test. Fourth, the record does not show whether trades were clustered in time or shared a market driver; if they were, independence fails and these intervals are too narrow. These fictional outcomes teach calculations; establishing a real rule’s merit needs independent evaluation, a suitable comparator, and execution evidence.
 
 </details>
 
@@ -4987,7 +4987,7 @@ Option 3: Correct: with 60% wins and 40% losses, the weighted result equals the 
 - [NIST Dataplot · Agresti Coull: Wilson score interval](https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm) — Wilson score interval formula and distinction from adjusted Wald; original 12/20 arithmetic computed independently.
 - [NIST · Confidence Limits for the Mean](https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm) — Long-run coverage interpretation and standard-error mean formula; not an exact justification of the textbook’s crude ±2 SE band.
 - [Lo, Mamaysky & Wang (2000), Foundations of Technical Analysis](https://www.mit.edu/~alo/Papers/1705-1765.pdf) — Algorithmic pattern recognition and conditional return distributions, distinct from net trading profitability.
-- [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf) — Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.
+- [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf) — Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.
 
 ---
 
@@ -5006,13 +5006,189 @@ A signal is one component of a much larger decision process.
 
 Builds on: Breakouts, pullbacks & failed moves; Events and opening gaps; Market microstructure: from a chart to an actual trade; Risk & position sizing; From chart idea to trade plan; A journal that can teach you something; Evidence before conviction.
 
+#### Start with an economic question
+
+A trading system is an organized set of decisions that can be applied consistently. It need not be automated, but its rules should be clear enough to evaluate. Begin with a proposed mechanism and an observable claim. “Trends may persist over this horizon” is a research hypothesis. “This indicator predicts everything” is not a useful specification. The mechanism does not prove an edge; it tells you what evidence would support or weaken the idea.
+
+Chapter 24 tested a twenty-session breakout signal one trade at a time, as though capital and position slots were unlimited. This chapter builds Atlas-20, a complete fictional research system around the same kind of daily breakout signal, and makes every remaining decision explicit. It freezes version 1.0 of the rule sheet, supplies a small invented market of eight stocks over eight sessions, and processes each decision in order until the ledger reconciles to the cent. All companies, prices, volumes, and calendars are fictional. The percentages are teaching settings, not recommended allocations, and the system has no demonstrated performance. The scenario was built to exercise the rules, including a tie, a partial fill, an unfilled order, a halt, and other exceptions, so it is not a typical week.
+
+Use one test for completeness: two careful readers given the same inputs should produce the same ledger without asking the author anything. Each rule below is labeled as a definition, a modeling convention, a scope choice, or an arbitrary teaching setting. The included scripts/atlas20-sim.cjs processes the supplied scenario under the rule sheet and reproduces its accounting; it is a teaching simulator, not a trading engine. You can also reproduce every number by hand from this chapter’s tables.
+
+#### Write the data and eligibility contract
+
+Atlas-20 uses a point-in-time universe and completed regular-session daily bars. “Point in time” means the system uses the member list, prices, and calendar as they were known at each decision close, not as they are known today. The signal needs the twenty sessions before the decision day, so a stock needs 21 consecutive valid bars before it can be screened. If any of those bars is missing, v1.0 records an incomplete record and evaluates nothing that day. It does not fill the gap with yesterday’s price, because an invented bar could create or hide a breakout.
+
+Each filter is part of the research claim, so each is stated with its data and timing. The liquidity filter averages close × volume over the twenty sessions ending at the decision close. A cutoff chosen from the full sample would quietly use the future. The price band keeps the fixed $2 stop between 2% and 10% of the share price. Without it, the same rule would mean very different risks for a $15 stock and a $150 stock. The earnings exclusion covers sessions t+1 through t+10 because this is the planned ten-session holding window for an entry in t+1 (holding session 1), ending at t+10 (holding session 10), so entries exclude announcements known at the decision close within that window. A rescheduled or unexpected announcement remains possible; the calendar is not insurance. The checks run in a declared order, and the first failure is recorded. That keeps the record of skipped candidates honest. A halt can extend the actual elapsed holding beyond that planned window; the calendar filter cannot exclude every announcement during an overdue holding.
+
+**Atlas-20 v1.0 rule sheet, part 1: data, universe, and eligibility**
+
+| Rule | Atlas-20 v1.0 setting | Kind |
+| --- | --- | --- |
+| Scope | Long-only fictional U.S.-listed common stocks in one U.S.-dollar account; no leverage, short sales, or derivatives. | Scope choice |
+| Universe | Point-in-time member list as of each decision date. Scenario members throughout: Alder, Birch, Cedar, Dogwood, Elm, Fir, Ginkgo, Hazel. | Convention |
+| Data and clock | Completed regular-session daily OHLC and share volume; split adjustment uses only actions effective by the decision date. Decisions are computed after the close; orders are submitted before the next open. | Convention |
+| Minimum history | 21 consecutive valid bars: sessions t−20 through t. | Teaching setting |
+| Missing data | Any absent or invalid bar in t−20…t: no signal is evaluated that day. No interpolation or carried-forward bars. | Convention |
+| Already held | A stock with an open position or a working order is not screened; v1.0 never adds to a position. | Teaching setting |
+| Signal | Close at t strictly above the highest high of sessions t−20…t−1. | Definition |
+| Price band | $20.00 ≤ decision close ≤ $100.00, so the fixed $2 stop is 2%–10% of price. | Teaching setting |
+| Liquidity | Mean of close × volume over sessions t−19…t ≥ $2,000,000 (past data only). | Teaching setting |
+| Earnings | No scheduled earnings in sessions t+1…t+10 (the planned ten-session holding window; a halt can delay exit), per the calendar snapshot at the decision close. | Teaching setting |
+| Regime filter | None in v1.0. | Scope choice |
+| Check order | Complete record → signal → price band → liquidity → earnings. The first failure is recorded. | Convention |
+
+#### Translate a signal into portfolio decisions
+
+An eligible stock signals when its completed close exceeds the highest high of the prior twenty completed sessions. When several qualify at the same close, Atlas-20 ranks them by breakout margin, the percentage by which the close clears that high. Rank the margin rounded to 0.01 percentage point, as stated in the table; ties in that rounded value are broken alphabetically. Two unequal raw margins can therefore receive the same rank value. Do not silently switch to unrounded ranking. This rule is not wise or optimized. Its only virtue is that it is written down. Without a declared order, a backtest quietly selects candidates by file order or by whichever result the researcher noticed first.
+
+At most five slots exist, and a slot is occupied by any open position, including a halted one, and by any order placed at the current close. Each order’s quantity is the smallest of three allowances computed from equity E at the decision close. The risk allowance spends at most 0.5% of E on planned price risk at $2 per share. The notional allowance keeps the position at or below 10% of E at the limit price. The cash allowance uses only cash not already reserved for an order placed earlier at the same close. Following the book’s contract, 1R is the frozen planned price risk: filled shares × $2.00, fixed at the fill. The $5 round-trip cost is shown separately. So an ordinary stop exit for a full 250-share position loses $500 of price and $505 including costs. That cost-inclusive figure is a separate, labeled quantity, not 1R.
+
+The cash test deserves a remark. Five slots at a 10% notional cap can commit only about half of equity, so cash does not bind in this unleveraged, mildly varying scenario. Large mark changes, stale valuations, or a later version can make the cash test important; the entry caps do not bound subsequent market values. It is still computed at every decision, for two reasons. Reservations must prevent the same dollars from funding two orders, and any later version with larger caps or more slots can make cash bind. One of the practice tasks shows such a variant.
+
+**Atlas-20 v1.0 rule sheet, part 2: ranking, slots, sizing, and costs**
+
+| Rule | Atlas-20 v1.0 setting | Kind |
+| --- | --- | --- |
+| Ranking value | Breakout margin = 100 × (close − prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point; larger ranks first. | Teaching setting |
+| Tie-break | Alphabetical by company name. | Convention |
+| Slots | At most 5 = open positions (halted ones included) + orders placed at this close. | Teaching setting |
+| Sizing equity E | Cash + shares × close for every holding, after the session’s exits and fills; a halted holding uses its last valid close. | Definition |
+| Limit price L | 1.01 × signal close, rounded down to the cent. | Teaching setting |
+| Risk allowance | floor(0.5% × E ÷ $2.00) shares. | Teaching setting |
+| Notional allowance | floor(10% × E ÷ L) shares. | Teaching setting |
+| Cash allowance | floor((cash − cash already reserved at this close − $2.50) ÷ L) shares. | Definition |
+| Quantity | Smallest of the three allowances; fewer than 1 share means no order. | Definition |
+| Cash reservation | Shares × L + $2.50, held from order placement until the order fills or expires. | Convention |
+| R | 1R = filled shares × $2.00, frozen at the fill. Net R = net P&L ÷ 1R. Costs are shown separately. | Book contract |
+| Costs | $2.50 per executed fill (entry, exit, or partial entry), so $5.00 per round trip. No separate spread or slippage charge beyond the fill rules. | Teaching setting |
+| Cash interest and settlement | Cash earns zero; settlement timing is ignored. | Convention |
+
+#### Exits, gaps, and time are first-class rules
+
+Entries use a day-limit buy order for the next session at 1.01 × the signal close, rounded down to the cent. Investor.gov explains that a buy limit executes only at its limit or lower and is not guaranteed to execute, and that a day order generally cancels at the end of the regular session. Atlas-20 models those facts with deliberately conservative conventions. An open at or below the limit fills at the open. A later trade strictly below the limit fills at the limit. A low exactly equal to the limit shows only that the price was touched, which does not prove that shares were available, so it is not a fill. The filled quantity is capped at 1% of the session’s share volume, and the rest of the order is canceled.
+
+Each fill receives a sell stop $2.00 below and a sell limit target $4.00 above the actual fill price, plus a time exit at the close of the tenth holding session. Investor.gov notes that a stop becomes a market order once its price is reached and can execute well away from that price. Atlas-20 therefore models an ordinary stop at the stop price, an opening gap through the stop at the open, and a bar that contains both levels as a stop. Daily data cannot show which level traded first, and assuming the favorable order would flatter the record. These are assumptions about fills, not reports of actual executions.
+
+A trading halt is a different problem. According to Investor.gov, the most common regulatory halt occurs when news is pending, and securities exchanges, not the SEC, decide whether to impose it; other U.S. markets honor a halt imposed by the security’s primary market. While a held stock has no bar, no exit can be modeled. Atlas-20 marks the stock at its last valid close, flags that mark as stale, keeps the slot occupied, and applies the gap rule to the first new bar. Cash earns nothing, settlement timing is ignored, and short sales, leverage, and derivatives are outside the scope of v1.0.
+
+The 1% volume cap is a retrospective daily-bar fill model: the total session volume is unknown at the opening trade. It cannot be used as an instruction for how many shares to execute at that open. A live participation algorithm would need intraday volume and quote data, which this scenario does not provide. There are no splits, dividends, membership changes or calendar revisions during these eight sessions; a deployment specification would need separate policies for them. The supplied rolling-high, liquidity and completeness fields are sufficient statistics for this exercise, not a full historical feed.
+
+If a halt spans holding-session-10 close, record an overdue time exit and retain the slot and stale mark. At the first subsequent tradable opening, opening stop/target gap rules have priority; otherwise exit at that open for the overdue deadline, before considering that bar’s intraday range. For entry E1 and a halt at E10–E12, a reopening at E13 executes this overdue rule. E10 remains the scheduled date; E13 is the later modeled execution date.
+
+**Atlas-20 v1.0 rule sheet, part 3: orders, fills, exits, and review**
+
+| Rule | Atlas-20 v1.0 setting | Kind |
+| --- | --- | --- |
+| Entry order | Buy day-limit order at L for the next session only; any unfilled remainder cancels at that session’s close. | Convention |
+| Entry fill | Open ≤ L: fill at the open. Otherwise, low strictly below L: fill at L. A low exactly at L is a touch, not a fill. | Convention (conservative) |
+| Partial fill | Filled shares ≤ floor(1% × entry-session volume). Keep the filled shares, cancel the rest, never top up. | Teaching setting |
+| Rejected or unfilled candidates | Not re-offered. A stock needs a new signal at a later close. | Convention |
+| Stop | Sell stop at fill − $2.00; triggered when low ≤ stop. | Teaching setting |
+| Target | Sell limit at fill + $4.00; fills only when high is strictly above the target. | Teaching setting |
+| Time exit | At the close of holding session 10 (entry session = 1; exchange sessions counted, including halted ones). | Teaching setting |
+| Exit priority (held from an earlier session) | 1. Open ≤ stop: exit at open. 2. Open ≥ target: exit at open. 3. Low ≤ stop and high > target: stop assumed first. 4. Low ≤ stop: exit at stop. 5. High > target: exit at target. 6. Holding session 10: exit at close. After opening checks 1–2, an overdue time deadline exits at the open before steps 3–5; a scheduled session-10 close uses step 6. | Convention (conservative) |
+| Entry bar | Fill at the open: steps 3–5 apply to the rest of that bar. Fill at L intraday: the stop applies if low ≤ stop; a target is not credited. | Convention (conservative) |
+| Halt or missing bar while held | No exit is possible. Mark at the last valid close, flagged stale; the position keeps its slot. The first new bar starts at step 1. | Convention |
+| Processing order | Batch accounting: held-position exits and reserved entries, then close marks and screening. Entry quantities are fixed at the previous close and fully cash-reserved; no same-session exit funds a larger order. Within-session event rows are not a timestamped tape. | Convention |
+| Review triggers | Operational: a held stock without a bar; any nonzero reconciliation difference; an actual fill differing from the modeled fill. Performance: drawdown above 8% of the equity peak; observed costs differing from modeled costs by more than 50% over 20 fills. A trigger starts a review; any rule change becomes a new version. | Teaching setting |
+| Overdue time exit after halt | First resumed open: opening stop/target gap first; otherwise overdue time exit at the open, before intraday tests. Keep stale marks and occupied slot until then. | Convention |
+
+![Atlas-20 daily processing order](../assets/figures/system-design-2.svg)
+
+*Fixed daily-bar accounting sequence for the fictional scenario. Orders and cash reservations are frozen at the prior close. Batch processing of a close exit before an opening entry is an accounting order only; no later proceeds fund that entry or increase its quantity.*
+
+#### The supplied scenario
+
+The account begins at the session-0 close with $100,000.00 of equity: $81,330.00 in cash and two positions entered before the scenario. Hazel’s tenth holding session is session 2; Fir’s would be session 7. The screen log is supplied data. It lists every stock that was not held and whose close exceeded its prior-20 high at a decision close, along with the pre-computed liquidity, the calendar, and the completeness facts. Every unlisted non-held stock and decision-close pair did not signal. Held stocks are excluded before screening; their omission says nothing about whether their close exceeded a rolling high. The two price grids supply each bar the rules need. A dash means the bar is not needed because the stock was neither held nor being bought. “No bar” means the record does not exist.
+
+Before reading on, apply the rule sheet to decision close 0 yourself. List the six signals, decide which are eligible, rank them, and size whatever fits in the free slots.
+
+**Opening state at the session-0 close**
+
+| Holding | Shares | Entry session | Fill ($) | Stop / target ($) | 1R ($) | Session-0 close ($) | Value ($) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hazel | 200 | −7 (holding session 10 = session 2) | 47.00 | 45.00 / 51.00 | 400.00 | 48.60 | 9,720.00 |
+| Fir | 250 | −2 (holding session 10 = session 7) | 36.00 | 34.00 / 40.00 | 500.00 | 35.80 | 8,950.00 |
+| Cash | — | — | — | — | — | — | 81,330.00 |
+| Equity | — | — | — | — | — | — | 100,000.00 |
+
+**Screen log: every non-held stock whose close exceeded its prior-20 high**
+
+| Decision close | Stock | Close ($) | Prior-20 high ($) | 20-session mean dollar volume ($ million) | Next scheduled earnings (session) | 21-bar record |
+| --- | --- | --- | --- | --- | --- | --- |
+| D0 | Alder | 31.96 | 31.00 | 9.8 | 31 | complete |
+| D0 | Birch | 71.75 | 70.00 | 2.3 | 40 | complete |
+| D0 | Cedar | 40.80 | 40.00 | 6.4 | 25 | complete |
+| D0 | Dogwood | 61.20 | 60.00 | 14.1 | 35 | complete |
+| D0 | Elm | 55.40 | 54.00 | 11.7 | 6 | complete |
+| D0 | Ginkgo | 24.60 | 24.10 | 1.6 | 44 | complete |
+| D1 | Dogwood | 62.40 | 61.50 | 14.3 | 35 | complete |
+| D2 | Cedar | 42.30 | 41.95 | 6.6 | 25 | complete |
+| D3 | Hazel | 51.80 | 50.90 | 5.2 | 38 | complete |
+| D5 | Ginkgo | 25.40 | 25.00 | not computed | 44 | session-3 bar missing |
+| D6 | Elm | 58.90 | 56.30 | 13.9 | 68 | complete |
+
+**Supplied bars, part 1 (O/H/L/C in $; volume in shares where an entry needs it)**
+
+| Session | Alder | Birch | Cedar | Dogwood |
+| --- | --- | --- | --- | --- |
+| 0 | 31.10/32.05/31.00/31.96 | 70.40/71.90/70.10/71.75 | 40.10/41.60/40.00/40.80 | 60.30/61.50/60.10/61.20 |
+| 1 | 32.10/32.60/31.70/32.45; vol 410,000 | 72.20/73.10/71.60/72.80; vol 11,800 | 41.60/41.95/41.20/41.50; vol 240,000 | 61.40/62.60/61.20/62.40 |
+| 2 | 32.50/33.40/32.20/33.20 | 72.90/73.60/72.10/73.30 | 41.70/42.40/41.40/42.30 | 62.80/63.30/62.10/62.90; vol 520,000 |
+| 3 | 33.30/34.10/33.00/33.90 | 73.20/74.00/72.60/73.10 | 43.00/43.40/42.50/43.10; vol 260,000 | 62.70/63.20/61.90/62.20 |
+| 4 | 33.80/34.70/33.50/34.40 | 73.00/73.50/72.20/72.90 | 43.20/43.90/42.80/43.60 | 62.30/63.80/62.00/63.50 |
+| 5 | 34.50/35.60/34.30/35.40 | 72.90/76.60/70.00/71.20 | 43.50/44.20/43.10/43.30 | 63.40/64.10/62.60/62.90 |
+| 6 | 35.50/36.40/35.20/35.50 | — | 43.40/44.00/42.70/43.80 | 62.80/63.40/61.70/62.10 |
+| 7 | — | — | 43.90/44.60/43.50/44.30 | 62.20/63.60/61.90/63.30 |
+
+**Supplied bars, part 2 (— = not needed; no bar = record absent)**
+
+| Session | Elm | Fir | Ginkgo | Hazel |
+| --- | --- | --- | --- | --- |
+| 0 | 54.20/55.60/54.00/55.40 | 35.90/36.20/35.40/35.80 | 24.00/24.70/23.90/24.60 | 48.20/48.90/47.90/48.60 |
+| 1 | — | 35.70/35.95/34.60/34.90 | — | 48.70/49.40/48.30/49.10 |
+| 2 | — | 34.80/35.30/34.40/35.10 | — | 49.20/49.80/48.90/49.30 |
+| 3 | — | no bar | no bar | 49.60/51.95/49.50/51.80 |
+| 4 | — | 33.10/33.60/32.40/33.20 | — | — |
+| 5 | — | — | 25.00/25.50/24.90/25.40 | — |
+| 6 | 57.00/59.20/56.80/58.90 | — | — | — |
+| 7 | 59.10/59.90/58.70/59.60; vol 300,000 | — | — | — |
+
+#### Decision close 0: four eligible candidates, three slots
+
+Six stocks signal. Elm is excluded because its scheduled earnings fall in session 6, inside the window from session 1 to session 10. Ginkgo is excluded because its mean dollar volume of $1.6 million is below the $2.0 million threshold. Both would have looked attractive on a chart, and both stay in the opportunity record as ineligible. The remaining four rank as Alder at 3.10%, Birch at 2.50%, and then Cedar and Dogwood tied at exactly 2.00%. Cedar wins the tie alphabetically. Hazel and Fir occupy two of the five slots, so only three are free, and Dogwood is recorded as “eligible, no free slot.”
+
+At E = $100,000.00, the risk allowance is floor(500 ÷ 2) = 250 shares for every candidate. Alder’s limit is $32.27, so its notional allowance is floor(10,000 ÷ 32.27) = 309, and risk binds at 250 shares. Birch’s limit is $72.46, so notional binds at 138 shares, which is $9,999.48 at the limit. Cedar’s notional allowance is 242 shares at $41.20. The cash allowances, computed in rank order after earlier reservations, are far larger. The three reservations total $28,044.88 and leave $53,285.12 available. The same price-risk rule produces a full-risk Alder order and two smaller orders because the notional cap binds for the higher-priced stocks.
+
+**Decision close 0: screening, ranking, and sizing (E = $100,000.00; 3 free slots)**
+
+| Candidate | Margin (%) | Eligibility | Rank | Limit L ($) | Risk / notional / cash allowance (shares) | Order (shares) | Reserved ($) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Alder | 3.10 | Yes | 1 | 32.27 | 250 / 309 / 2,520 | 250 (risk binds) | 8,070.00 |
+| Birch | 2.50 | Yes | 2 | 72.46 | 250 / 138 / 1,011 | 138 (notional binds) | 10,001.98 |
+| Cedar | 2.00 | Yes | 3 | 41.20 | 250 / 242 / 1,535 | 242 (notional binds) | 9,972.90 |
+| Dogwood | 2.00 | Yes | 4 | 61.81 | 250 / 161 / 862 | 0: no free slot | — |
+| Elm | 2.59 | No: earnings in session 6 | — | — | — | — | — |
+| Ginkgo | 2.07 | No: $1.6M < $2.0M | — | — | — | — | — |
+| Total | — | — | — | — | — | 3 orders | 28,044.88 |
+
+#### Sessions 1–3: fills, a nonfill, a time exit, and a halt
+
+Session 1 begins with the held positions. Hazel’s range stays between its $45 stop and $51 target. Fir’s low of $34.60 stays above its $34.00 stop. Next come the entries. Alder opens at $32.10, below its $32.27 limit, so all 250 shares fill at the open. Its stop is $30.10, its target is $36.10, and 1R is $500. Birch opens at $72.20, within its limit, but only 11,800 shares trade, so the 1% cap allows 118 of the 138 shares ordered. The remainder cancels, and Birch’s 1R is 118 × $2 = $236, not the $276 planned at the order. Cedar opens at $41.60, above its $41.20 limit, and its low is exactly $41.20. That is a touch, so there is no fill, and the $9,972.90 reservation is released. Cash falls from $81,330.00 by $8,027.50 and $8,522.10 to $64,780.40, and equity at the close is $100,028.30.
+
+Cedar’s unused slot does not go back to Dogwood, because candidates are offered only at their own signal close. Dogwood earns a new chance by signaling again at decision close 1: its $62.40 close exceeds the new prior-20 high of $61.50. The 158-share order reflects the notional allowance, floor(10,002.83 ÷ 63.02). In session 2, Dogwood opens at $62.80, below its limit, and fills there. Hazel reaches holding session 10 without touching either level and exits at the $49.30 close for +$455 net, or +1.14R on its $400 denominator. At decision close 2, Cedar signals again at $42.30, above the $41.95 high it set in session 1, and receives a 234-share order at $42.72.
+
+In session 3, Fir has no bar: trading is halted. Fir is marked at its session-2 close of $35.10 and flagged stale, and the missing bar fires an operational review trigger. Cedar opens at $43.00, above its limit, then trades down to $42.50, so the model fills it at $42.72. Because the fill happened intraday, the entry bar cannot credit a target, and the stop is not reached. At the close, five slots are in use: Fir, Alder, Birch, Dogwood, and Cedar. Hazel then signals at $51.80 and passes every filter, but the halted Fir still holds a slot, so Hazel gets no order. Equity is $100,502.82, and holdings are 45.6% of it, the highest exposure so far.
+
+Pause here. The worksheet below starts from this session-3 state and asks you to process sessions 4 and 5 before you open the complete ledger.
+
 #### First pass: reconcile the S4–S5 accounting replay
 
 This worksheet begins from the supplied S3-close state. Cash is $54,714.02, the five filled holdings are listed below, and no entry orders are working. Each prior entry incurred $2.50; an exit incurs another $2.50. Use filled shares, not earlier order quantities, to calculate each position’s frozen R.
 
 This is an accounting replay, not a forecast or an unseen-chart learning test. The S4/S5 bars and screen facts are exercise inputs, released for this replay. Process S4 and its decision close before using S5. The resulting exits, cash, equity and full reference ledger stay behind the continuation reveal. All stocks and records are fictional.
 
-The three unchanged v1.0 rule tables are restated here so the worksheet is self-contained. For each session, record exits in priority order, cash after fills, every surviving close mark, equity, occupied/free slots and any new order. Then give Fir’s and Birch’s net trade dollars and net R. Start Fir’s trade P&L from its $36.00 entry, even though the replay starts from a later close mark.
+The three unchanged v1.0 rule tables are restated here for reference. For each session, record exits in priority order, cash after fills, every surviving close mark, equity, occupied/free slots and any new order. Then give Fir’s and Birch’s net trade dollars and net R. Start Fir’s trade P&L from its $36.00 entry, even though the replay starts from a later close mark.
 
 Fir’s S5 bar is not supplied. If your S4 processing leaves it held, flag that missing input rather than inventing a mark. For D4/D5, the supplied screen facts cover the unheld candidates; no omitted stock supplies an additional signal. Freeze your working below before opening the complete continuation.
 
@@ -5098,182 +5274,6 @@ Write and retain your cutoff note before opening the continuation. In print, fin
 <details>
 <summary>Reveal continuation, explanations and complete reference</summary>
 
-#### Start with an economic question
-
-A trading system is an organized set of decisions that can be applied consistently. It need not be automated, but its rules should be clear enough to evaluate. Begin with a proposed mechanism and an observable claim. “Trends may persist over this horizon” is a research hypothesis. “This indicator predicts everything” is not a useful specification. The mechanism does not prove an edge; it tells you what evidence would support or weaken the idea.
-
-Earlier chapters described a fictional research system called Atlas-20, which studies daily stock breakouts, as a list of decisions a designer must make. This chapter makes every one of those decisions. It freezes version 1.0 of the rule sheet, supplies a small invented market of eight stocks over eight sessions, and processes each decision in order until the ledger reconciles to the cent. All companies, prices, volumes, and calendars are fictional. The percentages are teaching settings, not recommended allocations, and the system has no demonstrated performance. The scenario was built to exercise the rules, with a tie, a partial fill, an unfilled order, a halt, a gap, an ambiguous bar, and a time exit, so it is not a typical week.
-
-Use one test for completeness: two careful readers given the same inputs should produce the same ledger without asking the author anything. Each rule below is labeled as a definition, a modeling convention, a scope choice, or an arbitrary teaching setting. The included scripts/atlas20-sim.cjs processes the supplied scenario under the rule sheet and reproduces its accounting; it is a teaching simulator, not a trading engine. You can reproduce them by hand.
-
-#### Write the data and eligibility contract
-
-Atlas-20 uses a point-in-time universe and completed regular-session daily bars. “Point in time” means the system uses the member list, prices, and calendar as they were known at each decision close, not as they are known today. The signal needs the twenty sessions before the decision day, so a stock needs 21 consecutive valid bars before it can be screened. If any of those bars is missing, v1.0 records an incomplete record and evaluates nothing that day. It does not fill the gap with yesterday’s price, because an invented bar could create or hide a breakout.
-
-Each filter is part of the research claim, so each is stated with its data and timing. The liquidity filter averages close × volume over the twenty sessions ending at the decision close. A cutoff chosen from the full sample would quietly use the future. The price band keeps the fixed $2 stop between 2% and 10% of the share price. Without it, the same rule would mean very different risks for a $15 stock and a $150 stock. The earnings exclusion covers sessions t+1 through t+10 because this is the planned ten-session holding window for an entry in t+1 (holding session 1), ending at t+10 (holding session 10), so entries exclude announcements known at the decision close within that window. A rescheduled or unexpected announcement remains possible; the calendar is not insurance. The checks run in a declared order, and the first failure is recorded. That keeps the record of skipped candidates honest. A halt can extend the actual elapsed holding beyond that planned window; the calendar filter cannot exclude every announcement during an overdue holding.
-
-**Atlas-20 v1.0 rule sheet, part 1: data, universe, and eligibility**
-
-| Rule | Atlas-20 v1.0 setting | Kind |
-| --- | --- | --- |
-| Scope | Long-only fictional U.S.-listed common stocks in one U.S.-dollar account; no leverage, short sales, or derivatives. | Scope choice |
-| Universe | Point-in-time member list as of each decision date. Scenario members throughout: Alder, Birch, Cedar, Dogwood, Elm, Fir, Ginkgo, Hazel. | Convention |
-| Data and clock | Completed regular-session daily OHLC and share volume; split adjustment uses only actions effective by the decision date. Decisions are computed after the close; orders are submitted before the next open. | Convention |
-| Minimum history | 21 consecutive valid bars: sessions t−20 through t. | Teaching setting |
-| Missing data | Any absent or invalid bar in t−20…t: no signal is evaluated that day. No interpolation or carried-forward bars. | Convention |
-| Already held | A stock with an open position or a working order is not screened; v1.0 never adds to a position. | Teaching setting |
-| Signal | Close at t strictly above the highest high of sessions t−20…t−1. | Definition |
-| Price band | $20.00 ≤ decision close ≤ $100.00, so the fixed $2 stop is 2%–10% of price. | Teaching setting |
-| Liquidity | Mean of close × volume over sessions t−19…t ≥ $2,000,000 (past data only). | Teaching setting |
-| Earnings | No scheduled earnings in sessions t+1…t+10 (the planned ten-session holding window; a halt can delay exit), per the calendar snapshot at the decision close. | Teaching setting |
-| Regime filter | None in v1.0. | Scope choice |
-| Check order | Complete record → signal → price band → liquidity → earnings. The first failure is recorded. | Convention |
-
-#### Translate a signal into portfolio decisions
-
-An eligible stock signals when its completed close exceeds the highest high of the prior twenty completed sessions. When several qualify at the same close, Atlas-20 ranks them by breakout margin, the percentage by which the close clears that high. Rank the margin rounded to 0.01 percentage point, as stated in the table; ties in that rounded value are broken alphabetically. Two unequal raw margins can therefore receive the same rank value. Do not silently switch to unrounded ranking. This rule is not wise or optimized. Its only virtue is that it is written down. Without a declared order, a backtest quietly selects candidates by file order or by whichever result the researcher noticed first.
-
-At most five slots exist, and a slot is occupied by any open position, including a halted one, and by any order placed at the current close. Each order’s quantity is the smallest of three allowances computed from equity E at the decision close. The risk allowance spends at most 0.5% of E on planned price risk at $2 per share. The notional allowance keeps the position at or below 10% of E at the limit price. The cash allowance uses only cash not already reserved for an order placed earlier at the same close. Following the book’s contract, 1R is the frozen planned price risk: filled shares × $2.00, fixed at the fill. The $5 round-trip cost is shown separately. So an ordinary stop exit for a full 250-share position loses $500 of price and $505 including costs. That cost-inclusive figure is a separate, labeled quantity, not 1R.
-
-The cash test deserves a remark. Five slots at a 10% notional cap can commit only about half of equity, so cash does not bind in this unleveraged, mildly varying scenario. Large mark changes, stale valuations, or a later version can make the cash test important; the entry caps do not bound subsequent market values. It is still computed at every decision, for two reasons. Reservations must prevent the same dollars from funding two orders, and any later version with larger caps or more slots can make cash bind. One of the practice tasks shows such a variant.
-
-**Atlas-20 v1.0 rule sheet, part 2: ranking, slots, sizing, and costs**
-
-| Rule | Atlas-20 v1.0 setting | Kind |
-| --- | --- | --- |
-| Ranking value | Breakout margin = 100 × (close − prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point; larger ranks first. | Teaching setting |
-| Tie-break | Alphabetical by company name. | Convention |
-| Slots | At most 5 = open positions (halted ones included) + orders placed at this close. | Teaching setting |
-| Sizing equity E | Cash + shares × close for every holding, after the session’s exits and fills; a halted holding uses its last valid close. | Definition |
-| Limit price L | 1.01 × signal close, rounded down to the cent. | Teaching setting |
-| Risk allowance | floor(0.5% × E ÷ $2.00) shares. | Teaching setting |
-| Notional allowance | floor(10% × E ÷ L) shares. | Teaching setting |
-| Cash allowance | floor((cash − cash already reserved at this close − $2.50) ÷ L) shares. | Definition |
-| Quantity | Smallest of the three allowances; fewer than 1 share means no order. | Definition |
-| Cash reservation | Shares × L + $2.50, held from order placement until the order fills or expires. | Convention |
-| R | 1R = filled shares × $2.00, frozen at the fill. Net R = net P&L ÷ 1R. Costs are shown separately. | Book contract |
-| Costs | $2.50 per executed fill (entry, exit, or partial entry), so $5.00 per round trip. No separate spread or slippage charge beyond the fill rules. | Teaching setting |
-| Cash interest and settlement | Cash earns zero; settlement timing is ignored. | Convention |
-
-#### Exits, gaps, and time are first-class rules
-
-Entries use a day-limit buy order for the next session at 1.01 × the signal close, rounded down to the cent. Investor.gov explains that a buy limit executes only at its limit or lower and is not guaranteed to execute, and that a day order generally cancels at the end of the regular session. Atlas-20 models those facts with deliberately conservative conventions. An open at or below the limit fills at the open. A later trade strictly below the limit fills at the limit. A low exactly equal to the limit shows only that the price was touched, which does not prove that shares were available, so it is not a fill. The filled quantity is capped at 1% of the session’s share volume, and the rest of the order is canceled.
-
-Each fill receives a sell stop $2.00 below and a sell limit target $4.00 above the actual fill price, plus a time exit at the close of the tenth holding session. Investor.gov notes that a stop becomes a market order once its price is reached and can execute well away from that price. Atlas-20 therefore models an ordinary stop at the stop price, an opening gap through the stop at the open, and a bar that contains both levels as a stop. Daily data cannot show which level traded first, and assuming the favorable order would flatter the record. These are assumptions about fills, not reports of actual executions.
-
-A trading halt is a different problem. According to Investor.gov, the most common regulatory halt occurs when news is pending, and the security’s primary exchange decides whether to impose it. While a held stock has no bar, no exit can be modeled. Atlas-20 marks the stock at its last valid close, flags that mark as stale, keeps the slot occupied, and applies the gap rule to the first new bar. Cash earns nothing, settlement timing is ignored, and short sales, leverage, and derivatives are outside the scope of v1.0.
-
-The 1% volume cap is a retrospective daily-bar fill model: the total session volume is unknown at the opening trade. It cannot be used as an instruction for how many shares to execute at that open. A live participation algorithm would need intraday volume and quote data, which this scenario does not provide. There are no splits, dividends, membership changes or calendar revisions during these eight sessions; a deployment specification would need separate policies for them. The supplied rolling-high, liquidity and completeness fields are sufficient statistics for this exercise, not a full historical feed.
-
-If a halt spans holding-session-10 close, record an overdue time exit and retain the slot and stale mark. At the first subsequent tradable opening, opening stop/target gap rules have priority; otherwise exit at that open for the overdue deadline, before considering that bar’s intraday range. For entry E1 and a halt at E10–E12, a reopening at E13 executes this overdue rule. E10 remains the scheduled date; E13 is the later modeled execution date.
-
-**Atlas-20 v1.0 rule sheet, part 3: orders, fills, exits, and review**
-
-| Rule | Atlas-20 v1.0 setting | Kind |
-| --- | --- | --- |
-| Entry order | Buy day-limit order at L for the next session only; any unfilled remainder cancels at that session’s close. | Convention |
-| Entry fill | Open ≤ L: fill at the open. Otherwise, low strictly below L: fill at L. A low exactly at L is a touch, not a fill. | Convention (conservative) |
-| Partial fill | Filled shares ≤ floor(1% × entry-session volume). Keep the filled shares, cancel the rest, never top up. | Teaching setting |
-| Rejected or unfilled candidates | Not re-offered. A stock needs a new signal at a later close. | Convention |
-| Stop | Sell stop at fill − $2.00; triggered when low ≤ stop. | Teaching setting |
-| Target | Sell limit at fill + $4.00; fills only when high is strictly above the target. | Teaching setting |
-| Time exit | At the close of holding session 10 (entry session = 1; exchange sessions counted, including halted ones). | Teaching setting |
-| Exit priority (held from an earlier session) | 1. Open ≤ stop: exit at open. 2. Open ≥ target: exit at open. 3. Low ≤ stop and high > target: stop assumed first. 4. Low ≤ stop: exit at stop. 5. High > target: exit at target. 6. Holding session 10: exit at close. After opening checks 1–2, an overdue time deadline exits at the open before steps 3–5; a scheduled session-10 close uses step 6. | Convention (conservative) |
-| Entry bar | Fill at the open: steps 3–5 apply to the rest of that bar. Fill at L intraday: the stop applies if low ≤ stop; a target is not credited. | Convention (conservative) |
-| Halt or missing bar while held | No exit is possible. Mark at the last valid close, flagged stale; the position keeps its slot. The first new bar starts at step 1. | Convention |
-| Processing order | Batch accounting: held-position exits and reserved entries, then close marks and screening. Entry quantities are fixed at the previous close and fully cash-reserved; no same-session exit funds a larger order. Within-session event rows are not a timestamped tape. | Convention |
-| Review triggers | Operational: a held stock without a bar; any nonzero reconciliation difference; an actual fill differing from the modeled fill. Performance: drawdown above 8% of the equity peak; observed costs differing from modeled costs by more than 50% over 20 fills. A trigger starts a review; any rule change becomes a new version. | Teaching setting |
-| Overdue time exit after halt | First resumed open: opening stop/target gap first; otherwise overdue time exit at the open, before intraday tests. Keep stale marks and occupied slot until then. | Convention |
-
-![Atlas-20 daily processing order](../assets/figures/system-design-2.svg)
-
-*Fixed daily-bar accounting sequence for the fictional scenario. Orders and cash reservations are frozen at the prior close. Batch processing of a close exit before an opening entry is an accounting order only; no later proceeds fund that entry or increase its quantity.*
-
-#### The supplied scenario
-
-The account begins at the session-0 close with $100,000.00 of equity: $81,330.00 in cash and two positions entered before the scenario. Hazel’s tenth holding session is session 2; Fir’s would be session 7. The screen log is supplied data. It lists every stock that was not held and whose close exceeded its prior-20 high at a decision close, along with the pre-computed liquidity, the calendar, and the completeness facts. Every unlisted non-held stock and decision-close pair did not signal. Held stocks are excluded before screening; their omission says nothing about whether their close exceeded a rolling high. The two price grids supply each bar the rules need. A dash means the bar is not needed because the stock was neither held nor being bought. “No bar” means the record does not exist.
-
-Before reading on, apply the rule sheet to decision close 0 yourself. List the six signals, decide which are eligible, rank them, and size whatever fits in the free slots.
-
-**Opening state at the session-0 close**
-
-| Holding | Shares | Entry session | Fill ($) | Stop / target ($) | 1R ($) | Session-0 close ($) | Value ($) |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Hazel | 200 | −7 (holding session 10 = session 2) | 47.00 | 45.00 / 51.00 | 400.00 | 48.60 | 9,720.00 |
-| Fir | 250 | −2 (holding session 10 = session 7) | 36.00 | 34.00 / 40.00 | 500.00 | 35.80 | 8,950.00 |
-| Cash | — | — | — | — | — | — | 81,330.00 |
-| Equity | — | — | — | — | — | — | 100,000.00 |
-
-**Screen log: every non-held stock whose close exceeded its prior-20 high**
-
-| Decision close | Stock | Close ($) | Prior-20 high ($) | 20-session mean dollar volume ($ million) | Next scheduled earnings (session) | 21-bar record |
-| --- | --- | --- | --- | --- | --- | --- |
-| D0 | Alder | 31.96 | 31.00 | 9.8 | 31 | complete |
-| D0 | Birch | 71.75 | 70.00 | 2.3 | 40 | complete |
-| D0 | Cedar | 40.80 | 40.00 | 6.4 | 25 | complete |
-| D0 | Dogwood | 61.20 | 60.00 | 14.1 | 35 | complete |
-| D0 | Elm | 55.40 | 54.00 | 11.7 | 6 | complete |
-| D0 | Ginkgo | 24.60 | 24.10 | 1.6 | 44 | complete |
-| D1 | Dogwood | 62.40 | 61.50 | 14.3 | 35 | complete |
-| D2 | Cedar | 42.30 | 41.95 | 6.6 | 25 | complete |
-| D3 | Hazel | 51.80 | 50.90 | 5.2 | 38 | complete |
-| D5 | Ginkgo | 25.40 | 25.00 | not computed | 44 | session-3 bar missing |
-| D6 | Elm | 58.90 | 56.30 | 13.9 | 68 | complete |
-
-**Supplied bars, part 1 (O/H/L/C in $; volume in shares where an entry needs it)**
-
-| Session | Alder | Birch | Cedar | Dogwood |
-| --- | --- | --- | --- | --- |
-| 0 | 31.10/32.05/31.00/31.96 | 70.40/71.90/70.10/71.75 | 40.10/41.60/40.00/40.80 | 60.30/61.50/60.10/61.20 |
-| 1 | 32.10/32.60/31.70/32.45; vol 410,000 | 72.20/73.10/71.60/72.80; vol 11,800 | 41.60/41.95/41.20/41.50; vol 240,000 | 61.40/62.60/61.20/62.40 |
-| 2 | 32.50/33.40/32.20/33.20 | 72.90/73.60/72.10/73.30 | 41.70/42.40/41.40/42.30 | 62.80/63.30/62.10/62.90; vol 520,000 |
-| 3 | 33.30/34.10/33.00/33.90 | 73.20/74.00/72.60/73.10 | 43.00/43.40/42.50/43.10; vol 260,000 | 62.70/63.20/61.90/62.20 |
-| 4 | 33.80/34.70/33.50/34.40 | 73.00/73.50/72.20/72.90 | 43.20/43.90/42.80/43.60 | 62.30/63.80/62.00/63.50 |
-| 5 | 34.50/35.60/34.30/35.40 | 72.90/76.60/70.00/71.20 | 43.50/44.20/43.10/43.30 | 63.40/64.10/62.60/62.90 |
-| 6 | 35.50/36.40/35.20/36.00 | — | 43.40/44.00/42.70/43.80 | 62.80/63.40/61.70/62.10 |
-| 7 | — | — | 43.90/44.60/43.50/44.30 | 62.20/63.60/61.90/63.30 |
-
-**Supplied bars, part 2 (— = not needed; no bar = record absent)**
-
-| Session | Elm | Fir | Ginkgo | Hazel |
-| --- | --- | --- | --- | --- |
-| 0 | 54.20/55.60/54.00/55.40 | 35.90/36.20/35.40/35.80 | 24.00/24.70/23.90/24.60 | 48.20/48.90/47.90/48.60 |
-| 1 | — | 35.70/35.95/34.60/34.90 | — | 48.70/49.40/48.30/49.10 |
-| 2 | — | 34.80/35.30/34.40/35.10 | — | 49.20/49.80/48.90/49.30 |
-| 3 | — | no bar | no bar | 49.60/51.95/49.50/51.80 |
-| 4 | — | 33.10/33.60/32.40/33.20 | — | — |
-| 5 | — | — | 25.00/25.50/24.90/25.40 | — |
-| 6 | 57.00/59.20/56.80/58.90 | — | — | — |
-| 7 | 59.10/59.90/58.70/59.60; vol 300,000 | — | — | — |
-
-#### Decision close 0: four eligible candidates, three slots
-
-Six stocks signal. Elm is excluded because its scheduled earnings fall in session 6, inside the window from session 1 to session 10. Ginkgo is excluded because its mean dollar volume of $1.6 million is below the $2.0 million threshold. Both would have looked attractive on a chart, and both stay in the opportunity record as ineligible. The remaining four rank as Alder at 3.10%, Birch at 2.50%, and then Cedar and Dogwood tied at exactly 2.00%. Cedar wins the tie alphabetically. Hazel and Fir occupy two of the five slots, so only three are free, and Dogwood is recorded as “eligible, no free slot.”
-
-At E = $100,000.00, the risk allowance is floor(500 ÷ 2) = 250 shares for every candidate. Alder’s limit is $32.27, so its notional allowance is floor(10,000 ÷ 32.27) = 309, and risk binds at 250 shares. Birch’s limit is $72.46, so notional binds at 138 shares, which is $9,999.48 at the limit. Cedar’s notional allowance is 242 shares at $41.20. The cash allowances, computed in rank order after earlier reservations, are far larger. The three reservations total $28,044.88 and leave $53,285.12 available. The same price-risk rule produces a full-risk Alder order and two smaller orders because the notional cap binds for the higher-priced stocks.
-
-**Decision close 0: screening, ranking, and sizing (E = $100,000.00; 3 free slots)**
-
-| Candidate | Margin (%) | Eligibility | Rank | Limit L ($) | Risk / notional / cash allowance (shares) | Order (shares) | Reserved ($) |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Alder | 3.10 | Yes | 1 | 32.27 | 250 / 309 / 2,520 | 250 (risk binds) | 8,070.00 |
-| Birch | 2.50 | Yes | 2 | 72.46 | 250 / 138 / 1,011 | 138 (notional binds) | 10,001.98 |
-| Cedar | 2.00 | Yes | 3 | 41.20 | 250 / 242 / 1,535 | 242 (notional binds) | 9,972.90 |
-| Dogwood | 2.00 | Yes | 4 | 61.81 | 250 / 161 / 862 | 0: no free slot | — |
-| Elm | 2.59 | No: earnings in session 6 | — | — | — | — | — |
-| Ginkgo | 2.07 | No: $1.6M < $2.0M | — | — | — | — | — |
-| Total | — | — | — | — | — | 3 orders | 28,044.88 |
-
-#### Sessions 1–3: fills, a nonfill, a time exit, and a halt
-
-Session 1 begins with the held positions. Hazel’s range stays between its $45 stop and $51 target. Fir’s low of $34.60 stays above its $34.00 stop. Next come the entries. Alder opens at $32.10, below its $32.27 limit, so all 250 shares fill at the open. Its stop is $30.10, its target is $36.10, and 1R is $500. Birch opens at $72.20, within its limit, but only 11,800 shares trade, so the 1% cap allows 118 of the 138 shares ordered. The remainder cancels, and Birch’s 1R is 118 × $2 = $236, not the $276 planned at the order. Cedar opens at $41.60, above its $41.20 limit, and its low is exactly $41.20. That is a touch, so there is no fill, and the $9,972.90 reservation is released. Cash falls from $81,330.00 by $8,027.50 and $8,522.10 to $64,780.40, and equity at the close is $100,028.30.
-
-Cedar’s unused slot does not go back to Dogwood, because candidates are offered only at their own signal close. Dogwood earns a new chance by signaling again at decision close 1: its $62.40 close exceeds the new prior-20 high of $61.50. The 158-share order reflects the notional allowance, floor(10,002.83 ÷ 63.02). In session 2, Dogwood opens at $62.80, below its limit, and fills there. Hazel reaches holding session 10 without touching either level and exits at the $49.30 close for +$455 net, or +1.14R on its $400 denominator. At decision close 2, Cedar signals again at $42.30, above the $41.95 high it set in session 1, and receives a 234-share order at $42.72.
-
-In session 3, Fir has no bar: trading is halted. Fir is marked at its session-2 close of $35.10 and flagged stale, and the missing bar fires an operational review trigger. Cedar opens at $43.00, above its limit, then trades down to $42.50, so the model fills it at $42.72. Because the fill happened intraday, the entry bar cannot credit a target, and the stop is not reached. At the close, five slots are in use: Fir, Alder, Birch, Dogwood, and Cedar. Hazel then signals at $51.80 and passes every filter, but the halted Fir still holds a slot, so Hazel gets no order. Equity is $100,502.82, and holdings are 45.6% of it, the highest exposure in the scenario.
-
-Pause here. The main exercise asks you to process sessions 4 and 5 from this state before you look at the complete ledger in the next section.
-
 #### Sessions 4–7 and the complete ledger
 
 Fir resumes trading in session 4 with an open of $33.10, below its $34.00 stop, so the exit occurs at the open. The loss is −$725 of price and −$730 net, or −1.46R. That is well beyond the ordinary $505 cost-inclusive modeled loss, because the gap skipped the stop price. In session 5, Birch trades from $70.00 to $76.60, a bar that contains both its $70.20 stop and its $76.20 target. The conservative priority records a stop: −$241 net, or −1.02R. A reader who assumed the target came first would report +$467, or +1.98R. A single unverifiable assumption about the order of trades moves this result by three R. At decision close 5, Ginkgo’s close is above its prior-20 high, but its session-3 bar is missing from the record, so nothing is evaluated.
@@ -5343,7 +5343,7 @@ Every row of the ledger satisfies cash + holdings = equity. Equity rises from $1
 
 #### What the ledger can and cannot tell you
 
-The +0.74% change over seven sessions is evidence of nothing about Atlas-20’s merit. It comes from four closed trades and three open ones, invented to exercise the rules. What the ledger does show is structural. Exposure peaked at 45.6% in this supplied path. Entry caps constrain orders at their limits; subsequent mark changes can move holdings above those percentages. Slots, not cash, rationed the opportunities: Dogwood at decision close 0 and Hazel at decision close 3 were eligible and turned away. The conventions also matter. The no-fill on a touch, the participation cap, and the stop-first rule each made the record less favorable than a looser reading would have.
+The +0.74% change over seven sessions is evidence of nothing about Atlas-20’s merit. It comes from four closed trades and three open ones, invented to exercise the rules. What the ledger does show is structural. Exposure peaked at 45.6% in this supplied path. Entry caps constrain orders at their limits; subsequent mark changes can move holdings above those percentages. Slots, not cash, rationed the opportunities: Dogwood at decision close 0 and Hazel at decision close 3 were eligible and turned away. The conventions also matter, though not in one direction. Stop-first turned Birch’s ambiguous bar into −$241 instead of +$467. The participation cap shrank that same losing trade from 138 to 118 shares, which reduced its loss by $40. The touch rule kept Cedar out at $41.20, which changed which candidates later received slots; the supplied bars cannot price that alternative path. Conservative here means not assuming an unproven favorable fill, not always lowering the result.
 
 The ledger also keeps the decisions that never became trades. Elm and Ginkgo were ineligible, Cedar did not fill, Dogwood and Hazel found no free slot, and Ginkgo’s record was incomplete. Testing, discussed in the earlier evidence chapter, needs exactly this full opportunity set. A researcher who keeps only the trades cannot ask whether the ranking rule, the slot limit, or the earnings window is doing useful work. Answering those questions takes many more opportunities than this scenario provides, held-out data, and realistic costs. The case studies in the last chapter return to such records.
 
@@ -5497,11 +5497,11 @@ One distinction organizes everything that follows. A framework offers a descript
 
 #### Dow theory: each average against its own reference high
 
-Dow theory grew out of Charles Dow’s editorials and the work of later interpreters. In the CMT Association’s summary, the two averages must confirm each other: an advance is signaled when both rise above their respective highs of previous upward secondary reactions. Only closing prices count. Confirmation does not have to arrive on the same day or even in the same month, and a nonconfirmation, where one average exceeds its prior extreme while the other does not, is treated as a warning to stay alert, not as a signal in its own right. Historically the averages were industrial and railroad indexes, chosen because they represented related parts of economic activity.
+Dow theory grew out of Charles Dow’s editorials and the work of later interpreters. In the CMT Association’s summary, the two averages must confirm each other: a primary uptrend is signaled when both rise above their respective highs of previous upward secondary reactions. Only closing prices count. Confirmation does not have to arrive on the same day or even in the same month, and a nonconfirmation, where one average exceeds its prior extreme while the other does not, is treated as a warning to stay alert, not as a signal in its own right. Historically the averages were industrial and railroad indexes, chosen because they represented related parts of economic activity.
 
-The figure follows two fictional averages, A and B, both indexed to 100 at step 0. At step 3, A closes at 110 and B at 106. Both then decline to step 5, A to 103 and B to 100. For this exercise those step-3 closes are given as the reference highs. Deciding whether a decline qualifies as a “secondary reaction” needs further rules, which this chapter does not teach. Freeze the teaching rule before reading on: a close strictly above the reference counts, and equality does not; confirmation is recorded at the first completed close at which both averages are above their own references at the same time.
+The figure follows two fictional averages, A and B, both indexed to 100 at step 0. At step 3, A closes at 110 and B at 106. Both then decline to step 5, A to 103 and B to 100. For this exercise, treat the rise to step 3 as the previous upward secondary reaction; its step-3 closes are given as the reference highs. Deciding whether a move qualifies as a secondary reaction, and which primary trend it interrupts, needs further rules, which this chapter does not teach. Freeze the teaching rule before reading on: a close strictly above the reference counts, and equality does not; confirmation is recorded at the first completed close at which both averages are above their own references at the same time.
 
-Now walk forward one close at a time. At step 7, A closes at 109 and B at 103; neither has crossed. At step 8, A closes at 112, above 110, while B closes at 104, below 106. That close establishes a nonconfirmation, and nothing more. Through steps 9 and 10, A stays above its reference while B reaches only 103 and 105. At step 11, B closes at 107 while A closes at 113. Both are now above their own references, so confirmation is recorded at the step-11 close, three observations after A’s first crossing and with A two points higher.
+Now walk forward one close at a time. At step 7, A closes at 109 and B at 103; neither has crossed. At step 8, A closes at 112, above 110, while B closes at 104, below 106. That close establishes a nonconfirmation, and nothing more. Through steps 9 and 10, A stays above its reference while B reaches only 103 and 105. At step 11, B closes at 107 while A closes at 113. Both are now above their own references, so confirmation is recorded at the step-11 close, three observations after A’s first crossing, with A at 113, one point above its step-8 close.
 
 Two tempting shortcuts give the wrong answer. At step 8, A is up 12% from the start and B is up 4%, so both are up, but neither gain decides confirmation; only the reference high does. If B’s reference had been 103 instead of 106, the same 104 close would already be above it. And an intraday high above 106 would not count, because the convention uses closes. The test also leaves several decisions open: which averages to use, whether the second crossing may come weeks later, as the source allows, and what action, if any, follows. The empirical claim, that confirmed moves are followed by better outcomes, can only be judged by applying one frozen version of the rule across many episodes, nonconfirmations included.
 
@@ -5523,13 +5523,24 @@ Two tempting shortcuts give the wrong answer. At step 8, A is up 12% from the st
 
 Wyckoff analysis organizes price and volume into trading ranges and a repeating cycle of accumulation, markup, distribution, and markdown. Wyckoff Analytics presents three laws: supply and demand, cause and effect, and effort versus result. It describes a spring as a move that takes price below the low of the trading range and then reverses to close within it, and it notes that springs are not required: some accumulation ranges do not have one. The “Composite Man” is a teaching device: the analyst studies the market as if one operator were behind its movements. It helps generate questions about who might be buying or selling. It is not an observation of an actual person.
 
-Here is the fictional range. Over sessions 1 to 16, the reaction lows are $30.00, $30.20, and $30.40, and the reaction highs are $34.00, $33.80, and $33.60. The figure shades a support zone from $30.00 to $30.40 and a resistance zone from $33.60 to $34.00. A zone is a good way to show where reactions occurred, but a rule needs a single number, so after session 16 support is frozen at the lowest low, $30.00. The spring rule is frozen at the same time. A breach is a completed session whose low is at least 1% below support, that is, $29.70 or lower. A breach becomes a spring candidate if a completed close strictly above $30.00 occurs within the three sessions after the breach session. It becomes a breakdown if none of those three closes is above $30.00. A low between $29.70 and $30.00 is a test of support, not a breach. The 1% and three-session settings are this chapter’s own research choices, not canonical Wyckoff values.
+Here is the fictional range. Over sessions 1 to 16, the reaction lows are $30.00, $30.20, and $30.40 (sessions 4, 9, and 14), and the reaction highs are $34.00, $33.80, and $33.60 (sessions 2, 7, and 12). The first table below lists them beside the closes that the figure plots; a close line alone cannot show them. The figure shades a support zone from $30.00 to $30.40 and a resistance zone from $33.60 to $34.00. A zone is a good way to show where reactions occurred, but a rule needs a single number, so after session 16 support is frozen at the lowest low, $30.00. The spring rule is frozen at the same time. A breach is a completed session whose low is at least 1% below support, that is, $29.70 or lower. A breach becomes a spring candidate at the first completed close strictly above $30.00, counting from the breach session’s own close through the three sessions after it. It becomes a breakdown if none of those four closes is above $30.00. While that window is open, further lows at or below $29.70 belong to the same breach event and do not open a new window; a new event can begin only after the current one is classified. A low between $29.70 and $30.00 is an undercut smaller than this rule’s breach threshold and is not classified. The 1% and three-session settings are this chapter’s own research choices, not canonical Wyckoff values.
 
 Session 17 opens at $30.50, trades as high as $30.60 and as low as $29.50, and closes at $29.80. The breach is (30.00 − 29.50) ÷ 30.00 = 1.67%, so it qualifies. The close of $29.80 is still below support, which means the price has not yet reversed to close inside the range. Our rule therefore has not classified a recovery. At this cutoff the only correct record is “breach; window open.” Calling it a spring, or a breakdown, would be using bars that do not yet exist.
 
-Two continuations share that session-17 record. In the spring branch, session 18 trades between $29.70 and $30.80 and closes at $30.60. That is a close above $30.00 in the first session of the window, so a spring candidate is recorded at the session-18 close; the later closes of $31.00 and $31.40 do not change the classification. In the breakdown branch, sessions 18 to 20 close at $29.40, $29.10, and $28.60. None is above $30.00, so the breakdown is recorded only at the session-20 close, when the window ends. Before that close it was undecided, not “probably a breakdown.”
+Two continuations share that session-17 record. In the spring branch, session 18 trades between $29.70 and $30.80 and closes at $30.60; its $29.70 low belongs to the open session-17 event rather than starting a new one. That is a close above $30.00 in the first session of the window, so a spring candidate is recorded at the session-18 close; the later closes of $31.00 and $31.40 do not change the classification. In the breakdown branch, sessions 18 to 20 close at $29.40, $29.10, and $28.60. None is above $30.00, so the breakdown is recorded only at the session-20 close, when the window ends. Before that close it was undecided, not “probably a breakdown.”
 
 Notice what the rule has and has not established. The spring branch is a rule event. It says nothing about accumulation by hidden buyers. Wyckoff Analytics interprets a low-volume spring as a sign of readiness to rise; adding a volume condition, such as breach-session volume below its 20-session average, would need its own threshold and would change which breaches count. The causal story remains a hypothesis. The empirical claim requires counting every breach in a defined universe, with both branches kept in the record.
+
+**Reaction extremes behind the support and resistance zones (sessions 1–16)**
+
+| Session | Close ($) | Reaction low ($) | Reaction high ($) |
+| --- | --- | --- | --- |
+| 2 | 33.50 | — | 34.00 |
+| 4 | 30.60 | 30.00 | — |
+| 7 | 33.40 | — | 33.80 |
+| 9 | 30.70 | 30.20 | — |
+| 12 | 33.20 | — | 33.60 |
+| 14 | 30.90 | 30.40 | — |
 
 **The frozen spring rule applied to both branches**
 
@@ -5542,15 +5553,15 @@ Notice what the rule has and has not established. The spring branch is a rule ev
 
 ![A trading range with a spring branch and a breakdown branch](../assets/figures/classical-frameworks-3.svg)
 
-*Fictional daily closes. Shaded zones show where the session-1–16 reaction lows ($30.00–$30.40) and highs ($33.60–$34.00) occurred. The frozen rule uses $30.00 support. Session 17 breaches it with a $29.50 low (marked; the close line alone does not show lows). The spring branch closes back above $30.00 at session 18; the breakdown branch never does within sessions 18–20.*
+*Fictional daily closes. Shaded zones show where the session-1–16 reaction lows ($30.00–$30.40) and highs ($33.60–$34.00) occurred. The frozen rule uses $30.00 support. Session 17 breaches it with a $29.50 low (marked). The close line does not show highs or lows, so the session-1–16 reaction extremes behind the zones are listed in the chapter’s table. The spring branch closes back above $30.00 at session 18; the breakdown branch never does within sessions 18–20 and closes at $28.60 at session 20.*
 
 #### Elliott wave: an impulse must pass three rules
 
-Elliott wave analysis classifies swings into nested structures. Elliott Wave International describes an impulse as five subwaves moving in the direction of the next larger trend, and a correction as three subwaves. These patterns combine into larger patterns of the same form, at larger “degrees.” For a standard impulse, EWI states three rules: wave 2 never retraces more than 100% of wave 1; wave 3 is never the shortest of waves 1, 3, and 5; and wave 4 never ends in the price territory of wave 1. EWI distinguishes these rules, which it says govern every impulse, from guidelines such as alternation, extension, and truncation, which describe typical but not inevitable features. Diagonals follow different rules. Switching to a diagonal to rescue a count that has broken a rule is a change of classification, and it should be recorded as one.
+Elliott wave analysis classifies swings into nested structures. Elliott Wave International describes an impulse as five subwaves moving in the direction of the next larger trend, and a correction as three subwaves. These patterns combine into larger patterns of the same form, at larger “degrees.” For a standard impulse, EWI states three rules: wave 2 never retraces more than 100% of wave 1; wave 3 is never the shortest of waves 1, 3, and 5; and wave 4 never ends in the price territory of wave 1. EWI distinguishes these rules, which it says govern every impulse, from guidelines such as alternation, extension, and truncation, which describe typical but not inevitable features. Diagonals are a separate pattern family with their own rules, which this chapter does not review. Switching to a diagonal to rescue a count that has broken a rule is a change of classification, and it should be recorded as one.
 
 The schematic in the figure has swing endpoints at $40 (the start, step 0), $44, $42, $50, $47, and $53, followed by $49, $51, and $46. Check the labeled count one rule at a time. Rule 1: wave 2 ends at $42, above the $40 start; it retraces $2 of a $4 advance, or 50%. Rule 2: waves 1, 3, and 5 measure $4, $8, and $6, so wave 3 is the longest, not the shortest. Rule 3: wave 4 ends at $47, above wave 1’s $44 high. The count passes all three rules, and the final $53 → $49 → $51 → $46 sequence is labeled as an A–B–C correction.
 
-Two cautions apply even to this tidy picture. First, the two EWI pages word rule 3 slightly differently: one says wave 4 does not “end in” wave-1 territory, the other that it does not “enter” or overlap it. For this stocks-focused exercise we use the stricter no-overlap rule: no point of wave 4 may enter wave-1 territory. The endpoint is its lowest point in this schematic. A real intraday overlap would invalidate this standard-impulse classification even if the close later recovered; the endpoint-only paraphrase is insufficient. Second, the intermediate points are straight-line fillers, not lower-degree waves. A full analysis would also require wave 3 itself to subdivide into five smaller waves, and the schematic does not attempt that.
+Two cautions apply even to this tidy picture. First, the two EWI pages word rule 3 slightly differently: one says wave 4 does not “end in” wave-1 territory, the other that it does not “enter” or overlap it. EWI’s Impulse entry states that the no-overlap form holds for all non-leveraged cash markets, which include the stocks in this book, so this exercise uses it: no point of wave 4 may enter wave-1 territory. The endpoint is its lowest point in this schematic. A real intraday overlap would invalidate this standard-impulse classification even if the close later recovered; the endpoint-only paraphrase is insufficient. Second, the intermediate points are straight-line fillers, not lower-degree waves. A full analysis would also require the impulse to subdivide 5-3-5-3-5, with waves 1, 3, and 5 themselves motive waves, and the schematic does not attempt that.
 
 ![An idealized wave template](../assets/figures/classical-frameworks.svg)
 
@@ -5560,13 +5571,13 @@ Two cautions apply even to this tidy picture. First, the two EWI pages word rule
 
 EWI states that two or more valid wave interpretations usually exist at any time, and that analysts rank them as “preferred” and “alternate” according to how well each fits the guidelines. The same nine swing points show why. Count B treats the rise from $42 to $53 as one extended wave 3, with $50 and $47 as internal swings. It then labels $49 as wave 4 and $51 as wave 5. Its lengths are $4, $11, and $2, so wave 3 is not the shortest, and wave 4 ends at $49, above $44. Count B passes these three top-level comparisons; subdivisions are not supplied, so this is a candidate count, not a validated impulse. Its fifth wave ends below the end of wave 3, a “truncation,” which EWI treats as a guideline-level feature rather than a rule violation. Count C starts at $42 and labels $50, $47, $53, $49, and $51 as waves 1 through 5. Its wave 4 ends at $49, inside wave 1’s territory below $50, so it fails rule 3.
 
-The top-level checks remove count C, but they cannot choose between candidates A and B. Passing necessary checks is not sufficient to validate either complete wave structure. Those two counts imply different expectations at the same moment. At step 12, with price at $49, count A says wave A of a correction has just finished. Count B says wave 4 has just finished and a fifth advance should follow. Ranking them as preferred and alternate is a judgment about guidelines, and it is exactly the judgment a test must capture. Labels also arrive late. At step 10 no reader could know that $53 was the end of an impulse rather than part of a longer advance. An endpoint label remains provisional until a declared reversal criterion recognizes it; hindsight endpoints cannot be treated as known in real time.
+The top-level checks remove count C, but they cannot choose between candidates A and B. Passing necessary checks is not sufficient to validate either complete wave structure. Those two counts imply different provisional claims at the same moment. At step 12, with price at $49 and no later bar, count A treats the decline from $53 as a possible wave A of a correction and expects a wave-B rally followed by a wave-C decline. Count B treats it as a possible wave 4 and expects a fifth advance. Both expect the next swing to be up, so the next bar cannot separate them, and neither can yet know that $49 is a completed low. Ranking them as preferred and alternate is a judgment about guidelines, and it is exactly the judgment a test must capture. Labels also arrive late. At step 10 no reader could know that $53 was the end of an impulse rather than part of a longer advance. An endpoint label remains provisional until a declared reversal criterion recognizes it; hindsight endpoints cannot be treated as known in real time.
 
-Good practice is to freeze the preferred count, the alternate, and the price that would invalidate each, at every cutoff. If an analyst re-labels after each surprise and keeps only the final count, the method will look continuously right, because the record contains only the interpretation that survived. Three outcomes can then be measured separately: whether the counts obeyed the rules, whether the frozen forecasts were directionally right over a stated horizon, and whether any action based on them earned money after costs. They are different questions.
+Good practice is to freeze the preferred count, the alternate, and the price that would invalidate each, at every cutoff. At step 12, count B would be invalidated by any trade at or below $44, where wave 4 would enter wave-1 territory. The three impulse rules give count A no invalidation level, because a correction is not an impulse, and this chapter does not teach the corrective-pattern rules that would supply one; the analyst must declare it. If an analyst re-labels after each surprise and keeps only the final count, the method will look continuously right, because the record contains only the interpretation that survived. Three outcomes can then be measured separately: whether the counts obeyed the rules, whether the frozen forecasts were directionally right over a stated horizon, and whether any action based on them earned money after costs. They are different questions.
 
 **Rule check for three counts of the same swings**
 
-| Count | Endpoints of waves 0–5 ($) | Wave 1 / 3 / 5 lengths ($) | Rule 1: wave 2 end at or above wave 1 start | Rule 2: wave 3 not shortest | Rule 3: wave 4 end above wave 1 high | Result |
+| Count | Endpoints of waves 0–5 ($) | Wave 1 / 3 / 5 lengths ($) | Rule 1: wave 2 end at or above wave 1 start | Rule 2: wave 3 not shortest | Rule 3: wave 4 low above wave 1 high (no overlap) | Result |
 | --- | --- | --- | --- | --- | --- | --- |
 | A (figure labels) | 40, 44, 42, 50, 47, 53 | 4 / 8 / 6 | 42 ≥ 40: pass | pass | 47 > 44: pass | Top-level compatible; subdivisions unchecked |
 | B (extended wave 3) | 40, 44, 42, 53, 49, 51 | 4 / 11 / 2 | 42 ≥ 40: pass | pass | 49 > 44: pass | Top-level compatible; proposed truncated fifth unchecked |
@@ -5574,7 +5585,7 @@ Good practice is to freeze the preferred count, the alternate, and the price tha
 
 #### From vocabulary to an honest test
 
-An empirical claim can be tested only one precise proposition at a time, and the proposition has to be fixed before the outcomes are known. The spring rule above is a ready-made example. Apply it to every breach in a defined universe and period, keep both branches, and declare an action in advance: perhaps a next-open entry after the reentry close, a stop below the breach low, a time exit, and modeled costs, the same structure as the breakout plan in chapter 9 and the casebook in the next chapter. Then compare the outcomes with a stated alternative, such as breaches that did not reenter or all sessions in the same stocks. A favorable result on that one specification would support that one specification, not Wyckoff analysis as a whole.
+An empirical claim can be tested only one precise proposition at a time, and the proposition has to be fixed before the outcomes are known. The spring rule above is a ready-made example. Apply it to every breach in a defined universe and period, keep both branches, and declare an action in advance: perhaps a next-open entry after the reentry close, a stop below the breach low, a time exit, and modeled costs, the same structure as the breakout plan in Chapter 9 and the casebook in the next chapter. Then compare the outcomes with a stated alternative, such as breaches that did not reenter or all sessions in the same stocks. A favorable result on that one specification would support that one specification, not Wyckoff analysis as a whole.
 
 Where discretion is essential, as in choosing between Elliott counts, test the discretion itself. Ask two readers to label the same charts with the future bars hidden, timestamp their preferred and alternate counts, and keep their disagreements. Measure agreement first, then forecast accuracy, then net results. Lo, Mamaysky, and Wang took another route: they replaced visual judgment with an algorithm that detects chart patterns, then compared returns after detected patterns with ordinary returns in U.S. stocks. Their findings concern their own pattern definitions. They are not tests of Dow confirmation, springs, or wave counts.
 
@@ -5591,17 +5602,17 @@ Using the Wyckoff table, state the record for each branch at the session-17, 18,
 <details>
 <summary>Reveal the worked solution</summary>
 
-Session-17 close: breach size = (30.00 − 29.50) ÷ 30.00 = 0.0167, or 1.67%, which is at least 1% (equivalently, 29.50 ≤ 29.70). A breach is recorded. The close of 29.80 is not above 30.00, so the three-session window covers sessions 18–20 and both branches are undecided. They are identical up to this point.
+Session-17 close: breach size = (30.00 − 29.50) ÷ 30.00 = 0.0167, or 1.67%, which is at least 1% (equivalently, 29.50 ≤ 29.70). A breach is recorded. The breach session’s own close of 29.80 is not above 30.00, so the window stays open through sessions 18–20 and both branches are undecided. They are identical up to this point.
 
 Spring branch: the session-18 close of 30.60 is above 30.00 and inside the window, so a spring candidate is recorded at that close. The session-19 and session-20 closes (31.00, 31.40) do not change the record. Breakdown branch: closes of 29.40, 29.10, and 28.60 are all at or below 30.00. The record stays undecided through session 19 and becomes a breakdown at the session-20 close, when the window ends.
 
-Alternative same-session rule: session 17 closes at 29.80, below support, so neither branch has a spring under that definition. The spring branch’s session-18 recovery would have to be recorded under some other label, such as “breach followed by a later recovery.” The definitions classify the same bars differently, so the definition must be frozen before outcomes are counted. Neither version establishes accumulation or predicts the next move.
+Alternative same-session rule: session 17 closes at 29.80, below support, so neither branch has a spring under that definition. The spring branch’s session-18 recovery would have to be recorded under some other label, such as “breach followed by a later recovery.” Every same-session spring would also be a spring under the frozen rule, so the alternative is strictly stricter; the two definitions still classify these bars differently, so the definition must be frozen before outcomes are counted. Neither version establishes accumulation or predicts the next move.
 
 </details>
 
 #### guided practice: Two versions of confirmation
 
-Fictional averages C and D have reference highs of 220 and 85. Their closes are: t0 C 218.0, D 85.0; t1 C 221.0, D 84.2; t2 C 219.5, D 85.4; t3 C 222.4, D 85.3. (a) Under this chapter’s simultaneous-close rule, when is confirmation recorded? (b) Under an alternative rule that records confirmation once each average has closed above its own reference at least once since the reaction, when is it recorded? (c) What does t0 teach?
+Fictional averages C and D have reference highs of 220 and 85. Their closes are: t0 C 218.0, D 85.0; t1 C 221.0, D 84.2; t2 C 219.5, D 85.4; t3 C 222.4, D 85.3. (a) Under this chapter’s simultaneous-close rule, when is confirmation recorded? (b) Under an alternative rule that records confirmation once each average has closed above its own reference at least once since the reference highs were set, when is it recorded? (c) What does t0 teach?
 
 <details>
 <summary>Reveal the worked solution</summary>
@@ -5623,7 +5634,24 @@ A reader labels fictional swings $20 (start), $26, $21.50, $30, $25.50, and $31 
 
 Wave lengths: wave 1 = 26 − 20 = $6; wave 3 = 30 − 21.50 = $8.50; wave 5 = 31 − 25.50 = $5.50. Rule 1: wave 2 ends at 21.50 ≥ 20, a 4.50 ÷ 6 = 75% retracement, so it passes. Rule 2: wave 3 ($8.50) is the longest, so it passes. Rule 3: wave 4 ends at 25.50, below wave 1’s $26 high, so it ends inside wave-1 territory and fails.
 
-The labels are not a valid standard impulse, so the forecast cannot rest on “wave 5 is complete.” The reader can (1) state that no valid impulse count exists here, (2) propose a different structure, such as a diagonal, whose separate rules this chapter does not teach, or (3) change the degree or starting point. Whichever they choose, they should timestamp the new label, record that the original count failed rule 3, and state the new invalidation level before the next swing appears. The overlap is a classification fact. It is not, on its own, evidence about the next direction.
+The labels are not a valid standard impulse, so the forecast cannot rest on “wave 5 is complete.” The reader can (1) state that no valid impulse count exists here, (2) propose a different structure, such as a diagonal, whose separate rules this chapter does not teach, or (3) change the degree or starting point. Whichever they choose, they should timestamp the new label, record that the original count failed rule 3, and state the new invalidation level, taken from the rules of whichever structure they choose, before the next swing appears. This chapter supplies those rules only for the standard impulse. The overlap is a classification fact. It is not, on its own, evidence about the next direction.
+
+</details>
+
+#### guided practice: Sort framework statements into layers
+
+Classify each statement as a descriptive convention, a causal story, or an empirical claim, and name the evidence that would check it. (a) “Both averages closed above their own reference highs at step 11.” (b) “The averages must confirm because industry and transport move together in a genuine expansion.” (c) “Springs in large U.S. stocks are followed by higher 20-session returns than breaches that do not reenter.” (d) “At step 12, count B labels $49 as the end of wave 4.”
+
+<details>
+<summary>Reveal the worked solution</summary>
+
+(a) Descriptive convention. Check it by reproducing the closes against the frozen simultaneous-close rule; two readers should agree.
+
+(b) Causal story. It needs evidence about economic linkages and participants, not just chart agreement; a reproducible confirmation record cannot establish why it happens.
+
+(c) Empirical claim. It needs one frozen spring rule applied to every breach in a defined universe and period, a stated comparator, a fixed horizon and costs if trades are implied, with both branches kept.
+
+(d) A descriptive label, but a provisional one. It can be checked against the three impulse rules, yet passing them does not validate the count, $49 is not yet a recognized low at step 12, and the label is not by itself a forecast. Its predictive value would be an empirical claim needing frozen, timestamped counts across many charts.
 
 </details>
 
@@ -5633,7 +5661,7 @@ Average A closes at 112 and average B at 104; both started at 100. Their referen
 
 1. Unconfirmed: A is above its own reference high, but B’s close is not above 106.
 2. Confirmed: both averages are above their common starting value of 100.
-3. Confirmed, provided B traded as high as $106.50 during the session.
+3. Confirmed, provided B traded as high as 106.50 during the session.
 
 <details>
 <summary>Reveal the worked solution</summary>
@@ -5671,7 +5699,7 @@ Successful trades, failed trades, and the decision to stand aside.
 
 - Reconstruct a case from the information available at each cutoff.
 - Process successful, failed, gapped, skipped and ambiguous opportunities under frozen rules.
-- Apply the same accounting discipline to a range recovery and conflicting timeframes.
+- Apply the same accounting discipline to a range recovery and to timeframes that describe different intervals.
 - Separate documented historical observations from fictional execution.
 
 Builds on: Risk & position sizing; From chart idea to trade plan; A journal that can teach you something; Evidence before conviction; Statistics for a skeptical chart reader; Designing a complete trading system.
@@ -5766,7 +5794,7 @@ BRDG follows the failure record already completed in the plan, note and journal.
 
 #### Case two: a gap passes the protective price
 
-GAPS is a different price-scale case, with a complete smaller rule G1. At G0, the supplied close is $79.80 above a previously mapped $79.00 boundary; the calendar has no known earnings through G10. The next-opening gate accepts prices above the $77 fixed stop and at or below $80.60. At the supplied G1 open of $80, a paper report fills 30 shares. Freeze 1R = 30 × ($80 − $77) = $90. Target is $86, time exit G10 close, and the same earlier-holding exit priorities and $5 round-trip fee apply.
+GAPS is a different price-scale case, with a complete smaller rule GR1. At G0, the supplied close is $79.80 above a previously mapped $79.00 boundary; the calendar has no known earnings through G10. The next-opening gate accepts prices above the $77 fixed stop and at or below $80.60. At the supplied G1 open of $80, a paper report fills 30 shares. Freeze 1R = 30 × ($80 − $77) = $90. Target is $86, time exit G10 close, and the same earlier-holding exit priorities and $5 round-trip fee apply.
 
 The entry session has O80/H81/L79/C80.50, so neither level executes. Before G2, unexpected adverse news arrives. G2 has O70/H72/L68/C71, and the opening-gap priority exits at 70. Price loss is 30 × ($70 − $80) = −$300; net −$305; net R = −305 ÷ 90 = −3.3889. Entry debit $2,402.50 and exit credit $2,097.50 reconcile $19,695 final cash. Scheduled-event eligibility did not exclude the surprise.
 
@@ -5780,7 +5808,7 @@ The missed advance is observable, and it can motivate a ceiling-change hypothesi
 
 #### Case four: two clocks and a daily ambiguity
 
-MIXD isolates a timeframe conflict without an order. At M0, the latest two completed weekly closes are $104 and $106, up under a simple weekly close-direction description. The current daily close is $49.70 against a previously frozen $50 boundary. Rule M1 uses completed-week direction only as context and requires a daily close strictly above 50 before any next-opening order. M0 supplies no daily signal, so no trade is authorized. Calling the rising weekly context “confirmation” cannot supply the missing daily trigger.
+MIXD isolates a difference between two clocks without an order. At M0, the latest two completed weekly closes are $48.90 and $50.30, up under Chapter 17’s close-direction description. M0 is the first session of a new week, and its daily close is $49.70: down from $50.30 and below a previously frozen $50 boundary. Chapter 17 would give this down day neither the aligned nor the conflicting label, because those labels apply only to upward daily changes; the two clocks simply describe different intervals. Rule M1 uses completed-week direction only as context and requires a daily close strictly above 50 before any next-opening order. M0 supplies no daily signal, so no trade is authorized. Calling the rising weekly context “confirmation” cannot supply the missing daily trigger.
 
 AMB is a separate P1 filled-position branch. At its decision cutoff, it shares the 50-share 50.60 entry, $100 price-risk 1R, stop 48.60 and target 54.60. Its next held-position bar is O50.80/H54.80/L48.20/C51.00. Both stop and target are reached, and the open lies between them. P1 records a stop-first modeled loss of $105/1.05R. A target-first model would give +$195/+1.95R: a $300 or 3R difference caused entirely by a sequence assumption.
 
@@ -5792,9 +5820,9 @@ Two ordered routes demonstrate what daily OHLC loses: 50.80→54.80→48.20→51
 
 #### Case five: a range recovery uses the same decision discipline
 
-RIVR adds a setup beyond breakout continuation. At R0, a supplied earlier range runs from $30 to $34. Its support 30 is frozen before a breach bar O30.50/H30.60/L29.50/C29.80. At that close, the only record is “breach; recovery not yet seen.” Rule R1 requires a close strictly above 30 and no higher than 34 within the next three sessions. It is a defined range-recovery study, not proof of hidden accumulation or a complete Wyckoff analysis.
+RIVR adds a setup beyond breakout continuation. At R0, a supplied earlier range runs from $30 to $34. Its support 30 is frozen before a breach bar O30.50/H30.60/L29.50/C29.80. At that close, the only record is “breach; recovery not yet seen.” As in Chapter 27, a breach is a completed session whose low is at least 1% below support ($29.70 or lower). Rule RR1 opens one recovery window, from the breach session’s own close through the next three sessions; later lows inside that window belong to the same breach event and do not restart it. The first close in the window strictly above 30 and no higher than 34 is the recovery trigger. It is a defined range-recovery study, not proof of hidden accumulation or a complete Wyckoff analysis.
 
-At R1 the stock has O29.90/H30.80/L29.70/C30.60. The completed close meets R1’s trigger. Freeze an entry rule for R2: accept the next open only in ($29.00, $31.00], buy 50 shares at that supplied opening execution, then use a fixed $29 stop and $35 target, R11 close time exit (ten holding sessions from R2), P1’s stop-first conflict policy and $5 round-trip costs. Account and calendar are clear through R11. Quantity is fixed but price-risk varies with the actual fill; an opening price above $31.00 would instead be a skip.
+At R1 the stock has O29.90/H30.80/L29.70/C30.60. R1’s own $29.70 low belongs to the open R0 breach event rather than starting a new one, and its completed close meets RR1’s trigger. Freeze an entry rule for R2: accept the next open only in ($29.00, $31.00], buy 50 shares at that supplied opening execution, then use a fixed $29 stop and $35 target, R11 close time exit (ten holding sessions from R2), P1’s stop-first conflict policy and $5 round-trip costs. Account and calendar are clear through R11. Quantity is fixed but price-risk varies with the actual fill; an opening price above $31.00 would instead be a skip.
 
 The accepted R2 bar is O31.00/H32.20/L30.80/C32.00, and a supplied paper report fills 50 at 31.00. Price-risk 1R = 50 × (31−29) = $100; the completed R1 signal did not justify a buy at its earlier 29.90 open. The R3 bar is O32.10/H33.80/L31.80/C33.50. R4 is O34.00/H35.20/L33.70/C34.90, trading strictly above 35 without reaching 29, so the model exits at 35. Gross is $200, net $195/+1.95R, ending cash $20,195. Choosing a $31 ceiling is an arbitrary teaching setting, written at R1, not selected for this ending.
 
@@ -5812,7 +5840,7 @@ A failed alternative shares R0–R2, then gives R3 O30.70/H31.20/L28.80/C29.20. 
 
 ![RIVR: breach, recognition, execution and target](../assets/figures/case-studies-3.svg)
 
-*Fictional bars from the range-recovery table. Recognition occurs at R1 close; the supplied execution is R2 open31.00, not an earlier favorable price.*
+*Fictional bars from the range-recovery table. Recognition occurs at R1 close; the supplied execution is R2 open 31.00, not an earlier favorable price.*
 
 #### Compare records without claiming a strategy sample
 
@@ -5828,26 +5856,26 @@ The historical additions that follow have distinct evidence contracts. Sparse so
 | --- | --- | --- | --- | --- | --- | --- |
 | ATLS / P1 | 50 | 100 | 200 | 5 | 195 | +1.95R |
 | BRDG / P1 | 50 | 100 | -100 | 5 | -105 | −1.05R |
-| GAPS / G1 | 30 | 90 | -300 | 5 | -305 | −3.3889R |
+| GAPS / GR1 | 30 | 90 | -300 | 5 | -305 | −3.3889R |
 | SKIP / P1 | 0 | N/A | N/A | 0 | N/A | Opening gate rejected; cash unchanged |
 | MIXD / M1 | 0 | N/A | N/A | 0 | N/A | Daily trigger absent; context not permission |
 | AMB / P1 | 50 | 100 | -100 | 5 | -105 | −1.05R under stop-first; true sequence unresolved |
-| RIVR / R1 | 50 | 100 | 200 | 5 | 195 | +1.95R |
-| RIVR failed branch / R1 | 50 | 100 | -100 | 5 | -105 | −1.05R; alternative path, not extra sample |
+| RIVR / RR1 | 50 | 100 | 200 | 5 | 195 | +1.95R |
+| RIVR failed branch / RR1 | 50 | 100 | -100 | 5 | -105 | −1.05R; alternative path, not extra sample |
 
 #### Historical case selection and data conventions
 
 The historical cases below were selected to teach two data problems: an event-driven price move and a share-unit change. Selection is purposive, based on publicly documented episodes, rather than a random screen or an outcome-blind trading sample. Both the surge and subsequent fall in the selected GME episode are included. These cases cannot estimate a hit rate. Use the fictional cases earlier in the chapter to rehearse fully specified execution; these historical records teach what can and cannot be inferred from limited observations.
 
-Provenance: GME, January 12–28, 2021, is reconstructed from SEC staff report section 3.2, printed pp. 18–19, published October 14, 2021. Prices use the dollar/share units reported for that period, not a later split-adjusted chart. U.S. regular-session closing observations are distinguished from intraday highs; the report does not supply a complete OHLC series or exact timestamps for the highs. No dividend reinvestment or price adjustment is performed here. Two closes are derived from explicitly reported daily dollar changes, with the arithmetic disclosed in the table. Missing sessions remain missing.
+Provenance: GME, January 12–28, 2021, is reconstructed from SEC staff report section 3.2, printed pp. 18–19, published October 14, 2021. Prices use the dollar/share units reported for that period, not a later split-adjusted chart. Reported closing prices are distinguished from intraday highs; the report does not supply a complete OHLC series or exact timestamps for the highs. No dividend reinvestment or price adjustment is performed here. Two closes are derived from explicitly reported daily dollar changes, with the arithmetic disclosed in the table. Missing sessions remain missing.
 
 Reuse basis: the SEC’s Webmaster FAQ states that Government-created site content is free to access and reuse, while some content such as stock art is excluded. This book attributes a few numeric facts from the staff report and makes its own table and diagram; it copies no vendor chart, artwork or logo. The FAQ is not a license for a vendor’s underlying market-data feed. The Apple case paraphrases the issuer’s dated announcement and uses original algebra, with no copied chart or photo.
 
 #### GME event reaction: a large move still leaves execution unknown
 
-At the January 13 close, compare the two completed closing observations and volumes shown in the first panel. Price change is 31.40 − 19.95 = $11.45, or 57.39%; approximate share volume is 144/7 ≈ 20.6 times the previous session. These are observations. The words “breakout” or “short squeeze” add an interpretation whose definition and evidence must be supplied.
+At the January 13 close, compare the two completed closing observations and volumes shown in the first panel. Price change is 31.40 − 19.95 = $11.45, or 57.39%; approximate share volume is roughly 20 times the previous session (about 144 million against 7 million shares). These are observations. The words “breakout” or “short squeeze” add an interpretation whose definition and evidence must be supplied.
 
-Freeze a retrospective teaching decision at that close: require a complete preceding 20-session OHLC window, a defined event calendar, and an executable next-session quote before accepting the book’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff.
+Freeze a retrospective teaching decision at that close: require a complete preceding 20-session OHLC window, a defined event calendar, and an executable next-session quote before accepting P1’s long setup. The extracted report supplies none of those three inputs. The decision is “insufficient data; no modeled order.” January 27’s later price is hidden from this decision. A move eventually reaching a much higher price cannot repair missing information at the earlier cutoff.
 
 ![GME: sparse documented observations, with cutoffs preserved](../assets/figures/case-studies-4.svg)
 
@@ -5855,7 +5883,7 @@ Freeze a retrospective teaching decision at that close: require a complete prece
 
 #### GME surge and reversal: do not turn a high into a closing fill
 
-The second panel contains three consecutive closes. January 26 is $147.98, derived as $347.51 − $199.53; January 28 is $193.60, derived as $347.51 − $153.91. Close-to-close changes are +134.83% then −44.29%. The separately reported January 28 intraday high, $483, is not that day’s closing price.
+The second panel contains three consecutive closes. January 26 is $147.98, derived as $347.51 − $199.53; January 28 is $193.60, derived as $347.51 − $153.91. Close-to-close changes are +134.84% then −44.29%. The separately reported January 28 intraday high, $483, is not that day’s closing price.
 
 At the January 27 close, a momentum description is supported by the supplied pair of closes. An execution claim is not: the next opening price, spread, halt timing, low, and fill sequence are absent. If a learner writes “bought the January 27 close and sold the January 28 high,” mark both fills as invented until independent transaction data supports them. The subsequent fall is a contrasting observation within the same chosen episode, not a countable failure of an unspecified strategy. Review outcome: the direction description transferred; the order model did not have enough input to run.
 
@@ -5877,7 +5905,7 @@ The full ledger below contains 18 skips, six favorable paths, eleven adverse pat
 
 Provenance and reuse: Boris Marjanovic’s Huge Stock Market Dataset on Kaggle, version 3, provides the three daily files. Retrieved metadata explicitly declares CC0-1.0, and the depositor states that prices are adjusted for dividends and splits. We copied numeric observations into original tables and diagrams. The stated permission is the depositor’s; metadata does not identify an upstream provider or establish others’ rights. The local source snapshots, exact download URLs, SHA-256 hashes, extracts and frozen selection sheet are preserved in data/historical/ for independent inspection.
 
-Data conventions: source date labels and all OHLC decimals are retained, in the archive’s adjusted dollar scale. Daily aggregation is reported, but exact regular/extended-session inclusion, time zone, adjustment formula and adjustment vintage are undocumented. We therefore call them archive sessions, not certified regular-session candles. No missing date is interpolated. Volume is unused because its adjustment convention is unspecified. These are retrospectively adjusted records, not a reconstruction of prices published at each 2016 cutoff. The cutoff exercise hides future bars; it does not make the adjusted vintage contemporaneous. Before modeling real transactions, obtain documented raw quotes, corporate actions, precise sessions, spread and order information.
+Data conventions: source date labels and all OHLC decimals are retained, in the archive’s adjusted dollar scale. Daily aggregation is reported, but exact regular/extended-session inclusion, time zone and adjustment formula are undocumented, and the adjustment vintage is bounded only by the depositor’s note “last updated 11/10/2017”. We therefore call them archive sessions, not certified regular-session candles. No missing date is interpolated. Volume is unused because its adjustment convention is unspecified. These are retrospectively adjusted records, not a reconstruction of prices published at each 2016 cutoff. The cutoff exercise hides future bars; it does not make the adjusted vintage contemporaneous. Before modeling real transactions, obtain documented raw quotes, corporate actions, precise sessions, spread and order information.
 
 **Complete fixed calendar ledger (classification only; no trading performance)**
 
@@ -6030,7 +6058,7 @@ The fixed ledger has no ambiguous first resolving bar. We did not change its rul
 
 At the February 1 cutoff, C = 92.839 is below the prior-five mean 93.2486, so the original gate skips. Its analytical levels, retained only for this diagnostic, are 91.91061 and 93.76739. Pose a fresh question after February 4 closes: what can the next daily candle tell us about the order in which those two levels are visited? No position is assumed to survive earlier bars, and neither later extreme is known at that question cutoff.
 
-Reveal February 5: O/H/L/C = 93.429/93.816/90.690/91.009. The open is between the levels, high is above the upper, and low below the lower. Both high-before-low and low-before-high are compatible with these four observations. The alternative lines below are invented possible orders through the recorded extrema, not measured intraday paths or times. A target-first or stop-first assertion needs intraday observations and an execution model; a daily bar alone cannot settle it. Keep this ambiguity visible without undoing the original skip.
+Reveal February 5: O/H/L/C = 93.429/93.816/90.690/91.009. The open is between the levels, high is above the upper, and low below the lower. Both high-before-low and low-before-high are compatible with these four observations. The alternative lines below are invented possible orders through the recorded extrema, not measured intraday paths or times. A target-first or stop-first assertion needs intraday observations and an execution model; a daily bar alone cannot settle it. Keep this ambiguity visible without undoing the original skip. One further caution concerns the data themselves. Apple’s $0.52 quarterly dividend was payable to holders of record on February 8, so under the 2016 settlement cycle the shares went ex-dividend on February 4, between the February 1 levels and this bar. The archive adjusts for dividends, so the levels and the bar carry different adjustment factors, and the high clears the adjusted upper level by only about $0.05, far less than the dividend. In unadjusted prices this bar probably reached only the lower level. The lesson concerns what any daily bar cannot reveal about order; it is not a claim that published February 5 prices spanned both levels.
 
 **Skipped February window: cutoff and later diagnostic inputs (archive-adjusted USD)**
 
@@ -6050,11 +6078,11 @@ Reveal February 5: O/H/L/C = 93.429/93.816/90.690/91.009. The open is between th
 
 ![One historical candle, two possible orders](../assets/figures/case-studies-9.svg)
 
-*AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts.*
+*AAPL, February 5, 2016; archive version 3, depositor CC0. The first panel is historical OHLC; the two lower panels are hypothetical sequences using those extrema, not intraday measurements. This post-audit geometry example comes from a skipped window and is excluded from first-touch outcome counts. A dividend went ex on February 4, so the adjusted levels and bar may not span both levels in unadjusted prices.*
 
 #### Worked example: A fee convention changes the smaller gap’s net R
 
-GAPS30 shares: 1R $90, gross loss $300, costs $5, net −$305/−3.3889R. At 15 shares, 1R $45, gross loss $150, costs still $5, net −$155/−3.4444R. Gross R stays −3.3333; net R worsens slightly because the flat fee is a larger share of planned risk.
+GAPS, 30 shares: 1R $90, gross loss $300, costs $5, net −$305/−3.3889R. At 15 shares, 1R $45, gross loss $150, costs still $5, net −$155/−3.4444R. Gross R stays −3.3333; net R worsens slightly because the flat fee is a larger share of planned risk.
 
 #### Exercise
 
@@ -6076,20 +6104,22 @@ At R1 close 30.60, apply the frozen recovery plan. Compare R2 opens 31.00 and 31
 <details>
 <summary>Reveal the worked solution</summary>
 
-At 31.00 the gate passes;50 shares create $100 price risk. At 31.20 the gate rejects and no trade/fee exists. Accepted target:50 × 4 = $200 gross; net $195/+1.95R. The trigger known at R1 close cannot justify a buy at R1 open 29.90.
+At 31.00 the gate passes; 50 shares create $100 price risk. At 31.20 the gate rejects and no trade/fee exists. Accepted target: 50 × 4 = $200 gross; net $195/+1.95R. The trigger known at R1 close cannot justify a buy at R1 open 29.90.
 
 </details>
 
 #### independent practice: Audit the ambiguous account
 
-AMB touches both levels. Compare the modeled stop-first and target-first account endings and write a review that preserves unresolved facts.
+Use P1’s conventions on an unfamiliar fictional bar: a $20,000 account, 40 shares filled at $25.00, stop $24.00, target $27.00, $5 round-trip cost and stop-first resolution of an ambiguous bar. (a) The first held bar is O25.20/H27.30/L23.80/C26.10. Give 1R, the stop-first and target-first net results in dollars and R, the ending cash under each, and the size of the difference. (b) Suppose instead the bar is O23.90/H27.30/L23.80/C26.10. What does P1 record, and why is there no sequence ambiguity? (c) Write the review sentence that keeps the modeled result separate from what the bar can show.
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-Stop-first:$19,895/−1.05R. Target-first:$20,195/+1.95R. Difference $300/3R. P1 uses stop-first and records the adverse modeled result, while marking true intraday sequence unresolved. OHLC alone cannot determine the actual execution.
+(a) 1R = 40 × ($25.00 − $24.00) = $40. The open $25.20 lies between the levels, and the bar reaches both. Stop-first: 40 × (24.00 − 25.00) = −$40 gross, −$45 net, −45 ÷ 40 = −1.125R; ending cash $20,000 − $45 = $19,955. Target-first: 40 × (27.00 − 25.00) = +$80 gross, +$75 net, +1.875R; ending cash $20,075. The difference is $120, or exactly 3R, and it comes entirely from the assumed order of trades inside one bar.
 
-Full credit requires an explicit fill-model label, the original $100 denominator, both costs and the distinction between an assigned conservative result and observed sequence.
+(b) The open $23.90 is already below the $24.00 stop, so P1’s opening-gap priority exits at the open before any later high is considered: 40 × (23.90 − 25.00) = −$44 gross, −$49 net, −49 ÷ 40 = −1.225R. The 1R denominator stays $40. The later $27.30 high cannot have been reached by a position that had already exited.
+
+(c) For (a): “Modeled stop-first result −$45/−1.125R under P1’s declared convention; the bar touched both levels and the true sequence is unresolved from daily OHLC.” Full credit requires the fill-model label, the original $40 denominator, the $5 cost in both branches and no claim about the actual intraday order.
 
 </details>
 
@@ -6106,12 +6136,31 @@ Price changes between supplied closes can be calculated. The extract cannot esta
 
 #### Transfer practice: Audit a calendar-selected historical cutoff
 
-In the historical gallery, reproduce the MSFT February prior-five mean and gate from its table, then compare the February 2 open/high/low with the unrounded levels. Explain why the case is adverse in the range rather than at the open, and what is missing before claiming a historical stop execution.
+The gallery ledger lists SPY’s April 2016 cell as adverse, but the chapter never works it. Using only the archive rows below (adjusted dollars, as supplied), (a) reproduce the prior-five mean and the gate, (b) compute the unrounded upper and lower levels, (c) find the first resolving observation, and (d) explain what kind of resolution this is and what it does not establish about a historical stop execution.
+
+**SPY archive rows around the 2016-04-01 cutoff (CC0 archive, adjusted dollars)**
+
+| Date | Open | High | Low | Close |
+| --- | --- | --- | --- | --- |
+| 2016-03-24 | 195.98 | 197.10 | 195.73 | 197.06 |
+| 2016-03-28 | 197.54 | 197.78 | 196.68 | 197.18 |
+| 2016-03-29 | 196.73 | 199.14 | 196.38 | 199.01 |
+| 2016-03-30 | 200.15 | 200.72 | 199.46 | 199.88 |
+| 2016-03-31 | 199.77 | 200.26 | 199.21 | 199.39 |
+| 2016-04-01 (cutoff) | 198.26 | 200.98 | 197.90 | 200.77 |
+| 2016-04-04 | 200.68 | 200.91 | 199.75 | 200.10 |
+| 2016-04-05 | 198.58 | 200.12 | 197.81 | 198.11 |
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-The five preceding closes sum to 250.949 and average 50.1898; February 1 close 52.347 passes. Lower/upper are 51.82353/52.87047. February 2 open 51.830 is strictly between them, low 50.377 crosses lower, and high 51.917 never reaches upper. Classification is adverse at the range stage. Exact session conventions, raw adjustment/vintage, quotes, order timing, spread, size and costs are still missing; no stop fill or return is claimed.
+(a) The five closes before the cutoff are 197.06, 197.18, 199.01, 199.88 and 199.39; March 25 has no archive row and is not interpolated. Their sum is 992.52 and their mean 198.504. The cutoff close C = 200.77 is strictly higher, so the window is observed.
+
+(b) Upper = 1.01 × 200.77 = 202.7777; lower = 0.99 × 200.77 = 198.7623.
+
+(c) April 4 opens at 200.68, between the levels; its high 200.91 stays below 202.7777 and its low 199.75 stays above 198.7623, so nothing resolves. April 5 opens at 198.58, below 198.7623, so the lower side resolves first, at the open. Its later 200.12 high and 197.81 low are not consulted for classification.
+
+(d) This is the gallery’s only adverse-at-the-open cell: the level was skipped over between closes rather than crossed during the session. A stop order would have faced an opening price below its level, but the archive is retrospectively adjusted and supplies no quotes, auction size, timestamps or costs, so no stop fill, slippage or loss is claimed.
 
 </details>
 
@@ -6143,6 +6192,7 @@ Option 3: R divides by the smaller original price-risk denominator, so dollars a
 - [SEC staff (2021), Equity and Options Market Structure Conditions in Early 2021](https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf) — Dated GME observations in section 3.2; a retrospective staff report, not a contemporaneous signal feed.
 - [SEC · Webmaster Frequently Asked Questions, reuse of content](https://www.sec.gov/about/webmaster-frequently-asked-questions) — Government-created SEC content is free to access and reuse; some site content, such as stock art, is excluded. Not a license for underlying vendor data.
 - [Apple (April 23, 2014), Capital Return Program and Stock Split](https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/) — Issuer announcement of a seven-for-one split and record/trading dates; no historical OHLC feed.
+- [Apple (January 26, 2016), Apple Reports Record First Quarter Results](https://www.apple.com/newsroom/2016/01/26Apple-Reports-Record-First-Quarter-Results/) — Issuer declaration of a $0.52 per-share dividend payable February 11, 2016, to holders of record on February 8, 2016; the February 4 ex-date follows from the then two-business-day ex-date convention, not from this release.
 - [Boris Marjanovic / Kaggle · Huge Stock Market Dataset (version 3, CC0)](https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs) — Depositor metadata explicitly applies CC0-1.0 and states dividend/split-adjusted daily OHLC. Local extracts preserve AAPL, MSFT and SPY 2016 rows. Upstream provider, exact session/time zone, adjustment algorithm and point-in-time revisions are not documented; no certified quote feed or execution/performance claim.
 - [Creative Commons · CC0 1.0 Universal deed and legal code](https://creativecommons.org/publicdomain/zero/1.0/) — CC0 states the affirmer waives their copyright and related rights to the extent allowed. Other persons’ rights and warranties are not supplied; this is the recorded permission basis, not chain-of-title certification.
 
@@ -6154,36 +6204,36 @@ Option 3: R divides by the smaller original price-risk denominator, so dollars a
 
 #### Convert a performance claim into checkable arithmetic
 
-A fictional locked study has 10 nonoverlapping trades, each 1R $80: four gross +2R, five −1R, one −2R gap. Flat costs $4/trade. Account starts $10,000 with fixed-dollar sizing. Compute gross/net expectancy, total return and flat break-even cost. Can it validate the rule?
+A fictional locked study has 10 nonoverlapping trades, each 1R $80: four gross +2R, five −1R, one −2R gap. Flat costs $4/trade. Account starts $10,000 with fixed-dollar sizing. Compute gross/net expectancy, net account return and flat break-even cost. Can it validate the rule?
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-Gross R = 8−5−2 = 1R; gross $80. Costs $40 = 0.5R, net $40 = 0.5R; gross expectancy 0.10R and net 0.05R. Return 0.4%; break-even $80/10 = $8 per round trip. Ten constructed outcomes validate no real rule; independent data, uncertainty and a comparator remain missing.
+Gross R = 8−5−2 = 1R; gross $80. Costs $40 = 0.5R, net $40 = 0.5R; gross expectancy 0.10R and net 0.05R. Net account return $40 ÷ $10,000 = 0.4% (gross 0.8%); break-even $80 ÷ 10 = $8 per round trip. It cannot validate the rule, and not merely because the data are invented. Net R per trade is +1.95 (×4), −1.05 (×5) and −2.05; the sample SD is about 1.66R and the standard error about 0.53R, so the rough ±2 SE band (about −1.00R to +1.10R) includes zero. Dropping one winner makes the mean −0.16R, and the $8 break-even is only twice the assumed $4 cost. Ten trades with no comparator or independent window cannot validate a rule.
 
 </details>
 
 #### Allocate simultaneous candidates
 
-A simplified Atlas-20 variant has E $50,000, cash $12,000, one free slot, $2 stop distance,0.5% price-risk allowance and 10% notional cap. Eligible A:close 40/high 39; B:close 20.40/high 20.00. Rank by breakout margin, limits = floor-cent(close × 1.01), $2.50 entry fee. Which gets the order, how many shares and what cash reserve?
+A simplified Atlas-20 variant has equity E = $50,000, of which $12,000 is cash; its four held positions have risen since entry, so one slot is free. Use a $2 stop distance, a 0.5% price-risk allowance, a 10% notional cap measured at the limit price, and a cash allowance of (cash − $2.50 entry fee) ÷ limit. Eligible A: close 40.00, prior-20 high 39.00. Eligible B: close 20.40, prior-20 high 20.00. Rank by breakout margin, 100 × (close − prior-20 high) ÷ prior-20 high, rounded to 0.01 percentage point. Each limit is close × 1.01, rounded down to the cent. Which candidate gets the order, how many shares, and what cash reserve?
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-A margin = 100/39 = 2.5641%; B = 2.00%, so A ranks first. A limit $40.40; risk allowance 125, notional floor(5000/40.40) = 123, cash floor(11997.50/40.40) = 296; order 123. Reserve 123 × 40.40+2.50 = $4,971.70; available $7,028.30. B remains eligible/no slot. Actual filled risk is fixed after the declared fill; no later substitution without a new decision.
+A’s margin = 100 × (40.00 − 39.00) ÷ 39.00 = 2.5641…, which rounds to 2.56%; B’s = 100 × 0.40 ÷ 20.00 = 2.00%, so A ranks first. A’s limit = 40.00 × 1.01 = $40.40. Allowances: risk floor(0.5% × $50,000 ÷ $2) = floor(250 ÷ 2) = 125 shares; notional floor($5,000 ÷ $40.40) = 123; cash floor($11,997.50 ÷ $40.40) = 296. The smallest, 123, is the order, so the notional cap binds; planned 1R = 123 × $2 = $246, inside the $250 budget. Reserve 123 × $40.40 + $2.50 = $4,971.70, leaving $7,028.30 available. B stays eligible but gets no slot and is not re-offered later. Filled risk is fixed by the actual fill; there is no later substitution without a new decision.
 
 </details>
 
 #### Identify the research clock
 
-Six variants were logged and one locked before a held-out window. The result is weak; a new spring filter is chosen after inspecting that window and improves it. Label both results and describe the next evaluation. If the core path omitted Chapter 27, is this task missing a prerequisite?
+A researcher logs six variants on 2015–19 data and locks one by a pre-written rule. Run once on held-out 2020–21 data, it averages +0.02R over 14 trades. After charting the held-out losers, she adds a filter: trade only if, within the prior 20 sessions, a completed low fell at least 1% below frozen range support and a later close within three sessions returned above it. On 2020–21 the filtered version earns +0.31R over 8 trades. (a) Label both results. (b) How many variants has the search now tried, and under Chapter 25’s independence model what is the chance that at least one no-edge variant passes a 5% test? (c) At which close is each filter event first known? (d) What data may evaluate the new version, and what must be frozen first?
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-Keep the original locked held-out result. The new filter creates development evidence for another version; the previously held-out window influenced it and cannot be a fresh test. Freeze the new definition, input clock, comparator and costs before fresh evaluation.
+(a) The locked result, +0.02R over 14 trades, stays the held-out result for v1 as recorded. The filtered +0.31R is development evidence for a new version, v2, because the 2020–21 window shaped the filter; it is not a held-out test.
 
-No Chapter 27 detail is required to identify reused evaluation data. A spring-specific test would first need its exact breach/reentry definition and recognition time; the optional framework chapter supplies an example, not a required core prerequisite.
+(b) Seven variants. If each were an independent 5% test of a rule with no edge, 1 − 0.95⁷ ≈ 0.302, about 30%; variants that share trades make the true figure different, but reporting only the survivor still overstates the evidence. (c) Each filter event is known only at the close that returns above support, not at the breach low; using it earlier is look-ahead. (d) Only a fresh window or a paper forward study. Before it starts, freeze the filter definition and its recognition time, the comparator (v1 on the same window), the cost model and the decision criteria.
 
 </details>
 
@@ -6259,21 +6309,21 @@ The figures label the instrument Sharpe ratios as gross. These are not net retur
 
 Bajgrowicz and Scaillet test 7,846 technical rules on daily DJIA data from January 1897–July 2011 in the author-hosted version cited here. Their tests address the chance discoveries created by searching many rules, then examine whether past winners can be selected to perform later. Historical in-sample successes do not yield a reliable ex ante selection procedure in this experiment. Costs eliminate the out-of-sample performance of the investigated portfolios.
 
-Table 5 reports break-even one-way costs rather than a universally correct fee. For the FDR-selected portfolios, the first three period ranges are 30–35, 0–5 and 0–5 basis points; the later periods have negative out-of-sample performance before costs. A basis point is 0.01 percentage point. These break-even ranges are known after the results, not a cost policy one could select beforehand. Compare turnover, spread and impact as well as commission. The study challenges extrapolating the best backtest; its daily index universe and tested rule set limit any claim about every stock method.
+Table 5 reports break-even one-way costs rather than a universally correct fee. For the FDR-selected portfolios, the first three period ranges are 30–35, 0–5 and 0–5 basis points; the later periods have negative out-of-sample performance before costs. A basis point is 0.01 percentage point. The authors call these break-evens ex ante because costs are raised inside the selection procedure itself (pp. 22, 24), unlike break-evens computed after rules are chosen (p. 21). They are still backtest thresholds, not cost levels an investor would have measured beforehand. Compare turnover, spread and impact as well as commission. The study challenges extrapolating the best backtest; its daily index universe and tested rule set limit any claim about every stock method.
 
 **Searching historical technical rules did not secure persistent net performance here**
 
 - Classification: empirical; checked 2026-10-02.
-- Location: Author-hosted October 2011 version: introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
+- Location: Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).
 - Support: Inspected false-discovery adjustment, chronological persistence tests and cost sensitivity against zero excess-performance criteria.
 - Limits: Results concern the authors’ index/rule experiment; they neither prove all technical methods useless nor license ignoring adverse results.
-- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (October 2011 author manuscript; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
+- Sources: [Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)](https://scaillet.ch/pdfs/BajSca.pdf)
 
 **Study specification**
 
 | Field | What was tested |
 | --- | --- |
-| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted version dated October 2011. |
+| Sample | Daily DJIA index prices, January 1897–July 2011; author-hosted manuscript; the PDF text carries no version date. |
 | Rule | 7,846 technical rules; multiple-testing adjustment; ex ante rule portfolios updated monthly and evaluated in subsequent periods. |
 | Comparator | Zero excess-performance threshold and chronological persistence; Table 5 uses the Sharpe-ratio criterion. |
 | Costs | Table 5 FDR break-even one-way costs: 30–35, 0–5, 0–5 basis points in the first three periods; short lending costs treated separately. |
