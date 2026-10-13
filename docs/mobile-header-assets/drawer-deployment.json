@@ -1,0 +1,57 @@
+{
+  "createdAt": "2026-10-13T20:35:27.285135+00:00",
+  "shippingCommit": "c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55",
+  "pagesRun": 38463790656,
+  "pagesRunUrl": "https://github.com/OkillA/market-atlas/actions/runs/38463790656",
+  "conclusion": "success",
+  "assets": [
+    {
+      "file": "index.html",
+      "url": "https://okilla.github.io/market-atlas/index.html?drawer=c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55",
+      "status": 200,
+      "sha256": "be48b3ca93f8e0aa699557ad055153531dbba048657da066dc69367145dfd133",
+      "localSha256": "be48b3ca93f8e0aa699557ad055153531dbba048657da066dc69367145dfd133",
+      "match": true
+    },
+    {
+      "file": "styles.css",
+      "url": "https://okilla.github.io/market-atlas/styles.css?drawer=c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55",
+      "status": 200,
+      "sha256": "3fb451cbf7bf0fceee67cf15595a29507f0e85bc1491389fff60afc207f38fcc",
+      "localSha256": "3fb451cbf7bf0fceee67cf15595a29507f0e85bc1491389fff60afc207f38fcc",
+      "match": true
+    },
+    {
+      "file": "app.js",
+      "url": "https://okilla.github.io/market-atlas/app.js?drawer=c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55",
+      "status": 200,
+      "sha256": "80d57ed21fdaf2b375148375c382d8095592ce353793129c31eb9a1d89583bec",
+      "localSha256": "80d57ed21fdaf2b375148375c382d8095592ce353793129c31eb9a1d89583bec",
+      "match": true
+    },
+    {
+      "file": "figure-renderer.js",
+      "url": "https://okilla.github.io/market-atlas/figure-renderer.js?drawer=c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55",
+      "status": 200,
+      "sha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+      "localSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+      "match": true
+    },
+    {
+      "file": "favicon.svg",
+      "url": "https://okilla.github.io/market-atlas/favicon.svg?drawer=c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55",
+      "status": 200,
+      "sha256": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
+      "localSha256": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
+      "match": true
+    },
+    {
+      "file": "content/book.js",
+      "url": "https://okilla.github.io/market-atlas/content/book.js?drawer=c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55",
+      "status": 200,
+      "sha256": "b5c9c5524c2b7b734985d83904aff636a5107d564a2ba4efdaa4d76c4f668a3f",
+      "localSha256": "b5c9c5524c2b7b734985d83904aff636a5107d564a2ba4efdaa4d76c4f668a3f",
+      "match": true
+    }
+  ]
+}

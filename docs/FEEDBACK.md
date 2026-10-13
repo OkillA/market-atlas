@@ -203,4 +203,4 @@ The user explicitly requested the latest push. 0.4.1-alpha.1 is deployed to the 
 
 ## Mobile drawer correction — /root, 2026-10-13
 
-MOBILE2-002 is resolved and archived with [48 open-drawer viewport/theme/scroll cases](mobile-header-assets/drawer-checks.json). Drawer starts below the header; all items are scrollable/reachable, including short viewports. Only screen CSS/cache key changed; content/print scope retained. Publishing under the user's existing latest-edition authorization. CA1-026 remains deferred.
+MOBILE2-002 is resolved and archived with [48 open-drawer viewport/theme/scroll cases](mobile-header-assets/drawer-checks.json). Drawer starts below the header; all items are scrollable/reachable, including short viewports. Only screen CSS/cache key changed; content/print scope retained. Published as `c3a5cac` via [successful Pages run 38463790656](https://github.com/OkillA/market-atlas/actions/runs/38463790656); [all six hosted files match](mobile-header-assets/drawer-deployment.json). Preview closed; CA1-026 remains deferred.

@@ -38,3 +38,5 @@ Notes, bookmarks and progress remain stored by browser and site address. The hos
 ## Mobile drawer correction — 2026-10-13
 
 MOBILE2-002 fixes drawer branding clipped behind the sticky header in the user's Edge phone screenshot. The drawer now starts below the header, omits its redundant brand, puts search first and scrolls within the remaining dynamic viewport. [48 native cases](mobile-header-assets/drawer-checks.json) pass across themes, portrait/landscape, short viewport and page-scroll states; all drawer items pass reachability/hit-testing. Stylesheet key: `20261013-mobile2`. Content/print scope unchanged; physical phone recheck not claimed.
+
+Drawer correction deployed from `c3a5cac701e149e7fb6e2cb9e0edaed9c75ccc55` via [successful Pages run 38463790656](https://github.com/OkillA/market-atlas/actions/runs/38463790656). [All six public reader assets match](mobile-header-assets/drawer-deployment.json); [live geometry sample](mobile-header-assets/drawer-live-check.json) confirms the final drawer position, with native preview animation-clock limitations recorded.

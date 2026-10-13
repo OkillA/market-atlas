@@ -75,7 +75,7 @@ Claim a manageable package by setting its owner and status before implementation
 
 - Focused mobile follow-up / 2026-10-13: /root — MOBILE2-001, reported by the user from phone Edge, corrected the missing mobile branding/home link. [36 native geometry/theme/route cases and header-control actions](mobile-header-assets/browser-checks.json) pass. No physical phone/raster screenshot recheck claimed. New CSS rules apply only to screen; the original print stylesheet and printed main content are unchanged. Chapter acceptance and native print evidence keep their existing scope. Local release ZIP rebuilt; no push.
 
-- Focused drawer correction / 2026-10-13: /root — MOBILE2-002, from the user's follow-up Edge screenshot, fixes open navigation content hidden behind the sticky header. [48 native drawer/scroll/theme cases](mobile-header-assets/drawer-checks.json) pass with all controls reachable. Screen-only CSS/cache-key change; native print/content scope preserved. Publishing under existing latest-edition authorization; no physical phone recheck claimed.
+- Focused drawer correction / 2026-10-13: /root — MOBILE2-002, from the user's follow-up Edge screenshot, fixes open navigation content hidden behind the sticky header. [48 native drawer/scroll/theme cases](mobile-header-assets/drawer-checks.json) pass with all controls reachable. Screen-only CSS/cache-key change; native print/content scope preserved. Published as `c3a5cac` via [successful Pages run 38463790656](https://github.com/OkillA/market-atlas/actions/runs/38463790656); [live asset verification](mobile-header-assets/drawer-deployment.json) passes. No physical phone recheck claimed.
 
 ### ROAD-005 — Run human reader validation
 

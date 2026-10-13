@@ -1,0 +1,17 @@
+{
+  "drawerBottom": 740,
+  "drawerLeft": 0,
+  "drawerTop": 65,
+  "duplicateBrandHidden": true,
+  "expanded": "true",
+  "headerBottom": 65,
+  "height": 740,
+  "method": "DOM menu activation; preview transition explicitly finished because native host frame clock remained frozen at 0",
+  "overflow": false,
+  "searchHit": true,
+  "searchTop": 85,
+  "stylesheet": "https://okilla.github.io/market-atlas/styles.css?v=20261013-mobile2",
+  "url": "https://okilla.github.io/market-atlas/?v=mobile2",
+  "width": 390,
+  "scope": "Native preview geometry check of live site; not a physical phone or animation-timing test."
+}
