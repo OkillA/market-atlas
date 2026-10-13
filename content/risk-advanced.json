@@ -368,7 +368,25 @@
           "checked": "2026-10-01",
           "id": "risk-sizing-stop-triggers-do-not-insure-their-execution-price"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "trade-plans",
@@ -719,7 +737,25 @@
           "checked": "2026-10-01",
           "id": "trade-plans-a-limit-is-a-price-constraint-and-a-stop-may-execute-away-from-its-trigger"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "63160472984777838a1c865bfb1bcb28b44a1ab15cae2e885995d262b9989163",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "psychology",
@@ -1125,6 +1161,18 @@
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH6_20261011.md"
+        ],
+        "contentSha256": "f3e9f59928685495b511428f6a757b02eee75f3e51ce094002ab337fcceadeb1",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
       }
     },
     {
@@ -1448,11 +1496,51 @@
                 "Cutoff mark ($)"
               ],
               "rows": [
-                ["T1: closed", 25, 80, 78, 83, 5, "—"],
-                ["T2: closed", 40, 30, 28.5, 28, 8, "—"],
-                ["K: opening-gate skip; no order", 0, "—", "—", "—", 0, "—"],
-                ["U: order expired unfilled; cancellation confirmed", 0, "—", "—", "—", 0, "—"],
-                ["H: still open", 10, 50, 48, "—", 2, 51]
+                [
+                  "T1: closed",
+                  25,
+                  80,
+                  78,
+                  83,
+                  5,
+                  "—"
+                ],
+                [
+                  "T2: closed",
+                  40,
+                  30,
+                  28.5,
+                  28,
+                  8,
+                  "—"
+                ],
+                [
+                  "K: opening-gate skip; no order",
+                  0,
+                  "—",
+                  "—",
+                  "—",
+                  0,
+                  "—"
+                ],
+                [
+                  "U: order expired unfilled; cancellation confirmed",
+                  0,
+                  "—",
+                  "—",
+                  "—",
+                  0,
+                  "—"
+                ],
+                [
+                  "H: still open",
+                  10,
+                  50,
+                  48,
+                  "—",
+                  2,
+                  51
+                ]
               ]
             }
           ],
@@ -1498,7 +1586,19 @@
           "checked": "2026-10-11",
           "id": "journaling-hypothetical-performance-and-selective-presentations-need-scrutiny"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH6_20261011.md"
+        ],
+        "contentSha256": "5cd904e206c266b34454d2c5cecb1de690b4ade48af81e85c66eeb7251d62c1e",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+      }
     },
     {
       "id": "testing",
@@ -2455,7 +2555,19 @@
           },
           "id": "testing-some-algorithmically-detected-patterns-carried-incremental-distributional-information-in-historical-"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "c9b4f4c9769321a17f57e09276c281d27a9063cc93453ecf2308530b1a6e6fb2",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+      }
     },
     {
       "id": "statistics",
@@ -3487,7 +3599,19 @@
           "checked": "2026-10-01",
           "id": "statistics-confidence-describes-long-run-interval-procedure-coverage"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "344bbf78672956d19976540a3c5b76b24b2ce785e384b51f024774f52d982445",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+      }
     },
     {
       "id": "system-design",
@@ -5266,6 +5390,18 @@
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "515c95a1e848ce057d0156ce751a02979e64f93f95d62324b0e5b5a3a9e88fb5",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
       }
     },
     {
@@ -5571,6 +5707,7 @@
           "paragraphs": [
             "An empirical claim can be tested only one precise proposition at a time, and the proposition has to be fixed before the outcomes are known. The spring rule above is a ready-made example. Apply it to every breach in a defined universe and period, state when support is re-frozen after a breakdown so that later lows do not keep opening new events, keep both branches, and declare an action in advance: perhaps a next-open entry after the reentry close, a stop below the breach low, a time exit, and modeled costs, the same structure as the breakout plan in Chapter 9 and the casebook in the next chapter. Then compare the outcomes with a stated alternative, such as breaches that did not reenter or all sessions in the same stocks. A favorable result on that one specification would support that one specification, not Wyckoff analysis as a whole.",
             "Where discretion is essential, as in choosing between Elliott counts, test the discretion itself. Ask two readers to label the same charts with the future bars hidden, timestamp their preferred and alternate counts, and keep their disagreements. Measure agreement first, then forecast accuracy, then net results. Lo, Mamaysky, and Wang took another route: they replaced visual judgment with an algorithm that detects chart patterns, then compared returns after detected patterns with ordinary returns in U.S. stocks. Their findings concern their own pattern definitions. They are not tests of Dow confirmation, springs, or wave counts.",
+            "Brown, Goetzmann and Kumar reexamined Hamilton’s 1902–1929 editorials and reported favorable risk-adjusted results for a reconstructed timing strategy. This is independent historical evidence, but it tests interpreted editorial calls, not our simultaneous-close rule. One reader coded the editorials; eleven indeterminate calls were excluded. Their later neural-net experiment also shows execution sensitivity: delaying action materially changes the result. Transaction costs are omitted, and the authors flag uncertainty about daily returns and achievable index returns. Treat this as evidence about those definitions and assumptions, not validation of present-day Dow, Wyckoff or Elliott trading.",
             "This book has not reviewed an independent study that establishes the predictive value of these three frameworks as defined here. That is a statement about the evidence considered, not a proof that they have none. The research appendix summarizes the studies that were examined. Historical influence earns a framework a place in study. Reproducible evidence determines how much confidence any particular claim deserves."
           ],
           "id": "from-vocabulary-to-an-honest-test"
@@ -5641,7 +5778,8 @@
         "ra-elliott-rules",
         "ra-elliott-constraints",
         "ra-pattern-research",
-        "ra-wyckoff-text"
+        "ra-wyckoff-text",
+        "ra-dow-study"
       ],
       "related": [
         "trends",
@@ -6053,16 +6191,48 @@
           "id": "classical-frameworks-the-simultaneous-close-confirmation-rule-and-the-1-three-session-spring-rule-are-original-teaching-s"
         },
         {
+          "id": "classical-frameworks-hamilton-editorial-study",
+          "claim": "A historical editorial-call reconstruction reports favorable risk-adjusted results under its own assumptions.",
+          "type": "empirical",
+          "sourceIds": [
+            "ra-dow-study"
+          ],
+          "location": "March 13, 1998 author manuscript: pp. 8–10, 18–21; Tables II–IV, pp. 28–30; endnotes 9, 14–15, pp. 45–46.",
+          "summary": "Reviewed the complete author manuscript, including tables and endnotes. Editorial reconstruction and learned-call experiments are distinct from the frozen teaching rule.",
+          "limits": "One coder; selection/luck unresolved; delay-sensitive, cost-free results. Later daily experiment excludes dividends and cash interest. No inference to all three frameworks.",
+          "checked": "2026-10-12",
+          "study": {
+            "sample": "255 Hamilton editorials, 1902–1929; 11 indeterminate calls omitted. Learned-call extension: 1930–1997.",
+            "rule": "Editorial long/short/cash reconstruction; separately, neural-net predictions of interpreted calls.",
+            "comparator": "Passive Cowles total-return index in reconstruction; price-only DJIA in later experiment.",
+            "costs": "Transaction costs omitted. Daily next-open approximation and delayed-close variant; index investibility qualified.",
+            "result": "Favorable historical risk-adjusted comparison; later results depend materially on delay. No test of our simultaneous-close or spring specifications."
+          }
+        },
+        {
           "claim": "Independent evidence for the predictive value of these three frameworks, as defined here, has not been established in this book.",
           "type": "unresolved",
           "sourceIds": [],
           "location": "Final section, “From vocabulary to an honest test.”",
-          "summary": "No independent study testing Dow confirmation, the spring rule, or Elliott counts was reviewed for this revision. Lo, Mamaysky and Wang is cited only as an example of algorithmic pattern definition, with its own pattern set.",
-          "limits": "Absence of reviewed evidence is not evidence of no effect. A literature search for framework-specific tests remains open.",
-          "checked": "2026-10-01",
+          "summary": "The Hamilton editorial reconstruction was reviewed separately. No inspected study establishes predictive value for our simultaneous-close rule, spring rule or Elliott counts.",
+          "limits": "Absence of matching evidence is not evidence of no effect; framework-specific literature review remains selective.",
+          "checked": "2026-10-12",
           "id": "classical-frameworks-independent-evidence-for-the-predictive-value-of-these-three-frameworks-as-defined-here-has-not-been"
         }
-      ]
+      ],
+      "version": "0.4.1",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Prior full chapter acceptance retained; independent Dow author-manuscript addition and revised evidence limits reviewed on 2026-10-12. Teaching rules, tasks and figures unchanged.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/RELEASE_READINESS_20261012.md"
+        ],
+        "contentSha256": "e078aaaf440e8f884dc75cd8dc8792ae04d84eb253cd5a0c3f675ab549dd7a35",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+      }
     },
     {
       "id": "case-studies",
@@ -6959,6 +7129,18 @@
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "f5be3ebe6aed3c08f140065f3f6790410c941b9545af84dc5445da3987d51354",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
       }
     }
   ],
@@ -7070,6 +7252,12 @@
       "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
       "supports": "Long-run coverage interpretation and standard-error mean formula; not an exact justification of the textbook’s crude ±2 SE band.",
       "accessed": "2026-10-01"
+    },
+    "ra-dow-study": {
+      "title": "Brown, Goetzmann & Kumar · The Dow Theory: William Peter Hamilton’s Track Record Reconsidered (1998 author manuscript)",
+      "url": "https://depot.som.yale.edu/icf/papers/fileuploads/2439/original/98-86.pdf",
+      "supports": "Historical reconstruction of editorial timing calls, with execution and sampling limits; not a test of this chapter’s teaching rules. March 13 author version, not a verified copy of the final journal text.",
+      "accessed": "2026-10-12"
     }
   },
   "glossary": [

@@ -1624,12 +1624,30 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 - Limits: Arbitrary thresholds; not canonical versions of either framework and not optimized or tested.
 - Sources: Original, disclosed definitions/calculations/teaching conventions.
 
+**A historical editorial-call reconstruction reports favorable risk-adjusted results under its own assumptions.**
+
+- Classification: empirical; checked 2026-10-12.
+- Location: March 13, 1998 author manuscript: pp. 8–10, 18–21; Tables II–IV, pp. 28–30; endnotes 9, 14–15, pp. 45–46.
+- Support: Reviewed the complete author manuscript, including tables and endnotes. Editorial reconstruction and learned-call experiments are distinct from the frozen teaching rule.
+- Limits: One coder; selection/luck unresolved; delay-sensitive, cost-free results. Later daily experiment excludes dividends and cash interest. No inference to all three frameworks.
+- Sources: [Brown, Goetzmann & Kumar · The Dow Theory: William Peter Hamilton’s Track Record Reconsidered (1998 author manuscript)](https://depot.som.yale.edu/icf/papers/fileuploads/2439/original/98-86.pdf)
+
+**Study specification**
+
+| Field | What was tested |
+| --- | --- |
+| Sample | 255 Hamilton editorials, 1902–1929; 11 indeterminate calls omitted. Learned-call extension: 1930–1997. |
+| Rule | Editorial long/short/cash reconstruction; separately, neural-net predictions of interpreted calls. |
+| Comparator | Passive Cowles total-return index in reconstruction; price-only DJIA in later experiment. |
+| Costs | Transaction costs omitted. Daily next-open approximation and delayed-close variant; index investibility qualified. |
+| Result | Favorable historical risk-adjusted comparison; later results depend materially on delay. No test of our simultaneous-close or spring specifications. |
+
 **Independent evidence for the predictive value of these three frameworks, as defined here, has not been established in this book.**
 
-- Classification: unresolved; checked 2026-10-01.
+- Classification: unresolved; checked 2026-10-12.
 - Location: Final section, “From vocabulary to an honest test.”.
-- Support: No independent study testing Dow confirmation, the spring rule, or Elliott counts was reviewed for this revision. Lo, Mamaysky and Wang is cited only as an example of algorithmic pattern definition, with its own pattern set.
-- Limits: Absence of reviewed evidence is not evidence of no effect. A literature search for framework-specific tests remains open.
+- Support: The Hamilton editorial reconstruction was reviewed separately. No inspected study establishes predictive value for our simultaneous-close rule, spring rule or Elliott counts.
+- Limits: Absence of matching evidence is not evidence of no effect; framework-specific literature review remains selective.
 - Sources: No supporting study inspected.
 
 ## Case studies: follow the decision through

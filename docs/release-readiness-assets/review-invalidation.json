@@ -1,0 +1,40 @@
+[
+  {
+    "test": "baseline",
+    "comparedOutputs": 74,
+    "reviewed": 28,
+    "passed": true
+  },
+  {
+    "test": "prose",
+    "targetStatus": "draft",
+    "reasons": [
+      "Chapter or linked source changed"
+    ],
+    "passed": true
+  },
+  {
+    "test": "source",
+    "targetStatus": "draft",
+    "reasons": [
+      "Chapter or linked source changed"
+    ],
+    "passed": true
+  },
+  {
+    "test": "renderer",
+    "targetStatus": "draft",
+    "reasons": [
+      "Figure renderer changed"
+    ],
+    "passed": true
+  },
+  {
+    "test": "missing-review",
+    "targetStatus": "draft",
+    "reasons": [
+      "No accepted review recorded"
+    ],
+    "passed": true
+  }
+]

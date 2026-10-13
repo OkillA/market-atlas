@@ -1861,3 +1861,74 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Changed locations: content/risk-advanced.json; rebuilt book.js and case-studies-3.svg; current figure fixtures, acceptance/checkpoint records and index.html.
 - Verification: Actually inspected before/final 260px and final 760px portable rasters; final single-line observation labels leave the axis title clear. Native SVG text has no clips at four widths in both palettes, all case numerical comparisons pass, complete native inputs match at 320/390/1280 and all 74 isolated generated outputs match.
 - Scope / evidence: publication-batch7-assets/inspection-pairs/case-studies-3.png (before) and case-studies-3-final.png (after); final checks and batch 7 report. No native screenshots or printer pagination claimed.
+
+## Release-readiness completion — /root, 2026-10-12
+
+### PUB7-011 — Consider independent historical Dow evidence after full-paper review
+- Priority / type: P3 / editorial recommendation
+- Status: resolved
+- Owner: /root, 2026-10-12
+- Reviewer / date: claude-code-pub7 handoff; recorded by /root / 2026-10-12
+- Location: Chapter 27 empirical-evidence discussion; PUBLICATION_BATCH7_HANDOFF.md.
+- Finding and evidence: The handoff proposes considering the Brown–Goetzmann–Kumar (1998) Dow study. Its full paper has not been reviewed in this batch. Current prose explicitly limits the evidence examined and makes no unsupported predictive-performance claim for these frameworks. This is a possible literature addition, not a demonstrated factual defect.
+- Proposed resolution: Retrieve and read the complete original study, compare its specific Dow rule, sample, comparator and costs with this chapter’s frozen teaching rule, then decide whether a bounded evidence record would improve the chapter.
+- Acceptance criteria: Record inspected original passages and study limits, with an evidence-backed inclusion or non-inclusion disposition; do not infer validity for all Dow/Wyckoff/Elliott specifications.
+- Discussion / progress: Deferred from the prior handoff until a dedicated full-paper review. It does not prevent scoped editorial acceptance of the current explicit evidence limits; ROAD-003 remains outstanding.
+
+- PUB7-011 review resumed / 2026-10-12: /root retrieved the complete March 13, 1998 author manuscript from Yale, read its prose, appendix, tables, figures and endnotes, and is adding a bounded evidence record. Journal-version equivalence is not assumed.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: Included as bounded historical evidence, not validation of the chapter’s frozen rules.
+- Verification: Complete March 13 author version read and tables/figures inspected; pp. 8–10/18–21, Tables II–IV, endnotes 9/14/15 checked. Paragraph/source/specification built and reader passage inspected; 362 Chapter 27 and 169 Part 6 comparisons pass; affected fingerprints updated.
+- Scope / evidence: [Release-readiness report](RELEASE_READINESS_20261012.md), linked current assets and scoped inherited publication reviews. No human learning or complete release QA is claimed.
+
+
+### RELEASE1-001 — Historical README overstates the missing vintage
+- Priority / type: P3 / defect
+- Status: resolved
+- Owner: /root, 2026-10-12
+- Reviewer / date: /root / 2026-10-12
+- Location: data/historical/README.md, archive convention paragraph.
+- Finding and evidence: The README says adjustment vintage is wholly unspecified although kaggle-listing.json records version 3’s 2017-11-16 last update. Current Chapter 28 already bounds the archive as post-2016; only the maintenance note is stale.
+- Proposed resolution: Distinguish the dated archive version from undocumented per-row revisions and adjustment formula.
+- Acceptance criteria: README matches the saved API metadata while preserving price/execution and upstream rights limits; numerical inputs and hashes remain unchanged.
+- Discussion / progress: The convention paragraph now distinguishes these facts; historical verifier passed.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: Corrected only the stale maintenance note; retained adjustment/provenance and reuse boundaries.
+- Verification: Compared saved API update/version metadata with README and current Chapter 28. Historical verifier passes; all archived numeric/selection/hash files unchanged.
+- Scope / evidence: [Release-readiness report](RELEASE_READINESS_20261012.md), linked current assets and scoped inherited publication reviews. No human learning or complete release QA is claimed.
+
+
+### RELEASE1-002 — Flow illustrations expose an empty data disclosure
+- Priority / type: P3 / defect
+- Status: resolved
+- Owner: /root, 2026-10-12
+- Reviewer / date: /root / 2026-10-12
+- Location: app.js figureData/renderFigure; Chapter 7 chronology and Chapter 26 processing flow.
+- Finding and evidence: Native 320px checks found a View the illustration’s data disclosure with no table for flow steps. The accessible SVG still carries labels, but the promised textual reference is empty because figureData handles series/candles/tables/profile and skips steps.
+- Proposed resolution: Export the same ordered step titles and explanations as an accessible table.
+- Acceptance criteria: All flow disclosures carry complete ordered step text at compact/wide widths, with table workspace access; existing numerical data tables are preserved.
+- Discussion / progress: Added the steps branch using original figure specifications; reader checks pending.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: Added original ordered step titles/explanations to figureData tables.
+- Verification: All seven packets at native 320/390/768 have complete figure tables and exact flow-step text. Chapter 26 workspace has seven ordered rows and closes with native Escape. Existing numerical tables and 71 SVGs remain unchanged. Native re-export of affected Chapter 7/26 print remains on ROAD-004.
+- Scope / evidence: [Release-readiness report](RELEASE_READINESS_20261012.md), linked current assets and scoped inherited publication reviews. No human learning or complete release QA is claimed.
+
+
+### RELEASE1-003 — Review labels overflow the contents near the tablet breakpoint
+- Priority / type: P3 / defect
+- Status: resolved
+- Owner: /root, 2026-10-12
+- Reviewer / date: /root / 2026-10-12
+- Location: Contents/chapterRow, native 768px viewport.
+- Finding and evidence: After adding the review label, the longest chapter row places its arrow at 771.6px in a 768px viewport. The auto-width, nowrap metadata column can exceed the page’s available width.
+- Proposed resolution: Bound and wrap the metadata column, permit the title column to shrink, and use a concise review label.
+- Acceptance criteria: Contents and notebook rows stay within 320/390/768px viewports with full titles and meaningful review labels; desktop structure and mobile second-row status layout are preserved.
+- Discussion / progress: Changed the grid/status wrapping and concise label; native rechecks pending.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: Bound/wrapped the status column, allowed title shrinkage and shortened the label to AI review, retaining full dated scope in chapters.
+- Verification: Native 768px contents overflow removed (753px scroll width within 768px). Final 320px top-level and 390/768/1280px native child-frame contents have all 28 rows and no overflow; notebook row uses the same layout. Full top-level desktop/remaining printer checks stay on ROAD-004.
+- Scope / evidence: [Release-readiness report](RELEASE_READINESS_20261012.md), linked current assets and scoped inherited publication reviews. No human learning or complete release QA is claimed.

@@ -1,0 +1,52 @@
+{
+  "outputs": [
+    {
+      "file": "docs/release-readiness-assets/native-print/candlestick-patterns-learner.pdf",
+      "sha256": "df9e102020eecc501390e4f6b370dbb6d98155349cbde69bdb294627d7d645e8",
+      "pages": 14,
+      "engine": "macOS Quartz PDFContext through T3 Code/Electron native print dialog",
+      "paper": "US Letter, portrait, 100%",
+      "edition": "learner",
+      "current": false,
+      "inspection": "All page rasters/contact sheets inspected for content, diagrams, table inputs, quiz choices, solution policy and continuation boundary. Text extraction misses some table cells, so rendered tables checked directly.",
+      "boundaryPages": {
+        "packetEnd": 10,
+        "continuationStart": 11
+      },
+      "limits": "Chapter 7 sample predates the flow-data-table addition; retained as superseded print evidence and requires re-export."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/support-resistance-answers.pdf",
+      "sha256": "dad6401c3dd2d02f85b89cc1ad0b3d0d4b2ef3566ef789592bf51ff082dbc2a6",
+      "pages": 12,
+      "engine": "macOS Quartz PDFContext through T3 Code/Electron native print dialog",
+      "paper": "US Letter, portrait, 100%",
+      "edition": "answers",
+      "current": true,
+      "inspection": "All page rasters/contact sheets inspected for content, diagrams, table inputs, quiz choices, solution policy and continuation boundary. Text extraction misses some table cells, so rendered tables checked directly.",
+      "boundaryPages": {
+        "packetEnd": 2,
+        "continuationStart": 3
+      },
+      "limits": "Chapter 6 reference includes outcome explanations in both editions; only worked solutions and the quiz answer differ."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/support-resistance-learner.pdf",
+      "sha256": "074b695637e0110901607bb725b400fe102411d3388e152722cd281bd252939a",
+      "pages": 11,
+      "engine": "macOS Quartz PDFContext through T3 Code/Electron native print dialog",
+      "paper": "US Letter, portrait, 100%",
+      "edition": "learner",
+      "current": true,
+      "inspection": "All page rasters/contact sheets inspected for content, diagrams, table inputs, quiz choices, solution policy and continuation boundary. Text extraction misses some table cells, so rendered tables checked directly.",
+      "boundaryPages": {
+        "packetEnd": 2,
+        "continuationStart": 3
+      },
+      "limits": "Chapter 6 reference includes outcome explanations in both editions; only worked solutions and the quiz answer differ."
+    }
+  ],
+  "currentCoverage": "Chapter 6 learner/answer pair verified (23 pages). Chapter 7 learner sample (14 pages) retained as superseded runtime evidence.",
+  "pending": "Current Chapter 7\u20139/22/26/28 learner/answer pairs (12 PDFs), plus an ordinary chapter and a part-review sample. Repeat after the final runtime changes.",
+  "automationLimit": "Repeated native save panels remained disabled; some queued print requests needed cancellation. Preview snapshot, later resize and one Enter activation failed. Actual completed files are counted; attempts are not."
+}

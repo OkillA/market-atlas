@@ -42,6 +42,16 @@ The answer index and figure annotation indices are zero-based. All series in one
 
 The build computes reading time from narrative prose. Chapter order comes from the parts in `curriculum.js`. The generated `book.js` is the shipping artifact, so do not edit it manually.
 
+## Review metadata
+
+Each authored chapter records `version` and `review: {status, date, reviewer, scope, evidence, contentSha256, rendererSha256}`. `status: "accepted"` describes a recorded **AI editorial review**, not human learning or independent peer review. Preserve the original review/report dates and add the actual scope of later focused changes. The overall edition remains an alpha draft while release QA and human validation are incomplete.
+
+The builder derives `chapter.status` and `review.valid`; it does not accept an authored status label alone. `scripts/review-fingerprint.cjs` hashes the compiled chapter and its linked source records, excluding `version`/`review` and normalizing the derived status to draft. This preserves earlier ledger hashes for unchanged content. A changed paragraph, linked source, missing/incomplete declaration or changed renderer makes the shipping chapter draft with a visible review-needed label. Only update acceptance hashes after reviewing the affected material and recording evidence; generating a new hash is not approval.
+
+Run `npm run check:reviews` after the coordinated content build. It compares all 74 outputs in an isolated baseline build and exercises prose/source/renderer/missing-review invalidation in separate copies. The current accepted baseline must remain consistent with the ledger. Historical batch-specific isolated-build scripts belong to their original builder snapshots; use this current command after adopting the fingerprint helper.
+
+`content/source-access.json` is the authored edition-wide access/support/reuse inventory. Fresh retrieval dates are separate from source `accessed` dates and evidence `checked` dates. Update its URL dispositions when adding/changing sources; a successful download does not reset claim-inspection dates or clear third-party rights.
+
 ## Sources
 
 Each authoring file includes a `sources` object:

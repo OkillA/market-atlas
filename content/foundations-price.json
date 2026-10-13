@@ -324,7 +324,25 @@
           "checked": "2026-10-01",
           "id": "market-language-the-core-reading-route-and-paper-plan-thresholds"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "chart-anatomy",
@@ -781,7 +799,25 @@
           "checked": "2026-10-01",
           "id": "chart-anatomy-real-stop-and-limit-instructions-do-not-guarantee-the-scenario-s-exact-fills"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "99726d7e5c814c61b7797dfff884d34ef70f05a56808d28b8002b505bc42cead",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "volume",
@@ -1244,7 +1280,26 @@
           "checked": "2026-10-01",
           "id": "volume-d6-signal-threshold-and-fixed-denominator-comparisons"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Chapter 3 re-accepted after the batch 4 figure change; earlier substantive review retained. Later changed figures rechecked as recorded below.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md",
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "timeframes",
@@ -1719,7 +1774,19 @@
           "checked": "2026-10-01",
           "id": "timeframes-settings-checklist-and-three-session-teaching-week-boundary"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md"
+        ],
+        "contentSha256": "2dd2a6d99752d60451375a2783bf2f57697e9129e1aeeeae50347d0a390fb357",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+      }
     },
     {
       "id": "trends",
@@ -2342,7 +2409,25 @@
           "checked": "2026-10-01",
           "id": "trends-linear-and-log-scales-change-sloping-line-geometry"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md"
+        ],
+        "contentSha256": "38a32b5630782592f5203b27abb91a781a5d8226e5f45c96cfc00b3230b2798d",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "support-resistance",
@@ -2925,6 +3010,25 @@
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "6a42fe44a3cee0d8a518b30e5f70d04afa4bb36fb4a8f46b915e1fcffd1622c0",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
       }
     },
     {
@@ -3527,6 +3631,19 @@
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH3_20261003.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "b3d4182952b3e4dc82e37f5063e954e5f8b4cb11c7bbebff9312660fecef5903",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
       }
     },
     {
@@ -5053,6 +5170,25 @@
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH3_20261003.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
       }
     },
     {
@@ -5621,6 +5757,24 @@
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "a0f8ef618394df0351b2e0d41c7ae0733f64ae3a213e0dac34cc1bb93f6cde46",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "name": "market-atlas",
-  "version": "0.4.0-alpha.1",
+  "version": "0.4.1-alpha.1",
   "private": true,
   "description": "An offline-first illustrated technical analysis textbook",
   "scripts": {
@@ -9,6 +9,7 @@
     "check": "node scripts/check-content.cjs",
     "check:figures": "node scripts/verify-figures.cjs",
     "status": "node scripts/project-status.cjs",
-    "build:site": "node scripts/build-site.cjs"
+    "build:site": "node scripts/build-site.cjs",
+    "check:reviews": "node scripts/verify-review-metadata.cjs"
   }
 }

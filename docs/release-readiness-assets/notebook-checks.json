@@ -1,0 +1,11 @@
+{
+  "platform": "T3 Code native preview, 768px; disposable known fixture state",
+  "export": "Clicked the application Export button; intercepted its generated Blob and prevented only the anchor download. Verified format/version, note, bookmark and completed chapter in the exact payload.",
+  "import": "Imported that exported payload as a real browser File via the application input change handler after reloading empty storage. Restored note, bookmark and completion and rendered notebook content.",
+  "duplicate": "Repeating the same import retains one note, bookmark and completion.",
+  "invalid": {
+    "invalidPreservedNote": true,
+    "toast": "Choose a Market Atlas notebook backup."
+  },
+  "limits": "No native OS file-chooser interaction claimed; original user storage saved privately and restored after QA."
+}

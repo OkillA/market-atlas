@@ -1,0 +1,18 @@
+{
+  "url": "https://depot.som.yale.edu/icf/papers/fileuploads/2439/original/98-86.pdf",
+  "temporaryPdf": "/var/folders/vc/79mjb1b52r3_k4l2j43_94xh0000gn/T/market-atlas-dow-paper-3qvn41vi/paper.pdf",
+  "temporaryText": "/var/folders/vc/79mjb1b52r3_k4l2j43_94xh0000gn/T/market-atlas-dow-paper-3qvn41vi/paper.txt",
+  "version": "March 13, 1998 author manuscript",
+  "accessMethod": "curl, original Yale repository",
+  "checked": "2026-10-12",
+  "pages": 46,
+  "reviewScope": "Complete main prose, references, appendix, Tables I\u2013IV, figures/captions and endnotes; selected table/figure rasters visually inspected.",
+  "materialLocators": [
+    "pp. 8\u201310: editorial coding, omitted indeterminate cases, monthly reconstruction",
+    "pp. 18\u201321: fitting, delayed implementation and selection/luck limits",
+    "Tables II\u2013IV, pp. 28\u201330: comparator and daily return conventions",
+    "Endnotes 9, 14\u201315, pp. 45\u201346: omitted costs, return approximation and index investibility"
+  ],
+  "journalVersionLimit": "The March 13 author manuscript is the inspected text; final journal version equivalence is not assumed.",
+  "sha256": "211e7bd435611dcda2b6e9ee69a26c0ea10ed674fd33966fbc3df51471223381"
+}

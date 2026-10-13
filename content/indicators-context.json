@@ -407,7 +407,26 @@
           "checked": "2026-10-01",
           "id": "moving-averages-equality-and-two-close-rules"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "momentum",
@@ -1081,7 +1100,25 @@
           "checked": "2026-10-01",
           "id": "momentum-local-peak-recognition-rule"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "volatility",
@@ -1489,7 +1526,25 @@
           "checked": "2026-10-01",
           "id": "volatility-candle-ranges-atr-bands-and-scaling"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "volume-tools",
@@ -2022,7 +2077,25 @@
           "checked": "2026-10-01",
           "id": "volume-tools-tape-profile-and-obv-reconciliation"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "fibonacci",
@@ -2394,7 +2467,25 @@
           "checked": "2026-10-01",
           "id": "fibonacci-origins-peak-recognition-and-reaction-test"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "relative-strength",
@@ -2838,7 +2929,25 @@
           "checked": "2026-10-01",
           "id": "relative-strength-three-paths-rebased-ratios-and-return-differences"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "breadth",
@@ -3536,7 +3645,25 @@
           "checked": "2026-10-01",
           "id": "breadth-universe-and-weighting-choice"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     },
     {
       "id": "multi-timeframe",
@@ -3896,7 +4023,19 @@
           "checked": "2026-10-01",
           "id": "multi-timeframe-weekly-close-direction-context-and-eligibility"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+      }
     },
     {
       "id": "events",
@@ -4253,7 +4392,19 @@
           "checked": "2026-10-02",
           "id": "events-stop-limit-price-bounds-and-possible-nonexecution"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+      }
     },
     {
       "id": "market-microstructure",
@@ -4618,7 +4769,25 @@
           "checked": "2026-10-01",
           "id": "market-microstructure-ladder-fills-and-cost-references"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        }
+      }
     }
   ],
   "sources": {

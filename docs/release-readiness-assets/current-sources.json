@@ -1,0 +1,452 @@
+{
+  "fp-intro": {
+    "title": "Fidelity · What is technical analysis?",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-is-technical-analysis",
+    "supports": "Technical analysis studies market-generated data; distinction from fundamental analysis. Educational description, not validation of the fictional examples.",
+    "accessed": "2026-10-01"
+  },
+  "fp-charts": {
+    "title": "Fidelity · What are charts?",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-are-charts",
+    "supports": "Line, OHLC, and candlestick chart conventions.",
+    "accessed": "2026-10-01"
+  },
+  "fp-trends": {
+    "title": "Fidelity · Basic concepts of trend",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/basic-concepts-trend",
+    "supports": "Conventional peak/trough trend classification and trendline construction.",
+    "accessed": "2026-10-01"
+  },
+  "fp-levels": {
+    "title": "Fidelity · Support and resistance",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance",
+    "supports": "Support/resistance vocabulary and the conventional role-reversal hypothesis; not a guarantee of future reactions.",
+    "accessed": "2026-10-01"
+  },
+  "fp-volume": {
+    "title": "Fidelity · Why to consider stock volume",
+    "url": "https://www.fidelity.com/viewpoints/active-investor/stock-volume",
+    "supports": "Share-volume definition and comparison with historical activity.",
+    "accessed": "2026-10-01"
+  },
+  "fp-orders": {
+    "title": "SEC / Investor.gov · Types of orders",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+    "supports": "Market, limit, and stop order distinctions; execution prices and fills are not guaranteed by a chart level.",
+    "accessed": "2026-10-01"
+  },
+  "fp-sessions": {
+    "title": "SEC / Investor.gov · Extended-hours trading: investor bulletin",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+    "supports": "Regular versus extended trading sessions; differences in liquidity, spreads, and available trading data.",
+    "accessed": "2026-10-01"
+  },
+  "fp-actions": {
+    "title": "FINRA · Corporate actions by public companies",
+    "url": "https://www.finra.org/investors/insights/corporate-actions-public-companies-what-you-should-know",
+    "supports": "Stock-split mechanics and distinction between share count and proportionate ownership.",
+    "accessed": "2026-10-01"
+  },
+  "fp-scale": {
+    "title": "StockCharts ChartSchool · What are charts?",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/what-are-charts",
+    "supports": "Arithmetic versus logarithmic price-axis conventions.",
+    "accessed": "2026-10-01"
+  },
+  "fp-candles": {
+    "title": "StockCharts ChartSchool · Introduction to candlesticks",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-charts/introduction-to-candlesticks",
+    "supports": "Doji and long-shadow pattern terminology, prior-trend context, and the inability of OHLC to reveal transaction sequence. Numerical thresholds here are original teaching conventions.",
+    "accessed": "2026-10-01"
+  },
+  "fp-patterns": {
+    "title": "Fidelity · Identifying chart patterns with technical analysis",
+    "url": "https://media.fidelity.com/assets/Fidelity.com_VMS/904/347/TA_Session_3_Identifying_Chart_Patterns.pdf",
+    "supports": "Engulfing-body vocabulary, triangle categories, breakout filters, false breaks, and retracements. This book does not adopt the slides' performance claims.",
+    "accessed": "2026-10-01"
+  },
+  "fp-doubletop": {
+    "title": "StockCharts ChartSchool · Double top reversal",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal",
+    "supports": "Two-peak construction, intervening support break, and conventional measured-move calculation.",
+    "accessed": "2026-10-01"
+  },
+  "fp-headshoulders": {
+    "title": "StockCharts ChartSchool · Head and shoulders top",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/head-and-shoulders-top",
+    "supports": "Shoulder/head/neckline construction and the need to distinguish formation from completion.",
+    "accessed": "2026-10-01"
+  },
+  "fp-flags": {
+    "title": "StockCharts ChartSchool · Flag and pennant",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/flag-pennant",
+    "supports": "Short consolidation after a sharp move; flag versus pennant geometry.",
+    "accessed": "2026-10-01"
+  },
+  "fp-research": {
+    "title": "Lo, Mamaysky & Wang · Foundations of technical analysis (NBER working paper 7613)",
+    "url": "https://www.nber.org/papers/w7613",
+    "supports": "Research on formalized pattern recognition and incremental information in a historical US-stock sample. Does not establish a universal, current, after-cost trading edge.",
+    "accessed": "2026-10-01"
+  },
+  "fp-quotes": {
+    "title": "SEC / Investor.gov · Bid price / ask price",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price",
+    "supports": "Bid, ask, and bid–ask spread definitions. All quote arithmetic examples are fictional.",
+    "accessed": "2026-10-01"
+  },
+  "fp-triangle": {
+    "title": "StockCharts ChartSchool · Symmetrical triangle",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/symmetrical-triangle",
+    "supports": "Converging lower highs and higher lows; distinction between pattern geometry and observed breakout direction; filter and retest conventions. No performance percentages are adopted here.",
+    "accessed": "2026-10-01"
+  },
+  "fp-breakoutareas": {
+    "title": "StockCharts ChartSchool · Support and resistance",
+    "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance",
+    "supports": "Breaks of previously defined trading areas, approximate zones, role-change and failed-crossing vocabulary. The numerical breakout and failure rules in this book are original fictional examples.",
+    "accessed": "2026-10-01"
+  },
+  "fp-order-bulletin": {
+    "title": "SEC / Investor.gov · Understanding Order Types",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+    "supports": "Market/limit/stop/stop-limit execution, nonfills, trigger conventions, IOC cancellation; definitions only, not assumed fill probabilities.",
+    "accessed": "2026-10-01"
+  },
+  "ic-sma": {
+    "title": "Fidelity · Simple moving average",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma",
+    "supports": "Arithmetic moving-average definition and smoothing/lag tradeoff; no claim of profitable crossover rules.",
+    "accessed": "2026-10-01"
+  },
+  "ic-ema": {
+    "title": "Fidelity · Exponential moving average",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema",
+    "supports": "Recursive EMA definition and SMA seed convention.",
+    "accessed": "2026-10-01"
+  },
+  "ic-rsi": {
+    "title": "Fidelity · Relative Strength Index",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/rsi",
+    "supports": "RSI definition, formula, conventional thresholds, and persistence during strong trends.",
+    "accessed": "2026-10-01"
+  },
+  "ic-macd": {
+    "title": "Fidelity · MACD",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd",
+    "supports": "12/26 EMA difference and 9-period signal convention.",
+    "accessed": "2026-10-01"
+  },
+  "ic-atr": {
+    "title": "Fidelity · Average True Range",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr",
+    "supports": "True-range maximum and recursive ATR update.",
+    "accessed": "2026-10-01"
+  },
+  "ic-bands": {
+    "title": "Fidelity · Bollinger Bands",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands",
+    "supports": "Moving-average envelopes, standard-deviation multiplier, and conventional 20/2 setting.",
+    "accessed": "2026-10-01"
+  },
+  "ic-obv": {
+    "title": "Fidelity · On Balance Volume",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv",
+    "supports": "Cumulative signed-volume formula, including unchanged-close treatment.",
+    "accessed": "2026-10-01"
+  },
+  "ic-fibonacci": {
+    "title": "Fidelity · Fibonacci retracement",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fibonacci-retracement",
+    "supports": "Common drawing convention and anchor-based percentage levels; not evidence of an economic law.",
+    "accessed": "2026-10-01"
+  },
+  "ic-relative": {
+    "title": "Fidelity · Relative Strength Comparison",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/relative-strength-comparison",
+    "supports": "Price ratio definition and interpretation of relative performance.",
+    "accessed": "2026-10-01"
+  },
+  "ic-vwap": {
+    "title": "TradingView · Volume Weighted Average Price",
+    "url": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/",
+    "supports": "Bar-based VWAP formula, price-source choice, and session/reset convention.",
+    "accessed": "2026-10-01"
+  },
+  "ic-breadth": {
+    "title": "Fidelity · Glossary: Advance/Decline line",
+    "url": "https://www.fidelity.com/webcontent/ap002390-mlo-content/18.04/help/help_definition_a.shtml",
+    "supports": "Cumulative advancing-minus-declining issue counts.",
+    "accessed": "2026-10-01"
+  },
+  "ic-timeframes": {
+    "title": "TradingView · Other timeframes and data",
+    "url": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/",
+    "supports": "Developing higher-timeframe bars, confirmation, and lookahead/repainting risks; not evidence of profitable timeframe alignment.",
+    "accessed": "2026-10-01"
+  },
+  "ic-hours": {
+    "title": "SEC / Investor.gov · Extended-hours trading",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+    "supports": "News releases outside regular hours, liquidity/spread/price uncertainty, and venue-dependent order handling.",
+    "accessed": "2026-10-01"
+  },
+  "ic-orders": {
+    "title": "SEC / Investor.gov · Types of orders",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+    "supports": "Market and limit orders, stop-to-market conversion, and execution-price uncertainty.",
+    "accessed": "2026-10-01"
+  },
+  "ic-auctions": {
+    "title": "NYSE · Auctions",
+    "url": "https://www.nyse.com/trade/auctions",
+    "supports": "Exchange auction mechanisms and indicative match/imbalance definitions; current rules can change.",
+    "accessed": "2026-10-01"
+  },
+  "ic-splits": {
+    "title": "SEC / Investor.gov · Stock split",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split",
+    "supports": "Split mechanics: a two-for-one split doubles share count and halves price per share without diluting ownership (100 shares at $100 become 200 at $50). Comparability of price histories across a split is the book’s inference.",
+    "accessed": "2026-10-01"
+  },
+  "ic-rsi-smoothing": {
+    "title": "TradingView · Relative Strength Index",
+    "url": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/",
+    "supports": "Separate positive gain and loss magnitudes and RMA smoothing; not evidence of predictive accuracy.",
+    "accessed": "2026-10-01"
+  },
+  "ic-dividends": {
+    "title": "SEC / Investor.gov · Ex-dividend dates",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ex-dividend-dates-when-are-you-entitled-stock-and",
+    "supports": "Distribution-related price changes on an ex-dividend date; entitlement rules require current verification.",
+    "accessed": "2026-10-01"
+  },
+  "ic-execution": {
+    "title": "SEC / Investor.gov · Executing an order",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/executing-order",
+    "supports": "Broker routing and multiple market venues; order receipt and execution are separate events.",
+    "accessed": "2026-10-01"
+  },
+  "ic-spread": {
+    "title": "FINRA · Understanding market liquidity and your investments",
+    "url": "https://www.finra.org/investors/insights/market-liquidity-risk",
+    "supports": "Bid, ask, spread, and the link between limited liquidity and execution difficulty.",
+    "accessed": "2026-10-01"
+  },
+  "ic-roc": {
+    "title": "Fidelity · Rate of Change",
+    "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc",
+    "supports": "Price change versus N earlier observations and percent-rate convention.",
+    "accessed": "2026-10-01"
+  },
+  "ic-ema-weight": {
+    "title": "TradingView · Moving Averages",
+    "url": "https://www.tradingview.com/support/solutions/43000502589-moving-averages/",
+    "supports": "Conventional EMA smoothing multiplier 2/(N + 1).",
+    "accessed": "2026-10-01"
+  },
+  "ic-profile": {
+    "title": "TradingView · Volume profile basic concepts",
+    "url": "https://www.tradingview.com/support/solutions/43000502040-volume-profile-indicators-basic-concepts/",
+    "supports": "Trading activity assigned to price levels and lower-timeframe aggregation; not evidence of guaranteed support.",
+    "accessed": "2026-10-01"
+  },
+  "ic-order-details": {
+    "title": "SEC · Trading Basics: order types and instructions",
+    "url": "https://www.sec.gov/files/trading101basics.pdf",
+    "supports": "Stop-limit conversion and possible nonexecution; immediate-or-cancel remainder cancellation; market orders filling at different prices.",
+    "accessed": "2026-10-01"
+  },
+  "ic-macd-details": {
+    "title": "TradingView · Moving average convergence divergence (MACD) indicator",
+    "url": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/",
+    "supports": "MACD fast-minus-slow, signal average and MACD-minus-signal histogram definitions; no effectiveness evidence.",
+    "accessed": "2026-10-01"
+  },
+  "ra-orders": {
+    "title": "SEC / Investor.gov · Understanding Order Types",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+    "supports": "Market, limit, stop, and stop-limit mechanics; triggered stops do not guarantee execution price. Numerical plans and paths in the chapters are original fictional examples.",
+    "accessed": "2026-10-01"
+  },
+  "ra-performance": {
+    "title": "SEC / Investor.gov · Investor Bulletin: Performance Claims",
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47",
+    "supports": "Scrutiny of hypothetical performance and performance presentations. Journal designs and fictional case calculations are original instructional examples.",
+    "accessed": "2026-10-01"
+  },
+  "ra-behavior": {
+    "title": "SEC · Library of Congress Report: Behavioral Patterns of U.S. Investors",
+    "url": "https://www.sec.gov/investor/tools/behaviorialpatterns.htm",
+    "supports": "Overview of investor-behavior research and disposition effect. Proposed decision-recording practices are instructional suggestions, not proven psychological interventions.",
+    "accessed": "2026-10-01"
+  },
+  "ra-overfit": {
+    "title": "Bailey, Borwein, López de Prado & Zhu · The Probability of Backtest Overfitting",
+    "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+    "supports": "Original research on strategy selection and backtest overfitting. Textbook examples do not implement or claim a computed probability of backtest overfitting.",
+    "accessed": "2026-10-01"
+  },
+  "ra-pattern-research": {
+    "title": "Lo, Mamaysky & Wang · Foundations of Technical Analysis (2000 working paper)",
+    "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+    "supports": "Algorithmic technical-pattern recognition and conditional return-distribution research using historical U.S. stocks. Does not validate all chart methods or net profitability of textbook examples.",
+    "accessed": "2026-10-01"
+  },
+  "ra-nist": {
+    "title": "NIST/SEMATECH · Confidence Intervals for a Binomial Proportion",
+    "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+    "supports": "Binomial proportion confidence-interval methods and assumptions; the 12-of-20 Wilson interval is independently calculated for illustration.",
+    "accessed": "2026-10-01"
+  },
+  "ra-pvalue": {
+    "title": "NIST/SEMATECH · Critical Values and p Values",
+    "url": "https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm",
+    "supports": "Meaning of a p-value under a specified null hypothesis.",
+    "accessed": "2026-10-01"
+  },
+  "ra-sharpe": {
+    "title": "William F. Sharpe · The Sharpe Ratio (1994)",
+    "url": "https://web.stanford.edu/~wfsharpe/art/sr/sr.htm",
+    "supports": "Definition using differential returns and dependence on measurement interval; assumptions behind time scaling.",
+    "accessed": "2026-10-01"
+  },
+  "ra-dow": {
+    "title": "CMT Association · Technically Speaking, September 2016",
+    "url": "https://cmtassociation.org/technically_speaking/technically-speaking-september-2016/",
+    "supports": "Practitioner account of Dow trends and confirmation using industrial and railroad averages. Cited for description, not independent proof of returns.",
+    "accessed": "2026-10-01"
+  },
+  "ra-wyckoff": {
+    "title": "Wyckoff Analytics · Wyckoff Method",
+    "url": "https://www.wyckoffanalytics.com/wyckoff-method/",
+    "supports": "Proponent description of phases, traditional laws, springs, and Composite Man heuristic. Cited for terminology; interpretations of institutional intent are not treated as observed fact.",
+    "accessed": "2026-10-01"
+  },
+  "ra-elliott": {
+    "title": "Elliott Wave International · Introduction to the Wave Principle",
+    "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+    "supports": "Proponent account of nested five/three-wave structures and alternate counts. Cited for description, not independent validation of forecasting claims.",
+    "accessed": "2026-10-01"
+  },
+  "ra-elliott-rules": {
+    "title": "Elliott Wave International · Impulse",
+    "url": "https://www.elliottwave.com/waveopedia/impulse/",
+    "supports": "Standard-impulse counting constraints; other wave structures require different rules. The textbook schematic omits lower-degree subdivisions.",
+    "accessed": "2026-10-01"
+  },
+  "ra-elliott-constraints": {
+    "title": "Elliott Wave International · Elevate Your Elliott Wave Analysis",
+    "url": "https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/",
+    "supports": "Proponent description of the three standard impulse rules, distinguished from guidelines. Classification compatibility does not establish forecast probabilities.",
+    "accessed": "2026-10-01"
+  },
+  "ra-dow-reference": {
+    "title": "CMT Association · Technically Speaking, October 2011: Dow Theory",
+    "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+    "supports": "Practitioner definitions of confirmation against each average’s prior secondary-reaction extremes, completed closes, and potentially lagged confirmation; not independent efficacy evidence.",
+    "accessed": "2026-10-01"
+  },
+  "ra-wilson-dataplot": {
+    "title": "NIST Dataplot · Agresti Coull: Wilson score interval",
+    "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm",
+    "supports": "Wilson score interval formula and distinction from adjusted Wald; original 12/20 arithmetic computed independently.",
+    "accessed": "2026-10-01"
+  },
+  "ra-halts": {
+    "title": "SEC / Investor.gov · Trading Halts and Delays",
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+    "supports": "Regulatory versus non-regulatory halts; news-pending halts as the most common regulatory halt; primary-market halts honored by other U.S. markets; exchanges decide. Does not describe reopening prices; Atlas-20 halt accounting is a teaching convention.",
+    "accessed": "2026-10-01"
+  },
+  "ra-wyckoff-text": {
+    "title": "Wyckoff Analytics · Wyckoff Method (author-hosted tutorial PDF)",
+    "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+    "supports": "Proponent spring, range and Composite Man definitions, three laws, optional springs and Phase C interpretations; not independent efficacy evidence.",
+    "accessed": "2026-10-01"
+  },
+  "ra-confidence-mean": {
+    "title": "NIST · Confidence Limits for the Mean",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+    "supports": "Long-run coverage interpretation and standard-error mean formula; not an exact justification of the textbook’s crude ±2 SE band.",
+    "accessed": "2026-10-01"
+  },
+  "ra-dow-study": {
+    "title": "Brown, Goetzmann & Kumar · The Dow Theory: William Peter Hamilton’s Track Record Reconsidered (1998 author manuscript)",
+    "url": "https://depot.som.yale.edu/icf/papers/fileuploads/2439/original/98-86.pdf",
+    "supports": "Historical reconstruction of editorial timing calls, with execution and sampling limits; not a test of this chapter’s teaching rules. March 13 author version, not a verified copy of the final journal text.",
+    "accessed": "2026-10-12"
+  },
+  "rc-jt": {
+    "title": "Jegadeesh & Titman (1993), Returns to Buying Winners and Selling Losers",
+    "url": "https://www.bauer.uh.edu/rsusmel/phd/jegadeesh-titman93.pdf",
+    "supports": "Cross-sectional U.S. stock momentum, sample/rule/cost conventions; not validation of a particular chart setup.",
+    "accessed": "2026-10-01"
+  },
+  "rc-ts": {
+    "title": "Moskowitz, Ooi & Pedersen (2012), Time series momentum",
+    "url": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+    "supports": "Own-return momentum in 58 futures/forward instruments; gross results and market scope.",
+    "accessed": "2026-10-01"
+  },
+  "rc-bs": {
+    "title": "Bajgrowicz & Scaillet · Technical trading revisited (author-hosted manuscript, sample to July 2011; published 2012)",
+    "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+    "supports": "Multiple-testing, ex ante persistence, transaction costs, and DJIA technical rules.",
+    "accessed": "2026-10-01"
+  },
+  "rc-lo": {
+    "title": "Lo, Mamaysky & Wang (2000), Foundations of Technical Analysis",
+    "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+    "supports": "Algorithmic pattern recognition and conditional return distributions, distinct from net trading profitability.",
+    "accessed": "2026-10-01"
+  },
+  "rc-os": {
+    "title": "Osler (2001), Currency Orders and Exchange-Rate Dynamics, Staff Report 125",
+    "url": "https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr125.pdf",
+    "supports": "FX order clustering mechanism; one dealing bank and three currency pairs, not stock-strategy evidence.",
+    "accessed": "2026-10-01"
+  },
+  "rc-bo": {
+    "title": "Barber & Odean (2000), Trading Is Hazardous to Your Wealth",
+    "url": "https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf",
+    "supports": "Household turnover and net performance, observed brokerage sample rather than a randomized psychology intervention.",
+    "accessed": "2026-10-01"
+  },
+  "rc-sec-case": {
+    "title": "SEC staff (2021), Equity and Options Market Structure Conditions in Early 2021",
+    "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+    "supports": "Dated GME observations in section 3.2; a retrospective staff report, not a contemporaneous signal feed.",
+    "accessed": "2026-10-01"
+  },
+  "rc-sec-reuse": {
+    "title": "SEC · Webmaster Frequently Asked Questions, reuse of content",
+    "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+    "supports": "Government-created SEC content is free to access and reuse; some site content, such as stock art, is excluded. Not a license for underlying vendor data.",
+    "accessed": "2026-10-01"
+  },
+  "rc-apple-dividend-2016": {
+    "title": "Apple (January 26, 2016), Apple Reports Record First Quarter Results",
+    "url": "https://www.apple.com/newsroom/2016/01/26Apple-Reports-Record-First-Quarter-Results/",
+    "supports": "Issuer declaration of a $0.52 per-share dividend payable February 11, 2016, to holders of record on February 8, 2016; the February 4 ex-date follows from the then two-business-day ex-date convention, not from this release.",
+    "accessed": "2026-10-12"
+  },
+  "rc-apple-split": {
+    "title": "Apple (April 23, 2014), Capital Return Program and Stock Split",
+    "url": "https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/",
+    "supports": "Issuer announcement of a seven-for-one split and record/trading dates; no historical OHLC feed.",
+    "accessed": "2026-10-01"
+  },
+  "rc-open-stock-archive": {
+    "title": "Boris Marjanovic / Kaggle · Huge Stock Market Dataset (version 3, CC0)",
+    "url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+    "supports": "Depositor metadata explicitly applies CC0-1.0 and states dividend/split-adjusted daily OHLC. Local extracts preserve AAPL, MSFT and SPY 2016 rows. Upstream provider, exact session/time zone, adjustment algorithm and point-in-time revisions are not documented; no certified quote feed or execution/performance claim.",
+    "accessed": "2026-10-02"
+  },
+  "rc-cc0": {
+    "title": "Creative Commons · CC0 1.0 Universal deed and legal code",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "supports": "CC0 states the affirmer waives their copyright and related rights to the extent allowed. Other persons’ rights and warranties are not supplied; this is the recorded permission basis, not chain-of-title certification.",
+    "accessed": "2026-10-02"
+  }
+}

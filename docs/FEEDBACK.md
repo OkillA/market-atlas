@@ -171,13 +171,7 @@ Reopened CA1-015 and PUB6-001 are verified and archived with their full findings
 
 The Chapter 24 AUD2-002 reopening and PUB7-001–010 are verified and archived with full findings, dispositions and evidence. [Batch 7](PUBLICATION_BATCH7_20261012.md) completes scoped editorial acceptance of all 28 chapters and six part reviews, including the changed earlier-chapter dependencies. PUB7-011 below and CA1-026 remain deferred. Release source/rights review, native printer/broader browser QA and shipping metadata remain pending. Changes are local and unpushed.
 
-### PUB7-011 — Consider independent historical Dow evidence after full-paper review
-- Priority / type: P3 / editorial recommendation
-- Status: deferred
-- Owner: unassigned
-- Reviewer / date: claude-code-pub7 handoff; recorded by /root / 2026-10-12
-- Location: Chapter 27 empirical-evidence discussion; PUBLICATION_BATCH7_HANDOFF.md.
-- Finding and evidence: The handoff proposes considering the Brown–Goetzmann–Kumar (1998) Dow study. Its full paper has not been reviewed in this batch. Current prose explicitly limits the evidence examined and makes no unsupported predictive-performance claim for these frameworks. This is a possible literature addition, not a demonstrated factual defect.
-- Proposed resolution: Retrieve and read the complete original study, compare its specific Dow rule, sample, comparator and costs with this chapter’s frozen teaching rule, then decide whether a bounded evidence record would improve the chapter.
-- Acceptance criteria: Record inspected original passages and study limits, with an evidence-backed inclusion or non-inclusion disposition; do not infer validity for all Dow/Wyckoff/Elliott specifications.
-- Discussion / progress: Deferred from the prior handoff until a dedicated full-paper review. It does not prevent scoped editorial acceptance of the current explicit evidence limits; ROAD-003 remains outstanding.
+
+## Release-readiness completion — /root, 2026-10-12
+
+PUB7-011 and RELEASE1-001–003 are verified and archived with full findings, dispositions and boundaries. [The report](RELEASE_READINESS_20261012.md) completes ROAD-003 access/support/reuse dispositions and ROAD-006 metadata/invalidation. ROAD-004 native print/desktop coverage remains in progress; ROAD-007 has a local preflight candidate but no new deployment. CA1-026 is the only active finding, deferred until actual readers participate. Original reader storage was restored. Changes remain local and unpushed.

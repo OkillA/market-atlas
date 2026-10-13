@@ -1,0 +1,669 @@
+{
+  "platform": "T3 Code native collaborative preview; Electron 44 / Chromium 152 on macOS",
+  "method": "Top-level native navigation and synchronous DOM/input/geometry inspection; no standalone browser",
+  "packetChecks": [
+    {
+      "width": 320,
+      "cases": [
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 2,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 24,
+          "revealed": true,
+          "route": "#/chapter/support-resistance",
+          "width": 320
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 4,
+          "flowSteps": 5,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 15,
+          "revealed": true,
+          "route": "#/chapter/candlestick-patterns",
+          "width": 320
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 4,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 22,
+          "revealed": true,
+          "route": "#/chapter/chart-patterns",
+          "width": 320
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 3,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 41,
+          "revealed": true,
+          "route": "#/chapter/breakouts",
+          "width": 320
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 2,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 21,
+          "revealed": true,
+          "route": "#/chapter/psychology",
+          "width": 320
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 3,
+          "flowSteps": 7,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 168,
+          "revealed": true,
+          "route": "#/chapter/system-design",
+          "width": 320
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 9,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 120,
+          "revealed": true,
+          "route": "#/chapter/case-studies",
+          "width": 320
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cases": [
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 2,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 24,
+          "revealed": true,
+          "route": "#/chapter/support-resistance",
+          "width": 390
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 4,
+          "flowSteps": 5,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 15,
+          "revealed": true,
+          "route": "#/chapter/candlestick-patterns",
+          "width": 390
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 4,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 22,
+          "revealed": true,
+          "route": "#/chapter/chart-patterns",
+          "width": 390
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 3,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 41,
+          "revealed": true,
+          "route": "#/chapter/breakouts",
+          "width": 390
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 2,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 21,
+          "revealed": true,
+          "route": "#/chapter/psychology",
+          "width": 390
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 3,
+          "flowSteps": 7,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 168,
+          "revealed": true,
+          "route": "#/chapter/system-design",
+          "width": 390
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 9,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 120,
+          "revealed": true,
+          "route": "#/chapter/case-studies",
+          "width": 390
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "cases": [
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 2,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 24,
+          "revealed": true,
+          "route": "#/chapter/support-resistance",
+          "width": 768
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 4,
+          "flowSteps": 5,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 15,
+          "revealed": true,
+          "route": "#/chapter/candlestick-patterns",
+          "width": 768
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 4,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 22,
+          "revealed": true,
+          "route": "#/chapter/chart-patterns",
+          "width": 768
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 3,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 41,
+          "revealed": true,
+          "route": "#/chapter/breakouts",
+          "width": 768
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 2,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 21,
+          "revealed": true,
+          "route": "#/chapter/psychology",
+          "width": 768
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 3,
+          "flowSteps": 7,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 168,
+          "revealed": true,
+          "route": "#/chapter/system-design",
+          "width": 768
+        },
+        {
+          "before": {
+            "closed": true,
+            "overflow": false,
+            "visible": true
+          },
+          "dataTables": 9,
+          "flowSteps": 0,
+          "flowTextMatches": true,
+          "inputs": true,
+          "missingData": false,
+          "overflow": false,
+          "packetCells": 120,
+          "revealed": true,
+          "route": "#/chapter/case-studies",
+          "width": 768
+        }
+      ]
+    }
+  ],
+  "routeChecks": [
+    {
+      "concealed": true,
+      "heading": "Learn to read\nthe market.",
+      "overflow": false,
+      "route": "#/",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "The table of contents",
+      "overflow": false,
+      "route": "#/contents",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "The language, explained.",
+      "overflow": false,
+      "route": "#/glossary",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "The evidence behind the book",
+      "overflow": false,
+      "route": "#/evidence",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "A book that lives\nin your browser.",
+      "overflow": false,
+      "route": "#/about",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "Turn a chart into a reproducible observation",
+      "overflow": false,
+      "route": "#/practice/foundations",
+      "solutions": 3,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "Write an analysis with the next bars covered",
+      "overflow": false,
+      "route": "#/practice/price-action",
+      "solutions": 3,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "Indicator review: calculate, compare, explain",
+      "overflow": false,
+      "route": "#/practice/indicators",
+      "solutions": 3,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "Context review: participation, clock, and execution",
+      "overflow": false,
+      "route": "#/practice/context",
+      "solutions": 3,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "Process review: one complete record, from budget to review",
+      "overflow": false,
+      "route": "#/practice/risk",
+      "solutions": 3,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "Evidence review: evaluate a claim, then process a system",
+      "overflow": false,
+      "route": "#/practice/advanced",
+      "solutions": 3,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/candle",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/trend",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/average",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/risk",
+      "solutions": 0,
+      "width": 320
+    },
+    {
+      "concealed": true,
+      "heading": "Learn to read\nthe market.",
+      "overflow": false,
+      "route": "#/",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "The table of contents",
+      "overflow": false,
+      "route": "#/contents",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "The language, explained.",
+      "overflow": false,
+      "route": "#/glossary",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "The evidence behind the book",
+      "overflow": false,
+      "route": "#/evidence",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "A book that lives\nin your browser.",
+      "overflow": false,
+      "route": "#/about",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "Turn a chart into a reproducible observation",
+      "overflow": false,
+      "route": "#/practice/foundations",
+      "solutions": 3,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "Write an analysis with the next bars covered",
+      "overflow": false,
+      "route": "#/practice/price-action",
+      "solutions": 3,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "Indicator review: calculate, compare, explain",
+      "overflow": false,
+      "route": "#/practice/indicators",
+      "solutions": 3,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "Context review: participation, clock, and execution",
+      "overflow": false,
+      "route": "#/practice/context",
+      "solutions": 3,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "Process review: one complete record, from budget to review",
+      "overflow": false,
+      "route": "#/practice/risk",
+      "solutions": 3,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "Evidence review: evaluate a claim, then process a system",
+      "overflow": false,
+      "route": "#/practice/advanced",
+      "solutions": 3,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/candle",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/trend",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/average",
+      "solutions": 0,
+      "width": 768
+    },
+    {
+      "concealed": true,
+      "heading": "The chart playground",
+      "overflow": false,
+      "route": "#/lab/risk",
+      "solutions": 0,
+      "width": 768
+    }
+  ],
+  "finalContentsFrames": [
+    {
+      "metadata": "✓ Read",
+      "overflow": false,
+      "rows": 28,
+      "scrollWidth": 375,
+      "styles": [
+        "http://127.0.0.1:4173/favicon.svg",
+        "http://127.0.0.1:4173/styles.css?v=20261012-release4"
+      ],
+      "surface": "native same-origin child frame",
+      "width": 390
+    },
+    {
+      "metadata": "✓ Read",
+      "overflow": false,
+      "rows": 28,
+      "scrollWidth": 753,
+      "styles": [
+        "http://127.0.0.1:4173/favicon.svg",
+        "http://127.0.0.1:4173/styles.css?v=20261012-release4"
+      ],
+      "surface": "native same-origin child frame",
+      "width": 768
+    },
+    {
+      "metadata": "✓ Read",
+      "overflow": false,
+      "rows": 28,
+      "scrollWidth": 1265,
+      "styles": [
+        "http://127.0.0.1:4173/favicon.svg",
+        "http://127.0.0.1:4173/styles.css?v=20261012-release4"
+      ],
+      "surface": "native same-origin child frame",
+      "width": 1280
+    }
+  ],
+  "interactionChecks": {
+    "search": "Brown finds Chapter 27’s new final-section passage and exact deep link.",
+    "contents": "Eight links in Chapter 27 contents; actual native Escape closes and returns focus to the trigger.",
+    "tableWorkspace": "Chapter 26’s flow opens a seven-row Step/Explanation table with complete last-step text; actual native Escape closes.",
+    "notebook": "Verified exact exported Blob/imported File payload, duplicate idempotence and rejection without overwriting. Original reader storage restored; separate artifact.",
+    "limits": "Enter activation failed in this pass; evaluated DOM clicks/input events cover application handlers. Native Escape succeeded. Native OS chooser not exercised."
+  },
+  "limits": [
+    "1280x850 and later 390px top-level resize timed out; preview_open restored connected session. Final contents widths additionally use marked native child frames. Snapshot failed.",
+    "Native print exports remain partial; asynchronous timer matrix experiment replaced by synchronous tool navigation."
+  ]
+}

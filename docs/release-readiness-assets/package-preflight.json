@@ -1,0 +1,25 @@
+{
+  "version": "0.4.1-alpha.1",
+  "editionStatus": "alpha draft",
+  "twoBuildsMatch": true,
+  "bundleFiles": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app.js": "45bef668039c2d834142a1080c2c01e142ec5f1118ffeefe811c48eb51662ae2",
+    "content/book.js": "b5c9c5524c2b7b734985d83904aff636a5107d564a2ba4efdaa4d76c4f668a3f",
+    "favicon.svg": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
+    "figure-renderer.js": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+    "index.html": "9c2756ca630727c2e64dca4197d469a211be7d5e4fac1a3190fd60fb89138496",
+    "styles.css": "f8e9f33c2fd1371922ae274c5ae3def97a3582e48218ab56881031379ad30657"
+  },
+  "localAssetReferences": [
+    "favicon.svg",
+    "styles.css",
+    "content/book.js",
+    "figure-renderer.js",
+    "app.js"
+  ],
+  "zip": "docs/release-readiness-assets/market-atlas-0.4.1-alpha.1.zip",
+  "zipSha256": "28f9ec2d055e0e561f446ed3015583d60502bd7e3fb7232bbfa7c85169d54298",
+  "published": false,
+  "limits": "Static asset graph, byte identity and ZIP integrity checked. Native file:// reading, deployment and a complete native print matrix are not established by this preflight."
+}

@@ -14,6 +14,10 @@ Learn to distinguish a recorded transaction, an explanation, and a decision.
 
 > A chart describes past transactions. A useful interpretation states its assumptions and what would change your mind.
 
+**Version 0.4 · AI editorial review recorded 2026-10-02 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
+
 **Learning outcomes**
 
 - Separate an observation, an interpretation, and an action.
@@ -179,6 +183,10 @@ Option 3: 1.15 is the ending-to-starting wealth ratio. Subtract 1 to obtain the 
 Read four prices accurately before asking what a candle means.
 
 > OHLC is a compact summary of an interval; it preserves extremes and endpoints but loses the order of transactions.
+
+**Version 0.4 · AI editorial review recorded 2026-10-02 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -360,6 +368,10 @@ Count what changed hands, choose a fair comparison, and resist reading minds.
 
 > Volume measures trading activity. It does not by itself identify participants, motivations, or future direction.
 
+**Version 0.4 · AI editorial review recorded 2026-10-03 (claude-code-main).**
+
+Review scope: Chapter 3 re-accepted after the batch 4 figure change; earlier substantive review retained. Later changed figures rechecked as recorded below.
+
 **Learning outcomes**
 
 - Count share volume without doubling buyer and seller quantities.
@@ -520,6 +532,10 @@ Option 3: Including today changes the baseline to (5 × 0.36 + 0.70)/6 = 0.4167 
 A chart’s settings change the question its picture can answer.
 
 > Fix interval, session, scale, and adjustment conventions before comparing charts or testing a rule.
+
+**Version 0.4 · AI editorial review recorded 2026-10-02 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -749,6 +765,10 @@ Describe the sequence you can see and account for when you could recognize it.
 
 > Trend describes direction over a specified horizon. Recognizing past structure does not guarantee its continuation.
 
+**Version 0.4 · AI editorial review recorded 2026-10-02 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
+
 **Learning outcomes**
 
 - Apply a fixed two-before/two-after swing rule.
@@ -956,6 +976,10 @@ Option 3: One lower following close is insufficient under the stated two-bar req
 Map prior reactions as conditional evidence, with explicit boundaries.
 
 > A level is a predefined area to investigate. It is neither an invisible wall nor a guaranteed execution price.
+
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.
 
 **Learning outcomes**
 
@@ -1171,6 +1195,10 @@ Use pattern names as shorthand for measured shapes, then examine the surrounding
 
 > A candle pattern is a geometric classification. Its meaning depends on context, recognition time, and evidence about subsequent outcomes.
 
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.
+
 **Learning outcomes**
 
 - Calculate the geometry before applying a candle name.
@@ -1379,6 +1407,10 @@ Option 3: Correct: (50 −48.90)/(50.80 −50) = 1.375.
 Translate familiar silhouettes into definitions that can fail.
 
 > Pattern names organize historical geometry. Completion criteria, timing, and a fair comparison matter more than resemblance.
+
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.
 
 **Learning outcomes**
 
@@ -1640,6 +1672,10 @@ Option 3: Both peaks are now available, but 55 remains above 54. This is candida
 Define the boundary and the observation time before evaluating a crossing.
 
 > A breakout is a predefined crossing, not a promise. Confirmation and retests trade additional information for changed timing and execution.
+
+**Version 0.4 · AI editorial review recorded 2026-10-02 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -1937,6 +1973,10 @@ Understand the smoothing before you trust the signal.
 
 > An average compresses past prices into a smoother description; its usefulness as a trading rule is a separate, testable question.
 
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.
+
 **Learning outcomes**
 
 - Calculate a full-window SMA and SMA-seeded EMA, including undefined early values.
@@ -2090,6 +2130,10 @@ Option 3: $69 divided by five gives $13.80.
 Read price and its transformations together, including recognition times.
 
 > Momentum indicators transform past price changes. Extreme readings and divergences need context and cannot schedule a reversal.
+
+**Version 0.4 · AI editorial review recorded 2026-10-03 (claude-code-main).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -2291,6 +2335,10 @@ Measure variability before choosing what a normal move should mean.
 
 > Volatility describes movement size or dispersion, not its direction. Historical quiet can end abruptly.
 
+**Version 0.4 · AI editorial review recorded 2026-10-03 (claude-code-main).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
+
 **Learning outcomes**
 
 - Calculate gap-aware true range and update an initialized ATR.
@@ -2453,6 +2501,10 @@ Option 3: $6 is close minus prior close.
 Use volume to change the question, without pretending it reveals every participant’s motive.
 
 > Volume tools organize trading activity in different ways. Their outputs depend on price fields, aggregation, coverage, and anchors.
+
+**Version 0.4 · AI editorial review recorded 2026-10-03 (claude-code-main).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -2622,6 +2674,10 @@ Calculate a chosen grid, then examine how the anchor choice changes it.
 > Retracement levels are reproducible arithmetic once anchors are fixed; their predictive value does not follow from the mathematics.
 
 **Optional extension.**
+
+**Version 0.4 · AI editorial review recorded 2026-10-03 (claude-code-main).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -2840,6 +2896,10 @@ Separate winning the comparison from making money.
 
 > Outperformance is a relative statement. A stock can lead its benchmark while both lose value.
 
+**Version 0.4 · AI editorial review recorded 2026-10-11 (claude-code-alpha).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
+
 **Learning outcomes**
 
 - Rebase stock/comparator ratios and distinguish them from return differences.
@@ -2994,6 +3054,10 @@ Option 3: 12.5% is the market-relative ratio increase, using the market’s grow
 An index can look healthy while its members tell a more varied story.
 
 > Breadth summarizes participation across a defined universe. The universe and counting rule are as important as the indicator.
+
+**Version 0.4 · AI editorial review recorded 2026-10-11 (claude-code-alpha).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -3172,6 +3236,10 @@ Give each chart a job and respect when its information exists.
 
 > Different timeframes aggregate the same underlying activity. Use them for distinct questions and keep incomplete bars visibly provisional.
 
+**Version 0.4 · AI editorial review recorded 2026-10-11 (claude-code-alpha).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
+
 **Learning outcomes**
 
 - Aggregate daily closes into weekly closes under disclosed boundaries.
@@ -3325,6 +3393,10 @@ Option 3: $103 is the future session-10 weekly finish.
 Separate the overnight repricing from the new session’s intraday recovery.
 
 > Event context can change both price behavior and execution. A technical level is not a promise of continuity through new information.
+
+**Version 0.4 · AI editorial review recorded 2026-10-11 (claude-code-alpha).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -3491,6 +3563,10 @@ Option 3: (46−43)/43 gives +6.9767%.
 The price you see and the price you can transact at are different questions.
 
 > A trade requires available counterparties under specific order rules. Spread, depth, timing, and venue affect the outcome.
+
+**Version 0.4 · AI editorial review recorded 2026-10-11 (claude-code-alpha).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -3686,6 +3762,10 @@ Give uncertainty a budget before giving a trade your money.
 
 > A loss budget sizes a position under a model. Keep price risk, costs, capital committed and common-shock exposure visible; a stop does not cap the eventual loss.
 
+**Version 0.4 · AI editorial review recorded 2026-10-02 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
+
 **Learning outcomes**
 
 - Calculate shares under price-risk, cost-inclusive, cash and notional constraints.
@@ -3847,6 +3927,10 @@ Option 3: Changing the denominator after the event hides loss beyond the plan.
 Write the decisions while the outcome is still unknown.
 
 > A complete plan names the data cutoff, eligible opportunity, order and expiry, size, exit priority and review record. Each missing choice can change the result.
+
+**Version 0.4 · AI editorial review recorded 2026-10-02 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -4028,6 +4112,10 @@ Option 3: $120 gross − $5 = $115; $115 ÷ $60 = +1.9167R.
 Design decisions that survive a persuasive story.
 
 > Record beliefs before outcomes arrive, and use process constraints to make changing your mind easier.
+
+**Version 0.4 · AI editorial review recorded 2026-10-11 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -4234,6 +4322,10 @@ Option 3: Compliance concerns the frozen decision protocol, not the eventual pro
 Preserve the decision, the opportunity set, and the result.
 
 > A journal is useful when it makes your decisions reproducible and keeps inconvenient observations in the record.
+
+**Version 0.4 · AI editorial review recorded 2026-10-11 (/root).**
+
+Review scope: Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.
 
 **Learning outcomes**
 
@@ -4469,6 +4561,10 @@ Study evidence, test ideas honestly, and separate a good story from a useful met
 Turn a chart story into a test that could disappoint you.
 
 > A historical simulation measures a rule under assumptions. Honest evaluation fixes the rule, the information clock, and the cost models before the evidence arrives, then reports how the conclusion changes with them.
+
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.
 
 **Learning outcomes**
 
@@ -4736,6 +4832,10 @@ Understand what the numbers measure before trusting their precision.
 
 > Average outcome, return, drawdown, and uncertainty are four different measurements of the same trades. Compute each from the list of outcomes, and let the uncertainty decide how much the others can mean.
 
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.
+
 **Learning outcomes**
 
 - Summarize a list of net R outcomes as a distribution, a win rate, average win and loss, and an expectancy computed two ways, before and after costs.
@@ -4996,6 +5096,10 @@ Option 3: Correct: with 60% wins and 40% losses, the weighted result equals the 
 A signal is one component of a much larger decision process.
 
 > A complete system specifies data, eligibility, ranking, sizing, fills, exits, and accounting so precisely that two people processing the same inputs produce the same ledger.
+
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.
 
 **Learning outcomes**
 
@@ -5470,6 +5574,10 @@ Apply one core rule from each framework to a fictional chart, and keep descripti
 
 **Optional extension.**
 
+**Version 0.4.1 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Prior full chapter acceptance retained; independent Dow author-manuscript addition and revised evidence limits reviewed on 2026-10-12. Teaching rules, tasks and figures unchanged.
+
 **Learning outcomes**
 
 - Classify a two-average Dow-style move as unconfirmed or confirmed by comparing each average’s close with its own reference high, at the close where the classification becomes known.
@@ -5589,6 +5697,8 @@ An empirical claim can be tested only one precise proposition at a time, and the
 
 Where discretion is essential, as in choosing between Elliott counts, test the discretion itself. Ask two readers to label the same charts with the future bars hidden, timestamp their preferred and alternate counts, and keep their disagreements. Measure agreement first, then forecast accuracy, then net results. Lo, Mamaysky, and Wang took another route: they replaced visual judgment with an algorithm that detects chart patterns, then compared returns after detected patterns with ordinary returns in U.S. stocks. Their findings concern their own pattern definitions. They are not tests of Dow confirmation, springs, or wave counts.
 
+Brown, Goetzmann and Kumar reexamined Hamilton’s 1902–1929 editorials and reported favorable risk-adjusted results for a reconstructed timing strategy. This is independent historical evidence, but it tests interpreted editorial calls, not our simultaneous-close rule. One reader coded the editorials; eleven indeterminate calls were excluded. Their later neural-net experiment also shows execution sensitivity: delaying action materially changes the result. Transaction costs are omitted, and the authors flag uncertainty about daily returns and achievable index returns. Treat this as evidence about those definitions and assumptions, not validation of present-day Dow, Wyckoff or Elliott trading.
+
 This book has not reviewed an independent study that establishes the predictive value of these three frameworks as defined here. That is a statement about the evidence considered, not a proof that they have none. The research appendix summarizes the studies that were examined. Historical influence earns a framework a place in study. Reproducible evidence determines how much confidence any particular claim deserves.
 
 #### Worked example: Disagreement is data
@@ -5686,6 +5796,7 @@ Option 3: This uses the wrong price field. The convention described here counts 
 - [Elliott Wave International · Elevate Your Elliott Wave Analysis](https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/) — Proponent description of the three standard impulse rules, distinguished from guidelines. Classification compatibility does not establish forecast probabilities.
 - [Lo, Mamaysky & Wang · Foundations of Technical Analysis (2000 working paper)](https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf) — Algorithmic technical-pattern recognition and conditional return-distribution research using historical U.S. stocks. Does not validate all chart methods or net profitability of textbook examples.
 - [Wyckoff Analytics · Wyckoff Method (author-hosted tutorial PDF)](https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf) — Proponent spring, range and Composite Man definitions, three laws, optional springs and Phase C interpretations; not independent efficacy evidence.
+- [Brown, Goetzmann & Kumar · The Dow Theory: William Peter Hamilton’s Track Record Reconsidered (1998 author manuscript)](https://depot.som.yale.edu/icf/papers/fileuploads/2439/original/98-86.pdf) — Historical reconstruction of editorial timing calls, with execution and sampling limits; not a test of this chapter’s teaching rules. March 13 author version, not a verified copy of the final journal text.
 
 ---
 
@@ -5694,6 +5805,10 @@ Option 3: This uses the wrong price field. The convention described here counts 
 Successful trades, failed trades, and the decision to stand aside.
 
 > A case is a chain from known data through a frozen decision to a later record. Keep favorable, unfavorable, skipped and unresolved cases together; a selected gallery cannot estimate performance.
+
+**Version 0.4 · AI editorial review recorded 2026-10-12 (/root).**
+
+Review scope: Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.
 
 **Learning outcomes**
 

@@ -1,8 +1,8 @@
 # Editorial roadmap
 
-Updated **2026-10-12** by `/root` after publication batch 7. Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
+Updated **2026-10-12** by `/root` after the release-readiness batch. Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
 
-The complete 28-chapter revision, six part reviews, selected-source synthesis, historical gallery and recorded re-audit fixes are complete within their documented scope. All 28 chapters and six part reviews now have scoped editorial acceptance. The next stage is source/rights review, release QA and accurate review/version metadata. Human-reader participation remains deferred, and independent editorial work can continue.
+The complete 28-chapter revision, six part reviews, selected-source synthesis, historical gallery and recorded re-audit fixes are complete within their documented scope. All 28 chapters and six part reviews now have scoped editorial acceptance. Source/access/reuse dispositions and accurate review/version metadata are complete; native print/desktop QA and reviewed-release finalization remain. Human-reader participation remains deferred, and independent editorial work can continue.
 
 ## Work order and ownership
 
@@ -40,18 +40,22 @@ Claim a manageable package by setting its owner and status before implementation
 
 ### ROAD-003 — Finish source-access and data-rights release review
 
-- Status / owner: ready / unassigned.
+- Status / owner: done / /root, 2026-10-12.
 - Dependencies: none; share findings with ROAD-002 as they arise.
 - Access follow-up / 2026-10-03: Batch 3 could inspect the author-hosted original Lo/Mamaysky/Wang paper, but NBER w7613 full-page retrieval failed and its PDF returned 403. Recheck NBER access during the full inventory; this retrieval limitation does not invalidate the supported original-study claim. See [source record](publication-batch3-assets/source-checks.json).
-- Work: cover all 73 current source entries, grouping duplicate URLs. Record access method/date and the exact passage supporting each material release claim. Retain earlier passage checks when still applicable; do not reset every check date after a successful fetch. Separate unavailable retrieval, unsupported claims and limited empirical transfer. Recheck historical depositor permission, upstream limits, adjustment/session/time-zone disclosures and systematic selection records.
+- Work: cover all 75 current source entries, grouping duplicate URLs. Record access method/date and the exact passage supporting each material release claim. Retain earlier passage checks when still applicable; do not reset every check date after a successful fetch. Separate unavailable retrieval, unsupported claims and limited empirical transfer. Recheck historical depositor permission, upstream limits, adjustment/session/time-zone disclosures and systematic selection records.
 - Exit criteria: every source has a current access disposition and claim-support locator or explicit limitation; historical reuse/convention decisions are documented; any resulting fixes are rebuilt and substantively verified. Selected-source review and permission declarations retain their actual limits.
+
+- Completion / 2026-10-12: [Release-readiness batch](RELEASE_READINESS_20261012.md) records 75 entries/72 URLs, 140 dated support records plus explicit bibliographic limits, all access/reuse dispositions, original dates retained, bounded historical permission/convention decisions, and PUB7-011 full-author-manuscript review. No chain-of-title or exhaustive new page audit is claimed.
 
 ### ROAD-004 — Complete native browser and print release QA
 
-- Status / owner: ready / unassigned.
+- Status / owner: in_progress / /root, 2026-10-12 (release-readiness batch: broader native reader QA and printer capability investigation).
 - Dependencies: can start now; rerun affected cases after later content or interface changes.
 - Work: use the product-native collaborative browser for representative 320/390/768/1280px reading, keyboard access, contents/deep links, search, notebook backup/restore and closed/revealed packets. Check light/dark figures and complete data-table access. Capture native browser printer output for learner and answer editions of Chapters 6–9, 22, 26 and 28; verify complete inputs, quiz choices, solution policy and continuation boundaries. Sample ordinary chapters and part reviews too.
 - Exit criteria: retain actual browser/print artifacts and a coverage matrix identifying platform, viewport, print engine, checked content and unresolved gaps. Separate earlier WeasyPrint samples from native printer results. Check factual illustration labels and complete material, not only geometry or lack of runtime errors.
+
+- Progress / 2026-10-12: [Release-readiness batch](RELEASE_READINESS_20261012.md) retains 21 native packet cases at 320/390/768, 30 broader routes at 320/768, search/contents/workspace/notebook checks, final contents child frames at 390/768/1280, and three native PDFs. Only Chapter 6’s learner/answer pair is current; Chapter 7’s learner PDF predates the new flow table. Resumption: current Chapter 7–9/22/26/28 pairs (12 PDFs), ordinary/part-review samples, and remaining native desktop/pointer/keyboard/file:// coverage. Resize/Enter/snapshot/save limitations are recorded; incomplete attempts are not acceptance.
 
 ### ROAD-005 — Run human reader validation
 
@@ -63,25 +67,29 @@ Claim a manageable package by setting its owner and status before implementation
 
 ### ROAD-006 — Add truthful chapter review and version metadata
 
-- Status / owner: planned / unassigned.
+- Status / owner: done / /root, 2026-10-12.
 - Dependencies: ROAD-002 supplies chapter-specific review evidence; ROAD-003 supplies source/reuse dispositions. The metadata mechanism may be implemented earlier while leaving unfinished reviews visibly pending.
-- Work: define chapter version, review date, reviewer and scope in authoring JSON. Carry these fields through the build, browser edition and manuscript. The current builder forces all chapters to draft; changing an authoring status alone will not publish a reviewed status. Retain explicit draft/unreviewed states and source access versus evidence-check dates.
+- Work: define chapter version, review date, reviewer and scope in authoring JSON. Carry these fields through the build, browser edition and manuscript. The builder derives reviewed/draft status from bound review declarations; changing an authoring status alone does not publish a reviewed status. Retain explicit draft/unreviewed states and source access versus evidence-check dates.
 - Exit criteria: built metadata matches the actual ledger and current chapter versions; changed chapter content invalidates prior acceptance appropriately; reader-facing labels accurately describe the review. Rebuild once and inspect affected reader/manuscript output.
+
+- Completion / 2026-10-12: All 28 chapters have truthful version/date/reviewer/scope in authoring, manuscript and reader, labeled AI editorial review. Isolated baseline matches all 74 outputs; prose/source/renderer/missing-review copies lose acceptance. Original source/evidence dates retained; overall alpha draft and deferred human validation remain visible. See [report](RELEASE_READINESS_20261012.md) and `npm run check:reviews`.
 
 ### ROAD-007 — Prepare a public release
 
 - Status / owner: in_progress (alpha draft) / claude-code-alpha, 2026-10-11.
-- Dependencies: ROAD-002/003/004/006 for a reviewed public edition; hosting destination and release scope remain undecided. CA1-026 must be completed before claiming human reader validation. A deliberately released draft must describe any remaining review and study limits.
+- Dependencies: ROAD-002/003/004/006 for a reviewed public edition; the existing GitHub Pages destination is available but reviewed-release scope/QA remain unfinished. CA1-026 must be completed before claiming human reader validation. A deliberately released draft must describe any remaining review and study limits.
 - Work: prepare a static artifact and release notes with version, content-review date, scope, data limitations and unresolved items. Choose durable topic URLs/static chapter text if search indexing is part of the release scope. Check deployed assets, routing, source links, notebook origin/backup behavior and offline reading as applicable.
 - Exit criteria: a reproducible release bundle and concrete preflight record exist; deployment authorization and destination are recorded before publication. No public deployment is included in the current tracking work.
 - Alpha progress / 2026-10-11: claude-code-alpha — the user requested a public alpha on GitHub with free static hosting. Prepared `npm run build:site`, a GitHub Pages workflow that reruns all verifiers/checks before deploying, and [alpha release notes](RELEASE_ALPHA.md) stating the incomplete ROAD-002–006 gates. The alpha is a deliberately released draft, not the reviewed public edition; this package stays open for the reviewed release. Deployed with the user's authorization to https://okilla.github.io/market-atlas/ from public repository OkillA/market-atlas (Actions run 38178883640); live URL checked.
+
+- Local preflight contribution / 2026-10-12: /root prepared reproducible 0.4.1-alpha.1 static bundle/ZIP and asset/hash checks, preserving the existing ROAD-007 owner. [Report](RELEASE_READINESS_20261012.md). No push, redeploy or reviewed-public-edition acceptance; ROAD-004 remains incomplete.
 
 ## Publication gates
 
 | Claim or release stage | Required evidence | Current state |
 | --- | --- | --- |
-| Complete local draft | Built chapters, practice, figures, verifiers and current references | Available; all chapter labels remain draft |
-| Reviewed public edition | Chapter acceptance records, source/rights dispositions, release QA and accurate version/review metadata | ROAD-002 done; pending ROAD-003/004/006 |
+| Complete local draft | Built chapters, practice, figures, verifiers and current references | Available; overall alpha draft, with 28 scoped AI editorial review labels |
+| Reviewed public edition | Chapter acceptance records, source/rights dispositions, release QA and accurate version/review metadata | ROAD-002/003/006 done; ROAD-004 pending |
 | Human reader validation | Actual observations, reader-driven dispositions and rechecks under the prepared protocol | Deferred CA1-026 / ROAD-005 |
 | Public deployment | Concrete release artifact, destination, authorization and deployment checks | Alpha draft deployed 2026-10-11 ([release notes](RELEASE_ALPHA.md)); reviewed edition pending ROAD-007 |
 

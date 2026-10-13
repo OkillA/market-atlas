@@ -463,6 +463,12 @@ window.ATLAS = {
       "supports": "Long-run coverage interpretation and standard-error mean formula; not an exact justification of the textbook’s crude ±2 SE band.",
       "accessed": "2026-10-01"
     },
+    "ra-dow-study": {
+      "title": "Brown, Goetzmann & Kumar · The Dow Theory: William Peter Hamilton’s Track Record Reconsidered (1998 author manuscript)",
+      "url": "https://depot.som.yale.edu/icf/papers/fileuploads/2439/original/98-86.pdf",
+      "supports": "Historical reconstruction of editorial timing calls, with execution and sampling limits; not a test of this chapter’s teaching rules. March 13 author version, not a verified copy of the final journal text.",
+      "accessed": "2026-10-12"
+    },
     "rc-jt": {
       "title": "Jegadeesh & Titman (1993), Returns to Buying Winners and Selling Losers",
       "url": "https://www.bauer.uh.edu/rsusmel/phd/jegadeesh-titman93.pdf",
@@ -542,7 +548,7 @@ window.ATLAS = {
       "title": "The language of the market",
       "subtitle": "Learn to distinguish a recorded transaction, an explanation, and a decision.",
       "minutes": 8,
-      "status": "draft",
+      "status": "reviewed",
       "diagram": "overview",
       "tags": [
         "stocks",
@@ -868,14 +874,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "market-language-the-core-reading-route-and-paper-plan-thresholds"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "chart-anatomy",
       "title": "Anatomy of a stock chart",
       "subtitle": "Read four prices accurately before asking what a candle means.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "diagram": "candle",
       "tags": [
         "candlestick",
@@ -1325,14 +1352,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "chart-anatomy-real-stop-and-limit-instructions-do-not-guarantee-the-scenario-s-exact-fills"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "99726d7e5c814c61b7797dfff884d34ef70f05a56808d28b8002b505bc42cead",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "volume",
       "title": "Volume: participation behind price",
       "subtitle": "Count what changed hands, choose a fair comparison, and resist reading minds.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "diagram": "volume",
       "tags": [
         "volume",
@@ -1788,14 +1836,36 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "volume-d6-signal-threshold-and-fixed-denominator-comparisons"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Chapter 3 re-accepted after the batch 4 figure change; earlier substantive review retained. Later changed figures rechecked as recorded below.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md",
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "timeframes",
       "title": "Timeframes, sessions & chart scales",
       "subtitle": "A chart’s settings change the question its picture can answer.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "timeframe",
         "session",
@@ -2263,14 +2333,29 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "timeframes-settings-checklist-and-three-session-teaching-week-boundary"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md"
+        ],
+        "contentSha256": "2dd2a6d99752d60451375a2783bf2f57697e9129e1aeeeae50347d0a390fb357",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "trends",
       "title": "Trends, swings & changing structure",
       "subtitle": "Describe the sequence you can see and account for when you could recognize it.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "diagram": "trend",
       "tags": [
         "trend",
@@ -2886,14 +2971,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "trends-linear-and-log-scales-change-sloping-line-geometry"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md"
+        ],
+        "contentSha256": "38a32b5630782592f5203b27abb91a781a5d8226e5f45c96cfc00b3230b2798d",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "support-resistance",
       "title": "Support, resistance & price areas",
       "subtitle": "Map prior reactions as conditional evidence, with explicit boundaries.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "diagram": "levels",
       "tags": [
         "support",
@@ -3496,6 +3602,28 @@ window.ATLAS = {
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH2_20261002.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "6a42fe44a3cee0d8a518b30e5f70d04afa4bb36fb4a8f46b915e1fcffd1622c0",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
       }
     },
     {
@@ -3503,7 +3631,7 @@ window.ATLAS = {
       "title": "Candlestick patterns in context",
       "subtitle": "Use pattern names as shorthand for measured shapes, then examine the surrounding evidence.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "doji",
         "hammer",
@@ -4098,6 +4226,22 @@ window.ATLAS = {
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH3_20261003.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "b3d4182952b3e4dc82e37f5063e954e5f8b4cb11c7bbebff9312660fecef5903",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
       }
     },
     {
@@ -4105,7 +4249,7 @@ window.ATLAS = {
       "title": "Classical chart patterns",
       "subtitle": "Translate familiar silhouettes into definitions that can fail.",
       "minutes": 7,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "double top",
         "double bottom",
@@ -5624,6 +5768,28 @@ window.ATLAS = {
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH3_20261003.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
       }
     },
     {
@@ -5631,7 +5797,7 @@ window.ATLAS = {
       "title": "Breakouts, pullbacks & failed moves",
       "subtitle": "Define the boundary and the observation time before evaluating a crossing.",
       "minutes": 8,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "breakout",
         "breakdown",
@@ -6192,6 +6358,27 @@ window.ATLAS = {
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "a0f8ef618394df0351b2e0d41c7ae0733f64ae3a213e0dac34cc1bb93f6cde46",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
       }
     },
     {
@@ -6199,7 +6386,7 @@ window.ATLAS = {
       "title": "Moving averages",
       "subtitle": "Understand the smoothing before you trust the signal.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "SMA",
         "EMA",
@@ -6628,14 +6815,36 @@ window.ATLAS = {
           },
           "id": "moving-averages-research-boundary-searching-historical-technical-rules-did-not-secure-persistent-net-performance-her"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md",
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "momentum",
       "title": "Momentum: pace and persistence",
       "subtitle": "Read price and its transformations together, including recognition times.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "momentum",
         "RSI",
@@ -7349,14 +7558,35 @@ window.ATLAS = {
           },
           "id": "momentum-research-boundary-time-series-continuation-has-evidence-in-the-studied-futures-forward-sample"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "volatility",
       "title": "Volatility: the size of movement",
       "subtitle": "Measure variability before choosing what a normal move should mean.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "volatility",
         "ATR",
@@ -7757,14 +7987,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "volatility-candle-ranges-atr-bands-and-scaling"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "volume-tools",
       "title": "Volume tools: weight, participation, and memory",
       "subtitle": "Use volume to change the question, without pretending it reveals every participant’s motive.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "volume",
         "VWAP",
@@ -8290,14 +8541,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "volume-tools-tape-profile-and-obv-reconciliation"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "fibonacci",
       "title": "Optional: Fibonacci retracement conventions",
       "subtitle": "Calculate a chosen grid, then examine how the anchor choice changes it.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "Fibonacci",
         "retracement",
@@ -8662,14 +8934,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "fibonacci-origins-peak-recognition-and-reaction-test"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-03",
+        "reviewer": "claude-code-main",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH4_20261003.md"
+        ],
+        "contentSha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "relative-strength",
       "title": "Relative strength: leading compared with what?",
       "subtitle": "Separate winning the comparison from making money.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "relative strength",
         "relative performance",
@@ -9133,14 +9426,35 @@ window.ATLAS = {
           },
           "id": "relative-strength-research-boundary-a-specified-stock-momentum-portfolio-showed-positive-historical-returns"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "breadth",
       "title": "Market breadth: how many are participating?",
       "subtitle": "An index can look healthy while its members tell a more varied story.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "breadth",
         "advance decline",
@@ -9831,14 +10145,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "breadth-universe-and-weighting-choice"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "multi-timeframe",
       "title": "Multiple timeframes: one market, several summaries",
       "subtitle": "Give each chart a job and respect when its information exists.",
       "minutes": 5,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "multiple timeframes",
         "weekly",
@@ -10191,14 +10526,29 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "multi-timeframe-weekly-close-direction-context-and-eligibility"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "events",
       "title": "Events and opening gaps",
       "subtitle": "Separate the overnight repricing from the new session’s intraday recovery.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "earnings",
         "news",
@@ -10548,14 +10898,29 @@ window.ATLAS = {
           "checked": "2026-10-02",
           "id": "events-stop-limit-price-bounds-and-possible-nonexecution"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "market-microstructure",
       "title": "Market microstructure: from a chart to an actual trade",
       "subtitle": "The price you see and the price you can transact at are different questions.",
       "minutes": 6,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "microstructure",
         "bid",
@@ -10913,14 +11278,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "market-microstructure-ladder-fills-and-cost-references"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "claude-code-alpha",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH5_20261011.md"
+        ],
+        "contentSha256": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "risk-sizing",
       "title": "Risk & position sizing",
       "subtitle": "Give uncertainty a budget before giving a trade your money.",
       "minutes": 7,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "risk",
         "position sizing",
@@ -11283,14 +11669,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "risk-sizing-stop-triggers-do-not-insure-their-execution-price"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "trade-plans",
       "title": "From chart idea to trade plan",
       "subtitle": "Write the decisions while the outcome is still unknown.",
       "minutes": 7,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "trade plan",
         "invalidation",
@@ -11634,14 +12041,35 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "trade-plans-a-limit-is-a-price-constraint-and-a-stop-may-execute-away-from-its-trigger"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-02",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH1_20261002.md"
+        ],
+        "contentSha256": "63160472984777838a1c865bfb1bcb28b44a1ab15cae2e885995d262b9989163",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-12",
+          "report": "docs/PUBLICATION_BATCH7_20261012.md",
+          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+        },
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "psychology",
       "title": "Psychology without market mythology",
       "subtitle": "Design decisions that survive a persuasive story.",
       "minutes": 8,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "psychology",
         "bias",
@@ -12067,6 +12495,21 @@ window.ATLAS = {
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH6_20261011.md"
+        ],
+        "contentSha256": "f3e9f59928685495b511428f6a757b02eee75f3e51ce094002ab337fcceadeb1",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
       }
     },
     {
@@ -12074,7 +12517,7 @@ window.ATLAS = {
       "title": "A journal that can teach you something",
       "subtitle": "Preserve the decision, the opportunity set, and the result.",
       "minutes": 7,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "journal",
         "MFE",
@@ -12487,14 +12930,29 @@ window.ATLAS = {
           "checked": "2026-10-11",
           "id": "journaling-hypothetical-performance-and-selective-presentations-need-scrutiny"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-11",
+        "reviewer": "/root",
+        "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH6_20261011.md"
+        ],
+        "contentSha256": "5cd904e206c266b34454d2c5cecb1de690b4ade48af81e85c66eeb7251d62c1e",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "testing",
       "title": "Evidence before conviction",
       "subtitle": "Turn a chart story into a test that could disappoint you.",
       "minutes": 14,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "backtest",
         "look-ahead",
@@ -13453,14 +13911,29 @@ window.ATLAS = {
           },
           "id": "testing-some-algorithmically-detected-patterns-carried-incremental-distributional-information-in-historical-"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "c9b4f4c9769321a17f57e09276c281d27a9063cc93453ecf2308530b1a6e6fb2",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "statistics",
       "title": "Statistics for a skeptical chart reader",
       "subtitle": "Understand what the numbers measure before trusting their precision.",
       "minutes": 12,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "expectancy",
         "win rate",
@@ -14494,14 +14967,29 @@ window.ATLAS = {
           "checked": "2026-10-01",
           "id": "statistics-confidence-describes-long-run-interval-procedure-coverage"
         }
-      ]
+      ],
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "344bbf78672956d19976540a3c5b76b24b2ce785e384b51f024774f52d982445",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "system-design",
       "title": "Designing a complete trading system",
       "subtitle": "A signal is one component of a much larger decision process.",
       "minutes": 16,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "system design",
         "portfolio",
@@ -16280,6 +16768,21 @@ window.ATLAS = {
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "515c95a1e848ce057d0156ce751a02979e64f93f95d62324b0e5b5a3a9e88fb5",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
       }
     },
     {
@@ -16287,7 +16790,7 @@ window.ATLAS = {
       "title": "Optional: Dow, Wyckoff, and Elliott, read critically",
       "subtitle": "Apply one core rule from each framework to a fictional chart, and keep description, causal story, and evidence apart.",
       "minutes": 13,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "Dow theory",
         "Dow confirmation",
@@ -16585,6 +17088,7 @@ window.ATLAS = {
           "paragraphs": [
             "An empirical claim can be tested only one precise proposition at a time, and the proposition has to be fixed before the outcomes are known. The spring rule above is a ready-made example. Apply it to every breach in a defined universe and period, state when support is re-frozen after a breakdown so that later lows do not keep opening new events, keep both branches, and declare an action in advance: perhaps a next-open entry after the reentry close, a stop below the breach low, a time exit, and modeled costs, the same structure as the breakout plan in Chapter 9 and the casebook in the next chapter. Then compare the outcomes with a stated alternative, such as breaches that did not reenter or all sessions in the same stocks. A favorable result on that one specification would support that one specification, not Wyckoff analysis as a whole.",
             "Where discretion is essential, as in choosing between Elliott counts, test the discretion itself. Ask two readers to label the same charts with the future bars hidden, timestamp their preferred and alternate counts, and keep their disagreements. Measure agreement first, then forecast accuracy, then net results. Lo, Mamaysky, and Wang took another route: they replaced visual judgment with an algorithm that detects chart patterns, then compared returns after detected patterns with ordinary returns in U.S. stocks. Their findings concern their own pattern definitions. They are not tests of Dow confirmation, springs, or wave counts.",
+            "Brown, Goetzmann and Kumar reexamined Hamilton’s 1902–1929 editorials and reported favorable risk-adjusted results for a reconstructed timing strategy. This is independent historical evidence, but it tests interpreted editorial calls, not our simultaneous-close rule. One reader coded the editorials; eleven indeterminate calls were excluded. Their later neural-net experiment also shows execution sensitivity: delaying action materially changes the result. Transaction costs are omitted, and the authors flag uncertainty about daily returns and achievable index returns. Treat this as evidence about those definitions and assumptions, not validation of present-day Dow, Wyckoff or Elliott trading.",
             "This book has not reviewed an independent study that establishes the predictive value of these three frameworks as defined here. That is a statement about the evidence considered, not a proof that they have none. The research appendix summarizes the studies that were examined. Historical influence earns a framework a place in study. Reproducible evidence determines how much confidence any particular claim deserves."
           ],
           "id": "from-vocabulary-to-an-honest-test"
@@ -16655,7 +17159,8 @@ window.ATLAS = {
         "ra-elliott-rules",
         "ra-elliott-constraints",
         "ra-pattern-research",
-        "ra-wyckoff-text"
+        "ra-wyckoff-text",
+        "ra-dow-study"
       ],
       "related": [
         "trends",
@@ -17067,23 +17572,58 @@ window.ATLAS = {
           "id": "classical-frameworks-the-simultaneous-close-confirmation-rule-and-the-1-three-session-spring-rule-are-original-teaching-s"
         },
         {
+          "id": "classical-frameworks-hamilton-editorial-study",
+          "claim": "A historical editorial-call reconstruction reports favorable risk-adjusted results under its own assumptions.",
+          "type": "empirical",
+          "sourceIds": [
+            "ra-dow-study"
+          ],
+          "location": "March 13, 1998 author manuscript: pp. 8–10, 18–21; Tables II–IV, pp. 28–30; endnotes 9, 14–15, pp. 45–46.",
+          "summary": "Reviewed the complete author manuscript, including tables and endnotes. Editorial reconstruction and learned-call experiments are distinct from the frozen teaching rule.",
+          "limits": "One coder; selection/luck unresolved; delay-sensitive, cost-free results. Later daily experiment excludes dividends and cash interest. No inference to all three frameworks.",
+          "checked": "2026-10-12",
+          "study": {
+            "sample": "255 Hamilton editorials, 1902–1929; 11 indeterminate calls omitted. Learned-call extension: 1930–1997.",
+            "rule": "Editorial long/short/cash reconstruction; separately, neural-net predictions of interpreted calls.",
+            "comparator": "Passive Cowles total-return index in reconstruction; price-only DJIA in later experiment.",
+            "costs": "Transaction costs omitted. Daily next-open approximation and delayed-close variant; index investibility qualified.",
+            "result": "Favorable historical risk-adjusted comparison; later results depend materially on delay. No test of our simultaneous-close or spring specifications."
+          }
+        },
+        {
           "claim": "Independent evidence for the predictive value of these three frameworks, as defined here, has not been established in this book.",
           "type": "unresolved",
           "sourceIds": [],
           "location": "Final section, “From vocabulary to an honest test.”",
-          "summary": "No independent study testing Dow confirmation, the spring rule, or Elliott counts was reviewed for this revision. Lo, Mamaysky and Wang is cited only as an example of algorithmic pattern definition, with its own pattern set.",
-          "limits": "Absence of reviewed evidence is not evidence of no effect. A literature search for framework-specific tests remains open.",
-          "checked": "2026-10-01",
+          "summary": "The Hamilton editorial reconstruction was reviewed separately. No inspected study establishes predictive value for our simultaneous-close rule, spring rule or Elliott counts.",
+          "limits": "Absence of matching evidence is not evidence of no effect; framework-specific literature review remains selective.",
+          "checked": "2026-10-12",
           "id": "classical-frameworks-independent-evidence-for-the-predictive-value-of-these-three-frameworks-as-defined-here-has-not-been"
         }
-      ]
+      ],
+      "version": "0.4.1",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Prior full chapter acceptance retained; independent Dow author-manuscript addition and revised evidence limits reviewed on 2026-10-12. Teaching rules, tasks and figures unchanged.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/RELEASE_READINESS_20261012.md"
+        ],
+        "contentSha256": "e078aaaf440e8f884dc75cd8dc8792ae04d84eb253cd5a0c3f675ab549dd7a35",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
+      }
     },
     {
       "id": "case-studies",
       "title": "Case studies: follow the decision through",
       "subtitle": "Successful trades, failed trades, and the decision to stand aside.",
       "minutes": 18,
-      "status": "draft",
+      "status": "reviewed",
       "tags": [
         "case study",
         "breakout",
@@ -19413,6 +19953,21 @@ window.ATLAS = {
             ]
           }
         ]
+      },
+      "version": "0.4",
+      "review": {
+        "status": "accepted",
+        "date": "2026-10-12",
+        "reviewer": "/root",
+        "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
+        "evidence": [
+          "docs/PUBLICATION_BATCH7_20261012.md"
+        ],
+        "contentSha256": "f5be3ebe6aed3c08f140065f3f6790410c941b9545af84dc5445da3987d51354",
+        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "valid": true,
+        "effectiveStatus": "accepted",
+        "reasons": []
       }
     }
   ],
@@ -20920,14 +21475,2444 @@ window.ATLAS = {
     }
   ],
   "manuscript": {
-    "edition": "0.4",
-    "compiled": "2026-10-03",
+    "edition": "0.4.1",
+    "compiled": "2026-10-12",
     "status": "draft",
     "inputs": [
       "foundations-price.json",
       "indicators-context.json",
       "risk-advanced.json",
       "research-context.json"
-    ]
+    ],
+    "reviewKind": "AI editorial review; human reader validation pending"
+  },
+  "sourceAccess": {
+    "checked": "2026-10-12",
+    "reviewer": "/root",
+    "scope": "All 75 current source entries / 72 URLs. Fresh access checks are separate from inherited claim-inspection dates and optional complete-paper review.",
+    "sources": {
+      "ic-sma": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma",
+          "sha256": "1c95b65f91e748bbef3a737651d03f1ad002d1e1429e3f2492816d804cccb00a"
+        },
+        "claimSupport": [
+          {
+            "chapter": "moving-averages",
+            "claim": "SMA/EMA definitions and weighting",
+            "location": "Fidelity SMA Description/Calculation; Fidelity EMA Calculation; TradingView Moving Averages, Exponential Moving Average (EMA)/Calculation.",
+            "checked": "2026-10-01",
+            "limits": "Definitions establish calculations, not trading-rule efficacy."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Moving-average formulas and aliases",
+            "location": "Chapter 10 One line / Exponential weighting / The price of smoothing; Fidelity SMA/EMA and TradingView Moving Averages EMA Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Seed and multiplier must be specified; efficacy claims on provider pages are not adopted."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-ema": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema",
+          "sha256": "fd4daede6c2e6cdd763480f9d0ab6048614d1f22b852a08fe1382704e47c7769"
+        },
+        "claimSupport": [
+          {
+            "chapter": "moving-averages",
+            "claim": "SMA/EMA definitions and weighting",
+            "location": "Fidelity SMA Description/Calculation; Fidelity EMA Calculation; TradingView Moving Averages, Exponential Moving Average (EMA)/Calculation.",
+            "checked": "2026-10-01",
+            "limits": "Definitions establish calculations, not trading-rule efficacy."
+          },
+          {
+            "chapter": "momentum",
+            "claim": "MACD 12/26/9 convention",
+            "location": "Fidelity MACD Calculation; TradingView MACD indicator, Calculation and Inputs.",
+            "checked": "2026-10-01",
+            "limits": "Source interpretations of signal strength are not adopted as efficacy evidence."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Moving-average formulas and aliases",
+            "location": "Chapter 10 One line / Exponential weighting / The price of smoothing; Fidelity SMA/EMA and TradingView Moving Averages EMA Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Seed and multiplier must be specified; efficacy claims on provider pages are not adopted."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-rsi": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/rsi",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/rsi",
+          "sha256": "1a9f3e8703b82de49a3248c59d7d0cddf3efe40e2e2a25b658a6ee70edfbcd48"
+        },
+        "claimSupport": [
+          {
+            "chapter": "momentum",
+            "claim": "RSI formula and gain/loss RMA smoothing",
+            "location": "Fidelity RSI Calculation; TradingView RSI Calculation.",
+            "checked": "2026-10-01",
+            "limits": "SMA seed and the both-zero value of 50 are explicit local conventions; no universal flat-case claim."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Momentum formulas and aliases",
+            "location": "Chapter 11 RSI compares / MACD asks; Fidelity ROC/RSI/MACD Calculation; TradingView RSI Calculation and How MACD is calculated.",
+            "checked": "2026-10-02",
+            "limits": "RSI is not a forecast probability; flat-case and startup conventions remain explicit local choices."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-macd": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd",
+          "sha256": "8bd68254fd8887f0cf45f67f9f0643d5bd1f2d01a36531471409188695ef4a4f"
+        },
+        "claimSupport": [
+          {
+            "chapter": "momentum",
+            "claim": "MACD 12/26/9 convention",
+            "location": "Fidelity MACD Calculation; TradingView MACD indicator, Calculation and Inputs.",
+            "checked": "2026-10-01",
+            "limits": "Source interpretations of signal strength are not adopted as efficacy evidence."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Momentum formulas and aliases",
+            "location": "Chapter 11 RSI compares / MACD asks; Fidelity ROC/RSI/MACD Calculation; TradingView RSI Calculation and How MACD is calculated.",
+            "checked": "2026-10-02",
+            "limits": "RSI is not a forecast probability; flat-case and startup conventions remain explicit local choices."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-atr": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr",
+          "sha256": "8e35181ef0a360431cf7c1ce8564da075ee44894b1e744d41572e1a3a3ab2a42"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volatility",
+            "claim": "TR and ATR update",
+            "location": "Fidelity ATR Calculation.",
+            "checked": "2026-10-01",
+            "limits": "SMA seed with a preceding close is a declared implementation convention."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Volatility formulas and aliases",
+            "location": "Chapter 12 True range / Bands; Fidelity ATR Calculation and Bollinger Bands Description/Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Population variance and initialization are local declarations; no future coverage probability follows."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-bands": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands",
+          "sha256": "024b80207558a05864809178f35b2b0d6a9d42c7f83ff20923e245362ea76669"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volatility",
+            "claim": "Band construction and conventional parameters",
+            "location": "Fidelity Bollinger Bands, Description, Calculation and Typical values used.",
+            "checked": "2026-10-01",
+            "limits": "Variance denominator is not stated there; this edition explicitly chooses population N. Three periods are pedagogical."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Volatility formulas and aliases",
+            "location": "Chapter 12 True range / Bands; Fidelity ATR Calculation and Bollinger Bands Description/Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Population variance and initialization are local declarations; no future coverage probability follows."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-obv": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv",
+          "sha256": "e29fd5e09d6954c60030da15a678e5b09ca078a3b5f6036a8c2579dcccc9b182"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volume-tools",
+            "claim": "OBV higher/lower/equal close rule",
+            "location": "Fidelity On Balance Volume, Description (higher, lower and equal-close rules).",
+            "checked": "2026-10-03",
+            "limits": "Signed volume does not identify participant motives."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Volume transformations and aliases",
+            "location": "Chapter 13 VWAP / The anchor / OBV / Turn the tape sideways; TradingView VWAP Calculation/Anchor Period and profile Calculation methodology/Point of control; Fidelity OBV Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Exact toy transactions differ from bar approximation; a profile is historical activity, not current resting interest."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-fibonacci": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fibonacci-retracement",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fibonacci-retracement",
+          "sha256": "b63af74c3e3e5e7fbe8363f8f1e7fac503cef9eea26c56d60d221871bf6bd506"
+        },
+        "claimSupport": [
+          {
+            "chapter": "fibonacci",
+            "claim": "Common grid and sequence",
+            "location": "Fidelity Fibonacci Retracement, Description (two chosen extremes; 0%, 23.6%, 38.2%, 50%, 61.8% and 100% levels).",
+            "checked": "2026-10-03",
+            "limits": "The source’s predictive interpretation is not treated as independent efficacy evidence. Fidelity lists 50% among its “Fibonacci levels”; the chapter’s statement that 50% is a halfway convention rather than a limiting ratio of Fibonacci terms is the book’s own arithmetic."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-relative": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/relative-strength-comparison",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/relative-strength-comparison",
+          "sha256": "5f48f1373a214b9cce5223296412097c06ac4705680db1d6364d6f15963a7dd6"
+        },
+        "claimSupport": [
+          {
+            "chapter": "relative-strength",
+            "claim": "Relative comparison as price ratio",
+            "location": "Fidelity Relative Strength Comparison, Description (ratio calculation and up/sideways/down interpretation).",
+            "checked": "2026-10-01",
+            "limits": "No persistence/profitability inference is drawn from the definition."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Relative-performance ratio",
+            "location": "Chapter 15 A comparison always needs a second object; Fidelity Relative Strength Comparison, Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Match dates, currencies and distribution/adjustment conventions; this is distinct from RSI and momentum portfolios."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-vwap": {
+        "url": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/",
+          "sha256": "200ca877000fa14df594c5e5015765d33aad10a8f754ad3f5f7b11ea986f3430"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volume-tools",
+            "claim": "VWAP bar formula and reset boundaries",
+            "location": "TradingView VWAP, Calculation; Inputs: Anchor Period and Source.",
+            "checked": "2026-10-01",
+            "limits": "The exact toy tape uses transactions instead of the provider’s bar approximation."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Volume transformations and aliases",
+            "location": "Chapter 13 VWAP / The anchor / OBV / Turn the tape sideways; TradingView VWAP Calculation/Anchor Period and profile Calculation methodology/Point of control; Fidelity OBV Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Exact toy transactions differ from bar approximation; a profile is historical activity, not current resting interest."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-breadth": {
+        "url": "https://www.fidelity.com/webcontent/ap002390-mlo-content/18.04/help/help_definition_a.shtml",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/webcontent/ap002390-mlo-content/18.04/help/help_definition_a.shtml",
+          "sha256": "319664c055dc319bf33e089a7b2646c8cb420935f4eb3effcd24b8b01951d0e0"
+        },
+        "claimSupport": [
+          {
+            "chapter": "breadth",
+            "claim": "A/D cumulative and fraction definitions",
+            "location": "Fidelity.com Help – Glossary: A, entries “A/D Line” (cumulative total) and “A/D Line (breadth)” (advancing ÷ advancing + declining).",
+            "checked": "2026-10-01",
+            "limits": "Provider fields and universes differ; no listed bullish threshold is treated as established efficacy."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Breadth measurement and alias",
+            "location": "Chapter 16 The advance–decline line; Fidelity glossary A/D Line (cumulative entry, not A/D Line (breadth) or A/D Line (Daily)).",
+            "checked": "2026-10-02",
+            "limits": "Provider names overlap with different formulas. No predictive divergence claim is adopted."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-timeframes": {
+        "url": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/",
+          "sha256": "7e0e04e318936645a5ce157d8300f02fbd208ce034d78a763a25ac2cac36af06"
+        },
+        "claimSupport": [
+          {
+            "chapter": "multi-timeframe",
+            "claim": "Unconfirmed higher-timeframe data and lookahead",
+            "location": "TradingView Other timeframes and data, Historical and realtime behavior; Avoiding repainting: Higher-timeframe data; Common characteristics: lookahead.",
+            "checked": "2026-10-01",
+            "limits": "This book’s post-close teaching timestamps are explicit; platform script update timing must be matched separately."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Completed higher-timeframe observations",
+            "location": "Chapter 17 An unfinished higher-timeframe bar; TradingView Other timeframes and data, Avoiding repainting: Higher-timeframe data.",
+            "checked": "2026-10-02",
+            "limits": "Provider update timestamps must be aligned; confirmation does not imply a profitable filter."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-hours": {
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+          "sha256": "e63fab4f4479b782f24cdeb77618fc9cdd6ea1b7fbb846c8bebc647ff6c227ee",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "events",
+            "claim": "News and extended-hours execution context",
+            "location": "Investor.gov Extended-Hours Trading, Extended-Hours Trading Risks: Lack of Liquidity, News Announcements, Larger Quote Spreads and Order Handling.",
+            "checked": "2026-10-01",
+            "limits": "The case supplies fictional news and prices; no specific real earnings event is claimed."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-orders": {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+          "sha256": "3b237d2060404513739b74a7815dd0f43a49d0f150fa11b2ff829a7f6062260c",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "events",
+            "claim": "Market/limit/ordinary-stop behavior",
+            "location": "Investor.gov Types of Orders (market, limit and stop paragraphs); SEC Trading Basics printed page 2, Stop Order; printed page 3, Opening Transactions.",
+            "checked": "2026-10-01",
+            "limits": "The $43 execution is an explicit teaching model, not an inference from the candle."
+          },
+          {
+            "chapter": "market-microstructure",
+            "claim": "Last price, routing, and quantity-limited quotes",
+            "location": "Investor.gov Types of Orders, Market Order; Executing an Order: Trade Execution Isn’t Instantaneous and Your Broker Has Options for Executing Your Trade.",
+            "checked": "2026-10-01",
+            "limits": "The toy book is a static model, not a prediction of live routing or fills."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-auctions": {
+        "url": "https://www.nyse.com/trade/auctions",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nyse.com/trade/auctions",
+          "sha256": "1b5c6bd206d0d4ae704a9db24fc5b176e30be40d679b86ee8510b01cd4c4e8b6"
+        },
+        "claimSupport": [
+          {
+            "chapter": "market-microstructure",
+            "claim": "Auction indications",
+            "location": "NYSE Auctions, Auction Imbalance Publication Information: Indicative Match Price, Total Imbalance and Paired Quantity.",
+            "checked": "2026-10-01",
+            "limits": "Venue rules change; no indicative value is guaranteed final."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-splits": {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split",
+          "sha256": "b708d62f982da2e676ee8f9a585637825a291500ee9b12d4aeeb210ab2fba512",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "relative-strength",
+            "claim": "Matched adjustment convention",
+            "location": "Investor.gov Stock Split glossary definition.",
+            "checked": "2026-10-01",
+            "limits": "Main data have no splits or distributions; real provider conventions still require inspection."
+          },
+          {
+            "chapter": "events",
+            "claim": "Split and ex-dividend unit context",
+            "location": "Investor.gov Stock Split glossary definition; Ex-Dividend Dates: Special Dividends.",
+            "checked": "2026-10-01",
+            "limits": "No exact real opening price or entitlement calendar is inferred."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-rsi-smoothing": {
+        "url": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/",
+          "sha256": "637ff36f776d7b3992586fe8ee1a6833648e05327bed9e83f0a3444b6e797cdb"
+        },
+        "claimSupport": [
+          {
+            "chapter": "momentum",
+            "claim": "RSI formula and gain/loss RMA smoothing",
+            "location": "Fidelity RSI Calculation; TradingView RSI Calculation.",
+            "checked": "2026-10-01",
+            "limits": "SMA seed and the both-zero value of 50 are explicit local conventions; no universal flat-case claim."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Momentum formulas and aliases",
+            "location": "Chapter 11 RSI compares / MACD asks; Fidelity ROC/RSI/MACD Calculation; TradingView RSI Calculation and How MACD is calculated.",
+            "checked": "2026-10-02",
+            "limits": "RSI is not a forecast probability; flat-case and startup conventions remain explicit local choices."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-dividends": {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ex-dividend-dates-when-are-you-entitled-stock-and",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ex-dividend-dates-when-are-you-entitled-stock-and",
+          "sha256": "360b4dddf0fceba19a6e143cbe7a6ba1377f7df33acdab0ace80978fb9371d0c",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained",
+          "limits": "The current Investor.gov page describes current ex-dividend conventions. It does not supply historical 2016 event dates or warrant applying current settlement conventions to that archive; the book’s dated Nasdaq event evidence is separate."
+        },
+        "claimSupport": [
+          {
+            "chapter": "events",
+            "claim": "Split and ex-dividend unit context",
+            "location": "Investor.gov Stock Split glossary definition; Ex-Dividend Dates: Special Dividends.",
+            "checked": "2026-10-01",
+            "limits": "No exact real opening price or entitlement calendar is inferred."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-execution": {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/executing-order",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/executing-order",
+          "sha256": "041fdd75acb08dcb88e3b6ed139762d16e060abf47646cba668abb6c4af91e40",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "market-microstructure",
+            "claim": "Last price, routing, and quantity-limited quotes",
+            "location": "Investor.gov Types of Orders, Market Order; Executing an Order: Trade Execution Isn’t Instantaneous and Your Broker Has Options for Executing Your Trade.",
+            "checked": "2026-10-01",
+            "limits": "The toy book is a static model, not a prediction of live routing or fills."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-spread": {
+        "url": "https://www.finra.org/investors/insights/market-liquidity-risk",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.finra.org/investors/insights/market-liquidity-risk",
+          "sha256": "5fcc5d0390d44bcb3bdacc4cefe958e571e080551b4c93e44d522c2cdbca73ec"
+        },
+        "claimSupport": [
+          {
+            "chapter": "market-microstructure",
+            "claim": "Bid, ask, spread, and liquidity",
+            "location": "FINRA Understanding Market Liquidity and Your Investments, introduction and Why Market Liquidity Matters.",
+            "checked": "2026-10-01",
+            "limits": "A narrow spread alone is not a complete liquidity measure."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Share counts and quoted liquidity",
+            "location": "Chapter 3, What volume actually counts / Every transaction has two sides / Volume and liquidity; Fidelity Why to consider stock volume, Volume is vital; FINRA Understanding Market Liquidity and Your Investments, introduction.",
+            "checked": "2026-10-02",
+            "limits": "This does not identify trader motives or promise an order fill."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-roc": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc",
+          "sha256": "7d94aefaf8bf716d178f27a0088f3dfb63384d97aa8917c636db54eb3f21e7c8"
+        },
+        "claimSupport": [
+          {
+            "chapter": "momentum",
+            "claim": "N-period percentage rate of change",
+            "location": "Fidelity Rate of Change Description and percentage calculation.",
+            "checked": "2026-10-01",
+            "limits": "ROC is a past comparison; no prospective directional inference is adopted."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Momentum formulas and aliases",
+            "location": "Chapter 11 RSI compares / MACD asks; Fidelity ROC/RSI/MACD Calculation; TradingView RSI Calculation and How MACD is calculated.",
+            "checked": "2026-10-02",
+            "limits": "RSI is not a forecast probability; flat-case and startup conventions remain explicit local choices."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-ema-weight": {
+        "url": "https://www.tradingview.com/support/solutions/43000502589-moving-averages/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.tradingview.com/support/solutions/43000502589-moving-averages/",
+          "sha256": "f6cf6efddd6ba005eda25e4ac02f02b5d2a3851ac302f1587dccc07f161176eb"
+        },
+        "claimSupport": [
+          {
+            "chapter": "moving-averages",
+            "claim": "SMA/EMA definitions and weighting",
+            "location": "Fidelity SMA Description/Calculation; Fidelity EMA Calculation; TradingView Moving Averages, Exponential Moving Average (EMA)/Calculation.",
+            "checked": "2026-10-01",
+            "limits": "Definitions establish calculations, not trading-rule efficacy."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Moving-average formulas and aliases",
+            "location": "Chapter 10 One line / Exponential weighting / The price of smoothing; Fidelity SMA/EMA and TradingView Moving Averages EMA Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Seed and multiplier must be specified; efficacy claims on provider pages are not adopted."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-profile": {
+        "url": "https://www.tradingview.com/support/solutions/43000502040-volume-profile-indicators-basic-concepts/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.tradingview.com/support/solutions/43000502040-volume-profile-indicators-basic-concepts/",
+          "sha256": "8fbbe87102f8b9bf5793dd55d244874a1aba70fcfeb95266b14d77f53868f6ce"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volume-tools",
+            "claim": "Profile and point of control",
+            "location": "TradingView Volume profile indicators: basic concepts, introduction; Calculation methodology; Types of volume used in calculations; Typical levels of significance (Point of Control).",
+            "checked": "2026-10-03",
+            "limits": "No guaranteed support/resistance claim is adopted."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Volume transformations and aliases",
+            "location": "Chapter 13 VWAP / The anchor / OBV / Turn the tape sideways; TradingView VWAP Calculation/Anchor Period and profile Calculation methodology/Point of control; Fidelity OBV Calculation.",
+            "checked": "2026-10-02",
+            "limits": "Exact toy transactions differ from bar approximation; a profile is historical activity, not current resting interest."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-order-details": {
+        "url": "https://www.sec.gov/files/trading101basics.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.sec.gov/files/trading101basics.pdf",
+          "sha256": "403437e2a5498599e30e55e17336963db0ebfef8d28e0766f1484222ea37f57d",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "events",
+            "claim": "Market/limit/ordinary-stop behavior",
+            "location": "Investor.gov Types of Orders (market, limit and stop paragraphs); SEC Trading Basics printed page 2, Stop Order; printed page 3, Opening Transactions.",
+            "checked": "2026-10-01",
+            "limits": "The $43 execution is an explicit teaching model, not an inference from the candle."
+          },
+          {
+            "chapter": "events",
+            "claim": "Stop-limit price bounds and possible nonexecution",
+            "location": "SEC Trading Basics printed page 2, Stop-limit Order, in web extraction.",
+            "checked": "2026-10-02",
+            "limits": "The $47 main-candle high and $76.50 independent-case high do not prove available fills. The independent task specifies its opening-trade trigger and regular-session execution range; real broker trigger standards can differ."
+          },
+          {
+            "chapter": "market-microstructure",
+            "claim": "Immediate-or-cancel remainder",
+            "location": "SEC Trading Basics (Pub. No. 141), printed page 3, Immediate-Or-Cancel Orders.",
+            "checked": "2026-10-01",
+            "limits": "Broker availability and trigger standards vary."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Quotes and order instructions",
+            "location": "Chapter 19 Last price / Walk a 250-share buy; Chapter 20 A stop; Investor.gov Bid Price/Ask Price; SEC Trading Basics pp. 2–3; Understanding Order Types, Stop Order.",
+            "checked": "2026-10-02",
+            "limits": "Quote/trigger is not a guaranteed price or quantity; broker availability and trigger standards vary."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ic-macd-details": {
+        "url": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/",
+          "sha256": "619cd05473d3ac741dab8be2203d10cea738beab79a765cf9150fdd78624b933"
+        },
+        "claimSupport": [
+          {
+            "chapter": "momentum",
+            "claim": "MACD 12/26/9 convention",
+            "location": "Fidelity MACD Calculation; TradingView MACD indicator, Calculation and Inputs.",
+            "checked": "2026-10-01",
+            "limits": "Source interpretations of signal strength are not adopted as efficacy evidence."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Momentum formulas and aliases",
+            "location": "Chapter 11 RSI compares / MACD asks; Fidelity ROC/RSI/MACD Calculation; TradingView RSI Calculation and How MACD is calculated.",
+            "checked": "2026-10-02",
+            "limits": "RSI is not a forecast probability; flat-case and startup conventions remain explicit local choices."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-intro": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-is-technical-analysis",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-is-technical-analysis",
+          "sha256": "b919406b565ece89dcbcbe20a546668aa7a1c186749c170837036435a0b5de6b"
+        },
+        "claimSupport": [
+          {
+            "chapter": "market-language",
+            "claim": "Technical and fundamental analysis answer different questions.",
+            "location": "Fidelity, “What is technical analysis?”, introduction and “What is technical analysis?” headings.",
+            "checked": "2026-10-01",
+            "limits": "The source describes uses; this chapter does not infer a verified strategy edge."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Market-analysis vocabulary",
+            "location": "Chapter 1, A company and its quoted price; Fidelity What is technical analysis?, introduction and definition.",
+            "checked": "2026-10-02",
+            "limits": "Educational terminology does not establish effectiveness."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-charts": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-are-charts",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-are-charts",
+          "sha256": "514e7006a61e7605ad90bbf4fd8acb05cae7fa6531e61cae07705d2ef3186691"
+        },
+        "claimSupport": [
+          {
+            "chapter": "chart-anatomy",
+            "claim": "OHLC bar and candle geometry; color compares open and close under the chosen convention.",
+            "location": "Fidelity “What are charts?”, Bar chart and Candlestick charts headings.",
+            "checked": "2026-10-01",
+            "limits": "Platforms may encode additional comparisons with color/fill."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Chart fields and geometry",
+            "location": "Chapter 2, Four numbers and one interval / Measure the candle one piece at a time; Fidelity What are charts?, Bar and Candlestick charts; StockCharts Introduction to Candlesticks, Formation.",
+            "checked": "2026-10-02",
+            "limits": "Color conventions differ; the geometry does not reveal intrabar order."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-trends": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/basic-concepts-trend",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/basic-concepts-trend",
+          "sha256": "3a490e0d87bd100314d601c2403280b500aa94dc4c28ff5035b16ee9705432a7"
+        },
+        "claimSupport": [
+          {
+            "chapter": "trends",
+            "claim": "Conventional peak/trough trend classification and trendline anchors.",
+            "location": "Fidelity “Basic concepts of trend”, trend classification and Uptrend line/Downtrend line.",
+            "checked": "2026-10-01",
+            "limits": "The chapter supplies its own exact swing-recognition algorithm."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Trend anchors and direction",
+            "location": "Chapter 5, Build the initial map / Draw one line; Fidelity Basic concepts of trend, 3 directions of trend and Trend lines.",
+            "checked": "2026-10-02",
+            "limits": "A line is an organizing convention, not proof of hidden demand or continued direction."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-levels": {
+        "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance",
+          "sha256": "fc34f87135a173485c436fd77a61fb493c3d564ee6531583a79c668568e2acc4"
+        },
+        "claimSupport": [
+          {
+            "chapter": "support-resistance",
+            "claim": "Support/resistance and role-reversal vocabulary.",
+            "location": "Fidelity “Support and resistance”, Support/Resistance/Role reversal; StockCharts “Support & Resistance”, zones and construction headings.",
+            "checked": "2026-10-01",
+            "limits": "Definitions do not establish participant identities or obligatory future reactions."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Support, resistance and crossing vocabulary",
+            "location": "Chapter 6 Start with reactions / Write definitions; Fidelity Support and resistance; StockCharts Support & Resistance, zones and role reversal.",
+            "checked": "2026-10-02",
+            "limits": "Price observations cannot identify hidden buyers/sellers or guarantee a future reaction; exact thresholds are local."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-volume": {
+        "url": "https://www.fidelity.com/viewpoints/active-investor/stock-volume",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fidelity.com/viewpoints/active-investor/stock-volume",
+          "sha256": "f6687a1955886378b64a6bcbdef6387aeecf63f562eb7a285855ad63e15c5c9d"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volume",
+            "claim": "Share volume and comparison with preceding activity.",
+            "location": "Fidelity “Why to consider stock volume”, definition of volume and comparison/baseline discussion.",
+            "checked": "2026-10-01",
+            "limits": "Do not adopt the article’s market-specific interpretation as a result for fictional Harbor."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Share counts and quoted liquidity",
+            "location": "Chapter 3, What volume actually counts / Every transaction has two sides / Volume and liquidity; Fidelity Why to consider stock volume, Volume is vital; FINRA Understanding Market Liquidity and Your Investments, introduction.",
+            "checked": "2026-10-02",
+            "limits": "This does not identify trader motives or promise an order fill."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-orders": {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+          "sha256": "3b237d2060404513739b74a7815dd0f43a49d0f150fa11b2ff829a7f6062260c",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "breakouts",
+            "claim": "Limit prices constrain fills and stop triggers activate market orders.",
+            "location": "Investor.gov Types of Orders, market/limit/stop paragraphs.",
+            "checked": "2026-10-01",
+            "limits": "The source does not validate the invented opening-only rule or guarantee its fill quantities."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-sessions": {
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-42",
+          "sha256": "e63fab4f4479b782f24cdeb77618fc9cdd6ea1b7fbb846c8bebc647ff6c227ee",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volume",
+            "claim": "Volume alone cannot specify liquidity for a particular order; sessions can differ.",
+            "location": "Investor.gov “Extended-Hours Trading”, Lack of Liquidity and Larger Quote Spreads; “Understanding Order Types”, market-order partial pricing examples.",
+            "checked": "2026-10-01",
+            "limits": "The two invented quote-depth illustrations do not estimate current market cost."
+          },
+          {
+            "chapter": "timeframes",
+            "claim": "Regular versus extended sessions define different eligible observations.",
+            "location": "Investor.gov “Extended-Hours Trading”, opening overview and risks headings.",
+            "checked": "2026-10-01",
+            "limits": "Exchange calendars and live session/order rules require current verification."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-actions": {
+        "url": "https://www.finra.org/investors/insights/corporate-actions-public-companies-what-you-should-know",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.finra.org/investors/insights/corporate-actions-public-companies-what-you-should-know",
+          "sha256": "eb257a48f078c08114b16c80bcb7f8fa60061fb6616b4f6f123601895d33374f"
+        },
+        "claimSupport": [
+          {
+            "chapter": "volume",
+            "claim": "Corporate actions change the share unit.",
+            "location": "FINRA “Corporate actions”, Stock Splits section.",
+            "checked": "2026-10-01",
+            "limits": "Split arithmetic alone does not establish liquidity, total return, or subsequent price direction."
+          },
+          {
+            "chapter": "timeframes",
+            "claim": "A split changes shares and per-share units without changing ownership proportion by itself.",
+            "location": "FINRA “Corporate actions”, Stock Splits.",
+            "checked": "2026-10-01",
+            "limits": "The statement isolates the split; other market movements and distributions require separate accounting."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Axis and split-unit conventions",
+            "location": "Chapter 4, Same four prices / Separate a change in units; StockCharts What are charts?, Price Scaling; FINRA Corporate actions, Stock Splits.",
+            "checked": "2026-10-02",
+            "limits": "The regulator establishes share-unit mechanics; exact historical restatement is provider-specific, not licensed market data."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-scale": {
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/what-are-charts",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/what-are-charts",
+          "sha256": "f794b5ea85031bacb7949c46d85f44692d56fc4b61e6d93c121e0e3fe7064994"
+        },
+        "claimSupport": [
+          {
+            "chapter": "timeframes",
+            "claim": "Equal ratios have equal log-axis spacing.",
+            "location": "StockCharts “What are charts?”, Price Scaling.",
+            "checked": "2026-10-01",
+            "limits": "Axis geometry changes visual distances, not the underlying prices or investment returns."
+          },
+          {
+            "chapter": "trends",
+            "claim": "Linear and log scales change sloping-line geometry.",
+            "location": "StockCharts “What are charts?”, Price Scaling.",
+            "checked": "2026-10-01",
+            "limits": "This chapter’s line is explicitly arithmetic."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Axis and split-unit conventions",
+            "location": "Chapter 4, Same four prices / Separate a change in units; StockCharts What are charts?, Price Scaling; FINRA Corporate actions, Stock Splits.",
+            "checked": "2026-10-02",
+            "limits": "The regulator establishes share-unit mechanics; exact historical restatement is provider-specific, not licensed market data."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-candles": {
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-charts/introduction-to-candlesticks",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-charts/introduction-to-candlesticks",
+          "sha256": "b5ecaefd0d9528f6e34990ddefba4e2b2204e641b61746f6b78f24bce112fc17"
+        },
+        "claimSupport": [
+          {
+            "chapter": "chart-anatomy",
+            "claim": "OHLC does not specify the sequence of high and low.",
+            "location": "StockCharts “Introduction to Candlesticks”, “What Candlesticks Don’t Tell You”.",
+            "checked": "2026-10-01",
+            "limits": "The supplied routes demonstrate ambiguity; they do not reconstruct an actual transaction tape."
+          },
+          {
+            "chapter": "candlestick-patterns",
+            "claim": "Doji and long-shadow terminology depend on geometry and prior direction.",
+            "location": "StockCharts “Introduction to Candlesticks”, Doji, Long Shadow Reversals, Prior Trend.",
+            "checked": "2026-10-01",
+            "limits": "The 10% ratio, upper-shadow limit and exact follow-up rule are the textbook’s own measurable choices."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Chart fields and geometry",
+            "location": "Chapter 2, Four numbers and one interval / Measure the candle one piece at a time; Fidelity What are charts?, Bar and Candlestick charts; StockCharts Introduction to Candlesticks, Formation.",
+            "checked": "2026-10-02",
+            "limits": "Color conventions differ; the geometry does not reveal intrabar order."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Candlestick pattern names",
+            "location": "Chapter 7 Doji-like / Engulfing bodies; StockCharts Introduction to Candlesticks, Doji; Fidelity pattern slides, Engulfing (printed slide 41; zero-based PDF page index 40).",
+            "checked": "2026-10-03",
+            "limits": "Exact tolerances and confirmation choices are original, and no predictive performance is inferred."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-patterns": {
+        "url": "https://media.fidelity.com/assets/Fidelity.com_VMS/904/347/TA_Session_3_Identifying_Chart_Patterns.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://media.fidelity.com/assets/Fidelity.com_VMS/904/347/TA_Session_3_Identifying_Chart_Patterns.pdf",
+          "sha256": "83c50ebcdec705579962d39e4065dce77ecf932f2c9535ea16dbb735de8168c8"
+        },
+        "claimSupport": [
+          {
+            "chapter": "candlestick-patterns",
+            "claim": "An engulfing body covers the previous body, not necessarily both shadows.",
+            "location": "Fidelity pattern slides, printed slide 41 “Engulfing” (zero-based PDF page index 40).",
+            "checked": "2026-10-03",
+            "limits": "No slide performance rankings are adopted."
+          },
+          {
+            "chapter": "chart-patterns",
+            "claim": "Triangle, flag/pennant and head/shoulders geometry.",
+            "location": "StockCharts Symmetrical Triangle, Flag/Pennant, Head and Shoulders Top; Fidelity slides Common Chart Patterns.",
+            "checked": "2026-10-01",
+            "limits": "The family plots are teaching sketches, not complete scanners or return evidence."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Candlestick pattern names",
+            "location": "Chapter 7 Doji-like / Engulfing bodies; StockCharts Introduction to Candlesticks, Doji; Fidelity pattern slides, Engulfing (printed slide 41; zero-based PDF page index 40).",
+            "checked": "2026-10-03",
+            "limits": "Exact tolerances and confirmation choices are original, and no predictive performance is inferred."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-doubletop": {
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal",
+          "sha256": "807e1436c8483e17385428fbe902d16edf0f53a4d938a11a3c7cecbf6126ff8e"
+        },
+        "claimSupport": [
+          {
+            "chapter": "chart-patterns",
+            "claim": "Double-top construction and conventional height projection.",
+            "location": "StockCharts “Double Top Reversal”, pattern components and price-target discussion.",
+            "checked": "2026-10-01",
+            "limits": "The exact 1% tolerance, delay and three-session closing outcome are original teaching choices."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-headshoulders": {
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/head-and-shoulders-top",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/head-and-shoulders-top",
+          "sha256": "e082b0a3a77027a9177de24dce8a4e1e43fe071a90225f9e4060a10cbb1f8809"
+        },
+        "claimSupport": [
+          {
+            "chapter": "chart-patterns",
+            "claim": "Triangle, flag/pennant and head/shoulders geometry.",
+            "location": "StockCharts Symmetrical Triangle, Flag/Pennant, Head and Shoulders Top; Fidelity slides Common Chart Patterns.",
+            "checked": "2026-10-01",
+            "limits": "The family plots are teaching sketches, not complete scanners or return evidence."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-flags": {
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/flag-pennant",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/flag-pennant",
+          "sha256": "3d3f5cf3b2f553487828483e0fd3913270bb447e450fbad9569ab7d7306361da"
+        },
+        "claimSupport": [
+          {
+            "chapter": "chart-patterns",
+            "claim": "Triangle, flag/pennant and head/shoulders geometry.",
+            "location": "StockCharts Symmetrical Triangle, Flag/Pennant, Head and Shoulders Top; Fidelity slides Common Chart Patterns.",
+            "checked": "2026-10-01",
+            "limits": "The family plots are teaching sketches, not complete scanners or return evidence."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-research": {
+        "url": "https://www.nber.org/papers/w7613",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nber.org/papers/w7613",
+          "sha256": "0cd844f9f6c54691b8e9b3fe075cb2362ea22bdd1edbcc87a8e95e9f416cf27b",
+          "limits": "NBER abstract page retrieved by curl; web reader returned InternalError. Full-paper claims rely on the inspected author-hosted paper, not abstract-only inference."
+        },
+        "claimSupport": [],
+        "supportDisposition": "Bibliographic/context link; no current evidence record attributes a material empirical result to this URL. Source supports are limited to the stated descriptive scope; no new claim verification inferred from retrieval.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-quotes": {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price",
+          "sha256": "faf7192a90710400f2a06d59cd5ee8bc851e7bc3207add56c21cf6c43557b338",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "market-language",
+            "claim": "Bid, ask, and spread are quote concepts distinct from the last transaction.",
+            "location": "Investor.gov “Bid Price/Ask Price”, glossary definition.",
+            "checked": "2026-10-01",
+            "limits": "A quote can change; quoted prices do not promise an executable quantity or future fill."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Quotes and order instructions",
+            "location": "Chapter 19 Last price / Walk a 250-share buy; Chapter 20 A stop; Investor.gov Bid Price/Ask Price; SEC Trading Basics pp. 2–3; Understanding Order Types, Stop Order.",
+            "checked": "2026-10-02",
+            "limits": "Quote/trigger is not a guaranteed price or quantity; broker availability and trigger standards vary."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-triangle": {
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/symmetrical-triangle",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/symmetrical-triangle",
+          "sha256": "d25b125f26b9d59e996d83514399cc2ca10dd5a1be9dcfd290934a12151213ca"
+        },
+        "claimSupport": [
+          {
+            "chapter": "chart-patterns",
+            "claim": "Triangle, flag/pennant and head/shoulders geometry.",
+            "location": "StockCharts Symmetrical Triangle, Flag/Pennant, Head and Shoulders Top; Fidelity slides Common Chart Patterns.",
+            "checked": "2026-10-01",
+            "limits": "The family plots are teaching sketches, not complete scanners or return evidence."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-breakoutareas": {
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance",
+          "sha256": "33078ee3834c75cbfaf608cbc84b540564df3316a6b0ad29224da0a44ea96822"
+        },
+        "claimSupport": [
+          {
+            "chapter": "support-resistance",
+            "claim": "Support/resistance and role-reversal vocabulary.",
+            "location": "Fidelity “Support and resistance”, Support/Resistance/Role reversal; StockCharts “Support & Resistance”, zones and construction headings.",
+            "checked": "2026-10-01",
+            "limits": "Definitions do not establish participant identities or obligatory future reactions."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Support, resistance and crossing vocabulary",
+            "location": "Chapter 6 Start with reactions / Write definitions; Fidelity Support and resistance; StockCharts Support & Resistance, zones and role reversal.",
+            "checked": "2026-10-02",
+            "limits": "Price observations cannot identify hidden buyers/sellers or guarantee a future reaction; exact thresholds are local."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "fp-order-bulletin": {
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+          "sha256": "8faa6037a4b00bf40fcd03f552d008ee6ccef358316b5c620b3762eb8dee4cd1",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "market-language",
+            "claim": "Market/limit/stop/stop-limit instructions have different price and execution constraints.",
+            "location": "Investor.gov “Understanding Order Types”, Market Order, Limit Order, Stop Order, Stop-Limit Order sections.",
+            "checked": "2026-10-01",
+            "limits": "Descriptions are general; actual broker instructions can differ."
+          },
+          {
+            "chapter": "chart-anatomy",
+            "claim": "Real stop and limit instructions do not guarantee the scenario’s exact fills.",
+            "location": "Investor.gov “Understanding Order Types”, Limit Order and Stop Order.",
+            "checked": "2026-10-01",
+            "limits": "The route exercise supplies a model, not broker execution evidence."
+          },
+          {
+            "chapter": "volume",
+            "claim": "Volume alone cannot specify liquidity for a particular order; sessions can differ.",
+            "location": "Investor.gov “Extended-Hours Trading”, Lack of Liquidity and Larger Quote Spreads; “Understanding Order Types”, market-order partial pricing examples.",
+            "checked": "2026-10-01",
+            "limits": "The two invented quote-depth illustrations do not estimate current market cost."
+          },
+          {
+            "chapter": "support-resistance",
+            "claim": "Trigger price and execution price differ.",
+            "location": "Investor.gov “Understanding Order Types”, Stop Order and Stop-Limit Order.",
+            "checked": "2026-10-01",
+            "limits": "The 41-to 37 scenario is invented price-loss arithmetic."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-orders": {
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-14",
+          "sha256": "8faa6037a4b00bf40fcd03f552d008ee6ccef358316b5c620b3762eb8dee4cd1",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "risk-sizing",
+            "claim": "Stop triggers do not insure their execution price",
+            "location": "Investor.gov Understanding Order Types, Market / Limit / Stop sections",
+            "checked": "2026-10-01",
+            "limits": "Mechanics only; exact fills and stress prices are assumptions."
+          },
+          {
+            "chapter": "trade-plans",
+            "claim": "A limit is a price constraint and a stop may execute away from its trigger",
+            "location": "Investor.gov Understanding Order Types",
+            "checked": "2026-10-01",
+            "limits": "No broker-specific order guarantees or tested fill probabilities."
+          },
+          {
+            "chapter": "system-design",
+            "claim": "Limit orders may not execute; stop orders become market orders and can execute away from the stop price; day orders generally cancel at the end of regular trading",
+            "location": "Investor.gov, Understanding Order Types: “Limit Order”, “Stop Order”, and “Day Orders” paragraphs",
+            "checked": "2026-10-01",
+            "limits": "The bulletin does not validate the chapter’s fill-quantity cap, the touch rule, or the exact-stop fills; broker and venue practices vary."
+          },
+          {
+            "chapter": "case-studies",
+            "claim": "Limit/stop mechanics do not establish exact modeled fills",
+            "location": "Investor.gov Understanding Order Types",
+            "checked": "2026-10-01",
+            "limits": "Scenario fills are assumptions, not empirical transaction observations."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Quotes and order instructions",
+            "location": "Chapter 19 Last price / Walk a 250-share buy; Chapter 20 A stop; Investor.gov Bid Price/Ask Price; SEC Trading Basics pp. 2–3; Understanding Order Types, Stop Order.",
+            "checked": "2026-10-02",
+            "limits": "Quote/trigger is not a guaranteed price or quantity; broker availability and trigger standards vary."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-performance": {
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-47",
+          "sha256": "0a6aed82e6828095cc9ba1454291e78aeab2b819013544c2ca7fa49ab60b4ef4",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "journaling",
+            "claim": "Hypothetical performance and selective presentations need scrutiny",
+            "location": "Investor.gov Performance Claims",
+            "checked": "2026-10-11",
+            "limits": "The bulletin motivates transparent reporting; it does not validate journal interventions or fictional fills."
+          },
+          {
+            "chapter": "case-studies",
+            "claim": "Hypothetical records and selective results need clear interpretation",
+            "location": "Investor.gov Performance Claims",
+            "checked": "2026-10-01",
+            "limits": "The historical appendix has separate inherited provenance/evidence; fictional cases do not estimate returns."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-behavior": {
+        "url": "https://www.sec.gov/investor/tools/behaviorialpatterns.htm",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.sec.gov/investor/tools/behaviorialpatterns.htm",
+          "sha256": "4680da00c896f232c586fd85e3a226e1f620550ba8d0f2169d20ab26c4b56f72",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "psychology",
+            "claim": "Disposition effect is a described investor tendency",
+            "location": "SEC behavioral-pattern overview, Disposition Effect",
+            "checked": "2026-10-01",
+            "limits": "Secondary research overview; no experiment showing that the proposed note improves returns."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Disposition-effect terminology",
+            "location": "Chapter 22 A price is not a personal obligation; SEC-hosted Library of Congress overview, Disposition Effect.",
+            "checked": "2026-10-02",
+            "limits": "Descriptive overview, not a diagnosis, universal motive or randomized intervention result."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-overfit": {
+        "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+          "sha256": "d8bfbadaaedb430d9dec929646d92f3580fdf18238f34121ae7738fa1c69a63d"
+        },
+        "claimSupport": [
+          {
+            "chapter": "testing",
+            "claim": "A simple hold-out has specific weaknesses for investment backtests",
+            "location": "Bailey, Borwein, López de Prado & Zhu, abstract (p. 2) and “Comparisons to other approaches” (pp. 6–7)",
+            "checked": "2026-10-01",
+            "limits": "The paper proposes a probability-of-overfitting framework (CSCV); this chapter does not compute it, and a methodological argument is not a measured error rate for this rule."
+          },
+          {
+            "chapter": "statistics",
+            "claim": "Selecting among many tested configurations inflates apparent performance",
+            "location": "Bailey, Borwein, López de Prado & Zhu, introduction and “Comparisons to other approaches” (pp. 4–7)",
+            "checked": "2026-10-01",
+            "limits": "The paper’s PBO/CSCV estimate is not computed in this chapter."
+          },
+          {
+            "chapter": "system-design",
+            "claim": "Trying many configurations on the same data raises the risk of false discoveries, so versions and trials should be recorded",
+            "location": "Bailey, Borwein, López de Prado & Zhu, abstract and section 1 (pp. 2–4)",
+            "checked": "2026-10-01",
+            "limits": "The chapter computes no PBO, and the paper’s framework is not applied to Atlas-20."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-pattern-research": {
+        "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://business.columbia.edu/sites/default/files-efs/pubfiles/19268/Lo-Mamaysky_wang_foundations.pdf",
+          "sha256": "df3cb4ceddc3e23dd4833f0871bd556c19fa661027ed03facce00f6a72ccdb74"
+        },
+        "claimSupport": [],
+        "supportDisposition": "Bibliographic/context link; no current evidence record attributes a material empirical result to this URL. Source supports are limited to the stated descriptive scope; no new claim verification inferred from retrieval.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-nist": {
+        "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+          "sha256": "792728ca3f5f218bf8f59f47493243f1f0a4885bd580c15e26932cc4dc16d4f5"
+        },
+        "claimSupport": [
+          {
+            "chapter": "statistics",
+            "claim": "The Wilson score interval for 12 wins in 20 trials is about 38.66%–78.12%",
+            "location": "NIST Dataplot AGRESTI COULL, Wilson formula; NIST handbook 7.2.4.1, Wilson/proportion interval expression.",
+            "checked": "2026-10-01",
+            "limits": "Assumes independent Bernoulli trials with a common probability; it does not describe payoff sizes or expected profit."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-pvalue": {
+        "url": "https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm",
+          "sha256": "12959fb4e635f14ef9514b2c0acc3e0da1218e5e87a87941383307a1cd133e91"
+        },
+        "claimSupport": [
+          {
+            "chapter": "statistics",
+            "claim": "A p-value is computed under a null hypothesis and its threshold should be set in advance",
+            "location": "NIST/SEMATECH e-Handbook 7.1.3.1, Critical values and p values",
+            "checked": "2026-10-01",
+            "limits": "The source does not address trading-rule searches; the six-variant figure assumes independence that overlapping variants do not have."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Statistical definitions",
+            "location": "Chapter 25 How much can twenty trades tell you? / Optional p-values and Sharpe; NIST Confidence Limits for Mean and Critical values and p values; Sharpe The Sharpe Ratio, ex post and Time Dependence.",
+            "checked": "2026-10-02",
+            "limits": "Trade dependence, stationarity and annualization assumptions remain material; the crude ±2 SE example is not an exact 95% interval."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-sharpe": {
+        "url": "https://web.stanford.edu/~wfsharpe/art/sr/sr.htm",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://web.stanford.edu/~wfsharpe/art/sr/sr.htm",
+          "sha256": "51c9cc84bfc04b6e496bb3c79a4bd501ba45e5318d159f38c70c1e54d9bef39d"
+        },
+        "claimSupport": [
+          {
+            "chapter": "statistics",
+            "claim": "Sharpe ratio time-scaling by the square root of T assumes zero serial correlation",
+            "location": "Sharpe (1994), “The Ratio” and “Time Dependence” sections",
+            "checked": "2026-10-01",
+            "limits": "Definitions only; the chapter computes no Sharpe ratio for the fictional ledger, and per-trade mean/SD is explicitly not one."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Statistical definitions",
+            "location": "Chapter 25 How much can twenty trades tell you? / Optional p-values and Sharpe; NIST Confidence Limits for Mean and Critical values and p values; Sharpe The Sharpe Ratio, ex post and Time Dependence.",
+            "checked": "2026-10-02",
+            "limits": "Trade dependence, stationarity and annualization assumptions remain material; the crude ±2 SE example is not an exact 95% interval."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-dow": {
+        "url": "https://cmtassociation.org/technically_speaking/technically-speaking-september-2016/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://cmtassociation.org/technically_speaking/technically-speaking-september-2016/",
+          "sha256": "ddc7064c8f69ff45350a602864d8fdbc000debdfb98c88638f1b113de64642fe"
+        },
+        "claimSupport": [],
+        "supportDisposition": "Bibliographic/context link; no current evidence record attributes a material empirical result to this URL. Source supports are limited to the stated descriptive scope; no new claim verification inferred from retrieval.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-wyckoff": {
+        "url": "https://www.wyckoffanalytics.com/wyckoff-method/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.wyckoffanalytics.com/wyckoff-method/",
+          "sha256": "739b5e20761387f76ab515fe8f9ccd5c14392b37d70ba43015b8c24d17b3272b"
+        },
+        "claimSupport": [],
+        "supportDisposition": "Bibliographic/context link; no current evidence record attributes a material empirical result to this URL. Source supports are limited to the stated descriptive scope; no new claim verification inferred from retrieval.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-elliott": {
+        "url": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.elliottwave.com/free/introduction-to-the-wave-principle/",
+          "sha256": "f261423d1da97890ff6bfccd31ff4ee0b74f69351cf75095fbe791cb16cbf5bd",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "classical-frameworks",
+            "claim": "Elliott practitioners expect more than one valid count to exist at a time.",
+            "location": "EWI, Introduction to the Wave Principle: passages on five/three structure, degree, and preferred versus alternate interpretations.",
+            "checked": "2026-10-01",
+            "limits": "Proponent source; no independent test of count agreement or forecast accuracy was reviewed for this chapter."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Classical-framework vocabulary",
+            "location": "Chapter 27 Dow/Wyckoff/Elliott sections; CMT October 2011 confirmation principles; Wyckoff author PDF pp. 2–4 and 7–9; EWI Introduction, Impulse and Elevate Your Elliott Wave Analysis.",
+            "checked": "2026-10-02",
+            "limits": "Proponent definitions establish terminology, not independent forecasting efficacy. Local simultaneous-close and spring-window rules are separately disclosed."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-elliott-rules": {
+        "url": "https://www.elliottwave.com/waveopedia/impulse/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.elliottwave.com/waveopedia/impulse/",
+          "sha256": "f261423d1da97890ff6bfccd31ff4ee0b74f69351cf75095fbe791cb16cbf5bd",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "classical-frameworks",
+            "claim": "A standard Elliott impulse is governed by three rules, distinct from guidelines such as alternation and truncation.",
+            "location": "EWI, “Elevate Your Elliott Wave Analysis” (statement of the three rules and the rule/guideline distinction); EWI Waveopedia “Impulse” (wave-4 overlap wording; rules versus guidelines).",
+            "checked": "2026-10-01",
+            "limits": "Classification rules within the method. Passing them is not evidence of forecast accuracy or net profit. Diagonal rules were not reviewed."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Classical-framework vocabulary",
+            "location": "Chapter 27 Dow/Wyckoff/Elliott sections; CMT October 2011 confirmation principles; Wyckoff author PDF pp. 2–4 and 7–9; EWI Introduction, Impulse and Elevate Your Elliott Wave Analysis.",
+            "checked": "2026-10-02",
+            "limits": "Proponent definitions establish terminology, not independent forecasting efficacy. Local simultaneous-close and spring-window rules are separately disclosed."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-elliott-constraints": {
+        "url": "https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.elliottwave.com/articles/elevate-your-elliott-wave-analysis/",
+          "sha256": "f261423d1da97890ff6bfccd31ff4ee0b74f69351cf75095fbe791cb16cbf5bd",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "classical-frameworks",
+            "claim": "A standard Elliott impulse is governed by three rules, distinct from guidelines such as alternation and truncation.",
+            "location": "EWI, “Elevate Your Elliott Wave Analysis” (statement of the three rules and the rule/guideline distinction); EWI Waveopedia “Impulse” (wave-4 overlap wording; rules versus guidelines).",
+            "checked": "2026-10-01",
+            "limits": "Classification rules within the method. Passing them is not evidence of forecast accuracy or net profit. Diagonal rules were not reviewed."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Classical-framework vocabulary",
+            "location": "Chapter 27 Dow/Wyckoff/Elliott sections; CMT October 2011 confirmation principles; Wyckoff author PDF pp. 2–4 and 7–9; EWI Introduction, Impulse and Elevate Your Elliott Wave Analysis.",
+            "checked": "2026-10-02",
+            "limits": "Proponent definitions establish terminology, not independent forecasting efficacy. Local simultaneous-close and spring-window rules are separately disclosed."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-dow-reference": {
+        "url": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://cmtassociation.org/technically_speaking/technically-speaking-october-2011/",
+          "sha256": "cbe3af4f8a28c82386919a08b36b6154f12a4fe489595d9e432e2f8a9893f5be"
+        },
+        "claimSupport": [
+          {
+            "chapter": "classical-frameworks",
+            "claim": "Dow confirmation compares each average’s close with its own prior reference extreme, and confirmation may lag.",
+            "location": "CMT Association, Technically Speaking, October 2011, “Dow Theory”: principles 5 and 6 and the elaboration on confirmation timing and non-confirmations.",
+            "checked": "2026-10-01",
+            "limits": "Proponent description. The two-high exercise does not implement the full secondary-reaction classification or establish that confirmation predicts returns."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Classical-framework vocabulary",
+            "location": "Chapter 27 Dow/Wyckoff/Elliott sections; CMT October 2011 confirmation principles; Wyckoff author PDF pp. 2–4 and 7–9; EWI Introduction, Impulse and Elevate Your Elliott Wave Analysis.",
+            "checked": "2026-10-02",
+            "limits": "Proponent definitions establish terminology, not independent forecasting efficacy. Local simultaneous-close and spring-window rules are separately disclosed."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-wilson-dataplot": {
+        "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/agrecoul.htm",
+          "sha256": "7c3cb864f546629829bb429b988a66066651a64e98ad22fc4c0677469c496c25"
+        },
+        "claimSupport": [
+          {
+            "chapter": "statistics",
+            "claim": "The Wilson score interval for 12 wins in 20 trials is about 38.66%–78.12%",
+            "location": "NIST Dataplot AGRESTI COULL, Wilson formula; NIST handbook 7.2.4.1, Wilson/proportion interval expression.",
+            "checked": "2026-10-01",
+            "limits": "Assumes independent Bernoulli trials with a common probability; it does not describe payoff sizes or expected profit."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-halts": {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.investor.gov/introduction-investing/investing-basics/glossary/trading-halts-and-delays",
+          "sha256": "1a7c43fb78a53489903fd5ade1339f513d25d219b5457819f3f4900d7490dae2",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "system-design",
+            "claim": "Regulatory halts commonly occur for pending news and are imposed by exchanges",
+            "location": "Investor.gov glossary, Trading Halts and Delays",
+            "checked": "2026-10-01",
+            "limits": "The entry does not describe reopening prices; the stale-mark and gap-on-resumption treatment are Atlas-20 conventions."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-wyckoff-text": {
+        "url": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.wyckoffanalytics.com/wp-content/uploads/2020/02/Wyckoff_Analytics_Wyckoff-Method_English.pdf",
+          "sha256": "cf9f9e2dd9f965a7eed2c855172df922a908d5b14b5fd070c38e9ef987b2c6f2"
+        },
+        "claimSupport": [
+          {
+            "chapter": "classical-frameworks",
+            "claim": "A Wyckoff spring is a move below the trading-range low followed by a reversal back inside; springs are not required elements.",
+            "location": "Author-hosted tutorial PDF, Composite Man / laws sections, printed pp. 2–4; Accumulation Events and Phase C, pp. 7–9",
+            "checked": "2026-10-01",
+            "limits": "Proponent description. The 1% breach and three-session reentry window are the chapter’s own research settings. Statements about large interests and readiness to rise are interpretations, not tested here."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Classical-framework vocabulary",
+            "location": "Chapter 27 Dow/Wyckoff/Elliott sections; CMT October 2011 confirmation principles; Wyckoff author PDF pp. 2–4 and 7–9; EWI Introduction, Impulse and Elevate Your Elliott Wave Analysis.",
+            "checked": "2026-10-02",
+            "limits": "Proponent definitions establish terminology, not independent forecasting efficacy. Local simultaneous-close and spring-window rules are separately disclosed."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-confidence-mean": {
+        "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+          "sha256": "0003f19a524953b24f25f1efc7d02809fa561a0c8849e464ad33acf12b9e3b04"
+        },
+        "claimSupport": [
+          {
+            "chapter": "statistics",
+            "claim": "Confidence describes long-run interval-procedure coverage",
+            "location": "NIST 1.3.5.2, Purpose/Interval Estimate for Mean and Definition: Confidence Interval.",
+            "checked": "2026-10-01",
+            "limits": "The source does not validate dependent, nonstationary trade outcomes or the fictional band as an exact 95% interval."
+          },
+          {
+            "research": "Trace glossary definitions to their support",
+            "claim": "Statistical definitions",
+            "location": "Chapter 25 How much can twenty trades tell you? / Optional p-values and Sharpe; NIST Confidence Limits for Mean and Critical values and p values; Sharpe The Sharpe Ratio, ex post and Time Dependence.",
+            "checked": "2026-10-02",
+            "limits": "Trade dependence, stationarity and annualization assumptions remain material; the crude ±2 SE example is not an exact 95% interval."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "ra-dow-study": {
+        "url": "https://depot.som.yale.edu/icf/papers/fileuploads/2439/original/98-86.pdf",
+        "originalAccessRecorded": "2026-10-12",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET plus complete local PDF/text and table/figure inspection",
+          "disposition": "retrieved",
+          "sha256": "211e7bd435611dcda2b6e9ee69a26c0ea10ed674fd33966fbc3df51471223381",
+          "httpStatus": 200
+        },
+        "claimSupport": [
+          {
+            "chapter": "classical-frameworks",
+            "claim": "A historical editorial-call reconstruction reports favorable risk-adjusted results under its own assumptions.",
+            "location": "March 13, 1998 author manuscript: pp. 8–10, 18–21; Tables II–IV, pp. 28–30; endnotes 9, 14–15, pp. 45–46.",
+            "checked": "2026-10-12",
+            "limits": "One coder; selection/luck unresolved; delay-sensitive, cost-free results. Later daily experiment excludes dividends and cash interest. No inference to all three frameworks."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-jt": {
+        "url": "https://www.bauer.uh.edu/rsusmel/phd/jegadeesh-titman93.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bauer.uh.edu/rsusmel/phd/jegadeesh-titman93.pdf",
+          "sha256": "ed02251ff8152b78cf52d4285cd344eb42b1b19a4d64fd9bf01d24eba1a34155"
+        },
+        "claimSupport": [
+          {
+            "chapter": "relative-strength",
+            "claim": "Research boundary: a specified stock momentum portfolio showed positive historical returns",
+            "location": "Sections I–IV; Table III and market-model/transaction-cost paragraph, printed pp. 67–78, especially p. 77 (PDF page 14).",
+            "checked": "2026-10-02",
+            "limits": "Historical cross-sectional portfolio evidence; distinct from a single stock/benchmark price ratio and not a current performance forecast. The study also reports that part of the first-year abnormal return dissipates over the following two years."
+          },
+          {
+            "chapter": "momentum",
+            "claim": "Research boundary: a specified stock momentum portfolio showed positive historical returns",
+            "location": "Sections I–IV; Table III and market-model/transaction-cost paragraph, printed pp. 67–78, especially p. 77 (PDF page 14).",
+            "checked": "2026-10-02",
+            "limits": "Historical portfolio evidence; distinct from a discretionary breakout and not a current performance forecast."
+          },
+          {
+            "research": "Supportive stock evidence: cross-sectional momentum",
+            "claim": "A specified stock momentum portfolio showed positive historical returns",
+            "location": "Sections I–IV; Table III and market-model/transaction-cost paragraph, printed pp. 67–78, especially p. 77 (PDF page 14).",
+            "checked": "2026-10-02",
+            "limits": "Historical portfolio evidence; distinct from a discretionary breakout and not a current performance forecast."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-ts": {
+        "url": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+          "sha256": "7682f8e97eb4b77591dc85e36731ff51ed031970cdde81678108734db9478379"
+        },
+        "claimSupport": [
+          {
+            "chapter": "momentum",
+            "claim": "Research boundary: time-series continuation has evidence in the studied futures/forward sample",
+            "location": "Sections 2–4; equation (5), printed p. 236; Figure 2, p. 237 (PDF page 10); Figure 3 and Table 3.",
+            "checked": "2026-10-02",
+            "limits": "No direct validation of individual-stock chart rules or the textbook’s execution model."
+          },
+          {
+            "research": "Supportive evidence with a different market: time-series momentum",
+            "claim": "Time-series continuation has evidence in the studied futures/forward sample",
+            "location": "Sections 2–4; equation (5), printed p. 236; Figure 2, p. 237 (PDF page 10); Figure 3 and Table 3.",
+            "checked": "2026-10-02",
+            "limits": "No direct validation of individual-stock chart rules or the textbook’s execution model."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-bs": {
+        "url": "https://scaillet.ch/pdfs/BajSca.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://scaillet.ch/pdfs/BajSca.pdf",
+          "sha256": "7c6e69f5716321572b69587b70f5a2e924d064c53f0b44023ae37546733bea42"
+        },
+        "claimSupport": [
+          {
+            "chapter": "testing",
+            "claim": "In a large DJIA rule search, costs removed out-of-sample performance and break-evens computed after selection are ex post",
+            "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+            "checked": "2026-10-02",
+            "limits": "An index experiment with a specific rule universe; it does not test individual-stock breakout rules like v1-b or prove every technical method useless."
+          },
+          {
+            "chapter": "statistics",
+            "claim": "A large multiple-testing study of technical rules is summarized in the Research and evidence appendix",
+            "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+            "checked": "2026-10-02",
+            "limits": "Index-level experiment; not a test of the book’s fictional rules or of individual-stock methods generally."
+          },
+          {
+            "chapter": "moving-averages",
+            "claim": "Research boundary: searching historical technical rules did not secure persistent net performance here",
+            "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+            "checked": "2026-10-02",
+            "limits": "Results concern the authors’ index/rule experiment; they neither prove all technical methods useless nor license ignoring adverse results."
+          },
+          {
+            "research": "Adverse evidence: rule selection and trading costs",
+            "claim": "Searching historical technical rules did not secure persistent net performance here",
+            "location": "Author-hosted manuscript (sample ends July 2011): introduction p. 3; sections 4–5, pp. 20–25; Table 5, p. 49 (PDF page 49).",
+            "checked": "2026-10-02",
+            "limits": "Results concern the authors’ index/rule experiment; they neither prove all technical methods useless nor license ignoring adverse results."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-lo": {
+        "url": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.mit.edu/~alo/Papers/1705-1765.pdf",
+          "sha256": "3dd89a38bb1ceeef4e7c80dd58db8d88f150dfd443d04a6542cb963d72a4dd8e"
+        },
+        "claimSupport": [
+          {
+            "chapter": "chart-patterns",
+            "claim": "Formal pattern recognition can carry conditional information in a particular historical sample.",
+            "location": "Section II.A–B definitions/delay; Section III.B–F sample and results, Tables III–VIII; Section V conclusion, printed p. 1753. Tables I–II are pattern counts.",
+            "checked": "2026-10-02",
+            "limits": "Algorithmic historical information evidence; no success probability for this fictional detector or current after-cost advantage."
+          },
+          {
+            "chapter": "testing",
+            "claim": "Some algorithmically detected patterns carried incremental distributional information in historical U.S. stocks",
+            "location": "Section II.A–B definitions/delay; Section III.B–F sample and results, Tables III–VIII; Section V conclusion, printed p. 1753. Tables I–II are pattern counts.",
+            "checked": "2026-10-02",
+            "limits": "Distributional information is not net trading profit; it does not validate discretionary drawings or the book’s rules."
+          },
+          {
+            "research": "Mixed pattern evidence: information is not an executable profit",
+            "claim": "Some algorithmically detected patterns contain incremental distributional information",
+            "location": "Section II.A–B definitions/delay; Section III.B–F sample and results, Tables III–VIII; Section V conclusion, printed p. 1753. Tables I–II are pattern counts.",
+            "checked": "2026-10-02",
+            "limits": "Not a demonstrated net-profit strategy and not evidence for arbitrary discretionary drawings."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-os": {
+        "url": "https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr125.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr125.pdf",
+          "sha256": "d72bc0a020d04f0b7dd423c0f4f2dcebc83b34ebd160ca8eca75b52d69e1341d"
+        },
+        "claimSupport": [
+          {
+            "chapter": "support-resistance",
+            "claim": "Research boundary: FX conditional orders cluster at round numbers",
+            "location": "Introduction printed pp. 4–5; Section I.B (data), pp. 10–12; Section II.C (requested-rate distributions), pp. 14–15, Figures 1A–1B and 2A–2D; Section V conclusion.",
+            "checked": "2026-10-02",
+            "limits": "One bank and three currency pairs; no direct stock-level clustering or executable profit test."
+          },
+          {
+            "research": "Mechanisms and behavior: useful explanations with limits",
+            "claim": "FX conditional orders cluster at round numbers",
+            "location": "Introduction printed pp. 4–5; Section I.B (data), pp. 10–12; Section II.C (requested-rate distributions), pp. 14–15, Figures 1A–1B and 2A–2D; Section V conclusion.",
+            "checked": "2026-10-02",
+            "limits": "One bank and three currency pairs; no direct stock-level clustering or executable profit test."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-bo": {
+        "url": "https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://faculty.haas.berkeley.edu/odean/papers/returns/Individual_Investor_Performance_Final.pdf",
+          "sha256": "7947c80b17326defcd5346e2aaadf055e832a155e065c5539765de0c0da6cb8c"
+        },
+        "claimSupport": [
+          {
+            "chapter": "psychology",
+            "claim": "Research boundary: higher household turnover is associated with worse net performance here",
+            "location": "Section II.A and footnote 4, printed pp. 777–778; Table I; Section II.B costs/timing; Figure 1 and Section IV/Table V, pp. 791–794.",
+            "checked": "2026-10-02",
+            "limits": "One broker in one historical period; observational association does not establish motive or a journal intervention benefit."
+          },
+          {
+            "research": "Mechanisms and behavior: useful explanations with limits",
+            "claim": "Higher household turnover is associated with worse net performance here",
+            "location": "Section II.A and footnote 4, printed pp. 777–778; Table I; Section II.B costs/timing; Figure 1 and Section IV/Table V, pp. 791–794.",
+            "checked": "2026-10-02",
+            "limits": "One broker in one historical period; observational association does not establish motive or a journal intervention benefit."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-sec-case": {
+        "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+          "sha256": "faaefc45cff156d1e5f14b3e1277152cee06a3bf2215c59b4be49e0955e12474",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "case-studies",
+            "claim": "Dated GME prices are historical observations, not simulated fills",
+            "location": "SEC section 3.2, printed pp. 18–19 (PDF pages 19–20).",
+            "checked": "2026-10-01",
+            "limits": "Sparse retrospective extract; no complete OHLC, tradeable entry, or strategy-performance sample."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-sec-reuse": {
+        "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "web_reader_accessible",
+          "httpStatus": 403,
+          "finalUrl": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+          "sha256": "ef7153a4dd874ffaf0fe4db2a00afda2645c20548901cfb13b4022f49564fbb2",
+          "fallbackMethod": "OpenAI web reader: original URL opened and material definition/mechanics passages inspected on 2026-10-12; direct GET restriction retained"
+        },
+        "claimSupport": [
+          {
+            "chapter": "case-studies",
+            "claim": "Reuse statement is scoped to Government-created SEC content",
+            "location": "Webmaster FAQ, General Questions: content reuse and exclusions.",
+            "checked": "2026-10-01",
+            "limits": "This does not license third-party chart images or underlying vendor feeds; none is reproduced here."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain official reuse-policy citation for SEC material only.",
+          "limits": "SEC/EDGAR government/public-filing policy does not establish any market-data vendor permission; excluded stock art and third-party content remain outside that general statement."
+        }
+      },
+      "rc-apple-dividend-2016": {
+        "url": "https://www.apple.com/newsroom/2016/01/26Apple-Reports-Record-First-Quarter-Results/",
+        "originalAccessRecorded": "2026-10-12",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.apple.com/newsroom/2016/01/26Apple-Reports-Record-First-Quarter-Results/",
+          "sha256": "f09caee9bff4464f5e5690b52bff913404bff5c90b9c68a7948660f7c439c9bf"
+        },
+        "claimSupport": [
+          {
+            "chapter": "case-studies",
+            "claim": "An Apple dividend fell between the February 1 levels and the February 5 diagnostic bar",
+            "location": "Issuer release, January 26, 2016, final dividend paragraph",
+            "checked": "2026-10-12",
+            "limits": "No unadjusted 2016 quotes were retrieved, so the unadjusted geometry is described as probable, not observed."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-apple-split": {
+        "url": "https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/",
+        "originalAccessRecorded": "2026-10-01",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://www.apple.com/newsroom/2014/04/23Apple-Expands-Capital-Return-Program-to-Over-130-Billion/",
+          "sha256": "34c65615a18091c610727dc9a722652fdbedb359388b14ec52db99db4ac44db4"
+        },
+        "claimSupport": [
+          {
+            "chapter": "case-studies",
+            "claim": "Apple’s announced split changes share/price units",
+            "location": "Issuer release, April 23, 2014, final split paragraph",
+            "checked": "2026-10-01",
+            "limits": "The original algebra is a unit transformation, not a historical price series or return forecast."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain citation and original paraphrase only; no source prose, source charts or complete document redistributed.",
+          "limits": "No general reuse license inferred from accessibility or citation."
+        }
+      },
+      "rc-open-stock-archive": {
+        "url": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+        "originalAccessRecorded": "2026-10-02",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "unavailable",
+          "httpStatus": 200,
+          "finalUrl": "https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs",
+          "sha256": "8782ee838caf274f670fee4e12bc2061376e4a087c58303609dc73900f26e169",
+          "limits": "Listing body inaccessible/blank in direct and web-reader checks; saved 2026-10-02 provider API version/license metadata and local extracts remain the evidence. No fresh depositor declaration assumed."
+        },
+        "claimSupport": [
+          {
+            "chapter": "case-studies",
+            "claim": "The fixed calendar gallery preserves all 36 windows and exact representative OHLC",
+            "location": "Local data/historical/selection.json, provenance.json, cases.json and three CSV extracts; Kaggle metadata description, license and file paths, version 3. Chapter 28 calendar ledger and five historical illustrations.",
+            "checked": "2026-10-02",
+            "limits": "Three familiar surviving symbols and one chosen year; retrospective adjustment with undocumented vintage/session details and no upstream provider identified. CC0 is depositor-stated permission, not a warranty of others’ rights or feed accuracy. Path labels are not orders, fills, returns, strategy efficacy or probabilities."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain the existing limited numeric teaching extracts and original diagrams under the saved depositor CC0 declaration.",
+          "limits": "Upstream title/rights are not independently certified; no exchange-feed license, warranty, executable historical prices or expanded dataset redistribution inferred. API metadata and archive integrity retained."
+        }
+      },
+      "rc-cc0": {
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "originalAccessRecorded": "2026-10-02",
+        "access": {
+          "checked": "2026-10-12",
+          "method": "curl GET with redirects and declared project User-Agent",
+          "disposition": "retrieved",
+          "httpStatus": 200,
+          "finalUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sha256": "abb4d48fc8b85de52b377dd105532c6c549f515d492a8e1712bc99e7316a1f12"
+        },
+        "claimSupport": [
+          {
+            "chapter": "case-studies",
+            "claim": "The fixed calendar gallery preserves all 36 windows and exact representative OHLC",
+            "location": "Local data/historical/selection.json, provenance.json, cases.json and three CSV extracts; Kaggle metadata description, license and file paths, version 3. Chapter 28 calendar ledger and five historical illustrations.",
+            "checked": "2026-10-02",
+            "limits": "Three familiar surviving symbols and one chosen year; retrospective adjustment with undocumented vintage/session details and no upstream provider identified. CC0 is depositor-stated permission, not a warranty of others’ rights or feed accuracy. Path labels are not orders, fills, returns, strategy efficacy or probabilities."
+          }
+        ],
+        "supportDisposition": "Retained current compiled claim locators and their actual check dates; this access inventory does not certify every current page passage anew. Earlier scoped publication reviews remain the substantive evidence.",
+        "reuse": {
+          "decision": "Retain the CC0 deed/legal-code citation for the depositor permission boundary.",
+          "limits": "CC0 covers only rights held by the affirmer; other persons’ rights are not cleared by this dedication."
+        }
+      }
+    }
   }
 };

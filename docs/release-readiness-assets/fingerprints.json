@@ -1,0 +1,235 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "id": "market-language",
+      "sha256": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
+      "priorSha256": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
+      "reviewValid": true
+    },
+    {
+      "number": 2,
+      "id": "chart-anatomy",
+      "sha256": "99726d7e5c814c61b7797dfff884d34ef70f05a56808d28b8002b505bc42cead",
+      "priorSha256": "99726d7e5c814c61b7797dfff884d34ef70f05a56808d28b8002b505bc42cead",
+      "reviewValid": true
+    },
+    {
+      "number": 3,
+      "id": "volume",
+      "sha256": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
+      "priorSha256": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
+      "reviewValid": true
+    },
+    {
+      "number": 4,
+      "id": "timeframes",
+      "sha256": "2dd2a6d99752d60451375a2783bf2f57697e9129e1aeeeae50347d0a390fb357",
+      "priorSha256": "2dd2a6d99752d60451375a2783bf2f57697e9129e1aeeeae50347d0a390fb357",
+      "reviewValid": true
+    },
+    {
+      "number": 5,
+      "id": "trends",
+      "sha256": "38a32b5630782592f5203b27abb91a781a5d8226e5f45c96cfc00b3230b2798d",
+      "priorSha256": "38a32b5630782592f5203b27abb91a781a5d8226e5f45c96cfc00b3230b2798d",
+      "reviewValid": true
+    },
+    {
+      "number": 6,
+      "id": "support-resistance",
+      "sha256": "6a42fe44a3cee0d8a518b30e5f70d04afa4bb36fb4a8f46b915e1fcffd1622c0",
+      "priorSha256": "6a42fe44a3cee0d8a518b30e5f70d04afa4bb36fb4a8f46b915e1fcffd1622c0",
+      "reviewValid": true
+    },
+    {
+      "number": 7,
+      "id": "candlestick-patterns",
+      "sha256": "b3d4182952b3e4dc82e37f5063e954e5f8b4cb11c7bbebff9312660fecef5903",
+      "priorSha256": "b3d4182952b3e4dc82e37f5063e954e5f8b4cb11c7bbebff9312660fecef5903",
+      "reviewValid": true
+    },
+    {
+      "number": 8,
+      "id": "chart-patterns",
+      "sha256": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
+      "priorSha256": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
+      "reviewValid": true
+    },
+    {
+      "number": 9,
+      "id": "breakouts",
+      "sha256": "a0f8ef618394df0351b2e0d41c7ae0733f64ae3a213e0dac34cc1bb93f6cde46",
+      "priorSha256": "a0f8ef618394df0351b2e0d41c7ae0733f64ae3a213e0dac34cc1bb93f6cde46",
+      "reviewValid": true
+    },
+    {
+      "number": 10,
+      "id": "moving-averages",
+      "sha256": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
+      "priorSha256": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
+      "reviewValid": true
+    },
+    {
+      "number": 11,
+      "id": "momentum",
+      "sha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20",
+      "priorSha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20",
+      "reviewValid": true
+    },
+    {
+      "number": 12,
+      "id": "volatility",
+      "sha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
+      "priorSha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
+      "reviewValid": true
+    },
+    {
+      "number": 13,
+      "id": "volume-tools",
+      "sha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
+      "priorSha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
+      "reviewValid": true
+    },
+    {
+      "number": 14,
+      "id": "fibonacci",
+      "sha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
+      "priorSha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
+      "reviewValid": true
+    },
+    {
+      "number": 15,
+      "id": "relative-strength",
+      "sha256": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
+      "priorSha256": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
+      "reviewValid": true
+    },
+    {
+      "number": 16,
+      "id": "breadth",
+      "sha256": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
+      "priorSha256": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
+      "reviewValid": true
+    },
+    {
+      "number": 17,
+      "id": "multi-timeframe",
+      "sha256": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
+      "priorSha256": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
+      "reviewValid": true
+    },
+    {
+      "number": 18,
+      "id": "events",
+      "sha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13",
+      "priorSha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13",
+      "reviewValid": true
+    },
+    {
+      "number": 19,
+      "id": "market-microstructure",
+      "sha256": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
+      "priorSha256": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
+      "reviewValid": true
+    },
+    {
+      "number": 20,
+      "id": "risk-sizing",
+      "sha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35",
+      "priorSha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35",
+      "reviewValid": true
+    },
+    {
+      "number": 21,
+      "id": "trade-plans",
+      "sha256": "63160472984777838a1c865bfb1bcb28b44a1ab15cae2e885995d262b9989163",
+      "priorSha256": "63160472984777838a1c865bfb1bcb28b44a1ab15cae2e885995d262b9989163",
+      "reviewValid": true
+    },
+    {
+      "number": 22,
+      "id": "psychology",
+      "sha256": "f3e9f59928685495b511428f6a757b02eee75f3e51ce094002ab337fcceadeb1",
+      "priorSha256": "f3e9f59928685495b511428f6a757b02eee75f3e51ce094002ab337fcceadeb1",
+      "reviewValid": true
+    },
+    {
+      "number": 23,
+      "id": "journaling",
+      "sha256": "5cd904e206c266b34454d2c5cecb1de690b4ade48af81e85c66eeb7251d62c1e",
+      "priorSha256": "5cd904e206c266b34454d2c5cecb1de690b4ade48af81e85c66eeb7251d62c1e",
+      "reviewValid": true
+    },
+    {
+      "number": 24,
+      "id": "testing",
+      "sha256": "c9b4f4c9769321a17f57e09276c281d27a9063cc93453ecf2308530b1a6e6fb2",
+      "priorSha256": "c9b4f4c9769321a17f57e09276c281d27a9063cc93453ecf2308530b1a6e6fb2",
+      "reviewValid": true
+    },
+    {
+      "number": 25,
+      "id": "statistics",
+      "sha256": "344bbf78672956d19976540a3c5b76b24b2ce785e384b51f024774f52d982445",
+      "priorSha256": "344bbf78672956d19976540a3c5b76b24b2ce785e384b51f024774f52d982445",
+      "reviewValid": true
+    },
+    {
+      "number": 26,
+      "id": "system-design",
+      "sha256": "515c95a1e848ce057d0156ce751a02979e64f93f95d62324b0e5b5a3a9e88fb5",
+      "priorSha256": "515c95a1e848ce057d0156ce751a02979e64f93f95d62324b0e5b5a3a9e88fb5",
+      "reviewValid": true
+    },
+    {
+      "number": 27,
+      "id": "classical-frameworks",
+      "sha256": "e078aaaf440e8f884dc75cd8dc8792ae04d84eb253cd5a0c3f675ab549dd7a35",
+      "priorSha256": "c11b209a65a9b8d10b02bdad653efe4b88be02748615256717dd4e3d664da953",
+      "reviewValid": true
+    },
+    {
+      "number": 28,
+      "id": "case-studies",
+      "sha256": "f5be3ebe6aed3c08f140065f3f6790410c941b9545af84dc5445da3987d51354",
+      "priorSha256": "f5be3ebe6aed3c08f140065f3f6790410c941b9545af84dc5445da3987d51354",
+      "reviewValid": true
+    }
+  ],
+  "parts": [
+    {
+      "id": "foundations",
+      "sha256": "dc0455a5949706ae1300f6d523615b5029abd9438a4fd54a87ddb4eb5ed99818",
+      "priorSha256": "dc0455a5949706ae1300f6d523615b5029abd9438a4fd54a87ddb4eb5ed99818"
+    },
+    {
+      "id": "price-action",
+      "sha256": "ffa48277c10d9b0e2c76dc49a777d44b831aab6fbb80eb15bc87ec65ee1fad5b",
+      "priorSha256": "ffa48277c10d9b0e2c76dc49a777d44b831aab6fbb80eb15bc87ec65ee1fad5b"
+    },
+    {
+      "id": "indicators",
+      "sha256": "9a59d16fc036883257b78bee3ebc2513959cce8108c9ba1a45c8df3bf5bb4e21",
+      "priorSha256": "9a59d16fc036883257b78bee3ebc2513959cce8108c9ba1a45c8df3bf5bb4e21"
+    },
+    {
+      "id": "context",
+      "sha256": "a91a8a2f3cd9f5d838e10c08b08e9927a77fc206e8c2fa4170fce41eacdc5973",
+      "priorSha256": "a91a8a2f3cd9f5d838e10c08b08e9927a77fc206e8c2fa4170fce41eacdc5973"
+    },
+    {
+      "id": "risk",
+      "sha256": "638f8e154c4b5b006caa13609a8a91423adc1c27569aeca8441317948cde03f4",
+      "priorSha256": "638f8e154c4b5b006caa13609a8a91423adc1c27569aeca8441317948cde03f4"
+    },
+    {
+      "id": "advanced",
+      "sha256": "4d1310e0a271847182d3fb4278f11362b4b20449ae3874c8d0f35b71569ee2b6",
+      "priorSha256": "ca6cc3c2ed8bedce2afcd47d7de51b727ea99e39739365acbbb69f58da1078d5"
+    }
+  ],
+  "unchangedChapterFingerprints": 27,
+  "unchangedPartFingerprints": 5,
+  "unchangedSVGs": 71
+}
