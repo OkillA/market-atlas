@@ -77,6 +77,7 @@ CA1-018/019 are resolved and archived with their complete findings after origina
 
 ## Active findings
 
+
 ### CA1-026 — Validate learning with target readers
 - Priority / type: P3 / editorial recommendation
 - Status: deferred
@@ -187,3 +188,11 @@ A follow-up headless print sweep of all 28 chapters and six part reviews (non-na
 At the user's request, took the ROAD-004 checks that need no human print-dialog step. Native 1440/1920px, 200% and 400% zoom-equivalent sweeps of all 41 routes; offline file:// reading of the built site and of the extracted release ZIP (headless Chrome); and an automated accessibility-tree audit (not a screen reader). The audit found QA1-001 (glossary heading skip); the screenshot review found QA1-002 (glossary term names at link size). Both are fixed and archived. [Record](release-readiness-assets/wide-zoom-file-a11y-checks.json). The release preflight was rebuilt for the current files. CA1-026 remains deferred. Changes are local and unpushed.
 
 A follow-up contrast and text-size audit of both themes found QA1-003 (the "A worked example" label at 8px in every chapter). It is fixed and archived. There were no contrast failures. A new [verification checkpoint](PROJECT_CHECKPOINT_20261013_152853.json) pins the current files after the full check suite.
+
+## Native print QA completion — /root, 2026-10-13
+
+[Completion report](NATIVE_PRINT_COMPLETION_20261013.md): 14 new native PDFs, 237 rendered pages visually inspected, complete remaining ROAD-004 print coverage. No new findings; PRINT1-001–003 received additional native verification recorded in the resolution history. Open in Preview → Save As enabled autonomous dialog completion. Task preview/PDF windows closed at the user's request. Shipping code/content unchanged and `check:reviews` passes. ROAD-007 release finalization remains pending; CA1-026 stays deferred for actual readers. No push or deployment.
+
+## Mobile header correction — /root, 2026-10-13
+
+MOBILE2-001 is resolved locally and archived with the full user finding, resolution and [native browser evidence](mobile-header-assets/browser-checks.json). Mobile branding/home access restored; 36 layout cases and actual header-control actions pass. Content/renderer/app unchanged; current ZIP rebuilt. Preview closed. Physical phone recheck and public deployment not claimed; CA1-026 remains deferred.

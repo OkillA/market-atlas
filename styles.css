@@ -74,3 +74,20 @@
 .chapter-row{grid-template-columns:36px minmax(0,1fr) minmax(110px,180px) 20px}
 .chapter-row>div{min-width:0;overflow-wrap:anywhere}.chapter-row .chapter-status{white-space:normal;text-align:right}
 @media(max-width:760px){.chapter-row{grid-template-columns:26px minmax(0,1fr) 14px}.chapter-row .chapter-status{text-align:left}}
+
+/* Keep site identity/home access visible when the navigation drawer is closed. */
+.mobile-brand{display:none}
+@media screen and (max-width:760px){
+ .topbar-left{max-width:none;gap:8px}
+ .topbar-left>#breadcrumb{display:none}
+ .mobile-brand{display:flex;gap:7px;font-size:18px;white-space:nowrap;min-height:44px}
+ .mobile-brand .brand-mark{width:27px;height:30px;font-size:21px}
+ .mobile-brand .brand-mark span{background:var(--paper);font-size:13px;top:-6px;right:-4px}
+ .topbar-right,.menu-toggle{flex-shrink:0}
+}
+@media screen and (max-width:360px){
+ .topbar{padding-left:12px;padding-right:12px}
+ .mobile-brand{font-size:16px;gap:6px}
+ .mobile-brand .brand-mark{width:24px;height:28px;font-size:19px}
+ #chapter-contents-button{font-size:12px;padding:6px 7px}
+}

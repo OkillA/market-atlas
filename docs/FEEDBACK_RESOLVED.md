@@ -1949,6 +1949,8 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: In print mode, renderFigure renders `{...figure, panels:[panel]}` per panel inside `.print-panel` blocks (break-inside: avoid) and lets `.figure-chart.print-panels` break between them. figure-renderer.js and authoring content are untouched, so renderer and content review fingerprints stay valid (`npm run check:reviews` passes for all 28). Cache keys bumped in index.html.
 - Verification: Headless Chrome print of Chapter 8 showed the six catalogue panels at full width across pages 12–15. Native Quartz re-exports of the Chapter 7 and 8 learner/answer editions (15/15/25/25 pages) were inspected page by page: all panels are full width and readable, inputs and tables are complete, and continuation boundaries are unchanged (Ch 7 p11, Ch 8 p6). `npm run check`, `check:figures` and `check:reviews` pass. The other 10 affected figures were not natively re-exported in this slice; the Chapter 6 pair is now superseded.
 - Scope / evidence: [native-print-checks.json](release-readiness-assets/native-print-checks.json) and contact sheets in `release-readiness-assets/native-print/`.
+- Additional native verification / /root, 2026-10-13: Current Chapter 6/10/26/28 multi-panel figures received additional native Quartz verification in the 14-output/237-page batch; all sampled panels retain full width and readable labels. Earlier Chapter 7–8 native evidence remains inherited. No claim of a native re-export of every other chapter. [Completion report](NATIVE_PRINT_COMPLETION_20261013.md); [inspection record](release-readiness-assets/native-print-final-inspection.json).
+
 
 ### PRINT1-002 — Print headings and section labels split from their content
 - Priority / type: P3 / defect
@@ -1965,6 +1967,8 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: Added `h1,h2,h3{break-inside:avoid}` and `.worked-example>.eyebrow,.quiz>.eyebrow{break-after:avoid}` to print CSS.
 - Verification: Native re-exports: the Chapter 7 learner heading is intact on page 9; the Chapter 8 learner/answer eyebrow is on page 23 with its heading. All pages of all four current PDFs were checked for split headings and stranded labels. The Chapter 7 answer edition was printed before these two rules and has no split heading or stranded label on any page.
 - Scope / evidence: As PRINT1-001.
+- Additional native verification / /root, 2026-10-13: All 237 pages in the remaining native batch were visually inspected; no split heading or stranded eyebrow label found. [Completion report](NATIVE_PRINT_COMPLETION_20261013.md); [inspection record](release-readiness-assets/native-print-final-inspection.json).
+
 
 ### PRINT1-003 — Part-review worked solutions cannot be printed
 - Priority / type: P2 / defect (instructional material lost in print)
@@ -1981,6 +1985,8 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: Added "Print tasks" / "Print with solutions" buttons and a print-only edition line. Before printing the solution edition, onbeforeprint opens the solution disclosures; onafterprint restores each one's previous state and resets the class and label. Cache key bumped.
 - Verification: Headless Chrome, all six part reviews in both editions: the 31 authoring solution paragraphs all appear in the solution editions and none in the task editions. A preview state check after a simulated print: a reader-opened solution stayed open, the others closed again, and the class and label were reset. On-screen buttons render at 1280px. `npm run check`, `check:figures`, `check:reviews` pass. A native printer export of a part review is still pending in ROAD-004.
 - Scope / evidence: [headless-print-sweep.json](release-readiness-assets/headless-print-sweep.json).
+- Additional native verification / /root, 2026-10-13: Native Part 6 task/solution PDFs (2/3 pages) now retain all three questions, with all four authoring solution paragraphs only in the solution edition. Real afterprint restores the three closed disclosures, clears the edition class and resets the label. [Completion report](NATIVE_PRINT_COMPLETION_20261013.md); [inspection record](release-readiness-assets/native-print-final-inspection.json).
+
 
 ### QA1-001 — Glossary term headings skip a heading level
 - Priority / type: P3 / defect (accessibility structure)
@@ -2029,3 +2035,20 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: Added `.worked-example .eyebrow` to the top-level `.reading-aside>strong,.figure-kicker,.eyebrow,…{font-size:11px}` rule. The change first went into a lookalike rule inside `@media(max-width:760px)`; it was moved after the native check showed no effect at 1280px. Cache key bumped.
 - Verification: Native preview at 1280px: the label computes 11px / 0.6px letter-spacing, matching the chapter-contents label in a viewed screenshot of Chapter 12. Contrast re-audit: 0 WCAG 1.4.3 failures in either theme, and no content text under 11px. The only remaining 10px text is sidebar/footer chrome ("THE BOOK", part numbers, "Saved in this browser"). Headless print re-sweep: see the slice record. The full check suite (13 commands) passes.
 - Scope / evidence: [wide-zoom-file-a11y-checks.json](release-readiness-assets/wide-zoom-file-a11y-checks.json), [contrast.mjs](release-readiness-assets/contrast.mjs), [qa-final-checks.json](release-readiness-assets/qa-final-checks.json).
+
+### MOBILE2-001 — Mobile header loses the Market Atlas logo
+- Priority / type: P3 / defect (mobile site identity/home navigation)
+- Status: resolved
+- Owner: /root, 2026-10-13
+- Reviewer / date: user phone screenshot and /root / 2026-10-13
+- Location: index.html `.topbar`; styles.css mobile sidebar/header rules.
+- Finding and evidence: The supplied Edge phone screenshot shows only menu, Overview, search and theme controls. The sole `.brand` home link is inside the sidebar, which is translated off-screen and hidden/inert at <=760px. The top bar has no brand link, so mobile reading loses visible site identity and direct home access until navigation is opened. This reproduces from the authored layout; no missing image request is involved.
+- Proposed resolution: Add a compact mobile logo/wordmark home link using the existing brand mark, with enough room for chapter contents/search/theme controls.
+- Acceptance criteria: Brand visible and operable on overview and chapter routes at 320/390/768/1280px; mobile header has no overflow/control overlap in either theme; drawer/search/contents still work; print output unchanged.
+- Discussion / progress: /root — investigating current/public layout against the user screenshot; this is a targeted reader-shell fix, not a manuscript edit. No push authorized.
+
+- Disposition: resolved locally; public deployment remains separate.
+- Closed by / date: /root / 2026-10-13
+- Resolution: Added a mobile-only Market Atlas home link to the top bar using the existing M/up-arrow mark and wordmark. On mobile it replaces the route breadcrumb; desktop branding/breadcrumb remain unchanged. Screen-only compact rules reserve space for the chapter Contents/search/theme controls at 320px. Arrow backing uses the header paper color in both themes. Stylesheet cache key bumped to `20261013-mobile1`.
+- Verification: T3 native preview, 36 cases: 320/360/390/760/768/1280px, light/dark, overview plus Chapters 6 and 28. Expected branding visible in every case, zero document overflow or overlapping header controls. Actual clicks verify mobile home navigation, drawer open/close and inert/expanded state, search modal/focus, chapter contents modal, and both theme transitions. `npm run check:reviews` passes (74 baseline outputs, 28 accepted; four invalidation cases). Package preflight rebuilt the local ZIP: two matching builds, seven files and valid ZIP. The original stylesheet is byte-identical before the appended screen-only rules; the added brand is inside the print-hidden header. app.js/book/renderer untouched, so existing print/content acceptance scope remains valid.
+- Scope / limits: [Native browser evidence](mobile-header-assets/browser-checks.json). User's supplied Edge phone screenshot establishes the defect; no fresh physical phone Edge test is claimed. Preview snapshots failed and native app screenshots stayed stale; no new raster screenshot is counted as visual evidence. Geometry/accessibility/native-control checks are the verification here. Preview closed after work; no push or deployment. CA1-026 remains deferred.

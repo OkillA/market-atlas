@@ -1,8 +1,8 @@
 # Editorial roadmap
 
-Updated **2026-10-12** by `/root` after the release-readiness batch. Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
+Updated **2026-10-13** by `/root` after the mobile header correction (earlier print/readiness/QA slices retained). Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
 
-The complete 28-chapter revision, six part reviews, selected-source synthesis, historical gallery and recorded re-audit fixes are complete within their documented scope. All 28 chapters and six part reviews now have scoped editorial acceptance. Source/access/reuse dispositions and accurate review/version metadata are complete; native print/desktop QA and reviewed-release finalization remain. Human-reader participation remains deferred, and independent editorial work can continue.
+The complete 28-chapter revision, six part reviews, selected-source synthesis, historical gallery and recorded re-audit fixes are complete within their documented scope. All 28 chapters and six part reviews now have scoped editorial acceptance. Source/access/reuse dispositions and accurate review/version metadata are complete; the documented browser/print release QA scope is complete; reviewed-release finalization remains. Human-reader participation remains deferred, and independent editorial work can continue.
 
 ## Work order and ownership
 
@@ -50,7 +50,7 @@ Claim a manageable package by setting its owner and status before implementation
 
 ### ROAD-004 — Complete native browser and print release QA
 
-- Status / owner: in_progress / /root, 2026-10-12 (release-readiness batch: broader native reader QA and printer capability investigation).
+- Status / owner: done / /root, 2026-10-13 (accumulated browser/offline/accessibility evidence plus remaining native print matrix).
 - Claim / 2026-10-13: claude-code-print, at the user's request, takes the Chapter 7–8 learner/answer native PDF slice (4 of the 12 pending PDFs). /root's recorded progress and remaining scope are preserved; Chapters 9/22/26/28 and the desktop/input/offline checks stay with the existing owner. Attempt / 2026-10-13: the current Chapter 7 learner print opened the native dialog from the T3 Code preview (2 cutoff tables present), but the agent cannot drive the dialog: preview automation stalls while it is modal and macOS System Events scripting timed out. No PDF produced; nothing counted as evidence. Needs a human to complete Save as PDF, or a different print engine accepted as non-native evidence.
 - Dependencies: can start now; rerun affected cases after later content or interface changes.
 - Work: use the product-native collaborative browser for representative 320/390/768/1280px reading, keyboard access, contents/deep links, search, notebook backup/restore and closed/revealed packets. Check light/dark figures and complete data-table access. Capture native browser printer output for learner and answer editions of Chapters 6–9, 22, 26 and 28; verify complete inputs, quiz choices, solution policy and continuation boundaries. Sample ordinary chapters and part reviews too.
@@ -68,6 +68,12 @@ Claim a manageable package by setting its owner and status before implementation
 - Claim / 2026-10-13: claude-code-qa, at the user's request, takes the slice that needs no human print-dialog step: file:// offline reading, 1440px+ widths, browser zoom/text-resize and an automated accessibility-tree audit (not a screen-reader session). /root's native-print scope (Chapter 6 re-export, Chapter 9/22/26/28 pairs, ordinary/part-review samples) is unchanged. Also contributes a ROAD-007 preflight rebuild for the current app.js/styles.css; ROAD-007's owner is preserved.
 
 - Progress / 2026-10-13: claude-code-qa — [wide/zoom/file:// /accessibility record](release-readiness-assets/wide-zoom-file-a11y-checks.json). Native preview, all 41 routes: no document overflow, script errors or missing figures at 1440x900, 1920x1080, 640x400 (200% zoom of 1280x800) and 320x256 (400% zoom); everything past the edge is a data table inside a focusable, labelled scroll region. Offline file:// (headless Chrome, network disabled) of `_site/` and of the extracted release ZIP: 41 routes, search, a closed packet and notebook persistence across reload all work, with zero non-file requests or errors. Accessibility-tree audit (headless Chrome, disclosures open): 0 unnamed controls, duplicate IDs, broken references, unnamed SVGs or header-less tables; one h1 per route; consistent landmarks. QA1-001/002 were found and fixed. A follow-up contrast and text-size audit (both themes) found no WCAG 1.4.3 failures and fixed QA1-003 (8px worked-example label). A headless print re-sweep shows no stranded labels, empty pages or answer leakage, and Chapter 7–8 page counts still match the native PDFs. Limits: zoom is emulated by viewport size; px-only fonts ignore text-only size preferences; no VoiceOver/NVDA session; no Safari/Firefox. Slice complete; claim released. Remaining ROAD-004 scope is native print only (Chapter 6 re-export, Chapter 9/22/26/28 pairs, ordinary/part-review samples), plus an optional real screen-reader pass.
+
+- Claim / 2026-10-13: /root resumes the remaining native print batch at the user's request: current Chapter 6/9/22/26/28 learner/answer pairs, an ordinary chapter in both editions and a part review in task/solution editions (14 outputs). Use T3 preview for page/print actions and native computer use for macOS dialogs where available. Existing ROAD-007 ownership and deferred CA1-026 are preserved.
+
+- Completion / 2026-10-13: /root — [native print report](NATIVE_PRINT_COMPLETION_20261013.md) retains 14 new native Quartz PDFs (237 pages): Chapters 6/9/22/26/28 and ordinary Chapter 10 in both editions, plus Part 6 tasks/solutions. Every page was rendered and viewed; 16 attempt tables/111 rows per edition, six complete quizzes, 50 chapter and four part-review solution paragraphs checked. No new defects. PRINT1-001–003 receive further native verification; the real afterprint state restores correctly. Combined with inherited Chapter 7–8 pairs, all required print samples are complete. Shipping files unchanged; `check:reviews` passes. The Open in Preview → Save As route bypassed disabled direct-save panels without human intervention. Task preview/PDF windows closed at the user's request. ROAD-004 claim complete; optional real screen-reader/cross-browser/physical-printer coverage is not claimed. ROAD-007 and deferred CA1-026 remain separate; no push.
+
+- Focused mobile follow-up / 2026-10-13: /root — MOBILE2-001, reported by the user from phone Edge, corrected the missing mobile branding/home link. [36 native geometry/theme/route cases and header-control actions](mobile-header-assets/browser-checks.json) pass. No physical phone/raster screenshot recheck claimed. New CSS rules apply only to screen; the original print stylesheet and printed main content are unchanged. Chapter acceptance and native print evidence keep their existing scope. Local release ZIP rebuilt; no push.
 
 ### ROAD-005 — Run human reader validation
 
@@ -98,12 +104,16 @@ Claim a manageable package by setting its owner and status before implementation
 
 - Preflight rebuild / 2026-10-13: claude-code-qa reran `package-preflight.py` after the print and QA1 fixes. Two builds match, the ZIP holds the current app.js/styles.css/index.html (ZIP sha256 `3ece6c2f…` after QA1-003), and the extracted ZIP reads offline over file://. ROAD-007's owner is preserved; no push or deployment.
 
+- Mobile-fix preflight contribution / 2026-10-13: /root reran package preflight after MOBILE2-001; the local 0.4.1-alpha.1 ZIP now contains the corrected mobile header/current stylesheet cache key. Two builds match; all seven files and ZIP integrity pass. Existing ROAD-007 owner preserved; release notes/finalization and explicit push request remain pending.
+
+- Publication contribution / 2026-10-13: /root — user explicitly requested a push of the latest edition. Prepared [0.4.1-alpha.1 release notes](RELEASE_0_4_1_ALPHA_1.md) and [passing current checks](release-readiness-assets/publish-checks-20261013.json); pushes target existing `main`/GitHub Pages. Earlier owner attribution is preserved. Native print/mobile evidence is included; CA1-026 remains deferred. Deployment/live acceptance will be recorded only after the workflow and hosted assets are checked.
+
 ## Publication gates
 
 | Claim or release stage | Required evidence | Current state |
 | --- | --- | --- |
 | Complete local draft | Built chapters, practice, figures, verifiers and current references | Available; overall alpha draft, with 28 scoped AI editorial review labels |
-| Reviewed public edition | Chapter acceptance records, source/rights dispositions, release QA and accurate version/review metadata | ROAD-002/003/006 done; ROAD-004 pending |
+| Reviewed public edition | Chapter acceptance records, source/rights dispositions, release QA and accurate version/review metadata | ROAD-002/003/004/006 done for recorded scope; ROAD-007 release finalization pending |
 | Human reader validation | Actual observations, reader-driven dispositions and rechecks under the prepared protocol | Deferred CA1-026 / ROAD-005 |
 | Public deployment | Concrete release artifact, destination, authorization and deployment checks | Alpha draft deployed 2026-10-11 ([release notes](RELEASE_ALPHA.md)); reviewed edition pending ROAD-007 |
 

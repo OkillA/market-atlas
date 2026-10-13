@@ -101,10 +101,328 @@
         "continuationStart": 3
       },
       "limits": "Chapter 6 reference includes outcome explanations in both editions; only worked solutions and the quiz answer differ. Predates the 2026-10-13 print stylesheet/per-panel print change; its two-panel zone figure was scaled to about 99%, so legibility was not materially affected, but the page flow is no longer the current output. Re-export with the remaining scope."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/support-resistance-learner-current.pdf",
+      "chapter": 6,
+      "chapterId": "support-resistance",
+      "pages": 11,
+      "edition": "learner",
+      "sha256": "e90a406dbc2f90b9f94a501b7700863b780341795f37cf47147a9c47e790b5fe",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 2,
+        "continuationStart": 3
+      },
+      "quizAnswerObserved": null,
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/support-resistance-learner-current-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/support-resistance-learner-current-contact-2.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/support-resistance-answers-current.pdf",
+      "chapter": 6,
+      "chapterId": "support-resistance",
+      "pages": 12,
+      "edition": "answers",
+      "sha256": "090423c03388fc5512b3bd120874ce1ae3887dbb07df7ae3d20c6b4869d330c0",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 2,
+        "continuationStart": 3
+      },
+      "quizAnswerObserved": "Answer: C",
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/support-resistance-answers-current-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/support-resistance-answers-current-contact-2.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/breakouts-learner.pdf",
+      "chapter": 9,
+      "chapterId": "breakouts",
+      "pages": 14,
+      "edition": "learner",
+      "sha256": "4dd1c18451a2525ab01d78d844907ce4a0bf27f555af37f5e7063bac158bb0cc",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 5,
+        "continuationStart": 6
+      },
+      "quizAnswerObserved": null,
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/breakouts-learner-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/breakouts-learner-contact-2.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/breakouts-answers.pdf",
+      "chapter": 9,
+      "chapterId": "breakouts",
+      "pages": 15,
+      "edition": "answers",
+      "sha256": "7eb3ba8a1b79056fa22d018cae91c67094d7ec53c8f7ea143fd9ee5af6f7dfff",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 5,
+        "continuationStart": 6
+      },
+      "quizAnswerObserved": "Answer: B",
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/breakouts-answers-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/breakouts-answers-contact-2.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/psychology-learner.pdf",
+      "chapter": 22,
+      "chapterId": "psychology",
+      "pages": 13,
+      "edition": "learner",
+      "sha256": "6c09004ac3a64f70d75485fb5849cdf44ac6df1876fbf8cb6ed9e773ff97a669",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 3,
+        "continuationStart": 4
+      },
+      "quizAnswerObserved": null,
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/psychology-learner-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/psychology-learner-contact-2.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/psychology-answers.pdf",
+      "chapter": 22,
+      "chapterId": "psychology",
+      "pages": 13,
+      "edition": "answers",
+      "sha256": "41f5ac223a55a6deee5aaba4b806b82cb6524a7404897a1dfa940df80137ffec",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 3,
+        "continuationStart": 4
+      },
+      "quizAnswerObserved": "Answer: A",
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/psychology-answers-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/psychology-answers-contact-2.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/system-design-learner.pdf",
+      "chapter": 26,
+      "chapterId": "system-design",
+      "pages": 31,
+      "edition": "learner",
+      "sha256": "72a8ddfff0d0e17f037696fb97b9c042cea6ff3310f6a44011df7ef4c91e2cc8",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 18,
+        "continuationStart": 19
+      },
+      "quizAnswerObserved": null,
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-2.png",
+        "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-3.png",
+        "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-4.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/system-design-answers.pdf",
+      "chapter": 26,
+      "chapterId": "system-design",
+      "pages": 33,
+      "edition": "answers",
+      "sha256": "3cc9ac6a78cd9e96a38212a9b4b8fbe0f9b1f049628fe184803e39efe68b9759",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 18,
+        "continuationStart": 19
+      },
+      "quizAnswerObserved": "Answer: B",
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-2.png",
+        "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-3.png",
+        "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-4.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/case-studies-learner.pdf",
+      "chapter": 28,
+      "chapterId": "case-studies",
+      "pages": 35,
+      "edition": "learner",
+      "sha256": "bb521fdfe66735629b9ed6dd509fcb0189f202870c6d08405cf0d82c463a46ea",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 3,
+        "continuationStart": 4
+      },
+      "quizAnswerObserved": null,
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-2.png",
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-3.png",
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-4.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/case-studies-answers.pdf",
+      "chapter": 28,
+      "chapterId": "case-studies",
+      "pages": 37,
+      "edition": "answers",
+      "sha256": "60d09698bb33693f0294724cebf814496280ad49a0352a6a0e67b99d6a0e3893",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": {
+        "packetEnd": 3,
+        "continuationStart": 4
+      },
+      "quizAnswerObserved": "Answer: B",
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-1.png",
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-2.png",
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-3.png",
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-4.png",
+        "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-5.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/moving-averages-learner.pdf",
+      "chapter": 10,
+      "chapterId": "moving-averages",
+      "pages": 9,
+      "edition": "learner",
+      "sha256": "fdc62f9a0f86bc8fdb5c7df3ed3a64a8726bf7df2b1a6aec1f563b8b9813da5d",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": null,
+      "quizAnswerObserved": null,
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/moving-averages-learner-contact-1.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/moving-averages-answers.pdf",
+      "chapter": 10,
+      "chapterId": "moving-averages",
+      "pages": 9,
+      "edition": "answers",
+      "sha256": "d3714d1b73f9c250b8b7f495056e200f00b6572c07e9eb2c6b80a363b02b33d1",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "boundaryPages": null,
+      "quizAnswerObserved": "Answer: C",
+      "contactSheets": [
+        "docs/release-readiness-assets/native-print/final-contact/moving-averages-answers-contact-1.png"
+      ],
+      "inspection": "Every page raster inspected via contact sheets; enlarged solution/quiz pages checked where PDF extraction/OCR was incomplete. Complete inputs, table rows/headers, figure labels, heading/label breaks and solution policy checked against current compiled authoring."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/part6-tasks.pdf",
+      "part": "advanced",
+      "pages": 2,
+      "edition": "tasks",
+      "sha256": "848173ea2701acdc90c6aeb8210604102bca726c2c04fd9b91bc43c476037346",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "inspection": "Every page raster inspected. All three questions in both editions; all four authoring solution paragraphs present only in the solution edition. Native afterprint restored three closed solutions, cleared print-answers, and restored the task-edition label."
+    },
+    {
+      "file": "docs/release-readiness-assets/native-print/part6-solutions.pdf",
+      "part": "advanced",
+      "pages": 3,
+      "edition": "solutions",
+      "sha256": "dd7620bb5067c36ad45566ac7a8c4c7750bdc079587ed71b47f58cdd50b64d11",
+      "engine": "macOS Quartz PDFContext, T3 Code/Electron native print \u2192 Open in Preview \u2192 Preview Save As (PDF, no filter/optimization)",
+      "paper": "US Letter, portrait, 100%",
+      "current": true,
+      "date": "2026-10-13",
+      "checkedBy": "/root",
+      "stylesheet": "styles.css?v=20261013-qa4; app.js?v=20261013-qa1",
+      "inspection": "Every page raster inspected. All three questions in both editions; all four authoring solution paragraphs present only in the solution edition. Native afterprint restored three closed solutions, cleared print-answers, and restored the task-edition label."
     }
   ],
-  "currentCoverage": "Current native learner/answer pairs: Chapter 7 (15/15 pages) and Chapter 8 (25/25 pages), 2026-10-13. Chapter 6 pair (2026-10-12) predates the print-layout change and needs re-export.",
-  "pending": "Current Chapter 6 re-export plus Chapter 9/22/26/28 learner/answer pairs (10 PDFs), an ordinary chapter, and a part review in both task and solution editions (added by PRINT1-003).",
-  "automationLimit": "Repeated native save panels remained disabled; some queued print requests needed cancellation. Preview snapshot, later resize and one Enter activation failed. Actual completed files are counted; attempts are not. 2026-10-13: the agent cannot operate the modal dialog (preview automation stalls; System Events scripting timed out, likely awaiting Accessibility permission); the user completed each Save as PDF.",
-  "printLayoutFix": "PRINT1-001/002 (2026-10-13): multi-panel figures print one SVG per panel; headings and eyebrow labels no longer split from following content. Earlier native exports were superseded and re-exported."
+  "currentCoverage": "All seven attempt-packet chapter pairs: Chapters 6\u20139, 22, 26 and 28. Ordinary Chapter 10 learner/answer pair and Part 6 task/solution pair also retained. 18 current native PDFs; two older Chapter 6 PDFs remain as superseded history.",
+  "pending": "No required native print samples remain. Optional real screen-reader/cross-browser/physical-printer checks were not performed. ROAD-007 release finalization and CA1-026 actual human validation remain separate.",
+  "automationLimit": "Repeated native save panels remained disabled; some queued print requests needed cancellation. Preview snapshot, later resize and one Enter activation failed. Actual completed files are counted; attempts are not. 2026-10-13: the agent cannot operate the modal dialog (preview automation stalls; System Events scripting timed out, likely awaiting Accessibility permission); the user completed each Save as PDF. 2026-10-13 /root: CUA native app control reached the dialogs. Direct Save as PDF remained disabled. Open in Preview generated the native Quartz output, then Preview Save As retained it locally without a filter or optimization. All 14 files verified; no user dialog completion needed. T3 preview snapshot still failed; page evaluation/navigation and native app AX/screenshot controls worked.",
+  "printLayoutFix": "PRINT1-001/002 (2026-10-13): multi-panel figures print one SVG per panel; headings and eyebrow labels no longer split from following content. Earlier native exports were superseded and re-exported.",
+  "completionReport": "docs/NATIVE_PRINT_COMPLETION_20261013.md"
 }

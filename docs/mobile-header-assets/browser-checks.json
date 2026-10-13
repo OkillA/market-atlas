@@ -1,0 +1,2504 @@
+{
+  "date": "2026-10-13",
+  "reviewer": "/root",
+  "finding": "MOBILE2-001",
+  "engine": "T3 Code/Electron native collaborative preview; CSS viewport emulation, not a phone Edge session",
+  "cases": [
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 244.1640625,
+            "right": 271.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 244.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 277.9921875,
+            "right": 308,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 277.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 320
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 244.1640625,
+            "right": 271.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 244.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 277.9921875,
+            "right": 308,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 277.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 320
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 170.828125,
+            "right": 238.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 170.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 244.1640625,
+            "right": 271.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 244.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 277.9921875,
+            "right": 308,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 277.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 320
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 170.828125,
+            "right": 238.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 170.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 244.1640625,
+            "right": 271.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 244.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 277.9921875,
+            "right": 308,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 277.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 320
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 170.828125,
+            "right": 238.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 170.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 244.1640625,
+            "right": 271.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 244.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 277.9921875,
+            "right": 308,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 277.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 320
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 170.828125,
+            "right": 238.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 170.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 244.1640625,
+            "right": 271.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 244.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 277.9921875,
+            "right": 308,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 277.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 320
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 284.1640625,
+            "right": 311.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 284.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 317.9921875,
+            "right": 348,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 317.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 284.1640625,
+            "right": 311.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 284.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 317.9921875,
+            "right": 348,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 317.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 210.828125,
+            "right": 278.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 210.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 284.1640625,
+            "right": 311.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 284.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 317.9921875,
+            "right": 348,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 317.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 210.828125,
+            "right": 278.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 210.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 284.1640625,
+            "right": 311.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 284.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 317.9921875,
+            "right": 348,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 317.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 210.828125,
+            "right": 278.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 210.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 284.1640625,
+            "right": 311.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 284.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 317.9921875,
+            "right": 348,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 317.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 12,
+            "right": 41.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 12,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 49.59375,
+            "right": 163.3515625,
+            "top": 10,
+            "width": 113.7578125,
+            "x": 49.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 48.59375,
+            "height": 33.1953125,
+            "left": 210.828125,
+            "right": 278.1640625,
+            "top": 15.3984375,
+            "width": 67.3359375,
+            "x": 210.828125,
+            "y": 15.3984375
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 284.1640625,
+            "right": 311.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 284.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 317.9921875,
+            "right": 348,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 317.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 312.1640625,
+            "right": 339.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 312.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 345.9921875,
+            "right": 376,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 345.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 312.1640625,
+            "right": 339.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 312.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 345.9921875,
+            "right": 376,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 345.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 231.15625,
+            "right": 306.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 231.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 312.1640625,
+            "right": 339.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 312.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 345.9921875,
+            "right": 376,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 345.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 231.15625,
+            "right": 306.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 231.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 312.1640625,
+            "right": 339.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 312.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 345.9921875,
+            "right": 376,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 345.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 231.15625,
+            "right": 306.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 231.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 312.1640625,
+            "right": 339.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 312.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 345.9921875,
+            "right": 376,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 345.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 231.15625,
+            "right": 306.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 231.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 312.1640625,
+            "right": 339.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 312.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 345.9921875,
+            "right": 376,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 345.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 682.1640625,
+            "right": 709.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 682.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 715.9921875,
+            "right": 746,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 715.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 760
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 682.1640625,
+            "right": 709.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 682.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 715.9921875,
+            "right": 746,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 715.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 760
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 601.15625,
+            "right": 676.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 601.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 682.1640625,
+            "right": 709.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 682.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 715.9921875,
+            "right": 746,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 715.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 760
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 601.15625,
+            "right": 676.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 601.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 682.1640625,
+            "right": 709.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 682.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 715.9921875,
+            "right": 746,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 715.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 760
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 601.15625,
+            "right": 676.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 601.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 682.1640625,
+            "right": 709.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 682.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 715.9921875,
+            "right": 746,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 715.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 760
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "menu-toggle",
+          "rect": {
+            "bottom": 49,
+            "height": 34,
+            "left": 14,
+            "right": 43.59375,
+            "top": 15,
+            "width": 29.59375,
+            "x": 14,
+            "y": 15
+          },
+          "text": "\u2630"
+        },
+        {
+          "id": "brand mobile-brand",
+          "rect": {
+            "bottom": 54,
+            "height": 44,
+            "left": 51.59375,
+            "right": 180.71875,
+            "top": 10,
+            "width": 129.125,
+            "x": 51.59375,
+            "y": 10
+          },
+          "text": "M\u2197Market Atlas"
+        },
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 601.15625,
+            "right": 676.1640625,
+            "top": 14.6015625,
+            "width": 75.0078125,
+            "x": 601.15625,
+            "y": 14.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 49.3984375,
+            "height": 34.796875,
+            "left": 682.1640625,
+            "right": 709.9921875,
+            "top": 14.6015625,
+            "width": 27.828125,
+            "x": 682.1640625,
+            "y": 14.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 48.3984375,
+            "height": 32.796875,
+            "left": 715.9921875,
+            "right": 746,
+            "top": 15.6015625,
+            "width": 30.0078125,
+            "x": 715.9921875,
+            "y": 15.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 760
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 660.1640625,
+            "right": 687.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 660.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 707.9921875,
+            "right": 738,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 707.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 660.1640625,
+            "right": 687.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 660.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 707.9921875,
+            "right": 738,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 707.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 565.15625,
+            "right": 640.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 565.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 660.1640625,
+            "right": 687.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 660.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 707.9921875,
+            "right": 738,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 707.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 565.15625,
+            "right": 640.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 565.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 660.1640625,
+            "right": 687.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 660.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 707.9921875,
+            "right": 738,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 707.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 565.15625,
+            "right": 640.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 565.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 660.1640625,
+            "right": 687.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 660.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 707.9921875,
+            "right": 738,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 707.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 565.15625,
+            "right": 640.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 565.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 660.1640625,
+            "right": 687.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 660.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 707.9921875,
+            "right": 738,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 707.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1154.1640625,
+            "right": 1181.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 1154.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 1201.9921875,
+            "right": 1232,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 1201.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 1280
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1154.1640625,
+            "right": 1181.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 1154.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 1201.9921875,
+            "right": 1232,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 1201.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 1280
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1059.15625,
+            "right": 1134.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 1059.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1154.1640625,
+            "right": 1181.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 1154.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 1201.9921875,
+            "right": 1232,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 1201.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 1280
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1059.15625,
+            "right": 1134.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 1059.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1154.1640625,
+            "right": 1181.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 1154.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 1201.9921875,
+            "right": 1232,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 1201.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/support-resistance",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 1280
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1059.15625,
+            "right": 1134.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 1059.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1154.1640625,
+            "right": 1181.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 1154.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 1201.9921875,
+            "right": 1232,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 1201.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "light",
+      "width": 1280
+    },
+    {
+      "bodyOverflow": false,
+      "brandVisible": true,
+      "controls": [
+        {
+          "id": "chapter-contents-button",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1059.15625,
+            "right": 1134.1640625,
+            "top": 20.6015625,
+            "width": 75.0078125,
+            "x": 1059.15625,
+            "y": 20.6015625
+          },
+          "text": "Contents"
+        },
+        {
+          "id": "topbar-search",
+          "rect": {
+            "bottom": 55.3984375,
+            "height": 34.796875,
+            "left": 1154.1640625,
+            "right": 1181.9921875,
+            "top": 20.6015625,
+            "width": 27.828125,
+            "x": 1154.1640625,
+            "y": 20.6015625
+          },
+          "text": "\u2315"
+        },
+        {
+          "id": "theme-toggle",
+          "rect": {
+            "bottom": 54.3984375,
+            "height": 32.796875,
+            "left": 1201.9921875,
+            "right": 1232,
+            "top": 21.6015625,
+            "width": 30.0078125,
+            "x": 1201.9921875,
+            "y": 21.6015625
+          },
+          "text": "\u25d0"
+        }
+      ],
+      "hash": "#/chapter/case-studies",
+      "homeHref": "#/",
+      "homeLabel": "Market Atlas home",
+      "overlaps": [],
+      "theme": "dark",
+      "width": 1280
+    }
+  ],
+  "summary": {
+    "cases": 36,
+    "widths": [
+      320,
+      360,
+      390,
+      760,
+      768,
+      1280
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "routes": [
+      "#/",
+      "#/chapter/support-resistance",
+      "#/chapter/case-studies"
+    ],
+    "missingBrands": 0,
+    "documentOverflows": 0,
+    "overlappingHeaderControls": 0
+  },
+  "interactions": {
+    "width": 320,
+    "homeLink": "Actual preview click returned to #/ and overview h1",
+    "drawer": "Actual menu clicks opened/closed drawer; open state expanded=true and inert=false",
+    "search": "Actual search click opened modal and focused search-input; close button worked",
+    "contents": "Actual chapter contents click opened contents-dialog; close button worked",
+    "theme": "Actual theme clicks switched to dark and back to light with matching accessible labels"
+  },
+  "checks": {
+    "reviewMetadata": "npm run check:reviews passes; 74 outputs match, 28 accepted, four invalidation cases pass",
+    "package": "package-preflight.py passes; two static builds match, seven bundle files, ZIP integrity; published=false"
+  },
+  "limits": [
+    "Preview snapshot export failed. CUA screenshots remained stale, so no new raster screenshot is counted as visual evidence.",
+    "The supplied user screenshot establishes the phone symptom; a fresh physical Edge/iOS session was not available.",
+    "Header changes are screen-only; print-hidden topbar unchanged in scope. Existing native PDFs retain their print-layout scope; no new print export claimed.",
+    "No authoring, app.js, figure renderer or generated chapter/figure content changed.",
+    "No push or deployment."
+  ],
+  "previewClosed": true,
+  "printScope": {
+    "priorStylesheetPrefixUnchanged": true,
+    "newRulesScreenOnly": true,
+    "newBrandInsideExistingPrintHiddenTopbar": true
+  }
+}

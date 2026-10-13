@@ -1,0 +1,560 @@
+{
+  "date": "2026-10-13",
+  "checkedBy": "/root",
+  "outputs": 14,
+  "pages": 237,
+  "attemptTables": 16,
+  "attemptRowsPerEdition": 111,
+  "chapterSolutionParagraphs": 50,
+  "partSolutionParagraphs": 4,
+  "result": "All required native print samples passed; no new defects or manuscript/UI changes. PRINT1-001/002/003 received additional native verification.",
+  "inspections": [
+    {
+      "chapter": 6,
+      "chapterId": "support-resistance",
+      "editions": [
+        {
+          "edition": "learner",
+          "pages": 11,
+          "quizAnswerOCR": []
+        },
+        {
+          "edition": "answers",
+          "pages": 12,
+          "quizAnswerOCR": [
+            "Answer: C"
+          ]
+        }
+      ],
+      "attemptTables": [
+        {
+          "title": "Construction closes, available through D12",
+          "rows": 12,
+          "columns": 2
+        }
+      ],
+      "attemptTablesVisuallyCompleteBothEditions": true,
+      "continuationStartPage": 3,
+      "solutionParagraphs": 7,
+      "solutionParagraphsVisuallyPresentAnswersAbsentLearner": true,
+      "ocrSolutionMarkers": [
+        {
+          "paragraph": 1,
+          "start90Exact": true,
+          "end90Exact": false
+        },
+        {
+          "paragraph": 2,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 3,
+          "start90Exact": false,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 4,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 5,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 6,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 7,
+          "start90Exact": true,
+          "end90Exact": true
+        }
+      ],
+      "ocrLimit": "Exact normalized first/last 90-character matches are supplemental only. OCR errors in arithmetic/quotes resolved by enlarged page inspection; no fuzzy match is counted as proof."
+    },
+    {
+      "chapter": 9,
+      "chapterId": "breakouts",
+      "editions": [
+        {
+          "edition": "learner",
+          "pages": 14,
+          "quizAnswerOCR": []
+        },
+        {
+          "edition": "answers",
+          "pages": 15,
+          "quizAnswerOCR": [
+            "Answer: B"
+          ]
+        }
+      ],
+      "attemptTables": [
+        {
+          "title": "Completed Harbor closes available through session 9 (fictional USD)",
+          "rows": 9,
+          "columns": 2
+        },
+        {
+          "title": "Session-9 completed candle only (fictional USD)",
+          "rows": 1,
+          "columns": 5
+        },
+        {
+          "title": "Harbor rules supplied before the continuation",
+          "rows": 9,
+          "columns": 2
+        }
+      ],
+      "attemptTablesVisuallyCompleteBothEditions": true,
+      "continuationStartPage": 6,
+      "solutionParagraphs": 9,
+      "solutionParagraphsVisuallyPresentAnswersAbsentLearner": true,
+      "ocrSolutionMarkers": [
+        {
+          "paragraph": 1,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 2,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 3,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 4,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 5,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 6,
+          "start90Exact": false,
+          "end90Exact": false
+        },
+        {
+          "paragraph": 7,
+          "start90Exact": false,
+          "end90Exact": false
+        },
+        {
+          "paragraph": 8,
+          "start90Exact": false,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 9,
+          "start90Exact": true,
+          "end90Exact": true
+        }
+      ],
+      "ocrLimit": "Exact normalized first/last 90-character matches are supplemental only. OCR errors in arithmetic/quotes resolved by enlarged page inspection; no fuzzy match is counted as proof."
+    },
+    {
+      "chapter": 22,
+      "chapterId": "psychology",
+      "editions": [
+        {
+          "edition": "learner",
+          "pages": 13,
+          "quizAnswerOCR": []
+        },
+        {
+          "edition": "answers",
+          "pages": 13,
+          "quizAnswerOCR": [
+            "Answer: A"
+          ]
+        }
+      ],
+      "attemptTables": [
+        {
+          "title": "Completed Q0 candle only (fictional USD)",
+          "rows": 1,
+          "columns": 5
+        },
+        {
+          "title": "L1: instructions frozen at Q0 (fictional paper study)",
+          "rows": 8,
+          "columns": 2
+        }
+      ],
+      "attemptTablesVisuallyCompleteBothEditions": true,
+      "continuationStartPage": 4,
+      "solutionParagraphs": 5,
+      "solutionParagraphsVisuallyPresentAnswersAbsentLearner": true,
+      "ocrSolutionMarkers": [
+        {
+          "paragraph": 1,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 2,
+          "start90Exact": true,
+          "end90Exact": false
+        },
+        {
+          "paragraph": 3,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 4,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 5,
+          "start90Exact": true,
+          "end90Exact": true
+        }
+      ],
+      "ocrLimit": "Exact normalized first/last 90-character matches are supplemental only. OCR errors in arithmetic/quotes resolved by enlarged page inspection; no fuzzy match is counted as proof."
+    },
+    {
+      "chapter": 26,
+      "chapterId": "system-design",
+      "editions": [
+        {
+          "edition": "learner",
+          "pages": 31,
+          "quizAnswerOCR": []
+        },
+        {
+          "edition": "answers",
+          "pages": 33,
+          "quizAnswerOCR": [
+            "Answer: B"
+          ]
+        }
+      ],
+      "attemptTables": [
+        {
+          "title": "Starting position state at S3 close (fictional USD; Fir mark stale)",
+          "rows": 5,
+          "columns": 6
+        },
+        {
+          "title": "Atlas-20 v1.0 rule sheet, part 1: data, universe, and eligibility",
+          "rows": 12,
+          "columns": 3
+        },
+        {
+          "title": "Atlas-20 v1.0 rule sheet, part 2: ranking, slots, sizing, and costs",
+          "rows": 13,
+          "columns": 3
+        },
+        {
+          "title": "Atlas-20 v1.0 rule sheet, part 3: orders, fills, exits, and review",
+          "rows": 13,
+          "columns": 3
+        },
+        {
+          "title": "Replay inputs: completed S4 and S5 bars (O/H/L/C, fictional USD)",
+          "rows": 2,
+          "columns": 6
+        },
+        {
+          "title": "Replay inputs: screen facts released at each decision close",
+          "rows": 2,
+          "columns": 6
+        }
+      ],
+      "attemptTablesVisuallyCompleteBothEditions": true,
+      "continuationStartPage": 19,
+      "solutionParagraphs": 12,
+      "solutionParagraphsVisuallyPresentAnswersAbsentLearner": true,
+      "ocrSolutionMarkers": [
+        {
+          "paragraph": 1,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 2,
+          "start90Exact": false,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 3,
+          "start90Exact": false,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 4,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 5,
+          "start90Exact": false,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 6,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 7,
+          "start90Exact": false,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 8,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 9,
+          "start90Exact": true,
+          "end90Exact": false
+        },
+        {
+          "paragraph": 10,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 11,
+          "start90Exact": true,
+          "end90Exact": false
+        },
+        {
+          "paragraph": 12,
+          "start90Exact": false,
+          "end90Exact": true
+        }
+      ],
+      "ocrLimit": "Exact normalized first/last 90-character matches are supplemental only. OCR errors in arithmetic/quotes resolved by enlarged page inspection; no fuzzy match is counted as proof."
+    },
+    {
+      "chapter": 28,
+      "chapterId": "case-studies",
+      "editions": [
+        {
+          "edition": "learner",
+          "pages": 35,
+          "quizAnswerOCR": []
+        },
+        {
+          "edition": "answers",
+          "pages": 37,
+          "quizAnswerOCR": [
+            "Answer: B"
+          ]
+        }
+      ],
+      "attemptTables": [
+        {
+          "title": "AAPL-2016-01 \u2014 context and cutoff only (archive-adjusted USD)",
+          "rows": 6,
+          "columns": 5
+        },
+        {
+          "title": "MSFT-2016-02 \u2014 context and cutoff only (archive-adjusted USD)",
+          "rows": 6,
+          "columns": 5
+        },
+        {
+          "title": "AAPL-2016-03 \u2014 context and cutoff only (archive-adjusted USD)",
+          "rows": 6,
+          "columns": 5
+        },
+        {
+          "title": "SPY-2016-10 \u2014 context and cutoff only (archive-adjusted USD)",
+          "rows": 6,
+          "columns": 5
+        }
+      ],
+      "attemptTablesVisuallyCompleteBothEditions": true,
+      "continuationStartPage": 4,
+      "solutionParagraphs": 11,
+      "solutionParagraphsVisuallyPresentAnswersAbsentLearner": true,
+      "ocrSolutionMarkers": [
+        {
+          "paragraph": 1,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 2,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 3,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 4,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 5,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 6,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 7,
+          "start90Exact": false,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 8,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 9,
+          "start90Exact": false,
+          "end90Exact": false
+        },
+        {
+          "paragraph": 10,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 11,
+          "start90Exact": true,
+          "end90Exact": true
+        }
+      ],
+      "ocrLimit": "Exact normalized first/last 90-character matches are supplemental only. OCR errors in arithmetic/quotes resolved by enlarged page inspection; no fuzzy match is counted as proof."
+    },
+    {
+      "chapter": 10,
+      "chapterId": "moving-averages",
+      "editions": [
+        {
+          "edition": "learner",
+          "pages": 9,
+          "quizAnswerOCR": []
+        },
+        {
+          "edition": "answers",
+          "pages": 9,
+          "quizAnswerOCR": [
+            "Answer: C"
+          ]
+        }
+      ],
+      "attemptTables": [],
+      "attemptTablesVisuallyCompleteBothEditions": null,
+      "continuationStartPage": null,
+      "solutionParagraphs": 6,
+      "solutionParagraphsVisuallyPresentAnswersAbsentLearner": true,
+      "ocrSolutionMarkers": [
+        {
+          "paragraph": 1,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 2,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 3,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 4,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 5,
+          "start90Exact": true,
+          "end90Exact": true
+        },
+        {
+          "paragraph": 6,
+          "start90Exact": true,
+          "end90Exact": true
+        }
+      ],
+      "ocrLimit": "Exact normalized first/last 90-character matches are supplemental only. OCR errors in arithmetic/quotes resolved by enlarged page inspection; no fuzzy match is counted as proof."
+    }
+  ],
+  "partReview": {
+    "id": "advanced",
+    "taskPages": 2,
+    "solutionPages": 3,
+    "tasks": 3,
+    "solutionParagraphs": 4,
+    "restoredAfterPrint": true
+  },
+  "shippingFilesUnchangedFromCheckpoint": {
+    "app.js": true,
+    "styles.css": true,
+    "index.html": true,
+    "content/book.js": true,
+    "figure-renderer.js": true
+  },
+  "contactSheets": [
+    "docs/release-readiness-assets/native-print/final-contact/support-resistance-learner-current-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/support-resistance-learner-current-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/support-resistance-answers-current-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/support-resistance-answers-current-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/breakouts-learner-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/breakouts-learner-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/breakouts-answers-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/breakouts-answers-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/psychology-learner-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/psychology-learner-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/psychology-answers-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/psychology-answers-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-3.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-learner-contact-4.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-3.png",
+    "docs/release-readiness-assets/native-print/final-contact/system-design-answers-contact-4.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-3.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-learner-contact-4.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-2.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-3.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-4.png",
+    "docs/release-readiness-assets/native-print/final-contact/case-studies-answers-contact-5.png",
+    "docs/release-readiness-assets/native-print/final-contact/moving-averages-learner-contact-1.png",
+    "docs/release-readiness-assets/native-print/final-contact/moving-averages-answers-contact-1.png"
+  ],
+  "ocrEvidence": "docs/release-readiness-assets/native-print-final-ocr.json",
+  "limits": [
+    "237 rendered pages reviewed for print completeness/layout; this is not a new full factual/source audit.",
+    "PDF text extraction drops some visible text; OCR and direct visual review were used.",
+    "Only T3/Electron/macOS Quartz, US Letter portrait at 100%; no physical printer, Safari/Firefox or screen-reader session.",
+    "Chapter 7\u20138 native evidence is inherited from the earlier 2026-10-13 slice; no re-export claimed.",
+    "Zero human participants; CA1-026 remains deferred."
+  ]
+}
