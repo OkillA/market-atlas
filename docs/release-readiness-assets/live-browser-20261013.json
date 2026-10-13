@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-13",
+  "engine": "Native T3 Code/Electron collaborative preview of the deployed GitHub Pages URL; CSS viewports, not phone Edge",
+  "shippingCommit": "ec08f111a245dbe6753c8c0a5e96ddbedc9cf382",
+  "cases": [
+    {
+      "brandContentsGap": null,
+      "brandHome": "#/",
+      "brandVisible": true,
+      "chapterContents": false,
+      "chapterCount": 28,
+      "overflow": false,
+      "reviewed": 28,
+      "route": "#/",
+      "width": 320
+    },
+    {
+      "brandContentsGap": 7.4765625,
+      "brandHome": "#/",
+      "brandVisible": true,
+      "chapterContents": true,
+      "chapterCount": 28,
+      "overflow": false,
+      "reviewed": 28,
+      "route": "#/chapter/case-studies",
+      "width": 320
+    },
+    {
+      "brandContentsGap": null,
+      "brandHome": "#/",
+      "brandVisible": true,
+      "chapterContents": false,
+      "chapterCount": 28,
+      "overflow": false,
+      "reviewed": 28,
+      "route": "#/",
+      "width": 1280
+    },
+    {
+      "brandContentsGap": null,
+      "brandHome": "#/",
+      "brandVisible": true,
+      "chapterContents": true,
+      "chapterCount": 28,
+      "overflow": false,
+      "reviewed": 28,
+      "route": "#/chapter/case-studies",
+      "width": 1280
+    }
+  ],
+  "limits": "No physical phone Edge, new raster screenshot or human-reader session claimed."
+}

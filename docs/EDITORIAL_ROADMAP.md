@@ -1,6 +1,6 @@
 # Editorial roadmap
 
-Updated **2026-10-13** by `/root` after the mobile header correction (earlier print/readiness/QA slices retained). Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
+Updated **2026-10-13** by `/root` after publishing the latest alpha (earlier mobile/print/readiness/QA slices retained). Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current inventory and completed milestones. This roadmap owns future work packages; [FEEDBACK.md](FEEDBACK.md) owns demonstrated defects and actionable editorial findings. Historical reports remain evidence for their original snapshots.
 
 The complete 28-chapter revision, six part reviews, selected-source synthesis, historical gallery and recorded re-audit fixes are complete within their documented scope. All 28 chapters and six part reviews now have scoped editorial acceptance. Source/access/reuse dispositions and accurate review/version metadata are complete; the documented browser/print release QA scope is complete; reviewed-release finalization remains. Human-reader participation remains deferred, and independent editorial work can continue.
 
@@ -94,10 +94,10 @@ Claim a manageable package by setting its owner and status before implementation
 
 ### ROAD-007 — Prepare a public release
 
-- Status / owner: in_progress (alpha draft) / claude-code-alpha, 2026-10-11.
-- Dependencies: ROAD-002/003/004/006 for a reviewed public edition; the existing GitHub Pages destination is available but reviewed-release scope/QA remain unfinished. CA1-026 must be completed before claiming human reader validation. A deliberately released draft must describe any remaining review and study limits.
+- Status / owner: done (0.4.1-alpha.1 recorded release scope) / claude-code-alpha, original release owner; /root publication contribution, 2026-10-13.
+- Dependencies: ROAD-002/003/004/006 for a reviewed public edition; ROAD-002/003/004/006 are complete for their recorded scopes and the existing GitHub Pages destination is verified. CA1-026 must be completed before claiming human reader validation. A deliberately released draft must describe any remaining review and study limits.
 - Work: prepare a static artifact and release notes with version, content-review date, scope, data limitations and unresolved items. Choose durable topic URLs/static chapter text if search indexing is part of the release scope. Check deployed assets, routing, source links, notebook origin/backup behavior and offline reading as applicable.
-- Exit criteria: a reproducible release bundle and concrete preflight record exist; deployment authorization and destination are recorded before publication. No public deployment is included in the current tracking work.
+- Exit criteria: a reproducible release bundle and concrete preflight record exist; deployment authorization and destination are recorded before publication. The user explicitly requested the latest push on 2026-10-13; that publication is recorded below.
 - Alpha progress / 2026-10-11: claude-code-alpha — the user requested a public alpha on GitHub with free static hosting. Prepared `npm run build:site`, a GitHub Pages workflow that reruns all verifiers/checks before deploying, and [alpha release notes](RELEASE_ALPHA.md) stating the incomplete ROAD-002–006 gates. The alpha is a deliberately released draft, not the reviewed public edition; this package stays open for the reviewed release. Deployed with the user's authorization to https://okilla.github.io/market-atlas/ from public repository OkillA/market-atlas (Actions run 38178883640); live URL checked.
 
 - Local preflight contribution / 2026-10-12: /root prepared reproducible 0.4.1-alpha.1 static bundle/ZIP and asset/hash checks, preserving the existing ROAD-007 owner. [Report](RELEASE_READINESS_20261012.md). No push, redeploy or reviewed-public-edition acceptance; ROAD-004 remains incomplete.
@@ -108,14 +108,16 @@ Claim a manageable package by setting its owner and status before implementation
 
 - Publication contribution / 2026-10-13: /root — user explicitly requested a push of the latest edition. Prepared [0.4.1-alpha.1 release notes](RELEASE_0_4_1_ALPHA_1.md) and [passing current checks](release-readiness-assets/publish-checks-20261013.json); pushes target existing `main`/GitHub Pages. Earlier owner attribution is preserved. Native print/mobile evidence is included; CA1-026 remains deferred. Deployment/live acceptance will be recorded only after the workflow and hosted assets are checked.
 
+- Publication completion / 2026-10-13: /root — [0.4.1-alpha.1 release notes](RELEASE_0_4_1_ALPHA_1.md), reproducible local ZIP, [current passing checks](release-readiness-assets/publish-checks-20261013.json), explicit user push request, successful Pages run [38447943104](https://github.com/OkillA/market-atlas/actions/runs/38447943104), and [live verification](release-readiness-assets/deployment-20261013.json) complete the recorded release scope. All six public reader assets match shipping commit `ec08f111`; native 320/390/1280px branding/route samples pass. MOBILE2-001 and PRINT1-001–003 are included. Overall alpha label and deferred CA1-026 remain accurate. Original release-owner attribution is preserved; no physical phone/human validation claim.
+
 ## Publication gates
 
 | Claim or release stage | Required evidence | Current state |
 | --- | --- | --- |
 | Complete local draft | Built chapters, practice, figures, verifiers and current references | Available; overall alpha draft, with 28 scoped AI editorial review labels |
-| Reviewed public edition | Chapter acceptance records, source/rights dispositions, release QA and accurate version/review metadata | ROAD-002/003/004/006 done for recorded scope; ROAD-007 release finalization pending |
+| Reviewed public edition | Chapter acceptance records, source/rights dispositions, release QA and accurate version/review metadata | ROAD-002/003/004/006/007 done for recorded scope; overall alpha draft, human validation deferred |
 | Human reader validation | Actual observations, reader-driven dispositions and rechecks under the prepared protocol | Deferred CA1-026 / ROAD-005 |
-| Public deployment | Concrete release artifact, destination, authorization and deployment checks | Alpha draft deployed 2026-10-11 ([release notes](RELEASE_ALPHA.md)); reviewed edition pending ROAD-007 |
+| Public deployment | Concrete release artifact, destination, authorization and deployment checks | Latest 0.4.1-alpha.1 deployed 2026-10-13 ([release notes](RELEASE_0_4_1_ALPHA_1.md)); recorded release gates complete, human validation deferred |
 
 ## Optional later scope
 

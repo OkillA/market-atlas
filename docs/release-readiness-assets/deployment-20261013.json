@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-13T18:36:52.375424+00:00",
+  "reviewer": "/root",
+  "version": "0.4.1-alpha.1",
+  "site": "https://okilla.github.io/market-atlas/",
+  "shippingCommit": "ec08f111a245dbe6753c8c0a5e96ddbedc9cf382",
+  "workflowRun": 38447943104,
+  "workflowURL": "https://github.com/OkillA/market-atlas/actions/runs/38447943104",
+  "workflowConclusion": "success",
+  "userAuthorization": "User explicitly requested push of the latest edition on 2026-10-13",
+  "liveAssets": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256": "9607530113defaf27a5def519e5f69fcd567d4154cfabaabb2bd3ac25f720c8f",
+      "expectedSha256": "9607530113defaf27a5def519e5f69fcd567d4154cfabaabb2bd3ac25f720c8f",
+      "matches": true
+    },
+    {
+      "file": "styles.css",
+      "status": 200,
+      "sha256": "25f807f4f8541afda43b98f15026aa58788ee57d726f234252273d0ded22a5f4",
+      "expectedSha256": "25f807f4f8541afda43b98f15026aa58788ee57d726f234252273d0ded22a5f4",
+      "matches": true
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "sha256": "80d57ed21fdaf2b375148375c382d8095592ce353793129c31eb9a1d89583bec",
+      "expectedSha256": "80d57ed21fdaf2b375148375c382d8095592ce353793129c31eb9a1d89583bec",
+      "matches": true
+    },
+    {
+      "file": "figure-renderer.js",
+      "status": 200,
+      "sha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+      "expectedSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+      "matches": true
+    },
+    {
+      "file": "favicon.svg",
+      "status": 200,
+      "sha256": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
+      "expectedSha256": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
+      "matches": true
+    },
+    {
+      "file": "content/book.js",
+      "status": 200,
+      "sha256": "b5c9c5524c2b7b734985d83904aff636a5107d564a2ba4efdaa4d76c4f668a3f",
+      "expectedSha256": "b5c9c5524c2b7b734985d83904aff636a5107d564a2ba4efdaa4d76c4f668a3f",
+      "matches": true
+    }
+  ],
+  "limits": "Live byte identity and subsequent native viewport checks establish the shipped files; no actual phone Edge or human reader validation is claimed.",
+  "liveMobile390": {
+    "edition": "0.4.1",
+    "chapters": 28,
+    "reviewed": 28,
+    "brandVisible": true,
+    "overflow": false,
+    "stylesheet": "styles.css?v=20261013-mobile1"
+  }
+}

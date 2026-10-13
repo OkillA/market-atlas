@@ -196,3 +196,7 @@ A follow-up contrast and text-size audit of both themes found QA1-003 (the "A wo
 ## Mobile header correction — /root, 2026-10-13
 
 MOBILE2-001 is resolved locally and archived with the full user finding, resolution and [native browser evidence](mobile-header-assets/browser-checks.json). Mobile branding/home access restored; 36 layout cases and actual header-control actions pass. Content/renderer/app unchanged; current ZIP rebuilt. Preview closed. Physical phone recheck and public deployment not claimed; CA1-026 remains deferred.
+
+## Latest alpha publication — /root, 2026-10-13
+
+The user explicitly requested the latest push. 0.4.1-alpha.1 is deployed to the existing GitHub Pages destination: [release notes](RELEASE_0_4_1_ALPHA_1.md), [successful run 38447943104](https://github.com/OkillA/market-atlas/actions/runs/38447943104), [live files/branding verification](release-readiness-assets/deployment-20261013.json). MOBILE2-001 and PRINT1-001–003 are now included publicly. No new finding; CA1-026 remains deferred for actual readers. Earlier local-only reports retain their dated historical scope.

@@ -4,7 +4,7 @@ Prepared **2026-10-13** by `/root` for the user's explicit request to push the l
 
 ## Publication
 
-Destination: https://okilla.github.io/market-atlas/ from https://github.com/OkillA/market-atlas, `main`, via `.github/workflows/pages.yml`. The user explicitly authorized the current push on 2026-10-13. Deployment/live verification is pending until the push and workflow complete; the publication record will identify the commit and run rather than infer success from a local build.
+Destination: https://okilla.github.io/market-atlas/ from https://github.com/OkillA/market-atlas, `main`, via `.github/workflows/pages.yml`. The user explicitly authorized the current push on 2026-10-13. Published from shipping commit `ec08f111a245dbe6753c8c0a5e96ddbedc9cf382`. [Pages run 38447943104](https://github.com/OkillA/market-atlas/actions/runs/38447943104) succeeded. [Live asset verification](release-readiness-assets/deployment-20261013.json) confirms HTTP 200 and exact SHA-256 identity for all six reader files; [native browser checks](release-readiness-assets/live-browser-20261013.json) confirm the mobile branding/28 reviewed chapters and no document overflow at 320/390px, plus 1280px overview/chapter samples.
 
 ## Current edition
 
