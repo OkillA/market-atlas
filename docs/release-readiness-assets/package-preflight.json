@@ -8,8 +8,8 @@
     "content/book.js": "b5c9c5524c2b7b734985d83904aff636a5107d564a2ba4efdaa4d76c4f668a3f",
     "favicon.svg": "f917efa63880e87f63b99f2096b6a77e40977ba8d7b20d1f17ce83ff3006ec4f",
     "figure-renderer.js": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
-    "index.html": "9607530113defaf27a5def519e5f69fcd567d4154cfabaabb2bd3ac25f720c8f",
-    "styles.css": "25f807f4f8541afda43b98f15026aa58788ee57d726f234252273d0ded22a5f4"
+    "index.html": "be48b3ca93f8e0aa699557ad055153531dbba048657da066dc69367145dfd133",
+    "styles.css": "3fb451cbf7bf0fceee67cf15595a29507f0e85bc1491389fff60afc207f38fcc"
   },
   "localAssetReferences": [
     "favicon.svg",
@@ -19,7 +19,7 @@
     "app.js"
   ],
   "zip": "docs/release-readiness-assets/market-atlas-0.4.1-alpha.1.zip",
-  "zipSha256": "c47da350ec6db2021892be39ed59d0c8377cf5f02d41b98db445ded04b029bb6",
+  "zipSha256": "b2df0279a40bb817f929574f18b314438c6a1dc87693dc324c57c079dbac7726",
   "published": false,
   "limits": "Static asset graph, byte identity and ZIP integrity checked. Native file:// reading, deployment and a complete native print matrix are not established by this preflight."
 }

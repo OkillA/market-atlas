@@ -200,3 +200,7 @@ MOBILE2-001 is resolved locally and archived with the full user finding, resolut
 ## Latest alpha publication — /root, 2026-10-13
 
 The user explicitly requested the latest push. 0.4.1-alpha.1 is deployed to the existing GitHub Pages destination: [release notes](RELEASE_0_4_1_ALPHA_1.md), [successful run 38447943104](https://github.com/OkillA/market-atlas/actions/runs/38447943104), [live files/branding verification](release-readiness-assets/deployment-20261013.json). MOBILE2-001 and PRINT1-001–003 are now included publicly. No new finding; CA1-026 remains deferred for actual readers. Earlier local-only reports retain their dated historical scope.
+
+## Mobile drawer correction — /root, 2026-10-13
+
+MOBILE2-002 is resolved and archived with [48 open-drawer viewport/theme/scroll cases](mobile-header-assets/drawer-checks.json). Drawer starts below the header; all items are scrollable/reachable, including short viewports. Only screen CSS/cache key changed; content/print scope retained. Publishing under the user's existing latest-edition authorization. CA1-026 remains deferred.

@@ -79,6 +79,8 @@ At the earlier release-QA checkpoint, ROAD-002/003/006 were done and ROAD-004 re
 
 **2026-10-13 latest alpha published.** The user explicitly requested a push of the latest edition. Shipping commit `ec08f111` includes 13 earlier local commits plus completed native print QA and MOBILE2-001. [Pages run 38447943104](https://github.com/OkillA/market-atlas/actions/runs/38447943104) succeeded; [all six hosted reader files match local SHA-256](release-readiness-assets/deployment-20261013.json), and native live 320/390/1280px branding/route samples pass. [Release notes](RELEASE_0_4_1_ALPHA_1.md) and the reproducible ZIP describe current review, data and study limits. ROAD-007 is done for recorded release scope; CA1-026 / ROAD-005 is the remaining deferred work. No human validation or physical phone recheck is claimed.
 
+**2026-10-13 drawer follow-up.** MOBILE2-002 corrects open navigation content hidden by the sticky header, reported in a second user phone screenshot. Screen-only positioning keeps the drawer below the header and all items reachable; [48 native viewport/theme/scroll cases](mobile-header-assets/drawer-checks.json) pass. App/content/renderer and printed layout unchanged; review metadata and package preflight pass. Publishing under the existing latest-edition authorization; actual phone verification and CA1-026 remain outside this check.
+
 ## Keeping this tracker useful
 
 1. Start with this page and the active feedback queue; claim the next ready roadmap package or an actionable finding.

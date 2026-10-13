@@ -91,3 +91,10 @@
  .mobile-brand .brand-mark{width:24px;height:28px;font-size:19px}
  #chapter-contents-button{font-size:12px;padding:6px 7px}
 }
+
+/* The mobile drawer occupies the area below the persistent header. */
+@media screen and (max-width:760px){
+ .sidebar{top:65px;height:calc(100vh - 65px);height:calc(100dvh - 65px);padding-top:20px;overscroll-behavior:contain}
+ .sidebar>.brand{display:none}
+ .sidebar .search-trigger{margin-top:0}
+}

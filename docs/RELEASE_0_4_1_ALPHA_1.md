@@ -34,3 +34,7 @@ CA1-026 / ROAD-005 remains deferred: zero human participants or learning observa
 Teaching examples are fictional unless labelled historical. The archive has retrospective adjustment, upstream provenance, timestamp and reuse limitations documented in [data/historical/README.md](../data/historical/README.md). Historical gallery classifications are neither executable historical trades nor a performance estimate. Source definitions and arithmetic do not validate a profitable strategy.
 
 Notes, bookmarks and progress remain stored by browser and site address. The hosted site keeps the same origin/path, so ordinary deployment does not reset those records. Use **My notebook → Export/Import** to back up notes or move between local and hosted editions. If a browser retains old assets after deployment, reload the page; the changed stylesheet URL selects the new mobile header styling.
+
+## Mobile drawer correction — 2026-10-13
+
+MOBILE2-002 fixes drawer branding clipped behind the sticky header in the user's Edge phone screenshot. The drawer now starts below the header, omits its redundant brand, puts search first and scrolls within the remaining dynamic viewport. [48 native cases](mobile-header-assets/drawer-checks.json) pass across themes, portrait/landscape, short viewport and page-scroll states; all drawer items pass reachability/hit-testing. Stylesheet key: `20261013-mobile2`. Content/print scope unchanged; physical phone recheck not claimed.
