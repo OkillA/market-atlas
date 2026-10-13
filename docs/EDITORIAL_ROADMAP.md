@@ -65,6 +65,10 @@ Claim a manageable package by setting its owner and status before implementation
 
 - Progress / 2026-10-13: claude-code-print — [desktop/keyboard record](release-readiness-assets/desktop-keyboard-checks.json): native top-level 1280x800 sweep of 45 routes and 7 packets with no overflow, errors or missing figures; native Tab/Shift+Tab/Enter/Escape/'/' search and deep-link focus pass; focus outlines on every reachable control across 8 routes; dark-theme figure contrast computed. Limits: intermittent OS focus (Escape-return ring not judged), no screenshots, no 1440px+/zoom/screen-reader/file://. Slice complete; claim released.
 
+- Claim / 2026-10-13: claude-code-qa, at the user's request, takes the slice that needs no human print-dialog step: file:// offline reading, 1440px+ widths, browser zoom/text-resize and an automated accessibility-tree audit (not a screen-reader session). /root's native-print scope (Chapter 6 re-export, Chapter 9/22/26/28 pairs, ordinary/part-review samples) is unchanged. Also contributes a ROAD-007 preflight rebuild for the current app.js/styles.css; ROAD-007's owner is preserved.
+
+- Progress / 2026-10-13: claude-code-qa — [wide/zoom/file:// /accessibility record](release-readiness-assets/wide-zoom-file-a11y-checks.json). Native preview, all 41 routes: no document overflow, script errors or missing figures at 1440x900, 1920x1080, 640x400 (200% zoom of 1280x800) and 320x256 (400% zoom); everything past the edge is a data table inside a focusable, labelled scroll region. Offline file:// (headless Chrome, network disabled) of `_site/` and of the extracted release ZIP: 41 routes, search, a closed packet and notebook persistence across reload all work, with zero non-file requests or errors. Accessibility-tree audit (headless Chrome, disclosures open): 0 unnamed controls, duplicate IDs, broken references, unnamed SVGs or header-less tables; one h1 per route; consistent landmarks. QA1-001/002 were found and fixed. Limits: zoom is emulated by viewport size; px-only fonts ignore text-only size preferences; no VoiceOver/NVDA session; no Safari/Firefox. Slice complete; claim released. Remaining ROAD-004 scope is native print only (Chapter 6 re-export, Chapter 9/22/26/28 pairs, ordinary/part-review samples), plus an optional real screen-reader pass.
+
 ### ROAD-005 — Run human reader validation
 
 - Status / owner: deferred / /root for completed preparation; facilitator unassigned.
@@ -91,6 +95,8 @@ Claim a manageable package by setting its owner and status before implementation
 - Alpha progress / 2026-10-11: claude-code-alpha — the user requested a public alpha on GitHub with free static hosting. Prepared `npm run build:site`, a GitHub Pages workflow that reruns all verifiers/checks before deploying, and [alpha release notes](RELEASE_ALPHA.md) stating the incomplete ROAD-002–006 gates. The alpha is a deliberately released draft, not the reviewed public edition; this package stays open for the reviewed release. Deployed with the user's authorization to https://okilla.github.io/market-atlas/ from public repository OkillA/market-atlas (Actions run 38178883640); live URL checked.
 
 - Local preflight contribution / 2026-10-12: /root prepared reproducible 0.4.1-alpha.1 static bundle/ZIP and asset/hash checks, preserving the existing ROAD-007 owner. [Report](RELEASE_READINESS_20261012.md). No push, redeploy or reviewed-public-edition acceptance; ROAD-004 remains incomplete.
+
+- Preflight rebuild / 2026-10-13: claude-code-qa reran `package-preflight.py` after the print and QA1 fixes. Two builds match, the ZIP holds the current app.js/styles.css/index.html (ZIP sha256 `1893b28f…`), and the extracted ZIP reads offline over file://. ROAD-007's owner is preserved; no push or deployment.
 
 ## Publication gates
 

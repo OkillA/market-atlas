@@ -1,0 +1,107 @@
+{
+ "date": "2026-10-13",
+ "checkedBy": "claude-code-qa",
+ "build": "app.js?v=20261013-qa1, styles.css?v=20261013-qa2 (content/book.js and figure-renderer.js unchanged)",
+ "nativeWideAndZoom": {
+  "platform": "T3 Code native collaborative preview (Electron/Chromium, macOS), top-level freeform viewports",
+  "method": "All 41 routes (home, contents, glossary, evidence, about, notebook, lab, 28 chapters, 6 part reviews) via hash navigation; document overflow, content elements past the right edge, figure SVG count/width, h1 presence, script errors.",
+  "1440x900": {
+   "routes": 41,
+   "documentOverflow": 0,
+   "elementsPastEdge": 0,
+   "scriptErrors": 0,
+   "figureSvgs": 72,
+   "figuresUnder200px": 0,
+   "mainWidth": 1180
+  },
+  "1920x1080": {
+   "routes": 41,
+   "documentOverflow": 0,
+   "elementsPastEdge": 0,
+   "scriptErrors": 0,
+   "figureSvgs": 72,
+   "figuresUnder200px": 0,
+   "mainWidth": 1440,
+   "note": "main is capped at 1440px; the reading column stays 720px + 165px aside, centred. Screenshot of Chapter 12 viewed."
+  },
+  "640x400 (1280x800 window at 200% page zoom)": {
+   "routes": 41,
+   "documentOverflow": 0,
+   "scriptErrors": 0,
+   "figureSvgs": 72,
+   "elementsPastEdge": "7 tables on 3 chapters, all inside keyboard-focusable labelled .table-scroll regions"
+  },
+  "320x256 (1280x1024 window at 400% page zoom)": {
+   "routes": 41,
+   "documentOverflow": 0,
+   "scriptErrors": 0,
+   "figureSvgs": 72,
+   "elementsPastEdge": 247,
+   "clippedOrUnreachable": 0,
+   "note": "All 247 are data tables inside keyboard-focusable, aria-labelled .table-scroll regions (overflow-x:auto) that themselves fit the viewport; WCAG 1.4.10 exempts two-dimensional data tables."
+  },
+  "zoomMethod": "Page zoom is emulated as the equivalent CSS viewport; the preview cannot apply browser zoom itself. All CSS font sizes are px, so a browser 'text size only' / minimum-font preference that does not scale px is not honoured; page zoom is."
+ },
+ "fileOffline": {
+  "engine": "Chrome/155.0.8059.40 headless (non-native)",
+  "networkOffline": true,
+  "targets": {
+   "_site/index.html (npm run build:site)": "pass",
+   "extracted market-atlas-0.4.1-alpha.1.zip": "pass"
+  },
+  "routes": 41,
+  "routesWithoutH1": [],
+  "figureSvgs": 72,
+  "overflowRoutes": [],
+  "search": "'/' opens the dialog; 'average true range' gives 4 results",
+  "packet": "Chapter 6 support-resistance: 7 disclosures start closed, 133 input/table cells, 2 figures rendered, 0 empty figures",
+  "notebook": "localStorage available at origin file://; a note persisted across reload and appears in My notebook",
+  "nonFileRequests": [],
+  "failedRequests": [],
+  "scriptErrors": [],
+  "consoleErrors": [],
+  "script": "docs/release-readiness-assets/filecheck.mjs"
+ },
+ "accessibilityTree": {
+  "engine": "Chrome/155.0.8059.40 headless; Accessibility.getFullAXTree (non-native, not a screen reader)",
+  "viewport": "1280x800",
+  "routes": 41,
+  "disclosuresOpened": true,
+  "totals": {
+   "unnamedControls": 0,
+   "headingSkips": 0,
+   "dupIds": 0,
+   "badRefs": 0,
+   "svgs": 73,
+   "svgNoName": 0,
+   "tables": 247,
+   "tablesNoHeader": 0,
+   "tablesNoCaption": 0,
+   "positiveTabindex": 0
+  },
+  "lang": [
+   "en"
+  ],
+  "routesNotExactlyOneH1": [],
+  "landmarks": [
+   "banner,complementary,contentinfo,main,navigation"
+  ],
+  "foundAndFixed": [
+   "QA1-001 glossary h1->h3 heading skip",
+   "QA1-002 glossary term headings rendered at 13px"
+  ],
+  "script": "docs/release-readiness-assets/a11y.mjs"
+ },
+ "preflight": {
+  "zipSha256": "1893b28f8a1c3d5c7a4e4d9b2321b195e09308716d03eb6315c5d64fe412bee6",
+  "twoBuildsMatch": true,
+  "note": "package-preflight.py rerun after the print fixes and QA1 fixes; the bundle now matches current app.js/styles.css/index.html."
+ },
+ "storage": "Original market-atlas-reader-v1 value (524 bytes) backed up before QA and restored byte-for-byte from a non-app same-origin page (favicon.svg).",
+ "limits": [
+  "file:// and the accessibility-tree audit used headless Chrome, not the native preview (which accepts only http(s) URLs).",
+  "No screen-reader session (VoiceOver/NVDA): the audit checks names, roles, headings, landmarks, ID references, SVG names and table headers only, not announcement order or usability.",
+  "Zoom is emulated by viewport size; no real browser zoom and no Safari/Firefox engine.",
+  "No native printer output; the remaining ROAD-004 print scope is unchanged."
+ ]
+}

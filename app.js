@@ -389,7 +389,7 @@
       const query = $('#glossary-filter').value.toLowerCase().trim();
       const terms = book.glossary.filter(term => `${term[0]} ${term[1]}`.toLowerCase().includes(query));
       $('#glossary-count').textContent = `${terms.length} ${terms.length === 1 ? 'term' : 'terms'}`;
-      $('#glossary-list').innerHTML = terms.length ? terms.map(([term, definition, chapter]) => `<article tabindex="-1" class="glossary-item" id="term-${slug(term)}"><h3><a href="#/glossary/at/term-${slug(term)}">${esc(term)}</a></h3><p>${esc(definition)}</p><a href="${link(chapter)}">Read in context →</a></article>`).join('') : '<p class="search-empty">No matching terms. Try another word.</p>';
+      $('#glossary-list').innerHTML = terms.length ? terms.map(([term, definition, chapter]) => `<article tabindex="-1" class="glossary-item" id="term-${slug(term)}"><h2><a href="#/glossary/at/term-${slug(term)}">${esc(term)}</a></h2><p>${esc(definition)}</p><a href="${link(chapter)}">Read in context →</a></article>`).join('') : '<p class="search-empty">No matching terms. Try another word.</p>';
     };
     $('#glossary-filter').addEventListener('input', draw); draw();
   }

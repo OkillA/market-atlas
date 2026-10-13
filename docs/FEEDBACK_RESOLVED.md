@@ -1981,3 +1981,35 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: Added "Print tasks" / "Print with solutions" buttons and a print-only edition line. Before printing the solution edition, onbeforeprint opens the solution disclosures; onafterprint restores each one's previous state and resets the class and label. Cache key bumped.
 - Verification: Headless Chrome, all six part reviews in both editions: the 31 authoring solution paragraphs all appear in the solution editions and none in the task editions. A preview state check after a simulated print: a reader-opened solution stayed open, the others closed again, and the class and label were reset. On-screen buttons render at 1280px. `npm run check`, `check:figures`, `check:reviews` pass. A native printer export of a part review is still pending in ROAD-004.
 - Scope / evidence: [headless-print-sweep.json](release-readiness-assets/headless-print-sweep.json).
+
+### QA1-001 — Glossary term headings skip a heading level
+- Priority / type: P3 / defect (accessibility structure)
+- Status: resolved
+- Owner: claude-code-qa, 2026-10-13
+- Reviewer / date: claude-code-qa / 2026-10-13
+- Location: app.js glossary view (`.glossary-item`); styles.css `.glossary-item h3`.
+- Finding and evidence: The automated accessibility-tree audit of all 41 routes found one heading-level skip: on `#/glossary` the page `h1` was followed directly by 105 `h3` term headings, with no `h2`. Screen-reader heading navigation by level would find no second-level headings on the page.
+- Proposed resolution: Make the term headings `h2` and keep their current appearance.
+- Acceptance criteria: No heading skips on any route; glossary deep links and filtering still work; term headings look unchanged.
+- Discussion / progress: None.
+- Disposition: resolved
+- Closed by / date: claude-code-qa / 2026-10-13
+- Resolution: Glossary terms render as `<h2>`. The CSS rule moved to `.glossary-item h2` with the previous `h3` letter-spacing (-.4px) and green colour, so the appearance is preserved. Cache keys bumped.
+- Verification: Re-audit: 0 heading skips, 0 unnamed controls, 0 duplicate IDs or broken ARIA/label references across 41 routes with disclosures open. Native preview: 105 `h2` terms, 0 `h3`; `#/glossary/at/term-a-d-line` focuses the term in view; filtering for "true range" leaves 3 terms; 320px has no overflow; dark-theme heading contrast is 9.12:1. `npm run check`, `check:figures` and `check:reviews` pass.
+- Scope / evidence: [wide-zoom-file-a11y-checks.json](release-readiness-assets/wide-zoom-file-a11y-checks.json), [a11y.mjs](release-readiness-assets/a11y.mjs).
+
+### QA1-002 — Glossary term names render at link size, not heading size
+- Priority / type: P3 / defect (visual hierarchy)
+- Status: resolved
+- Owner: claude-code-qa, 2026-10-13
+- Reviewer / date: claude-code-qa / 2026-10-13
+- Location: styles.css `.glossary-item a` (10px) and its larger-text override (13px).
+- Finding and evidence: A native 1280px screenshot of the glossary showed each term name at about 13px, smaller than its own 12–14px definition text. The rules meant for the "Read in context →" link also matched the term-name link inside the heading, overriding the heading's 24px. Readers scanning the glossary saw definitions with no visually distinct term heading.
+- Proposed resolution: Limit the small-link rules to the direct-child "Read in context" link.
+- Acceptance criteria: Term names render at the heading size; the "Read in context" link keeps its size and colour.
+- Discussion / progress: None.
+- Disposition: resolved
+- Closed by / date: claude-code-qa / 2026-10-13
+- Resolution: Both selectors changed to `.glossary-item>a`.
+- Verification: Native preview: term links compute 24px, green (rgb 35,77,61); "Read in context" links 13px, same green. A screenshot was viewed at 1280px; the longest term wraps without overflow at 320px (max heading height 55px). A pre-existing defect, not a regression from QA1-001.
+- Scope / evidence: As QA1-001.
