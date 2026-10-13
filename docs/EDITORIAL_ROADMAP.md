@@ -77,6 +77,8 @@ Claim a manageable package by setting its owner and status before implementation
 
 - Focused drawer correction / 2026-10-13: /root — MOBILE2-002, from the user's follow-up Edge screenshot, fixes open navigation content hidden behind the sticky header. [48 native drawer/scroll/theme cases](mobile-header-assets/drawer-checks.json) pass with all controls reachable. Screen-only CSS/cache-key change; native print/content scope preserved. Published as `c3a5cac` via [successful Pages run 38463790656](https://github.com/OkillA/market-atlas/actions/runs/38463790656); [live asset verification](mobile-header-assets/drawer-deployment.json) passes. No physical phone recheck claimed.
 
+- User decisions / 2026-10-13: the user confirmed the deployed mobile header and drawer look correct on their phone, closing the physical phone recheck. Physical-printer testing is out of scope by user decision; it is no longer an open optional gap. Real screen-reader and additional-browser checks remain optional and unperformed.
+
 ### ROAD-005 — Run human reader validation
 
 - Status / owner: deferred / /root for completed preparation; facilitator unassigned.
@@ -84,6 +86,7 @@ Claim a manageable package by setting its owner and status before implementation
 - Dependency / resumption condition: actual investing-literate beginners become available. The user previously confirmed participants are unavailable.
 - Preparation: [protocol](READER_PROTOCOL.md), unfamiliar A/B forms, scoring key and facilitator run sheet are ready; [results](READER_RESULTS.md) contains zero participants and observations.
 - Exit criteria: actual observations and two-scorer reconciliations are recorded; misunderstandings have linked revisions or evidence-backed dispositions; new-reader rechecks are recorded. Keep the packet's uncalibrated forms and causal-inference limits explicit. Editorial/model review cannot close this item.
+- Update / 2026-10-13: the user confirmed outside readers are still unavailable and will read the book personally in their free time; their notes are real human observations and should be logged in [READER_RESULTS.md](READER_RESULTS.md) (one participant, not a calibrated study). An AI simulated-beginner read (`READ1` feedback prefix) runs meanwhile as editorial input only; it does not count toward these exit criteria.
 
 ### ROAD-006 — Add truthful chapter review and version metadata
 
