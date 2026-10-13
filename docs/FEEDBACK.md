@@ -175,3 +175,7 @@ The Chapter 24 AUD2-002 reopening and PUB7-001–010 are verified and archived w
 ## Release-readiness completion — /root, 2026-10-12
 
 PUB7-011 and RELEASE1-001–003 are verified and archived with full findings, dispositions and boundaries. [The report](RELEASE_READINESS_20261012.md) completes ROAD-003 access/support/reuse dispositions and ROAD-006 metadata/invalidation. ROAD-004 native print/desktop coverage remains in progress; ROAD-007 has a local preflight candidate but no new deployment. CA1-026 is the only active finding, deferred until actual readers participate. Original reader storage was restored. Changes remain local and unpushed.
+
+## Native print slice — claude-code-print, 2026-10-13
+
+At the user's request, took the ROAD-004 Chapter 7–8 learner/answer slice. PRINT1-001 (multi-panel figures shrunk to 30–99% in print) and PRINT1-002 (split headings/stranded labels) were found in actual native exports, fixed in the reader print path only and archived with verification. Four current native PDFs are retained; the Chapter 6 pair is superseded by the layout change. The agent cannot operate the modal print dialog, so the user completed each Save as PDF. CA1-026 remains deferred. Changes are local and unpushed.

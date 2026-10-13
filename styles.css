@@ -52,7 +52,7 @@
  .table-scroll table{min-width:0!important;width:100%;table-layout:fixed;font-size:8.5pt}
  .table-scroll td,.table-scroll th{padding:5pt;overflow-wrap:anywhere}.table-scroll th{position:static;background:#eee}
  thead{display:table-header-group;break-after:avoid}tr{break-inside:avoid}.teaching-table>.table-caption{display:none}.table-scroll caption{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;clip-path:none;white-space:normal;text-align:left;font:500 10pt/1.6 Arial;padding:0 0 6pt;break-after:avoid}.quiz{break-inside:avoid}.teaching-table,.table-scroll,.worked-example,.exercise,.data-table{break-inside:auto}
- .figure-panel{break-inside:auto}.figure-kicker,.figure-title{break-after:avoid}.figure-chart{break-inside:avoid;break-before:avoid}.figure-chart svg{max-height:220mm;width:100%;object-fit:contain}
+ .figure-panel{break-inside:auto}.figure-kicker,.figure-title{break-after:avoid}.figure-chart{break-inside:avoid;break-before:avoid}.figure-chart svg{max-height:220mm;width:100%;object-fit:contain}.figure-chart.print-panels{break-inside:auto}.print-panel{break-inside:avoid}h1,h2,h3{break-inside:avoid}.worked-example>.eyebrow,.quiz>.eyebrow{break-after:avoid}
  noscript{display:none!important}
  .solution{display:none!important}.print-answers .solution{display:block!important}.print-answers .solution>summary{display:none}
  .print-answers .quiz-print-answer{display:block}.chapter-continuation{break-before:page;display:block}.chapter-continuation>.continuation-policy{font-weight:600}

@@ -1932,3 +1932,36 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: Bound/wrapped the status column, allowed title shrinkage and shortened the label to AI review, retaining full dated scope in chapters.
 - Verification: Native 768px contents overflow removed (753px scroll width within 768px). Final 320px top-level and 390/768/1280px native child-frame contents have all 28 rows and no overflow; notebook row uses the same layout. Full top-level desktop/remaining printer checks stay on ROAD-004.
 - Scope / evidence: [Release-readiness report](RELEASE_READINESS_20261012.md), linked current assets and scoped inherited publication reviews. No human learning or complete release QA is claimed.
+
+
+### PRINT1-001 — Multi-panel figures shrink until illegible in print
+- Priority / type: P1 / defect (misleading/unreadable visual in the print editions)
+- Status: resolved
+- Owner: claude-code-print, 2026-10-13
+- Reviewer / date: claude-code-print / 2026-10-13
+- Location: app.js renderFigure (print redraw); styles.css print `.figure-chart svg{max-height:220mm}`. Worst cases: Chapter 8 "Boundary families" (six panels) and Chapter 7 "Candle geometry" (four panels).
+- Finding and evidence: A stacked multi-panel figure renders as one SVG, which cannot break across printed pages, so the 220mm cap scales the whole figure down. The native Chapter 8 learner export printed the boundary-families catalogue at about 30% width, with axis labels and branch annotations at roughly 2–3pt; Chapter 7's candle-geometry figure printed at about 53%. Measuring every figure at the 760px print width found 12 multi-panel figures over the cap (30–99%): chapters 6, 7, 8 (×3), 10, 11, 13, 15, 16, 26 and 28.
+- Proposed resolution: When printing, render each panel of a multi-panel figure as its own full-width SVG and allow the chart container to break between panels.
+- Acceptance criteria: Native print exports show every panel at full content width with readable labels; screen rendering, SVG exports and figure-renderer.js are unchanged.
+- Discussion / progress: Found during the ROAD-004 Chapter 7–8 native print slice.
+- Disposition: resolved
+- Closed by / date: claude-code-print / 2026-10-13
+- Resolution: In print mode, renderFigure renders `{...figure, panels:[panel]}` per panel inside `.print-panel` blocks (break-inside: avoid) and lets `.figure-chart.print-panels` break between them. figure-renderer.js and authoring content are untouched, so renderer and content review fingerprints stay valid (`npm run check:reviews` passes for all 28). Cache keys bumped in index.html.
+- Verification: Headless Chrome print of Chapter 8 showed the six catalogue panels at full width across pages 12–15. Native Quartz re-exports of the Chapter 7 and 8 learner/answer editions (15/15/25/25 pages) were inspected page by page: all panels are full width and readable, inputs and tables are complete, and continuation boundaries are unchanged (Ch 7 p11, Ch 8 p6). `npm run check`, `check:figures` and `check:reviews` pass. The other 10 affected figures were not natively re-exported in this slice; the Chapter 6 pair is now superseded.
+- Scope / evidence: [native-print-checks.json](release-readiness-assets/native-print-checks.json) and contact sheets in `release-readiness-assets/native-print/`.
+
+### PRINT1-002 — Print headings and section labels split from their content
+- Priority / type: P3 / defect
+- Status: resolved
+- Owner: claude-code-print, 2026-10-13
+- Reviewer / date: claude-code-print / 2026-10-13
+- Location: styles.css print rules; Chapter 7 guided-packet heading, Chapter 8 worked-example eyebrow.
+- Finding and evidence: After PRINT1-001 changed the page flow, the native Chapter 7 learner export split the two-line heading "First pass: keep the D3 shape separate from its / next close" across pages 8–9. The Chapter 8 learner export left the "A WORKED EXAMPLE" eyebrow alone at the bottom of page 22, with its heading on page 23. Only `.exercise>.eyebrow` had break-after: avoid.
+- Proposed resolution: Keep headings unbroken and keep worked-example/quiz eyebrows with their headings.
+- Acceptance criteria: Re-exported native PDFs show no split heading or stranded eyebrow label.
+- Discussion / progress: None.
+- Disposition: resolved
+- Closed by / date: claude-code-print / 2026-10-13
+- Resolution: Added `h1,h2,h3{break-inside:avoid}` and `.worked-example>.eyebrow,.quiz>.eyebrow{break-after:avoid}` to print CSS.
+- Verification: Native re-exports: the Chapter 7 learner heading is intact on page 9; the Chapter 8 learner/answer eyebrow is on page 23 with its heading. All pages of all four current PDFs were checked for split headings and stranded labels. The Chapter 7 answer edition was printed before these two rules and has no split heading or stranded label on any page.
+- Scope / evidence: As PRINT1-001.

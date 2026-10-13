@@ -240,7 +240,13 @@
   function renderFigure(container, figure) {
     container.innerHTML = `<figure class="figure-panel"><div class="figure-kicker">${figure.historical ? 'DOCUMENTED HISTORICAL DATA' : 'FICTIONAL TEACHING ILLUSTRATION'}</div><div class="figure-title">${esc(figure.title)}</div><div class="chart-wrap figure-chart"></div><figcaption>${esc(figure.caption)}</figcaption><details class="data-table"><summary>View the illustration’s data</summary>${figureData(figure)}</details></figure>`;
     const previousRedraw = chartRedraw;
-    const redraw = () => { const element = container.querySelector('.chart-wrap'); if (element) element.innerHTML = lineChart(figure, chartWidth(element)); };
+    const redraw = () => {
+      const element = container.querySelector('.chart-wrap'); if (!element) return;
+      // A stacked multi-panel SVG cannot break across printed pages, so print each panel separately at full width.
+      const split = printing && figure.kind === 'panels' && figure.panels.length > 1;
+      element.classList.toggle('print-panels', split);
+      element.innerHTML = split ? figure.panels.map(panel => `<div class="print-panel">${lineChart({ ...figure, panels: [panel] }, chartWidth(element))}</div>`).join('') : lineChart(figure, chartWidth(element));
+    };
     chartRedraw = () => { if (previousRedraw) previousRedraw(); redraw(); };
     redraw();
   }
