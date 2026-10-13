@@ -441,8 +441,24 @@
   function renderPractice(id) {
     const part = book.parts.find(part => part.id === id), practice = book.partPractice?.[id];
     if (!part || !practice) return renderNotFound();
-    mount(`<div class="prose-page"><div class="page-intro"><div class="eyebrow">Part ${part.number} review</div><h1>${esc(practice.title)}</h1><p>Work from the supplied information. State your assumptions before revealing a solution.</p></div>${practice.tasks.map(task => `<section class="exercise"><h2>${esc(task.title)}</h2><p>${esc(task.question)}</p>${(task.tables || []).map(tableMarkup).join('')}${solutionMarkup(task.solution)}</section>`).join('')}<a href="#/contents/${id}">Return to this part →</a></div>`, 'The book / Part review', 'contents');
+    mount(`<div class="prose-page"><div class="page-intro"><div class="eyebrow">Part ${part.number} review</div><h1>${esc(practice.title)}</h1><p>Work from the supplied information. State your assumptions before revealing a solution.</p><p class="print-policy">Task edition: worked solutions are omitted.</p><div class="article-tools"><button id="print-practice">Print tasks</button><button id="print-practice-answers">Print with solutions</button></div></div>${practice.tasks.map(task => `<section class="exercise"><h2>${esc(task.title)}</h2><p>${esc(task.question)}</p>${(task.tables || []).map(tableMarkup).join('')}${solutionMarkup(task.solution)}</section>`).join('')}<a href="#/contents/${id}">Return to this part →</a></div>`, 'The book / Part review', 'contents');
     document.title = `${practice.title} — Market Atlas`;
+    // Closed <details> contents do not print, so open the solutions for the solution edition and restore afterwards.
+    let restoreSolutions = null;
+    window.onbeforeprint = () => {
+      if (restoreSolutions || !document.body.classList.contains('print-answers')) return;
+      const solutions = [...document.querySelectorAll('#main details.solution')], previous = solutions.map(item => item.open);
+      solutions.forEach(item => { item.open = true; });
+      restoreSolutions = () => { solutions.forEach((item, i) => { item.open = previous[i]; }); restoreSolutions = null; };
+    };
+    window.onafterprint = () => { restoreSolutions?.(); document.body.classList.remove('print-answers'); $('.print-policy').textContent = 'Task edition: worked solutions are omitted.'; };
+    const printPractice = answers => {
+      document.body.classList.toggle('print-answers', answers);
+      $('.print-policy').textContent = answers ? 'Solution edition: includes every worked solution.' : 'Task edition: worked solutions are omitted.';
+      window.onbeforeprint(); window.print();
+    };
+    $('#print-practice').addEventListener('click', () => printPractice(false));
+    $('#print-practice-answers').addEventListener('click', () => printPractice(true));
   }
   function evidenceRecord(record) {
     const study = record.study ? tableMarkup({ title: 'Study specification', columns: ['Field', 'What was tested'], rows: ['sample', 'rule', 'comparator', 'costs', 'result'].map(field => [field[0].toUpperCase() + field.slice(1), record.study[field]]) }) : '';

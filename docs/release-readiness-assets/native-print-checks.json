@@ -104,7 +104,7 @@
     }
   ],
   "currentCoverage": "Current native learner/answer pairs: Chapter 7 (15/15 pages) and Chapter 8 (25/25 pages), 2026-10-13. Chapter 6 pair (2026-10-12) predates the print-layout change and needs re-export.",
-  "pending": "Current Chapter 6 re-export plus Chapter 9/22/26/28 learner/answer pairs (10 PDFs), an ordinary chapter and a part-review sample.",
+  "pending": "Current Chapter 6 re-export plus Chapter 9/22/26/28 learner/answer pairs (10 PDFs), an ordinary chapter, and a part review in both task and solution editions (added by PRINT1-003).",
   "automationLimit": "Repeated native save panels remained disabled; some queued print requests needed cancellation. Preview snapshot, later resize and one Enter activation failed. Actual completed files are counted; attempts are not. 2026-10-13: the agent cannot operate the modal dialog (preview automation stalls; System Events scripting timed out, likely awaiting Accessibility permission); the user completed each Save as PDF.",
   "printLayoutFix": "PRINT1-001/002 (2026-10-13): multi-panel figures print one SVG per panel; headings and eyebrow labels no longer split from following content. Earlier native exports were superseded and re-exported."
 }

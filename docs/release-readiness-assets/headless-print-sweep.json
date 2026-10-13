@@ -1,0 +1,353 @@
+{
+ "date": "2026-10-13",
+ "checkedBy": "claude-code-print",
+ "engine": "Headless Google Chrome via CDP Page.printToPDF, US Letter, default margins (NOT native printer evidence; ROAD-004 native exit criteria unaffected)",
+ "scripts": [
+  "docs/release-readiness-assets/sweep.mjs",
+  "docs/release-readiness-assets/analyze.py"
+ ],
+ "method": "All 28 chapters (learner and answer editions; answer edition emulated by adding body.print-answers as the button does) and all six part reviews (task and solution editions after PRINT1-003). Automated per-page text checks for stranded eyebrow labels, empty pages, quiz-answer leakage into learner editions and missing quiz answers in answer editions; part-review solution paragraphs matched against authoring data. Chapter 7/8 page counts match the native Quartz exports (15/25).",
+ "results": "No stranded labels, empty pages or answer leakage in 56 chapter PDFs; all 28 answer editions carry their quiz answer. Part reviews: every one of 31 solution paragraphs present in the solution edition and absent from the task edition. Not a visual inspection of every page: figure legibility outside Chapters 7-8 is inferred from the PRINT1-001 per-panel layout, not individually viewed.",
+ "outputs": [
+  {
+   "file": "ch01-market-language-answers.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch01-market-language-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch02-chart-anatomy-answers.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch02-chart-anatomy-learner.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch03-volume-answers.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch03-volume-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch04-timeframes-answers.pdf",
+   "pages": 11,
+   "flags": null
+  },
+  {
+   "file": "ch04-timeframes-learner.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch05-trends-answers.pdf",
+   "pages": 12,
+   "flags": null
+  },
+  {
+   "file": "ch05-trends-learner.pdf",
+   "pages": 12,
+   "flags": null
+  },
+  {
+   "file": "ch06-support-resistance-answers.pdf",
+   "pages": 12,
+   "flags": null
+  },
+  {
+   "file": "ch06-support-resistance-learner.pdf",
+   "pages": 11,
+   "flags": null
+  },
+  {
+   "file": "ch07-candlestick-patterns-answers.pdf",
+   "pages": 15,
+   "flags": null
+  },
+  {
+   "file": "ch07-candlestick-patterns-learner.pdf",
+   "pages": 15,
+   "flags": null
+  },
+  {
+   "file": "ch08-chart-patterns-answers.pdf",
+   "pages": 25,
+   "flags": null
+  },
+  {
+   "file": "ch08-chart-patterns-learner.pdf",
+   "pages": 25,
+   "flags": null
+  },
+  {
+   "file": "ch09-breakouts-answers.pdf",
+   "pages": 15,
+   "flags": null
+  },
+  {
+   "file": "ch09-breakouts-learner.pdf",
+   "pages": 14,
+   "flags": null
+  },
+  {
+   "file": "ch10-moving-averages-answers.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch10-moving-averages-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch11-momentum-answers.pdf",
+   "pages": 15,
+   "flags": null
+  },
+  {
+   "file": "ch11-momentum-learner.pdf",
+   "pages": 14,
+   "flags": null
+  },
+  {
+   "file": "ch12-volatility-answers.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch12-volatility-learner.pdf",
+   "pages": 8,
+   "flags": null
+  },
+  {
+   "file": "ch13-volume-tools-answers.pdf",
+   "pages": 11,
+   "flags": null
+  },
+  {
+   "file": "ch13-volume-tools-learner.pdf",
+   "pages": 11,
+   "flags": null
+  },
+  {
+   "file": "ch14-fibonacci-answers.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch14-fibonacci-learner.pdf",
+   "pages": 8,
+   "flags": null
+  },
+  {
+   "file": "ch15-relative-strength-answers.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch15-relative-strength-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch16-breadth-answers.pdf",
+   "pages": 12,
+   "flags": null
+  },
+  {
+   "file": "ch16-breadth-learner.pdf",
+   "pages": 11,
+   "flags": null
+  },
+  {
+   "file": "ch17-multi-timeframe-answers.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch17-multi-timeframe-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch18-events-answers.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch18-events-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch19-market-microstructure-answers.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch19-market-microstructure-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch20-risk-sizing-answers.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch20-risk-sizing-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch21-trade-plans-answers.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch21-trade-plans-learner.pdf",
+   "pages": 9,
+   "flags": null
+  },
+  {
+   "file": "ch22-psychology-answers.pdf",
+   "pages": 13,
+   "flags": null
+  },
+  {
+   "file": "ch22-psychology-learner.pdf",
+   "pages": 13,
+   "flags": null
+  },
+  {
+   "file": "ch23-journaling-answers.pdf",
+   "pages": 11,
+   "flags": null
+  },
+  {
+   "file": "ch23-journaling-learner.pdf",
+   "pages": 10,
+   "flags": null
+  },
+  {
+   "file": "ch24-testing-answers.pdf",
+   "pages": 19,
+   "flags": null
+  },
+  {
+   "file": "ch24-testing-learner.pdf",
+   "pages": 18,
+   "flags": null
+  },
+  {
+   "file": "ch25-statistics-answers.pdf",
+   "pages": 19,
+   "flags": null
+  },
+  {
+   "file": "ch25-statistics-learner.pdf",
+   "pages": 18,
+   "flags": null
+  },
+  {
+   "file": "ch26-system-design-answers.pdf",
+   "pages": 32,
+   "flags": null
+  },
+  {
+   "file": "ch26-system-design-learner.pdf",
+   "pages": 31,
+   "flags": null
+  },
+  {
+   "file": "ch27-classical-frameworks-answers.pdf",
+   "pages": 19,
+   "flags": null
+  },
+  {
+   "file": "ch27-classical-frameworks-learner.pdf",
+   "pages": 18,
+   "flags": null
+  },
+  {
+   "file": "ch28-case-studies-answers.pdf",
+   "pages": 37,
+   "flags": null
+  },
+  {
+   "file": "ch28-case-studies-learner.pdf",
+   "pages": 35,
+   "flags": null
+  },
+  {
+   "file": "part-advanced-answers.pdf",
+   "pages": 3,
+   "flags": null
+  },
+  {
+   "file": "part-advanced-learner.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-context-answers.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-context-learner.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-foundations-answers.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-foundations-learner.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-indicators-answers.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-indicators-learner.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-price-action-answers.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-price-action-learner.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-risk-answers.pdf",
+   "pages": 2,
+   "flags": null
+  },
+  {
+   "file": "part-risk-learner.pdf",
+   "pages": 2,
+   "flags": null
+  }
+ ]
+}

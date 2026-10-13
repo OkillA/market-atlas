@@ -179,3 +179,5 @@ PUB7-011 and RELEASE1-001–003 are verified and archived with full findings, di
 ## Native print slice — claude-code-print, 2026-10-13
 
 At the user's request, took the ROAD-004 Chapter 7–8 learner/answer slice. PRINT1-001 (multi-panel figures shrunk to 30–99% in print) and PRINT1-002 (split headings/stranded labels) were found in actual native exports, fixed in the reader print path only and archived with verification. Four current native PDFs are retained; the Chapter 6 pair is superseded by the layout change. The agent cannot operate the modal print dialog, so the user completed each Save as PDF. CA1-026 remains deferred. Changes are local and unpushed.
+
+A follow-up headless print sweep of all 28 chapters and six part reviews (non-native, [record](release-readiness-assets/headless-print-sweep.json)) found PRINT1-003: part-review solutions could not be printed. It is fixed and archived. No other print defects were flagged.

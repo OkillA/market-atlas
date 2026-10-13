@@ -1965,3 +1965,19 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: Added `h1,h2,h3{break-inside:avoid}` and `.worked-example>.eyebrow,.quiz>.eyebrow{break-after:avoid}` to print CSS.
 - Verification: Native re-exports: the Chapter 7 learner heading is intact on page 9; the Chapter 8 learner/answer eyebrow is on page 23 with its heading. All pages of all four current PDFs were checked for split headings and stranded labels. The Chapter 7 answer edition was printed before these two rules and has no split heading or stranded label on any page.
 - Scope / evidence: As PRINT1-001.
+
+### PRINT1-003 — Part-review worked solutions cannot be printed
+- Priority / type: P2 / defect (instructional material lost in print)
+- Status: resolved
+- Owner: claude-code-print, 2026-10-13
+- Reviewer / date: claude-code-print / 2026-10-13
+- Location: app.js renderPractice; styles.css print `.solution{display:none!important}`; all six part reviews (18 tasks, 31 solution paragraphs).
+- Finding and evidence: The headless print sweep printed every part review as 1–2 pages with questions only. Part reviews had no print controls and no answer edition. The print CSS hides `.solution` unless `body.print-answers` is set, and a closed `<details>` does not print its contents even when shown, so a reader could not print part-review solutions at all, even after opening them.
+- Proposed resolution: Give part reviews the chapters' two-edition print controls and open the solution disclosures for the solution edition only.
+- Acceptance criteria: Task edition prints every question without solutions; solution edition prints every worked solution; the reader's own open/closed state and edition class are restored after printing.
+- Discussion / progress: None.
+- Disposition: resolved
+- Closed by / date: claude-code-print / 2026-10-13
+- Resolution: Added "Print tasks" / "Print with solutions" buttons and a print-only edition line. Before printing the solution edition, onbeforeprint opens the solution disclosures; onafterprint restores each one's previous state and resets the class and label. Cache key bumped.
+- Verification: Headless Chrome, all six part reviews in both editions: the 31 authoring solution paragraphs all appear in the solution editions and none in the task editions. A preview state check after a simulated print: a reader-opened solution stayed open, the others closed again, and the class and label were reset. On-screen buttons render at 1280px. `npm run check`, `check:figures`, `check:reviews` pass. A native printer export of a part review is still pending in ROAD-004.
+- Scope / evidence: [headless-print-sweep.json](release-readiness-assets/headless-print-sweep.json).
