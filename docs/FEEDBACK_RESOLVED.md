@@ -2013,3 +2013,19 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Resolution: Both selectors changed to `.glossary-item>a`.
 - Verification: Native preview: term links compute 24px, green (rgb 35,77,61); "Read in context" links 13px, same green. A screenshot was viewed at 1280px; the longest term wraps without overflow at 320px (max heading height 55px). A pre-existing defect, not a regression from QA1-001.
 - Scope / evidence: As QA1-001.
+
+### QA1-003 — "A worked example" label renders at 8px in every chapter
+- Priority / type: P3 / defect (legibility)
+- Status: resolved
+- Owner: claude-code-qa, 2026-10-13
+- Reviewer / date: claude-code-qa / 2026-10-13
+- Location: styles.css `.worked-example .eyebrow{font-size:8px}`; the worked-example section of all 28 chapters.
+- Finding and evidence: The text-size audit (headless Chrome, all 41 routes, both themes, disclosures open) found that the only content text under 10px was the 28 "A WORKED EXAMPLE" labels, at 8px. An earlier legibility fix had raised `.eyebrow` to 11px in a top-level rule, but the older and more specific `.worked-example .eyebrow` rule kept this label at 8px, below every other section label ("Guided practice", "Check your understanding" and "In this chapter" are all 11px).
+- Proposed resolution: Include `.worked-example .eyebrow` in the existing top-level 11px label rule.
+- Acceptance criteria: The label computes at 11px like the other section labels, with no new print defects.
+- Discussion / progress: None.
+- Disposition: resolved
+- Closed by / date: claude-code-qa / 2026-10-13
+- Resolution: Added `.worked-example .eyebrow` to the top-level `.reading-aside>strong,.figure-kicker,.eyebrow,…{font-size:11px}` rule. The change first went into a lookalike rule inside `@media(max-width:760px)`; it was moved after the native check showed no effect at 1280px. Cache key bumped.
+- Verification: Native preview at 1280px: the label computes 11px / 0.6px letter-spacing, matching the chapter-contents label in a viewed screenshot of Chapter 12. Contrast re-audit: 0 WCAG 1.4.3 failures in either theme, and no content text under 11px. The only remaining 10px text is sidebar/footer chrome ("THE BOOK", part numbers, "Saved in this browser"). Headless print re-sweep: see the slice record. The full check suite (13 commands) passes.
+- Scope / evidence: [wide-zoom-file-a11y-checks.json](release-readiness-assets/wide-zoom-file-a11y-checks.json), [contrast.mjs](release-readiness-assets/contrast.mjs), [qa-final-checks.json](release-readiness-assets/qa-final-checks.json).

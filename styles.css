@@ -22,7 +22,7 @@
 .topbar{position:sticky;top:0;z-index:20;background:var(--paper)}
 .topbar-right{min-width:0}.topbar-right button{padding:6px 9px;font-size:13px}
 .reading-aside{top:95px;max-height:calc(100vh - 115px);overflow-y:auto;padding-right:8px}
-.reading-aside>strong,.figure-kicker,.eyebrow,.takeaway span{font-size:11px;letter-spacing:.6px}
+.reading-aside>strong,.figure-kicker,.eyebrow,.worked-example .eyebrow,.takeaway span{font-size:11px;letter-spacing:.6px}
 .reading-aside a,.reading-aside .aside-note,.article-meta,.article-tools button,.article-tools a,.chapter-row p,.chapter-row .chapter-status,.chapter-end a,.related,.sources a,.sources li,.sources small,.note-box>small,.search-result small,.review-state,.glossary-item>a,.glossary-toolbar>span{font-size:13px}
 .figure-panel figcaption,.figure-title,.data-table,.legend,.glossary-item p,.quiz-options button,.quiz-feedback,.quiz>p,.exercise p,.risk-warning,.range-row label,.field{font-size:14px}
 .eyebrow,.level,.edition,.part-card-footer{font-size:11px;letter-spacing:.5px}

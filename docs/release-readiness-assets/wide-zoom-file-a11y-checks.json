@@ -1,7 +1,7 @@
 {
  "date": "2026-10-13",
  "checkedBy": "claude-code-qa",
- "build": "app.js?v=20261013-qa1, styles.css?v=20261013-qa2 (content/book.js and figure-renderer.js unchanged)",
+ "build": "app.js?v=20261013-qa1, styles.css?v=20261013-qa4 (content/book.js and figure-renderer.js unchanged)",
  "nativeWideAndZoom": {
   "platform": "T3 Code native collaborative preview (Electron/Chromium, macOS), top-level freeform viewports",
   "method": "All 41 routes (home, contents, glossary, evidence, about, notebook, lab, 28 chapters, 6 part reviews) via hash navigation; document overflow, content elements past the right edge, figure SVG count/width, h1 presence, script errors.",
@@ -88,20 +88,67 @@
   ],
   "foundAndFixed": [
    "QA1-001 glossary h1->h3 heading skip",
-   "QA1-002 glossary term headings rendered at 13px"
+   "QA1-002 glossary term headings rendered at 13px",
+   "QA1-003 'A worked example' label at 8px"
   ],
   "script": "docs/release-readiness-assets/a11y.mjs"
  },
  "preflight": {
-  "zipSha256": "1893b28f8a1c3d5c7a4e4d9b2321b195e09308716d03eb6315c5d64fe412bee6",
+  "zipSha256": "3ece6c2f8f0a8f703f047bd91012a14859460bd0cf96316d87a35b4f08ce3519",
   "twoBuildsMatch": true,
-  "note": "package-preflight.py rerun after the print fixes and QA1 fixes; the bundle now matches current app.js/styles.css/index.html."
+  "note": "package-preflight.py rerun after the print and QA1-001..003 fixes; the bundle matches current app.js/styles.css/index.html."
  },
  "storage": "Original market-atlas-reader-v1 value (524 bytes) backed up before QA and restored byte-for-byte from a non-app same-origin page (favicon.svg).",
  "limits": [
   "file:// and the accessibility-tree audit used headless Chrome, not the native preview (which accepts only http(s) URLs).",
   "No screen-reader session (VoiceOver/NVDA): the audit checks names, roles, headings, landmarks, ID references, SVG names and table headers only, not announcement order or usability.",
   "Zoom is emulated by viewport size; no real browser zoom and no Safari/Firefox engine.",
-  "No native printer output; the remaining ROAD-004 print scope is unchanged."
- ]
+  "No native printer output; the remaining ROAD-004 print scope is unchanged.",
+  "The ROAD-004 native PDFs already retained for Chapters 7-8 were exported before QA1-003's 3px label change; headless page counts for Chapters 7-8 are unchanged."
+ ],
+ "contrastAndTextSize": {
+  "engine": "Chrome/155.0.8059.40 headless; computed colours composited over ancestor backgrounds (non-native)",
+  "viewport": "1280x800",
+  "routes": 41,
+  "themes": [
+   "light",
+   "dark"
+  ],
+  "thresholds": "WCAG 1.4.3: 4.5:1, or 3:1 for >=24px or bold >=18.66px; disabled controls excluded; SVG text excluded (covered by figure checks)",
+  "failingStyles": {
+   "light": 0,
+   "dark": 0
+  },
+  "textUnder11px": {
+   "10px .sidebar-label": {
+    "count": 41,
+    "sample": "THE BOOK"
+   },
+   "10px span": {
+    "count": 576,
+    "sample": "01\u201406"
+   },
+   "10px small": {
+    "count": 41,
+    "sample": "Saved in this browser"
+   },
+   "10px .footer-dot": {
+    "count": 41,
+    "sample": "\u00b7"
+   }
+  },
+  "note": "Remaining text under 11px is sidebar/footer chrome only (10px). QA1-003 raised the 28 'A worked example' labels from 8px to 11px.",
+  "script": "docs/release-readiness-assets/contrast.mjs"
+ },
+ "headlessPrintResweep": {
+  "engine": "Headless Chrome Page.printToPDF via sweep.mjs + analyze.py (non-native)",
+  "after": "QA1-001..003 CSS",
+  "chapterPdfs": 56,
+  "strandedLabels": 0,
+  "emptyPages": 0,
+  "answerLeakage": 0,
+  "answerEditionsWithQuizAnswer": 28,
+  "pageCountChanges": "Only ch26 answers 32->33; page 33 holds just the trailing related-chapter links (31 words). All other 55 chapter PDFs match the prior sweep's page counts. Part-review files were not compared (the sweep script names them differently from the prior record)."
+ },
+ "checks": "Full suite of 13 commands passes: docs/release-readiness-assets/qa-final-checks.json"
 }

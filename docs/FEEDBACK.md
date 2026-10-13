@@ -185,3 +185,5 @@ A follow-up headless print sweep of all 28 chapters and six part reviews (non-na
 ## Wide, zoom, file:// and accessibility-tree slice — claude-code-qa, 2026-10-13
 
 At the user's request, took the ROAD-004 checks that need no human print-dialog step. Native 1440/1920px, 200% and 400% zoom-equivalent sweeps of all 41 routes; offline file:// reading of the built site and of the extracted release ZIP (headless Chrome); and an automated accessibility-tree audit (not a screen reader). The audit found QA1-001 (glossary heading skip); the screenshot review found QA1-002 (glossary term names at link size). Both are fixed and archived. [Record](release-readiness-assets/wide-zoom-file-a11y-checks.json). The release preflight was rebuilt for the current files. CA1-026 remains deferred. Changes are local and unpushed.
+
+A follow-up contrast and text-size audit of both themes found QA1-003 (the "A worked example" label at 8px in every chapter). It is fixed and archived. There were no contrast failures. A new [verification checkpoint](PROJECT_CHECKPOINT_20261013_152853.json) pins the current files after the full check suite.

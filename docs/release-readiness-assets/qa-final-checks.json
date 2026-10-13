@@ -1,0 +1,67 @@
+[
+  {
+    "command": "node scripts/verify-early-chapters.cjs",
+    "exitCode": 0,
+    "output": "Early-chapter arithmetic verified: 617 comparisons; chapters 1–19 and first four part reviews.\n"
+  },
+  {
+    "command": "node scripts/verify-revision.cjs",
+    "exitCode": 0,
+    "output": "Verified chapters 20–28: arithmetic, tables, modeled cash/R, cost paths, statistics, Atlas-20 allocation/ledger, framework constraints, case branches and six cumulative tasks. Figures have finite geometry at 300/760px. Visual inspection remains a separate step.\n"
+  },
+  {
+    "command": "node scripts/verify-historical.cjs",
+    "exitCode": 0,
+    "output": "Historical gallery verified: source hashes/OHLC, all 36 fixed windows, exact means/levels/clock, four first representatives, tables/figures, and separately selected sequence diagnostic.\n"
+  },
+  {
+    "command": "npm run check",
+    "exitCode": 0,
+    "output": "     │ 1555  │ 8        │ 4       │\n│ 9       │ 'moving-averages'       │ 1034  │ 7        │ 4       │\n│ 10      │ 'momentum'              │ 1196  │ 7        │ 7       │\n│ 11      │ 'volatility'            │ 1026  │ 6        │ 3       │\n│ 12      │ 'volume-tools'          │ 975   │ 6        │ 3       │\n│ 13      │ 'fibonacci'             │ 1006  │ 6        │ 1       │\n│ 14      │ 'relative-strength'     │ 1063  │ 7        │ 3       │\n│ 15      │ 'breadth'               │ 1014  │ 6        │ 1       │\n│ 16      │ 'multi-timeframe'       │ 1013  │ 6        │ 1       │\n│ 17      │ 'events'                │ 1113  │ 6        │ 5       │\n│ 18      │ 'market-microstructure' │ 1131  │ 6        │ 6       │\n│ 19      │ 'risk-sizing'           │ 1382  │ 7        │ 1       │\n│ 20      │ 'trade-plans'           │ 1415  │ 6        │ 1       │\n│ 21      │ 'psychology'            │ 1541  │ 9        │ 2       │\n│ 22      │ 'journaling'            │ 1275  │ 8        │ 1       │\n│ 23      │ 'testing'               │ 2930  │ 9        │ 4       │\n│ 24      │ 'statistics'            │ 2505  │ 9        │ 8       │\n│ 25      │ 'system-design'         │ 3201  │ 12       │ 3       │\n│ 26      │ 'classical-frameworks'  │ 2730  │ 6        │ 9       │\n│ 27      │ 'case-studies'          │ 3757  │ 17       │ 8       │\n└─────────┴─────────────────────────┴───────┴──────────┴─────────┘\nPassed: 28 readable chapters, 42,211 prose words, 105 glossary terms. All chapter, source, and figure references are valid.\n"
+  },
+  {
+    "command": "node scripts/check-content.cjs --strict-revision",
+    "exitCode": 0,
+    "output": "     │ 1555  │ 8        │ 4       │\n│ 9       │ 'moving-averages'       │ 1034  │ 7        │ 4       │\n│ 10      │ 'momentum'              │ 1196  │ 7        │ 7       │\n│ 11      │ 'volatility'            │ 1026  │ 6        │ 3       │\n│ 12      │ 'volume-tools'          │ 975   │ 6        │ 3       │\n│ 13      │ 'fibonacci'             │ 1006  │ 6        │ 1       │\n│ 14      │ 'relative-strength'     │ 1063  │ 7        │ 3       │\n│ 15      │ 'breadth'               │ 1014  │ 6        │ 1       │\n│ 16      │ 'multi-timeframe'       │ 1013  │ 6        │ 1       │\n│ 17      │ 'events'                │ 1113  │ 6        │ 5       │\n│ 18      │ 'market-microstructure' │ 1131  │ 6        │ 6       │\n│ 19      │ 'risk-sizing'           │ 1382  │ 7        │ 1       │\n│ 20      │ 'trade-plans'           │ 1415  │ 6        │ 1       │\n│ 21      │ 'psychology'            │ 1541  │ 9        │ 2       │\n│ 22      │ 'journaling'            │ 1275  │ 8        │ 1       │\n│ 23      │ 'testing'               │ 2930  │ 9        │ 4       │\n│ 24      │ 'statistics'            │ 2505  │ 9        │ 8       │\n│ 25      │ 'system-design'         │ 3201  │ 12       │ 3       │\n│ 26      │ 'classical-frameworks'  │ 2730  │ 6        │ 9       │\n│ 27      │ 'case-studies'          │ 3757  │ 17       │ 8       │\n└─────────┴─────────────────────────┴───────┴──────────┴─────────┘\nPassed: 28 readable chapters, 42,211 prose words, 105 glossary terms. All chapter, source, and figure references are valid.\n"
+  },
+  {
+    "command": "npm run check:figures",
+    "exitCode": 0,
+    "output": "\n> market-atlas@0.4.1-alpha.1 check:figures\n> node scripts/verify-figures.cjs\n\n{\"renders\":364,\"markers\":556,\"obscuredMarkers\":0,\"barRenders\":24,\"barsOutsidePlot\":0,\"integerTickRenders\":12,\"badIntegerTicks\":0,\"wideRendersHidingData\":0,\"compactRendersOverLimit\":0,\"maxCompactSeriesPercent\":3.85}\n"
+  },
+  {
+    "command": "npm run check:reviews",
+    "exitCode": 0,
+    "output": "\n> market-atlas@0.4.1-alpha.1 check:reviews\n> node scripts/verify-review-metadata.cjs\n\n[{\"test\":\"baseline\",\"comparedOutputs\":74,\"reviewed\":28,\"passed\":true},{\"test\":\"prose\",\"targetStatus\":\"draft\",\"reasons\":[\"Chapter or linked source changed\"],\"passed\":true},{\"test\":\"source\",\"targetStatus\":\"draft\",\"reasons\":[\"Chapter or linked source changed\"],\"passed\":true},{\"test\":\"renderer\",\"targetStatus\":\"draft\",\"reasons\":[\"Figure renderer changed\"],\"passed\":true},{\"test\":\"missing-review\",\"targetStatus\":\"draft\",\"reasons\":[\"No accepted review recorded\"],\"passed\":true}]\n"
+  },
+  {
+    "command": "node --check app.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check scripts/build-content.cjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "python3 -I docs/publication-batch7-assets/classical-frameworks-reproduce.py",
+    "exitCode": 0,
+    "output": "classical-frameworks reproduction: 114 numeric, 141 text, 107 structural = 362 comparisons\nmismatches: 0\n"
+  },
+  {
+    "command": "python3 -I docs/publication-batch7-assets/part6-reproduce.py",
+    "exitCode": 0,
+    "output": "Part 6 reproduction: 46 exact numeric comparisons, 95 text checks, 28 structural checks; 0 mismatches.\nObservations (not arithmetic errors): 1\n  - T2 prompt states no whole-share rounding for the allowances and no reservation formula (shares x limit + $2.50); both come only from Ch26.\n"
+  },
+  {
+    "command": "node --check figure-renderer.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "python3 -I docs/release-readiness-assets/package-preflight.py",
+    "exitCode": 0,
+    "output": "{\"files\": 7, \"twoBuildsMatch\": true, \"zipIntegrity\": true, \"published\": false}\n"
+  }
+]
