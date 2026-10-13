@@ -1,8 +1,8 @@
 # Project status
 
-Updated **2026-10-11** by `/root` after publication batch 6. This is the current project tracker. [The roadmap](EDITORIAL_ROADMAP.md) owns the remaining work and its completion criteria; [the feedback queue](FEEDBACK.md) owns actionable review findings; [the resolution history](FEEDBACK_RESOLVED.md) preserves their evidence. Dated completion reports describe their own snapshots.
+Updated **2026-10-12** by `/root` after publication batch 7. This is the current project tracker. [The roadmap](EDITORIAL_ROADMAP.md) owns the remaining work and its completion criteria; [the feedback queue](FEEDBACK.md) owns actionable review findings; [the resolution history](FEEDBACK_RESOLVED.md) preserves their evidence. Dated completion reports describe their own snapshots.
 
-**Where we are:** the complete revised draft is available for local reading and as a public alpha at https://okilla.github.io/market-atlas/. The major recorded content and interface findings are resolved. Twenty-three of 28 chapters and Parts 1–5 have current editorial acceptance; 5 chapters and one part review remain pending. Release QA and human reader validation have not been completed. Work can continue while readers are unavailable.
+**Where we are:** the complete revised draft is available for local reading and as a public alpha at https://okilla.github.io/market-atlas/. The major recorded content and interface findings are resolved. All 28 chapters and all six part reviews have current scoped editorial acceptance. Source/rights review, shipping metadata and the reviewed release remain pending. Release QA and human reader validation have not been completed. Work can continue while readers are unavailable.
 
 ## Current inventory
 
@@ -10,16 +10,16 @@ Updated **2026-10-11** by `/root` after publication batch 6. This is the current
 | --- | --- |
 | Browser book and standalone manuscript | Edition 0.4; all 28 chapters remain labelled draft |
 | Structure | Six parts; 210 narrative sections |
-| Section prose | 41,241 words; excludes examples, practice, quizzes and research appendix |
-| Practice | 28 chapter exercise solutions; 65 graded chapter tasks; six cumulative reviews with 18 tasks |
+| Section prose | 42,120 words; excludes examples, practice, quizzes and research appendix |
+| Practice | 28 chapter exercise solutions; 66 graded chapter tasks; six cumulative reviews with 18 tasks |
 | Illustrations | 71 portable SVGs generated from shared figure specifications |
 | Attempt packets | Seven: Chapters 6–9, 22, 26 and 28; Chapter 26 is an accounting replay |
-| Reference and evidence | 105 glossary terms; 73 source entries; eight research-appendix sections |
+| Reference and evidence | 105 glossary terms; 74 source entries; eight research-appendix sections |
 | Historical gallery | 36 fixed AAPL/MSFT/SPY windows, with documented archive/selection limitations |
 | Human validation | Packet prepared; zero participants and zero observations |
 | Public release | Alpha draft 0.4.0-alpha.1 deployed 2026-10-11 to GitHub Pages from OkillA/market-atlas ([release notes](RELEASE_ALPHA.md)); reviewed edition pending |
 
-Run `npm run status` for a fresh read-only inventory and comparison with [the verification checkpoint](PROJECT_CHECKPOINT_20261012_021708.json). The numbers above belong to the dated checkpoint; update them after substantive changes. Matching hashes show that checked files have not changed, rather than establishing new factual or publication approval.
+Run `npm run status` for a fresh read-only inventory and comparison with [the verification checkpoint](PROJECT_CHECKPOINT_20261013_005053.json). The numbers above belong to the dated checkpoint; update them after substantive changes. Matching hashes show that checked files have not changed, rather than establishing new factual or publication approval.
 
 ## Completed milestones
 
@@ -43,13 +43,14 @@ Run `npm run status` for a fresh read-only inventory and comparison with [the ve
 | Public alpha | Deployed | [Release notes](RELEASE_ALPHA.md); GitHub Pages workflow reruns all verifiers/checks before each deploy |
 | Publication review batch 5 | Complete for five chapters and Part 4 | [Chapters 15–19 and cumulative review](PUBLICATION_BATCH5_20261011.md); PUB5-001–011 resolved; PUB5-012/013 residuals subsequently resolved in the renderer batch |
 | Illustration renderer correction batch | Complete for three recorded findings | [Renderer batch](RENDERER_BATCH_20261011.md); ALPHA1-001, PUB5-012 and PUB5-013 resolved; changed accepted figures rechecked, Chapter 16/Part 4 re-accepted for a count-axis option |
-| Publication review batch 6 | Complete for two chapters and Part 5 | [Chapters 22–23 and cumulative review](PUBLICATION_BATCH6_20261011.md); reopened CA1-015 and PUB6-001 resolved; current totals 23/28 chapters and 5/6 part reviews |
+| Publication review batch 6 | Complete for two chapters and Part 5 | [Chapters 22–23 and cumulative review](PUBLICATION_BATCH6_20261011.md); reopened CA1-015 and PUB6-001 resolved; then totals 23/28 chapters and 5/6 part reviews |
+| Publication review batch 7 | Complete for five chapters and Part 6, plus dependency rechecks | [Chapters 24–28 and cumulative review](PUBLICATION_BATCH7_20261012.md); AUD2-002 reopening and PUB7-001–010 resolved; all 28 chapters and six part reviews accepted. PUB7-011 remains a deferred literature recommendation |
 
 ## Work remaining
 
 | Work ID | Status | Owner | Next concrete action |
 | --- | --- | --- | --- |
-| ROAD-002: chapter publication acceptance | Ready; 23/28 chapters and 5/6 part reviews accepted | Unassigned | Review Chapters 24–28 and Part 6; record current fingerprints and substantive evidence |
+| ROAD-002: chapter publication acceptance | Done; 28/28 chapters and 6/6 part reviews accepted | /root, 2026-10-12 | [Batch 7](PUBLICATION_BATCH7_20261012.md) records the final acceptance and dependency rechecks; later changes must recheck affected reviews |
 | ROAD-003: source access and data-rights review | Ready | Unassigned | Inventory every source URL and historical reuse/convention record; distinguish retrieval failure from unsupported claims |
 | ROAD-004: native browser and print release QA | Ready | Unassigned | Extend existing QA with native printer checks for all seven packets and both print policies; retain actual output and report coverage gaps |
 | ROAD-005: human reader validation / CA1-026 | Deferred: participants unavailable | /root, preparation only; session facilitator unassigned | Resume the prepared protocol when actual target readers are available; record observations, revisions and rechecks |
@@ -60,15 +61,15 @@ The [roadmap](EDITORIAL_ROADMAP.md) records dependencies and exit criteria for t
 
 ## Verification at this checkpoint
 
-All three documented numerical verifiers, normal/strict content checks, the figure regression gate and twenty JavaScript syntax checks passed on 2026-10-11 after batch 6's coordinated rebuilds. The early verifier reports **617 comparisons**. Batch 6 independently reproduces **117 exact numeric comparisons**, plus 38 text and 25 structural checks, with zero mismatches. An isolated build matches **all 74 generated outputs byte for byte**.
+All three documented numerical verifiers, normal/strict content checks and the figure regression gate pass on 2026-10-12 after the batch-7 completion rebuild. The early verifier reports **617 comparisons**; all six inherited batch-7 reproduction scripts pass **3,885 comparisons with zero mismatches** on final compiled content. An isolated build matches **all 74 generated outputs byte for byte**.
 
-[Batch 6](PUBLICATION_BATCH6_20261011.md) accepts Chapters 22–23 and Part 5 after full editorial review, eleven scoped source-passage checks over four URLs, eight final portable figure rasters and nine browser route checks. The browser coverage is native top-level 1280/390px plus 320px child frames; text/table inputs, solution staging, quiz feedback and light/dark geometry pass. Actual print CSS/callbacks preserve inputs and apply the learner/answer solution policy; native printer pagination remains unverified. Final browser screenshot capture failed, so the final figure evidence is explicitly Quick Look SVG rasters.
+[Batch 7](PUBLICATION_BATCH7_20261012.md) accepts Chapters 24–28 and Part 6 after final prose/definition/timing review against inherited full-review/source records, actual compact/wide figure inspection and native reader checks. The 85 inherited source checks are reconciled to final wording with their original access methods/dates and retrieval limits preserved; this completion does not claim new network retrieval or a full rights audit.
 
-Only `psychology.svg` changes in this batch; the other 70 exported SVGs are unchanged from the renderer checkpoint. Its fixed-dollar path label coverage falls from 44–45% compact / 14.30% wide to zero. The fresh journal task and complete Part 5 fill/cancellation/review inputs are rebuilt into the reader and manuscript. The section-prose inventory stays 41,241 words because the new task lives in practice, not narrative sections.
+Final evidence includes 42 distinct figures at 260/760px, with six dense Chapter 8 panels also inspected separately. All 21 renderer-changed figures in 17 earlier accepted chapters are rechecked; Chapters 6–8 whitespace and Chapter 10 shared study-version locator are re-accepted. Parts 2–3 are re-accepted for their changed constituents; the first-five part tasks and compiled glossary remain byte-identical to the baseline. All other earlier chapter fingerprints and Parts 1/4/5 remain unchanged. The complete batch changes 28 exported SVGs from batch 6.
 
-The [current checkpoint](PROJECT_CHECKPOINT_20261012_021708.json) pins Chapters 22/23 and Part 5 at their accepted fingerprints, current shared dependencies and outputs. All 21 earlier accepted chapters and Parts 1–4 retain their fingerprints. Earlier checkpoints remain immutable history; the checkpoint filename uses UTC and the review date uses America/New_York.
+Native top-level 320/390/1280px checks cover all five chapters and Part 6: 18 route cases, complete text/table inputs, initially concealed solutions/continuations, quiz feedback and light/dark geometry pass. A native fixture survey finds no clipped SVG text in 568 renders of all 71 figure specifications at four widths and both palettes. The hidden-data gate permits compact residuals up to 5% (current maximum per-series 3.85%); zero wide violations and zero covered markers/escaped bars are reported. Two focused native Enter presses and actual print CSS/callback display-policy checks pass. Snapshot capture failed, and native printer output/pagination remain unverified; actual visual evidence is Quick Look SVG rasters.
 
-Chapters 24–28/Part 6, source/rights release review, broader release/browser/printer QA, metadata and human learning remain pending. CA1-026 is the only active feedback finding and remains deferred for actual reader participation. Batch 6 changes are local and unpushed.
+The [current checkpoint](PROJECT_CHECKPOINT_20261013_005053.json) pins all accepted chapter/part fingerprints, current shared dependencies and outputs. Earlier checkpoints remain immutable history; the filename uses UTC and the review date uses America/New_York. ROAD-002 is complete for scoped editorial acceptance. ROAD-003 source/rights release review, ROAD-004 broader browser/printer QA, ROAD-006 metadata and ROAD-007 reviewed release remain pending. CA1-026 and PUB7-011 are the two active deferred findings. Batch 7 changes are local and unpushed.
 
 ## Keeping this tracker useful
 

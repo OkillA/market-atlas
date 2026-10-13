@@ -1,0 +1,38 @@
+[
+  {
+    "script": "testing",
+    "exitCode": 0,
+    "stdout": "Chapter 24 `testing` reproduction: 311 numeric, 170 text, 35 structural comparisons; 0 mismatches.\nTotals: shares 854, gross $91.15, costs A/B/C $24.00/$58.16/$109.40, sum net R gross/A/B/C [0.9, 0.66, 0.32, -0.2], flat BE 7.5958, per-share BE 0.07863, half-spread BE 0.05337\nOBSERVATION Day-S high ($50.90) coincides with the entry ceiling ($50.90); Implementation D's channel and the ceiling share one number.\n",
+    "stderr": ""
+  },
+  {
+    "script": "statistics",
+    "exitCode": 0,
+    "stdout": "numeric comparisons: 459, text checks: 256, structural checks: 169\nhard mismatches: 0\ndisplayed-chain mismatches: 0\nnotes:\n   {'id': 't-quantiles', 't975_19': '2.093024', 't975_4': '2.776445'}\n   {'id': 'gross-formula-scratch', 'correct_loss_rate_7_of_20': '0.3525', 'wrong_loss_rate_0.40': '0.2975'}\n   {'id': 'doubling-claim', 'ending_equity_at_200_per_R': '21210', 'recorded_mdd_dollars': '680', 'recorded_mdd_pct': '3.312', 'losses_first_mdd_dollars': '1620', 'losses_first_mdd_pct': '8.100', 'comment': 'dollar P&L and drawdowns double; equity levels (20,605 -> 21,210) do not; recorded % drawdown 1.68 -> 3.31 (< 2x)'}\n   {'id': 'worst-ordering', 'sum_losses_dollars': '810', 'losses_first_is_worst_possible': 'True'}\n   {'id': 'leave-one-out-share', 'drop_win_share': '0.2866', 'drop_gap_share': '0.4615'}\n   {'id': 'sd-reproduction', 'sum_sq_dev': '260099/8000', 'sample_var_n_minus_1': '1.711178', 'sample_sd': '1.30812', 'sample_se': '0.29250', 'population_sd_n': '1.27500', 'population_se': '0.28510', 't_statistic_mean_over_se': '1.0342', 't19_95pct_interval': ['-0.3097', '0.9147']}\n   {'id': 'wilson-5dp-chain', 'lower': '38.66', 'upper': '78.12'}\n   {'id': 'half-up-dependence', 'series': 1, 'point': 1, 'exact': '-0.525', 'shown': -0.53}\n   {'id': 'half-up-dependence', 'series': 1, 'point': 3, 'exact': '-2.225', 'shown': -2.23}\n   {'id': 'half-up-dependence', 'series': 1, 'point': 7, 'exact': '-3.525', 'shown': -3.53}\n   {'id': 'half-up-dependence', 'series': 1, 'point': 11, 'exact': '-1.825', 'shown': -1.83}\n   {'id': 'half-up-dependence', 'running_mean_n': 20, 'exact': '0.3025', 'shown': 0.303}\n",
+    "stderr": ""
+  },
+  {
+    "script": "system-design",
+    "exitCode": 0,
+    "stdout": "Chapter 26 system-design independent reproduction\n  numeric comparisons:    538\n  text comparisons:       40\n  structural comparisons: 679\n  total:                  1257\n  mismatches:             0\nINFORMATIONAL (rule-derived checks / counterfactuals):\n   * Screen-log completeness: 3 determinable unheld stock/decision-close pairs checked; unlisted signals: none.\n   * Counterfactuals (informational): no cap -> final equity 100,700.80 (\u221238.42; Cedar D2 order 235); target-first -> 101,447.72 (+708.50); touch-fill -> not priceable (Hazel S4 bar absent).\n",
+    "stderr": ""
+  },
+  {
+    "script": "classical-frameworks",
+    "exitCode": 0,
+    "stdout": "classical-frameworks reproduction: 114 numeric, 141 text, 107 structural = 362 comparisons\nmismatches: 0\n",
+    "stderr": ""
+  },
+  {
+    "script": "case-studies",
+    "exitCode": 0,
+    "stdout": "Chapter 28 case-studies reproduction: 351 numeric, 232 text, 114 structural = 697 comparisons\nMismatches: 0\nReview findings asserted against current text: 10\n  NOT PRESENT CS28-MIXD2: revised MIXD: prior daily close $50.30 is strictly above the frozen $50 boundary, so M1 would already have triggered a next-opening order at M0 -- Use completed weekly closes that stay at or below $50 (e.g. $48.90 and $49.90, M0 close $49.70 down from $49.90), or state the boundary was frozen only after the M-1 close.\n  NOT PRESENT CS28-MIXD2: section 6 still lists MIXD as a \"conflict\" path after the revision says it receives no conflict label -- sections[6].paragraphs[1]: \"follow-through, ordinary loss, gap, skip, conflict and recovery paths\".\n  NOT PRESENT CS28-RESID: RIVR table row still reads \"freeze R1 entry ceiling 31\" (session label next to the renamed RR1 rule) -- Suggest \"R1 close: recovery trigger; freeze R2 entry ceiling 31\".\n  DEMONSTRATED CS28-GME-stage (declined): figure containing Jan 26-28 values is placed after the Jan-13 section that says January 27 is hidden -- Panels 2-3 show 347.51/193.60/483 before section 9 introduces them.\n  NOT PRESENT CS28-RESID: SPY task (d) says the level \"was skipped over between closes\"; the gap is between the April 4 close (200.10) and the April 5 open (198.58) -- Suggest \"the price moved past the level between the April 4 close and the April 5 open, so no in-session crossing occurred\".\n  NOT PRESENT CS28-RESID: SPY task (a) says March 25 \"has no archive row and is not interpolated\" without saying it was the Good Friday market holiday -- March 25, 2016 was Good Friday (Easter was March 27); NYSE was closed, so there is no missing session to interpolate.\n  NOT PRESENT CS28-RESID: practice level \"Transfer\" is the only capitalised/non-standard level value in the book (others: guided/independent) -- Renders as eyebrow \"Transfer practice\" beside \"independent practice\"; pre-existing, not introduced by this revision.\n  NOT PRESENT CS28-RESID: figure 7 caption sentence is garbled: \"the adjusted levels and bar may not span both levels in unadjusted prices\" -- Suggest \"so in unadjusted prices the bar may not have reached the upper level.\"\n  NOT PRESENT CS28-RESID: rc-apple-dividend-2016 is listed in chapter sources but no evidence record cites it -- Add it to the gallery evidence record (or a short historical evidence item) so the strict claim-to-source trail covers the dividend caution.\n  NOT PRESENT CS28-RESID: section 8 now requires \"a complete preceding 20-session OHLC window\" for P1\u2019s long setup; Ch.21 says P1 is \"not a complete twenty-session channel dataset\" (it needs a previously frozen boundary); practice 3 still cites \"a channel variant\" -- Suggest: \"require enough preceding OHLC to map and freeze a range boundary before January 13 (P1\u2019s signal input), a defined event calendar, and an executable next-session opening offer\"; drop \"preceding window for a channel variant\" from practice 3.\n",
+    "stderr": ""
+  },
+  {
+    "script": "part6",
+    "exitCode": 0,
+    "stdout": "Part 6 reproduction: 46 exact numeric comparisons, 95 text checks, 28 structural checks; 0 mismatches.\nObservations (not arithmetic errors): 1\n  - T2 prompt states no whole-share rounding for the allowances and no reservation formula (shares x limit + $2.50); both come only from Ch26.\n",
+    "stderr": ""
+  }
+]

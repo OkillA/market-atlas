@@ -1,0 +1,353 @@
+{
+  "baselineRenderer": "a53df50:figure-renderer.js",
+  "changedFigures": [
+    {
+      "chapter": "market-language",
+      "id": "market-language",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "chart-anatomy",
+      "id": "chart-anatomy-2",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "volume",
+      "id": "volume",
+      "widths": [
+        260,
+        320,
+        390
+      ]
+    },
+    {
+      "chapter": "volume",
+      "id": "volume-2",
+      "widths": [
+        260,
+        320,
+        390
+      ]
+    },
+    {
+      "chapter": "trends",
+      "id": "trends",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "trends",
+      "id": "trends-3",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "support-resistance",
+      "id": "support-resistance",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "chart-patterns",
+      "id": "chart-patterns",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "chart-patterns",
+      "id": "chart-patterns-2",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "chart-patterns",
+      "id": "chart-patterns-3",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "breakouts",
+      "id": "breakouts",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "moving-averages",
+      "id": "moving-averages",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "momentum",
+      "id": "momentum",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "volatility",
+      "id": "volatility-2",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "volume-tools",
+      "id": "volume-tools",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "fibonacci",
+      "id": "fibonacci",
+      "widths": [
+        260,
+        320,
+        390
+      ]
+    },
+    {
+      "chapter": "relative-strength",
+      "id": "relative-strength",
+      "widths": [
+        260,
+        320,
+        390
+      ]
+    },
+    {
+      "chapter": "breadth",
+      "id": "breadth",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "market-microstructure",
+      "id": "market-microstructure-2",
+      "widths": [
+        320,
+        390
+      ]
+    },
+    {
+      "chapter": "risk-sizing",
+      "id": "risk-sizing",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "trade-plans",
+      "id": "trade-plans",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "testing",
+      "id": "testing",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "testing",
+      "id": "testing-3",
+      "widths": [
+        260,
+        320,
+        390
+      ]
+    },
+    {
+      "chapter": "statistics",
+      "id": "statistics",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "statistics",
+      "id": "statistics-2",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "statistics",
+      "id": "statistics-3",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "system-design",
+      "id": "system-design",
+      "widths": [
+        260
+      ]
+    },
+    {
+      "chapter": "system-design",
+      "id": "system-design-3",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "classical-frameworks",
+      "id": "classical-frameworks",
+      "widths": [
+        390
+      ]
+    },
+    {
+      "chapter": "classical-frameworks",
+      "id": "classical-frameworks-2",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "classical-frameworks",
+      "id": "classical-frameworks-3",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "case-studies",
+      "id": "case-studies",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "case-studies",
+      "id": "case-studies-2",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    },
+    {
+      "chapter": "case-studies",
+      "id": "case-studies-3",
+      "widths": [
+        260,
+        320,
+        390,
+        760
+      ]
+    }
+  ],
+  "acceptedFigureCount": 21,
+  "acceptedChapterIds": [
+    "breadth",
+    "breakouts",
+    "chart-anatomy",
+    "chart-patterns",
+    "fibonacci",
+    "market-language",
+    "market-microstructure",
+    "momentum",
+    "moving-averages",
+    "relative-strength",
+    "risk-sizing",
+    "support-resistance",
+    "trade-plans",
+    "trends",
+    "volatility",
+    "volume",
+    "volume-tools"
+  ],
+  "wideSameSpecChanges": 26
+}

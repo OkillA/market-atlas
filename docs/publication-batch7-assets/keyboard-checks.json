@@ -1,0 +1,10 @@
+{
+  "reviewer": "/root",
+  "date": "2026-10-12",
+  "surface": "T3 native top-level preview, 1280x800",
+  "route": "#/chapter/system-design",
+  "method": "DOM focus on inspected summary, followed by native preview_press Enter; DOM state read after each keypress",
+  "continuation": {"initialOpen": false, "summaryFocused": true, "openAfterEnter": true},
+  "firstSolution": {"initialOpen": false, "summaryFocused": true, "openAfterEnter": true},
+  "limits": "Two focused Enter activations; not a keyboard-navigation or accessibility sweep. Snapshot capture failed."
+}

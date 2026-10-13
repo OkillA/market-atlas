@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "answers": false,
+      "choices": 3,
+      "continuationBreak": "page",
+      "id": "system-design",
+      "inputCells": 195,
+      "inputVisible": true,
+      "passes": true,
+      "quizAnswerDisplay": "none",
+      "restored": true,
+      "solutionDisplays": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "width": 1280
+    },
+    {
+      "answers": true,
+      "choices": 3,
+      "continuationBreak": "page",
+      "id": "system-design",
+      "inputCells": 195,
+      "inputVisible": true,
+      "passes": true,
+      "quizAnswerDisplay": "block",
+      "restored": true,
+      "solutionDisplays": [
+        "block",
+        "block",
+        "block",
+        "block"
+      ],
+      "width": 1280
+    },
+    {
+      "answers": false,
+      "choices": 3,
+      "continuationBreak": "page",
+      "id": "case-studies",
+      "inputCells": 140,
+      "inputVisible": true,
+      "passes": true,
+      "quizAnswerDisplay": "none",
+      "restored": true,
+      "solutionDisplays": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "width": 1280
+    },
+    {
+      "answers": true,
+      "choices": 3,
+      "continuationBreak": "page",
+      "id": "case-studies",
+      "inputCells": 140,
+      "inputVisible": true,
+      "passes": true,
+      "quizAnswerDisplay": "block",
+      "restored": true,
+      "solutionDisplays": [
+        "block",
+        "block",
+        "block",
+        "block",
+        "block"
+      ],
+      "width": 1280
+    }
+  ],
+  "method": "actual print CSS/callbacks applied on screen; no native printer output"
+}

@@ -1259,21 +1259,21 @@
             "high": 30.6,
             "low": 29.5,
             "close": 29.8,
-            "label": "R0 breach"
+            "label": "R0"
           },
           {
             "open": 29.9,
             "high": 30.8,
             "low": 29.7,
             "close": 30.6,
-            "label": "R1 signal"
+            "label": "R1"
           },
           {
             "open": 31,
             "high": 32.2,
             "low": 30.8,
             "close": 32,
-            "label": "R2 fill"
+            "label": "R2"
           },
           {
             "open": 32.1,
@@ -1287,7 +1287,7 @@
             "high": 35.2,
             "low": 33.7,
             "close": 34.9,
-            "label": "R4 target"
+            "label": "R4"
           }
         ],
         "annotations": [

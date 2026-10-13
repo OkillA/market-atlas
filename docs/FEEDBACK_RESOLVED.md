@@ -1669,3 +1669,195 @@ Scope: Chapters 15–19 and Part 4. Reviewers: five read-only reviewer agents (o
 - Changed locations: `content/risk-advanced.json`; rebuilt `content/book.js`, `docs/MANUSCRIPT.md`, `docs/EVIDENCE_MATRIX.md` and `assets/figures/psychology.svg`; `index.html` book cache key; `scripts/verify-revision.cjs` now recomputes the new audit and requires the Part 5 execution/cancellation facts.
 - Verification: [Batch 6](PUBLICATION_BATCH6_20261011.md): 117 exact numeric comparisons, 38 text and 25 structural checks on compiled content, zero mismatches; all documented verifiers/checks pass and isolated build matches 74 outputs. Nine browser route checks at native 1280/390px and 320px child-frame widths match all text/table inputs and quiz feedback. Actual print stylesheet display-policy checks retain raw inputs and hide learner solutions. All four compact/wide figures inspected as eight Quick Look rasters; fixed-path label coverage falls from 44–45% compact / 14.30% wide to zero at all four tested widths.
 - Scope / limits: This closes the stated practice/figure issues and accepts Chapters 22–23/Part 5 editorial content. Native print pagination, a complete release/access/rights audit and human learning are separate pending gates. Final browser screenshots failed; the report distinguishes native DOM checks, child-frame coverage and portable rasters. No human observations or independent agent review are claimed.
+
+
+## Publication batch 7 — implementation and handoff completion, 2026-10-12
+
+Original full-read reviewers and implementation: claude-code-pub7, as recorded in PUBLICATION_BATCH7_HANDOFF.md and the read-only review assets. Completion verification/acceptance: /root. Shared evidence: [batch 7 report](PUBLICATION_BATCH7_20261012.md), [final checks](publication-batch7-assets/final-checks.json), [visual review](publication-batch7-assets/visual-review.json), [native browser records](publication-batch7-assets/browser-1280.json) and [final source reconciliation](publication-batch7-assets/source-final-review.json). This completion reruns inherited arithmetic and checks final wording; it does not redate inherited passage inspections or claim new independent agents.
+
+### PUB7-001 — Shared annotation backgrounds hide plotted paths and candle geometry
+- Priority / type: P1 / defect
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: figure-renderer.js; all chart panels, especially Chapters 9, 21, 25 and 28.
+- Finding and evidence: The batch-7 baseline puts opaque labels over line paths, bars and candle bodies/wicks. The inherited measured survey found 31 wide renders with hidden data and 80 compact renders above 5%, including the failed Chapter 9 continuation and up to 51% of a Chapter 25 series. Earlier marker-only gates did not test these properties.
+- Proposed resolution: Place annotation backgrounds against drawn data as well as marker bounds, minimize aggregate coverage, and add a hidden-data regression gate. Inspect affected earlier accepted figures before retaining acceptance.
+- Acceptance criteria: No wide hidden-data violations, no compact coverage above the stated 5% gate, no covered markers or broken teaching geometry; inspect actual compact/wide figures and preserve data values.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 implemented drawn-data maps, candidate scoring and order-aware placement for up to five annotations, and extended verify-figures.cjs. /root inspected the final 42 figure pairs, including every one of the 21 changed accepted-chapter figures, and documented the real 17-chapter dependency scope.
+- Changed locations: figure-renderer.js; all chart panels, especially Chapters 9, 21, 25 and 28; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Final gate: 364 chart-panel renders, zero wide hiding violations, zero compact >5% violations, maximum compact per-series coverage 3.85%; zero covered markers/escaped bars/fractional enabled count ticks. Native 568 light/dark fixture renders have no clipped SVG text. Small compact residuals are permitted, not claimed zero. All 74 isolated generated outputs match.
+- Scope / limits: PUB5-012 (marker placement), PUB6-001 (local hidden path), AUD2-018 (compact clipping) retain their distinct earlier findings. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-002 — Research criteria, cost sensitivity and study timing need explicit support
+- Priority / type: P2 / teaching gap and source support
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: Chapter 24; Chapter 25 study evidence; Chapter 10 shared study locator; research appendix.
+- Finding and evidence: The inherited review found stage-one decisions without explicit decision criteria, an opening-price sizing model liable to look executable, a reused rather than unfamiliar break-even example, ex post wording for ex ante portfolios, and an unsupported October 2011 PDF version date. These concerns are separate from AUD2-002’s holding-clock reopening.
+- Proposed resolution: Freeze decision criteria before evaluation, disclose signal-study sizing, add unfamiliar cost inputs, and align study timing/version description with inspected original passages.
+- Acceptance criteria: Research timeline and Maya’s final decision agree; fresh break-even inputs/answer reproduce; final linked study records distinguish ex ante evaluation and an undated author-hosted manuscript.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 added explicit stage-one and forward-study criteria, opening-price sizing disclosure, and the $975/150 fresh example; corrected ex ante selection and removed unsupported version dating from all affected authoring evidence including Chapter 10. The $50.90 coincidence remains explicitly explained; a candle threshold-line feature was not required to teach the current rule.
+- Changed locations: Chapter 24; Chapter 25 study evidence; Chapter 10 shared study locator; research appendix; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Chapter 24 script passes 516 comparisons. Break-even is $6.50 with net +$225/−$225 at $5/$8 costs; model B is +$32.99. /root read final wording against inherited source reports and inspected the timeline/candles and native data. Chapter 10’s numerical study claim is unchanged; its date/locator metadata is re-accepted. All 74 isolated generated outputs match.
+- Scope / limits: AUD2-002 holding clock archived separately. Passage/access dates and original reviewer attribution remain inherited. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-003 — Statistics calculations and terminology need reproducible intermediate steps
+- Priority / type: P2 / teaching gap
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: Chapter 25 statistics prose, solution, tables and figures; Part 6 account-return term.
+- Finding and evidence: The inherited review found SD/SE reproduction steps missing or rounded imprecisely, ambiguous doubling of account balances, an unstated gross scratch denominator, weak null-model/interval caveats, a total-return term collision and a compact histogram annotation clipping risk.
+- Proposed resolution: Supply sample versus population divisors, Wilson intermediates, gross win/loss/scratch frequencies, precise scaling and null-model caveats, and consistent account-return vocabulary; simplify the compact histogram annotation.
+- Acceptance criteria: Each calculation reproduces from supplied inputs; uncertainty and annualization have explicit model limits; compact/wide figures retain labels and distributions.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 supplied n−1/sample-SD/SE steps, Wilson intermediates, t-multiplier caveat, gross loss-rate example, corrected doubling and p-value prose, renamed account return and removed the redundant histogram gap label. Section reorder and additional optional notes were not necessary to resolve the demonstrated gaps.
+- Changed locations: Chapter 25 statistics prose, solution, tables and figures; Part 6 account-return term; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Chapter 25 reproduction passes 884 comparisons. Sample SD 1.30812R, SE 0.29250R; Wilson 38.66%–78.12%; final net equity $20,605, recorded/losses-first drawdowns 1.68%/4.05%. /root read all current sections and inspected all three compact/wide figures; native tables and answers match. All 74 isolated generated outputs match.
+- Scope / limits: Inherited source formulas remain scoped; this is not a calibrated hypothesis test or evidence of profitable trading. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-004 — Atlas-20 complete screen log omits a rule-derived Alder signal
+- Priority / type: P1 / defect
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: Chapter 26 session-6 Alder bar and screen-log completeness; scripts/atlas20-sim.cjs; scripts/verify-revision.cjs.
+- Finding and evidence: After Alder exits intraday, its former session-6 close would trigger the declared unheld-stock screen while the complete supplied log omitted it. A complete-opportunity claim therefore conflicted with the supplied bar. The batch-7 handoff records this demonstrated contradiction.
+- Proposed resolution: Make the fictional bar consistent with the complete screen log without changing the modeled target exit, and derive determinable unheld signals independently in verification.
+- Acceptance criteria: No rule-derivable unheld signal is unlisted; accounting and listed eligibility, allocations and fills remain unchanged.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 changed Alder’s S6 close to $35.50 in authoring and simulator and added a derived-signal check. The target high/exit remains unchanged.
+- Changed locations: Chapter 26 session-6 Alder bar and screen-log completeness; scripts/atlas20-sim.cjs; scripts/verify-revision.cjs; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Independent Chapter 26 reproduction passes 1,257 comparisons, including three determinable unheld stock/decision-close pairs and no unlisted signals. Final equity remains $100,739.22; the documented revision verifier and isolated build pass. All 74 isolated generated outputs match.
+- Scope / limits: The supplied sufficient statistics are teaching inputs, not a full historical market feed. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-005 — Conservative fill conventions do not all lower Atlas-20 results
+- Priority / type: P1 / defect
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: Chapter 26 interpretation, learner replay placement and order/operational context.
+- Finding and evidence: The prior interpretation said conservative conventions all lowered the scenario result. The participation cap instead shrank losing Birch from 138 to 118 shares, reducing its loss by $40. The inherited review also found replay prerequisites after the attempt and imprecise halt-authority/context wording.
+- Proposed resolution: Separate unproven favorable execution assumptions from the sign of the account effect; keep necessary rule teaching before the replay and identify halt authority accurately.
+- Acceptance criteria: Show the mixed effects and unpriceable touch counterfactual without inventing data; retain the full result ledger behind the continuation and a self-contained attempt.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 rewrote the convention interpretation, placed the attempt after section index 6, added the Chapter 24 bridge and clarified securities-exchange halt authority.
+- Changed locations: Chapter 26 interpretation, learner replay placement and order/operational context; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Birch stop-first net −$241 versus +$467 target-first; cap reduces modeled loss by $40. Independent no-cap final equity is $100,700.80, $38.42 lower; touch-fill alternative cannot be priced. Native 320/390/1280 checks show seven prerequisite sections before the attempt and concealed complete continuation; print policy retains all 195 input/header cells and restores disclosures. All 74 isolated generated outputs match.
+- Scope / limits: Fill models remain retrospective teaching conventions, not live execution instructions. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-006 — Framework clocks, reaction references and provisional counts need precise rules
+- Priority / type: P1 / defect and teaching gap
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: Chapter 27 Dow, Wyckoff and Elliott definitions, tables, figures, quiz and practice.
+- Finding and evidence: The inherited full review found a false two-point Dow comparison where 112→113 is one point; ambiguous secondary-reaction identification; a spring window excluding the breach close despite the source vocabulary; repeated lows able to restart an event; and hindsight Elliott endpoint/count/invalidation wording. The close line also could not supply the stated intraday reaction extrema by itself.
+- Proposed resolution: Fix arithmetic, distinguish local research rules from framework definitions, provide reaction-extreme inputs, freeze breach/event recognition and count invalidation at each cutoff, and add practice separating evidence layers.
+- Acceptance criteria: Closes, reference highs, supplied reaction extrema and recognition times agree; spring branches classify only when their window resolves; provisional wave counts do not gain later information.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 corrected the one-point comparison, qualified teaching reaction references, included breach-close windows and same-event/re-freeze rules, supplied a reaction-extremes table, clarified EWI cash-market overlap/subdivision attribution and provisional counts/invalidation, added layer-sorting practice and simplified compact labels.
+- Changed locations: Chapter 27 Dow, Wyckoff and Elliott definitions, tables, figures, quiz and practice; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Framework reproduction passes 362 comparisons; /root read all final sections and answers, inspected all three compact/wide figures and matched native tables/quiz feedback. Proponent source checks are inherited; no forecast profitability is asserted. All 74 isolated generated outputs match.
+- Scope / limits: PUB7-011 remains deferred for a complete independent Dow-study read. Optional section reordering/polish is not a publication blocker. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-007 — Casebook clocks and rules conflict across chapters
+- Priority / type: P1 / defect and teaching gap
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: Chapter 28 MIXD, RIVR, historical caveats, GME arithmetic and unfamiliar practice.
+- Finding and evidence: The inherited review found MIXD’s weekly/daily direction inconsistent with Chapter 17 and a falsely implied M1 trigger; the RIVR recovery rule had incomplete breach/window treatment and colliding rule/time labels; a GME percentage and spacing errors; and familiar-only AMB/gallery practice. The retrospective AAPL diagnostic crossed a dividend adjustment and needed a bounded raw-unit caution.
+- Proposed resolution: Align both timeframes and recovery event clocks with the earlier chapters; define GR1/RR1 rules; correct arithmetic and add unfamiliar complete inputs; disclose the dividend/source-adjustment boundary without inventing raw quotes.
+- Acceptance criteria: Each fictional rule has complete timing and execution inputs; independent fresh tasks reproduce; historical observations and unobserved fills/raw-unit geometry remain distinguished.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 corrected MIXD to weekly 48.90→49.90 and daily 49.70 with no daily signal; aligned RR1 with Chapter 27 and renamed GR1/RR1; corrected +134.84% GME and spacing; added issuer dividend evidence and a probable/unobserved raw-unit caution, a fresh 40-share AMB task and SPY April archive-input task with a historical verifier. Retrospective GME panel staging was retained with explicit clocks; P1 asks for a frozen boundary rather than an unsupported complete twenty-session channel.
+- Changed locations: Chapter 28 MIXD, RIVR, historical caveats, GME arithmetic and unfamiliar practice; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Case reproduction passes 697 comparisons. Fresh AMB branches give −$45/−1.125R and +$75/+1.875R; opening gap −$49/−1.225R. SPY prior-five mean 198.504 and lower 198.7623 resolve adverse at the April 5 open 198.58; original archive rows agree. /root read all final sections, inspected all nine compact/wide figures and checked native tables, disclosure and feedback. All 74 isolated generated outputs match.
+- Scope / limits: Inherited Nasdaq ex-date check supports February 4; issuer release alone does not. Raw quotes were not retrieved, Kaggle live retrieval failed, and rights review remains ROAD-003. PUB7-010 compact RIVR axis residual archived separately. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-008 — Part 6 tasks omit conventions and independent transfer
+- Priority / type: P2 / teaching gap
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: Part 6 cumulative review, all three tasks.
+- Finding and evidence: The inherited review found task 1 dismissed validation mainly because the inputs were invented; task 2 left rank precision, whole-share rounding, slot and reservation conventions to reader inference; task 3 reused the same familiar research-clock scenario.
+- Proposed resolution: Use computed uncertainty to evaluate the claim, restate every allocation convention in the prompt, and provide a fresh fully defined research-clock/variant-count task.
+- Acceptance criteria: All three unfamiliar tasks are self-contained and have complete reproducible answers; optional Chapter 27 is not a hidden prerequisite.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 added uncertainty/leave-one-out/cost sensitivity to task 1, full allocation/ranking/rounding/slot/reservation inputs to task 2, and a new seven-variant task with its spring-like rule defined in the question.
+- Changed locations: Part 6 cumulative review, all three tasks; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Part 6 reproduction passes 169 comparisons; /root checked all prompts/answers. Task 2 uses 123 shares, $246 planned R and $4,971.70 reserved; task 3 computes 1−0.95⁷≈30.2% with an explicit independence caveat. Native solutions begin concealed and complete text is present at all three widths. The script’s legacy informational task-2 observation is superseded by the final explicit prompt and native checks. All 74 isolated generated outputs match.
+- Scope / limits: All first-five part-review tasks are byte-identical to the baseline; their arithmetic verifiers retain acceptance. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### PUB7-009 — Shadowed glossary entries and missing spaces obscure authoring maintenance
+- Priority / type: P3 / editorial recommendation
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (handoff completion)
+- Reviewer / date: inherited batch-7 review / 2026-10-12; final verification /root / 2026-10-12
+- Location: content/curriculum.js; Chapters 6–8 and local Chapter 28 strings.
+- Finding and evidence: Twelve base glossary entries were silently shadowed by richer authoring entries, and Chapter 6–8 prose/feedback contained colon-adjacent missing spaces. Removing shadowed content must not silently change the shipping glossary or inherit stale fingerprints.
+- Proposed resolution: Remove only verified shadowed glossary definitions and fix missing spaces, then compare the compiled glossary and update affected acceptance fingerprints.
+- Acceptance criteria: The compiled 105-term glossary remains byte-identical; existing task/numeric content stays unchanged; Chapters 6–8 and dependent Part 2 are re-accepted at current fingerprints.
+- Discussion / progress: Implemented before handoff in e798f63/2a9e128; disposition recorded after final verification. The original handoff and source/reproduction records remain preserved.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 removed twelve shadowed curriculum definitions and corrected the targeted whitespace. /root compared baseline/current compiled glossary and first-five part tasks, checked the exact changes and refreshed acceptance metadata.
+- Changed locations: content/curriculum.js; Chapters 6–8 and local Chapter 28 strings; authoring build outputs where applicable; index.html cache keys and acceptance records refreshed in completion.
+- Verification: Merged glossary is byte-identical to a53df50. Early verifier passes 617 comparisons, strict content checks cover every term/reference, and native input/quiz checks retain all instructional text. Chapters 6–8 have only the documented whitespace changes; Chapter 10’s separate study locator correction is PUB7-002. All 74 isolated generated outputs match.
+- Scope / limits: Housekeeping resolution does not claim a new human readability study. Release rights/access, full browser/printer QA, metadata and actual human participation remain separate gates.
+
+### AUD2-002 — Reopened: Chapter 24 holding-session clock
+- Priority / type: P1 / defect
+- Location: `content/risk-advanced.json`, Chapter 24 “Write the rule before seeing the answer”; Chapter 26 Atlas-20 earnings filter. Related earlier capstone item: CA1-020, already resolved.
+- Finding and evidence: One Chapter 24 paragraph says entry counts as session 1 and exit is its tenth close, then says “the close of the tenth session after entry.” The latter normally excludes the entry session and is one session later. Chapter 26 also calls t+1…t+10 the “longest possible holding window” while explicitly allowing halts to prevent exits. A halt can extend elapsed holding beyond the planned limit. Readers building an inspectable rule should not have to choose between these clocks.
+- Proposed resolution: Use one inclusive holding-session definition, an explicit entry-day example, and an overdue-exit rule for a halt. Call the earnings horizon the planned holding window rather than an unconditional maximum.
+- Acceptance criteria: A worked entry-day calendar has a single exit date; a halt spanning the deadline has an explicit resumptive disposition and the calendar wording agrees.
+- Status: resolved
+- Owner: claude-code-pub7 (implementation); /root (final verification)
+- Reviewer / date: batch-7 review / 2026-10-12
+- Reopening evidence: The batch-7 full read found Chapter 24 once again saying “tenth session after entry” alongside the entry-counts-as-one convention. Earlier Chapter 21 overdue-exit corrections remain intact; this reuses the existing timing finding rather than creating a duplicate.
+- Current location / criteria: Chapter 24 v1-b written rule and exercise conventions; scheduled E10 rather than E11 for entry E1, with overdue opening-gap/exit policy unchanged.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: claude-code-pub7 replaced the ambiguous phrase with holding session 10, entry counted as session 1, and explicit E1→E10 versus E11 wording.
+- Verification: Final Chapter 24 prose explicitly gives E10, never an ordinary E11 time exit; its 516-comparison reproduction and documented revision verifier pass. /root read the final full rule, checked native rendering at 320/390/1280 and retained the Chapter 26 earnings/overdue-clock agreement. Chapter 21 inputs and fingerprint are unchanged.
+- Scope / evidence: Batch 7 report and final-checks.json; original findings and earlier closures above remain history. No native printer pagination or human validation claimed.
+
+### PUB7-010 — Compact RIVR candle labels collide with the axis title
+- Priority / type: P2 / defect
+- Status: in_progress
+- Owner: /root (batch 7 completion, 2026-10-12)
+- Reviewer / date: /root / 2026-10-12
+- Location: content/risk-advanced.json, Chapter 28 RIVR candle figure (case-studies-3), 260px portable rendering.
+- Finding and evidence: In the current compact raster the long observation labels split “R0 breach” and “R4 target” over three lines, with the last characters sharing the vertical area of “Range-recovery session”. The numerical reproduction and finite geometry checks do not catch the collision. See publication-batch7-assets/inspection-pairs/case-studies-3.png before the completion rebuild.
+- Proposed resolution: Use R0–R4 as candle labels; keep breach, recognition, fill and target meaning in the figure title, annotations and surrounding worked explanation.
+- Acceptance criteria: Inspect the rebuilt compact and wide rasters and native SVG text boxes; retain all OHLC data and the chronological event meanings.
+- Discussion / progress: Current figure visually inspected; source labels verified. One shared rebuild will follow the targeted authoring correction.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-12
+- Resolution: Changed only the four long RIVR candle labels to R0, R1, R2 and R4; R3 and all OHLC/annotations remain unchanged. Built authoring once and bumped book/renderer cache keys.
+- Changed locations: content/risk-advanced.json; rebuilt book.js and case-studies-3.svg; current figure fixtures, acceptance/checkpoint records and index.html.
+- Verification: Actually inspected before/final 260px and final 760px portable rasters; final single-line observation labels leave the axis title clear. Native SVG text has no clips at four widths in both palettes, all case numerical comparisons pass, complete native inputs match at 320/390/1280 and all 74 isolated generated outputs match.
+- Scope / evidence: publication-batch7-assets/inspection-pairs/case-studies-3.png (before) and case-studies-3-final.png (after); final checks and batch 7 report. No native screenshots or printer pagination claimed.

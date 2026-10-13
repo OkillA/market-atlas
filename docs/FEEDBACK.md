@@ -166,3 +166,18 @@ Claimed ROAD-002 scope: Chapters 22–23 and Part 5. The findings reused CA1-015
 ## Publication batch 6 completion — /root, 2026-10-11
 
 Reopened CA1-015 and PUB6-001 are verified and archived with their full findings and dispositions. [Batch 6](PUBLICATION_BATCH6_20261011.md) accepts Chapters 22–23 and Part 5 at current fingerprints, bringing totals to 23/28 chapters and 5/6 part reviews. Chapters 24–28 and Part 6 remain pending. Source/rights release review, broader browser/printer QA and metadata remain on the roadmap. CA1-026 remains deferred for actual readers. Changes are local and unpushed.
+
+## Publication batch 7 handoff completion — /root, 2026-10-12
+
+The Chapter 24 AUD2-002 reopening and PUB7-001–010 are verified and archived with full findings, dispositions and evidence. [Batch 7](PUBLICATION_BATCH7_20261012.md) completes scoped editorial acceptance of all 28 chapters and six part reviews, including the changed earlier-chapter dependencies. PUB7-011 below and CA1-026 remain deferred. Release source/rights review, native printer/broader browser QA and shipping metadata remain pending. Changes are local and unpushed.
+
+### PUB7-011 — Consider independent historical Dow evidence after full-paper review
+- Priority / type: P3 / editorial recommendation
+- Status: deferred
+- Owner: unassigned
+- Reviewer / date: claude-code-pub7 handoff; recorded by /root / 2026-10-12
+- Location: Chapter 27 empirical-evidence discussion; PUBLICATION_BATCH7_HANDOFF.md.
+- Finding and evidence: The handoff proposes considering the Brown–Goetzmann–Kumar (1998) Dow study. Its full paper has not been reviewed in this batch. Current prose explicitly limits the evidence examined and makes no unsupported predictive-performance claim for these frameworks. This is a possible literature addition, not a demonstrated factual defect.
+- Proposed resolution: Retrieve and read the complete original study, compare its specific Dow rule, sample, comparator and costs with this chapter’s frozen teaching rule, then decide whether a bounded evidence record would improve the chapter.
+- Acceptance criteria: Record inspected original passages and study limits, with an evidence-backed inclusion or non-inclusion disposition; do not infer validity for all Dow/Wyckoff/Elliott specifications.
+- Discussion / progress: Deferred from the prior handoff until a dedicated full-paper review. It does not prevent scoped editorial acceptance of the current explicit evidence limits; ROAD-003 remains outstanding.

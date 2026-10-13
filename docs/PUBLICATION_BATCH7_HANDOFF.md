@@ -1,5 +1,7 @@
 # Publication batch 7 — handoff (claude-code-pub7, 2026-10-12)
 
+**Completion note — /root, 2026-10-12:** This handoff is now completed in [publication batch 7](PUBLICATION_BATCH7_20261012.md). All 28 chapters and six part reviews have scoped editorial acceptance; release gates and the two deferred findings remain visible in the current tracker. The state and steps below are preserved as the original handoff snapshot.
+
 ROAD-002 batch 7 (Chapters 24–28 and Part 6) is **in progress and handed off**; the claim in the roadmap/ledger is released to the next agent. The content and renderer work is done and committed locally (`a53df50` baseline, `e798f63`, `2a9e128`); **nothing is pushed**. The paperwork, browser QA and acceptance records below are **not** done. No chapter is accepted yet.
 
 ## State

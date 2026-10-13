@@ -1,0 +1,112 @@
+[
+  {
+    "file": "app.js",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "figure-renderer.js",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "content/book.js",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "content/curriculum.js",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/atlas20-sim.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/build-content.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/build-site.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/check-content.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/project-status.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/verify-early-chapters.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/verify-figures.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/verify-historical.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "scripts/verify-revision.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/create-checkpoint.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/data-coverage.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/extract.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/isolated-build.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/prepare-figures.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/renderer-diff.cjs",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/browser-review.js",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/native-figure-review.js",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "docs/publication-batch7-assets/print-policy-review.js",
+    "exitCode": 0,
+    "stderr": ""
+  }
+]

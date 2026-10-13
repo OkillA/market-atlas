@@ -1,0 +1,25 @@
+{
+  "reviewer": "/root",
+  "checked": "2026-10-12",
+  "method": "Final compiled prose, evidence and source records compared with the five inherited reviewer passage-check reports. No new network retrieval or full-paper review in this completion. Preserve the original method/date/attribution in each linked report.",
+  "inheritedChecks": 85,
+  "reports": [
+    "testing-source-checks.json",
+    "statistics-source-checks.json",
+    "system-design-source-checks.json",
+    "classical-frameworks-source-checks.json",
+    "case-studies-source-checks.json"
+  ],
+  "finalDispositions": [
+    {"scope": "Bajgrowicz–Scaillet, Chapters 10/24/25 and appendix", "disposition": "Ex ante portfolios/selection and bounded sample description agree with inherited locators. Unsupported October PDF version date removed. Earlier inspected passage dates preserved."},
+    {"scope": "Bailey research advice, Chapters 24/26", "disposition": "Hold-out weaknesses are taught explicitly in Chapter 24. Walk-forward, fresh-data and version-record advice are the book's research procedure, not claimed paper findings or an automatic defense against overfitting."},
+    {"scope": "Atlas-20 touch/participation/exact-stop conventions", "disposition": "Explicitly original modeling conventions; Investor.gov supports order mechanics without supplying the fictional fill assumptions."},
+    {"scope": "Framework partial/not-stated entries", "disposition": "Local sub-threshold 'test' terminology removed; required impulse subdivisions disclosed; diagonal rules are expressly unreviewed and no diagonal validity or performance is claimed. Initial read-only reports and the owner's handoff record later corrections."},
+    {"scope": "SEC GME session description", "disposition": "Current prose uses reported closing prices and U.S. session labels rather than asserting a source-certified regular-session series."},
+    {"scope": "Kaggle adjustment vintage", "disposition": "Current prose bounds the vintage by the depositor's last-updated note while retaining undocumented formula/session/time-zone limits."},
+    {"scope": "Kaggle live access", "disposition": "Inherited CAPTCHA failure remains. Preserved metadata supports the depositor permission statement; it does not establish upstream rights. ROAD-003 still required."},
+    {"scope": "Apple February 2016 dividend", "disposition": "Issuer passage supports $0.52 and February 8 record/February 11 payment dates. February 4 ex-date is supported by the inherited Nasdaq dividend-history check, not by the issuer release or today's Investor.gov convention. No full unadjusted quotes were retrieved; final raw-unit geometry is explicitly probable, not observed."},
+    {"scope": "Brown–Goetzmann–Kumar", "disposition": "Full paper unreviewed; no study claim added. Deferred recommendation PUB7-011 stays in FEEDBACK.md."}
+  ],
+  "limits": "Scoped editorial source alignment, not the edition-wide 74-source access/rights release review, an exhaustive literature audit, a study replication or human validation. Original retrieval failures remain visible."
+}

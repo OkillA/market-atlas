@@ -1,0 +1,259 @@
+[
+  {
+    "cellsChecked": 371,
+    "failures": [],
+    "figures": 3,
+    "id": "testing",
+    "initial": {
+      "continuation": null,
+      "quizVisible": true,
+      "solutionsOpen": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "palettes": [
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "light"
+      },
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "dark"
+      }
+    ],
+    "quizzes": [
+      {
+        "option": 0,
+        "passes": true
+      },
+      {
+        "option": 1,
+        "passes": true
+      },
+      {
+        "option": 2,
+        "passes": true
+      }
+    ],
+    "route": "#/chapter/testing",
+    "stringsChecked": 65,
+    "width": 1280
+  },
+  {
+    "cellsChecked": 230,
+    "failures": [],
+    "figures": 3,
+    "id": "statistics",
+    "initial": {
+      "continuation": null,
+      "quizVisible": true,
+      "solutionsOpen": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "palettes": [
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "light"
+      },
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "dark"
+      }
+    ],
+    "quizzes": [
+      {
+        "option": 0,
+        "passes": true
+      },
+      {
+        "option": 1,
+        "passes": true
+      },
+      {
+        "option": 2,
+        "passes": true
+      }
+    ],
+    "route": "#/chapter/statistics",
+    "stringsChecked": 57,
+    "width": 1280
+  },
+  {
+    "cellsChecked": 794,
+    "failures": [],
+    "figures": 3,
+    "id": "system-design",
+    "initial": {
+      "continuation": false,
+      "quizVisible": false,
+      "solutionsOpen": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "palettes": [
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "light"
+      },
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "dark"
+      }
+    ],
+    "quizzes": [
+      {
+        "option": 0,
+        "passes": true
+      },
+      {
+        "option": 1,
+        "passes": true
+      },
+      {
+        "option": 2,
+        "passes": true
+      }
+    ],
+    "route": "#/chapter/system-design",
+    "stringsChecked": 76,
+    "width": 1280
+  },
+  {
+    "cellsChecked": 128,
+    "failures": [],
+    "figures": 3,
+    "id": "classical-frameworks",
+    "initial": {
+      "continuation": null,
+      "quizVisible": true,
+      "solutionsOpen": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "palettes": [
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "light"
+      },
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "dark"
+      }
+    ],
+    "quizzes": [
+      {
+        "option": 0,
+        "passes": true
+      },
+      {
+        "option": 1,
+        "passes": true
+      },
+      {
+        "option": 2,
+        "passes": true
+      }
+    ],
+    "route": "#/chapter/classical-frameworks",
+    "stringsChecked": 56,
+    "width": 1280
+  },
+  {
+    "cellsChecked": 766,
+    "failures": [],
+    "figures": 9,
+    "id": "case-studies",
+    "initial": {
+      "continuation": false,
+      "quizVisible": false,
+      "solutionsOpen": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "palettes": [
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "light"
+      },
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "dark"
+      }
+    ],
+    "quizzes": [
+      {
+        "option": 0,
+        "passes": true
+      },
+      {
+        "option": 1,
+        "passes": true
+      },
+      {
+        "option": 2,
+        "passes": true
+      }
+    ],
+    "route": "#/chapter/case-studies",
+    "stringsChecked": 98,
+    "width": 1280
+  },
+  {
+    "cellsChecked": 0,
+    "failures": [],
+    "figures": 0,
+    "id": "advanced",
+    "initial": {
+      "continuation": null,
+      "quizVisible": false,
+      "solutionsOpen": [
+        false,
+        false,
+        false
+      ]
+    },
+    "palettes": [
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "light"
+      },
+      {
+        "clipped": [],
+        "overflow": false,
+        "palette": "dark"
+      }
+    ],
+    "quizzes": [],
+    "route": "#/practice/advanced",
+    "stringsChecked": 10,
+    "width": 1280
+  }
+]
