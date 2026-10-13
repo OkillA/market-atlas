@@ -61,6 +61,10 @@ Claim a manageable package by setting its owner and status before implementation
 - Progress / 2026-10-13: claude-code-print — current native Chapter 7 and 8 learner/answer PDFs (15/15/25/25 pages) inspected page by page and retained in [the coverage record](release-readiness-assets/native-print-checks.json). The exports exposed PRINT1-001/002 (print-only layout fixes, archived); the Chapter 6 pair is now superseded. Slice complete and claim released. Remaining: Chapter 6 re-export, Chapter 9/22/26/28 pairs (10 PDFs), ordinary/part-review samples, desktop/input/file:// checks. The local 0.4.1-alpha.1 ZIP/preflight predates the app.js/styles.css change and must be rebuilt before release (ROAD-007).
 - Headless sweep / 2026-10-13: claude-code-print — non-native headless Chrome print of all 28 chapters (both editions) and six part reviews, with [automated checks](release-readiness-assets/headless-print-sweep.json); found and fixed PRINT1-003 (part reviews now print task and solution editions). This does not satisfy the native-printer exit criteria. The native part-review sample should now cover both editions.
 
+- Claim / 2026-10-13: claude-code-print, at the user's request, takes the native top-level 1280px desktop and keyboard slice (routes, packets, contents/deep links, search, focus and native key activation). /root's remaining scope (native print, file://) is unchanged.
+
+- Progress / 2026-10-13: claude-code-print — [desktop/keyboard record](release-readiness-assets/desktop-keyboard-checks.json): native top-level 1280x800 sweep of 45 routes and 7 packets with no overflow, errors or missing figures; native Tab/Shift+Tab/Enter/Escape/'/' search and deep-link focus pass; focus outlines on every reachable control across 8 routes; dark-theme figure contrast computed. Limits: intermittent OS focus (Escape-return ring not judged), no screenshots, no 1440px+/zoom/screen-reader/file://. Slice complete; claim released.
+
 ### ROAD-005 — Run human reader validation
 
 - Status / owner: deferred / /root for completed preparation; facilitator unassigned.

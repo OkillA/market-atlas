@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-13",
+ "checkedBy": "claude-code-print",
+ "platform": "T3 Code native collaborative preview (Electron/Chromium, macOS), top-level freeform viewport measured 1280x800 CSS px",
+ "build": "app.js?v=20261013-print3, styles.css?v=20261013-print3 (content/book.js and figure-renderer.js unchanged)",
+ "routeSweep": {
+  "routes": 45,
+  "covers": "home, contents, glossary, evidence, about, notebook, lab overview and 4 experiments, 28 chapters, 6 part reviews",
+  "horizontalOverflow": 0,
+  "scriptErrors": 0,
+  "chapterFigureSvgs": 71,
+  "emptyFigureContainers": 0,
+  "figuresUnder200px": 0,
+  "solutionsOpenOnLoad": 0,
+  "continuationsOpenOnLoad": 0
+ },
+ "packets": {
+  "count": 7,
+  "result": "All start closed with complete inputs (21-168 table cells); revealing renders every continuation figure at 665px width; no overflow; aside continuation contents revealed with the packet.",
+  "ids": [
+   "support-resistance",
+   "candlestick-patterns",
+   "chart-patterns",
+   "breakouts",
+   "psychology",
+   "system-design",
+   "case-studies"
+  ]
+ },
+ "keyboard": {
+  "nativeTabOrder": "Chapter 5 from #main: Review scope summary -> Bookmark -> Print learner edition -> Print with answers -> experiment link -> evidence link -> Start at beginning; Shift+Tab reverses. Every stop :focus-visible with a 2px outline.",
+  "nativeEnter": "Toggles the review-scope disclosure open and closed (failed in the 2026-10-12 pass; works now).",
+  "focusIndicators": "Programmatic focus after keyboard interaction on 8 routes (home, contents, glossary, notebook, lab/risk, practice/risk, chapters 5 and 28 with all disclosures open): every reachable control shows an outline (0 gaps across 586 controls). Controls inside still-closed disclosures are correctly unfocusable.",
+  "search": "Native '/' opens search with the input focused; typed 'average true range' gives 4 results; native Tab+Enter navigates to #/chapter/volatility/at/section-true-range-remembers-the-previous-close, closes the dialog and focuses the target H2 in view.",
+  "deepLink": "Native pointer click on an aside section link moves focus to the target section heading.",
+  "tableWorkspace": "Native Enter opens the Chapter 12 two-row workspace inside the viewport; native Escape closes it and returns focus to its trigger button."
+ },
+ "darkTheme": "Chapter 8 at 1280px: figure text contrast 6.76:1; data/reference strokes 6.13-8.03:1 against the dark figure background; only background gridlines are 1.33:1 (decorative).",
+ "storage": "Original market-atlas-reader-v1 value backed up before QA and restored byte-for-byte from a non-app same-origin page so the app's pagehide save could not overwrite it.",
+ "limits": [
+  "The preview window had OS focus only intermittently while the user worked elsewhere; ring visibility after Escape-return could not be judged (document.hasFocus() false) and is not claimed.",
+  "preview_snapshot failed while unfocused, so dark-theme results are computed colour contrast, not a viewed screenshot.",
+  "No 1440px+ widths, no zoom/text-resize, no screen reader and no file:// test."
+ ]
+}
