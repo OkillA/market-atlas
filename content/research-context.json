@@ -2549,7 +2549,7 @@
         {
           "title": "Three different momentum questions",
           "paragraphs": [
-            "RSI compares smoothed gains and losses inside one price series; MACD compares averages. Cross-sectional momentum ranks instruments against one another; time-series momentum uses each instrument’s own past return. The stock and futures studies in the appendix test the latter portfolio rules, not the RSI/MACD thresholds taught here."
+            "RSI compares smoothed gains and losses inside one price series; MACD compares averages. Cross-sectional momentum ranks instruments against one another; time-series momentum uses each instrument’s own past return. The stock and futures studies in the appendix test these two portfolio rules (one study each), not the RSI/MACD thresholds taught here."
           ],
           "id": "three-different-momentum-questions"
         }

@@ -220,17 +220,6 @@ At the user's request (human readers unavailable), six AI agents each read one p
 - Acceptance criteria: No exercise or guided task has its answer stated on the page before its solution; changed tasks recalculated and solutions verified; affected chapter acceptance rechecked.
 - Discussion / progress: None yet.
 
-### READ1-005 — "R" is never explained in plain words
-- Priority / type: P2 / teaching gap
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 parts 2, 4, 5 / 2026-10-13
-- Location: First use Ch 9 learning outcomes/first pass (~1684, ~1707, rules table "Fees / R", ~1784 "−1.05R net"); Ch 18 independent practice (~3510–3526) needs "frozen price-risk 1R" with no use since Ch 9; Ch 20 defines the denominator only at ~3847 after table use; glossary "R multiple" is formula-only.
-- Finding and evidence: Readers reverse-engineered −1.05R from numbers. Nothing says why results are expressed in R ("−2.55R means you lost about 2.5× what you planned to risk") or that net R = net P&L ÷ 1R.
-- Proposed resolution: Two-sentence plain definition at first use in Ch 9, a one-clause reminder in Ch 18's prompt, and the purpose sentence leading Ch 20's denominator section and the glossary.
-- Acceptance criteria: First R use is preceded by a plain-language definition and formula; Ch 18 task is attemptable without searching back; glossary states purpose.
-- Discussion / progress: None yet.
-
 ### READ1-006 — Terms used before they are taught
 - Priority / type: P2 / teaching gap (halt, support); remainder P3
 - Status: open
@@ -251,17 +240,6 @@ At the user's request (human readers unavailable), six AI agents each read one p
 - Finding and evidence: Readers reported skimming hedges and losing the lesson (e.g. that a valid signal can still be a skip). Each caveat is individually accurate; the issue is accumulation.
 - Proposed resolution: Rule tables instead of rule paragraphs (Ch 24 like Ch 26; split Ch 21 table into main-path and branch rules); one disclaimer box per chapter; framing sentences before Ch 28's packet with provenance moved into the continuation; spell out shorthand at first use; trim one or two BRDG repeats. Preserve accuracy and the no-unsupported-claims rule; do not raise word count.
 - Acceptance criteria: Listed passages restructured without losing any rule; word count not increased overall; affected chapter acceptance rechecked.
-- Discussion / progress: None yet.
-
-### READ1-009 — Chapter 11 MACD indexing, ordering and a wrong referent
-- Priority / type: P3 / teaching gap + wording defect
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 part 3 / 2026-10-13
-- Location: Ch 11 ~2203 and momentum-2 caption ~2240 ("close 26 / close 34" counted over the full 54-close history while the axis shows sessions 1–18); MACD split around the divergence section (~2196–2231); ~2244 "The stock and futures studies… test the latter portfolio rules" (the stock study is cross-sectional, not time-series).
-- Finding and evidence: Reader took "close 26" as off the chart's right edge. "Latter" points to the wrong rule family.
-- Proposed resolution: State the full-history indexing relative to displayed session 1; keep MACD material contiguous; change "the latter" to "these portfolio rules (one study each)".
-- Acceptance criteria: Indexing statement unambiguous against the figure; referent correct against the appendix.
 - Discussion / progress: None yet.
 
 ### READ1-010 — Smaller figure-reading snags
@@ -298,3 +276,7 @@ At the user's request (human readers unavailable), six AI agents each read one p
 ### READ1 figure batch completion — /root, 2026-10-13
 
 READ1-001, 002, 003 and 008 are resolved and archived with full findings and verification ([report](READ1_FIGURES_20261013.md)). Round axis values, labelled reference levels on 39 lines, profile orientation and the Chapter 7 wording are rebuilt and checked; all 28 chapters re-accepted with a figure recheck. READ1-004–007 and 009–012 remain open and unclaimed. CA1-026 remains deferred. Changes are local and unpushed.
+
+### READ1 wording batch completion — claude-code-read1b, 2026-10-14
+
+READ1-005 (plain-language R) and READ1-009 (Chapter 11 MACD indexing/order/referent) are resolved and archived with full findings and verification ([report](READ1_WORDING_20261014.md)). Chapters 9, 11, 18 and 20 re-accepted; Parts 2–5 for dependency only. READ1-004, 006, 007 and 010–012 remain open and unclaimed. CA1-026 remains deferred. Changes are local and unpushed.

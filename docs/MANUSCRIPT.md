@@ -1681,7 +1681,7 @@ Review scope: Scoped chapter editorial acceptance: prose, material source claims
 
 - Determine when a fixed closing-breakout rule becomes observable.
 - Separate signal recognition, an eligible entry, and a later failure.
-- Reproduce the quantity, costs, and R result of a fully stated paper plan.
+- Reproduce the quantity, costs, and R result (profit or loss as a multiple of planned price risk) of a fully stated paper plan.
 - Retain successful, failed, skipped, and ambiguous continuations in a review.
 
 Builds on: The language of the market; Volume: participation behind price; Timeframes, sessions & chart scales; Support, resistance & price areas; Classical chart patterns.
@@ -1704,7 +1704,7 @@ The first two sections distinguish price fields and observation times. Pause the
 
 Apply the closing signal rule. Record what is observable now and what cannot yet be recorded about entry eligibility, a filled position or a later failure. Write the exact next-opening gate, including equality at both edges, the deadline and the behavior after a rejected open.
 
-Calculate the maximum-entry cash reservation including the entry fee, the maximum allowed entry’s price-risk 1R and its ordinary cost-inclusive stop loss. Give the formula that freezes 1R if the eligible opening entry is lower. State which later bar fields and modeled execution assumptions would be needed to calculate a realized result.
+This book reports trade results in R. 1R is the price risk planned on the filled position: shares × (entry − initial stop), the loss if the stop fills exactly, before fees. Net R = net P&L ÷ 1R, so −2R means losing twice what the plan risked, and trades of different sizes can be compared. Calculate the maximum-entry cash reservation including the entry fee, the maximum allowed entry’s price-risk 1R and its ordinary cost-inclusive stop loss. Give the formula that freezes 1R if the eligible opening entry is lower. State which later bar fields and modeled execution assumptions would be needed to calculate a realized result.
 
 Save the cutoff note before revealing the full Harbor path and the separate comparison branches. The volume-filter and retest examples later in the chapter are different rules; neither is an extra gate for this main plan. The constructed paths teach accounting and chronology, not return probabilities or a recommended allocation.
 
@@ -2194,14 +2194,6 @@ When average loss is zero and gain is positive, the limiting RSI is 100; the rev
 | 4 | 13 | 2 | 0 | 80 |
 | 5 | 12 | 0 | 1 | 61.538462 |
 
-#### MACD asks a different question
-
-Moving Average Convergence/Divergence, or MACD, commonly subtracts a 26-period EMA from a 12-period EMA and smooths that difference with a nine-period EMA called the signal line. The histogram is MACD minus signal. Fidelity verifies those conventional parameters. Positive MACD means the faster average exceeds the slower one; a rising histogram means that difference is becoming more positive relative to its own signal.
-
-For an arithmetic snapshot, fast EMA $52 and slow EMA $50 give MACD $2. If the signal is $1.50, the histogram is $0.50. Later MACD $1.80 and signal $1.60 produce $0.20. The histogram has fallen, but both averages remain in the same order. Because the measure uses price units, the raw value is not directly comparable between a $20 stock and a $200 stock. Seeds and warm-up history matter here too.
-
-For reproducibility, our MACD convention seeds the 12- and 26-period EMAs with their first complete SMAs. The first valid difference is at close 26. Seed the nine-period signal with the mean of the first nine valid MACD values, available at close 34; only then display its histogram. Extra earlier history changes warm-up readings, so match these conventions when comparing implementations.
-
 #### A divergence is recognized after its selected peaks
 
 Use this teaching peak rule: a close is a confirmed local peak if it exceeds the immediately preceding and following closes. A session-t peak is therefore recognized at t+1. In the main panel, $69 at 12 exceeds $68 at 11 and $68 at 13, becoming confirmed at 13. Its five-session ROC is 7.8125%. The $70 peak at 14 exceeds its $68 and $69 neighbors, becoming confirmed at 15; its ROC is about 6.0606%.
@@ -2213,6 +2205,14 @@ Session 16 subsequently reaches $71. The divergence correctly describes the earl
 ![Price and ROC: peak versus recognition time](../assets/figures/momentum.svg)
 
 *The 18 fictional closes are the main dataset for prose, ROC exercise, and MACD. Thirty-six preceding closes are $50. Each point is sampled after its session close; each panel labels its own units.*
+
+#### MACD asks a different question
+
+Moving Average Convergence/Divergence, or MACD, commonly subtracts a 26-period EMA from a 12-period EMA and smooths that difference with a nine-period EMA called the signal line. The histogram is MACD minus signal. Fidelity verifies those conventional parameters. Positive MACD means the faster average exceeds the slower one; a rising histogram means that difference is becoming more positive relative to its own signal.
+
+For an arithmetic snapshot, fast EMA $52 and slow EMA $50 give MACD $2. If the signal is $1.50, the histogram is $0.50. Later MACD $1.80 and signal $1.60 produce $0.20. The histogram has fallen, but both averages remain in the same order. Because the measure uses price units, the raw value is not directly comparable between a $20 stock and a $200 stock. Seeds and warm-up history matter here too.
+
+For reproducibility, our MACD convention seeds the 12- and 26-period EMAs with their first complete SMAs. These close numbers count the full 54-close history: the 36 flat $50 closes come first, so displayed session 1 is close 37. The first valid difference is at close 26 and the signal, seeded with the mean of the first nine valid MACD values, at close 34; both lie in the flat history before the charted sessions. Only then is the histogram displayed. Extra earlier history changes warm-up readings, so match these conventions when comparing implementations.
 
 #### Read the MACD lines before reading the histogram
 
@@ -2237,11 +2237,11 @@ A useful momentum note names the lookback, identifies the comparison points, and
 
 ![Same closes: MACD, signal, histogram](../assets/figures/momentum-2.svg)
 
-*SMA-seeded 12/26 EMAs and nine-valid-MACD signal. Full-history MACD first exists at close 26, signal at 34; the 36 earlier $50 closes supply this initialization.*
+*SMA-seeded 12/26 EMAs and nine-valid-MACD signal. MACD first exists at full-history close 26 and the signal at close 34, both within the 36 earlier $50 closes; displayed session 1 is close 37.*
 
 #### Three different momentum questions
 
-RSI compares smoothed gains and losses inside one price series; MACD compares averages. Cross-sectional momentum ranks instruments against one another; time-series momentum uses each instrument’s own past return. The stock and futures studies in the appendix test the latter portfolio rules, not the RSI/MACD thresholds taught here.
+RSI compares smoothed gains and losses inside one price series; MACD compares averages. Cross-sectional momentum ranks instruments against one another; time-series momentum uses each instrument’s own past return. The stock and futures studies in the appendix test these two portfolio rules (one study each), not the RSI/MACD thresholds taught here.
 
 #### Worked example: Reconstruct the divergence at session 15
 
@@ -3507,7 +3507,7 @@ Adding −17.3077% and +6.9767% gives the wrong result because the two returns u
 
 #### independent practice: A limit touch is not a completed exit
 
-Compare two separate counterfactual exit instructions for a fresh fictional holding of 60 shares bought at $80, with prior regular-session close $80: an ordinary sell stop at $77, or a sell stop-limit with stop $77 and limit $76.50. Both are active before the next regular-session open and last through that session. In this teaching model the opening trade at or below the stop triggers the order; use all regular-session trade prices in the supplied OHLC and assume no execution outside that range. Model the ordinary-stop fill at the open in each case, with no fees. Compute gap percent, frozen price-risk 1R, modeled ordinary-stop P&L and R. For each stop-limit case, state whether an exit is ruled out or unresolved. If A remains held, give its close-marked P&L and explain why that is not a realized exit result.
+Compare two separate counterfactual exit instructions for a fresh fictional holding of 60 shares bought at $80, with prior regular-session close $80: an ordinary sell stop at $77, or a sell stop-limit with stop $77 and limit $76.50. Both are active before the next regular-session open and last through that session. In this teaching model the opening trade at or below the stop triggers the order; use all regular-session trade prices in the supplied OHLC and assume no execution outside that range. Model the ordinary-stop fill at the open in each case, with no fees. Compute gap percent, frozen price-risk 1R (shares × (entry − stop), the loss planned at the stop), modeled ordinary-stop P&L and R (P&L ÷ 1R). For each stop-limit case, state whether an exit is ruled out or unresolved. If A remains held, give its close-marked P&L and explain why that is not a realized exit result.
 
 **Fresh gap cases: only the session high differs**
 
@@ -3783,7 +3783,7 @@ Our fictional investor Maya has $20,000 in an unleveraged account. For a teachin
 
 #### From dollars to shares
 
-Maya considers buying ATLS at $50 with an invalidation exit near $48. Price distance is $2 per share. Ignoring costs initially, the risk-based quantity is floor($100 ÷ $2) = 50 shares. The position costs $2,500 and has $100 of planned price risk. Position value and loss budget differ: she commits $2,500 of capital to a plan that anticipates losing $100 if its exit works as modeled.
+Maya considers buying ATLS at $50 with an invalidation exit near $48. Price distance is $2 per share. Ignoring costs initially, the risk-based quantity is floor($100 ÷ $2) = 50 shares. The position costs $2,500 and has $100 of planned price risk; the book calls that filled-position price risk 1R and states results as multiples of it. Position value and loss budget differ: she commits $2,500 of capital to a plan that anticipates losing $100 if its exit works as modeled.
 
 Now include a modeled $0.10 per share round-trip charge, separate from the quoted entry and exit prices. Sizing against a $100 cost-inclusive ordinary-loss budget gives floor(100 ÷ 2.10) = 47 shares. Entry notional is $2,350, planned price risk is $94, modeled costs are $4.70, and the cost-inclusive modeled loss is $98.70. Calling all four quantities “risk” would conceal important differences. A $1,000 notional cap would allow only 20 shares; a cash check also reserves the entry charge. Apply whichever constraint permits the fewest shares.
 
@@ -3844,7 +3844,7 @@ The illustration compares twelve consecutive modeled losses at 0.5% and 2% of cu
 
 #### Declare the R denominator before the result
 
-Before entry, order price risk is an estimate based on the intended quantity, entry and protective level. Once the modeled or actual fill is confirmed, this book freezes the long position’s 1R PRICE risk as filled shares × (filled entry − the declared initial stop). It excludes costs. A maximum entry ceiling is not the filled entry, and unfilled shares are not a position. Net R = net P&L ÷ that frozen 1R. The 47-share worksheet therefore has 1R = $94, although its cost-inclusive modeled loss is $98.70 and its sizing budget is $100. Its ordinary stop result is −98.70 ÷ 94 = −1.05R; the gap result is −239.70 ÷ 94 = −2.55R. Do not divide by the $100 budget or redefine R after the gap.
+R exists so that results from trades of different sizes can be read against what each plan risked: −2.55R means the loss was about two and a half times the planned risk. Before entry, order price risk is an estimate based on the intended quantity, entry and protective level. Once the modeled or actual fill is confirmed, this book freezes the long position’s 1R PRICE risk as filled shares × (filled entry − the declared initial stop). It excludes costs. A maximum entry ceiling is not the filled entry, and unfilled shares are not a position. Net R = net P&L ÷ that frozen 1R. The 47-share worksheet therefore has 1R = $94, although its cost-inclusive modeled loss is $98.70 and its sizing budget is $100. Its ordinary stop result is −98.70 ÷ 94 = −1.05R; the gap result is −239.70 ÷ 94 = −2.55R. Do not divide by the $100 budget or redefine R after the gap.
 
 A quantity partly filled has its own filled-share price risk. Freeze that denominator when the position is established under the declared entry/stop convention, keeping the original order quantity in a separate field. If there are later additions, the plan must define how their risk is recorded. Our worked plans cancel the unfilled remainder and never add, so the original denominator remains simple.
 
@@ -6948,7 +6948,7 @@ Aliases inherit the full entry’s definition. For source-linked terminology, th
 
 **Price return.** Change in price divided by its starting value; it excludes distributions.
 
-**R multiple.** In this edition, net trade P&L after costs divided by frozen filled-position price-risk: actual filled shares × (entry fill price − original stop) for a long position. Costs are excluded from this denominator; the maximum order risk budget is a different quantity. State any alternative convention explicitly; an unfilled order has no position-specific R.
+**R multiple.** A trade result expressed as a multiple of the price risk the plan accepted, so trades of different sizes can be compared (−2R = lost twice the planned risk). In this edition, net trade P&L after costs divided by frozen filled-position price-risk: actual filled shares × (entry fill price − original stop) for a long position. Costs are excluded from this denominator; the maximum order risk budget is a different quantity. State any alternative convention explicitly; an unfilled order has no position-specific R.
 
 **Rate of change (ROC).** Percentage change from a selected earlier price: 100 × (current / earlier − 1).
 

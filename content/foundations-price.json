@@ -5604,7 +5604,7 @@
       "outcomes": [
         "Determine when a fixed closing-breakout rule becomes observable.",
         "Separate signal recognition, an eligible entry, and a later failure.",
-        "Reproduce the quantity, costs, and R result of a fully stated paper plan.",
+        "Reproduce the quantity, costs, and R result (profit or loss as a multiple of planned price risk) of a fully stated paper plan.",
         "Retain successful, failed, skipped, and ambiguous continuations in a review."
       ],
       "solution": [
@@ -5707,7 +5707,7 @@
         "paragraphs": [
           "The first two sections distinguish price fields and observation times. Pause the main fictional Harbor case at the completed session-9 close. The resistance area $49.70–$50.00 and rules below were supplied before this cutoff; they are not selected from the future path. All nine closes and the complete session-9 candle are shown. The next session has not opened.",
           "Apply the closing signal rule. Record what is observable now and what cannot yet be recorded about entry eligibility, a filled position or a later failure. Write the exact next-opening gate, including equality at both edges, the deadline and the behavior after a rejected open.",
-          "Calculate the maximum-entry cash reservation including the entry fee, the maximum allowed entry’s price-risk 1R and its ordinary cost-inclusive stop loss. Give the formula that freezes 1R if the eligible opening entry is lower. State which later bar fields and modeled execution assumptions would be needed to calculate a realized result.",
+          "This book reports trade results in R. 1R is the price risk planned on the filled position: shares × (entry − initial stop), the loss if the stop fills exactly, before fees. Net R = net P&L ÷ 1R, so −2R means losing twice what the plan risked, and trades of different sizes can be compared. Calculate the maximum-entry cash reservation including the entry fee, the maximum allowed entry’s price-risk 1R and its ordinary cost-inclusive stop loss. Give the formula that freezes 1R if the eligible opening entry is lower. State which later bar fields and modeled execution assumptions would be needed to calculate a realized result.",
           "Save the cutoff note before revealing the full Harbor path and the separate comparison branches. The volume-filter and retest examples later in the chapter are different rules; neither is an extra gate for this main plan. The constructed paths teach accounting and chronology, not return probabilities or a recommended allocation."
         ],
         "tables": [
@@ -5883,15 +5883,16 @@
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH1_20261002.md"
+          "docs/PUBLICATION_BATCH1_20261002.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "41bd91d65e6a132ca1244c1000ae994b4784a6588a33ad45c1bb58d319a5b2b6",
+        "contentSha256": "7af2907496579eab63526575860c42468298ed592894ee5004f92935e614a902",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-005 wording: plain-language R definition added to the first R use (learning outcome and first-pass instruction); all Chapter 9 R values (−1.05R, +1.95R, −1.55R, +2.6875R, −1.0625R) rechecked against the definition. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     }

@@ -1,6 +1,6 @@
 # Project status
 
-Updated **2026-10-13** by `/root` after publishing 0.4.1-alpha.1 (earlier mobile/print/QA slices and attribution retained). This is the current project tracker. [The roadmap](EDITORIAL_ROADMAP.md) owns the remaining work and its completion criteria; [the feedback queue](FEEDBACK.md) owns actionable review findings; [the resolution history](FEEDBACK_RESOLVED.md) preserves their evidence. Dated completion reports describe their own snapshots.
+Updated **2026-10-14** by `claude-code-read1b` for the READ1 wording batch (local, unpushed); previously updated 2026-10-13 by `/root` after publishing 0.4.1-alpha.1 (earlier mobile/print/QA slices and attribution retained). This is the current project tracker. [The roadmap](EDITORIAL_ROADMAP.md) owns the remaining work and its completion criteria; [the feedback queue](FEEDBACK.md) owns actionable review findings; [the resolution history](FEEDBACK_RESOLVED.md) preserves their evidence. Dated completion reports describe their own snapshots.
 
 **Where we are:** the complete revised draft is available for local reading and as a public alpha at https://okilla.github.io/market-atlas/. The major recorded content and interface findings are resolved. All 28 chapters and all six part reviews have current scoped editorial acceptance. Source/access/reuse review and bound AI review/version metadata are complete. The documented browser/print release QA scope (ROAD-004) is complete. The recorded release scope is published as 0.4.1-alpha.1; human reader validation stays deferred. Work can continue while readers are unavailable.
 
@@ -10,7 +10,7 @@ Updated **2026-10-13** by `/root` after publishing 0.4.1-alpha.1 (earlier mobile
 | --- | --- |
 | Browser book and standalone manuscript | Local edition 0.4.1; 28 scoped AI editorial review labels, overall alpha draft |
 | Structure | Six parts; 210 narrative sections |
-| Section prose | 42,220 words; excludes examples, practice, quizzes and research appendix |
+| Section prose | 42,302 words; excludes examples, practice, quizzes and research appendix |
 | Practice | 28 chapter exercise solutions; 66 graded chapter tasks; six cumulative reviews with 18 tasks |
 | Illustrations | 71 portable SVGs generated from shared figure specifications |
 | Attempt packets | Seven: Chapters 6–9, 22, 26 and 28; Chapter 26 is an accounting replay |
@@ -19,7 +19,7 @@ Updated **2026-10-13** by `/root` after publishing 0.4.1-alpha.1 (earlier mobile
 | Human validation | Packet prepared; zero participants and zero observations |
 | Public release | Latest alpha draft 0.4.1-alpha.1 deployed 2026-10-13 to GitHub Pages from OkillA/market-atlas ([release notes](RELEASE_0_4_1_ALPHA_1.md)); 28 scoped AI reviews, human validation deferred |
 
-Run `npm run status` for a fresh read-only inventory and comparison with [the verification checkpoint](PROJECT_CHECKPOINT_20261014_003401.json). The numbers above belong to the dated checkpoint; update them after substantive changes. Matching hashes show that checked files have not changed, rather than establishing new factual or publication approval.
+Run `npm run status` for a fresh read-only inventory and comparison with [the verification checkpoint](PROJECT_CHECKPOINT_20261014_100423.json). The numbers above belong to the dated checkpoint; update them after substantive changes. Matching hashes show that checked files have not changed, rather than establishing new factual or publication approval.
 
 ## Completed milestones
 
@@ -98,3 +98,5 @@ At the earlier release-QA checkpoint, ROAD-002/003/006 were done and ROAD-004 re
 - the Chapter 7 hammer-body wording is fixed.
 
 54 of 71 SVGs changed. All were inspected at 760/320px against previous exports, and flagged regressions were fixed. All documented checks and `check:reviews` pass; all 28 chapters and six part reviews remain accepted, with this batch recorded as a figure recheck. [PROJECT_CHECKPOINT_20261014_003401.json](PROJECT_CHECKPOINT_20261014_003401.json) pins the result. READ1-004–007 and 009–012 stay open; CA1-026 stays deferred. The user requested a push. Published as `8525f14` via [successful Pages run 38492024972](https://github.com/OkillA/market-atlas/actions/runs/38492024972); live index.html, book.js, figure-renderer.js, app.js and styles.css match the commit's SHA-256.
+
+**2026-10-14 READ1 wording batch.** READ1-005 (plain-language definition of R in Ch 9, reminders in Ch 18, purpose in Ch 20 and the glossary) and READ1-009 (Ch 11 MACD full-history indexing, contiguous MACD sections, corrected "latter" referent) are resolved ([report](READ1_WORDING_20261014.md)). Chapters 9, 11, 18 and 20 are re-accepted for wording; Parts 2–5 for the dependency only. All documented checks and `check:reviews` pass (28/28). [PROJECT_CHECKPOINT_20261014_100423.json](PROJECT_CHECKPOINT_20261014_100423.json) pins the result. READ1-004, 006, 007 and 010–012 stay open; CA1-026 stays deferred. The changes are local and not pushed: the public alpha does not include them.

@@ -620,15 +620,6 @@
           "id": "a-short-calculation-makes-the-scale-less-mysterious"
         },
         {
-          "title": "MACD asks a different question",
-          "paragraphs": [
-            "Moving Average Convergence/Divergence, or MACD, commonly subtracts a 26-period EMA from a 12-period EMA and smooths that difference with a nine-period EMA called the signal line. The histogram is MACD minus signal. Fidelity verifies those conventional parameters. Positive MACD means the faster average exceeds the slower one; a rising histogram means that difference is becoming more positive relative to its own signal.",
-            "For an arithmetic snapshot, fast EMA $52 and slow EMA $50 give MACD $2. If the signal is $1.50, the histogram is $0.50. Later MACD $1.80 and signal $1.60 produce $0.20. The histogram has fallen, but both averages remain in the same order. Because the measure uses price units, the raw value is not directly comparable between a $20 stock and a $200 stock. Seeds and warm-up history matter here too.",
-            "For reproducibility, our MACD convention seeds the 12- and 26-period EMAs with their first complete SMAs. The first valid difference is at close 26. Seed the nine-period signal with the mean of the first nine valid MACD values, available at close 34; only then display its histogram. Extra earlier history changes warm-up readings, so match these conventions when comparing implementations."
-          ],
-          "id": "macd-asks-a-different-question"
-        },
-        {
           "title": "A divergence is recognized after its selected peaks",
           "paragraphs": [
             "Use this teaching peak rule: a close is a confirmed local peak if it exceeds the immediately preceding and following closes. A session-t peak is therefore recognized at t+1. In the main panel, $69 at 12 exceeds $68 at 11 and $68 at 13, becoming confirmed at 13. Its five-session ROC is 7.8125%. The $70 peak at 14 exceeds its $68 and $69 neighbors, becoming confirmed at 15; its ROC is about 6.0606%.",
@@ -636,6 +627,15 @@
             "Session 16 subsequently reaches $71. The divergence correctly describes the earlier pair but did not schedule an immediate top. A wider swing rule could select different peaks or recognize them later. Compare the rules and timestamps before arguing about the label. The hand-sized RSI companion uses smaller numbers to isolate the seed and first update, while the price/ROC panels supply the complete analytical application."
           ],
           "id": "a-divergence-is-recognized-after-its-selected-peaks"
+        },
+        {
+          "title": "MACD asks a different question",
+          "paragraphs": [
+            "Moving Average Convergence/Divergence, or MACD, commonly subtracts a 26-period EMA from a 12-period EMA and smooths that difference with a nine-period EMA called the signal line. The histogram is MACD minus signal. Fidelity verifies those conventional parameters. Positive MACD means the faster average exceeds the slower one; a rising histogram means that difference is becoming more positive relative to its own signal.",
+            "For an arithmetic snapshot, fast EMA $52 and slow EMA $50 give MACD $2. If the signal is $1.50, the histogram is $0.50. Later MACD $1.80 and signal $1.60 produce $0.20. The histogram has fallen, but both averages remain in the same order. Because the measure uses price units, the raw value is not directly comparable between a $20 stock and a $200 stock. Seeds and warm-up history matter here too.",
+            "For reproducibility, our MACD convention seeds the 12- and 26-period EMAs with their first complete SMAs. These close numbers count the full 54-close history: the 36 flat $50 closes come first, so displayed session 1 is close 37. The first valid difference is at close 26 and the signal, seeded with the mean of the first nine valid MACD values, at close 34; both lie in the flat history before the charted sessions. Only then is the histogram displayed. Extra earlier history changes warm-up readings, so match these conventions when comparing implementations."
+          ],
+          "id": "macd-asks-a-different-question"
         },
         {
           "title": "Read the MACD lines before reading the histogram",
@@ -838,7 +838,7 @@
             ]
           }
         ],
-        "afterSection": 4
+        "afterSection": 3
       },
       "outcomes": [
         "Calculate ROC and a Wilder-style RSI seed/update.",
@@ -854,7 +854,7 @@
         {
           "kind": "panels",
           "title": "Same closes: MACD, signal, histogram",
-          "caption": "SMA-seeded 12/26 EMAs and nine-valid-MACD signal. Full-history MACD first exists at close 26, signal at 34; the 36 earlier $50 closes supply this initialization.",
+          "caption": "SMA-seeded 12/26 EMAs and nine-valid-MACD signal. MACD first exists at full-history close 26 and the signal at close 34, both within the 36 earlier $50 closes; displayed session 1 is close 37.",
           "panels": [
             {
               "kind": "line",
@@ -1108,15 +1108,16 @@
         "reviewer": "claude-code-main",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH4_20261003.md"
+          "docs/PUBLICATION_BATCH4_20261003.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "0494e5953364a894454bf3c846e03d540e07684335a5c476978fdd88fcd5478a",
+        "contentSha256": "97bb36c89915f99266301bca94e54ac0256232f1f50d90b36446ad4d0b7f42d7",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-009 wording: full-history MACD indexing stated against displayed session 1 (close 37) in prose and momentum-2 caption; divergence section moved before the MACD sections so MACD material is contiguous (figure placement unchanged relative to divergence text); \"the latter\" referent corrected against the research appendix. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
@@ -4301,7 +4302,7 @@
         {
           "level": "independent",
           "title": "A limit touch is not a completed exit",
-          "question": "Compare two separate counterfactual exit instructions for a fresh fictional holding of 60 shares bought at $80, with prior regular-session close $80: an ordinary sell stop at $77, or a sell stop-limit with stop $77 and limit $76.50. Both are active before the next regular-session open and last through that session. In this teaching model the opening trade at or below the stop triggers the order; use all regular-session trade prices in the supplied OHLC and assume no execution outside that range. Model the ordinary-stop fill at the open in each case, with no fees. Compute gap percent, frozen price-risk 1R, modeled ordinary-stop P&L and R. For each stop-limit case, state whether an exit is ruled out or unresolved. If A remains held, give its close-marked P&L and explain why that is not a realized exit result.",
+          "question": "Compare two separate counterfactual exit instructions for a fresh fictional holding of 60 shares bought at $80, with prior regular-session close $80: an ordinary sell stop at $77, or a sell stop-limit with stop $77 and limit $76.50. Both are active before the next regular-session open and last through that session. In this teaching model the opening trade at or below the stop triggers the order; use all regular-session trade prices in the supplied OHLC and assume no execution outside that range. Model the ordinary-stop fill at the open in each case, with no fees. Compute gap percent, frozen price-risk 1R (shares × (entry − stop), the loss planned at the stop), modeled ordinary-stop P&L and R (P&L ÷ 1R). For each stop-limit case, state whether an exit is ruled out or unresolved. If A remains held, give its close-marked P&L and explain why that is not a realized exit result.",
           "solution": [
             "Opening gap = 100 × (75.50/80 − 1) = −5.625%. Frozen price-risk 1R = 60 × (80 − 77) = $180. The separate ordinary-stop model exits at $75.50: P&L = 60 × (75.50 − 80) = −$270, or −1.50R before fees. This is an assumed execution in both cases; a real stop does not guarantee that opening fill. Selling at the $77 trigger would instead hide the additional $90 loss.",
             "Both stop-limit cases trigger at the opening trade under the declared rule. In A, the entire supplied session remains below the $76.50 sell limit: even its $76.40 high is ineligible. Under the stated range-only model, no stop-limit exit is possible in that session. The still-held position marks at 60 × (76 − 80) = −$240, or −1.333333R relative to the frozen $180 denominator; that is unrealized price P&L, not a completed trade or a sale at $76.",
@@ -4406,15 +4407,16 @@
         "reviewer": "claude-code-alpha",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH5_20261011.md"
+          "docs/PUBLICATION_BATCH5_20261011.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13",
+        "contentSha256": "0130ca5bad553b8a6879c04202ae5b15376c567b4f911e3eb6b2337340d532a5",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-005 wording: one-clause 1R and R reminders in the independent gap/stop practice prompt; solution values (1R $180, −1.50R, −1.333333R) rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },

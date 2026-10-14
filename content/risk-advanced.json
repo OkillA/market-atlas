@@ -26,7 +26,7 @@
         {
           "title": "From dollars to shares",
           "paragraphs": [
-            "Maya considers buying ATLS at $50 with an invalidation exit near $48. Price distance is $2 per share. Ignoring costs initially, the risk-based quantity is floor($100 ÷ $2) = 50 shares. The position costs $2,500 and has $100 of planned price risk. Position value and loss budget differ: she commits $2,500 of capital to a plan that anticipates losing $100 if its exit works as modeled.",
+            "Maya considers buying ATLS at $50 with an invalidation exit near $48. Price distance is $2 per share. Ignoring costs initially, the risk-based quantity is floor($100 ÷ $2) = 50 shares. The position costs $2,500 and has $100 of planned price risk; the book calls that filled-position price risk 1R and states results as multiples of it. Position value and loss budget differ: she commits $2,500 of capital to a plan that anticipates losing $100 if its exit works as modeled.",
             "Now include a modeled $0.10 per share round-trip charge, separate from the quoted entry and exit prices. Sizing against a $100 cost-inclusive ordinary-loss budget gives floor(100 ÷ 2.10) = 47 shares. Entry notional is $2,350, planned price risk is $94, modeled costs are $4.70, and the cost-inclusive modeled loss is $98.70. Calling all four quantities “risk” would conceal important differences. A $1,000 notional cap would allow only 20 shares; a cash check also reserves the entry charge. Apply whichever constraint permits the fewest shares."
           ],
           "tables": [
@@ -165,7 +165,7 @@
         {
           "title": "Declare the R denominator before the result",
           "paragraphs": [
-            "Before entry, order price risk is an estimate based on the intended quantity, entry and protective level. Once the modeled or actual fill is confirmed, this book freezes the long position’s 1R PRICE risk as filled shares × (filled entry − the declared initial stop). It excludes costs. A maximum entry ceiling is not the filled entry, and unfilled shares are not a position. Net R = net P&L ÷ that frozen 1R. The 47-share worksheet therefore has 1R = $94, although its cost-inclusive modeled loss is $98.70 and its sizing budget is $100. Its ordinary stop result is −98.70 ÷ 94 = −1.05R; the gap result is −239.70 ÷ 94 = −2.55R. Do not divide by the $100 budget or redefine R after the gap.",
+            "R exists so that results from trades of different sizes can be read against what each plan risked: −2.55R means the loss was about two and a half times the planned risk. Before entry, order price risk is an estimate based on the intended quantity, entry and protective level. Once the modeled or actual fill is confirmed, this book freezes the long position’s 1R PRICE risk as filled shares × (filled entry − the declared initial stop). It excludes costs. A maximum entry ceiling is not the filled entry, and unfilled shares are not a position. Net R = net P&L ÷ that frozen 1R. The 47-share worksheet therefore has 1R = $94, although its cost-inclusive modeled loss is $98.70 and its sizing budget is $100. Its ordinary stop result is −98.70 ÷ 94 = −1.05R; the gap result is −239.70 ÷ 94 = −2.55R. Do not divide by the $100 budget or redefine R after the gap.",
             "A quantity partly filled has its own filled-share price risk. Freeze that denominator when the position is established under the declared entry/stop convention, keeping the original order quantity in a separate field. If there are later additions, the plan must define how their risk is recorded. Our worked plans cancel the unfilled remainder and never add, so the original denominator remains simple.",
             "The completed BRDG record used in the next three chapters instead sizes against PRICE risk: 50 shares at $50.60, stop $48.60, 1R = $100. A flat $5 modeled round-trip cost makes its ordinary net stop loss $105. Both approaches are legitimate teaching contracts if their labels stay explicit. They are different sizing policies, not conflicting definitions of R. When costs are already reflected in actual executable fills, do not subtract the same spread or slippage again.",
             "Always retain dollars beside R. Equal R results have unequal account effects when initial risks differ, and adding R from overlapping trades is not a portfolio return. Sizing limits exposure under the assumptions; it supplies no evidence of a profitable signal. A smaller trade, a paper observation or a skip can be consistent with the same chart interpretation."
@@ -376,15 +376,16 @@
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH1_20261002.md"
+          "docs/PUBLICATION_BATCH1_20261002.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35",
+        "contentSha256": "c191acb99ca7429cc55ca8b0bdb6563d328423e645cb3b07a0b84a5cd65423f4",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-005 wording: R named at the first 1R table use and a purpose sentence leads the denominator section; glossary R multiple states purpose; −1.05R/−2.55R rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
@@ -7370,7 +7371,7 @@
     ],
     [
       "R multiple",
-      "In this edition, net trade P&L after costs divided by frozen filled-position price-risk: actual filled shares × (entry fill price − original stop) for a long position. Costs are excluded from this denominator; the maximum order risk budget is a different quantity. State any alternative convention explicitly; an unfilled order has no position-specific R.",
+      "A trade result expressed as a multiple of the price risk the plan accepted, so trades of different sizes can be compared (−2R = lost twice the planned risk). In this edition, net trade P&L after costs divided by frozen filled-position price-risk: actual filled shares × (entry fill price − original stop) for a long position. Costs are excluded from this denominator; the maximum order risk budget is a different quantity. State any alternative convention explicitly; an unfilled order has no position-specific R.",
       "risk-sizing"
     ],
     [

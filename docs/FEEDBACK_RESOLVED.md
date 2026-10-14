@@ -2144,3 +2144,37 @@ From the AI simulated-beginner read (editorial input, not reader validation). Re
 - Changed locations: content/foundations-price.json (Ch 7 section and guided practice solution); rebuilt book and manuscript.
 - Verification: Wording checked against the frozen rule B > 0, D ≥ 2B, U ≤ B and the worked values (B 0.80, U 0.20, D 1.10; D/B 1.375 < 2). No other "positive body" use remains. Ch 7 fingerprint re-accepted with this scope.
 - Related IDs: None.
+
+### READ1-005 — "R" is never explained in plain words
+- Priority / type: P2 / teaching gap
+- Status: resolved
+- Owner: claude-code-read1b (claimed 2026-10-14)
+- Reviewer / date: READ1 parts 2, 4, 5 / 2026-10-13
+- Location: First use Ch 9 learning outcomes/first pass (~1684, ~1707, rules table "Fees / R", ~1784 "−1.05R net"); Ch 18 independent practice (~3510–3526) needs "frozen price-risk 1R" with no use since Ch 9; Ch 20 defines the denominator only at ~3847 after table use; glossary "R multiple" is formula-only.
+- Finding and evidence: Readers reverse-engineered −1.05R from numbers. Nothing says why results are expressed in R ("−2.55R means you lost about 2.5× what you planned to risk") or that net R = net P&L ÷ 1R.
+- Proposed resolution: Two-sentence plain definition at first use in Ch 9, a one-clause reminder in Ch 18's prompt, and the purpose sentence leading Ch 20's denominator section and the glossary.
+- Acceptance criteria: First R use is preceded by a plain-language definition and formula; Ch 18 task is attemptable without searching back; glossary states purpose.
+- Discussion / progress: None yet.
+- Disposition: resolved
+- Closed by / date: claude-code-read1b / 2026-10-14
+- Resolution: Ch 9 learning outcome glosses "R result"; the first-pass instruction opens with a two-sentence definition (1R = shares × (entry − initial stop), the loss if the stop fills exactly, before fees; net R = net P&L ÷ 1R; −2R = lost twice what the plan risked). Ch 18 independent prompt carries one-clause 1R and R reminders. Ch 20 names 1R before its first table and opens the denominator section with a purpose sentence. Glossary "R multiple" leads with purpose.
+- Changed locations: content/foundations-price.json (Ch 9), content/indicators-context.json (Ch 18 practice), content/risk-advanced.json (Ch 20, glossary); rebuilt book and manuscript.
+- Verification: Every R value in Ch 9, 18 and 20 recalculated against the stated definition (−1.05, +1.95, −1.55, +2.6875, −1.0625, −1.50, −1.333333, −2.55R). Full check suite passes; Ch 9, 18, 20 re-accepted with this scope. See [READ1 wording batch](READ1_WORDING_20261014.md).
+- Related IDs: CA1-024 (R denominator convention, unchanged).
+
+### READ1-009 — Chapter 11 MACD indexing, ordering and a wrong referent
+- Priority / type: P3 / teaching gap + wording defect
+- Status: resolved
+- Owner: claude-code-read1b (claimed 2026-10-14)
+- Reviewer / date: READ1 part 3 / 2026-10-13
+- Location: Ch 11 ~2203 and momentum-2 caption ~2240 ("close 26 / close 34" counted over the full 54-close history while the axis shows sessions 1–18); MACD split around the divergence section (~2196–2231); ~2244 "The stock and futures studies… test the latter portfolio rules" (the stock study is cross-sectional, not time-series).
+- Finding and evidence: Reader took "close 26" as off the chart's right edge. "Latter" points to the wrong rule family.
+- Proposed resolution: State the full-history indexing relative to displayed session 1; keep MACD material contiguous; change "the latter" to "these portfolio rules (one study each)".
+- Acceptance criteria: Indexing statement unambiguous against the figure; referent correct against the appendix.
+- Discussion / progress: None yet.
+- Disposition: resolved
+- Closed by / date: claude-code-read1b / 2026-10-14
+- Resolution: Prose and momentum-2 caption state that close numbers count the full 54-close history and displayed session 1 is close 37, so MACD (close 26) and signal (close 34) begin inside the flat history. The divergence section moved ahead of "MACD asks a different question", making the three MACD sections contiguous (the price/ROC figure still follows the divergence text; section IDs unchanged). "The latter" became "these two portfolio rules (one study each)".
+- Changed locations: content/indicators-context.json (Ch 11 sections, figure afterSection, caption), content/research-context.json (Ch 11 research section); rebuilt book, manuscript and momentum-2.svg (desc only).
+- Verification: 36 + 18 = 54 closes; referent checked against the appendix (Jegadeesh & Titman cross-sectional stocks; Moskowitz, Ooi & Pedersen time-series futures). Section order confirmed in the built manuscript. Full check suite passes; Ch 11 re-accepted. See [READ1 wording batch](READ1_WORDING_20261014.md).
+- Related IDs: None.
