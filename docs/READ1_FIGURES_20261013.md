@@ -1,6 +1,6 @@
 # READ1 figure and wording batch — 2026-10-13
 
-Owner and reviewer: `/root`. **READ1-001, READ1-002, READ1-003 and READ1-008 are resolved.** They came from the AI simulated-beginner read recorded in [FEEDBACK.md](FEEDBACK.md#simulated-beginner-read--read1-2026-10-13). That read is editorial input, not reader validation; CA1-026 remains deferred. READ1-004–007 and 009–012 stay open. Changes are local; no push or deployment.
+Owner and reviewer: `/root`. **READ1-001, READ1-002, READ1-003 and READ1-008 are resolved.** They came from the AI simulated-beginner read recorded in [FEEDBACK.md](FEEDBACK.md#simulated-beginner-read--read1-2026-10-13). That read is editorial input, not reader validation; CA1-026 remains deferred. READ1-004–007 and 009–012 stay open. Deployment: at the user's request. Published as `8525f14` via [successful Pages run 38492024972](https://github.com/OkillA/market-atlas/actions/runs/38492024972); live index.html, book.js, figure-renderer.js, app.js and styles.css match the commit's SHA-256.
 
 ## Corrections
 
