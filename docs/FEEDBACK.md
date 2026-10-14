@@ -77,7 +77,6 @@ CA1-018/019 are resolved and archived with their complete findings after origina
 
 ## Active findings
 
-
 ### CA1-026 — Validate learning with target readers
 - Priority / type: P3 / editorial recommendation
 - Status: deferred
@@ -172,7 +171,6 @@ Reopened CA1-015 and PUB6-001 are verified and archived with their full findings
 
 The Chapter 24 AUD2-002 reopening and PUB7-001–010 are verified and archived with full findings, dispositions and evidence. [Batch 7](PUBLICATION_BATCH7_20261012.md) completes scoped editorial acceptance of all 28 chapters and six part reviews, including the changed earlier-chapter dependencies. PUB7-011 below and CA1-026 remain deferred. Release source/rights review, native printer/broader browser QA and shipping metadata remain pending. Changes are local and unpushed.
 
-
 ## Release-readiness completion — /root, 2026-10-12
 
 PUB7-011 and RELEASE1-001–003 are verified and archived with full findings, dispositions and boundaries. [The report](RELEASE_READINESS_20261012.md) completes ROAD-003 access/support/reuse dispositions and ROAD-006 metadata/invalidation. ROAD-004 native print/desktop coverage remains in progress; ROAD-007 has a local preflight candidate but no new deployment. CA1-026 is the only active finding, deferred until actual readers participate. Original reader storage was restored. Changes remain local and unpushed.
@@ -210,39 +208,6 @@ MOBILE2-002 is resolved and archived with [48 open-drawer viewport/theme/scroll 
 At the user's request (human readers unavailable), six AI agents each read one part of [MANUSCRIPT.md](MANUSCRIPT.md) in order, playing an investing-literate chart beginner: every figure rendered and viewed, every exercise attempted before its solution, every relied-on number recalculated. No arithmetic or factual errors were found. This is **AI editorial input, not reader validation**; it does not advance CA1-026. Findings were consolidated by `/root` and the central claims spot-checked against current files (figure SVG text, manuscript lines); priorities are the content rubric above. Line numbers are hints to the manuscript snapshot of 2026-10-13. Cross-cutting issues are single items with per-location lists; claim and split as needed.
 
 **Strengths the readers asked to preserve:** one small checkable dataset carried through text/table/figure/practice in each chapter; near-miss pairs that change one input (Ch 7, Ch 8); cutoff/recognition-time tables (Ch 5, 8, 17); wrong-option explanations in every knowledge check; Ch 2 two-routes-same-candle; Ch 20 common-shock example; Ch 24 "four implementations of one sentence"; Ch 25 same-trades-two-orders; Ch 26 reproducible Atlas-20 ledger; independent practices are fresh and well judged.
-
-### READ1-001 — Axis ticks fall on non-round values, so readers cannot read stated prices off charts
-- Priority / type: P2 / teaching gap (figures, renderer-wide)
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 simulated-beginner agents (all six parts) / 2026-10-13
-- Location: shared figure renderer; reported in at least timeframes.svg (2/23/45/67/88 linear; 7.8/15.0/28.7/55.1/105.8 log), chart-anatomy(-2), timeframes-2, volume(-2), market-language, trends, moving-averages, momentum, volume-tools, volatility-2, fibonacci, relative-strength (100 baseline not a tick), trade-plans (51.73/50.79/…), psychology (10308/10029/…), testing.svg ($0 start sits on tick "2"), statistics-2 ($20,000 unlabeled), statistics-3, classical-frameworks-2; x-axes ticking 1/5/8/12 or 0/4/9/13 on short session series.
-- Finding and evidence: Ticks are evenly spaced fractions of the data range. Text repeatedly asks readers to check exact prices ("$10, $20, $40, $80… read the axis labels"; "mark a $107 exit and a $99 stop"; S2 "back below $50"), which the axes cannot confirm. Ch 4's linear/log figure fails its own learning outcome: no doubling pair is visible on the log axis. Distinct from CA1-003 (duplicate tick labels) and PUB4-005 (bar-axis floor), which are resolved.
-- Proposed resolution: "Nice" tick steps (1/2/2.5/5 × 10ⁿ) in the renderer; include 0 and the starting balance on P&L/equity axes; tick every session on ≤20-session charts; log axes tick at round values (10/20/40/80 for Ch 4) with point markers/labels.
-- Acceptance criteria: Rebuilt figures show round ticks; on each listed figure a reader can locate every price/value the surrounding text tells them to check; Ch 4 log panel visibly shows equal spacing for doublings. Inspect actual rasters, light/dark, compact/wide; recheck affected chapter acceptance.
-- Discussion / progress: None yet.
-
-### READ1-002 — Figures omit the threshold or level the lesson is about
-- Priority / type: P2 / teaching gap (figures)
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 parts 1, 2, 5, 6 / 2026-10-13
-- Location: Ch 6 support-resistance-2.svg (no $39.50 buffered line or 39.80–40.35 zone; verified—SVG text contains only candle labels); Ch 5 trends.svg (D4 46 / D8 49 swing highs unlabeled though caption says point labels give session and close); Ch 9 breakouts.svg / breakouts-attempt-1.svg (legend lacks values; resistance area unshaded) and breakouts-2.svg (no $50.80 entry ceiling); Ch 2 chart-anatomy-2.svg (no $99/$107 lines for the exercise); Ch 21 trade-plans.svg (no $50/$48.60/$54.60 lines); Ch 24 testing-3.svg (no $50 prior-20 high); Ch 28 case-studies-2/3/6/9.svg (no stop/target, $30 support, 50.19/51.82/52.87, 91.91/93.77 levels; MSFT cutoff/reveal panels separately scaled).
-- Finding and evidence: Captions and callouts ("Intraday crossing", "No closing break", "high is above the upper, and low below the lower") point at levels that are not drawn, so readers must return to tables to understand why the figure exists.
-- Proposed resolution: Draw and label each frozen level as a dashed reference line with its value; put values in legend labels; share the price axis across cutoff/reveal panels where comparison is the point.
-- Acceptance criteria: Each listed figure lets a reader verify the text's threshold claim from the picture alone; actual rasters inspected at compact/wide widths.
-- Discussion / progress: None yet.
-
-### READ1-003 — Volume-profile figure puts the lowest price at the top
-- Priority / type: P2 / defect (misleading visual)
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 part 3 / 2026-10-13
-- Location: Ch 13 "Turn the tape sideways", volume-tools-2.svg.
-- Finding and evidence: Rows run $9.00 (top) to $15.00 (bottom) (SVG text order confirms). The text says "vertical position is price", and every other price chart, including the VWAP chart from the same tape, puts higher prices higher. The reader first read the $15 last trade as the bottom of the range.
-- Proposed resolution: Reverse row order so the highest price is at the top.
-- Acceptance criteria: Rendered figure has $15 at top; matches VWAP chart orientation; Ch 13 acceptance rechecked.
-- Discussion / progress: None yet.
 
 ### READ1-004 — Many exercises repeat a worked example or prose answer immediately above them
 - Priority / type: P2 / teaching gap (practice)
@@ -288,17 +253,6 @@ At the user's request (human readers unavailable), six AI agents each read one p
 - Acceptance criteria: Listed passages restructured without losing any rule; word count not increased overall; affected chapter acceptance rechecked.
 - Discussion / progress: None yet.
 
-### READ1-008 — Ch 7 "positive body" wording reads as "up candle" and one solution contradicts itself
-- Priority / type: P2 / defect (wording)
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 part 2 / 2026-10-13
-- Location: Ch 7 ~1234 ("needs a positive body"), ~1278 ("does not require an up body"), guided solution ~1358 ("Do not reject it for being a down candle: it is an up candle." — verified).
-- Finding and evidence: After Ch 2's up/down bodies, "positive body" reads as close > open; the later statement and the solution sentence then look contradictory.
-- Proposed resolution: "nonzero body (B > 0, either colour)"; rewrite the ~1358 sentence ("Colour is irrelevant; only the lower-tail test fails").
-- Acceptance criteria: Ch 7 uses one unambiguous term for body length vs direction; solution sentence is non-contradictory.
-- Discussion / progress: None yet.
-
 ### READ1-009 — Chapter 11 MACD indexing, ordering and a wrong referent
 - Priority / type: P3 / teaching gap + wording defect
 - Status: open
@@ -318,7 +272,7 @@ At the user's request (human readers unavailable), six AI agents each read one p
 - Location: Ch 3 volume.svg (price and volume x-positions misaligned; outcome promises aligned panels), volume-2.svg (x labels skip D2/D5); Ch 8 chart-patterns-2.svg (symmetrical triangle drawn with two horizontal lines, looks like the rectangle); Ch 13 volume-tools-3.svg (OBV "figure" is the table redrawn; no OBV line); Ch 10 moving-averages.svg range panel marks 3 of 7 side-switches; Ch 15 relative-strength.svg (gold dotted/green solid mean different things in each panel); Ch 16 breadth.svg (daily "Net −2/+2" labels on cumulative points at −3/−1).
 - Proposed resolution: Shared x-positions; label every column on short series; faint descriptive converging lines for triangles; plot an OBV line; neutral grey labelled baseline; "daily net → cumulative" labels.
 - Acceptance criteria: Each listed figure inspected after rebuild; the stated misreading is no longer invited.
-- Discussion / progress: None yet.
+- Discussion / progress: /root, 2026-10-13 — The READ1 figure batch now labels every column of volume-2 at 760px (D2/D5 restored) and keeps "Today" at 320px; the other listed items are untouched. Added from the batch sweep (pre-existing, also in earlier exports): at 320px the Ch 6 construction panel (support-resistance) and Ch 27 range figure (classical-frameworks-3) have zone-name text crossed by the price line and label boxes interrupting shaded zones. Zone labels could move to the key at compact widths. See [figure-sweep.json](read1-assets/figure-sweep.json).
 
 ### READ1-011 — Part 04 review has no relative-strength (Ch 15) task
 - Priority / type: P3 / teaching gap
@@ -340,3 +294,7 @@ At the user's request (human readers unavailable), six AI agents each read one p
 - Proposed resolution: Targeted rewording/reordering as listed; rename SKIP (e.g. KITE); retitle Ch 26 reveal or end it after the ledger.
 - Acceptance criteria: Each listed snag resolved or given an evidence-backed no-change disposition.
 - Discussion / progress: None yet.
+
+### READ1 figure batch completion — /root, 2026-10-13
+
+READ1-001, 002, 003 and 008 are resolved and archived with full findings and verification ([report](READ1_FIGURES_20261013.md)). Round axis values, labelled reference levels on 39 lines, profile orientation and the Chapter 7 wording are rebuilt and checked; all 28 chapters re-accepted with a figure recheck. READ1-004–007 and 009–012 remain open and unclaimed. CA1-026 remains deferred. Changes are local and unpushed.

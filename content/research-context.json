@@ -1816,6 +1816,12 @@
                   "low": 98.211,
                   "close": 101.44
                 }
+              ],
+              "references": [
+                {
+                  "value": 103.238,
+                  "label": "Prior-five mean 103.238"
+                }
               ]
             },
             {
@@ -1918,6 +1924,20 @@
                   "low": 52.142,
                   "close": 52.347
                 }
+              ],
+              "references": [
+                {
+                  "value": 52.87047,
+                  "label": "Upper level 52.87047"
+                },
+                {
+                  "value": 51.82353,
+                  "label": "Lower level 51.82353"
+                },
+                {
+                  "value": 50.1898,
+                  "label": "Prior-five mean 50.1898"
+                }
               ]
             },
             {
@@ -1960,6 +1980,16 @@
                   "high": 47.429,
                   "low": 46.108,
                   "close": 47.276
+                }
+              ],
+              "references": [
+                {
+                  "value": 52.87047,
+                  "label": "Upper level 52.87047"
+                },
+                {
+                  "value": 51.82353,
+                  "label": "Lower level 51.82353"
                 }
               ]
             }
@@ -2020,6 +2050,20 @@
                   "low": 94.299,
                   "close": 97.309
                 }
+              ],
+              "references": [
+                {
+                  "value": 98.28209,
+                  "label": "Upper level 98.28209"
+                },
+                {
+                  "value": 96.33591,
+                  "label": "Lower level 96.33591"
+                },
+                {
+                  "value": 93.1486,
+                  "label": "Prior-five mean 93.1486"
+                }
               ]
             },
             {
@@ -2062,6 +2106,16 @@
                   "high": 98.508,
                   "low": 97.183,
                   "close": 97.797
+                }
+              ],
+              "references": [
+                {
+                  "value": 98.28209,
+                  "label": "Upper level 98.28209"
+                },
+                {
+                  "value": 96.33591,
+                  "label": "Lower level 96.33591"
                 }
               ]
             }
@@ -2122,6 +2176,20 @@
                   "low": 210.78,
                   "close": 211.5
                 }
+              ],
+              "references": [
+                {
+                  "value": 213.615,
+                  "label": "Upper level 213.615"
+                },
+                {
+                  "value": 209.385,
+                  "label": "Lower level 209.385"
+                },
+                {
+                  "value": 211.216,
+                  "label": "Prior-five mean 211.216"
+                }
               ]
             },
             {
@@ -2165,6 +2233,16 @@
                   "low": 211.7,
                   "close": 211.87
                 }
+              ],
+              "references": [
+                {
+                  "value": 213.615,
+                  "label": "Upper level 213.615"
+                },
+                {
+                  "value": 209.385,
+                  "label": "Lower level 209.385"
+                }
               ]
             }
           ]
@@ -2189,7 +2267,17 @@
                   "close": 91.009
                 }
               ],
-              "xLabel": "Archive session date"
+              "xLabel": "Archive session date",
+              "references": [
+                {
+                  "value": 93.76739,
+                  "label": "Upper level 93.76739"
+                },
+                {
+                  "value": 91.91061,
+                  "label": "Lower level 91.91061"
+                }
+              ]
             },
             {
               "kind": "line",
@@ -2213,7 +2301,17 @@
                   ]
                 }
               ],
-              "showAllXLabels": true
+              "showAllXLabels": true,
+              "references": [
+                {
+                  "value": 93.76739,
+                  "label": "Upper level 93.76739"
+                },
+                {
+                  "value": 91.91061,
+                  "label": "Lower level 91.91061"
+                }
+              ]
             },
             {
               "kind": "line",
@@ -2237,7 +2335,17 @@
                   ]
                 }
               ],
-              "showAllXLabels": true
+              "showAllXLabels": true,
+              "references": [
+                {
+                  "value": 93.76739,
+                  "label": "Upper level 93.76739"
+                },
+                {
+                  "value": 91.91061,
+                  "label": "Lower level 91.91061"
+                }
+              ]
             }
           ]
         }

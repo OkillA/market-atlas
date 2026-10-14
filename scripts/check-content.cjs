@@ -32,6 +32,8 @@ function checkFigure(figure,id) {
   if (kind==='table') return checkTable(figure,id);
   if (kind==='flow') { assert.ok(figure.steps.length); return; }
   if (kind==='profile') { figure.levels.forEach(level=>assert.ok(Number.isFinite(level.price)&&Number.isFinite(level.volume)&&level.volume>=0)); return; }
+  for (const reference of figure.references || []) assert.ok(Number.isFinite(reference.value)&&typeof reference.label==='string'&&reference.label.trim()&&(figure.yScale!=='log'||reference.value>0),`Invalid reference level ${id}`);
+  if (figure.yTicks !== undefined) assert.ok(Array.isArray(figure.yTicks)&&figure.yTicks.length>=2&&figure.yTicks.every((value,index)=>Number.isFinite(value)&&(figure.yScale!=='log'||value>0)&&(!index||value>figure.yTicks[index-1])),`Invalid yTicks ${id}`);
   if (kind==='candles') {
     assert.ok(figure.candles.length);
     figure.candles.forEach(candle=>assert.ok([candle.open,candle.high,candle.low,candle.close].every(Number.isFinite)&&candle.low<=Math.min(candle.open,candle.close)&&candle.high>=Math.max(candle.open,candle.close),`Invalid OHLC ${id}`)); return;

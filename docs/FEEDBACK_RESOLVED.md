@@ -2072,3 +2072,75 @@ Original full-read reviewers and implementation: claude-code-pub7, as recorded i
 - Scope / limits: User phone screenshot and native geometry/hit-tests establish this correction. Screenshot exports after the fix failed; no new raster or physical phone verification is claimed. Previous MOBILE2-001 branding remains. CA1-026 deferred.
 
 - MOBILE2-002 deployment verification: `c3a5cac` published via [successful Pages run 38463790656](https://github.com/OkillA/market-atlas/actions/runs/38463790656). [Six live asset hashes](mobile-header-assets/drawer-deployment.json) match the checked files; [390×740 live geometry sample](mobile-header-assets/drawer-live-check.json) confirms drawer y=65, search y=85, hidden duplicate brand and no overflow. The preview frame clock froze the transition; this live sample explicitly finished it and checks final geometry only. The local 48-case matrix retains its original scope. Task preview closed.
+
+## READ1 figure and wording batch — /root, 2026-10-13
+
+From the AI simulated-beginner read (editorial input, not reader validation). Report: [READ1_FIGURES_20261013.md](READ1_FIGURES_20261013.md).
+
+### READ1-001 — Axis ticks fall on non-round values, so readers cannot read stated prices off charts
+- Priority / type: P2 / teaching gap (figures, renderer-wide)
+- Status: resolved
+- Owner: /root (claimed 2026-10-13)
+- Reviewer / date: READ1 simulated-beginner agents (all six parts) / 2026-10-13
+- Location: shared figure renderer; reported in at least timeframes.svg (2/23/45/67/88 linear; 7.8/15.0/28.7/55.1/105.8 log), chart-anatomy(-2), timeframes-2, volume(-2), market-language, trends, moving-averages, momentum, volume-tools, volatility-2, fibonacci, relative-strength (100 baseline not a tick), trade-plans (51.73/50.79/…), psychology (10308/10029/…), testing.svg ($0 start sits on tick "2"), statistics-2 ($20,000 unlabeled), statistics-3, classical-frameworks-2; x-axes ticking 1/5/8/12 or 0/4/9/13 on short session series.
+- Finding and evidence: Ticks are evenly spaced fractions of the data range. Text repeatedly asks readers to check exact prices ("$10, $20, $40, $80… read the axis labels"; "mark a $107 exit and a $99 stop"; S2 "back below $50"), which the axes cannot confirm. Ch 4's linear/log figure fails its own learning outcome: no doubling pair is visible on the log axis. Distinct from CA1-003 (duplicate tick labels) and PUB4-005 (bar-axis floor), which are resolved.
+- Proposed resolution: "Nice" tick steps (1/2/2.5/5 × 10ⁿ) in the renderer; include 0 and the starting balance on P&L/equity axes; tick every session on ≤20-session charts; log axes tick at round values (10/20/40/80 for Ch 4) with point markers/labels.
+- Acceptance criteria: Rebuilt figures show round ticks; on each listed figure a reader can locate every price/value the surrounding text tells them to check; Ch 4 log panel visibly shows equal spacing for doublings. Inspect actual rasters, light/dark, compact/wide; recheck affected chapter acceptance.
+- Discussion / progress: None yet.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-13
+- Resolution: Shared renderer ticks use the largest 1/2/5×10ⁿ step giving ≥4 ticks, exact-decimal labels (cents on fractional money axes) and round log ticks; optional `yTicks` override (Ch 4 log panel 10/20/40/80) and value labels on both Ch 4 panels; x-axes label every observation that fits, else round numbers, always keeping a named final category.
+- Changed locations: figure-renderer.js; scripts/check-content.cjs (`yTicks` validation); content/foundations-price.json (Ch 4); rebuilt content/book.js, docs/MANUSCRIPT.md, 54 of 71 assets/figures SVGs; index.html cache keys.
+- Verification: [READ1 figure batch](READ1_FIGURES_20261013.md): all changed SVGs rendered at 760/320px and compared with previous exports by three reviewer agents plus /root re-inspection of every flagged figure; figure gate 364 renders clean; all documented checks and `check:reviews` pass. Ch 4 log panel visibly shows equal spacing per doubling.
+- Related IDs: READ1-002, READ1-010 (pre-existing compact zone-label crowding retained there).
+
+### READ1-002 — Figures omit the threshold or level the lesson is about
+- Priority / type: P2 / teaching gap (figures)
+- Status: resolved
+- Owner: /root (claimed 2026-10-13)
+- Reviewer / date: READ1 parts 1, 2, 5, 6 / 2026-10-13
+- Location: Ch 6 support-resistance-2.svg (no $39.50 buffered line or 39.80–40.35 zone; verified—SVG text contains only candle labels); Ch 5 trends.svg (D4 46 / D8 49 swing highs unlabeled though caption says point labels give session and close); Ch 9 breakouts.svg / breakouts-attempt-1.svg (legend lacks values; resistance area unshaded) and breakouts-2.svg (no $50.80 entry ceiling); Ch 2 chart-anatomy-2.svg (no $99/$107 lines for the exercise); Ch 21 trade-plans.svg (no $50/$48.60/$54.60 lines); Ch 24 testing-3.svg (no $50 prior-20 high); Ch 28 case-studies-2/3/6/9.svg (no stop/target, $30 support, 50.19/51.82/52.87, 91.91/93.77 levels; MSFT cutoff/reveal panels separately scaled).
+- Finding and evidence: Captions and callouts ("Intraday crossing", "No closing break", "high is above the upper, and low below the lower") point at levels that are not drawn, so readers must return to tables to understand why the figure exists.
+- Proposed resolution: Draw and label each frozen level as a dashed reference line with its value; put values in legend labels; share the price axis across cutoff/reveal panels where comparison is the point.
+- Acceptance criteria: Each listed figure lets a reader verify the text's threshold claim from the picture alone; actual rasters inspected at compact/wide widths.
+- Discussion / progress: None yet.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-13
+- Resolution: New `references` option draws dashed labelled levels on line/bar/candle panels (inline only where clear of data and labels, otherwise the panel's labels move to a key); annotation labels avoid reference lines. 39 levels added across Ch 2, 6, 9, 21, 24, 28 (incl. four historical cutoff/reveal cases and the AAPL diagnostic); Ch 5 labels D4 46/D8 49; Ch 9 breakout legends carry $50.00/$50.50; Ch 21 duplicate point label renamed. MSFT panels keep separate axes (caption states it) but both carry the frozen levels.
+- Changed locations: figure-renderer.js; scripts/check-content.cjs; content/foundations-price.json, content/risk-advanced.json, content/research-context.json; rebuilt outputs.
+- Verification: Every reference label equals its plotted value and the value appears in its chapter text (39/39). An input error (AAPL-January levels on MSFT) was caught at inspection and corrected before commit. Listed figures inspected at 760/320px after fixes; native reader light/dark spot check. See [READ1 figure batch](READ1_FIGURES_20261013.md).
+- Related IDs: READ1-001.
+
+### READ1-003 — Volume-profile figure puts the lowest price at the top
+- Priority / type: P2 / defect (misleading visual)
+- Status: resolved
+- Owner: /root (claimed 2026-10-13)
+- Reviewer / date: READ1 part 3 / 2026-10-13
+- Location: Ch 13 "Turn the tape sideways", volume-tools-2.svg.
+- Finding and evidence: Rows run $9.00 (top) to $15.00 (bottom) (SVG text order confirms). The text says "vertical position is price", and every other price chart, including the VWAP chart from the same tape, puts higher prices higher. The reader first read the $15 last trade as the bottom of the range.
+- Proposed resolution: Reverse row order so the highest price is at the top.
+- Acceptance criteria: Rendered figure has $15 at top; matches VWAP chart orientation; Ch 13 acceptance rechecked.
+- Discussion / progress: None yet.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-13
+- Resolution: Profile renderer sorts rows by descending price so $15 is at the top, matching the VWAP chart from the same tape.
+- Changed locations: figure-renderer.js; rebuilt assets/figures/volume-tools-2.svg and book.
+- Verification: Rendered figure inspected at 760/320px: $15.00 top, $9.00 bottom, $12 point-of-control bar 600 unchanged; Ch 13 acceptance carried forward with figure recheck.
+- Related IDs: None.
+
+### READ1-008 — Ch 7 "positive body" wording reads as "up candle" and one solution contradicts itself
+- Priority / type: P2 / defect (wording)
+- Status: resolved
+- Owner: /root (claimed 2026-10-13)
+- Reviewer / date: READ1 part 2 / 2026-10-13
+- Location: Ch 7 ~1234 ("needs a positive body"), ~1278 ("does not require an up body"), guided solution ~1358 ("Do not reject it for being a down candle: it is an up candle." — verified).
+- Finding and evidence: After Ch 2's up/down bodies, "positive body" reads as close > open; the later statement and the solution sentence then look contradictory.
+- Proposed resolution: "nonzero body (B > 0, either colour)"; rewrite the ~1358 sentence ("Colour is irrelevant; only the lower-tail test fails").
+- Acceptance criteria: Ch 7 uses one unambiguous term for body length vs direction; solution sentence is non-contradictory.
+- Discussion / progress: None yet.
+- Disposition: resolved
+- Closed by / date: /root / 2026-10-13
+- Resolution: Ch 7 rule text now says "a body of nonzero length (B > 0, whether up or down)"; the guided solution states color plays no part and that a down candle with the same measurements fails for the same reason.
+- Changed locations: content/foundations-price.json (Ch 7 section and guided practice solution); rebuilt book and manuscript.
+- Verification: Wording checked against the frozen rule B > 0, D ≥ 2B, U ≤ B and the worked values (B 0.80, U 0.20, D 1.10; D/B 1.375 < 2). No other "positive body" use remains. Ch 7 fingerprint re-accepted with this scope.
+- Related IDs: None.

@@ -1,0 +1,59 @@
+[
+  {
+    "command": "node scripts/verify-early-chapters.cjs",
+    "exitCode": 0,
+    "tail": [
+      "Early-chapter arithmetic verified: 617 comparisons; chapters 1–19 and first four part reviews."
+    ]
+  },
+  {
+    "command": "node scripts/verify-revision.cjs",
+    "exitCode": 0,
+    "tail": [
+      "Verified chapters 20–28: arithmetic, tables, modeled cash/R, cost paths, statistics, Atlas-20 allocation/ledger, framework constraints, case branches and six cumulative tasks. Figures have finite geometry at 300/760px. Visual inspection remains a separate step."
+    ]
+  },
+  {
+    "command": "node scripts/verify-historical.cjs",
+    "exitCode": 0,
+    "tail": [
+      "Historical gallery verified: source hashes/OHLC, all 36 fixed windows, exact means/levels/clock, four first representatives, tables/figures, and separately selected sequence diagnostic."
+    ]
+  },
+  {
+    "command": "npm run check",
+    "exitCode": 0,
+    "tail": [
+      "│ 27      │ 'case-studies'          │ 3757  │ 17       │ 8       │",
+      "└─────────┴─────────────────────────┴───────┴──────────┴─────────┘",
+      "Passed: 28 readable chapters, 42,220 prose words, 105 glossary terms. All chapter, source, and figure references are valid."
+    ]
+  },
+  {
+    "command": "node scripts/check-content.cjs --strict-revision",
+    "exitCode": 0,
+    "tail": [
+      "│ 27      │ 'case-studies'          │ 3757  │ 17       │ 8       │",
+      "└─────────┴─────────────────────────┴───────┴──────────┴─────────┘",
+      "Passed: 28 readable chapters, 42,220 prose words, 105 glossary terms. All chapter, source, and figure references are valid."
+    ]
+  },
+  {
+    "command": "npm run check:figures",
+    "exitCode": 0,
+    "tail": [
+      "> node scripts/verify-figures.cjs",
+      "",
+      "{\"renders\":364,\"markers\":596,\"obscuredMarkers\":0,\"barRenders\":24,\"barsOutsidePlot\":0,\"integerTickRenders\":12,\"badIntegerTicks\":0,\"wideRendersHidingData\":0,\"compactRendersOverLimit\":0,\"maxCompactSeriesPercent\":3.85}"
+    ]
+  },
+  {
+    "command": "npm run check:reviews",
+    "exitCode": 0,
+    "tail": [
+      "> node scripts/verify-review-metadata.cjs",
+      "",
+      "[{\"test\":\"baseline\",\"comparedOutputs\":74,\"reviewed\":28,\"passed\":true},{\"test\":\"prose\",\"targetStatus\":\"draft\",\"reasons\":[\"Chapter or linked source changed\"],\"passed\":true},{\"test\":\"source\",\"targetStatus\":\"draft\",\"reasons\":[\"Chapter or linked source changed\"],\"passed\":true},{\"test\":\"renderer\",\"targetStatus\":\"draft\",\"reasons\":[\"Figure renderer changed\"],\"passed\":true},{\"test\":\"missing-review\",\"targetStatus\":\"draft\",\"reasons\":[\"No accepted review recorded\"],\"passed\":true}]"
+    ]
+  }
+]

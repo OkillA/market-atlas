@@ -9,23 +9,92 @@
     light: { paper: '#fffefa', ink: '#263831', muted: '#586057', grid: '#e2e6dd', series: ['#234d3d', '#a6523e', '#927b38', '#586057'] },
     dynamic: { paper: 'var(--surface,#fffefa)', ink: 'var(--ink,#263831)', muted: 'var(--muted,#586057)', grid: 'var(--grid,#e2e6dd)', series: ['var(--green,#234d3d)', 'var(--rust,#a6523e)', 'var(--gold,#927b38)', 'var(--muted,#586057)'] }
   };
+  // Round tick steps (1, 2 or 5 × 10ⁿ) so readers can locate stated values.
   function ticks(low, high) {
     if (low === high) high = low + 1;
-    return Array.from({ length: 5 }, (_, index) => low + (high - low) * index / 4);
+    // The largest 1/2/5 step that still gives at least four ticks.
+    const magnitude = 10 ** Math.floor(Math.log10((high - low) / 4));
+    const count = step => Math.floor(high / step + 1e-9) - Math.ceil(low / step - 1e-9) + 1;
+    const step = [10, 5, 2, 1, .5, .2].map(m => m * magnitude).find(value => count(value) >= 4);
+    const values = [];
+    for (let value = Math.ceil(low / step - 1e-9) * step; value <= high + step * 1e-9; value += step) values.push(Number(value.toPrecision(12)));
+    return values;
+  }
+  function logTicks(low, high) {
+    for (const mantissas of [[1], [1, 2, 5], [1, 2, 3, 5, 7], [1, 1.5, 2, 3, 4, 5, 6, 7, 8, 9]]) {
+      const values = [];
+      for (let exponent = Math.floor(Math.log10(low)); exponent <= Math.ceil(Math.log10(high)); exponent++) {
+        for (const mantissa of mantissas) { const value = Number((mantissa * 10 ** exponent).toPrecision(12)); if (value >= low && value <= high) values.push(value); }
+      }
+      if (values.length >= 3) return values;
+    }
+    return [low, high];
   }
   function integerTicks(low, high) {
     const step = Math.max(1, Math.round((high - low) / 4));
     const first = Math.ceil(low / step) * step;
     return Array.from({ length: Math.floor((high - first) / step) + 1 }, (_, index) => first + index * step);
   }
-  function precision(step) { return Math.min(6, Math.max(0, Math.ceil(-Math.log10(Math.abs(step) || 1)) + 1)); }
-  function formatTicks(values) {
-    const step = values.length > 1 ? values[1] - values[0] : 1;
-    const max = Math.max(...values.map(Math.abs));
-    const useK = max >= 10000 && Math.abs(step) >= 1000;
-    const digits = precision(useK ? step / 1000 : step);
-    return values.map(value => `${(useK ? value / 1000 : value).toFixed(digits)}${useK ? 'k' : ''}`);
+  function decimals(value) {
+    for (let digits = 0; digits < 6; digits++) if (Math.abs(Number(value.toFixed(digits)) - value) <= 1e-9 * Math.max(1, Math.abs(value))) return digits;
+    return 6;
   }
+  // Show each tick with the fewest decimals that represent it exactly; money uses cents once fractional.
+  function formatTicks(values, money = false) {
+    const max = Math.max(...values.map(Math.abs));
+    const useK = max >= 10000 && values.every(value => value % 1000 === 0);
+    const scaled = values.map(value => useK ? value / 1000 : value);
+    let digits = Math.max(...scaled.map(decimals));
+    if (money && digits === 1) digits = 2;
+    return scaled.map(value => `${value.toFixed(digits)}${useK ? 'k' : ''}`);
+  }
+  // Label every observation that fits; otherwise label round observation numbers.
+  function xTickIndices(figure, count, spacing, size) {
+    const all = Array.from({ length: count }, (_, index) => index);
+    if (figure.showAllXLabels || count <= 1) return all;
+    const widest = Math.max(...all.map(index => textWidth(String(observation(figure, index)), size))) + 10;
+    const numeric = all.every(index => Number.isFinite(Number(observation(figure, index))));
+    const step = [1, 2, 5, 10, 20, 25, 50, 100, 200, 500].find(value => value * spacing >= widest) || Math.ceil(widest / spacing);
+    if (step === 1) return all;
+    const chosen = all.filter(index => numeric ? Number(observation(figure, index)) % step === 0 : index % step === 0);
+    const fits = (index, others) => others.every(other => Math.abs(other - index) * spacing >= widest);
+    if (!chosen.includes(0) && fits(0, chosen)) chosen.unshift(0);
+    if (!chosen.includes(count - 1)) {
+      // A named final category (such as "Today") is often the point of the figure; keep it.
+      if (!numeric) while (chosen.length > 1 && !fits(count - 1, chosen.slice(-1))) chosen.pop();
+      if (fits(count - 1, chosen)) chosen.push(count - 1);
+    }
+    return chosen;
+  }
+  // Dashed, labelled horizontal reference levels (frozen thresholds, stops, targets).
+  // A label that would cover data moves to a key under the chart instead (`keyed`).
+  function referenceLevels(figure, bounds, y, colors, data, reserved, keyed) {
+    let markup = ''; const boxes = [], unplaced = [];
+    for (const [index, reference] of (figure.references || []).entries()) {
+      const yy = y(reference.value), label = reference.label, w = textWidth(label, 12) + 8, h = 16;
+      markup += `<line x1="${bounds.left}" y1="${yy}" x2="${bounds.right}" y2="${yy}" stroke="${colors.ink}" stroke-width="1.1" stroke-dasharray="6 4" opacity=".75"><title>${escape(label)}</title></line>`;
+      if (keyed.has(index)) continue;
+      // Prefer the right end, then any position along the line, just above or below it.
+      const candidates = [];
+      for (let x = bounds.right - w; x >= bounds.left; x -= 4) for (const top of [yy - h - 3, yy + 4]) candidates.push({ x, y: Math.min(bounds.bottom - h, Math.max(bounds.top, top)), w, h });
+      const blocked = box => [...reserved, ...boxes].some(item => rectangleOverlap(box, item, 2));
+      const box = candidates.find(item => !blocked(item) && !data.count(item));
+      if (!box) { unplaced.push(index); continue; }
+      boxes.push(box);
+      markup += `<rect x="${box.x}" y="${box.y}" width="${box.w}" height="${box.h}" fill="${colors.paper}" opacity=".92"/>` + text(box.x + 4, box.y + 12, label, { color: colors.ink, size: 12, weight: 500 });
+    }
+    return { markup, boxes, unplaced };
+  }
+  function referenceKey(references, keyed, x, y, width, colors) {
+    let markup = '', yy = y;
+    for (const index of [...keyed].sort((a, b) => a - b)) {
+      markup += `<line x1="${x}" x2="${x + 26}" y1="${yy - 4}" y2="${yy - 4}" stroke="${colors.ink}" stroke-width="1.1" stroke-dasharray="6 4"/>`;
+      const lines = wrapPixels(references[index].label, width - 35, 12);
+      markup += multiText(x + 35, yy, lines, { color: colors.ink, size: 12 }); yy += lines.length * 19 + 5;
+    }
+    return markup;
+  }
+  function keyHeight(references, keyed, width) { return [...keyed].reduce((sum, index) => sum + wrapPixels(references[index].label, width - 35, 12).length * 19 + 5, 0); }
   function observation(figure, index) { return figure.xLabels?.[index] ?? index + (figure.xStart ?? 1); }
   function annotationValue(figure, annotation) {
     if (Number.isFinite(annotation.value)) return annotation.value;
@@ -131,11 +200,11 @@
     // Authoring review must simplify a figure if no free position remains.
     return box ? { box, score, hidden } : { box: { x: bounds.left, y: bounds.top, w, h }, score: Infinity, hidden: Infinity };
   }
-  function layoutLabels(items, bounds, markers, data) {
+  function layoutLabels(items, bounds, markers, data, reserved = []) {
     // Place labels in authoring order. If that hides data and the panel has only a few
     // labels, try the other orders and keep the lowest total score.
     const run = order => {
-      const occupied = [], boxes = []; let score = 0, hidden = 0;
+      const occupied = [...reserved], boxes = []; let score = 0, hidden = 0;
       for (const index of order) {
         const item = items[index], result = placeLabel(item.px, item.py, item.w, item.h, bounds, item.placements, occupied, markers, data);
         occupied.push(result.box); boxes[index] = result.box; score += result.score; hidden += result.hidden;
@@ -153,18 +222,20 @@
     }
     return best.boxes;
   }
-  function chart(figure, width, colors) {
+  const left0 = compact => compact ? 57 : 76;
+  function chart(figure, width, colors, keyed = new Set()) {
     const isBar = series => series.style === 'bar' || (figure.kind === 'bars' && !series.style);
     const compact = width < 430;
     const legendEntries = figure.series.map(series => wrapPixels(series.name, width - 100, 12));
-    const legendHeight = legendEntries.reduce((sum, lines) => sum + lines.length * 19 + 5, 0);
+    const legendHeight = legendEntries.reduce((sum, lines) => sum + lines.length * 19 + 5, 0) + keyHeight(figure.references, keyed, width - left0(compact));
     const axisLines = wrapPixels(figure.xLabel || 'Observation', width - 85, 12);
     const extra = Math.max(0, legendHeight - 19) + (axisLines.length - 1) * 19;
     const height = (compact ? 340 : 390) + extra;
-    const left = compact ? 57 : 76, right = 25, top = 46, bottom = 93 + extra;
+    const left = left0(compact), right = 25, top = 46, bottom = 93 + extra;
     const count = Math.max(...figure.series.map(series => series.values.length));
     const numbers = figure.series.flatMap(series => series.values.filter(Number.isFinite));
     for (const zone of figure.zones || []) numbers.push(zone.low, zone.high);
+    for (const reference of figure.references || []) numbers.push(reference.value);
     if (figure.series.some(isBar)) numbers.push(0);
     let low = Math.min(...numbers), high = Math.max(...numbers);
     const rawSpan = high - low || Math.max(1, Math.abs(high) * .02);
@@ -181,14 +252,14 @@
     const hasBars = figure.series.some(isBar);
     const x = index => left + (hasBars ? (index + .5) / count : index / Math.max(1, count - 1)) * (width - left - right);
     const y = value => height - bottom - (transform(value) - transform(low)) / (transform(high) - transform(low)) * (height - top - bottom);
-    const tickValues = logarithmic ? ticks(Math.log(low), Math.log(high)).map(Math.exp) : figure.integerTicks ? integerTicks(low, high) : ticks(low, high);
-    const labels = figure.integerTicks ? tickValues.map(String) : formatTicks(tickValues);
+    const tickValues = (figure.yTicks || (logarithmic ? logTicks(low, high) : figure.integerTicks ? integerTicks(low, high) : ticks(low, high))).filter(value => value >= low && value <= high);
+    const labels = figure.integerTicks ? tickValues.map(String) : formatTicks(tickValues, /\$/.test(figure.yLabel || ''));
     let markup = text(left, 19, figure.yLabel || 'Value', { color: colors.muted, size: compact ? 12 : 13 });
     tickValues.forEach((value, index) => {
       markup += `<line x1="${left}" y1="${y(value)}" x2="${width - right}" y2="${y(value)}" stroke="${colors.grid}"/>`;
       markup += text(left - 9, y(value) + 4, labels[index], { anchor: 'end', color: colors.muted, size: compact ? 12 : 13 });
     });
-    const xTicks = figure.showAllXLabels ? Array.from({length:count}, (_,i)=>i) : [...new Set(compact ? [0, Math.round((count - 1) / 2), count - 1] : [0, Math.round((count - 1) / 3), Math.round(2 * (count - 1) / 3), count - 1])];
+    const xTicks = xTickIndices(figure, count, (width - left - right) / Math.max(1, hasBars ? count : count - 1), compact ? 12 : 13);
     xTicks.forEach(index => { markup += text(x(index), height - bottom + 25, observation(figure, index), { anchor: 'middle', color: colors.muted, size: compact ? 12 : 13 }); });
     markup += multiText((left + width - right) / 2, height - bottom + 50, axisLines, { anchor: 'middle', color: colors.muted, size: 12 });
     for (const zone of figure.zones || []) {
@@ -223,6 +294,10 @@
       }
     });
     const markers = (figure.annotations || []).map(annotation => ({ px: x(annotation.index), py: y(annotationValue(figure, annotation)) })).filter(point => Number.isFinite(point.py)).map(point => ({ x: point.px - 4.35, y: point.py - 4.35, w: 8.7, h: 8.7 }));
+    const references = referenceLevels(figure, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, y, colors, data, markers, keyed);
+    if (references.unplaced.length) return chart(figure, width, colors, new Set((figure.references || []).map((_, index) => index)));
+    markup += references.markup;
+    for (const reference of figure.references || []) data.segment(left + 3, y(reference.value), width - right, y(reference.value), 1);
     const labelled = (figure.annotations || []).filter(annotation => Number.isFinite(annotationValue(figure, annotation))).map(annotation => {
       const value = annotationValue(figure, annotation), px = x(annotation.index), py = y(value);
       const labelLines = wrap(annotation.shortLabel || annotation.label, compact ? 17 : 27);
@@ -230,7 +305,7 @@
       const placements = annotation.placement === 'below' ? [[8, 15], [-w - 8, 15], [8, -h - 8], [-w - 8, -h - 8]] : [[8, -h - 8], [-w - 8, -h - 8], [8, 15], [-w - 8, 15]];
       return { annotation, value, px, py, labelLines, w, h, placements };
     });
-    const boxes = layoutLabels(labelled, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, markers, data);
+    const boxes = layoutLabels(labelled, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, markers, data, references.boxes);
     for (const [index, { annotation, value, px, py, labelLines }] of labelled.entries()) {
       const box = boxes[index];
       markup += `<line x1="${px}" y1="${py}" x2="${box.x + box.w / 2}" y2="${box.y + box.h / 2}" stroke="${colors.muted}" stroke-width=".7"/>`;
@@ -245,24 +320,27 @@
       markup += multiText(left + 35, legendY, lines, { color: colors.ink, size: 12 });
       legendY += lines.length * 19 + 5;
     });
+    markup += referenceKey(figure.references, keyed, left, legendY, width - left, colors);
     return { markup, height };
   }
-  function candles(figure, width, colors) {
+  function candles(figure, width, colors, keyed = new Set()) {
     const compact = width < 430;
     const data = figure.candles;
     const candleDetails = figure.showOHLC ? (data.length > 1 && compact ? data.flatMap((candle, index) => wrapPixels(`${candle.label || index + 1}: O $${candle.open}, H $${candle.high}, L $${candle.low}, C $${candle.close}`, width - 24, 12)) : data.length === 1 ? wrapPixels(`Body: $${Math.abs(data[0].close - data[0].open).toFixed(2)}. Upper shadow: $${(data[0].high - Math.max(data[0].open, data[0].close)).toFixed(2)}. Lower shadow: $${(Math.min(data[0].open, data[0].close) - data[0].low).toFixed(2)}.`, width - 24, 12) : []) : [];
-    const footerExtra = Math.max(0, candleDetails.length * 19 - 45);
-    const height = (figure.showOHLC ? 400 : 340) + footerExtra;
-    const left = compact ? 52 : 70, right = 26, top = 39, bottom = (figure.showOHLC ? 126 : 66) + footerExtra;
-    let low = Math.min(...data.map(candle => candle.low)), high = Math.max(...data.map(candle => candle.high));
+    const footerExtra = Math.max(0, candleDetails.length * 19 - 37);
+    const key = keyHeight(figure.references, keyed, width - 24);
+    const base = (figure.showOHLC ? 400 : 340) + footerExtra, height = base + key;
+    const left = compact ? 52 : 70, right = 26, top = 39, bottom = (figure.showOHLC ? 126 : 66) + footerExtra + key;
+    const levels = (figure.references || []).map(reference => reference.value);
+    let low = Math.min(...data.map(candle => candle.low), ...levels), high = Math.max(...data.map(candle => candle.high), ...levels);
     const span = high - low || 1; low -= span * .15; high += span * .15;
     const x = index => data.length === 1 ? width * (compact ? .44 : .34) : left + (index + .5) / data.length * (width - left - right);
     const y = value => height - bottom - (value - low) / (high - low) * (height - top - bottom);
-    const axisTicks = ticks(low, high), axisLabels = formatTicks(axisTicks);
+    const axisTicks = (figure.yTicks || ticks(low, high)).filter(value => value >= low && value <= high), axisLabels = formatTicks(axisTicks, true);
     let markup = text(left, 18, figure.yLabel || 'Price ($)', { color: colors.muted, size: 12 });
     axisTicks.forEach((value, index) => { markup += `<line x1="${left}" y1="${y(value)}" x2="${width - right}" y2="${y(value)}" stroke="${colors.grid}"/>` + text(left - 8, y(value) + 4, axisLabels[index], { anchor: 'end', color: colors.muted, size: compact ? 12 : 13 }); });
     const bodyWidth = Math.min(36, (width - left - right) / data.length * .42);
-    const drawn = dataMap(width, height);
+    const drawn = dataMap(width, height), reserved = [];
     data.forEach((candle, index) => {
       const color = candle.close >= candle.open ? colors.series[0] : colors.series[1];
       const xx = x(index);
@@ -270,17 +348,26 @@
       drawn.rect(xx - bodyWidth / 2, Math.min(y(candle.open), y(candle.close)), bodyWidth, Math.max(2, Math.abs(y(candle.open) - y(candle.close))));
       markup += `<line x1="${xx}" y1="${y(candle.high)}" x2="${xx}" y2="${y(candle.low)}" stroke="${color}" stroke-width="1.8"/><rect x="${xx - bodyWidth / 2}" y="${Math.min(y(candle.open), y(candle.close))}" width="${bodyWidth}" height="${Math.max(2, Math.abs(y(candle.open) - y(candle.close)))}" fill="${color}"/><title>${escape(`${candle.label || index + 1}: O ${candle.open}, H ${candle.high}, L ${candle.low}, C ${candle.close}`)}</title>`;
       const label = candle.label || String(index + (figure.xStart ?? 1));
-      markup += multiText(xx, height - bottom + 24, wrapPixels(label, Math.max(38, (width - left - right) / data.length - 5), 12), { anchor: 'middle', color: colors.muted, size: 12 });
-      if (figure.showOHLC && data.length > 1 && !compact) markup += multiText(xx, height - 60, [`O ${candle.open}  H ${candle.high}`, `L ${candle.low}  C ${candle.close}`], { anchor: 'middle', size: 12, color: colors.muted });
+      markup += multiText(xx, base - bottom + key + 24, wrapPixels(label, Math.max(38, (width - left - right) / data.length - 5), 12), { anchor: 'middle', color: colors.muted, size: 12 });
+      if (figure.showOHLC && data.length > 1 && !compact) markup += multiText(xx, base - 60, [`O ${candle.open}  H ${candle.high}`, `L ${candle.low}  C ${candle.close}`], { anchor: 'middle', size: 12, color: colors.muted });
     });
     if (data.length === 1) {
       const candle = data[0], labelX = x(0) + bodyWidth / 2 + 25;
       const fixedLabels = [{ value: candle.high, label: `High $${candle.high}`, offset: -5 }, { value: candle.low, label: `Low $${candle.low}`, offset: 14 }, { value: candle.open, label: `Open $${candle.open}`, offset: 15 }, { value: candle.close, label: `Close $${candle.close}`, offset: -5 }];
       if (candle.open === candle.close) fixedLabels.splice(2, 2, { value: candle.open, label: `Open / close $${candle.open}`, offset: -5 });
       fixedLabels.forEach(item => { markup += `<line x1="${x(0) + bodyWidth / 2 + 2}" y1="${y(item.value)}" x2="${labelX - 4}" y2="${y(item.value) + item.offset - 4}" stroke="${colors.muted}" stroke-width=".7"/>` + text(labelX, y(item.value) + item.offset, item.label, { color: colors.ink, size: compact ? 12 : 13 }); });
-
+      fixedLabels.forEach(item => reserved.push({ x: labelX, y: y(item.value) + item.offset - 13, w: textWidth(item.label, compact ? 12 : 13), h: 16 }));
+      for (const annotation of figure.annotations || []) {
+        const lines = wrapPixels(annotation.shortLabel || annotation.label, x(0) - bodyWidth / 2 - 14 - (left + 3), 12);
+        reserved.push({ x: left + 3, y: y(annotation.value ?? candle.close) - 20 - (lines.length - 1) * 19, w: Math.max(...lines.map(line => textWidth(line, 12))), h: lines.length * 19 });
+      }
+      reserved.push({ x: x(0) - bodyWidth / 2, y: y(candle.high), w: bodyWidth, h: y(candle.low) - y(candle.high) });
     }
     const markers = (figure.annotations || []).filter(annotation => data[annotation.index]).map(annotation => ({ x: x(annotation.index) - 3, y: y(annotation.value ?? data[annotation.index].close) - 3, w: 6, h: 6 }));
+    const references = referenceLevels(figure, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, y, colors, drawn, [...reserved, ...markers], keyed);
+    if (references.unplaced.length) return candles(figure, width, colors, new Set((figure.references || []).map((_, index) => index)));
+    markup += references.markup;
+    for (const reference of figure.references || []) drawn.segment(left + 3, y(reference.value), width - right, y(reference.value), 1);
     const labelled = data.length === 1 ? [] : (figure.annotations || []).filter(annotation => data[annotation.index]).map(annotation => {
       const px = x(annotation.index), py = y(annotation.value ?? data[annotation.index].close);
       const lines = wrapPixels(annotation.shortLabel || annotation.label, Math.min(width - left - right - 10, compact ? 95 : 180), 12);
@@ -288,15 +375,16 @@
       const above = [[8, -h - 8], [-w - 8, -h - 8], [8, 12], [-w - 8, 12]];
       return { annotation, px, py, lines, w, h, placements: annotation.placement === 'below' ? [...above.slice(2), ...above.slice(0, 2)] : above };
     });
-    const boxes = layoutLabels(labelled, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, markers, drawn);
+    const boxes = layoutLabels(labelled, { left: left + 3, right: width - right, top: top + 2, bottom: height - bottom - 2 }, markers, drawn, references.boxes);
     for (const annotation of figure.annotations || []) {
       const candle = data[annotation.index]; if (!candle) continue;
       const value = annotation.value ?? candle.close;
       const label = annotation.shortLabel || annotation.label;
       if (data.length === 1) {
-        const labelX = left + 3, labelY = y(value) - 7;
-        markup += text(labelX, labelY, label, { size: 12 });
-        markup += `<line x1="${labelX + label.length * (compact ? 5 : 6) + 3}" y1="${labelY - 3}" x2="${x(0) - bodyWidth / 2 - 3}" y2="${y(value)}" stroke="${colors.muted}" stroke-width=".7"/>`;
+        const labelX = left + 3, lines = wrapPixels(label, x(0) - bodyWidth / 2 - 14 - labelX, 12), labelY = y(value) - 7 - (lines.length - 1) * 19;
+        const labelWidth = Math.max(...lines.map(line => textWidth(line, 12)));
+        markup += `<line x1="${labelX + labelWidth + 3}" y1="${y(value) - 10}" x2="${x(0) - bodyWidth / 2 - 3}" y2="${y(value)}" stroke="${colors.muted}" stroke-width=".7"/>`;
+        markup += `<rect x="${labelX - 2}" y="${labelY - 13}" width="${labelWidth + 4}" height="${lines.length * 19}" fill="${colors.paper}" opacity=".92"/>` + multiText(labelX, labelY, lines, { size: 12 });
       } else {
         const item = labelled.find(entry => entry.annotation === annotation), box = boxes[labelled.indexOf(item)];
         const { px, py, lines, w: bw, h: bh } = item;
@@ -304,8 +392,9 @@
         markup += multiText(box.x+2,box.y+12,lines,{size:12});
       }
     }
-    if (candleDetails.length) markup += multiText(12, height - 22 - (candleDetails.length - 1) * 19, candleDetails, { color: colors.muted, size: 12 });
-    markup += text((left + width - right) / 2, height - 8, figure.xLabel || 'Interval', { anchor: 'middle', color: colors.muted, size: 12 });
+    if (candleDetails.length) markup += multiText(12, base - 30 - (candleDetails.length - 1) * 19, candleDetails, { color: colors.muted, size: 12 });
+    markup += text((left + width - right) / 2, base - 8, figure.xLabel || 'Interval', { anchor: 'middle', color: colors.muted, size: 12 });
+    markup += referenceKey(figure.references, keyed, 12, base + 14, width - 12, colors);
     return { markup, height };
   }
   function table(figure, width, colors) {
@@ -349,7 +438,8 @@
     const left = 74, right = 24, top = 35, rowHeight = 37, height = top + figure.levels.length * rowHeight + 50;
     const max = Math.max(...figure.levels.map(level => level.volume));
     let markup = text(left, 17, figure.yLabel || 'Price ($)', { color: colors.muted, size: 12 });
-    figure.levels.forEach((level, index) => {
+    // Higher prices sit higher, matching every price chart.
+    [...figure.levels].sort((a, b) => b.price - a.price).forEach((level, index) => {
       const yy = top + index * rowHeight;
       markup += text(left - 10, yy + 17, Number(level.price).toFixed(2), { anchor: 'end', color: colors.muted, size: 12 });
       const barWidth = level.volume / max * (width - left - right - 52);

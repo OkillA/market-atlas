@@ -1231,7 +1231,7 @@ The name alone is neutral. After a sustained rise, a small-body interval may pro
 
 #### Hammer-like: measure the tail and the context
 
-Use O50/H51/L47/C50.80. Body is $0.80, upper shadow $0.20, lower shadow $3, range $4. Under this chapter’s rule, a hammer-like shape needs a positive body, lower shadow at least twice that body, and upper shadow no greater than the body. Here 3/0.80 = 3.75 and 0.20≤0.80, so it qualifies. The exact thresholds are a teaching definition within conventional long-lower-shadow vocabulary.
+Use O50/H51/L47/C50.80. Body is $0.80, upper shadow $0.20, lower shadow $3, range $4. Under this chapter’s rule, a hammer-like shape needs a body of nonzero length (B > 0, whether up or down), lower shadow at least twice that body, and upper shadow no greater than the body. Here 3/0.80 = 3.75 and 0.20≤0.80, so it qualifies. The exact thresholds are a teaching definition within conventional long-lower-shadow vocabulary.
 
 The prior-trend panel adds two down candles: 54/55/52/53 and 53/54/49/50. Their closes fall 53 →50, then the measured candle closes 50.80. You can now see a preceding decline and an interval finishing well above its low. That motivates investigating a possible upward change. It does not establish the order of every transaction or the cause of the rebound. The same geometry after an advance has a different conventional contextual label, often hanging man.
 
@@ -1355,7 +1355,7 @@ For O50/H51/L48.90/C50.80, finish B, U, D and lower/body. Which condition fails 
 
 B = 0.80, U = 0.20, D = 1.10. D/B = 1.375. The required 2B is 1.60, above the 1.10 lower shadow.
 
-Only the lower-tail threshold fails; the body is positive and upper shadow remains below its length. Do not reject it for being a down candle: it is an up candle.
+Only the lower-tail threshold fails; the body has nonzero length and the upper shadow remains below the body length. Color plays no part in this rule: this candle happens to be up, and a down candle with the same measurements would fail for the same reason.
 
 </details>
 

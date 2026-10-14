@@ -419,12 +419,12 @@
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
         "contentSha256": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     },
@@ -782,7 +782,7 @@
                 "seriesIndex": 0,
                 "label": "Both selected peaks known after 15.",
                 "shortLabel": "Known at 15",
-                "placement": "above"
+                "placement": "below"
               }
             ]
           },
@@ -1110,13 +1110,13 @@
         "evidence": [
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
-        "contentSha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "0494e5953364a894454bf3c846e03d540e07684335a5c476978fdd88fcd5478a",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     },
@@ -1537,12 +1537,12 @@
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
         "contentSha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     },
@@ -2088,12 +2088,12 @@
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
         "contentSha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     },
@@ -2478,12 +2478,12 @@
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
         "contentSha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     },
@@ -2940,12 +2940,12 @@
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     },
@@ -3656,12 +3656,12 @@
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     },
@@ -4034,7 +4034,13 @@
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        }
       }
     },
     {
@@ -4403,7 +4409,13 @@
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52"
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        }
       }
     },
     {
@@ -4780,12 +4792,12 @@
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         }
       }
     }

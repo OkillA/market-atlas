@@ -885,12 +885,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH1_20261002.md"
         ],
         "contentSha256": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -1227,6 +1227,16 @@ window.ATLAS = {
                   "shortLabel": "H108",
                   "placement": "above"
                 }
+              ],
+              "references": [
+                {
+                  "value": 107,
+                  "label": "$107 target"
+                },
+                {
+                  "value": 99,
+                  "label": "$99 stop"
+                }
               ]
             },
             {
@@ -1265,6 +1275,16 @@ window.ATLAS = {
                   "label": "Later low $98, after exit",
                   "shortLabel": "L98",
                   "placement": "below"
+                }
+              ],
+              "references": [
+                {
+                  "value": 107,
+                  "label": "$107 target"
+                },
+                {
+                  "value": 99,
+                  "label": "$99 stop"
                 }
               ]
             }
@@ -1362,13 +1382,13 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH1_20261002.md"
         ],
-        "contentSha256": "99726d7e5c814c61b7797dfff884d34ef70f05a56808d28b8002b505bc42cead",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "86592b68e8ed901b4eb16a54d8e5d03737a1321f53bfd61fa1e0708587931541",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -1848,12 +1868,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
         "contentSha256": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -2141,7 +2161,32 @@ window.ATLAS = {
                 ]
               }
             ],
-            "annotations": [],
+            "annotations": [
+              {
+                "index": 0,
+                "seriesIndex": 0,
+                "label": "$10",
+                "placement": "above"
+              },
+              {
+                "index": 1,
+                "seriesIndex": 0,
+                "label": "$20",
+                "placement": "above"
+              },
+              {
+                "index": 2,
+                "seriesIndex": 0,
+                "label": "$40",
+                "placement": "above"
+              },
+              {
+                "index": 3,
+                "seriesIndex": 0,
+                "label": "$80",
+                "placement": "below"
+              }
+            ],
             "yScale": "linear"
           },
           {
@@ -2162,8 +2207,39 @@ window.ATLAS = {
                 ]
               }
             ],
-            "annotations": [],
-            "yScale": "log"
+            "annotations": [
+              {
+                "index": 0,
+                "seriesIndex": 0,
+                "label": "$10",
+                "placement": "above"
+              },
+              {
+                "index": 1,
+                "seriesIndex": 0,
+                "label": "$20",
+                "placement": "above"
+              },
+              {
+                "index": 2,
+                "seriesIndex": 0,
+                "label": "$40",
+                "placement": "above"
+              },
+              {
+                "index": 3,
+                "seriesIndex": 0,
+                "label": "$80",
+                "placement": "below"
+              }
+            ],
+            "yScale": "log",
+            "yTicks": [
+              10,
+              20,
+              40,
+              80
+            ]
           }
         ]
       },
@@ -2343,8 +2419,14 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH2_20261002.md"
         ],
-        "contentSha256": "2dd2a6d99752d60451375a2783bf2f57697e9129e1aeeeae50347d0a390fb357",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "faa71dc583d9eea2085ce14966eb9cafae902e5285f3f4fbf35c01993d79241c",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -2786,11 +2868,25 @@ window.ATLAS = {
             "placement": "below"
           },
           {
+            "index": 3,
+            "seriesIndex": 0,
+            "label": "D4 high 46; known D6",
+            "shortLabel": "D4: 46",
+            "placement": "above"
+          },
+          {
             "index": 5,
             "seriesIndex": 0,
             "label": "D6 low 43",
             "shortLabel": "D6: 43",
             "placement": "below"
+          },
+          {
+            "index": 7,
+            "seriesIndex": 0,
+            "label": "D8 high 49; known D10",
+            "shortLabel": "D8: 49",
+            "placement": "above"
           },
           {
             "index": 9,
@@ -2981,13 +3077,13 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH2_20261002.md"
         ],
-        "contentSha256": "38a32b5630782592f5203b27abb91a781a5d8226e5f45c96cfc00b3230b2798d",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "2daacc936faf1a1eabb340607a77c33cda2d516430c07ece9c18f0f6f2bd54c0",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -3434,6 +3530,16 @@ window.ATLAS = {
               "shortLabel": "No closing break",
               "placement": "above"
             }
+          ],
+          "references": [
+            {
+              "value": 39.8,
+              "label": "Zone low $39.80"
+            },
+            {
+              "value": 39.5,
+              "label": "Break threshold $39.50"
+            }
           ]
         }
       ],
@@ -3613,13 +3719,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH2_20261002.md",
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
-        "contentSha256": "6a42fe44a3cee0d8a518b30e5f70d04afa4bb36fb4a8f46b915e1fcffd1622c0",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "28028a3ebbf6d00d993aa82e49710b574e8bbd2d28a7ba69820593aaf39ee387",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -3694,7 +3800,7 @@ window.ATLAS = {
         {
           "title": "Hammer-like: measure the tail and the context",
           "paragraphs": [
-            "Use O50/H51/L47/C50.80. Body is $0.80, upper shadow $0.20, lower shadow $3, range $4. Under this chapter’s rule, a hammer-like shape needs a positive body, lower shadow at least twice that body, and upper shadow no greater than the body. Here 3/0.80 = 3.75 and 0.20≤0.80, so it qualifies. The exact thresholds are a teaching definition within conventional long-lower-shadow vocabulary.",
+            "Use O50/H51/L47/C50.80. Body is $0.80, upper shadow $0.20, lower shadow $3, range $4. Under this chapter’s rule, a hammer-like shape needs a body of nonzero length (B > 0, whether up or down), lower shadow at least twice that body, and upper shadow no greater than the body. Here 3/0.80 = 3.75 and 0.20≤0.80, so it qualifies. The exact thresholds are a teaching definition within conventional long-lower-shadow vocabulary.",
             "The prior-trend panel adds two down candles: 54/55/52/53 and 53/54/49/50. Their closes fall 53 →50, then the measured candle closes 50.80. You can now see a preceding decline and an interval finishing well above its low. That motivates investigating a possible upward change. It does not establish the order of every transaction or the cause of the rebound. The same geometry after an advance has a different conventional contextual label, often hanging man.",
             "The near miss changes only the low to 48.90: O50/H51/L48.90/C50.80. Body and upper shadow stay unchanged, but the lower shadow is 1.10, only 1.375 times the body, so it fails the stated tail criterion. It can still be an up candle. “Up candle” and “hammer-like shape under this definition” answer different questions."
           ],
@@ -4090,7 +4196,7 @@ window.ATLAS = {
           "question": "For O50/H51/L48.90/C50.80, finish B, U, D and lower/body. Which condition fails relative to B>0, D≥2B, U≤B?",
           "solution": [
             "B = 0.80, U = 0.20, D = 1.10. D/B = 1.375. The required 2B is 1.60, above the 1.10 lower shadow.",
-            "Only the lower-tail threshold fails; the body is positive and upper shadow remains below its length. Do not reject it for being a down candle: it is an up candle."
+            "Only the lower-tail threshold fails; the body has nonzero length and the upper shadow remains below the body length. Color plays no part in this rule: this candle happens to be up, and a down candle with the same measurements would fail for the same reason."
           ]
         },
         {
@@ -4237,8 +4343,14 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH3_20261003.md",
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
-        "contentSha256": "b3d4182952b3e4dc82e37f5063e954e5f8b4cb11c7bbebff9312660fecef5903",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "22b725a48c8148fafa5752538be62594d05a8bd091d2d76588c091260485c94e",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-008 wording correction (Chapter 7 hammer-body rule and guided solution) reviewed. READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -5780,12 +5892,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
         "contentSha256": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -5994,7 +6106,7 @@ window.ATLAS = {
             ]
           },
           {
-            "name": "Predefined boundary",
+            "name": "Predefined boundary $50.00",
             "values": [
               50,
               50,
@@ -6013,7 +6125,7 @@ window.ATLAS = {
             ]
           },
           {
-            "name": "Signal threshold (strictly above)",
+            "name": "Signal threshold $50.50 (close strictly above)",
             "values": [
               50.5,
               50.5,
@@ -6073,6 +6185,12 @@ window.ATLAS = {
               "low": 49.1,
               "close": 49.4,
               "label": "10: skip"
+            }
+          ],
+          "references": [
+            {
+              "value": 50.8,
+              "label": "Entry ceiling $50.80"
             }
           ]
         }
@@ -6328,7 +6446,7 @@ window.ATLAS = {
                 ]
               },
               {
-                "name": "Supplied boundary",
+                "name": "Supplied boundary $50.00",
                 "values": [
                   50,
                   50,
@@ -6342,7 +6460,7 @@ window.ATLAS = {
                 ]
               },
               {
-                "name": "Supplied signal threshold",
+                "name": "Supplied signal threshold $50.50",
                 "values": [
                   50.5,
                   50.5,
@@ -6368,13 +6486,13 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH1_20261002.md"
         ],
-        "contentSha256": "a0f8ef618394df0351b2e0d41c7ae0733f64ae3a213e0dac34cc1bb93f6cde46",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "41bd91d65e6a132ca1244c1000ae994b4784a6588a33ad45c1bb58d319a5b2b6",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -6827,12 +6945,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
         "contentSha256": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -7202,7 +7320,7 @@ window.ATLAS = {
                 "seriesIndex": 0,
                 "label": "Both selected peaks known after 15.",
                 "shortLabel": "Known at 15",
-                "placement": "above"
+                "placement": "below"
               }
             ]
           },
@@ -7568,13 +7686,13 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
-        "contentSha256": "745bc4471332fc3bb37df43fb8192b1aacdc1f9c82197696d52e1d407ef74b20",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "0494e5953364a894454bf3c846e03d540e07684335a5c476978fdd88fcd5478a",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -7998,12 +8116,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
         "contentSha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -8552,12 +8670,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
         "contentSha256": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -8945,12 +9063,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH4_20261003.md"
         ],
         "contentSha256": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -9437,12 +9555,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -10156,12 +10274,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -10537,7 +10655,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -10909,7 +11033,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "560e2e91f4f3ddca1efe7835a5e9d9138fb79962a33d479c41ff18d4b0095d13",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -11289,12 +11419,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH5_20261011.md"
         ],
         "contentSha256": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -11680,12 +11810,12 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH1_20261002.md"
         ],
         "contentSha256": "1461694d0303b6d56f93bba7b4edca480168c4b833d226e4ae5bb499d30e5d35",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -11899,7 +12029,17 @@ window.ATLAS = {
             "index": 2,
             "value": 48.6,
             "label": "Modeled stop $48.60",
-            "shortLabel": "Stop 48.60"
+            "shortLabel": "S3 exit at stop"
+          }
+        ],
+        "references": [
+          {
+            "value": 50,
+            "label": "Boundary $50.00"
+          },
+          {
+            "value": 48.6,
+            "label": "Stop $48.60"
           }
         ]
       },
@@ -12051,13 +12191,13 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH1_20261002.md"
         ],
-        "contentSha256": "63160472984777838a1c865bfb1bcb28b44a1ab15cae2e885995d262b9989163",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "51771b6899a02e390c72c9ae6e126fb1f4b1b3657b16cd82233a53ee5de1ce2e",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "/root",
-          "date": "2026-10-12",
-          "report": "docs/PUBLICATION_BATCH7_20261012.md",
-          "scope": "Changed compact/wide figures inspected; substantive earlier acceptance inherited except documented text/source-locator changes."
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -12506,7 +12646,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH6_20261011.md"
         ],
         "contentSha256": "f3e9f59928685495b511428f6a757b02eee75f3e51ce094002ab337fcceadeb1",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -12941,7 +13087,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH6_20261011.md"
         ],
         "contentSha256": "5cd904e206c266b34454d2c5cecb1de690b4ade48af81e85c66eeb7251d62c1e",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -13816,6 +13968,16 @@ window.ATLAS = {
               "shortLabel": "Fill O 50.70",
               "placement": "below"
             }
+          ],
+          "references": [
+            {
+              "value": 50.9,
+              "label": "Entry ceiling $50.90"
+            },
+            {
+              "value": 50,
+              "label": "Prior-20 high $50.00"
+            }
           ]
         }
       ],
@@ -13921,8 +14083,14 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
-        "contentSha256": "c9b4f4c9769321a17f57e09276c281d27a9063cc93453ecf2308530b1a6e6fb2",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "9812219d32bc209f462fc5f5a86b33ff45470d1e504ba7fa835157e452db47b7",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -14978,7 +15146,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
         "contentSha256": "344bbf78672956d19976540a3c5b76b24b2ce785e384b51f024774f52d982445",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -16779,7 +16953,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
         "contentSha256": "515c95a1e848ce057d0156ce751a02979e64f93f95d62324b0e5b5a3a9e88fb5",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -17612,7 +17792,13 @@ window.ATLAS = {
           "docs/RELEASE_READINESS_20261012.md"
         ],
         "contentSha256": "e078aaaf440e8f884dc75cd8dc8792ae04d84eb253cd5a0c3f675ab549dd7a35",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []
@@ -18836,6 +19022,16 @@ window.ATLAS = {
                   "label": "Target crossed on first ascent",
                   "shortLabel": "Target first"
                 }
+              ],
+              "references": [
+                {
+                  "value": 54.6,
+                  "label": "Target $54.60"
+                },
+                {
+                  "value": 48.6,
+                  "label": "Stop $48.60"
+                }
               ]
             },
             {
@@ -18860,6 +19056,16 @@ window.ATLAS = {
                   "seriesIndex": 0,
                   "label": "Stop crossed on first descent",
                   "shortLabel": "Stop first"
+                }
+              ],
+              "references": [
+                {
+                  "value": 54.6,
+                  "label": "Target $54.60"
+                },
+                {
+                  "value": 48.6,
+                  "label": "Stop $48.60"
                 }
               ]
             }
@@ -18927,6 +19133,16 @@ window.ATLAS = {
               "value": 35,
               "label": "Modeled target 35.00",
               "shortLabel": "Target 35.00"
+            }
+          ],
+          "references": [
+            {
+              "value": 30,
+              "label": "Frozen support $30.00"
+            },
+            {
+              "value": 29,
+              "label": "Stop $29.00"
             }
           ]
         },
@@ -19056,6 +19272,12 @@ window.ATLAS = {
                   "low": 98.211,
                   "close": 101.44
                 }
+              ],
+              "references": [
+                {
+                  "value": 103.238,
+                  "label": "Prior-five mean 103.238"
+                }
               ]
             },
             {
@@ -19159,6 +19381,20 @@ window.ATLAS = {
                   "low": 52.142,
                   "close": 52.347
                 }
+              ],
+              "references": [
+                {
+                  "value": 52.87047,
+                  "label": "Upper level 52.87047"
+                },
+                {
+                  "value": 51.82353,
+                  "label": "Lower level 51.82353"
+                },
+                {
+                  "value": 50.1898,
+                  "label": "Prior-five mean 50.1898"
+                }
               ]
             },
             {
@@ -19201,6 +19437,16 @@ window.ATLAS = {
                   "high": 47.429,
                   "low": 46.108,
                   "close": 47.276
+                }
+              ],
+              "references": [
+                {
+                  "value": 52.87047,
+                  "label": "Upper level 52.87047"
+                },
+                {
+                  "value": 51.82353,
+                  "label": "Lower level 51.82353"
                 }
               ]
             }
@@ -19262,6 +19508,20 @@ window.ATLAS = {
                   "low": 94.299,
                   "close": 97.309
                 }
+              ],
+              "references": [
+                {
+                  "value": 98.28209,
+                  "label": "Upper level 98.28209"
+                },
+                {
+                  "value": 96.33591,
+                  "label": "Lower level 96.33591"
+                },
+                {
+                  "value": 93.1486,
+                  "label": "Prior-five mean 93.1486"
+                }
               ]
             },
             {
@@ -19304,6 +19564,16 @@ window.ATLAS = {
                   "high": 98.508,
                   "low": 97.183,
                   "close": 97.797
+                }
+              ],
+              "references": [
+                {
+                  "value": 98.28209,
+                  "label": "Upper level 98.28209"
+                },
+                {
+                  "value": 96.33591,
+                  "label": "Lower level 96.33591"
                 }
               ]
             }
@@ -19365,6 +19635,20 @@ window.ATLAS = {
                   "low": 210.78,
                   "close": 211.5
                 }
+              ],
+              "references": [
+                {
+                  "value": 213.615,
+                  "label": "Upper level 213.615"
+                },
+                {
+                  "value": 209.385,
+                  "label": "Lower level 209.385"
+                },
+                {
+                  "value": 211.216,
+                  "label": "Prior-five mean 211.216"
+                }
               ]
             },
             {
@@ -19408,6 +19692,16 @@ window.ATLAS = {
                   "low": 211.7,
                   "close": 211.87
                 }
+              ],
+              "references": [
+                {
+                  "value": 213.615,
+                  "label": "Upper level 213.615"
+                },
+                {
+                  "value": 209.385,
+                  "label": "Lower level 209.385"
+                }
               ]
             }
           ],
@@ -19433,7 +19727,17 @@ window.ATLAS = {
                   "close": 91.009
                 }
               ],
-              "xLabel": "Archive session date"
+              "xLabel": "Archive session date",
+              "references": [
+                {
+                  "value": 93.76739,
+                  "label": "Upper level 93.76739"
+                },
+                {
+                  "value": 91.91061,
+                  "label": "Lower level 91.91061"
+                }
+              ]
             },
             {
               "kind": "line",
@@ -19457,7 +19761,17 @@ window.ATLAS = {
                   ]
                 }
               ],
-              "showAllXLabels": true
+              "showAllXLabels": true,
+              "references": [
+                {
+                  "value": 93.76739,
+                  "label": "Upper level 93.76739"
+                },
+                {
+                  "value": 91.91061,
+                  "label": "Lower level 91.91061"
+                }
+              ]
             },
             {
               "kind": "line",
@@ -19481,7 +19795,17 @@ window.ATLAS = {
                   ]
                 }
               ],
-              "showAllXLabels": true
+              "showAllXLabels": true,
+              "references": [
+                {
+                  "value": 93.76739,
+                  "label": "Upper level 93.76739"
+                },
+                {
+                  "value": 91.91061,
+                  "label": "Lower level 91.91061"
+                }
+              ]
             }
           ],
           "afterSection": 16
@@ -19963,8 +20287,14 @@ window.ATLAS = {
         "evidence": [
           "docs/PUBLICATION_BATCH7_20261012.md"
         ],
-        "contentSha256": "f5be3ebe6aed3c08f140065f3f6790410c941b9545af84dc5445da3987d51354",
-        "rendererSha256": "85488295f25e11a331a7273f16db45c1c3e83eab3be8a80d4be316a9089acc52",
+        "contentSha256": "92dbaaa8616aa25f344e18d66e2f3d863966e097d008ab40e51f84612d753224",
+        "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
+        "figureRecheck": {
+          "reviewer": "/root",
+          "date": "2026-10-13",
+          "report": "docs/READ1_FIGURES_20261013.md",
+          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+        },
         "valid": true,
         "effectiveStatus": "accepted",
         "reasons": []

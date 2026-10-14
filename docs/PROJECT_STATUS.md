@@ -10,7 +10,7 @@ Updated **2026-10-13** by `/root` after publishing 0.4.1-alpha.1 (earlier mobile
 | --- | --- |
 | Browser book and standalone manuscript | Local edition 0.4.1; 28 scoped AI editorial review labels, overall alpha draft |
 | Structure | Six parts; 210 narrative sections |
-| Section prose | 42,211 words; excludes examples, practice, quizzes and research appendix |
+| Section prose | 42,220 words; excludes examples, practice, quizzes and research appendix |
 | Practice | 28 chapter exercise solutions; 66 graded chapter tasks; six cumulative reviews with 18 tasks |
 | Illustrations | 71 portable SVGs generated from shared figure specifications |
 | Attempt packets | Seven: Chapters 6–9, 22, 26 and 28; Chapter 26 is an accounting replay |
@@ -19,7 +19,7 @@ Updated **2026-10-13** by `/root` after publishing 0.4.1-alpha.1 (earlier mobile
 | Human validation | Packet prepared; zero participants and zero observations |
 | Public release | Latest alpha draft 0.4.1-alpha.1 deployed 2026-10-13 to GitHub Pages from OkillA/market-atlas ([release notes](RELEASE_0_4_1_ALPHA_1.md)); 28 scoped AI reviews, human validation deferred |
 
-Run `npm run status` for a fresh read-only inventory and comparison with [the verification checkpoint](PROJECT_CHECKPOINT_20261013_203749.json). The numbers above belong to the dated checkpoint; update them after substantive changes. Matching hashes show that checked files have not changed, rather than establishing new factual or publication approval.
+Run `npm run status` for a fresh read-only inventory and comparison with [the verification checkpoint](PROJECT_CHECKPOINT_20261014_003401.json). The numbers above belong to the dated checkpoint; update them after substantive changes. Matching hashes show that checked files have not changed, rather than establishing new factual or publication approval.
 
 ## Completed milestones
 
@@ -90,3 +90,11 @@ At the earlier release-QA checkpoint, ROAD-002/003/006 were done and ROAD-004 re
 3. Edit authoring JSON for content changes and coordinate one shared rebuild. Verify affected teaching, calculations, source claims and actual figures according to [CONTENT_GUIDE.md](CONTENT_GUIDE.md).
 4. Update the roadmap's owner, progress and exit evidence, plus affected chapter-ledger rows. Refresh this inventory and create a new dated checkpoint after checks pass; retain old reports as history.
 5. If `npm run status` reports changed files, determine which checks and reviews are affected. A checkpoint match is a freshness signal; publication acceptance and reader observations require their own evidence.
+
+**2026-10-13 READ1 figure batch.** The [simulated-beginner read](FEEDBACK.md#simulated-beginner-read--read1-2026-10-13) findings READ1-001/002/003/008 are resolved ([report](READ1_FIGURES_20261013.md)):
+- round axis values and observation labels in the shared renderer;
+- 39 labelled reference levels on the figures that teach thresholds;
+- the volume profile shows the highest price at the top;
+- the Chapter 7 hammer-body wording is fixed.
+
+54 of 71 SVGs changed. All were inspected at 760/320px against previous exports, and flagged regressions were fixed. All documented checks and `check:reviews` pass; all 28 chapters and six part reviews remain accepted, with this batch recorded as a figure recheck. [PROJECT_CHECKPOINT_20261014_003401.json](PROJECT_CHECKPOINT_20261014_003401.json) pins the result. READ1-004–007 and 009–012 stay open; CA1-026 stays deferred. Changes are local; the public alpha still serves the previous figures until the user asks for a push.
