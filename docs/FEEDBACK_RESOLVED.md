@@ -2178,3 +2178,36 @@ From the AI simulated-beginner read (editorial input, not reader validation). Re
 - Changed locations: content/indicators-context.json (Ch 11 sections, figure afterSection, caption), content/research-context.json (Ch 11 research section); rebuilt book, manuscript and momentum-2.svg (desc only).
 - Verification: 36 + 18 = 54 closes; referent checked against the appendix (Jegadeesh & Titman cross-sectional stocks; Moskowitz, Ooi & Pedersen time-series futures). Section order confirmed in the built manuscript. Full check suite passes; Ch 11 re-accepted. See [READ1 wording batch](READ1_WORDING_20261014.md).
 - Related IDs: None.
+
+### READ1-011 — Part 04 review has no relative-strength (Ch 15) task
+- Priority / type: P3 / teaching gap
+- Status: resolved
+- Owner: claude-code-read1b (claimed 2026-10-14)
+- Reviewer / date: READ1 part 4 / 2026-10-13
+- Location: Part 04 review (~3720–3754).
+- Finding and evidence: Three tasks cover breadth, timeframes, events/microstructure; the part's first chapter and its absolute-vs-relative distinction are untested.
+- Proposed resolution: Add a short fresh-input relative-strength item (absolute return, relative index, pp difference) with a worked solution.
+- Acceptance criteria: Part 04 review includes a verified Ch 15 task; Part 4 acceptance rechecked.
+- Discussion / progress: None yet.
+- Disposition: resolved
+- Closed by / date: claude-code-read1b / 2026-10-14
+- Resolution: Added "Name the benchmark before calling a stock strong" as the first Part 4 review task: fresh fictional stock $25→$27, sector ETF $80→$92, market 4,000→3,900 in an input table; the worked solution gives factors, return differences (−7 / +10.5 pp), rebased relative indexes (93.9130 / 110.7692) and a benchmark-named rewrite of "strong". Part title now includes "comparison".
+- Changed locations: content/indicators-context.json (partPractice.context); scripts/verify-early-chapters.cjs; rebuilt book and manuscript.
+- Verification: The verifier recomputes the factors and differences and requires the four printed index values (626 comparisons). Part 4 is re-accepted. See [READ1 wording batch, slice 2](READ1_WORDING_20261014.md#slice-2-read1-011-and-read1-012).
+- Related IDs: None.
+
+### READ1-012 — Local wording and ordering snags
+- Priority / type: P3 / editorial recommendation
+- Status: resolved
+- Owner: claude-code-read1b (claimed 2026-10-14)
+- Reviewer / date: READ1 parts 1–6 / 2026-10-13
+- Location: Ch 2 "Measure the candle…" (~216) refers to table/formulas/close-location before they appear; Ch 5 ~839 "therefore" non sequitur, ~858 trendline-break criterion unstated; Ch 6 data called "Harbor" in legends/table (~1112) without introduction; Ch 7 ~1307 unanchored $52 entry / $46.80 trigger; Ch 8 ~1558 caption mixes optional and core panels; Ch 12 ~2421 "$100 budget" should be "$100 planned loss budget"; Ch 20 first table (~3789) shows BRDG "E50.60/S48.60" before introduction; Ch 21 ~3989 "net $115" without naming both $2.50 charges; Ch 22 calibration section switches topic (~4235); Ch 23 fictional ticker "SKIP" collides with the word skip and copies BRDG's numbers (~4349–4390); Ch 26 new teaching sits inside "Reveal continuation…" (~5378–5565); Ch 28 MSFT rounding counterexample derails the point (~6096).
+- Proposed resolution: Targeted rewording/reordering as listed; rename SKIP (e.g. KITE); retitle Ch 26 reveal or end it after the ledger.
+- Acceptance criteria: Each listed snag resolved or given an evidence-backed no-change disposition.
+- Discussion / progress: None yet.
+- Disposition: resolved (eleven locations changed; Ch 26 no-change with evidence)
+- Closed by / date: claude-code-read1b / 2026-10-14
+- Resolution: Ch 2 close-location defined before use, with the table referenced as "below". Ch 5 "therefore" replaced by the stated reason, and the break criterion stated. Ch 6 Harbor introduced. Ch 7 $52/$46.80 anchored. Ch 8 caption separates core panels from catalogue panels. Ch 12 "planned loss budget". Ch 20 BRDG row spelled out. Ch 21 both $2.50 charges named. Ch 22 escalation given its own section. SKIP renamed KITE (Ch 23, Ch 28, journaling.svg), with the shared BRDG inputs explained as deliberate. Ch 28 MSFT rounding counterexample cut to one sentence. Ch 26 reveal not changed: all seven attempt packets put explanations behind the same reveal, whose label already says "explanations", and splitting one chapter's reveal would need new builder, app and print support and break the consistent pattern.
+- Changed locations: content/foundations-price.json, content/indicators-context.json, content/risk-advanced.json, content/research-context.json; rebuilt book, manuscript, journaling.svg and chart-patterns-2.svg.
+- Verification: Every edited passage was read in the rebuilt manuscript and its affected arithmetic recomputed. journaling.svg was rendered and inspected. All checks pass, and the eleven changed chapters are re-accepted. See [READ1 wording batch, slice 2](READ1_WORDING_20261014.md#slice-2-read1-011-and-read1-012).
+- Related IDs: READ1-006 (support definition before Ch 6 packet remains there), READ1-007.

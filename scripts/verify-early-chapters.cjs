@@ -176,5 +176,7 @@ assert.ok(!JSON.stringify(harborAttempt.tables).includes('52.20'));checks++;
 const reviews=Object.assign({},...inputs.map(j=>j.partPractice));same(Object.keys(reviews),['foundations','price-action','indicators','context']);
 near(ret(80,84),5);near(ret(88,84),-4.5454545454545);near(1.2/mean([.8,1,1.2,.9,1.1]),1.2);near(.6/.4,1.5);near(20*80,40*40);
 assert.ok(!(60.5>60.6)&&60.8>60.6&&62>60.8&&59.5<59.7);near((50*(64.8-60.8)-5)/100,1.95);near((50*(58.8-60.8)-5)/100,-1.05);
+// READ1-011 Part 4 relative-strength task: recompute and require the solution's printed values.
+{const rs=reviews.context.tasks[0];assert.equal(rs.title,'Name the benchmark before calling a stock strong');const f=[27/25,92/80,3900/4000];near(f[0],1.08);near(f[1],1.15);near(f[2],.975);near(100*(f[0]-1)-100*(f[1]-1),-7);near(100*(f[0]-1)-100*(f[2]-1),10.5);const txt=rs.solution.join(' ');for(const v of [100*f[0]/f[1],100*f[0]/f[2],100*f[0]/f[1]-100,100*f[0]/f[2]-100]){const shown=(Math.abs(v)<20?v.toFixed(4):v.toFixed(4)).replace('-','−');assert.ok(txt.includes(shown),shown);checks++;}}
 const reviewPath=[40,42,41,43,44,46,45,44,43,42,43,44],reviewMA=sma(reviewPath,3);near(reviewMA[9],43);near(reviewMA[10],128/3);near(ret(reviewPath[7],reviewPath[10]),-2.272727272727);
 console.log(`Early-chapter arithmetic verified: ${checks} comparisons; chapters 1–19 and first four part reviews.`);

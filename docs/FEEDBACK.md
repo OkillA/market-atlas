@@ -252,27 +252,6 @@ At the user's request (human readers unavailable), six AI agents each read one p
 - Acceptance criteria: Each listed figure inspected after rebuild; the stated misreading is no longer invited.
 - Discussion / progress: /root, 2026-10-13 — The READ1 figure batch now labels every column of volume-2 at 760px (D2/D5 restored) and keeps "Today" at 320px; the other listed items are untouched. Added from the batch sweep (pre-existing, also in earlier exports): at 320px the Ch 6 construction panel (support-resistance) and Ch 27 range figure (classical-frameworks-3) have zone-name text crossed by the price line and label boxes interrupting shaded zones. Zone labels could move to the key at compact widths. See [figure-sweep.json](read1-assets/figure-sweep.json).
 
-### READ1-011 — Part 04 review has no relative-strength (Ch 15) task
-- Priority / type: P3 / teaching gap
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 part 4 / 2026-10-13
-- Location: Part 04 review (~3720–3754).
-- Finding and evidence: Three tasks cover breadth, timeframes, events/microstructure; the part's first chapter and its absolute-vs-relative distinction are untested.
-- Proposed resolution: Add a short fresh-input relative-strength item (absolute return, relative index, pp difference) with a worked solution.
-- Acceptance criteria: Part 04 review includes a verified Ch 15 task; Part 4 acceptance rechecked.
-- Discussion / progress: None yet.
-
-### READ1-012 — Local wording and ordering snags
-- Priority / type: P3 / editorial recommendation
-- Status: open
-- Owner: unassigned
-- Reviewer / date: READ1 parts 1–6 / 2026-10-13
-- Location: Ch 2 "Measure the candle…" (~216) refers to table/formulas/close-location before they appear; Ch 5 ~839 "therefore" non sequitur, ~858 trendline-break criterion unstated; Ch 6 data called "Harbor" in legends/table (~1112) without introduction; Ch 7 ~1307 unanchored $52 entry / $46.80 trigger; Ch 8 ~1558 caption mixes optional and core panels; Ch 12 ~2421 "$100 budget" should be "$100 planned loss budget"; Ch 20 first table (~3789) shows BRDG "E50.60/S48.60" before introduction; Ch 21 ~3989 "net $115" without naming both $2.50 charges; Ch 22 calibration section switches topic (~4235); Ch 23 fictional ticker "SKIP" collides with the word skip and copies BRDG's numbers (~4349–4390); Ch 26 new teaching sits inside "Reveal continuation…" (~5378–5565); Ch 28 MSFT rounding counterexample derails the point (~6096).
-- Proposed resolution: Targeted rewording/reordering as listed; rename SKIP (e.g. KITE); retitle Ch 26 reveal or end it after the ledger.
-- Acceptance criteria: Each listed snag resolved or given an evidence-backed no-change disposition.
-- Discussion / progress: None yet.
-
 ### READ1 figure batch completion — /root, 2026-10-13
 
 READ1-001, 002, 003 and 008 are resolved and archived with full findings and verification ([report](READ1_FIGURES_20261013.md)). Round axis values, labelled reference levels on 39 lines, profile orientation and the Chapter 7 wording are rebuilt and checked; all 28 chapters re-accepted with a figure recheck. READ1-004–007 and 009–012 remain open and unclaimed. CA1-026 remains deferred. Changes are local and unpushed.
@@ -280,3 +259,5 @@ READ1-001, 002, 003 and 008 are resolved and archived with full findings and ver
 ### READ1 wording batch completion — claude-code-read1b, 2026-10-14
 
 READ1-005 (plain-language R) and READ1-009 (Chapter 11 MACD indexing/order/referent) are resolved and archived with full findings and verification ([report](READ1_WORDING_20261014.md)). Chapters 9, 11, 18 and 20 re-accepted; Parts 2–5 for dependency only. READ1-004, 006, 007 and 010–012 remain open and unclaimed. CA1-026 remains deferred. Changes are local and unpushed.
+
+Slice 2, same day: READ1-011 (Part 4 relative-strength task) and READ1-012 (local snags; Ch 26 reveal kept with evidence) are resolved and archived. READ1-004, 006, 007 and 010 remain open and unclaimed.

@@ -1,0 +1,238 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "id": "market-language",
+      "before": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
+      "after": "39e585af9d7d300bca78b8c4ec87c475a18a8a4cb5c84c8bcda3baf93d8963b0",
+      "changed": false
+    },
+    {
+      "number": 2,
+      "id": "chart-anatomy",
+      "before": "86592b68e8ed901b4eb16a54d8e5d03737a1321f53bfd61fa1e0708587931541",
+      "after": "6ae05e5504ddf6ab1a12fecfdd9596bf670701c44ad97ceae5f766477a3d45b2",
+      "changed": true
+    },
+    {
+      "number": 3,
+      "id": "volume",
+      "before": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
+      "after": "e26307912825b4f7ebe158124915b5d8e12fbc14f7220939e12d7d35b22b517f",
+      "changed": false
+    },
+    {
+      "number": 4,
+      "id": "timeframes",
+      "before": "faa71dc583d9eea2085ce14966eb9cafae902e5285f3f4fbf35c01993d79241c",
+      "after": "faa71dc583d9eea2085ce14966eb9cafae902e5285f3f4fbf35c01993d79241c",
+      "changed": false
+    },
+    {
+      "number": 5,
+      "id": "trends",
+      "before": "2daacc936faf1a1eabb340607a77c33cda2d516430c07ece9c18f0f6f2bd54c0",
+      "after": "6de47a153707f7bd6f7e7a80fa532bd8cbaf3a9aafe8e6480bf3a5f4f2833f1b",
+      "changed": true
+    },
+    {
+      "number": 6,
+      "id": "support-resistance",
+      "before": "28028a3ebbf6d00d993aa82e49710b574e8bbd2d28a7ba69820593aaf39ee387",
+      "after": "ebaffc3989712e433b01be206ada1b40605fb0e7e0b498ac93ab4ed2dad574fe",
+      "changed": true
+    },
+    {
+      "number": 7,
+      "id": "candlestick-patterns",
+      "before": "22b725a48c8148fafa5752538be62594d05a8bd091d2d76588c091260485c94e",
+      "after": "c5ac29510c2833ecd42867b747fa4d35c0e57c8ccb27c72494b2985850e48cf2",
+      "changed": true
+    },
+    {
+      "number": 8,
+      "id": "chart-patterns",
+      "before": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
+      "after": "f767355ffb6e03eeb694a9dac047bc1178abe54003d0175565cb765d3678d9f1",
+      "changed": true
+    },
+    {
+      "number": 9,
+      "id": "breakouts",
+      "before": "7af2907496579eab63526575860c42468298ed592894ee5004f92935e614a902",
+      "after": "7af2907496579eab63526575860c42468298ed592894ee5004f92935e614a902",
+      "changed": false
+    },
+    {
+      "number": 10,
+      "id": "moving-averages",
+      "before": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
+      "after": "b90c102bc77d71906d0e1e39f18829f24d3911b326a4a438cfa9c2833015ffe5",
+      "changed": false
+    },
+    {
+      "number": 11,
+      "id": "momentum",
+      "before": "97bb36c89915f99266301bca94e54ac0256232f1f50d90b36446ad4d0b7f42d7",
+      "after": "97bb36c89915f99266301bca94e54ac0256232f1f50d90b36446ad4d0b7f42d7",
+      "changed": false
+    },
+    {
+      "number": 12,
+      "id": "volatility",
+      "before": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
+      "after": "7ce69688ad158ff916269d1d66ce69bec681eaf6c6ebfb322fa074b3120cbac4",
+      "changed": true
+    },
+    {
+      "number": 13,
+      "id": "volume-tools",
+      "before": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
+      "after": "79a18cbac3f5f1baf7798d4ed80a6e3168d47441ffae1f930d34077fb5486764",
+      "changed": false
+    },
+    {
+      "number": 14,
+      "id": "fibonacci",
+      "before": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
+      "after": "81c1af3a14a07ae1b44ab564a0b6fcbe3ef4af230969e0c47d3047e10020e826",
+      "changed": false
+    },
+    {
+      "number": 15,
+      "id": "relative-strength",
+      "before": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
+      "after": "b58535dbcd3f8c3372ac4b7c65429d4aad8a8b3d2c724ca943c8331135c91fa7",
+      "changed": false
+    },
+    {
+      "number": 16,
+      "id": "breadth",
+      "before": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
+      "after": "567eb058b8355ae38515ccc116f1e48ea591fcf2da0e5b52651bcc04fd4061aa",
+      "changed": false
+    },
+    {
+      "number": 17,
+      "id": "multi-timeframe",
+      "before": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
+      "after": "56204c545b925e45932912e49dd7078d4fb3e2e3638d28f6b5c769e0d1b76ea1",
+      "changed": false
+    },
+    {
+      "number": 18,
+      "id": "events",
+      "before": "0130ca5bad553b8a6879c04202ae5b15376c567b4f911e3eb6b2337340d532a5",
+      "after": "0130ca5bad553b8a6879c04202ae5b15376c567b4f911e3eb6b2337340d532a5",
+      "changed": false
+    },
+    {
+      "number": 19,
+      "id": "market-microstructure",
+      "before": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
+      "after": "278e55a54e2edba6b2fab74c234c3f50714f8aa823f9ea55e1cc57663ff5849f",
+      "changed": false
+    },
+    {
+      "number": 20,
+      "id": "risk-sizing",
+      "before": "c191acb99ca7429cc55ca8b0bdb6563d328423e645cb3b07a0b84a5cd65423f4",
+      "after": "5c9a8a04790467fb314d3170b881dcc48ee09cc24a157f09d1e4d8c74529147d",
+      "changed": true
+    },
+    {
+      "number": 21,
+      "id": "trade-plans",
+      "before": "51771b6899a02e390c72c9ae6e126fb1f4b1b3657b16cd82233a53ee5de1ce2e",
+      "after": "0195ffa90f4a48b61d8666dd5e41cfea34a7072ce9f546faa2f2b9ef5bf60f29",
+      "changed": true
+    },
+    {
+      "number": 22,
+      "id": "psychology",
+      "before": "f3e9f59928685495b511428f6a757b02eee75f3e51ce094002ab337fcceadeb1",
+      "after": "d1ba7be1bc0bee77c7cf6559d3a49a97664550210ed98eabb65dc90391dc1110",
+      "changed": true
+    },
+    {
+      "number": 23,
+      "id": "journaling",
+      "before": "5cd904e206c266b34454d2c5cecb1de690b4ade48af81e85c66eeb7251d62c1e",
+      "after": "cd170bf268e155576abe9209c6defe6a0f66fb6f15ccdb118d0ae7b860ceac12",
+      "changed": true
+    },
+    {
+      "number": 24,
+      "id": "testing",
+      "before": "9812219d32bc209f462fc5f5a86b33ff45470d1e504ba7fa835157e452db47b7",
+      "after": "9812219d32bc209f462fc5f5a86b33ff45470d1e504ba7fa835157e452db47b7",
+      "changed": false
+    },
+    {
+      "number": 25,
+      "id": "statistics",
+      "before": "344bbf78672956d19976540a3c5b76b24b2ce785e384b51f024774f52d982445",
+      "after": "344bbf78672956d19976540a3c5b76b24b2ce785e384b51f024774f52d982445",
+      "changed": false
+    },
+    {
+      "number": 26,
+      "id": "system-design",
+      "before": "515c95a1e848ce057d0156ce751a02979e64f93f95d62324b0e5b5a3a9e88fb5",
+      "after": "515c95a1e848ce057d0156ce751a02979e64f93f95d62324b0e5b5a3a9e88fb5",
+      "changed": false
+    },
+    {
+      "number": 27,
+      "id": "classical-frameworks",
+      "before": "e078aaaf440e8f884dc75cd8dc8792ae04d84eb253cd5a0c3f675ab549dd7a35",
+      "after": "e078aaaf440e8f884dc75cd8dc8792ae04d84eb253cd5a0c3f675ab549dd7a35",
+      "changed": false
+    },
+    {
+      "number": 28,
+      "id": "case-studies",
+      "before": "92dbaaa8616aa25f344e18d66e2f3d863966e097d008ab40e51f84612d753224",
+      "after": "296c5fa5aea4178365597c8c311ae1c5a605a649e3a71393d0ef02f68cacab9d",
+      "changed": true
+    }
+  ],
+  "parts": [
+    {
+      "id": "foundations",
+      "before": "c5fdc23f66914c4cc2ddcc90b9f0d034a967315957449e351994fc398277db40",
+      "after": "7a53a1ceb9f12208d077726693f14938b8361e15830f713a620d702bfa03d263",
+      "changed": true
+    },
+    {
+      "id": "price-action",
+      "before": "a762224877563ddaa941286688a0eb740c2e62d47d8f78850331ac2221da764e",
+      "after": "3c195699c73044253d4aed2fc40f5fc4814bb0c8d526e2dfe1f39f6dfff1fd11",
+      "changed": true
+    },
+    {
+      "id": "indicators",
+      "before": "69a2c3351ae626ff6f3db69720138277f128dfc70a3cf402881f29dfd24d38b6",
+      "after": "e6b1ed7aad3c974cdfba9dd860113ca4639b56b308361ef5776099b672682ca9",
+      "changed": true
+    },
+    {
+      "id": "context",
+      "before": "a6a6066c590df099b5a646341beae9c802dce3a4cc88bd52cffe11e530e082f9",
+      "after": "ca2ac891ada5a2a517693a6a97ac2ff4879fe6728f6af6229086e414affa6366",
+      "changed": true
+    },
+    {
+      "id": "risk",
+      "before": "fb277c07677cdbff41161b5cca16a22d5a767b958872f739ca617178e83f9392",
+      "after": "03fa73b80f6fb121623ea77a9903549914dfc7fe33a453b499e2d60fd78d0e23",
+      "changed": true
+    },
+    {
+      "id": "advanced",
+      "before": "102a828edde750e3be35db5aa614dda36106fc20b8db31c3ab4e5994ea8e6868",
+      "after": "2c92e4d0ed4c78645f39fe8f6577a9bc031695b0de2a6af06213dd4a1163f67b",
+      "changed": true
+    }
+  ]
+}

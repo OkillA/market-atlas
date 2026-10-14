@@ -213,9 +213,9 @@ Consider a fictional daily candle with open $100, high $108, low $98, and close 
 
 Look at the single candle, then reproduce it on paper. First mark $98 and $108 as the extremes. Next put the body’s lower edge at the $100 open and its upper edge at the $105 close. The body occupies five dollars of the ten-dollar range. The remaining five dollars are split between the $3 upper shadow and $2 lower shadow. A body is a span, not an additional price: its size is $5, while its endpoints remain $100 and $105.
 
-Use the table as a reading order rather than memorizing a picture. For a down body the high endpoint of the body is the open, so the max/min formulas work for either direction. If high equals low, all four prices must match in valid OHLC, and the close-location fraction has a zero denominator. In that special case describe a zero range instead of reporting a percentage location.
+Close location measures where the close sits inside the range: (close − low)/(high − low). Our example closes seven dollars above the low inside a ten-dollar range, giving (105 − 98)/(108 − 98) = 0.70. “The close is 70% of the way up the range” is verifiable. It does not mean 70% of the shares were bought near the high or that the next candle has a 70% chance of rising.
 
-Our example closes seven dollars above the low inside a ten-dollar range, giving (105 − 98)/(108 − 98) = 0.70. “The close is 70% of the way up the range” is verifiable. It does not mean 70% of the shares were bought near the high or that the next candle has a 70% chance of rising.
+Use the table below as a reading order rather than memorizing a picture. Its max/min formulas work for either direction: for a down body, the higher endpoint of the body is the open. If high equals low, all four prices must match in valid OHLC, and the close-location fraction has a zero denominator. In that special case describe a zero range instead of reporting a percentage location.
 
 **Exact O100 / H108 / L98 / C105 measurements**
 
@@ -836,7 +836,7 @@ A turn that needs later observations cannot trigger a past trade as confirmed in
 
 Applying the same rule gives lows at D1$40, D6$43 and D10$45, and highs at D4$46, D8$49 and D12$52. Their recognition dates are D3, D8, D12 for the lows and D6, D10, D14 for the highs. Once the required bars exist, both sequences rise. This is a defensible uptrend description of the selected interval, independent of a guess about why participants traded.
 
-The decline from the $49 D8 peak to the $45 D10 low is $4/49 ≈8.16%. A lower daily close therefore fits an overall sequence of higher selected troughs. Uptrend does not mean every observation rises. To reproduce the map, inspect each candidate against its four neighboring closes; do not select only the points that help the desired label.
+The decline from the $49 D8 peak to the $45 D10 low is $4/49 ≈8.16%. That pullback still fits the uptrend description: its $45 low stays above the prior selected $43 trough, so the selected troughs keep rising. Uptrend does not mean every observation rises. To reproduce the map, inspect each candidate against its four neighboring closes; do not select only the points that help the desired label.
 
 **Named swings and delayed recognition**
 
@@ -855,7 +855,7 @@ The decline from the $49 D8 peak to the $45 D10 low is $4/49 ≈8.16%. A lower d
 
 Use the first two confirmed lows, D1$40 and D6$43. They are five session steps apart, so the linear-price slope is (43 −40)/(6 −1) = $0.60 per session. The projection at D10 is 40 +0.60 × 9 = $45.40. D10 closes at $45, forty cents below the projected line, while still above the prior selected low $43.
 
-At D10 you can observe the line crossing because both anchor lows have been confirmed since D8. You cannot yet confirm D10 itself as a low until D12. After D12, it is a higher low despite crossing the line. This gives a complete example of a broken trendline and surviving higher-low structure using the same data, rather than a second invented path. The plotted line begins at D8, when both anchors are available; earlier anchor values remain marked on the closing-price series.
+In this example the line is broken when a completed close is below the line’s projected value for that session. At D10 you can observe that crossing because both anchor lows have been confirmed since D8. You cannot yet confirm D10 itself as a low until D12. After D12, it is a higher low despite crossing the line. This gives a complete example of a broken trendline and surviving higher-low structure using the same data, rather than a second invented path. The plotted line begins at D8, when both anchors are available; earlier anchor values remain marked on the closing-price series.
 
 Drawing a line from D6$43 to D10$45 instead would yield a $0.50 slope, but the second anchor is unavailable until D12. That is a reasonable later alternative drawing, not information the D10 reader already had. Trendlines organize selected anchors; they do not replace a separately defined structural description.
 
@@ -992,7 +992,7 @@ Builds on: Trends, swings & changing structure.
 
 #### First pass: freeze the D12 map
 
-Work only from the construction data below before opening the chapter continuation. This is an attempt followed by a reference explanation; write your own map and conditions first.
+Work only from the construction data below (closes of Harbor, a fictional stock) before opening the chapter continuation. This is an attempt followed by a reference explanation; write your own map and conditions first.
 
 Use the one-before/one-after closing-price trough rule. Select recognized troughs through D12, cluster them under a maximum $0.60 span, and freeze the zone edges. Define a visit, a $1 rise within two sessions after a visit, and a strictly-below break using a $0.30 downward buffer. State when each could be known and what would challenge the map. Do not invent D13 onward.
 
@@ -1020,7 +1020,7 @@ Write and retain your cutoff note before opening the continuation. In print, fin
 
 #### Start with reactions that can be located
 
-Support names an area associated with prior interrupted declines or a conditional expectation of another such reaction. Resistance names the analogous area for interrupted advances. The first part is observable history; the expectation is a hypothesis. We will build a support map from the same supplied closes that appear in the construction panel, then reveal later closes separately. This sequence makes the analytical choice visible.
+Support names an area associated with prior interrupted declines or a conditional expectation of another such reaction. Resistance names the analogous area for interrupted advances. The first part is observable history; the expectation is a hypothesis. We will build a support map for Harbor, the fictional stock in this chapter’s tables and figures, from the same supplied closes that appear in the construction panel, then reveal later closes separately. This sequence makes the analytical choice visible.
 
 Use a simple one-before/one-after closing-price trough rule for this mapping exercise. It differs from chapter 5’s two-bar rule because the present question is a small reaction cluster, and the supplied table explicitly declares that change. We do not change it mid-example. A trough must be strictly below its immediate neighbors and becomes recognized after the next close. This produces three selected construction troughs at D3$39.80, D7$40.10, and D11$40.35.
 
@@ -1304,7 +1304,7 @@ At the D3 cutoff, body $0.80, range $4, upper shadow $0.20 and lower shadow $3 s
 
 Return to the $50/$51/$47/$50.80 hammer-like candle after a decline. Its geometry becomes final when that interval closes. For a separate reversal hypothesis, our example asks for the next completed daily close above its $51 high. A $51.20 next close meets that follow-up condition. It did not exist when the candle first opened, nor did it make a purchase at the earlier $47 low available retroactively.
 
-If a later illustrative entry occurs at $52 with a planned trigger $46.80, distance is $5.20 per share. Entering at the candle’s $50.80 close would have meant $4, but that earlier entry used less follow-up information. The later confirmation and earlier price cannot be combined into one supposed execution. Write both alternatives as distinct plans if you want to compare them.
+Suppose, purely for illustration, a plan enters at $52 after that $51.20 confirmation close, with a protective sell trigger at $46.80, just below the candle’s $47 low. The distance is $5.20 per share. Entering at the candle’s $50.80 close would have meant $4, but that earlier entry used less follow-up information. The later confirmation and earlier price cannot be combined into one supposed execution. Write both alternatives as distinct plans if you want to compare them.
 
 Now append a next opening price $46.50 and close $45 to the confirmed path. The classification and follow-up event happened, then the continuation failed. In another branch, the very next session opens 46.50 without ever producing 51.20; that candidate never meets the follow-up condition. Candidate failure and failure after confirmation are different records. The timeline includes both, so a successful classification does not disappear whenever the trade idea disappoints.
 
@@ -1555,7 +1555,7 @@ Ascending and descending triangles make one boundary approximately horizontal an
 
 ![Boundary families: candidate prefix and alternative exits](../assets/figures/chart-patterns-2.svg)
 
-*Optional-looking catalogue used for the core range/contraction comparison. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.*
+*The rectangle and symmetrical-triangle panels are the core range/contraction comparison in the text; the ascending/descending triangle, flag and pennant panels are a brief catalogue applying the same boundary discipline. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.*
 
 #### Optional reference: pause and reversal families (optional extension)
 
@@ -2418,7 +2418,7 @@ Relative bandwidth is (upper − lower)/middle × 100: about 6.532% at 3 and 1.8
 
 True range asks about today’s extremes and their distance from the prior close; ATR smooths those movement magnitudes. Band width asks about recent closing price levels around their mean. The gap candle and band sequence are deliberate contrasting examples because these are different quantities. A single line called volatility would conceal that distinction.
 
-For a planning bridge, suppose an assumed distance equals two ATR units after the gap. It is 2 × $3.6667 = $7.3333. A hypothetical price-only $100 budget allows 13 whole shares: $95.3333 at that distance; 14 imply $102.6667. This is scaling arithmetic, not a recommendation for an ATR stop or a complete risk policy. The risk chapter adds execution and common exposures.
+For a planning bridge, suppose an assumed distance equals two ATR units after the gap. It is 2 × $3.6667 = $7.3333. A hypothetical price-only $100 planned loss budget allows 13 whole shares: $95.3333 at that distance; 14 imply $102.6667. This is scaling arithmetic, not a recommendation for an ATR stop or a complete risk policy. The risk chapter adds execution and common exposures.
 
 Diagnose a second statement: “Two-SD bands mean tomorrow is inside with 95% probability.” The drawing describes a rolling sample of price levels; no future distribution has been fitted. An appropriate analysis reports the mean, population denominator, multiplier, width, and current price position. If a probability is desired, that is a separate statistical question with additional assumptions.
 
@@ -3711,7 +3711,28 @@ Option 3: $50.15 weights the two price levels equally rather than weighting 100 
 
 ---
 
-### Part 04 review: Context review: participation, clock, and execution
+### Part 04 review: Context review: comparison, participation, clock, and execution
+
+#### Name the benchmark before calling a stock strong
+
+A fresh fictional stock and two comparators are measured over the same period from the start close to the end close. For each comparator, calculate the stock’s absolute return, the return difference in percentage points and the rebased relative index (start = 100). Then rewrite “The stock is strong” as a statement the numbers support.
+
+**Start and end closes (fictional)**
+
+| Series | Start close | End close |
+| --- | --- | --- |
+| Stock | $25.00 | $27.00 |
+| Sector ETF | $80.00 | $92.00 |
+| Market index | 4,000 points | 3,900 points |
+
+<details>
+<summary>Reveal the worked solution</summary>
+
+Factors: stock 27/25 = 1.08 (+8%); sector 92/80 = 1.15 (+15%); market 3,900/4,000 = 0.975 (−2.5%). Return differences: 8 − 15 = −7 percentage points versus sector; 8 − (−2.5) = +10.5 points versus market.
+
+Relative indexes: stock/sector = 100 × 1.08/1.15 = 93.9130; stock/market = 100 × 1.08/0.975 = 110.7692. The stock rose absolutely, outperformed the market and underperformed its sector over this period. A supported note names each benchmark and the period; “strong” alone hides the sector comparison. Ratio changes (−6.0870%, +10.7692%) and point differences use different denominators, so do not mix them.
+
+</details>
 
 #### Resolve apparent contradictions
 
@@ -3793,7 +3814,7 @@ Now include a modeled $0.10 per share round-trip charge, separate from the quote
 | --- | --- | --- | --- | --- | --- |
 | $100 price-risk budget; E50/S48 | 50 | 2,500.00 | 100.00 | 5.00 | 105.00 |
 | $100 cost-inclusive budget; E50/S48 | 47 | 2,350.00 | 94.00 | 4.70 | 98.70 |
-| Connected BRDG; E50.60/S48.60 | 50 | 2,530.00 | 100.00 | 5.00 | 105.00 |
+| BRDG plan (Ch 21–23): entry $50.60, stop $48.60 | 50 | 2,530.00 | 100.00 | 5.00 | 105.00 |
 
 #### A stop is an instruction, not insurance
 
@@ -3984,7 +4005,7 @@ The order quantity is capped at 50 shares with a fixed $48.60 stop. At the worst
 
 At S1 09:30 the supplied offer is $50.60, so the opportunity gate passes. The paper execution record confirms 50 shares at $50.60 at 09:31 and charges $2.50. Cash becomes $20,000 − $2,530 − $2.50 = $17,467.50. The stop remains $48.60, target $54.60, and 1R freezes at 50 × $2 = $100. No unfilled remainder exists. The difference between the $2,547.50 reserved and $2,532.50 actually spent is released; a reservation is not an expense.
 
-For a contrasting entry, suppose the report confirms only 30 shares at the same price before 10:30. P1 keeps those shares and cancels 20. Price-risk 1R is $60, entry debit $1,520.50, and protective/target quantities become 30. If the target subsequently fills at $54.60 with one $2.50 exit charge, gross profit is $120 and net $115, or +1.9167R. Using the 50-share order’s $100 denominator would report only +1.15R and confuse planned order exposure with the position actually established.
+For a contrasting entry, suppose the report confirms only 30 shares at the same price before 10:30. P1 keeps those shares and cancels 20. Price-risk 1R is $60, entry debit $1,520.50, and protective/target quantities become 30. If the target subsequently fills at $54.60, gross profit is $120; after the $2.50 entry charge and the $2.50 exit charge, net is $115, or +1.9167R. Using the 50-share order’s $100 denominator would report only +1.15R and confuse planned order exposure with the position actually established.
 
 More complicated partial fills at several prices need a declared average-cost and fee policy. They are outside this supplied one-price entry, and should not be silently treated as this simpler case. The discipline transfers: retain order quantities, filled quantities, fees and timestamps separately. A full position and a partial position can follow the same plan while producing different dollars and fee burdens.
 
@@ -4228,7 +4249,9 @@ Possible constraints include a maximum aggregate exposure, a waiting period befo
 
 A forecast is calibrated when events assigned similar probabilities occur at comparable frequencies over many relevant observations. If Maya labels ten scenarios “70% likely” and six occur, one small group is insufficient to declare her well or poorly calibrated. She needs a larger record, consistent event definitions, and awareness that market conditions can change. Even a well-calibrated forecast may offer no worthwhile trade after costs.
 
-The separate escalation illustration isolates another question: what happens to account damage when only the first three loss quantities grow? The ordinary sequence loses $100 three times; the escalation sequence loses $100, $200 and $400. Both then use the same subsequent dollar changes. The difference is $400 after the third loss and stays $400; the later recoveries are held equal. It is a sizing arithmetic demonstration, not an estimate of how often revenge trading occurs. A prospective process record can reveal escalation without claiming to read the trader’s motive.
+#### Escalation changes the recovery problem
+
+The illustration below isolates a different question from calibration: what happens to account damage when only the first three loss quantities grow? The ordinary sequence loses $100 three times; the escalation sequence loses $100, $200 and $400. Both then use the same subsequent dollar changes. The difference is $400 after the third loss and stays $400; the later recoveries are held equal. It is a sizing arithmetic demonstration, not an estimate of how often revenge trading occurs. A prospective process record can reveal escalation without claiming to read the trader’s motive.
 
 ![Escalation changes the recovery problem](../assets/figures/psychology.svg)
 
@@ -4340,7 +4363,7 @@ Builds on: Risk & position sizing; From chart idea to trade plan; Psychology wit
 
 A collection of attractive screenshots can make a method look coherent while hiding its failures. A trading journal should preserve the decision process and the opportunity set, not merely memorable trades. Keep the original signal, the time it was identified, the available data, the rule version, and the intended action. Then record what actually occurred without editing the earlier note.
 
-This chapter fills the record instead of leaving a blank template. The data are the fictional BRDG-P1 failure from Chapters 21–22 plus a separately identified skipped candidate, SKIP. The example keeps both so that a paper result cannot be made more attractive by losing the nontrades. All fills below are simulated, and fees are model debits, not broker statements.
+This chapter fills the record instead of leaving a blank template. The data are the fictional BRDG-P1 failure from Chapters 21–22 plus a separately identified skipped candidate, the fictional ticker KITE. KITE deliberately shares BRDG’s boundary inputs so that only its opening offer differs. The example keeps both so that a paper result cannot be made more attractive by losing the nontrades. All fills below are simulated, and fees are model debits, not broker statements.
 
 #### Define fields another person can interpret
 
@@ -4375,11 +4398,11 @@ The review row separates record quality, compliance, outcome and proposed resear
 | Result | Gross −$100; modeled costs $5; net −$105; net R −1.05; account cash $19,895. |
 | Compliance / evidence | Compliant P1; exact stop fill modeled, not established by OHLC alone. No efficacy inference from one trade. |
 
-**Completed nontrade row: SKIP at a separate decision**
+**Completed nontrade row: KITE at a separate decision**
 
 | Field | Filled value |
 | --- | --- |
-| Record / version | P1-002 / BRDG-P1 opportunity rule applied to fictional SKIP |
+| Record / version | P1-002 / BRDG-P1 opportunity rule applied to fictional KITE |
 | Cutoff / signal | K0 C50.40 > frozen edge 50.00; no scheduled earnings K1–K10; cash $19,895 after BRDG. |
 | New observation | K1 opening offer 52.00 > ceiling 50.90. |
 | Decision | Skip; no order, no fee, no position and no trade R denominator. |
@@ -4393,7 +4416,7 @@ The review row separates record quality, compliance, outcome and proposed resear
 | Record completeness | Two screened candidates; one filled trade and one opening-gate skip. Costs and cash reconcile. |
 | Process | P1-001 and P1-002 compliant under their stated inputs. No actual fills were collected. |
 | Outcome | One completed modeled trade: −$105/−1.05R. Skip has no trade P&L; account remains $19,895. |
-| Interpretation | BRDG continuation failed; SKIP later rose. Neither is a representative sample. |
+| Interpretation | BRDG continuation failed; KITE later rose. Neither is a representative sample. |
 | Research proposal | P2 close-below-boundary exit; development motivation is BRDG. Separately log any ceiling-change proposal. |
 | Next observation | Timestamp later P1 opportunities; compare any locked P2 with P1 on fresh records, including failed rebounds and losing gaps. |
 
@@ -4441,12 +4464,12 @@ Fictional 50-share trade: entry $50, initial planned exit $48, highest price $54
 
 #### Exercise
 
-Reconstruct BRDG’s journal cash flows and net R, then add SKIP without treating it as a trade. Compare BRDG’s modeled MAE to using the full S3 low 48.40. State what the full daily low cannot establish.
+Reconstruct BRDG’s journal cash flows and net R, then add KITE without treating it as a trade. Compare BRDG’s modeled MAE to using the full S3 low 48.40. State what the full daily low cannot establish.
 
 <details>
 <summary>Reveal the worked solution</summary>
 
-$20,000 − $2,532.50 + $2,427.50 = $19,895. Net −$105; 1R $100; net −1.05R. SKIP: no order/fee/position; no trade R, cash unchanged. One completed trade remains in the trade mean.
+$20,000 − $2,532.50 + $2,427.50 = $19,895. Net −$105; 1R $100; net −1.05R. KITE: no order/fee/position; no trade R, cash unchanged. One completed trade remains in the trade mean.
 
 Under the exact-stop model, MAE before exit is 50 × (50.60−48.60) = $100/1R. Whole-bar low gives 50 × 2.20 = $110/1.10R, but may include post-exit prices. Without a timestamped sequence, that is a full-bar statistic, not established holding-period MAE.
 
@@ -5884,7 +5907,7 @@ First read the information cutoff and cover the continuation. State what is obse
 
 The first seven cases below are fictional, purpose-built to exercise different decisions. The historical additions are separately labeled: sparse SEC-reported GME facts, Apple’s split announcement, and a calendar-selected AAPL/MSFT/SPY gallery with exact archived OHLC. The gallery preserves its complete selection ledger and a separately disclosed ambiguity diagnostic. Each source has a stated data/reuse contract. Hypothetical fills in the fictional records are not historical transactions, and the historical path labels do not estimate strategy performance.
 
-Use the completed P1 plan from Chapter 21 for the shared breakout cases. For ATLS, BRDG, SKIP and AMB, the boundary is $50, S0 closes $50.40, the rounded ceiling is $50.90, the maximum order is 50 shares and the fixed stop/target are $48.60/$54.60. The opening gate, first-hour expiry, partial-fill handling, stop-first convention, ten-session time limit and $2.50-per-side fee all remain P1. ATLS’s calendar/account inputs are the same as BRDG’s. Each case starts in its own $20,000 cash account unless noted; never add these selected outcomes into one claimed portfolio history.
+Use the completed P1 plan from Chapter 21 for the shared breakout cases. For ATLS, BRDG, KITE and AMB, the boundary is $50, S0 closes $50.40, the rounded ceiling is $50.90, the maximum order is 50 shares and the fixed stop/target are $48.60/$54.60. The opening gate, first-hour expiry, partial-fill handling, stop-first convention, ten-session time limit and $2.50-per-side fee all remain P1. ATLS’s calendar/account inputs are the same as BRDG’s. Each case starts in its own $20,000 cash account unless noted; never add these selected outcomes into one claimed portfolio history.
 
 #### Case one: follow-through and an orderly failure share a beginning
 
@@ -5917,7 +5940,7 @@ Reduce quantity to 15 without changing prices or the flat fees. Planned price-ri
 
 #### Case three: the skip is a completed decision
 
-SKIP has P1’s S0 signal and all eligibility inputs, but the supplied S1 opening offer is $52. It exceeds 50.90, so the gate rejects the candidate. No order, position or fee exists. A later S2 close of $56 is revealed only after the decision. Record “opening ceiling; no trade,” not a zero-R scratch. Without a position there is no trade-specific denominator.
+KITE has P1’s S0 signal and all eligibility inputs, but the supplied S1 opening offer is $52. It exceeds 50.90, so the gate rejects the candidate. No order, position or fee exists. A later S2 close of $56 is revealed only after the decision. Record “opening ceiling; no trade,” not a zero-R scratch. Without a position there is no trade-specific denominator.
 
 The missed advance is observable, and it can motivate a ceiling-change hypothesis. It cannot by itself price the alternative strategy. Buying at 52 and selling at 56 would require two specific, feasible fill assumptions; the later close is not a promise that an order could have filled there. A complete comparison would also keep the high-opening candidates that later fell. This case is retained in Chapter 23’s journal so the opportunity restriction remains inspectable.
 
@@ -5972,7 +5995,7 @@ The historical additions that follow have distinct evidence contracts. Sparse so
 | ATLS / P1 | 50 | 100 | 200 | 5 | 195 | +1.95R |
 | BRDG / P1 | 50 | 100 | -100 | 5 | -105 | −1.05R |
 | GAPS / GR1 | 30 | 90 | -300 | 5 | -305 | −3.3889R |
-| SKIP / P1 | 0 | N/A | N/A | 0 | N/A | Opening gate rejected; cash unchanged |
+| KITE / P1 | 0 | N/A | N/A | 0 | N/A | Opening gate rejected; cash unchanged |
 | MIXD / M1 | 0 | N/A | N/A | 0 | N/A | Daily trigger absent; context not permission |
 | AMB / P1 | 50 | 100 | -100 | 5 | -105 | −1.05R under stop-first; true sequence unresolved |
 | RIVR / RR1 | 50 | 100 | 200 | 5 | 195 | +1.95R |
@@ -6093,7 +6116,7 @@ Reveal January 5–11 only after recording the skip. The later decline is consis
 
 At the February 1, 2016 MSFT cutoff, C = 52.347 exceeds the prior-five mean 50.1898. The gate permits observation; the frozen levels are 52.87047 above and 51.82353 below. This is a continuation hypothesis with a declared falsification check, not a forecast with a known probability.
 
-The next archive session, February 2, opens at 51.830, narrowly inside the levels. Its low 50.377 crosses the lower level while its high 51.917 never reaches the upper one. The first resolving bar therefore classifies adverse. Nearest-cent rounding of 51.82353 gives 51.82: the open 51.830 is above both 51.82353 and 51.82, so the opening classification stays inside in this actual case. Preserve source precision through the comparison. For a separate fictional counterexample, a lower threshold 51.826 rounds to 51.83; an open 51.828 is above the exact threshold but at or below the rounded one. That named rounding policy would change inside to an opening lower-boundary touch. These fictional numbers do not replace the archived historical observations. The subsequent weakness cannot turn the hypothetical threshold into a real stop fill.
+The next archive session, February 2, opens at 51.830, narrowly inside the levels. Its low 50.377 crosses the lower level while its high 51.917 never reaches the upper one. The first resolving bar therefore classifies adverse. Nearest-cent rounding of 51.82353 gives 51.82; the open 51.830 is above both, so the opening classification stays inside here. Still compare at source precision: with other values, rounding a threshold first can move an open across it. The subsequent weakness cannot turn the hypothetical threshold into a real stop fill.
 
 **MSFT-2016-02 — exact archived OHLC; full continuation reference; attempt the cutoff-only packet first**
 

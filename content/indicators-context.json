@@ -1272,7 +1272,7 @@
           "title": "Match the measure to the question",
           "paragraphs": [
             "True range asks about today’s extremes and their distance from the prior close; ATR smooths those movement magnitudes. Band width asks about recent closing price levels around their mean. The gap candle and band sequence are deliberate contrasting examples because these are different quantities. A single line called volatility would conceal that distinction.",
-            "For a planning bridge, suppose an assumed distance equals two ATR units after the gap. It is 2 × $3.6667 = $7.3333. A hypothetical price-only $100 budget allows 13 whole shares: $95.3333 at that distance; 14 imply $102.6667. This is scaling arithmetic, not a recommendation for an ATR stop or a complete risk policy. The risk chapter adds execution and common exposures.",
+            "For a planning bridge, suppose an assumed distance equals two ATR units after the gap. It is 2 × $3.6667 = $7.3333. A hypothetical price-only $100 planned loss budget allows 13 whole shares: $95.3333 at that distance; 14 imply $102.6667. This is scaling arithmetic, not a recommendation for an ATR stop or a complete risk policy. The risk chapter adds execution and common exposures.",
             "Diagnose a second statement: “Two-SD bands mean tomorrow is inside with 95% probability.” The drawing describes a rolling sample of price levels; no future distribution has been fitted. An appropriate analysis reports the mean, population denominator, multiplier, width, and current price position. If a probability is desired, that is a separate statistical question with additional assumptions.",
             "The gap can also bypass a planned exit, as the events chapter demonstrates. Historical ranges provide context for the distance scale but do not set a maximum future move. This one execution limitation is enough here; the calculations and observed contrast are the primary lessons."
           ],
@@ -1535,15 +1535,16 @@
         "reviewer": "claude-code-main",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH4_20261003.md"
+          "docs/PUBLICATION_BATCH4_20261003.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
+        "contentSha256": "7ce69688ad158ff916269d1d66ce69bec681eaf6c6ebfb322fa074b3120cbac4",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: \"$100 budget\" became \"$100 planned loss budget\"; 13 shares/$95.3333 and 14/$102.6667 unchanged. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
@@ -5164,8 +5165,43 @@
       ]
     },
     "context": {
-      "title": "Context review: participation, clock, and execution",
+      "title": "Context review: comparison, participation, clock, and execution",
       "tasks": [
+        {
+          "title": "Name the benchmark before calling a stock strong",
+          "question": "A fresh fictional stock and two comparators are measured over the same period from the start close to the end close. For each comparator, calculate the stock’s absolute return, the return difference in percentage points and the rebased relative index (start = 100). Then rewrite “The stock is strong” as a statement the numbers support.",
+          "tables": [
+            {
+              "title": "Start and end closes (fictional)",
+              "columns": [
+                "Series",
+                "Start close",
+                "End close"
+              ],
+              "rows": [
+                [
+                  "Stock",
+                  "$25.00",
+                  "$27.00"
+                ],
+                [
+                  "Sector ETF",
+                  "$80.00",
+                  "$92.00"
+                ],
+                [
+                  "Market index",
+                  "4,000 points",
+                  "3,900 points"
+                ]
+              ]
+            }
+          ],
+          "solution": [
+            "Factors: stock 27/25 = 1.08 (+8%); sector 92/80 = 1.15 (+15%); market 3,900/4,000 = 0.975 (−2.5%). Return differences: 8 − 15 = −7 percentage points versus sector; 8 − (−2.5) = +10.5 points versus market.",
+            "Relative indexes: stock/sector = 100 × 1.08/1.15 = 93.9130; stock/market = 100 × 1.08/0.975 = 110.7692. The stock rose absolutely, outperformed the market and underperformed its sector over this period. A supported note names each benchmark and the period; “strong” alone hides the sector comparison. Ratio changes (−6.0870%, +10.7692%) and point differences use different denominators, so do not mix them."
+          ]
+        },
         {
           "title": "Resolve apparent contradictions",
           "question": "Use the breadth chapter’s final four-stock values/weights and session-11-to-12 changes. Report the since-start weighted index result, since-start participation, and daily breadth. Explain why they differ.",

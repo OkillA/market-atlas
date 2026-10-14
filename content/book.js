@@ -936,8 +936,8 @@ window.ATLAS = {
           "title": "Measure the candle one piece at a time",
           "paragraphs": [
             "Look at the single candle, then reproduce it on paper. First mark $98 and $108 as the extremes. Next put the body’s lower edge at the $100 open and its upper edge at the $105 close. The body occupies five dollars of the ten-dollar range. The remaining five dollars are split between the $3 upper shadow and $2 lower shadow. A body is a span, not an additional price: its size is $5, while its endpoints remain $100 and $105.",
-            "Use the table as a reading order rather than memorizing a picture. For a down body the high endpoint of the body is the open, so the max/min formulas work for either direction. If high equals low, all four prices must match in valid OHLC, and the close-location fraction has a zero denominator. In that special case describe a zero range instead of reporting a percentage location.",
-            "Our example closes seven dollars above the low inside a ten-dollar range, giving (105 − 98)/(108 − 98) = 0.70. “The close is 70% of the way up the range” is verifiable. It does not mean 70% of the shares were bought near the high or that the next candle has a 70% chance of rising."
+            "Close location measures where the close sits inside the range: (close − low)/(high − low). Our example closes seven dollars above the low inside a ten-dollar range, giving (105 − 98)/(108 − 98) = 0.70. “The close is 70% of the way up the range” is verifiable. It does not mean 70% of the shares were bought near the high or that the next candle has a 70% chance of rising.",
+            "Use the table below as a reading order rather than memorizing a picture. Its max/min formulas work for either direction: for a down body, the higher endpoint of the body is the open. If high equals low, all four prices must match in valid OHLC, and the close-location fraction has a zero denominator. In that special case describe a zero range instead of reporting a percentage location."
           ],
           "tables": [
             {
@@ -1380,15 +1380,16 @@ window.ATLAS = {
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH1_20261002.md"
+          "docs/PUBLICATION_BATCH1_20261002.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "86592b68e8ed901b4eb16a54d8e5d03737a1321f53bfd61fa1e0708587931541",
+        "contentSha256": "6ae05e5504ddf6ab1a12fecfdd9596bf670701c44ad97ceae5f766477a3d45b2",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: close-location definition now precedes its use; the table reference reads \"table below\" and the max/min sentence follows the definition. O100/H108/L98/C105 values unchanged (0.70). READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -2609,7 +2610,7 @@ window.ATLAS = {
           "title": "Build the initial higher-high/higher-low map",
           "paragraphs": [
             "Applying the same rule gives lows at D1$40, D6$43 and D10$45, and highs at D4$46, D8$49 and D12$52. Their recognition dates are D3, D8, D12 for the lows and D6, D10, D14 for the highs. Once the required bars exist, both sequences rise. This is a defensible uptrend description of the selected interval, independent of a guess about why participants traded.",
-            "The decline from the $49 D8 peak to the $45 D10 low is $4/49 ≈8.16%. A lower daily close therefore fits an overall sequence of higher selected troughs. Uptrend does not mean every observation rises. To reproduce the map, inspect each candidate against its four neighboring closes; do not select only the points that help the desired label."
+            "The decline from the $49 D8 peak to the $45 D10 low is $4/49 ≈8.16%. That pullback still fits the uptrend description: its $45 low stays above the prior selected $43 trough, so the selected troughs keep rising. Uptrend does not mean every observation rises. To reproduce the map, inspect each candidate against its four neighboring closes; do not select only the points that help the desired label."
           ],
           "tables": [
             {
@@ -2678,7 +2679,7 @@ window.ATLAS = {
           "title": "Draw one line from two specified anchors",
           "paragraphs": [
             "Use the first two confirmed lows, D1$40 and D6$43. They are five session steps apart, so the linear-price slope is (43 −40)/(6 −1) = $0.60 per session. The projection at D10 is 40 +0.60 × 9 = $45.40. D10 closes at $45, forty cents below the projected line, while still above the prior selected low $43.",
-            "At D10 you can observe the line crossing because both anchor lows have been confirmed since D8. You cannot yet confirm D10 itself as a low until D12. After D12, it is a higher low despite crossing the line. This gives a complete example of a broken trendline and surviving higher-low structure using the same data, rather than a second invented path. The plotted line begins at D8, when both anchors are available; earlier anchor values remain marked on the closing-price series.",
+            "In this example the line is broken when a completed close is below the line’s projected value for that session. At D10 you can observe that crossing because both anchor lows have been confirmed since D8. You cannot yet confirm D10 itself as a low until D12. After D12, it is a higher low despite crossing the line. This gives a complete example of a broken trendline and surviving higher-low structure using the same data, rather than a second invented path. The plotted line begins at D8, when both anchors are available; earlier anchor values remain marked on the closing-price series.",
             "Drawing a line from D6$43 to D10$45 instead would yield a $0.50 slope, but the second anchor is unavailable until D12. That is a reasonable later alternative drawing, not information the D10 reader already had. Trendlines organize selected anchors; they do not replace a separately defined structural description."
           ],
           "tables": [
@@ -3075,15 +3076,16 @@ window.ATLAS = {
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH2_20261002.md"
+          "docs/PUBLICATION_BATCH2_20261002.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "2daacc936faf1a1eabb340607a77c33cda2d516430c07ece9c18f0f6f2bd54c0",
+        "contentSha256": "6de47a153707f7bd6f7e7a80fa532bd8cbaf3a9aafe8e6480bf3a5f4f2833f1b",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: non-sequitur \"therefore\" replaced by the stated reason ($45 trough above prior $43); trendline-break criterion (completed close below projected value) stated before use; D10 45 < 45.40 rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -3094,7 +3096,7 @@ window.ATLAS = {
       "id": "support-resistance",
       "title": "Support, resistance & price areas",
       "subtitle": "Map prior reactions as conditional evidence, with explicit boundaries.",
-      "minutes": 5,
+      "minutes": 6,
       "status": "reviewed",
       "diagram": "levels",
       "tags": [
@@ -3111,7 +3113,7 @@ window.ATLAS = {
         {
           "title": "Start with reactions that can be located",
           "paragraphs": [
-            "Support names an area associated with prior interrupted declines or a conditional expectation of another such reaction. Resistance names the analogous area for interrupted advances. The first part is observable history; the expectation is a hypothesis. We will build a support map from the same supplied closes that appear in the construction panel, then reveal later closes separately. This sequence makes the analytical choice visible.",
+            "Support names an area associated with prior interrupted declines or a conditional expectation of another such reaction. Resistance names the analogous area for interrupted advances. The first part is observable history; the expectation is a hypothesis. We will build a support map for Harbor, the fictional stock in this chapter’s tables and figures, from the same supplied closes that appear in the construction panel, then reveal later closes separately. This sequence makes the analytical choice visible.",
             "Use a simple one-before/one-after closing-price trough rule for this mapping exercise. It differs from chapter 5’s two-bar rule because the present question is a small reaction cluster, and the supplied table explicitly declares that change. We do not change it mid-example. A trough must be strictly below its immediate neighbors and becomes recognized after the next close. This produces three selected construction troughs at D3$39.80, D7$40.10, and D11$40.35."
           ],
           "tables": [
@@ -3646,7 +3648,7 @@ window.ATLAS = {
       "learnerAttempt": {
         "title": "First pass: freeze the D12 map",
         "paragraphs": [
-          "Work only from the construction data below before opening the chapter continuation. This is an attempt followed by a reference explanation; write your own map and conditions first.",
+          "Work only from the construction data below (closes of Harbor, a fictional stock) before opening the chapter continuation. This is an attempt followed by a reference explanation; write your own map and conditions first.",
           "Use the one-before/one-after closing-price trough rule. Select recognized troughs through D12, cluster them under a maximum $0.60 span, and freeze the zone edges. Define a visit, a $1 rise within two sessions after a visit, and a strictly-below break using a $0.30 downward buffer. State when each could be known and what would challenge the map. Do not invent D13 onward."
         ],
         "tables": [
@@ -3717,15 +3719,16 @@ window.ATLAS = {
         "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
         "evidence": [
           "docs/PUBLICATION_BATCH2_20261002.md",
-          "docs/PUBLICATION_BATCH7_20261012.md"
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "28028a3ebbf6d00d993aa82e49710b574e8bbd2d28a7ba69820593aaf39ee387",
+        "contentSha256": "ebaffc3989712e433b01be206ada1b40605fb0e7e0b498ac93ab4ed2dad574fe",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: Harbor introduced as the chapter’s fictional stock in the attempt packet and continuation before figure legends use the name. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -3893,7 +3896,7 @@ window.ATLAS = {
           "paragraphs": [
             "At the D3 cutoff, body $0.80, range $4, upper shadow $0.20 and lower shadow $3 satisfy B > 0, D ≥ 2B and U ≤ B. The prior closes 53→50 decline before the 50.80 close. The separate next-close threshold is D3 high $51, with strict equality excluded. D4’s close is still unknown at D3, so the follow-up state is awaiting observation. No order, accessible quote or confirmed execution has been supplied. The next paragraphs reveal alternative paths from this same state; they do not revise the cutoff note.",
             "Return to the $50/$51/$47/$50.80 hammer-like candle after a decline. Its geometry becomes final when that interval closes. For a separate reversal hypothesis, our example asks for the next completed daily close above its $51 high. A $51.20 next close meets that follow-up condition. It did not exist when the candle first opened, nor did it make a purchase at the earlier $47 low available retroactively.",
-            "If a later illustrative entry occurs at $52 with a planned trigger $46.80, distance is $5.20 per share. Entering at the candle’s $50.80 close would have meant $4, but that earlier entry used less follow-up information. The later confirmation and earlier price cannot be combined into one supposed execution. Write both alternatives as distinct plans if you want to compare them.",
+            "Suppose, purely for illustration, a plan enters at $52 after that $51.20 confirmation close, with a protective sell trigger at $46.80, just below the candle’s $47 low. The distance is $5.20 per share. Entering at the candle’s $50.80 close would have meant $4, but that earlier entry used less follow-up information. The later confirmation and earlier price cannot be combined into one supposed execution. Write both alternatives as distinct plans if you want to compare them.",
             "Now append a next opening price $46.50 and close $45 to the confirmed path. The classification and follow-up event happened, then the continuation failed. In another branch, the very next session opens 46.50 without ever producing 51.20; that candidate never meets the follow-up condition. Candidate failure and failure after confirmation are different records. The timeline includes both, so a successful classification does not disappear whenever the trade idea disappoints."
           ],
           "tables": [
@@ -4341,15 +4344,16 @@ window.ATLAS = {
         "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
         "evidence": [
           "docs/PUBLICATION_BATCH3_20261003.md",
-          "docs/PUBLICATION_BATCH7_20261012.md"
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "22b725a48c8148fafa5752538be62594d05a8bd091d2d76588c091260485c94e",
+        "contentSha256": "c5ac29510c2833ecd42867b747fa4d35c0e57c8ccb27c72494b2985850e48cf2",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-008 wording correction (Chapter 7 hammer-body rule and guided solution) reviewed. READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: $52 illustrative entry anchored after the $51.20 confirmation close and the $46.80 trigger tied to the $47 low; $5.20 and $4 distances rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -4935,7 +4939,7 @@ window.ATLAS = {
         {
           "kind": "panels",
           "title": "Boundary families: candidate prefix and alternative exits",
-          "caption": "Optional-looking catalogue used for the core range/contraction comparison. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.",
+          "caption": "The rectangle and symmetrical-triangle panels are the core range/contraction comparison in the text; the ascending/descending triangle, flag and pennant panels are a brief catalogue applying the same boundary discipline. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.",
           "afterSection": 4,
           "panels": [
             {
@@ -5889,15 +5893,16 @@ window.ATLAS = {
         "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
         "evidence": [
           "docs/PUBLICATION_BATCH3_20261003.md",
-          "docs/PUBLICATION_BATCH7_20261012.md"
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
+        "contentSha256": "f767355ffb6e03eeb694a9dac047bc1178abe54003d0175565cb765d3678d9f1",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: boundary-families caption separates the core rectangle/symmetrical-triangle comparison from the brief catalogue panels; figure geometry unchanged (desc text only). READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -7852,7 +7857,7 @@ window.ATLAS = {
           "title": "Match the measure to the question",
           "paragraphs": [
             "True range asks about today’s extremes and their distance from the prior close; ATR smooths those movement magnitudes. Band width asks about recent closing price levels around their mean. The gap candle and band sequence are deliberate contrasting examples because these are different quantities. A single line called volatility would conceal that distinction.",
-            "For a planning bridge, suppose an assumed distance equals two ATR units after the gap. It is 2 × $3.6667 = $7.3333. A hypothetical price-only $100 budget allows 13 whole shares: $95.3333 at that distance; 14 imply $102.6667. This is scaling arithmetic, not a recommendation for an ATR stop or a complete risk policy. The risk chapter adds execution and common exposures.",
+            "For a planning bridge, suppose an assumed distance equals two ATR units after the gap. It is 2 × $3.6667 = $7.3333. A hypothetical price-only $100 planned loss budget allows 13 whole shares: $95.3333 at that distance; 14 imply $102.6667. This is scaling arithmetic, not a recommendation for an ATR stop or a complete risk policy. The risk chapter adds execution and common exposures.",
             "Diagnose a second statement: “Two-SD bands mean tomorrow is inside with 95% probability.” The drawing describes a rolling sample of price levels; no future distribution has been fitted. An appropriate analysis reports the mean, population denominator, multiplier, width, and current price position. If a probability is desired, that is a separate statistical question with additional assumptions.",
             "The gap can also bypass a planned exit, as the events chapter demonstrates. Historical ranges provide context for the distance scale but do not set a maximum future move. This one execution limitation is enough here; the calculations and observed contrast are the primary lessons."
           ],
@@ -8115,15 +8120,16 @@ window.ATLAS = {
         "reviewer": "claude-code-main",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH4_20261003.md"
+          "docs/PUBLICATION_BATCH4_20261003.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "729d7fc6239f0f94144c8bccb8d48d1d6a94584d2ec2c1fd73654c0828b08ec2",
+        "contentSha256": "7ce69688ad158ff916269d1d66ce69bec681eaf6c6ebfb322fa074b3120cbac4",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: \"$100 budget\" became \"$100 planned loss budget\"; 13 shares/$95.3333 and 14/$102.6667 unchanged. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -11492,7 +11498,7 @@ window.ATLAS = {
                   "98.70"
                 ],
                 [
-                  "Connected BRDG; E50.60/S48.60",
+                  "BRDG plan (Ch 21–23): entry $50.60, stop $48.60",
                   50,
                   "2,530.00",
                   "100.00",
@@ -11813,13 +11819,13 @@ window.ATLAS = {
           "docs/PUBLICATION_BATCH1_20261002.md",
           "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "c191acb99ca7429cc55ca8b0bdb6563d328423e645cb3b07a0b84a5cd65423f4",
+        "contentSha256": "5c9a8a04790467fb314d3170b881dcc48ee09cc24a157f09d1e4d8c74529147d",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
           "reviewer": "claude-code-read1b",
           "date": "2026-10-14",
           "report": "docs/READ1_WORDING_20261014.md",
-          "scope": "READ1-005 wording: R named at the first 1R table use and a purpose sentence leads the denominator section; glossary R multiple states purpose; −1.05R/−2.55R rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
+          "scope": "READ1-012: first-table BRDG row spelled out as entry $50.60, stop $48.60 with its chapter reference; values unchanged. Earlier READ1-005 wording recheck retained. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -11930,7 +11936,7 @@ window.ATLAS = {
           "title": "Reveal the entry, then reconcile it",
           "paragraphs": [
             "At S1 09:30 the supplied offer is $50.60, so the opportunity gate passes. The paper execution record confirms 50 shares at $50.60 at 09:31 and charges $2.50. Cash becomes $20,000 − $2,530 − $2.50 = $17,467.50. The stop remains $48.60, target $54.60, and 1R freezes at 50 × $2 = $100. No unfilled remainder exists. The difference between the $2,547.50 reserved and $2,532.50 actually spent is released; a reservation is not an expense.",
-            "For a contrasting entry, suppose the report confirms only 30 shares at the same price before 10:30. P1 keeps those shares and cancels 20. Price-risk 1R is $60, entry debit $1,520.50, and protective/target quantities become 30. If the target subsequently fills at $54.60 with one $2.50 exit charge, gross profit is $120 and net $115, or +1.9167R. Using the 50-share order’s $100 denominator would report only +1.15R and confuse planned order exposure with the position actually established.",
+            "For a contrasting entry, suppose the report confirms only 30 shares at the same price before 10:30. P1 keeps those shares and cancels 20. Price-risk 1R is $60, entry debit $1,520.50, and protective/target quantities become 30. If the target subsequently fills at $54.60, gross profit is $120; after the $2.50 entry charge and the $2.50 exit charge, net is $115, or +1.9167R. Using the 50-share order’s $100 denominator would report only +1.15R and confuse planned order exposure with the position actually established.",
             "More complicated partial fills at several prices need a declared average-cost and fee policy. They are outside this supplied one-price entry, and should not be silently treated as this simpler case. The discipline transfers: retain order quantities, filled quantities, fees and timestamps separately. A full position and a partial position can follow the same plan while producing different dollars and fee burdens."
           ],
           "id": "reveal-the-entry-then-reconcile-it"
@@ -12193,15 +12199,16 @@ window.ATLAS = {
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH1_20261002.md"
+          "docs/PUBLICATION_BATCH1_20261002.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "51771b6899a02e390c72c9ae6e126fb1f4b1b3657b16cd82233a53ee5de1ce2e",
+        "contentSha256": "0195ffa90f4a48b61d8666dd5e41cfea34a7072ce9f546faa2f2b9ef5bf60f29",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: the 30-share target result names both $2.50 charges; 30 × 4.00 = $120 gross, $115 net, +1.9167R rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -12342,10 +12349,16 @@ window.ATLAS = {
         {
           "title": "Calibration is more useful than bravado",
           "paragraphs": [
-            "A forecast is calibrated when events assigned similar probabilities occur at comparable frequencies over many relevant observations. If Maya labels ten scenarios “70% likely” and six occur, one small group is insufficient to declare her well or poorly calibrated. She needs a larger record, consistent event definitions, and awareness that market conditions can change. Even a well-calibrated forecast may offer no worthwhile trade after costs.",
-            "The separate escalation illustration isolates another question: what happens to account damage when only the first three loss quantities grow? The ordinary sequence loses $100 three times; the escalation sequence loses $100, $200 and $400. Both then use the same subsequent dollar changes. The difference is $400 after the third loss and stays $400; the later recoveries are held equal. It is a sizing arithmetic demonstration, not an estimate of how often revenge trading occurs. A prospective process record can reveal escalation without claiming to read the trader’s motive."
+            "A forecast is calibrated when events assigned similar probabilities occur at comparable frequencies over many relevant observations. If Maya labels ten scenarios “70% likely” and six occur, one small group is insufficient to declare her well or poorly calibrated. She needs a larger record, consistent event definitions, and awareness that market conditions can change. Even a well-calibrated forecast may offer no worthwhile trade after costs."
           ],
           "id": "calibration-is-more-useful-than-bravado"
+        },
+        {
+          "title": "Escalation changes the recovery problem",
+          "paragraphs": [
+            "The illustration below isolates a different question from calibration: what happens to account damage when only the first three loss quantities grow? The ordinary sequence loses $100 three times; the escalation sequence loses $100, $200 and $400. Both then use the same subsequent dollar changes. The difference is $400 after the third loss and stays $400; the later recoveries are held equal. It is a sizing arithmetic demonstration, not an estimate of how often revenge trading occurs. A prospective process record can reveal escalation without claiming to read the trader’s motive."
+          ],
+          "id": "escalation-changes-the-recovery-problem"
         },
         {
           "id": "reconcile-the-unfamiliar-cutoff-note",
@@ -12436,7 +12449,7 @@ window.ATLAS = {
         ],
         "xStart": 0,
         "showAllXLabels": true,
-        "afterSection": 6
+        "afterSection": 7
       },
       "optional": false,
       "prerequisites": [
@@ -12647,15 +12660,16 @@ window.ATLAS = {
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH6_20261011.md"
+          "docs/PUBLICATION_BATCH6_20261011.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "f3e9f59928685495b511428f6a757b02eee75f3e51ce094002ab337fcceadeb1",
+        "contentSha256": "d1ba7be1bc0bee77c7cf6559d3a49a97664550210ed98eabb65dc90391dc1110",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: escalation illustration moved from the calibration section into its own section (new ID escalation-changes-the-recovery-problem; existing IDs preserved; figure follows it); $9,700/$9,300 and $10,100/$9,700 paths rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -12681,7 +12695,7 @@ window.ATLAS = {
           "title": "Build a record rather than a scrapbook",
           "paragraphs": [
             "A collection of attractive screenshots can make a method look coherent while hiding its failures. A trading journal should preserve the decision process and the opportunity set, not merely memorable trades. Keep the original signal, the time it was identified, the available data, the rule version, and the intended action. Then record what actually occurred without editing the earlier note.",
-            "This chapter fills the record instead of leaving a blank template. The data are the fictional BRDG-P1 failure from Chapters 21–22 plus a separately identified skipped candidate, SKIP. The example keeps both so that a paper result cannot be made more attractive by losing the nontrades. All fills below are simulated, and fees are model debits, not broker statements."
+            "This chapter fills the record instead of leaving a blank template. The data are the fictional BRDG-P1 failure from Chapters 21–22 plus a separately identified skipped candidate, the fictional ticker KITE. KITE deliberately shares BRDG’s boundary inputs so that only its opening offer differs. The example keeps both so that a paper result cannot be made more attractive by losing the nontrades. All fills below are simulated, and fees are model debits, not broker statements."
           ],
           "id": "build-a-record-rather-than-a-scrapbook"
         },
@@ -12753,7 +12767,7 @@ window.ATLAS = {
               ]
             },
             {
-              "title": "Completed nontrade row: SKIP at a separate decision",
+              "title": "Completed nontrade row: KITE at a separate decision",
               "columns": [
                 "Field",
                 "Filled value"
@@ -12761,7 +12775,7 @@ window.ATLAS = {
               "rows": [
                 [
                   "Record / version",
-                  "P1-002 / BRDG-P1 opportunity rule applied to fictional SKIP"
+                  "P1-002 / BRDG-P1 opportunity rule applied to fictional KITE"
                 ],
                 [
                   "Cutoff / signal",
@@ -12806,7 +12820,7 @@ window.ATLAS = {
                 ],
                 [
                   "Interpretation",
-                  "BRDG continuation failed; SKIP later rose. Neither is a representative sample."
+                  "BRDG continuation failed; KITE later rose. Neither is a representative sample."
                 ],
                 [
                   "Research proposal",
@@ -12866,7 +12880,7 @@ window.ATLAS = {
         "title": "A transparent excursion record",
         "text": "Fictional 50-share trade: entry $50, initial planned exit $48, highest price $54, lowest $48.80, final exit $51.50. Initial price risk is $100; MFE is $200, MAE is $60, and realized price profit is $75. Any costs reduce net profit. The MFE was not a guaranteed available exit."
       },
-      "exercise": "Reconstruct BRDG’s journal cash flows and net R, then add SKIP without treating it as a trade. Compare BRDG’s modeled MAE to using the full S3 low 48.40. State what the full daily low cannot establish.",
+      "exercise": "Reconstruct BRDG’s journal cash flows and net R, then add KITE without treating it as a trade. Compare BRDG’s modeled MAE to using the full S3 low 48.40. State what the full daily low cannot establish.",
       "quiz": {
         "question": "The BRDG stop model exits at 48.60; the same daily bar later has a low 48.40. Which MAE entry is defensible?",
         "options": [
@@ -12917,7 +12931,7 @@ window.ATLAS = {
             "19,895.00"
           ],
           [
-            "SKIP: no order",
+            "KITE: no order",
             "0.00",
             "19,895.00"
           ]
@@ -12962,7 +12976,7 @@ window.ATLAS = {
         }
       ],
       "solution": [
-        "$20,000 − $2,532.50 + $2,427.50 = $19,895. Net −$105; 1R $100; net −1.05R. SKIP: no order/fee/position; no trade R, cash unchanged. One completed trade remains in the trade mean.",
+        "$20,000 − $2,532.50 + $2,427.50 = $19,895. Net −$105; 1R $100; net −1.05R. KITE: no order/fee/position; no trade R, cash unchanged. One completed trade remains in the trade mean.",
         "Under the exact-stop model, MAE before exit is 50 × (50.60−48.60) = $100/1R. Whole-bar low gives 50 × 2.20 = $110/1.10R, but may include post-exit prices. Without a timestamped sequence, that is a full-bar statistic, not established holding-period MAE."
       ],
       "practice": [
@@ -13088,15 +13102,16 @@ window.ATLAS = {
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH6_20261011.md"
+          "docs/PUBLICATION_BATCH6_20261011.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "5cd904e206c266b34454d2c5cecb1de690b4ade48af81e85c66eeb7251d62c1e",
+        "contentSha256": "cd170bf268e155576abe9209c6defe6a0f66fb6f15ccdb118d0ae7b860ceac12",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: fictional nontrade ticker SKIP renamed KITE and its shared BRDG boundary inputs explained; journaling.svg label inspected; $19,895 reconciliation unchanged. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -17828,7 +17843,7 @@ window.ATLAS = {
           "paragraphs": [
             "First read the information cutoff and cover the continuation. State what is observed, what is hypothesized and what action is allowed. Second reveal the next observation and apply the frozen rule, including a skip or an unresolved state when appropriate. Third reconcile the result and ask which conclusion it supports. This procedure turns a case from a memorable story into something another reader can reproduce.",
             "The first seven cases below are fictional, purpose-built to exercise different decisions. The historical additions are separately labeled: sparse SEC-reported GME facts, Apple’s split announcement, and a calendar-selected AAPL/MSFT/SPY gallery with exact archived OHLC. The gallery preserves its complete selection ledger and a separately disclosed ambiguity diagnostic. Each source has a stated data/reuse contract. Hypothetical fills in the fictional records are not historical transactions, and the historical path labels do not estimate strategy performance.",
-            "Use the completed P1 plan from Chapter 21 for the shared breakout cases. For ATLS, BRDG, SKIP and AMB, the boundary is $50, S0 closes $50.40, the rounded ceiling is $50.90, the maximum order is 50 shares and the fixed stop/target are $48.60/$54.60. The opening gate, first-hour expiry, partial-fill handling, stop-first convention, ten-session time limit and $2.50-per-side fee all remain P1. ATLS’s calendar/account inputs are the same as BRDG’s. Each case starts in its own $20,000 cash account unless noted; never add these selected outcomes into one claimed portfolio history."
+            "Use the completed P1 plan from Chapter 21 for the shared breakout cases. For ATLS, BRDG, KITE and AMB, the boundary is $50, S0 closes $50.40, the rounded ceiling is $50.90, the maximum order is 50 shares and the fixed stop/target are $48.60/$54.60. The opening gate, first-hour expiry, partial-fill handling, stop-first convention, ten-session time limit and $2.50-per-side fee all remain P1. ATLS’s calendar/account inputs are the same as BRDG’s. Each case starts in its own $20,000 cash account unless noted; never add these selected outcomes into one claimed portfolio history."
           ],
           "id": "read-a-case-in-three-passes"
         },
@@ -17885,7 +17900,7 @@ window.ATLAS = {
         {
           "title": "Case three: the skip is a completed decision",
           "paragraphs": [
-            "SKIP has P1’s S0 signal and all eligibility inputs, but the supplied S1 opening offer is $52. It exceeds 50.90, so the gate rejects the candidate. No order, position or fee exists. A later S2 close of $56 is revealed only after the decision. Record “opening ceiling; no trade,” not a zero-R scratch. Without a position there is no trade-specific denominator.",
+            "KITE has P1’s S0 signal and all eligibility inputs, but the supplied S1 opening offer is $52. It exceeds 50.90, so the gate rejects the candidate. No order, position or fee exists. A later S2 close of $56 is revealed only after the decision. Record “opening ceiling; no trade,” not a zero-R scratch. Without a position there is no trade-specific denominator.",
             "The missed advance is observable, and it can motivate a ceiling-change hypothesis. It cannot by itself price the alternative strategy. Buying at 52 and selling at 56 would require two specific, feasible fill assumptions; the later close is not a promise that an order could have filled there. A complete comparison would also keep the high-opening candidates that later fell. This case is retained in Chapter 23’s journal so the opportunity restriction remains inspectable."
           ],
           "id": "case-three-the-skip-is-a-completed-decision"
@@ -17994,7 +18009,7 @@ window.ATLAS = {
                   "−3.3889R"
                 ],
                 [
-                  "SKIP / P1",
+                  "KITE / P1",
                   0,
                   "N/A",
                   "N/A",
@@ -18457,7 +18472,7 @@ window.ATLAS = {
           "title": "MSFT February: the continuation check fails",
           "paragraphs": [
             "At the February 1, 2016 MSFT cutoff, C = 52.347 exceeds the prior-five mean 50.1898. The gate permits observation; the frozen levels are 52.87047 above and 51.82353 below. This is a continuation hypothesis with a declared falsification check, not a forecast with a known probability.",
-            "The next archive session, February 2, opens at 51.830, narrowly inside the levels. Its low 50.377 crosses the lower level while its high 51.917 never reaches the upper one. The first resolving bar therefore classifies adverse. Nearest-cent rounding of 51.82353 gives 51.82: the open 51.830 is above both 51.82353 and 51.82, so the opening classification stays inside in this actual case. Preserve source precision through the comparison. For a separate fictional counterexample, a lower threshold 51.826 rounds to 51.83; an open 51.828 is above the exact threshold but at or below the rounded one. That named rounding policy would change inside to an opening lower-boundary touch. These fictional numbers do not replace the archived historical observations. The subsequent weakness cannot turn the hypothetical threshold into a real stop fill."
+            "The next archive session, February 2, opens at 51.830, narrowly inside the levels. Its low 50.377 crosses the lower level while its high 51.917 never reaches the upper one. The first resolving bar therefore classifies adverse. Nearest-cent rounding of 51.82353 gives 51.82; the open 51.830 is above both, so the opening classification stays inside here. Still compare at source precision: with other values, rounding a threshold first can move an open across it. The subsequent weakness cannot turn the hypothetical threshold into a real stop fill."
           ],
           "tables": [
             {
@@ -20289,15 +20304,16 @@ window.ATLAS = {
         "reviewer": "/root",
         "scope": "Full chapter final review with inherited initial reviewer/source evidence; final arithmetic, actual figures and native reader checks.",
         "evidence": [
-          "docs/PUBLICATION_BATCH7_20261012.md"
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "92dbaaa8616aa25f344e18d66e2f3d863966e097d008ab40e51f84612d753224",
+        "contentSha256": "296c5fa5aea4178365597c8c311ae1c5a605a649e3a71393d0ef02f68cacab9d",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: SKIP renamed KITE in the shared P1 cases; MSFT February rounding aside cut to one sentence without the fictional counterexample; archived values (51.830 open, 51.82353 level) unchanged and verify-historical passes. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         },
         "valid": true,
         "effectiveStatus": "accepted",
@@ -20921,8 +20937,43 @@ window.ATLAS = {
       ]
     },
     "context": {
-      "title": "Context review: participation, clock, and execution",
+      "title": "Context review: comparison, participation, clock, and execution",
       "tasks": [
+        {
+          "title": "Name the benchmark before calling a stock strong",
+          "question": "A fresh fictional stock and two comparators are measured over the same period from the start close to the end close. For each comparator, calculate the stock’s absolute return, the return difference in percentage points and the rebased relative index (start = 100). Then rewrite “The stock is strong” as a statement the numbers support.",
+          "tables": [
+            {
+              "title": "Start and end closes (fictional)",
+              "columns": [
+                "Series",
+                "Start close",
+                "End close"
+              ],
+              "rows": [
+                [
+                  "Stock",
+                  "$25.00",
+                  "$27.00"
+                ],
+                [
+                  "Sector ETF",
+                  "$80.00",
+                  "$92.00"
+                ],
+                [
+                  "Market index",
+                  "4,000 points",
+                  "3,900 points"
+                ]
+              ]
+            }
+          ],
+          "solution": [
+            "Factors: stock 27/25 = 1.08 (+8%); sector 92/80 = 1.15 (+15%); market 3,900/4,000 = 0.975 (−2.5%). Return differences: 8 − 15 = −7 percentage points versus sector; 8 − (−2.5) = +10.5 points versus market.",
+            "Relative indexes: stock/sector = 100 × 1.08/1.15 = 93.9130; stock/market = 100 × 1.08/0.975 = 110.7692. The stock rose absolutely, outperformed the market and underperformed its sector over this period. A supported note names each benchmark and the period; “strong” alone hides the sector comparison. Ratio changes (−6.0870%, +10.7692%) and point differences use different denominators, so do not mix them."
+          ]
+        },
         {
           "title": "Resolve apparent contradictions",
           "question": "Use the breadth chapter’s final four-stock values/weights and session-11-to-12 changes. Report the since-start weighted index result, since-start participation, and daily breadth. Explain why they differ.",

@@ -383,8 +383,8 @@
           "title": "Measure the candle one piece at a time",
           "paragraphs": [
             "Look at the single candle, then reproduce it on paper. First mark $98 and $108 as the extremes. Next put the body’s lower edge at the $100 open and its upper edge at the $105 close. The body occupies five dollars of the ten-dollar range. The remaining five dollars are split between the $3 upper shadow and $2 lower shadow. A body is a span, not an additional price: its size is $5, while its endpoints remain $100 and $105.",
-            "Use the table as a reading order rather than memorizing a picture. For a down body the high endpoint of the body is the open, so the max/min formulas work for either direction. If high equals low, all four prices must match in valid OHLC, and the close-location fraction has a zero denominator. In that special case describe a zero range instead of reporting a percentage location.",
-            "Our example closes seven dollars above the low inside a ten-dollar range, giving (105 − 98)/(108 − 98) = 0.70. “The close is 70% of the way up the range” is verifiable. It does not mean 70% of the shares were bought near the high or that the next candle has a 70% chance of rising."
+            "Close location measures where the close sits inside the range: (close − low)/(high − low). Our example closes seven dollars above the low inside a ten-dollar range, giving (105 − 98)/(108 − 98) = 0.70. “The close is 70% of the way up the range” is verifiable. It does not mean 70% of the shares were bought near the high or that the next candle has a 70% chance of rising.",
+            "Use the table below as a reading order rather than memorizing a picture. Its max/min formulas work for either direction: for a down body, the higher endpoint of the body is the open. If high equals low, all four prices must match in valid OHLC, and the close-location fraction has a zero denominator. In that special case describe a zero range instead of reporting a percentage location."
           ],
           "tables": [
             {
@@ -827,15 +827,16 @@
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH1_20261002.md"
+          "docs/PUBLICATION_BATCH1_20261002.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "86592b68e8ed901b4eb16a54d8e5d03737a1321f53bfd61fa1e0708587931541",
+        "contentSha256": "6ae05e5504ddf6ab1a12fecfdd9596bf670701c44ad97ceae5f766477a3d45b2",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: close-location definition now precedes its use; the table reference reads \"table below\" and the max/min sentence follows the definition. O100/H108/L98/C105 values unchanged (0.70). READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
@@ -2047,7 +2048,7 @@
           "title": "Build the initial higher-high/higher-low map",
           "paragraphs": [
             "Applying the same rule gives lows at D1$40, D6$43 and D10$45, and highs at D4$46, D8$49 and D12$52. Their recognition dates are D3, D8, D12 for the lows and D6, D10, D14 for the highs. Once the required bars exist, both sequences rise. This is a defensible uptrend description of the selected interval, independent of a guess about why participants traded.",
-            "The decline from the $49 D8 peak to the $45 D10 low is $4/49 ≈8.16%. A lower daily close therefore fits an overall sequence of higher selected troughs. Uptrend does not mean every observation rises. To reproduce the map, inspect each candidate against its four neighboring closes; do not select only the points that help the desired label."
+            "The decline from the $49 D8 peak to the $45 D10 low is $4/49 ≈8.16%. That pullback still fits the uptrend description: its $45 low stays above the prior selected $43 trough, so the selected troughs keep rising. Uptrend does not mean every observation rises. To reproduce the map, inspect each candidate against its four neighboring closes; do not select only the points that help the desired label."
           ],
           "tables": [
             {
@@ -2116,7 +2117,7 @@
           "title": "Draw one line from two specified anchors",
           "paragraphs": [
             "Use the first two confirmed lows, D1$40 and D6$43. They are five session steps apart, so the linear-price slope is (43 −40)/(6 −1) = $0.60 per session. The projection at D10 is 40 +0.60 × 9 = $45.40. D10 closes at $45, forty cents below the projected line, while still above the prior selected low $43.",
-            "At D10 you can observe the line crossing because both anchor lows have been confirmed since D8. You cannot yet confirm D10 itself as a low until D12. After D12, it is a higher low despite crossing the line. This gives a complete example of a broken trendline and surviving higher-low structure using the same data, rather than a second invented path. The plotted line begins at D8, when both anchors are available; earlier anchor values remain marked on the closing-price series.",
+            "In this example the line is broken when a completed close is below the line’s projected value for that session. At D10 you can observe that crossing because both anchor lows have been confirmed since D8. You cannot yet confirm D10 itself as a low until D12. After D12, it is a higher low despite crossing the line. This gives a complete example of a broken trendline and surviving higher-low structure using the same data, rather than a second invented path. The plotted line begins at D8, when both anchors are available; earlier anchor values remain marked on the closing-price series.",
             "Drawing a line from D6$43 to D10$45 instead would yield a $0.50 slope, but the second anchor is unavailable until D12. That is a reasonable later alternative drawing, not information the D10 reader already had. Trendlines organize selected anchors; they do not replace a separately defined structural description."
           ],
           "tables": [
@@ -2513,15 +2514,16 @@
         "reviewer": "/root",
         "scope": "Scoped chapter editorial acceptance: prose, material source claims, tasks, numerical reproduction and compact/wide figures; release QA and human learning are separate.",
         "evidence": [
-          "docs/PUBLICATION_BATCH2_20261002.md"
+          "docs/PUBLICATION_BATCH2_20261002.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "2daacc936faf1a1eabb340607a77c33cda2d516430c07ece9c18f0f6f2bd54c0",
+        "contentSha256": "6de47a153707f7bd6f7e7a80fa532bd8cbaf3a9aafe8e6480bf3a5f4f2833f1b",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: non-sequitur \"therefore\" replaced by the stated reason ($45 trough above prior $43); trendline-break criterion (completed close below projected value) stated before use; D10 45 < 45.40 rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
@@ -2546,7 +2548,7 @@
         {
           "title": "Start with reactions that can be located",
           "paragraphs": [
-            "Support names an area associated with prior interrupted declines or a conditional expectation of another such reaction. Resistance names the analogous area for interrupted advances. The first part is observable history; the expectation is a hypothesis. We will build a support map from the same supplied closes that appear in the construction panel, then reveal later closes separately. This sequence makes the analytical choice visible.",
+            "Support names an area associated with prior interrupted declines or a conditional expectation of another such reaction. Resistance names the analogous area for interrupted advances. The first part is observable history; the expectation is a hypothesis. We will build a support map for Harbor, the fictional stock in this chapter’s tables and figures, from the same supplied closes that appear in the construction panel, then reveal later closes separately. This sequence makes the analytical choice visible.",
             "Use a simple one-before/one-after closing-price trough rule for this mapping exercise. It differs from chapter 5’s two-bar rule because the present question is a small reaction cluster, and the supplied table explicitly declares that change. We do not change it mid-example. A trough must be strictly below its immediate neighbors and becomes recognized after the next close. This produces three selected construction troughs at D3$39.80, D7$40.10, and D11$40.35."
           ],
           "tables": [
@@ -3054,7 +3056,7 @@
       "learnerAttempt": {
         "title": "First pass: freeze the D12 map",
         "paragraphs": [
-          "Work only from the construction data below before opening the chapter continuation. This is an attempt followed by a reference explanation; write your own map and conditions first.",
+          "Work only from the construction data below (closes of Harbor, a fictional stock) before opening the chapter continuation. This is an attempt followed by a reference explanation; write your own map and conditions first.",
           "Use the one-before/one-after closing-price trough rule. Select recognized troughs through D12, cluster them under a maximum $0.60 span, and freeze the zone edges. Define a visit, a $1 rise within two sessions after a visit, and a strictly-below break using a $0.30 downward buffer. State when each could be known and what would challenge the map. Do not invent D13 onward."
         ],
         "tables": [
@@ -3125,15 +3127,16 @@
         "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
         "evidence": [
           "docs/PUBLICATION_BATCH2_20261002.md",
-          "docs/PUBLICATION_BATCH7_20261012.md"
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "28028a3ebbf6d00d993aa82e49710b574e8bbd2d28a7ba69820593aaf39ee387",
+        "contentSha256": "ebaffc3989712e433b01be206ada1b40605fb0e7e0b498ac93ab4ed2dad574fe",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: Harbor introduced as the chapter’s fictional stock in the attempt packet and continuation before figure legends use the name. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
@@ -3298,7 +3301,7 @@
           "paragraphs": [
             "At the D3 cutoff, body $0.80, range $4, upper shadow $0.20 and lower shadow $3 satisfy B > 0, D ≥ 2B and U ≤ B. The prior closes 53→50 decline before the 50.80 close. The separate next-close threshold is D3 high $51, with strict equality excluded. D4’s close is still unknown at D3, so the follow-up state is awaiting observation. No order, accessible quote or confirmed execution has been supplied. The next paragraphs reveal alternative paths from this same state; they do not revise the cutoff note.",
             "Return to the $50/$51/$47/$50.80 hammer-like candle after a decline. Its geometry becomes final when that interval closes. For a separate reversal hypothesis, our example asks for the next completed daily close above its $51 high. A $51.20 next close meets that follow-up condition. It did not exist when the candle first opened, nor did it make a purchase at the earlier $47 low available retroactively.",
-            "If a later illustrative entry occurs at $52 with a planned trigger $46.80, distance is $5.20 per share. Entering at the candle’s $50.80 close would have meant $4, but that earlier entry used less follow-up information. The later confirmation and earlier price cannot be combined into one supposed execution. Write both alternatives as distinct plans if you want to compare them.",
+            "Suppose, purely for illustration, a plan enters at $52 after that $51.20 confirmation close, with a protective sell trigger at $46.80, just below the candle’s $47 low. The distance is $5.20 per share. Entering at the candle’s $50.80 close would have meant $4, but that earlier entry used less follow-up information. The later confirmation and earlier price cannot be combined into one supposed execution. Write both alternatives as distinct plans if you want to compare them.",
             "Now append a next opening price $46.50 and close $45 to the confirmed path. The classification and follow-up event happened, then the continuation failed. In another branch, the very next session opens 46.50 without ever producing 51.20; that candidate never meets the follow-up condition. Candidate failure and failure after confirmation are different records. The timeline includes both, so a successful classification does not disappear whenever the trade idea disappoints."
           ],
           "tables": [
@@ -3746,15 +3749,16 @@
         "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
         "evidence": [
           "docs/PUBLICATION_BATCH3_20261003.md",
-          "docs/PUBLICATION_BATCH7_20261012.md"
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "22b725a48c8148fafa5752538be62594d05a8bd091d2d76588c091260485c94e",
+        "contentSha256": "c5ac29510c2833ecd42867b747fa4d35c0e57c8ccb27c72494b2985850e48cf2",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-008 wording correction (Chapter 7 hammer-body rule and guided solution) reviewed. READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: $52 illustrative entry anchored after the $51.20 confirmation close and the $46.80 trigger tied to the $47 low; $5.20 and $4 distances rechecked. READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
@@ -4337,7 +4341,7 @@
         {
           "kind": "panels",
           "title": "Boundary families: candidate prefix and alternative exits",
-          "caption": "Optional-looking catalogue used for the core range/contraction comparison. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.",
+          "caption": "The rectangle and symmetrical-triangle panels are the core range/contraction comparison in the text; the ascending/descending triangle, flag and pennant panels are a brief catalogue applying the same boundary discipline. Each panel holds its prefix fixed and supplies two later branches. Horizontal references are deliberately declared teaching simplifications, not silently projected sloping detectors.",
           "afterSection": 4,
           "panels": [
             {
@@ -5291,15 +5295,16 @@
         "scope": "Re-accepted for documented whitespace or shared study locator/date correction; earlier substantive review retained.",
         "evidence": [
           "docs/PUBLICATION_BATCH3_20261003.md",
-          "docs/PUBLICATION_BATCH7_20261012.md"
+          "docs/PUBLICATION_BATCH7_20261012.md",
+          "docs/READ1_WORDING_20261014.md"
         ],
-        "contentSha256": "3e26b59f8bafc0963dd94e66991962f2fe8a3b14a9c92cb069cf1f5acb4f9ce7",
+        "contentSha256": "f767355ffb6e03eeb694a9dac047bc1178abe54003d0175565cb765d3678d9f1",
         "rendererSha256": "24e5ab4aa8d1dd1b493299e04de18ef6e1027d0d62733e57d2b1dddf6042e836",
         "figureRecheck": {
-          "reviewer": "/root",
-          "date": "2026-10-13",
-          "report": "docs/READ1_FIGURES_20261013.md",
-          "scope": "READ1-001/002/003 renderer batch: round axis ticks, observation labels, labelled reference levels and profile ordering; all changed figures inspected at 760/320px before and after, flagged regressions fixed; substantive earlier acceptance inherited."
+          "reviewer": "claude-code-read1b",
+          "date": "2026-10-14",
+          "report": "docs/READ1_WORDING_20261014.md",
+          "scope": "READ1-012: boundary-families caption separates the core rectangle/symmetrical-triangle comparison from the brief catalogue panels; figure geometry unchanged (desc text only). READ1 figure recheck of 2026-10-13 retained; substantive earlier acceptance inherited."
         }
       }
     },
